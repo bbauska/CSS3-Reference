@@ -8143,23 +8143,18 @@ left to the user agent and is likely dependent on the writing direction.
 img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 {shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
-+----------------+-----------------------------------------------------+
-| > **size**     | **Inh. N Anim. N**                                  |
-+================+=====================================================+
-| > **Values**   | auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     |
+| ---------------- | ----------------------------------------------------- |
+| **size**     | **Inh. N Anim. N**                                  |
+| **Values**   | auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     |
 |                | &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack;                 |
-+----------------+-----------------------------------------------------+
-| > **Initial    | auto                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | *&lt;length&gt;* values as absolute length values;      |
-| > value**      | otherwise, as declared                              |
-+----------------+-----------------------------------------------------+
-| > **Applies    | The page area                                       |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the size and orientation of a page box. The |
-| *Description** | keywords auto, portrait, and landscape cause the    |
+| ---------------- | ----------------------------------------------------- |
+| **Initial value**   | auto                                                |
+| ---------------- | ----------------------------------------------------- |
+| **Computed value**  | *&lt;length&gt;* values as absolute length values;      |
+|                       | otherwise, as declared                              |
+| **Applies to**   | The page area                                       |
+| **Description** | Defines the size and orientation of a page box. The |
+|                | keywords auto, portrait, and landscape cause the    |
 |                | page box to fill the available rendering space on   |
 |                | the page. Page boxes set to portrait have the       |
 |                | content printed with the long sides of the page box |
@@ -8177,48 +8172,47 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 |                | a square page box. Length values that use em or ex  |
 |                | units are calculated with respect to the computed   |
 |                | font size of the page context.                      |
-+----------------+-----------------------------------------------------+
+| ---------------- | ----------------------------------------------------- |
 | **Example**    |                                                     |
 | body           |                                                     |
 | {page-size:    |                                                     |
 | landscape;}    |                                                     |
-+----------------+-----------------------------------------------------+
 
 **Note** *&lt;page-size&gt;* is one of a defined set of standard page sizes;
 see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
 Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 
-+----------------+-----------------------------------------------------+
-| > **tab-size** | **Inh. Y Anim. Y**                                  |
-+================+=====================================================+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;integer&gt;*                       |
-+----------------+-----------------------------------------------------+
-| > **Initial    | 8                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | The absolute-length equivalent of the value         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Block elements                                      |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Sets the width of tab characters' whitespace when   |
+| ---------------- | ----------------------------------------------------- |
+| **tab-size** | **Inh. Y Anim. Y**                                  |
+| ---------------- | ----------------------------------------------------- |
+| **Values**   | *&lt;length&gt;* &vert; *&lt;integer&gt;*                       |
+| ---------------- | ----------------------------------------------------- |
+| **Initial    | 8                                                   |
+| value**      |                                                     |
+| ---------------- | ----------------------------------------------------- |
+| **Computed   | The absolute-length equivalent of the value         |
+| value**      |                                                     |
+| ---------------- | ----------------------------------------------------- |
+| **Applies    | Block elements                                      |
+| to**         |                                                     |
+| ---------------- | ----------------------------------------------------- |
+| *            | Sets the width of tab characters' whitespace when   |
 | *Description** | they are present in the displayed source *and* are  |
 |                | honored for display due to the value of whitespace. |
 |                | An *&lt;integer&gt;* value sets the number of           |
 |                |                                                     |
 |                | "spaces" a tab character will generate.             |
-+----------------+-----------------------------------------------------+
-| > **Examples** | pre.source {tab-size: 4;}                           |
+| ---------------- | ----------------------------------------------------- |
+| **Examples** | pre.source {tab-size: 4;}                           |
 |                |                                                     |
 |                | p.typer {tab-size: 0.25in;}                         |
 +----------------+-----------------------------------------------------+
 
 #### table-layout Inh. Y Anim. N
 
-  ------------------------------------------------------------------------
+| ---------------- | ----------------------------------------------------- |
   **Values**        auto &vert; fixed
-  ----------------- ------------------------------------------------------
+| ---------------- | ----------------------------------------------------- |
   **Initial value** auto
 
   **Computed        As declared
@@ -8235,38 +8229,34 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
                     more predictable.
 
   **Examples**      table.data {table-display: fixed;}
-  ------------------------------------------------------------------------
 
 > table.directory {table-display: auto;}
 
-+----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. N**                                  |
+| ---------------- | ----------------------------------------------------- |
+|               | **Inh. Y Anim. N**                                  |
 | **text-align** |                                                     |
-+================+=====================================================+
-| > **Values**   | start &vert; end &vert; left &vert; right &vert; center &vert; justify  |
+| ---------------- | ----------------------------------------------------- |
+| **Values**   | start &vert; end &vert; left &vert; right &vert; center &vert; justify  |
 |                | &vert; match-parent &vert; start end                        |
-+----------------+-----------------------------------------------------+
-| > **Initial    | In CSS3, start; in CSS2.1, this was user            |
-| > value**      | agent--specific, likely depending on writing        |
+| ---------------- | ----------------------------------------------------- |
+| **Initial    | In CSS3, start; in CSS2.1, this was user            |
+| value**      | agent--specific, likely depending on writing        |
 |                | direction (e.g., left for Western languages like    |
 |                | English)                                            |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared, except in the case of match-parent     |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Block-level elements                                |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the horizontal alignment of text within a   |
-| *Description** | block-level element by defining the point to which  |
+| ---------------- | ----------------------------------------------------- |
+| **Computed value**  | As declared, except in the case of match-parent     |
+| ---------------- | ----------------------------------------------------- |
+| **Applies to**   | Block-level elements                                |
+| ---------------- | ----------------------------------------------------- |
+| **Description** | Defines the horizontal alignment of text within a   |
+|                 | block-level element by defining the point to which  |
 |                | line boxes are aligned. The value justify is        |
 |                | supported by allowing user agents to                |
 |                | programmatically adjust the word (but not letter)   |
 |                | spacing of the line's content; results may vary by  |
 |                | user agent.                                         |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p {text-align: justify;} h4 {text-align: center;}   |
-+----------------+-----------------------------------------------------+
+| ---------------- | ----------------------------------------------------- |
+| **Examples** | p {text-align: justify;} h4 {text-align: center;}   |
 
 ### text-align-last Inh. Y Anim. N
 
@@ -8290,20 +8280,12 @@ the line's content; results may vary by user agent.
 
 ### text-decoration Inh. N Anim. N
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    |
+| **Values**   | none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    |
 |                | blink &rbrack;                                            |
-+================+=====================================================+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines text-decoration effects such as             |
+| **Initial value**   | none                                                |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | All elements                                        |
+| *            | Defines text-decoration effects such as             |
 | *Description** | underlining. These decorations will span descendant |
 |                | elements that don't have decorations of their own,  |
 |                | in many cases making the child elements appear to   |
@@ -8324,16 +8306,13 @@ the line's content; results may vary by user agent.
 |                | selector to raise its specificity.                  |
 |                |                                                     |
 |                | User agents are not required to support blink.      |
-+----------------+-----------------------------------------------------+
-| > **Examples** | u {text-decoration: underline;}                     |
+| **Examples** | u {text-decoration: underline;}                     |
 |                |                                                     |
 |                | .old {text-decoration: line-through;}               |
 |                |                                                     |
 |                | u.old {text-decoration: line-through underline;}    |
-+----------------+-----------------------------------------------------+
-| > *            | **Inh. Y Anim. Y**                                  |
-| *text-indent** |                                                     |
-+----------------+-----------------------------------------------------+
+|             | **Inh. Y Anim. Y**                                  |
+| **text-indent** |                                                     |
 
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
@@ -8357,17 +8336,14 @@ an outdent effect without using a negative length value.
 
 **Examples** p {text-indent: 5em;}
 
-> h2 {text-indent: −25px;}
+h2 {text-indent: −25px;}
 
 ### text-orientation Inh. Y Anim. Y
 
-  ------------------------------------------------------------------------
   **Values**        mixed &vert; upright &vert; sideways
-  ----------------- ------------------------------------------------------
   **Initial value** mixed
 
-  **Computed        As declared
-  value**           
+  **Computed value**       As declared
 
   **Applies to**    All elements except table row groups, table rows,
                     table column groups, and table columns
@@ -8384,18 +8360,15 @@ an outdent effect without using a negative length value.
                     forces all characters to be shown sideways.
 
   **Examples**      #one {text-orientation: mixed;}
-  ------------------------------------------------------------------------
 
-> #two {text-orientation: upright;}
->
-> #thr {text-orientation: sideways;}
+#two {text-orientation: upright;}
+
+#thr {text-orientation: sideways;}
 
 #### text-rendering Inh. Y Anim. Y
 
-  ------------------------------------------------------------------------
   **Values**        auto &vert; optimizeSpeed &vert; optimizeLegibility &vert;
                     geometricPrecision
-  ----------------- ------------------------------------------------------
   **Initial value** auto
 
   **Computed        As declared
@@ -8417,10 +8390,8 @@ svg tspan {text-rendering: optimizeLegibility;}
 
 #### text-shadow Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
   **Values**        none &vert; &lbrack;*&lt;length&gt;* ‖ *&lt;color&gt;*? &&
                     *&lt;length&gt;*{2,3}&rbrack;#
-  ----------------- ------------------------------------------------------
   **Initial value** none
 
   **Computed        A color plus three absolute lengths
@@ -8434,7 +8405,6 @@ svg tspan {text-rendering: optimizeLegibility;}
                     background, borders, and outline. Shadows are drawn
                     from the first on top to the last on the bottom. The
                     three length values that can be declared are, in
-  ------------------------------------------------------------------------
 
 > order: horizontal offset, vertical offset, and blur distance. When
 > positive, the offset values go down and to the right; when negative,
@@ -8445,84 +8415,54 @@ svg tspan {text-rendering: optimizeLegibility;}
 
 #### text-transform Inh. Y Anim. N
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | uppercase &vert; lowercase &vert; capitalize &vert; none        |
-+================+=====================================================+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the pattern for changing the case of        |
+| **Values**   | uppercase &vert; lowercase &vert; capitalize &vert; none        |
+| **Initial value**   | none                                                |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | All elements                                        |
+| *            | Defines the pattern for changing the case of        |
 | *Description** | letters in an element, regardless of the case of    |
 |                | the text in the document source. The determination  |
 |                | of which letters are to be capitalized by the value |
 |                | capitalize is not precisely defined, as it depends  |
 |                | on user agents knowing how to recognize a "word."   |
-+----------------+-----------------------------------------------------+
-| > **Examples** | h1 {text-transform: uppercase;} .title              |
+| **Examples** | h1 {text-transform: uppercase;} .title              |
 |                | {text-transform: capitalize;}                       |
-+----------------+-----------------------------------------------------+
-| > **top**      | **Inh. N Anim. P**                                  |
-+----------------+-----------------------------------------------------+
+| **top**      | **Inh. N Anim. P**                                  |
 | **Values**     | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
-+----------------+-----------------------------------------------------+
 | **Initial      | auto                                                |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | For static elements, auto; for length values, the   |
 | value**        | corresponding absolute length; for percentage       |
 |                | values, the specified value; otherwise, auto        |
-+----------------+-----------------------------------------------------+
 | *              | Refer to the height of the containing block         |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies to** | Positioned elements                                 |
-+----------------+-----------------------------------------------------+
 | **Animatable** | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
-+----------------+-----------------------------------------------------+
 | *              | Defines the offset between the top outer margin     |
 | *Description** | edge of a positioned element and the top edge of    |
 |                | its containing block.                               |
-+----------------+-----------------------------------------------------+
 | **Examples**   | #masthead {position: fixed; top: 0;} sub {position: |
 |                | relative; top: 0.5em; vertical-align: baseline;}    |
-+----------------+-----------------------------------------------------+
 | **Note**       | For relatively positioned elements, if both top and |
 |                | bottom are auto, their computed values are both 0.  |
 |                | If one of them is auto, it becomes the negative of  |
-|                | the                                                 |
-+----------------+-----------------------------------------------------+
-
-> other; if neither is auto, bottom becomes the negative of the value of
-> top.
+|                | the other; if neither is auto, bottom becomes the   |
+|                | negative of the value of top. |
 
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. P**                                  |
-|  **transform** |                                                     |
-+================+=====================================================+
-| > **Values**   | *&lt;transform-list&gt;* &vert; none                        |
+|               | **Inh. N Anim. P**                                  |
+| **transform** |                                                     |
+| **Values**   | *&lt;transform-list&gt;* &vert; none                        |
+| **Initial value**   | none                                                |
 +----------------+-----------------------------------------------------+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared, except for relative length values,     |
-| > value**      | which are converted to an absolute length           |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the size of the bounding box               |
-| *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements except "atomic inline-level" boxes     |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| >              | As a transform                                      |
+| **Computed value**  | As declared, except for relative length values,     |
+|               | which are converted to an absolute length           |
+| *            | Refer to the size of the bounding box               |
+| *Percentages**   |                                                     |
+| **Applies to**   | All elements except "atomic inline-level" boxes     |
+|                  | As a transform                                      |
 | **Animatable** |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines one or more transforms of an element. These |
+| *            | Defines one or more transforms of an element. These |
 | *Description** | transforms can occur in a 2D or a simulated 3D      |
 |                | space, depending on how the transforms are          |
 |                | declared.                                           |
@@ -8533,34 +8473,22 @@ svg tspan {text-rendering: optimizeLegibility;}
 |                | documentation on [transform                         |
 |                | functions](http://                                  |
 |                | w3.org/TR/css3-3d-transforms/#transform-functions). |
-+----------------+-----------------------------------------------------+
-| > **Examples** | table th {transform: rotate(45deg);} li {transform: |
+| **Examples** | table th {transform: rotate(45deg);} li {transform: |
 |                | scale3d(1.2,1.7,0.85);}                             |
-+----------------+-----------------------------------------------------+
 
 ### transform-origin Inh. N Anim. P
 
-+---------------+------------------------------------------------------+
-| > **Values**  | *&lt;position&gt;*                                       |
-+===============+======================================================+
-| > **Initial   | 50% 50%                                              |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Computed  | A percentage, except for length values, which are    |
-| > value**     | converted to an absolute length                      |
-+---------------+------------------------------------------------------+
-| > **          | Refer to the size of the bounding box                |
+| **Values**  | *&lt;position&gt;*                                       |
+| **Initial value**  | 50% 50%                                              |
+| **Computed value** | A percentage, except for length values, which are    |
+|                    | converted to an absolute length                      |
+| **          | Refer to the size of the bounding box                |
 | Percentages** |                                                      |
-+---------------+------------------------------------------------------+
-| > **Applies   | Any transformable element                            |
-| > to**        |                                                      |
-+---------------+------------------------------------------------------+
-| > *           | *&lt;length&gt;* and *&lt;percentage&gt;* values only        |
+| **Applies to**  | Any transformable element                            |
+| *           | *&lt;length&gt;* and *&lt;percentage&gt;* values only        |
 | *Animatable** |                                                      |
-+---------------+------------------------------------------------------+
-| > **          | Defines the origin point for an element's transforms |
+| **          | Defines the origin point for an element's transforms |
 | Description** | in either 2D or simulated 3D space. The marked-as-   |
-+---------------+------------------------------------------------------+
 
 > optional *&lt;length&gt;* values are what define a 3D origin point;
 > without them, the value is necessarily in 2D space.
@@ -8574,16 +8502,10 @@ svg tspan {text-rendering: optimizeLegibility;}
 +----------------+-----------------------------------------------------+
 | > **Values**   | flat &vert; preserve-3d                                 |
 +================+=====================================================+
-| > **Initial    | flat                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any transformable element                           |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines whether an element transformed in simulated |
+| **Initial value**   | flat                                                |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | Any transformable element                           |
+| *            | Defines whether an element transformed in simulated |
 | *Description** | 3D space should have its children rendered using a  |
 |                | flat style, thus putting them all in the same 2D    |
 |                | plane as the element, or attempt to use a 3D effect |
@@ -8593,28 +8515,18 @@ svg tspan {text-rendering: optimizeLegibility;}
 |                | overflow value is hidden cannot preserve 3D effects |
 |                | and are treated as though the value of              |
 |                | transform-style is flat.                            |
-+----------------+-----------------------------------------------------+
-| > **Example**  | li {transform-style: preserve-3d;}                  |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+| **Example**  | li {transform-style: preserve-3d;}                  |
+|              | **Inh. N Anim. N**                                  |
 | **transition** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**     | &lbrack; &lbrack; none &vert; *&lt;transition-property&gt;* &rbrack; ‖        |
 |                | *&lt;time&gt;* ‖ *&lt;transition-timing-function&gt;* ‖     |
 |                | *&lt;time&gt;* &rbrack;#                                      |
-+----------------+-----------------------------------------------------+
-| **Initial      | all 0s ease 0s                                      |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed     | As declared                                         |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
+| **Initial value**     | all 0s ease 0s                                      |
+| **Computed value**    | As declared                                         |
 | **Applies to** | All elements and :before and :after pseudoelements  |
-+----------------+-----------------------------------------------------+
 | *              | A shorthand property that defines the aspects of    |
 | *Description** | one or more of an element's transitions from one    |
 |                | state to another.                                   |
-+----------------+-----------------------------------------------------+
 
 > Even though it is not (as of this writing) explicitly defined in the
 > value syntax, descriptive text in the specification defines that when
@@ -8627,9 +8539,7 @@ svg tspan {text-rendering: optimizeLegibility;}
 
 ### transition-delay Inh. N Anim. N
 
-  ------------------------------------------------------------------------
   **Values**        *&lt;time&gt;*&#35;
-  ----------------- ------------------------------------------------------
   **Initial value** 0s
 
   **Computed        As declared
@@ -8641,7 +8551,6 @@ svg tspan {text-rendering: optimizeLegibility;}
                     theoretically first start and when it actually starts.
                     For example, if a transition is defined to begin on
                     hover but has a delay of 0.5s, the transition will
-  ------------------------------------------------------------------------
 
 > actually begin half a second after the element is first hovered over.
 > Negative time values are permitted, but rather than creating a
@@ -8675,18 +8584,13 @@ as 0s.
 
 ### transition-property Inh. N Anim. N
 
-+---------------+------------------------------------------------------+
 | **Values**    | none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#            |
-+===============+======================================================+
 | **Initial     | all                                                  |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed    | As declared                                          |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Applies     | All elements and :before and :after pseudoelements   |
 | to**          |                                                      |
-+---------------+------------------------------------------------------+
 | **            | Defines one or more properties that are transitioned |
 | Description** | from one state to another; for example, color means  |
 |               | that the foreground color of an element is           |
@@ -8700,9 +8604,7 @@ as 0s.
 |               | transitioned. The keyword none prevents any          |
 |               | properties from being transitioned, effectively      |
 |               | shutting down the transition.                        |
-+---------------+------------------------------------------------------+
 | **Examples**  | a&lbrack;href&rbrack;:hover {transition-property: color;}        |
-+---------------+------------------------------------------------------+
 
 h1 {transition-property: all;} **transition-timing-function Inh. N Anim.
 N**
@@ -8763,56 +8665,43 @@ bottom &vert; text-bottom &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
 **Initial value** baseline
 
-  ------------------------------------------------------------------------
-  **Computed        For percentage and length values, the absolute length;
-  value**           otherwise, as declared
-  ----------------- ------------------------------------------------------
-  **Percentages**   Refer to the value of line-height for the element
-
-  **Applies to**    Inline elements and table cells
-
-  **Animatable**    *&lt;length&gt;* and *&lt;percentage&gt;* values only
-
-  **Description**   Defines the vertical alignment of an inline element's
+| ------------------- | --------------------------------------------------- |
+| **Computed values** | For percentage and length values, the absolute length; |
+|                     | otherwise, as declared |
+|  **Percentages**    | Refer to the value of line-height for the element |
+|  **Applies to**     | Inline elements and table cells |
+|  **Animatable**     | *&lt;length&gt;* and *&lt;percentage&gt;* values only |
+|  **Description**    | Defines the vertical alignment of an inline element's
                     baseline with respect to the baseline of the line in
-                    which it resides. Negative length and percentage val‐
-  ------------------------------------------------------------------------
+                    which it resides. Negative length and percentage values 
+					are permitted, and they lower the element instead of raising it. |
 
-> ues are permitted, and they lower the element instead of raising it.
->
 > In table cells, this property sets the alignment of the content of the
 > cell within the cell box. When applied to table cells, only the values
 > baseline, top, middle, and bottom are recognized.
 
 **Examples** sup {vertical-align: super;}
 
-> .fnote {vertical-align: 50%;}
+.fnote {vertical-align: 50%;}
 
-+----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. N**                                  |
-| **visibility** |                                                     |
-+================+=====================================================+
-| > **Values**   | visible &vert; hidden &vert; collapse                       |
-+----------------+-----------------------------------------------------+
-| > **Initial    | visible                                             |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines whether the element box generated by an     |
+|              | **Inh. Y Anim. N**                                  |
+| ------------------- | --------------------------------------------------- |
+| **visibility**      |                                                     |
+| **Values**   | visible &vert; hidden &vert; collapse                       |
+| **Initial    | visible                                             |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| *            | Defines whether the element box generated by an     |
 | *Description** | element is rendered. This means authors can have    |
 |                | the element take up the space it would ordinarily   |
 |                | take up, while remaining completely invisible. The  |
 |                | value collapse is used in tables to remove columns  |
 |                | or rows from the table's layout.                    |
-+----------------+-----------------------------------------------------+
-| > **Examples** | ul.submenu {visibility: hidden;} tr.hide            |
+| **Examples** | ul.submenu {visibility: hidden;} tr.hide            |
 |                | {visibility: collapse;}                             |
-+----------------+-----------------------------------------------------+
 
 #### white-space Inh. N Anim. N
 
@@ -8840,82 +8729,57 @@ normal.
 
 > tt {white-space: pre;}
 
-+----------------+-----------------------------------------------------+
-| > **widows**   | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
-| > **Values**   | *&lt;integer&gt;*                                       |
-+----------------+-----------------------------------------------------+
-| > **Initial    | 2                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Block-level elements                                |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the minimum number of text lines within an  |
+| ------------------- | --------------------------------------------------- |
+| **widows**   | **Inh. N Anim. Y**                                  |
+| **Values**   | *&lt;integer&gt;*                                       |
+| **Initial value**   | 2                                                   |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | Block-level elements                                |
+| *            | Defines the minimum number of text lines within an  |
 | *Description** | element that can be left at the top of a page. This |
 |                | can affect the placement of page breaks within the  |
 |                | element.                                            |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p {widows: 4;} ul {widows: 2;}                      |
-+----------------+-----------------------------------------------------+
-| > **width**    | **Inh. N Anim. Y**                                  |
-+----------------+-----------------------------------------------------+
+| **Examples** | p {widows: 4;} ul {widows: 2;}                      |
+| **width**    | **Inh. N Anim. Y**                                  |
+
 
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 
 > auto
 
-  ------------------------------------------------------------------------
-                    For auto and percentage values, as declared;
-                    otherwise, an absolute length, unless the property
-                    does not apply to the element (then auto)
-  ----------------- ------------------------------------------------------
-  **Percentages**   Refer to the width of the containing block
-
-  **Applies to**    All elements except nonreplaced inline elements, table
-                    rows, and row groups
-
-  **Description**   Defines the width of an element's content area,
-                    outside of which padding, borders, and margins are
-                    added. This property is ignored for inline nonreplaced
-                    elements. Negative length and percentage values are
-                    not permitted.
+| ---------------- | ------------------------------------------------------ |
+|                  |  For auto and percentage values, as declared; |
+|                  |  otherwise, an absolute length, unless the property |
+|                  |  does not apply to the element (then auto) |
+|  **Percentages** |  Refer to the width of the containing block |
+|  **Applies to**  |  All elements except nonreplaced inline elements, table |
+|                  |  rows, and row groups |
+|  **Description** |  Defines the width of an element's content area, |
+|                  |  outside of which padding, borders, and margins are |
+|                  |  added. This property is ignored for inline nonreplaced
+|                   | elements. Negative length and percentage values are |
+|                   | not permitted. |
 
   **Examples**      table {width: 80%;}
-  ------------------------------------------------------------------------
 
 > #sidebar {width: 20%;}
 >
 > .figure img {width: 200px;}
 
-+----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. Y**                                  |
+|              | **Inh. Y Anim. Y**                                  |
 | **word-break** |                                                     |
-+================+=====================================================+
-| > **Values**   | normal &vert; break-all &vert; keep-all                     |
-+----------------+-----------------------------------------------------+
-| > **Initial    | normal                                              |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines how text should be wrapped in situations    |
+| **Values**   | normal &vert; break-all &vert; keep-all                     |
+| **Initial value**   | normal                                              |
+| **Computed value**  | As declared                                         |
+| **Applies to*   | All elements                                        |
+| *            | Defines how text should be wrapped in situations    |
 | *Description** | where it would not ordinarily be wrapped; for       |
 |                | example, a very long string of numbers containing   |
 |                | no spaces, such as the first thousand digits of pi. |
 |                | The value break-all permits user agents to break a  |
 |                | word (text string) at arbitrary points if it cannot |
 |                | find regular breakpoints within the word.           |
-+----------------+-----------------------------------------------------+
-| > **Examples** | td {word-break: break-all;} p {word-break: normal;} |
-+----------------+-----------------------------------------------------+
+| **Examples** | td {word-break: break-all;} p {word-break: normal;} |
 
 #### word-spacing Inh. Y Anim. Y
 
@@ -8940,32 +8804,25 @@ closer together.
 
 #### writing-mode Inh. Y Anim. Y
 
-  ------------------------------------------------------------------------
-  **Values**        horizontal-tb &vert; vertical-rl &vert; vertical-lr
-  ----------------- ------------------------------------------------------
-  **Initial value** horizontal-tb
-
-  **Computed        As declared
-  value**           
-
-  **Applies to**    All elements except table row groups, table column
-                    groups, table rows, table columns, Ruby base
-                    containers, and Ruby annotation containers
-
-  **Description**   Allows the author to change the writing method used to
-                    flow text and other inline content into the element.
-                    The vertical values are useful for languages that are
-                    primarily vertical, as is the case with many non-Roman
-                    languages. It is possible to have text from a normally
-                    horizontal language (e.g., German or Hebrew) flowed
-                    into a vertical writing mode, though the orientation
-                    of the characters may not be as expected (see
-                    text-orientation). Similarly, it's possible to take a
-                    normally vertical language and flow it horizontally
-                    with horizontal-tb.
-
-  **Examples**      &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;}
-  ------------------------------------------------------------------------
+| ---------------- | ---------------------------------------------------- |
+| **Values**       | horizontal-tb &vert; vertical-rl &vert; vertical-lr |
+|  **Initial value** | horizontal-tb |
+|  **Computed value** |      As declared |
+|  **Applies to**   | All elements except table row groups, table column |
+|                   | groups, table rows, table columns, Ruby base |
+|                   | containers, and Ruby annotation containers |
+|  **Description** |  Allows the author to change the writing method used to |
+|                  |  flow text and other inline content into the element. |
+|                  |  The vertical values are useful for languages that are |
+|                  |  primarily vertical, as is the case with many non-Roman |
+|                  |  languages. It is possible to have text from a normally |
+|                  |  horizontal language (e.g., German or Hebrew) flowed |
+|                  |  into a vertical writing mode, though the orientation |
+|                  |  of the characters may not be as expected (see |
+|                  |  text-orientation). Similarly, it's possible to take a |
+|                  |  normally vertical language and flow it horizontally |
+|                  |  with horizontal-tb. |
+|  **Examples**    |  &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} |
 
 > &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;}
 
@@ -9470,9 +9327,8 @@ maximum unit, 42 viewport minimum unit, 42 viewport width unit, 42
 visibility property, 182 :visited pseudo-class, 63 visual layout basics,
 13-17
 
-+---------------------------------------+------------------------------+
-| **W**                                 | **X**                        |
-|                                       |                              |
+| **W**                                 | **X**                         |
+| ------------------------------------- | ----------------------------- | 
 | weight, font, 127 white-space         | x-height (length unit), 41   |
 | property, 182 widows property, 183    | xml-stylesheet instruction,  |
 | width (see size) width property, 183  | 3                            |
@@ -9480,8 +9336,6 @@ visibility property, 182 :visited pseudo-class, 63 visual layout basics,
 | property, 184 writing-mode property,  | **Z** z-index property, 186  |
 | 185                                   |                              |
 |                                       | ZERO width (length unit), 41 |
-+=======================================+==============================+
-+---------------------------------------+------------------------------+
 
 ## About the Author
 
