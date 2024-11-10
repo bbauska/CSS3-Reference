@@ -224,12 +224,12 @@ the style attribute, and thus inline styles.
 A stylesheet can be embedded within an HTML document using the style
 element:
 <pre>
-**&lt;html&gt;&lt;head&gt;&lt;title&gt;**Stylin&apos;!**&lt;/title&gt;**
-**&lt;style** type=&quot;text/css&quot;**&gt; h1** {**color**: purple;}
-**p** {**font-size**: smaller; **color**: gray;}
-**&lt;/style&gt;**
-**&lt;/head&gt;** &hellip;
-**&lt;/html&gt;**
+<b>&lt;html&gt;&lt;head&gt;&lt;title&gt;</b>Stylin&apos;!<b>&lt;/title&gt;</b>
+<b>&lt;style</b> type=&quot;text/css&quot;<b>&gt; h1</b> {<b>color</b>: purple;}
+<b>p</b> {<b>font-size</b>: smaller; <b>color</b>: gray;}
+<b>&lt;/style&gt;</b>
+<b>&lt;/head&gt;</b> &hellip;
+<b>&lt;/html&gt;</b>
 </pre>
 
 XML-based languages may or may not provide an equivalent capability;
@@ -248,41 +248,41 @@ network calls, although this downside will disappear as HTTP/2 usage
 increases.
 An external stylesheet can be referenced in one of three ways.
 
-**&#64;import directive**
+<b>&#64;import directive</b>
 One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
 stylesheet:
 <!-- page 3 -->
 <pre>
-**&lt;head&gt;&lt;title&gt;**My Document**&lt;/title&gt;**
-**&lt;style** type=&quot;text/css&quot;**&gt;**
-**&#64;import** url(site.css);
-**&#64;import** url(navbar.css);
-**&#64;import** url(footer.css) **screen** **and** (**min-width**:
+<b>&lt;head&gt;&lt;title&gt;</b>My Document<b>&lt;/title&gt;</b>
+<b>&lt;style</b> type=&quot;text/css&quot;<b>&gt;</b>
+<b>&#64;import</b> url(site.css);
+<b>&#64;import</b> url(navbar.css);
+<b>&#64;import</b> url(footer.css) <b>screen</b> <b>and</b> (<b>min-width</b>:
 960px);
-**body** {**background**: yellow;}
-**&lt;/style&gt;**
-**&lt;/head&gt;**
+<b>body</b> {<b>background</b>: yellow;}
+<b>&lt;/style&gt;</b>
+<b>&lt;/head&gt;</b>
 </pre>
 
 Note that &#64;import directives can appear at the top (and, according to
 the specification, *only* at the top) of any stylesheet. Thus, one
 stylesheet could import another, which in turn would import a third.
-**link element**
+<b>link element</b>
 In HTML documents, the link element can be used to associate a
 stylesheet with a document. Multiple link elements are permitted. The
 media attribute can be used to restrict a stylesheet to one or more
 media environments:
 
 <pre>
-**&lt;head&gt;**
-**&lt;title&gt;**A Document**&lt;/title&gt;**
-**&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
-media=&quot;all&quot;**&gt;**
-**&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;web.css&quot;
-media=&quot;screen and (max-width: 960px)&quot;**&gt;**
-**&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
-media=&quot;print and (color-depth: 2)&quot;**&gt; &lt;/head&gt;**
+<b>&lt;head&gt;</b>
+<b>&lt;title&gt;</b>A Document<b>&lt;/title&gt;</b>
+<b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
+media=&quot;all&quot;<b>&gt;</b>
+<b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;web.css&quot;
+media=&quot;screen and (max-width: 960px)&quot;<b>&gt;</b>
+<b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
+media=&quot;print and (color-depth: 2)&quot;<b>&gt; &lt;/head&gt;</b>
 </pre>
 
 It is also possible to link to alternate stylesheets, but few browsers
@@ -290,7 +290,7 @@ provide a way for users to make use of them. As of this writing, most or
 all known user agents load all linked stylesheets, including the
 alternate stylesheets, regardless of whether the user ever needs them.
 
-**xml-stylesheet processing instruction**
+<b>xml-stylesheet processing instruction</b>
 
 In XML documents (such as XHTML documents sent with a MIME type of
 text/xml, application/xml, or application/ xhtml+xml), an xml-stylesheet
@@ -298,7 +298,7 @@ processing instruction can be used to associate a stylesheet with a
 document. Any xmlstylesheet processing instructions must be placed in
 the prolog of an XML document. Multiple xml-stylesheet processing
 
-**Adding Styles to HTML**
+<b>Adding Styles to HTML</b>
 <!-- page 4 -->
 instructions are permitted. The media pseudo-attribute can be used to
 restrict a stylesheet to one or more forms of media:
@@ -312,7 +312,7 @@ media=&quot;screen&quot;?&gt;
 media=&quot;print&quot;?&gt;
 </pre>
 
-**HTTP Link headers**
+<b>HTTP Link headers</b>
 The last (and least common by far) way of associating an external
 stylesheet with your pages is to use an HTTP Link header. This approach
 uses HTTP headers to replicate the effects of a link element or &#64;import
@@ -371,7 +371,7 @@ case-sensitive. Legal values for a property are defined by the property
 description. Chapter 4 provides details on acceptable values for CSS
 properties.
 
-**Rule Structure**
+<b>Rule Structure</b>
 <!-- page 6 -->
 ## At-rules
 A CSS *at-rule* is a statement or block of rules that begins with a
@@ -441,10 +441,10 @@ This is a continuation of the comment.
 And so is this. &ast;/
 They can also occur anywhere within a stylesheet except in the middle of
 a property name or value:
-**Comments**
+<b>Comments</b>
 
 <pre>
-**h1***/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
+<b>h1</b>*/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
 rgba(23,58,89,0.42) */&ast; RGB + opacity &ast;/*;}
 </pre>
 HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
@@ -501,7 +501,7 @@ identifier (0,0,1,0).
 The !important directive gives a declaration more weight than
 nonimportant declarations. The declaration retains the specificity of
 its selectors and is used only in comparison with other important
-declarations. **Inheritance**
+declarations. <b>Inheritance</b>
 
 The elements in a document form a treelike hierarchy, with the root
 element at the top and the rest of the document structure spreading out
@@ -524,7 +524,7 @@ Note that some properties are not inherited. A property will always
 define whether it is inherited. Some examples of noninherited properties
 are padding, border, margin, and background.
 
-**Style Precedence**
+<b>Style Precedence</b>
 
 ### The Cascade
 The cascade is how CSS resolves conflicts between styles; in other
