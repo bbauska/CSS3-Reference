@@ -1,13 +1,14 @@
+<!-- page i -->
 ![](images/media/image5.jpg){width="4.25in" height="7.0in"}
+<!-- page ii -->
+**CSS Pocket Reference**
 
-> **CSS Pocket Reference**
-
-# FIFTH EDITION
+### FIFTH EDITION
 
 ***Eric A. Meyer***
 
-> ![](images/media/image6.jpg){width="2.850301837270341in"
-> height="0.18005686789151357in"}
+![](images/media/image6.jpg){width="2.850301837270341in"
+height="0.18005686789151357in"}
 
 **CSS Pocket Reference** by Eric A. Meyer
 
@@ -52,7 +53,7 @@ complies with such licenses and/or rights.
 978-1-492-03339-4
 
 &lbrack;M&rbrack;
-
+<!-- page iii -->
 **Table of Contents**
 
 **Preface v**
@@ -74,6 +75,7 @@ complies with such licenses and/or rights.
 
 ## Chapter 2: Values 35
 > Keywords 35 Color Values 36
+<!-- page iv -->
 > Number Values 39
 > Percentage Values 39
 > Length Values 39
@@ -106,6 +108,7 @@ Universal Values 75
 Properties 75 **Index 187**
 
 ### iv &vert; Table of Contents
+<!-- page v -->
 # Preface
 Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
 standard for the visual presentation of web pages (although it can be
@@ -124,6 +127,7 @@ Shows text that should be replaced with user-supplied values or by
 values determined by context.
 Constant width
 Used to show the contents of files, or the output from commands.
+<!-- page vi -->
 There are further conventions relating to value syntax. These are
 explained at the beginning of Chapter 4.
 
@@ -155,6 +159,7 @@ Members have access to thousands of books, training videos, Learning
 Paths, interactive tutorials, and curated playlists from
 
 ### vi &vert; Preface
+<!-- page vii -->
 over 250 publishers, including O'Reilly Media, Harvard Business Review,
 Prentice Hall Professional, Addison-Wesley Professional, Microsoft
 Press, Sams, Que, Peachpit Press, Adobe, Focal Press, Cisco Press, John
@@ -166,7 +171,6 @@ For more information, please visit
 [*http://oreilly.com/safari*.](http://oreilly.com/safari)
 
 ## How to Contact Us
-
 Visit Eric A. Meyer's website at
 [*http://meyerweb.com/*](http://meyerweb.com/) or follow
 [&#64;meyerweb](http://twitter.com/#!/meyerweb) on Twitter.
@@ -194,7 +198,9 @@ Watch us on YouTube:
 [*http://www.youtube.com/oreillymedia*](http://www.youtube.com/oreillymedia)
 
 **Preface &vert;**
+<!-- page 1 -->
 **CHAPTER 1 Basic Concepts**
+
 ## Adding Styles to HTML
 Styles can be applied to documents in three distinct ways, as discussed
 in the following sections. **Inline Styles**
@@ -213,18 +219,18 @@ attribute, it is unlikely that *all* XML languages will support a
 similar capability. Because of this---and especially because it
 encourages poor authoring practices---authors are discouraged from using
 the style attribute, and thus inline styles.
-
+<!-- page 2 -->
 ### Embedded Stylesheets
 A stylesheet can be embedded within an HTML document using the style
 element:
-```
+<pre>
 **&lt;html&gt;&lt;head&gt;&lt;title&gt;**Stylin&apos;!**&lt;/title&gt;**
 **&lt;style** type=&quot;text/css&quot;**&gt; h1** {**color**: purple;}
 **p** {**font-size**: smaller; **color**: gray;}
 **&lt;/style&gt;**
 **&lt;/head&gt;** &hellip;
 **&lt;/html&gt;**
-```
+</pre>
 
 XML-based languages may or may not provide an equivalent capability;
 always check the document type definition (DTD) to be certain.
@@ -246,7 +252,8 @@ An external stylesheet can be referenced in one of three ways.
 One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
 stylesheet:
-```
+<!-- page 3 -->
+<pre>
 **&lt;head&gt;&lt;title&gt;**My Document**&lt;/title&gt;**
 **&lt;style** type=&quot;text/css&quot;**&gt;**
 **&#64;import** url(site.css);
@@ -256,7 +263,7 @@ stylesheet:
 **body** {**background**: yellow;}
 **&lt;/style&gt;**
 **&lt;/head&gt;**
-```
+</pre>
 
 Note that &#64;import directives can appear at the top (and, according to
 the specification, *only* at the top) of any stylesheet. Thus, one
@@ -267,7 +274,7 @@ stylesheet with a document. Multiple link elements are permitted. The
 media attribute can be used to restrict a stylesheet to one or more
 media environments:
 
-```
+<pre>
 **&lt;head&gt;**
 **&lt;title&gt;**A Document**&lt;/title&gt;**
 **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
@@ -276,7 +283,7 @@ media=&quot;all&quot;**&gt;**
 media=&quot;screen and (max-width: 960px)&quot;**&gt;**
 **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
 media=&quot;print and (color-depth: 2)&quot;**&gt; &lt;/head&gt;**
-```
+</pre>
 
 It is also possible to link to alternate stylesheets, but few browsers
 provide a way for users to make use of them. As of this writing, most or
@@ -292,17 +299,18 @@ document. Any xmlstylesheet processing instructions must be placed in
 the prolog of an XML document. Multiple xml-stylesheet processing
 
 **Adding Styles to HTML**
+<!-- page 4 -->
 instructions are permitted. The media pseudo-attribute can be used to
 restrict a stylesheet to one or more forms of media:
 
-```
+<pre>
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;basic.css&quot;
 media=&quot;all&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;web.css&quot;
 media=&quot;screen&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;paper.css&quot;
 media=&quot;print&quot;?&gt;
-```
+</pre>
 
 **HTTP Link headers**
 The last (and least common by far) way of associating an external
@@ -314,20 +322,20 @@ Adding a line such as this to the *.htaccess* file at the root level of
 your server will make this happen for all pages on the site, where
 /style.css is the server path of the stylesheet to be loaded:
 Header add Link
-```
+<pre>
 &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
-```
+</pre>
 As an alternative to using *.htaccess*, which has been known to cause
 performance problems, you can edit your *httpd.conf* file to do the same
 thing:
-```
+<pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
-```
+</pre>
 Header add Link
-```
+<pre>
 &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 &lt;/Directory&gt; 
-```
+</pre>
 
 where /usr/local/username/httpdocs is replaced with the
 Unix pathname of your website's actual home directory, and /style.css is
@@ -337,6 +345,7 @@ most notably Internet Explorer and Safari. Thus, this technique is
 usually limited to production environments based on other user agents,
 and the occasional Easter egg for Firefox and Opera users.
 
+<!-- page 5 -->
 ## Rule Structure
 A stylesheet consists of one or more *rules* that describe how page
 elements should be presented. Every rule has two fundamental parts: the
@@ -363,6 +372,7 @@ description. Chapter 4 provides details on acceptable values for CSS
 properties.
 
 **Rule Structure**
+<!-- page 6 -->
 ## At-rules
 A CSS *at-rule* is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:
@@ -433,10 +443,10 @@ They can also occur anywhere within a stylesheet except in the middle of
 a property name or value:
 **Comments**
 
-```
+<pre>
 **h1***/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
 rgba(23,58,89,0.42) */&ast; RGB + opacity &ast;/*;}
-```
+</pre>
 HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
 stylesheets so as to hide the styles from browsers so old that they
 don't understand HTML 3.2. They do *not* act as CSS comments; that is,
@@ -458,6 +468,7 @@ associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
 
 *Table 1-1. Selector type specificity*
+
 | Selector type        | Example                       | Specificity |
 | ---------------------- | ------------------------------- | ------------- |
 | Universal selector   | &ast;                            | 0,0,0,0     |
@@ -1690,20 +1701,22 @@ origin image in backgrounds, object fitting, masking placement, and a
 few other circumstances. Its syntactical structure is rather
 complicated:
 
-> &lbrack;
->
-> &lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; *&lt;percentage&gt;* &vert;
-> *&lt;length&gt;* &rbrack; &vert;
->
-> &lbrack; left &vert; center &vert; right &vert; *&lt;percentage&gt;* &vert; *&lt;length&gt;* &rbrack;
->
-> &lbrack; top &vert; center &vert; bottom &vert; *&lt;percentage&gt;* &vert; *&lt;length&gt;* &rbrack; &vert;
->
-> &lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; *&lt;percentage&gt;* &vert; *&lt;length&gt;*
-> &rbrack;? &rbrack; &&
->
-> &lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; *&lt;percentage&gt;* &vert; *&lt;length&gt;*
-> &rbrack;? &rbrack; &rbrack;
+<pre>
+&lbrack;
+
+&lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; *&lt;percentage&gt;* &vert;
+*&lt;length&gt;* &rbrack; &vert;
+
+&lbrack; left &vert; center &vert; right &vert; *&lt;percentage&gt;* &vert; *&lt;length&gt;* &rbrack;
+
+&lbrack; top &vert; center &vert; bottom &vert; *&lt;percentage&gt;* &vert; *&lt;length&gt;* &rbrack; &vert;
+
+&lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; *&lt;percentage&gt;* &vert; *&lt;length&gt;*
+&rbrack;? &rbrack; &&
+
+&lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; *&lt;percentage&gt;* &vert; *&lt;length&gt;*
+&rbrack;? &rbrack; &rbrack;
+</pre>
 
 That might seem a little convoluted and repetitive, but it's all down to
 the subtly complex patterns that this value type has to allow, such as
@@ -1796,11 +1809,11 @@ in the sense of properties like color or font.
 Custom properties are defined by giving a custom identifier a value,
 like this:
 
-```
+<pre>
 **html** {
 &dash;-mainColor: #AEA434;
 }
-```
+</pre>
 
 The important thing is that any custom identifier of this type begins
 with *two* hyphens (&dash;-). Anything else, and the identifier will not be
@@ -1809,9 +1822,9 @@ recognized, meaning the variable definition will fail.
 The defined value can then be invoked later on using a var() value type,
 like this:
 
-```
+<pre>
 **h1** {**color**: var(&dash;-mainColor);}
-```
+</pre>
 
 Note that these names are case-sensitive, so &dash;-maincolor and
 &dash;-MainColor are completely separate identifiers. Custom properties are
@@ -1819,6 +1832,7 @@ scoped to the element to which they are applied.
 
 **Variable Values**
 **CHAPTER 3 Selectors and Queries**
+
 ## Selectors
 ### Universal Selector
 **Pattern** &ast;
@@ -1848,10 +1862,10 @@ purple;} element1 &gt; element2
 **Child Selector**
 **Pattern**
 **Description** Matches an element based on its status as a child of
-> another element. It is more restrictive than a descendant selector, as
-> only a child will be matched.
+another element. It is more restrictive than a descendant selector, as
+only a child will be matched.
 **Examples** div &gt; p {color: cyan;}
-> ul &gt; li {font-weight: bold;}
+ul &gt; li {font-weight: bold;}
 
 ### Adjacent Sibling Selector
 **Pattern** element1 + element2
@@ -1863,9 +1877,9 @@ tree are considered.
 
 **Examples** table + p {margin-top: 2.5em;}
 
-```
+<pre>
 h1 + &ast; {margin-top: 0;}
-```
+</pre>
 
 ### General Sibling Selector
 **Pattern** element1 &#126; element2
@@ -1875,14 +1889,13 @@ text or other elements between the two elements are ignored; only the
 elements and their positions in the document tree are considered.
 
 **Examples** h1 &#126; h2 {margin-top: 2.5em;}
-```
+<pre>
 nav a &#126; a {border-left: 1px solid border;}
-```
+</pre>
 ### Class Selector
 | --------------- | --------------------------------------------------- |
 | **Pattern**     | element1.classname                                  |
 |                 | element1.classname1.classname2                      |
-+================+=====================================================+
 | **Description** | In languages that permit it, such as HTML, SVG, and |
 |                | MathML, a class selector using "dot notation"       |
 |                | matches elements that have a class attribute        |
@@ -1902,7 +1915,6 @@ nav a &#126; a {border-left: 1px solid border;}
 | **ID         |                                                     |
 | Selector**   |                                                     |
 | **Pattern**  | element1#idname                                     |
-+----------------+-----------------------------------------------------+
 | **Description** | In languages that permit it, such as HTML or SVG, |
 |                | an ID selector selects elements that have an id     |
 |                | attribute containing a specific value. The name of  |
@@ -1922,7 +1934,6 @@ nav a &#126; a {border-left: 1px solid border;}
 | #example     |                                                     |
 | {background: |                                                     |
 | lime;}       |                                                     |
-+----------------+-----------------------------------------------------+
 
 **Selectors**
 
@@ -2023,9 +2034,9 @@ children of their parent element.
 type, as compared to all its sibling elements. Thus, div:first-of-type
 will select any div that is the first child div of another element.
 **Examples** td:first-of-type {border-left: 1px dotted;}
-```
+<pre>
 h2:first-of-type {color: fuchsia;}
-```
+</pre>
 | --------------- | ---------------------------------------------------- |
 | **:lang**    |                                                     |
 +================+=====================================================+
@@ -2054,13 +2065,13 @@ h2:first-of-type {color: fuchsia;}
 type, as compared to all its sibling elements. Thus, div:last-of-type
 will select any div that is the last child div of another element.
 **Examples** 
-```
+<pre>
 td:last-of-type {border-right: 1px dotted;} h2:last-of-type {color: fuchsia;}
-```
+</pre>
 Any element
-```
+<pre>
 :nth-child (a n± b)
-```
+</pre>
 **Applies to**
 
 **Description** Matches every *n*th child with the pattern of selection
@@ -2082,9 +2093,9 @@ In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 
 **Examples** &ast;:nth-child(4n+1) {font-weight: bold;}
-```
+<pre>
 tbody tr:nth-child(odd) {background-color: #EEF;}
-```
+</pre>
 
 ### :nth-last-child(*a*n±*b*)
 
@@ -2116,10 +2127,10 @@ between the various paragraphs. In place of the *a*n±*b* formula, there
 are two keywords permitted: even and odd. These are equivalent to 2n and
 2n+1, respectively.
 **Examples** td:nth-last-of-type(even) {
-```
+<pre>
 background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
 border: 2px solid;}
-```
+</pre>
 
 ### :nth-of-type(*a*n±*b*)
 
@@ -2137,9 +2148,9 @@ are interspersed between the various paragraphs.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 **Examples** td:nth-of-type(even) {background-color: #FCC;}
-```
+<pre>
 img:nth-of-type(3n) {float: right;}
-```
+</pre>
 
 ### :only-child
 **Applies to** Any element
@@ -2209,9 +2220,9 @@ grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
 Selectors Level 4.
 **Examples** ul &ast;:not(li) {text-indent: 2em;}
-```
+<pre>
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
-```
+<pre>
 
 ## Interaction Pseudo-Classes
 The pseudo-classes listed here are all related to the user's interaction
@@ -2243,9 +2254,9 @@ elements based on their being enabled or disabled.
 | rgba(127,    |                                                     |
 | 127,127,0.5);} |                                                     |
 
-```
+<pre>
 input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px;}
-```
+</pre>
 
 |  **:disabled** |                                                     |
 | **Applies to** | Any interaction element                             |
@@ -2327,8 +2338,9 @@ the URI to which the link points appears in the user agent's history.
 This state is mutually exclusive with the :link state.
 
 **Examples** a:visited {color: purple;}
-
-> &ast;:visited {color: gray;}
+<pre>
+&ast;:visited {color: gray;}
+</pre>
 
 ## Pseudo-Elements
 
