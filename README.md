@@ -1,28 +1,8 @@
-Eric A. Meyer
-
-VISUAL PRESENTATION FOR THE WEB
-
-C SS
-
-[P]{.underline}
-
-ocket
-
-[Referenc]{.underline}
-
-~~[e]{.underline}~~
-
-**5**
-
-**th Edition**
-
-**Covers CSS3**
-
 ![](images/media/image5.jpg){width="4.25in" height="7.0in"}
 
-# FIFTH EDITION
-
 > **CSS Pocket Reference**
+
+# FIFTH EDITION
 
 ***Eric A. Meyer***
 
@@ -32,9 +12,7 @@ ocket
 **CSS Pocket Reference** by Eric A. Meyer
 
 Copyright © 2018 O'Reilly Media, Inc. All rights reserved.
-
 Printed in the United States of America.
-
 Published by O'Reilly Media, Inc., 1005 Gravenstein Highway North,
 Sebastopol, CA 95472.
 
@@ -51,24 +29,9 @@ information, contact our corporate/institutional sales department:
 **Copyeditor:** Molly Ives Brower **Cover Designer:** Karen Montgomery
 **Proofreader:** Rachel Head **Illustrator:** Rebecca Demarest
 
-  -----------------------------------------------------------------------
-  May 2001:                                  First Edition
-  ------------------------------------------ ----------------------------
-  July 2004:                                 Second Edition
-
-  October 2004:                              Third Edition
-
-  July 2011:                                 Fourth Edition
-
-  April 2018:                                Fifth Edition
-  -----------------------------------------------------------------------
-
-**Revision History for the Fifth Edition**
-
 2018-04-02: First Release
 
-See
-[*http://oreilly.com/catalog/errata.csp?isbn=9781492033394*](http://oreilly.com/catalog/errata.csp?isbn=9781492033394)
+See <a href="http://oreilly.com/catalog/errata.csp?isbn=9781492033394">http://oreilly.com/catalog/errata.csp?isbn=9781492033394</a> 
 for release details.
 
 The O'Reilly logo is a registered trademark of O'Reilly Media, Inc. *CSS
@@ -95,126 +58,75 @@ complies with such licenses and/or rights.
 **Preface v**
 
 ## Chapter 1: Basic Concepts 1
-
 > Adding Styles to HTML 1
->
 > Rule Structure 5
->
 > At-rules 6
->
 > Comments 7
->
 > Style Precedence 8
->
 > Element Classification 10
->
 > Element Display Roles 11
->
 > Basic Visual Layout 13
->
 > Floating 17
->
 > Positioning 18
->
 > Flexible Box Layout 20
->
 > Grid Layout 22
->
 > Table Layout 27
 
 ## Chapter 2: Values 35
-
 > Keywords 35 Color Values 36
->
 > Number Values 39
->
 > Percentage Values 39
->
 > Length Values 39
->
 > Fraction Values 43
->
 > URIs 43
->
 > Angles 43
->
 > Times 43
->
 > Frequencies 44
->
 > Position 44
->
 > Strings 44
->
 > Identifiers 45
->
 > Attribute Values 45
->
 > Calculation Values 45
->
 > Variable Values 46
 
 ## Chapter 3: Selectors and Queries 49
-
 > Selectors 49
->
 > Structural Pseudo-Classes 53
->
 > The Negation Pseudo-Class 59
->
 > Interaction Pseudo-Classes 60
->
 > Pseudo-Elements 63
->
 > Media Queries 65
->
 > Feature Queries 70
 
 ## Chapter 4: Property Reference 73
-
 > Inheritance and Animation 73
->
 > Value Syntax Conventions 73
->
 > Universal Values 75
 
 Properties 75 **Index 187**
-
 ### iv &vert; Table of Contents
-
 # Preface
-
 Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
 standard for the visual presentation of web pages (although it can be
 used in other settings as well). After a short introduction to the key
 concepts of CSS, this pocket reference provides an alphabetical
 reference to all CSS3 selectors, followed by an alphabetical reference
 to CSS3 properties.
-
 ## Conventions Used in This Book
-
 The following typographical conventions are used in this book:
-
 *Italic*
-
 > Used to indicate new terms, URLs, filenames, file extensions,
 > directories, commands and options, and program names. For example, a
 > path in the filesystem will appear as *C:\\windows\\system*.
-
 *&lt;Italic&gt; inside angle brackets*
-
 > Shows text that should be replaced with user-supplied values or by
 > values determined by context.
-
 Constant width
-
 > Used to show the contents of files, or the output from commands.
-
 There are further conventions relating to value syntax. These are
 explained at the beginning of Chapter 4.
 
 ## Using Code Examples
-
 This book is here to help you get your job done. In general, you may use
 the code in this book in your programs and documentation. You do not
 need to contact us for permission unless you're reproducing a
@@ -230,24 +142,18 @@ We appreciate, but do not require, attribution. An attribution usually
 includes the title, author, publisher, and ISBN. For example: "*CSS
 Pocket Reference*, 5th Edition, by Eric A. Meyer (O'Reilly). Copyright
 2018 O'Reilly Media, Inc., 978-1-492-03339-4."
-
 If you feel your use of code examples falls outside fair use or the
 permission given above, feel free to contact us at
 *permissions@oreilly.com*.
 
 ## O'Reilly Safari
-
 > [*Safari*](http://oreilly.com/safari) (formerly Safari Books Online)
 > is a membership-based training and reference platform for enterprise,
-> government, educa‐
-
-tors, and individuals.
-
+> government, educators, and individuals.
 Members have access to thousands of books, training videos, Learning
 Paths, interactive tutorials, and curated playlists from
 
 ### vi &vert; Preface
-
 over 250 publishers, including O'Reilly Media, Harvard Business Review,
 Prentice Hall Professional, Addison-Wesley Professional, Microsoft
 Press, Sams, Que, Peachpit Press, Adobe, Focal Press, Cisco Press, John
@@ -263,63 +169,44 @@ For more information, please visit
 Visit Eric A. Meyer's website at
 [*http://meyerweb.com/*](http://meyerweb.com/) or follow
 [&#64;meyerweb](http://twitter.com/#!/meyerweb) on Twitter.
-
 Please address comments and questions concerning this book to the
 publisher:
-
 > O'Reilly Media, Inc.
->
 > 1005 Gravenstein Highway North
->
 > Sebastopol, CA 95472
->
 > 800-998-9938 (in the United States or Canada)
->
 > 707-829-0515 (international or local)
->
 > 707-829-0104 (fax)
 
 We have a web page for this book, where we list errata, examples, and
 any additional information. You can access this page at
 [*http://bit.ly/css-pocket-ref-5e*.](http://bit.ly/css-pocket-ref-5e)
-
 To comment or ask technical questions about this book, send email to
 *bookquestions@oreilly.com*.
-
 For more information about our books, courses, conferences, and news,
 see our website at [*http://www.oreilly.com*](http://www.oreilly.com/).
 Find us on Facebook:
 [*http://facebook.com/oreilly*](http://facebook.com/oreilly)
-
 Follow us on Twitter:
 [*http://twitter.com/oreillymedia*](http://twitter.com/oreillymedia)
-
 Watch us on YouTube:
 [*http://www.youtube.com/oreillymedia*](http://www.youtube.com/oreillymedia)
 
 **Preface &vert;**
-
 **CHAPTER 1 Basic Concepts**
-
 ## Adding Styles to HTML
-
 Styles can be applied to documents in three distinct ways, as discussed
 in the following sections. **Inline Styles**
-
 In HTML, style information can be specified for an individual element
 via the style attribute. The value of a style attribute is a
 *declaration block* (see the section "Rule Structure" on page 5) without
 the curly braces:
-
 &lt;p style=&quot;color: red; background: yellow;&quot;&gt;Look out!
-
 > This text is alarmingly presented!&lt;/p&gt;
-
 Note that as of this writing, only the content of a single declaration
 block can be used as a style attribute value. For example, it is not
 possible to place hover styles (using :hover) in a style attribute, nor
 can &#64;import be used in this context.
-
 Although typical XML document languages (such as SVG) support the style
 attribute, it is unlikely that *all* XML languages will support a
 similar capability. Because of this---and especially because it
@@ -327,31 +214,22 @@ encourages poor authoring practices---authors are discouraged from using
 the style attribute, and thus inline styles.
 
 ### Embedded Stylesheets
-
 A stylesheet can be embedded within an HTML document using the style
 element:
-
 > **&lt;html&gt;&lt;head&gt;&lt;title&gt;**Stylin&apos;!**&lt;/title&gt;**
->
 > **&lt;style** type=&quot;text/css&quot;**&gt; h1** {**color**: purple;}
->
 > **p** {**font-size**: smaller; **color**: gray;}
->
 > **&lt;/style&gt;**
->
 > **&lt;/head&gt;** &hellip;
->
 > **&lt;/html&gt;**
 
 XML-based languages may or may not provide an equivalent capability;
 always check the document type definition (DTD) to be certain.
-
 While style elements are often found inside the head element, as shown
 in the preceding example, this is not required. Sometimes stylesheets
 are embedded near the end of a document for performance reasons.
 
 ### External Stylesheets
-
 Styles can be stored in a separate file. The primary advantage to using
 a separate file is that when commonly used styles are collected in a
 single file, all pages using those styles can be updated by editing a
@@ -359,56 +237,39 @@ single stylesheet. A downside is that it's generally more efficient to
 embed all styles (and scripts) into an HTML document in order to reduce
 network calls, although this downside will disappear as HTTP/2 usage
 increases.
-
 An external stylesheet can be referenced in one of three ways.
 
 **&#64;import directive**
-
 One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
 stylesheet:
 
 > **&lt;head&gt;&lt;title&gt;**My Document**&lt;/title&gt;**
->
 > **&lt;style** type=&quot;text/css&quot;**&gt;**
->
 > **&#64;import** url(site.css);
->
 > **&#64;import** url(navbar.css);
->
 > **&#64;import** url(footer.css) **screen** **and** (**min-width**:
 > 960px);
->
 > **body** {**background**: yellow;}
->
 > **&lt;/style&gt;**
->
 > **&lt;/head&gt;**
 
 Note that &#64;import directives can appear at the top (and, according to
 the specification, *only* at the top) of any stylesheet. Thus, one
 stylesheet could import another, which in turn would import a third.
 **link element**
-
 In HTML documents, the link element can be used to associate a
 stylesheet with a document. Multiple link elements are permitted. The
 media attribute can be used to restrict a stylesheet to one or more
 media environments:
 
 > **&lt;head&gt;**
->
 > **&lt;title&gt;**A Document**&lt;/title&gt;**
->
 > **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
->
 > media=&quot;all&quot;**&gt;**
->
 > **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;web.css&quot;
->
 > media=&quot;screen and (max-width: 960px)&quot;**&gt;**
->
 > **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
->
 > media=&quot;print and (color-depth: 2)&quot;**&gt; &lt;/head&gt;**
 
 It is also possible to link to alternate stylesheets, but few browsers
@@ -425,23 +286,17 @@ document. Any xmlstylesheet processing instructions must be placed in
 the prolog of an XML document. Multiple xml-stylesheet processing
 
 **Adding Styles to HTML**
-
 instructions are permitted. The media pseudo-attribute can be used to
 restrict a stylesheet to one or more forms of media:
 
 > &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;basic.css&quot;
->
 > media=&quot;all&quot;?&gt;
->
 > &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;web.css&quot;
->
 > media=&quot;screen&quot;?&gt;
->
 > &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;paper.css&quot;
 > media=&quot;print&quot;?&gt;
 
 **HTTP Link headers**
-
 The last (and least common by far) way of associating an external
 stylesheet with your pages is to use an HTTP Link header. This approach
 uses HTTP headers to replicate the effects of a link element or &#64;import
@@ -450,39 +305,28 @@ directive.
 Adding a line such as this to the *.htaccess* file at the root level of
 your server will make this happen for all pages on the site, where
 /style.css is the server path of the stylesheet to be loaded:
-
 > Header add Link
->
 > &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
-
 As an alternative to using *.htaccess*, which has been known to cause
 performance problems, you can edit your *httpd.conf* file to do the same
 thing:
-
 > &lt;Directory /usr/local/username/httpdocs&gt;
->
 > Header add Link
->
 > &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
-
 &lt;/Directory&gt; where /usr/local/username/httpdocs is replaced with the
 Unix pathname of your website's actual home directory, and /style.css is
 replaced with the location of the stylesheet within that home directory.
-
 As of this writing, HTTP headers were not supported by all user agents,
 most notably Internet Explorer and Safari. Thus, this technique is
 usually limited to production environments based on other user agents,
 and the occasional Easter egg for Firefox and Opera users.
 
 ## Rule Structure
-
 A stylesheet consists of one or more *rules* that describe how page
 elements should be presented. Every rule has two fundamental parts: the
 *selector* and the *declaration block*. Figure 1-1 illustrates the
 structure of a rule.
-
 *Figure 1-1. Rule structure*
-
 On the left side of the rule, we find the selector, which selects the
 parts of the document to which the rule should be applied. Selectors can
 stand singly or be grouped as a comma-separated list; e.g., to select
@@ -491,13 +335,11 @@ h2, h3. On the right side of the rule, we have the declaration block. A
 declaration block is made up of one or more *declarations*; each
 declaration is a combination of a CSS *property* and a *value* of that
 property.
-
 The declaration block is always enclosed in curly braces. A declaration
 block can contain several declarations; each declaration must be
 terminated with a semicolon (;). The exception is the final declaration
 in a declaration block, for which the semicolon is optional (though
 recommended).
-
 Each property, which represents a particular stylistic parameter, is
 separated from its value by a colon (:). Property names in CSS are not
 case-sensitive. Legal values for a property are defined by the property
@@ -505,14 +347,10 @@ description. Chapter 4 provides details on acceptable values for CSS
 properties.
 
 **Rule Structure**
-
 ## At-rules
-
 A CSS *at-rule* is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:
-
 &#64;charset
-
 > Allows an author to define the encoding of the styles within the
 > stylesheet (e.g., &#64;charset &quot;utf-8&quot;;). This enables authors to
 > define the encoding of their styles even when they do not control the
@@ -521,7 +359,6 @@ specific identifier preceded by an @ sign. These are:
 > This *must* be the first line of a stylesheet in which it appears, and
 > *cannot* be preceded by any character. &#64;charset cannot be used in a
 > stylesheet embedded in a document.
-
 &#64;import
 
 > Allows an author to include the styles of another stylesheet (see
@@ -531,81 +368,56 @@ specific identifier preceded by an @ sign. These are:
 > all other parts of the stylesheet except for &#64;charset.
 
 &#64;namespace
-
 > Allows an author to define an XML namespace to be used in selectors
 > (e.g., &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting
 > the use of svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG
 > files differently than &lt;a&gt; elements in HTML). Multiple
->
 > &#64;namespace rules are permitted. Any &#64;namespace *must* appear before
 > all other parts of the stylesheet except for &#64;charset and &#64;import
 > rules.
-
 Besides these statements, there are a number of conditional atrules.
 These include: &#64;counter-style
-
 > Defines symbol and counting patterns used in CSS counters (e.g., the
 > numbering of list items in an ordered list).
-
 &#64;font-face
-
 > Defines an external font to be downloaded and used, including
 > definitions of the identifiers to be used in other style rules. This
 > is part of what is often called "web fonts" or "custom fonts."
-
 &#64;keyframes
-
 > Defines the states of various steps in an animation sequence, grouped
 > together under a unique identifier.
-
 &#64;media
-
 > Defines the media types and parameters in which a block of styles are
 > to be applied: e.g., writing &#64;media (maxwidth: 600px) and then the
 > styles to be used for smaller screens. This is the key to Responsive
 > Web Design.
-
 &#64;supports
-
 > Defines the browser-support conditions under which a block of styles
 > should be used: e.g., writing &#64;supports
 >
 > (display: grid) and then the styles that should be used in a CSS
 > Grid--supporting browser.
-
 There are other proposed at-rules which are, as of early 2018, at
 various stages of development. These include &#64;document,
 &#64;font-feature-values, &#64;page, and &#64;viewport.
-
 ## Comments
-
 Including comments in CSS is simple. You open with /&ast; and end with &ast;/,
 like this:
-
 /&ast; This is a comment! &ast;/ Comments can be multiple lines long:
-
 > /&ast; This is a comment!
->
 > This is a continuation of the comment.
->
 > And so is this. &ast;/
-
 They can also occur anywhere within a stylesheet except in the middle of
 a property name or value:
-
 **Comments**
-
 > **h1***/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
 > rgba(23,58,89,0.42) */&ast; RGB + opacity &ast;/*;}
-
 HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
 stylesheets so as to hide the styles from browsers so old that they
 don't understand HTML 3.2. They do *not* act as CSS comments; that is,
 anything contained in an HTML comment will be seen and interpreted by
 the CSS parser.
-
 ## Style Precedence
-
 A single HTML document can import and link to multiple external
 stylesheets, contain one or more embedded stylesheets, and make use of
 inline styles. In the process, it is quite possible that some rules will
@@ -613,38 +425,33 @@ conflict with one another. Cascading Style Sheets uses a mechanism
 called the *cascade* to resolve any such conflicts and arrive at a final
 set of styles to be applied to the document. Two key components of the
 cascade are specificity and inheritance.
-
 ### Specificity Calculations
-
 *Specificity* describes the weight of a selector and any declarations
 associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
-
 *Table 1-1. Selector type specificity*
-
-+------------------------+-------------------------------+-------------+
-| > Selector type        | Example                       | Specificity |
-+========================+===============================+=============+
-| > Universal selector   | &ast;                            | 0,0,0,0     |
-| > Combinator           |                               |             |
+| ---------------------- | ------------------------------- | ------------- |
+| Selector type        | Example                       | Specificity |
+| ---------------------- | ------------------------------- | ------------- |
+| Universal selector   | &ast;                            | 0,0,0,0     |
+| Combinator           |                               |             |
 |                        | &plus;                            |             |
-+------------------------+-------------------------------+-------------+
-| > Element identifier   | div ::first-line              | 0,0,0,1     |
-| >                      |                               |             |
-| > Pseudo-element       |                               |             |
-| > identifier           |                               |             |
-+------------------------+-------------------------------+-------------+
-| > Class identifier     | .warning                      | 0,0,1,0     |
-| >                      |                               |             |
-| > Pseudo-class         | :hover                        |             |
-| > identifier Attribute |                               |             |
-| > identifier           | &lbrack;type=&quot;checkbox&quot;&rbrack;         |             |
-+------------------------+-------------------------------+-------------+
-| > ID identifier        | #content                      | 0,1,0,0     |
-+------------------------+-------------------------------+-------------+
-| > Inline style         | style=&quot;color: red;&quot;         | 1,0,0,0     |
-| > attribute            |                               |             |
-+------------------------+-------------------------------+-------------+
+| ---------------------- | ------------------------------- | ------------- |
+| Element identifier   | div ::first-line              | 0,0,0,1     |
+|                       |                               |             |
+| Pseudo-element       |                               |             |
+| identifier           |                               |             |
+| ---------------------- | ------------------------------- | ------------- |
+| Class identifier     | .warning                      | 0,0,1,0     |
+|                       |                               |             |
+| Pseudo-class         | :hover                        |             |
+| identifier Attribute |                               |             |
+| identifier           | &lbrack;type=&quot;checkbox&quot;&rbrack;         |             |
+| ---------------------- | ------------------------------- | ------------- |
+| ID identifier        | #content                      | 0,1,0,0     |
+| ---------------------- | ------------------------------- | ------------- |
+| Inline style         | style=&quot;color: red;&quot;         | 1,0,0,0     |
+| attribute            |                               |             |
 
 Specificity values are cumulative; thus, a selector containing two
 element identifiers and a class identifier (e.g., div.aside p) has a
@@ -682,7 +489,6 @@ are padding, border, margin, and background.
 **Style Precedence**
 
 ### The Cascade
-
 The cascade is how CSS resolves conflicts between styles; in other
 words, it is the mechanism by which a user agent decides, for example,
 what color to make an element when two different rules apply to it and
@@ -716,7 +522,6 @@ preference dialog within a browser) are given the same weight as the
 user agent's default styles (see step 2 above).
 
 ## Element Classification
-
 Broadly speaking, CSS groups elements into two types: *nonreplaced* and
 *replaced*. Although the types may seem rather abstract, there actually
 are some profound differences in how the two types of elements are
@@ -725,7 +530,6 @@ presented. These differences are explored in detail in Chapter 7 of
 Edition](http://shop.oreilly.com/product/0636920012726.do) (O'Reilly).
 
 ### Nonreplaced Elements
-
 The majority of HTML elements are *nonreplaced elements*, which means
 their content is presented by the user agent inside a box generated by
 the element itself. For example, &lt;span&gt;hi there&lt;/span&gt; is a
@@ -734,7 +538,6 @@ agent. Paragraphs, headings, table cells, lists, and almost everything
 else in HTML are nonreplaced elements.
 
 ### Replaced Elements
-
 In contrast, *replaced elements* are those whose content is replaced by
 something not directly represented by document content. The most
 familiar HTML example is the img element, which is replaced by an image
@@ -752,12 +555,10 @@ radio button, checkbox, or text input box, depending on its type.
 Replaced elements also generate boxes in their display.
 
 ## Element Display Roles
-
 In addition to being replaced or not, there are two basic types of
 element display roles in CSS: *block-level* and *inline-level*. All
 
 **Element Display Roles**
-
 CSS display values fall into one of these two categories. It can be
 important to know which general role a box falls into, since some
 properties only apply to one type or the other. **Block-Level**
@@ -798,14 +599,12 @@ defined that the various Ruby-related values (e.g., ruby-text) also
 generate inline boxes, but this seems the most likely outcome.
 
 ## Basic Visual Layout
-
 CSS defines algorithms for laying out any element in a document. These
 algorithms form the underpinnings of visual presentation in CSS. There
 are two primary kinds of layout, each with very different behaviors:
 *block-level* and *inline-level* layout.
 
 ### Block-Level Layout
-
 A block-level box in CSS generates a rectangular box called the *element
 box*, which describes the amount of space occupied by an element. Figure
 1-2 shows the components of an element box.
@@ -813,7 +612,6 @@ box*, which describes the amount of space occupied by an element. Figure
 *Figure 1-2. The complete box model*
 
 **Basic Visual Layout**
-
 The following rules apply to an element box:
 
 -   By default, the background of the element box extends to the outer
@@ -846,7 +644,6 @@ The following rules apply to an element box:
     it. The same is true for height with respect to the height.
 
 ### Inline Layout
-
 An inline-level box in CSS generates one or more rectangular boxes
 called *inline boxes*. The following rules apply to inline boxes:
 
@@ -888,7 +685,6 @@ determined by taking the following factors into account:
 > of the anonymous text, as a space is a character like any other.
 
 **Basic Visual Layout**
-
 *Em-box*
 
 > The space taken up by a capital letter M in the given font; otherwise
@@ -1173,7 +969,6 @@ A grid is made up of the following components, as illustrated in Figure
     on the block axis and row tracks are on the inline axis.
 
 **Grid Layout**
-
 *Figure 1-5. Grid layout components*
 
 The placement of grid lines can be quite complex, and is accomplished by
@@ -1242,7 +1037,6 @@ repeat( &lbrack; *&lt;integer&gt; &vert;* auto-fill *&vert;* auto-fit &rbrack; ,
 sizes as many times as they like. The *&lt;integer&gt;* value must be posi‐
 
 **Grid Layout**
-
 > tive. auto-fill and auto-fit delegate the number of tracks to the user
 > agent. *&lt;track-list&gt;* can be any valid combination of track sizes.
 
@@ -1299,7 +1093,6 @@ The details of each step are quite lengthy, and can be found in section
 documentation](https://www.w3.org/TR/css-grid-1/#layout-algorithm).
 
 ## Table Layout
-
 The layout of tables can get quite complicated, especially because CSS
 defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
@@ -1308,7 +1101,6 @@ table. Figure 1-6 illustrates the components of a table.
 *Figure 1-6. Table layout components*
 
 ### Table Arrangement Rules
-
 In general, a table is laid out according to the following principles:
 
 -   Each row box encompasses a single row of grid cells. All of the row
@@ -1346,7 +1138,6 @@ In general, a table is laid out according to the following principles:
     encloses it.
 
 ### Fixed Table Layout
-
 The fixed-layout model is fast because its layout doesn't depend on the
 contents of table cells; it's driven by the width values of the table,
 columns, and cells within the first row of the table. The fixed-layout
@@ -1445,7 +1236,6 @@ Once the last step is completed (and only then), the user agent can
 actually lay out the table.
 
 ### Collapsing Cell Borders
-
 The collapsing cell model largely describes how HTML tables have always
 been laid out when they have no cell spacing. The following rules govern
 this model:
@@ -1468,7 +1258,6 @@ this model:
     the hypothetical grid lines between the cells.
 
 **Collapsing borders**
-
 When two or more borders are adjacent, they collapse into each other, as
 shown in Figure 1-7. There are strict rules governing which borders will
 win and which will not:
@@ -1505,7 +1294,6 @@ win and which will not:
 *Figure 1-7. Collapsing cell borders model*
 
 ### Vertical Alignment Within Cells
-
 The following describes the detailed process for aligning cell contents
 within a row:
 
@@ -1526,14 +1314,12 @@ within a row:
     increased in order to match the height of the row.
 
 **CHAPTER 2 Values**
-
 There are a variety of value types in CSS, most of which use units.
 Combining basic value types (such as numbers) with units (such as
 pixels) makes it possible to do any number of interesting things with
 CSS.
 
 ## Keywords
-
 Keywords are defined on a per-property basis and have a meaning specific
 only to a given property. For example, normal has totally unique
 meanings for the properties font-variant and letter-spacing. Keywords,
@@ -1570,7 +1356,6 @@ an element to their default values, thus breaking any chains of
 inheritance, see the all property in Chapter 4.
 
 ## Color Values
-
 Color values can be expressed in a variety of ways:
 
 *#RRGGBB*
@@ -1632,7 +1417,6 @@ Color values can be expressed in a variety of ways:
 > can be
 
 **Color Values**
-
 declared, but they are normalized to the 0--360 range; thus, setting a
 hue angle of 454 is equivalent to setting an angle of 94. Any HSL value,
 regardless of color angle, will be rendered as a shade of gray if the
@@ -1677,7 +1461,6 @@ transparent
 > which is the computed value any time transparent is used.
 
 ## Number Values
-
 A number value is expressed as a positive or negative number
 
 (when permitted). Numbers can be either real (represented as
@@ -1688,7 +1471,6 @@ limit a number to be non-negative. These are sometimes represented as
 *&lt;non-negative number&gt;* or *&lt;non-negative integer&gt;*.
 
 ## Percentage Values
-
 A percentage value is expressed as a *&lt;number&gt;* followed immediately
 by a percent sign (%). There should never be any space between the
 number and the percent sign. A percentage value will always be computed
@@ -1698,14 +1480,12 @@ parent element. Fractional values, such as 543.21%, are valid. Some
 properties may restrict percentage values to be non-negative.
 
 ## Length Values
-
 A length value is expressed as a positive or negative number (when
 permitted), followed immediately by a unit identifier. There should
 never be any space between the number and the unit identifier. A length
 value of 0 (zero) does not require a unit identifier.
 
 **Number Values**
-
 Length units are divided into two types: *absolute units*, which are (in
 theory) always measured in the same way, and *relative units*, which are
 measured in relation to other things. **Absolute Length Units**
@@ -1789,7 +1569,6 @@ The available relative units are:
 > fonts, where all characters
 
 **Length Values**
-
 > are the same width. Since most proportional fonts have zeros that are
 > slimmer than the alphabetic symbols, setting something like width:
 > 60ch will often result in lines of text with fewer than 60 characters.
@@ -1843,7 +1622,6 @@ are permitted (e.g., calc() expressions, see "Calculation Values" on
 page 45).
 
 ## URIs
-
 A URI value (*&lt;uri&gt;*) is a reference to a file such as a graphic or
 another stylesheet. CSS defines a URI as relative to the stylesheet that
 contains it. URI stands for Uniform Resource Identifier, which is the
@@ -1853,7 +1631,6 @@ means that references to URIs will often appear in the form
 url(*&lt;uri&gt;*). Fun!
 
 ## Angles
-
 The format of an *&lt;angle&gt;* is expressed as a *&lt;number&gt;* followed
 immediately by an angle unit. There are four types of angle units:
 degrees (deg), grads (grad), radians (rad), and turns (turn). For
@@ -1863,7 +1640,6 @@ range 0 through 360. This is also true of negative values: −90deg is
 equivalent to 270deg.
 
 ## Times
-
 A time value (*&lt;time&gt;*) is expressed as a *&lt;number&gt;* followed
 immediately by a time unit. There are two types of time units: seconds
 (s) and milliseconds (ms). Time values appear in aural styles, which are
@@ -1873,7 +1649,6 @@ animations.
 **Fraction Values**
 
 ## Frequencies
-
 A frequency value (*&lt;frequency&gt;*) is expressed as a non-negative
 *&lt;number&gt;* followed immediately by a frequency unit. There are two
 types of frequency units: hertz (Hz) and kilohertz (kHz).
@@ -1883,7 +1658,6 @@ equivalent. As of this writing, frequency values are only used with
 aural styles, which are not well supported.
 
 ## Position
-
 A position value (*&lt;position&gt;*) is how you specify the placement of an
 origin image in backgrounds, object fitting, masking placement, and a
 few other circumstances. Its syntactical structure is rather
@@ -1910,7 +1684,6 @@ center, bottom right, 50% center, left 77px, and so on. The notation
 used here is described in "Value Syntax Conventions" on page 73.
 
 ## Strings
-
 A string (*&lt;string&gt;*) is a series of characters enclosed by either
 single or double quotes. If a string needs to include the same quote
 that encloses it, it must be escaped. For example,
@@ -1924,7 +1697,6 @@ string does contain a line feed for legibility reasons, it must be
 escaped and will be removed when processing the string.
 
 ## Identifiers
-
 There are some properties that accept an *identifier value*, which is a
 user-defined label of some kind; the most common examples are grid lines
 and areas in grid layout and keyframe names in animations. Identifiers
@@ -1948,14 +1720,12 @@ square bracket and trailing space. Any attribute, including HTML data-&ast;
 attributes, can be addressed in this manner.
 
 ## Calculation Values
-
 Calculation values take the form calc(), with an equation inside the
 parentheses. calc() can be used wherever *&lt;length&gt;*, *&lt;frequency&gt;*,
 *&lt;angle&gt;*, *&lt;time&gt;*, *&lt;percentage&gt;*, *&lt;number&gt;*, or
 *&lt;integer&gt;* values are allowed. You can also use all these unit
 
 **Identifiers**
-
 types within a calc() value, though there are some limitations to keep
 in mind.
 
@@ -1990,7 +1760,6 @@ side of the + and - operators, while it is not for &ast; and /. This avoids
 ambiguity with respect to numeric values, which can be negative.
 
 ## Variable Values
-
 As this book was being finished in early 2018, a new capability was
 being added to CSS. The technical term for this is *custom properties*,
 even though what these really do is create (sort of) variables in your
@@ -2000,11 +1769,11 @@ in the sense of properties like color or font.
 Custom properties are defined by giving a custom identifier a value,
 like this:
 
-> **html** {
->
-> &dash;-mainColor: #AEA434;
->
-> }
+```
+**html** {
+&dash;-mainColor: #AEA434;
+}
+```
 
 The important thing is that any custom identifier of this type begins
 with *two* hyphens (&dash;-). Anything else, and the identifier will not be
@@ -2013,22 +1782,19 @@ recognized, meaning the variable definition will fail.
 The defined value can then be invoked later on using a var() value type,
 like this:
 
-> **h1** {**color**: var(&dash;-mainColor);}
+```
+**h1** {**color**: var(&dash;-mainColor);}
+```
 
 Note that these names are case-sensitive, so &dash;-maincolor and
 &dash;-MainColor are completely separate identifiers. Custom properties are
 scoped to the element to which they are applied.
 
 **Variable Values**
-
 **CHAPTER 3 Selectors and Queries**
-
 ## Selectors
-
 ### Universal Selector
-
 **Pattern** &ast;
-
 **Description** Matches any element name in the document's language. If
 a rule does not have an explicit selector, the universal selector is
 inferred.
@@ -2038,44 +1804,30 @@ inferred.
 div &ast; p {color: blue;} element1
 
 **Type Selector**
-
 **Pattern**
-
 **Description** Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")
-
 **Examples** body {background: #FFF;} p {font-size: 1em;}
 
 ### Descendant Selector
-
 **Pattern** element1 element2 ...
-
 **Description** Matches elements based on their status as a descendant
 of another element. The matched element can be a child, grandchild,
 great-grandchild, etc. of the ancestor element. (CSS1 referred to these
 as "contextual selectors.")
-
 **Examples** body h1 {font-size: 200%;} table tr td div ul li {color:
 purple;} element1 &gt; element2
-
 **Child Selector**
-
 **Pattern**
-
 **Description** Matches an element based on its status as a child of
-
 > another element. It is more restrictive than a descendant selector, as
 > only a child will be matched.
-
 **Examples** div &gt; p {color: cyan;}
-
 > ul &gt; li {font-weight: bold;}
 
 ### Adjacent Sibling Selector
-
 **Pattern** element1 + element2
-
 **Description** Matches an element that is the following adjacent
 sibling of another element. (Sibling elements, as the name implies,
 share the same parent element.) Any anonymous text nodes between the two
@@ -2084,31 +1836,28 @@ tree are considered.
 
 **Examples** table + p {margin-top: 2.5em;}
 
-> h1 + &ast; {margin-top: 0;}
+```
+h1 + &ast; {margin-top: 0;}
+```
 
 ### General Sibling Selector
-
 **Pattern** element1 &#126; element2
-
 **Description** Matches an element that is a sibling of another element
 which it follows in the document tree. Any
-
-> text or other elements between the two elements are ignored; only the
-> elements and their positions in the document tree are considered.
+text or other elements between the two elements are ignored; only the
+elements and their positions in the document tree are considered.
 
 **Examples** h1 &#126; h2 {margin-top: 2.5em;}
-
-> nav a &#126; a {border-left: 1px solid border;}
-
+```
+nav a &#126; a {border-left: 1px solid border;}
+```
 ### Class Selector
-
-+----------------+-----------------------------------------------------+
-| > **Pattern**  | element1.classname                                  |
-|                |                                                     |
-|                | element1.classname1.classname2                      |
+| --------------- | --------------------------------------------------- |
+| **Pattern**     | element1.classname                                  |
+|                 | element1.classname1.classname2                      |
 +================+=====================================================+
-| > *            | In languages that permit it, such as HTML, SVG, and |
-| *Description** | MathML, a class selector using "dot notation"       |
+| **Description** | In languages that permit it, such as HTML, SVG, and |
+|                | MathML, a class selector using "dot notation"       |
 |                | matches elements that have a class attribute        |
 |                | containing a specific value or values. The name of  |
 |                | the class value must immediately follow the dot.    |
@@ -2116,78 +1865,62 @@ which it follows in the document tree. Any
 |                | no element name precedes the dot, the selector      |
 |                | matches all elements bearing that class value or    |
 |                | values.                                             |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p.urgent {color: red;}                              |
+| **Examples**   | p.urgent {color: red;}                              |
 |                |                                                     |
 |                | a.external {font-style: italic;}                    |
 |                |                                                     |
 |                | .example {background: olive;}                       |
 |                |                                                     |
 |                | .note.caution {background: yellow;}                 |
+| **ID         |                                                     |
+| Selector**   |                                                     |
+| **Pattern**  | element1#idname                                     |
 +----------------+-----------------------------------------------------+
-| > **ID         |                                                     |
-| > Selector**   |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Pattern**  | element1#idname                                     |
-+----------------+-----------------------------------------------------+
-| > *            | In languages that permit it, such as HTML or SVG,   |
-| *Description** | an ID selector selects elements that have an id     |
+| **Description** | In languages that permit it, such as HTML or SVG, |
+|                | an ID selector selects elements that have an id     |
 |                | attribute containing a specific value. The name of  |
 |                | the ID value must immediately follow the octothorpe |
 |                | (#). If no element name precedes the octothorpe,    |
 |                | the selector matches all elements containing that   |
 |                | ID value.                                           |
-+----------------+-----------------------------------------------------+
 | **Examples**   |                                                     |
 | h1#page-title  |                                                     |
 | {font-size:    |                                                     |
 | 250%;}         |                                                     |
 |                |                                                     |
-| > body#home    |                                                     |
-| > {background: |                                                     |
-| > silver;}     |                                                     |
-| >              |                                                     |
-| > #example     |                                                     |
-| > {background: |                                                     |
-| > lime;}       |                                                     |
+| body#home    |                                                     |
+| {background: |                                                     |
+| silver;}     |                                                     |
+|               |                                                     |
+| #example     |                                                     |
+| {background: |                                                     |
+| lime;}       |                                                     |
 +----------------+-----------------------------------------------------+
 
 **Selectors**
 
 ### Simple Attribute Selector
-
 **Pattern** element1&lbrack;attr&rbrack;
-
 **Description** Matches elements based on the presence of an
-
-> attribute, regardless of the attribute's value.
+attribute, regardless of the attribute's value.
 
 **Examples** a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
-
 p&lbrack;class&rbrack; {border: 1px dotted silver;} **Exact Attribute Value
 Selector**
-
 **Pattern** element1&lbrack;attr=&quot;value&quot;&rbrack;
-
 **Description** Matches elements based on the precise and complete value
 of an attribute.
-
 **Examples** a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
 
 ### p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} Partial Attribute Value Selector
-
 **Pattern** element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
-
 **Description** Matches elements based on a portion of the
 spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;*value*&quot;&rbrack;
 is equivalent to *.value* (see above).
-
 **Examples** a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
 
 ### p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} Beginning Substring Attribute Value Selector
-
 **Pattern** element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
-
 **Description** Matches elements based on a substring at the very
 beginning of an attribute's value.
 
@@ -2195,29 +1928,21 @@ beginning of an attribute's value.
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 
 ### Ending Substring Attribute Value Selector
-
 **Pattern** element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
-
 **Description** Matches elements based on a substring at the very end of
 an attribute's value.
-
 **Example** a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 
 ### Arbitrary Substring Attribute Value Selector
-
 **Pattern** element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
-
 **Description** Matches elements based on a substring found anywhere
 within an attribute's value.
 
 **Examples** a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
-
-> div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
+ div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
 
 ### Language Attribute Selector
-
 **Pattern** element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
-
 **Description** Matches elements with a lang attribute whose value is
 one of a hyphen-separated list of values, starting with the value
 provided in the selector.
@@ -2239,14 +1964,11 @@ intrinsically about patterns found in the structure of the document: for
 example, selecting every other paragraph or elements that are the last
 children of their parent element.
 
-+----------------+-----------------------------------------------------+
-| > **:empty**   |                                                     |
-+================+=====================================================+
-| > **Applies    | Any element                                         |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches elements that have no child nodes---that    |
-| *Description** | is, no child elements *or* content nodes. Content   |
+| -------------- | ---------------------------------------------------- |
+| **:empty**   |                                                     |
+| **Applies to** | Any element                                         |
+| **Description** | Matches elements that have no child nodes---that    |
+|                | is, no child elements *or* content nodes. Content   |
 |                | nodes are defined as any text, whitespace, entity   |
 |                | reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is    |
 |                | *not* empty because it has a single whitespace      |
@@ -2255,97 +1977,63 @@ children of their parent element.
 |                | this pseudo-class does *not* apply to empty         |
 |                | elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so |
 |                | on.                                                 |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p:empty {padding: 1em; background: red;}            |
+| **Examples** | p:empty {padding: 1em; background: red;}            |
 |                | div:not(:empty) {border: 1px solid;                 |
 |                |                                                     |
 |                | padding: 1ch;} li:empty {display: none;}            |
-+----------------+-----------------------------------------------------+
-| > **           |                                                     |
-| :first-child** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any element                                         |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches an element when it is the first child of    |
-| *Description** | another element. Thus, div:first-child will select  |
+| ** :first-child** |                                                     |
+| **Applies to**    | Any element                                         |
+| **Description** | Matches an element when it is the first child of    |
+|                | another element. Thus, div:first-child will select  |
 |                | any div that is the first child of another element, |
 |                | *not* the first child element of any div.           |
-+----------------+-----------------------------------------------------+
-| > **Examples** | td:first-child {border-left: 1px solid;}            |
+| **Examples** | td:first-child {border-left: 1px solid;}            |
 |                | p:first-child {text-indent: 0; margin-top: 2em;}    |
-+----------------+-----------------------------------------------------+
 
 ### :first-of-type
-
 **Applies to** Any element
-
 **Description** Matches an element when it is the first child of its
 type, as compared to all its sibling elements. Thus, div:first-of-type
 will select any div that is the first child div of another element.
-
 **Examples** td:first-of-type {border-left: 1px dotted;}
-
-> h2:first-of-type {color: fuchsia;}
-
-+----------------+-----------------------------------------------------+
-| > **:lang**    |                                                     |
+```
+h2:first-of-type {color: fuchsia;}
+```
+| --------------- | ---------------------------------------------------- |
+| **:lang**    |                                                     |
 +================+=====================================================+
-| > **Applies    | Any element with associated language-encoding       |
-| > to**         | information.                                        |
-+----------------+-----------------------------------------------------+
-| > *            | Matches elements based on their human-language      |
-| *Description** | encoding. Such language information must be         |
+| **Applies to**    | Any element with associated language-encoding       |
+|                   | information.                                        |
+| **Description** | Matches elements based on their human-language      |
+|                 | encoding. Such language information must be         |
 |                | contained within, or otherwise associated with, the |
 |                | document---it cannot be assigned from CSS. The      |
 |                | handling of :lang is the same as for &vert;= attribute  |
 |                | selectors.                                          |
-+----------------+-----------------------------------------------------+
 | > **Examples** | html:lang(en) {background: silver;} &ast;:lang(fr)     |
 |                | {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}                    |
-+----------------+-----------------------------------------------------+
-| > *            |                                                     |
-| *:last-child** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any element                                         |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches an element when it is the last child of     |
-| *Description** | another element. Thus, div:last-child will select   |
+| **:last-child** |                                                     |
+| **Applies to**    | Any element                                         |
+| **Description** | Matches an element when it is the last child of     |
+|                | another element. Thus, div:last-child will select   |
 |                | any div that is the last child of another element,  |
 |                | *not* the last child element of any div.            |
-+----------------+-----------------------------------------------------+
 | > **Examples** | td:last-child {border-right: 1px solid;}            |
 |                | p:last-child {margin-bottom: 2em;}                  |
-+----------------+-----------------------------------------------------+
 
 ### :last-of-type
-
 **Applies to** Any element
-
 **Description** Matches an element when it is the last child of its
 type, as compared to all its sibling elements. Thus, div:last-of-type
 will select any div that is the last child div of another element.
-
-**Examples** td:last-of-type {border-right: 1px dotted;} h2:last-of-type
-{color: fuchsia;}
-
+**Examples** 
+```
+td:last-of-type {border-right: 1px dotted;} h2:last-of-type {color: fuchsia;}
+```
 Any element
-
-**:**
-
-**nth-child**
-
-**(**
-
-***a***
-
-**n±**
-
-***b***
-
-**)**
-
+```
+:nth-child (a n± b)
+```
 **Applies to**
 
 **Description** Matches every *n*th child with the pattern of selection
@@ -2354,21 +2042,22 @@ and n represents an infinite series of integers, counting forward from
 the first child. Thus, to select every fourth child of the body element,
 starting with the first child, you would write body &gt;
 
-> &ast;:nth-child(4n+1). This will select the first, fifth, ninth,
-> fourteenth, and so on children of the body.
->
-> If you literally wish to select the fourth, eighth, twelfth, and so on
-> children, you can modify the selector to body &gt; &ast;:nth-child(4n). It
-> is also possible for *b* to be negative: body &gt; &ast;:nth-child(4n-- 1)
-> selects the third, seventh, eleventh, fifteenth, and so on children of
-> the body.
->
-> In place of the *a*n±*b* formula, there are two keywords permitted:
-> even and odd. These are equivalent to 2n and 2n+1, respectively.
+&ast;:nth-child(4n+1). This will select the first, fifth, ninth,
+fourteenth, and so on children of the body.
+
+If you literally wish to select the fourth, eighth, twelfth, and so on
+children, you can modify the selector to body &gt; &ast;:nth-child(4n). It
+is also possible for *b* to be negative: body &gt; &ast;:nth-child(4n-- 1)
+selects the third, seventh, eleventh, fifteenth, and so on children of
+the body.
+
+In place of the *a*n±*b* formula, there are two keywords permitted:
+even and odd. These are equivalent to 2n and 2n+1, respectively.
 
 **Examples** &ast;:nth-child(4n+1) {font-weight: bold;}
-
-> tbody tr:nth-child(odd) {background-color: #EEF;}
+```
+tbody tr:nth-child(odd) {background-color: #EEF;}
+```
 
 ### :nth-last-child(*a*n±*b*)
 
@@ -2380,19 +2069,14 @@ and n represents an infinite series of integers, *counting backward from
 the last child*. Thus, to select every fourth-to-last child of the body
 element, starting with the last child, you would write body &gt;
 
-> &ast;:nth-last-child(4n+1). This is, in effect, the mirror image of
-> :nth-child.
->
-> In place of the *a*n±*b* formula, there are two keywords permitted:
-> even and odd. These are equivalent to 2n and 2n+1, respectively.
-
+&ast;:nth-last-child(4n+1). This is, in effect, the mirror image of :nth-child.
+In place of the *a*n±*b* formula, there are two keywords permitted:
+even and odd. These are equivalent to 2n and 2n+1, respectively.
 **Examples** &ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
 tr:nth-last-child(odd) { background-color: #EEF;}
 
 ### :nth-last-of-type(*a*n±*b*)
-
 **Applies to** Any element
-
 **Description** Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
 *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
@@ -2404,16 +2088,15 @@ other elements (e.g., lists, tables, or other elements) are interspersed
 between the various paragraphs. In place of the *a*n±*b* formula, there
 are two keywords permitted: even and odd. These are equivalent to 2n and
 2n+1, respectively.
-
 **Examples** td:nth-last-of-type(even) {
-
-> background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
-> border: 2px solid;}
+```
+background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
+border: 2px solid;}
+```
 
 ### :nth-of-type(*a*n±*b*)
 
 **Applies to** Any element
-
 **Description** Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
 *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
@@ -2421,22 +2104,18 @@ infinite series of integers, counting forward from the first such
 element. Thus, to select every third paragraph (p) that is a child of
 the body element, starting with the first such paragraph, you would
 write body &gt; p:nth-oftype(3n+1). This will select the first, fourth,
-
-> seventh, tenth, and so on child paragraphs of the body. This holds
-> true even if other elements (e.g., lists, tables, or other elements)
-> are interspersed between the various paragraphs.
->
-> In place of the *a*n±*b* formula, there are two keywords permitted:
-> even and odd. These are equivalent to 2n and 2n+1, respectively.
-
+seventh, tenth, and so on child paragraphs of the body. This holds
+true even if other elements (e.g., lists, tables, or other elements)
+are interspersed between the various paragraphs.
+In place of the *a*n±*b* formula, there are two keywords permitted:
+even and odd. These are equivalent to 2n and 2n+1, respectively.
 **Examples** td:nth-of-type(even) {background-color: #FCC;}
-
-> img:nth-of-type(3n) {float: right;}
+```
+img:nth-of-type(3n) {float: right;}
+```
 
 ### :only-child
-
 **Applies to** Any element
-
 **Description** Matches an element that is the only child element of its
 parent element. A common use case for this selector is to remove the
 border from any linked image, assuming that image is the only element in
@@ -2450,45 +2129,31 @@ parent.
 Any element
 
 **:**
-
 **only-of-type**
-
 **Applies to**
-
 **Description** Matches an element that is the only child element of its
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
 (such as divs within a div).
-
 **Examples** p em:only-of-type {font-weight: bold;} section
 article:only-of-type {margin: 2em 0 3em;} **:root**
-
 **Applies to** The root element
-
 **Description** This matches the document's root element, which in HTML
 is always the html element. In SVG, it is the svg element. In XML
 formats, the root element can have any name; thus, a generic
 root-element selector is needed.
-
 **Examples** :root {font: medium serif;} :root &gt; &ast; {margin: 1.5em 0;}
 
 ## The Negation Pseudo-Class
-
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
-
-+----------------+-----------------------------------------------------+
-| >              |                                                     |
+| -------------- | --------------------------------------------------- |
 |  **:not(*e*)** |                                                     |
-+================+=====================================================+
-| > **Applies    | Any element                                         |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches every element that is *not* described by    |
-| *Description** | the simple selector *e*. For example, you can       |
+| **Applies to** | Any element                                         |
+| **Description** | Matches every element that is *not* described by    |
+|                | the simple selector *e*. For example, you can       |
 |                | select every element that is not a paragraph by     |
 |                | stating &ast;:not(p).                                  |
-|                |                                                     |
 |                | More usefully, negation can be used within the      |
 |                | context of descendant selectors. An example of this |
 |                | would be selecting every element within a table     |
@@ -2510,152 +2175,110 @@ that it deserves its own subsection.
 |                | &ast;:focus:not(a). To select any element that isn't   |
 |                | either a paragraph or a section, use                |
 |                | &ast;:not(p):not(section).                             |
-+----------------+-----------------------------------------------------+
 
 ### The Negation Pseudo-Class 
-
-> As of early 2018, the "simple selector" restriction means that
-> grouped, descendant, and combined selectors are not permitted within
-> :not() expressions. This restriction is being loosened in CSS
-> Selectors Level 4.
-
+As of early 2018, the "simple selector" restriction means that
+grouped, descendant, and combined selectors are not permitted within
+:not() expressions. This restriction is being loosened in CSS
+Selectors Level 4.
 **Examples** ul &ast;:not(li) {text-indent: 2em;}
-
-> &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0
-> 1em;}
+```
+&ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
+```
 
 ## Interaction Pseudo-Classes
-
 The pseudo-classes listed here are all related to the user's interaction
 with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.
 
-+----------------+-----------------------------------------------------+
-| > **:active**  |                                                     |
-+================+=====================================================+
-| > **Applies    | Any interaction element                             |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches an element during the period in which it is |
-| *Description** | being activated. The most common example is         |
+|  **:active**  |                                                     |
+|  **Applies to**    | Any interaction element                             |
+|  *Description*            | Matches an element during the period in which it is |
+|                     | being activated. The most common example is         |
 |                | clicking on a hyperlink in an HTML document: while  |
 |                | the mouse button is being held down, the link is    |
 |                | active. There are other ways to activate elements,  |
 |                | and other elements can in theory be activated,      |
 |                | although CSS doesn't define them.                   |
-+----------------+-----------------------------------------------------+
-| > **Examples** | a:active {color: red;} &ast;:active {background:       |
+|  **Examples** | a:active {color: red;} &ast;:active {background:       |
 |                | blue;}                                              |
-+----------------+-----------------------------------------------------+
-| > **:checked** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any interaction element that has an on/off state    |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches any user interface element that has been    |
-| *Description** | "toggled on," such as a checked checkbox or a       |
+|  **:checked** |                                                     |
+|  **Applies to**   | Any interaction element that has an on/off state    |
+| **Description** | Matches any user interface element that has been    |
+|                 | "toggled on," such as a checked checkbox or a       |
 |                | filled radio button.                                |
-+----------------+-----------------------------------------------------+
-| > **Examples** |                                                     |
-| >              |                                                     |
+| **Examples** |                                                     |
+|              |                                                     |
 |  input:checked |                                                     |
-| > { outline:   |                                                     |
-| > 3px solid    |                                                     |
-| > rgba(127,    |                                                     |
+| { outline:   |                                                     |
+| 3px solid    |                                                     |
+| rgba(127,    |                                                     |
 | 127,127,0.5);} |                                                     |
-+----------------+-----------------------------------------------------+
 
+```
 input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px;}
+```
 
-+----------------+-----------------------------------------------------+
-| >              |                                                     |
 |  **:disabled** |                                                     |
-+================+=====================================================+
-| > **Applies    | Any interaction element                             |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches user interface elements that are not able   |
-| *Description** | to accept user input because of language attributes |
+| **Applies to** | Any interaction element                             |
+| **Description** | Matches user interface elements that are not able   |
+|                 | to accept user input because of language attributes |
 |                | or other nonpresentational means; for example,      |
 |                | &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note     |
 |                | that :disabled does *not* apply when an input       |
 |                | element has simply been removed from the viewport   |
 |                | with properties like position or display.           |
-+----------------+-----------------------------------------------------+
-| > **Example**  | input:disabled {opacity: 0.5;}                      |
-+----------------+-----------------------------------------------------+
-| > **:enabled** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any interaction element                             |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches user interface elements that are able to    |
-| *Description** | accept user input and that can be set to "enabled"  |
+| **Example**  | input:disabled {opacity: 0.5;}                      |
+| **:enabled** |                                                     |
+| **Applies to**    | Any interaction element                             |
+| **Description** | Matches user interface elements that are able to    |
+|                 | accept user input and that can be set to "enabled"  |
 |                | and "disabled" states through the markup language   |
 |                | itself. This includes any form input element in     |
 |                | (X)HTML, but does not include hyperlinks.           |
-+----------------+-----------------------------------------------------+
-| > **Example**  | input:enabled {background: #FCC;}                   |
-+----------------+-----------------------------------------------------+
-| > **:focus**   |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any interaction element                             |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches an element during the period in which it    |
-| *Description** | has focus. One example from HTML is an input box    |
+| **Example**  | input:enabled {background: #FCC;}                   |
+| **:focus**   |                                                     |
+| **Applies to**   | Any interaction element                             |
+| **Description** | Matches an element during the period in which it    |
+|                 | has focus. One example from HTML is an input box    |
 |                | that has the text-input cursor within it such that  |
 |                | when the user starts typing, text will be entered   |
 |                | into that box. Other elements, such as hyperlinks,  |
 |                | can also have focus; however, CSS does not define   |
 |                | which elements may or may not have focus.           |
-+----------------+-----------------------------------------------------+
-| > **Examples** |                                                     |
-| > a:focus      |                                                     |
-| > {outline:    |                                                     |
-| > 1px dotted   |                                                     |
-| > red;}        |                                                     |
-| > input:focus  |                                                     |
-| > {background: |                                                     |
-| > yellow;}     |                                                     |
-+----------------+-----------------------------------------------------+
+| **Examples** |                                                     |
+| a:focus      |                                                     |
+| {outline:    |                                                     |
+| 1px dotted   |                                                     |
+| red;}        |                                                     |
+| input:focus  |                                                     |
+| {background: |                                                     |
+| yellow;}     |                                                     |
 
 **Interaction Pseudo-Classes**
 
-+----------------+-----------------------------------------------------+
-| > **:hover**   |                                                     |
-+================+=====================================================+
-| > **Applies    | Any interaction element                             |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches an element during the period in which it is |
-| *Description** | being *hovered* over (when the user is designating  |
+| **:hover**   |                                                     |
+| **Applies to** | Any interaction element                             |
+| **Description** | Matches an element during the period in which it is |
+|                 | being *hovered* over (when the user is designating  |
 |                | an element without activating it). The most common  |
 |                | example of this is moving the mouse pointer inside  |
 |                | the boundaries of a hyperlink in an HTML document.  |
 |                | Other elements can in theory be hovered over,       |
 |                | although CSS doesn't define which ones.             |
-+----------------+-----------------------------------------------------+
-| > **Examples** | a&lbrack;href&rbrack;:hover {text-decoration: underline;}       |
+| **Examples** | a&lbrack;href&rbrack;:hover {text-decoration: underline;}       |
 |                |                                                     |
 |                | p:hover {background: yellow;}                       |
-+----------------+-----------------------------------------------------+
-| > **:link**    |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | A hyperlink to a resource that has not been visited |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Matches a link to a URI that has not been visited;  |
-| *Description** | that is, the URI to which the link points does not  |
+| **:link**    |                                                     |
+| **Applies to** | A hyperlink to a resource that has not been visited |
+| **Description** | Matches a link to a URI that has not been visited;  |
+|                 | that is, the URI to which the link points does not  |
 |                | appear in the user agent's history. This state is   |
 |                | mutually exclusive with the :visited state.         |
-+----------------+-----------------------------------------------------+
-| > **Examples** | a:link {color: blue;} &ast;:link {text-decoration:     |
+| **Examples** | a:link {color: blue;} &ast;:link {text-decoration:     |
 |                | underline;}                                         |
-+----------------+-----------------------------------------------------+
-| > **:target**  |                                                     |
-+----------------+-----------------------------------------------------+
+| **:target**  |                                                     |
 
 **Applies to** Any element
 
