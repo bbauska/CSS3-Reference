@@ -32,7 +32,7 @@ information, contact our corporate/institutional sales department:
 
 2018-04-02: First Release
 
-See <a href="http://oreilly.com/catalog/errata.csp?isbn=9781492033394">http://oreilly.com/catalog/errata.csp?isbn=9781492033394</a> 
+See <a href="http://oreilly.com/catalog/errata.csp?isbn=9781492033394">http://oreilly.com/catalog/errata.csp?isbn=9781492033394</a
 for release details.
 
 The O'Reilly logo is a registered trademark of O'Reilly Media, Inc. *CSS
@@ -59,46 +59,46 @@ complies with such licenses and/or rights.
 **Preface v**
 
 ## Chapter 1: Basic Concepts 1
-> Adding Styles to HTML 1
-> Rule Structure 5
-> At-rules 6
-> Comments 7
-> Style Precedence 8
-> Element Classification 10
-> Element Display Roles 11
-> Basic Visual Layout 13
-> Floating 17
-> Positioning 18
-> Flexible Box Layout 20
-> Grid Layout 22
-> Table Layout 27
+Adding Styles to HTML 1
+Rule Structure 5
+At-rules 6
+Comments 7
+Style Precedence 8
+Element Classification 10
+Element Display Roles 11
+Basic Visual Layout 13
+Floating 17
+Positioning 18
+Flexible Box Layout 20
+Grid Layout 22
+Table Layout 27
 
 ## Chapter 2: Values 35
-> Keywords 35 Color Values 36
+Keywords 35 Color Values 36
 <!-- page iv -->
-> Number Values 39
-> Percentage Values 39
-> Length Values 39
-> Fraction Values 43
-> URIs 43
-> Angles 43
-> Times 43
-> Frequencies 44
-> Position 44
-> Strings 44
-> Identifiers 45
-> Attribute Values 45
-> Calculation Values 45
-> Variable Values 46
+Number Values 39
+Percentage Values 39
+Length Values 39
+Fraction Values 43
+URIs 43
+Angles 43
+Times 43
+Frequencies 44
+Position 44
+Strings 44
+Identifiers 45
+Attribute Values 45
+Calculation Values 45
+Variable Values 46
 
 ## Chapter 3: Selectors and Queries 49
-> Selectors 49
-> Structural Pseudo-Classes 53
-> The Negation Pseudo-Class 59
-> Interaction Pseudo-Classes 60
-> Pseudo-Elements 63
-> Media Queries 65
-> Feature Queries 70
+Selectors 49
+Structural Pseudo-Classes 53
+The Negation Pseudo-Class 59
+Interaction Pseudo-Classes 60
+Pseudo-Elements 63
+Media Queries 65
+Feature Queries 70
 
 ## Chapter 4: Property Reference 73
 Inheritance and Animation 73
@@ -582,7 +582,7 @@ familiar HTML example is the img element, which is replaced by an image
 file external to the document itself. In fact, img itself has no actual
 content, as we can see by considering a simple example:
 
-> **&lt;img** src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;**&gt;**
+**&lt;img** src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;**&gt;**
 
 There is no content contained in the element---only an element name and
 attributes. Only by replacing the element's lack of content with content
@@ -693,17 +693,17 @@ called *inline boxes*. The following rules apply to inline boxes:
 
 -   For replaced inline boxes, the following rules apply:
 
-> --- If height and width are both auto and the element has an intrinsic
-> width (e.g., an image), the value of width is equal to the element's
-> intrinsic width. The same holds true for height.
->
-> --- If height and width are both auto and the element does not have an
-> intrinsic width but does have an intrinsic height and layout ratio,
-> then width is set to be the intrinsic height times the ratio.
->
-> --- If height and width are both auto and the element does not have an
-> intrinsic height but does have an intrinsic width and layout ratio,
-> then height is set to be the intrinsic width divided by the ratio.
+ --- If height and width are both auto and the element has an intrinsic
+ width (e.g., an image), the value of width is equal to the element's
+ intrinsic width. The same holds true for height.
+
+ --- If height and width are both auto and the element does not have an
+ intrinsic width but does have an intrinsic height and layout ratio,
+ then width is set to be the intrinsic height times the ratio.
+
+ --- If height and width are both auto and the element does not have an
+ intrinsic height but does have an intrinsic width and layout ratio,
+ then height is set to be the intrinsic width divided by the ratio.
 
 There are a few rules even more obscure than those last two; see [the
 CSS box model documentation](http://w3.org/TR/css3-box/#inline-replaced)
@@ -715,56 +715,56 @@ determined by taking the following factors into account:
 
 *Anonymous text*
 
-> Any string of characters not contained within an inline element. Thus,
-> in the markup:
->
-> **&lt;p&gt;**I&apos;m **&lt;em&gt;**so**&lt;/em&gt;** happy!**&lt;/p&gt;** the sequences
-> "I'm " and " happy!" are anonymous text. Note that the spaces are part
-> of the anonymous text, as a space is a character like any other.
+ Any string of characters not contained within an inline element. Thus,
+ in the markup:
+
+ **&lt;p&gt;**I&apos;m **&lt;em&gt;**so**&lt;/em&gt;** happy!**&lt;/p&gt;** the sequences
+ "I'm " and " happy!" are anonymous text. Note that the spaces are part
+ of the anonymous text, as a space is a character like any other.
 
 **Basic Visual Layout**
 *Em-box*
 
-> The space taken up by a capital letter M in the given font; otherwise
-> known as the character box. Actual glyphs can be taller or shorter
-> than their em-boxes, as discussed in Chapter 5 of [*CSS: The*
-> *Definitive Guide*, 4th
-> Edition](http://shop.oreilly.com/product/0636920012726.do). In
->
-> CSS, the value of font-size determines the height of each em-box.
+ The space taken up by a capital letter M in the given font; otherwise
+ known as the character box. Actual glyphs can be taller or shorter
+ than their em-boxes, as discussed in Chapter 5 of [*CSS: The*
+ *Definitive Guide*, 4th
+ Edition](http://shop.oreilly.com/product/0636920012726.do). In
+
+ CSS, the value of font-size determines the height of each em-box.
 
 *Content area*
 
-> In nonreplaced elements, this can be the box described by the em-boxes
-> of every character in the element, strung together, or else the box
-> described by the character glyphs in the element. In CSS2.1 and later,
-> user agents can choose either. This text uses the em-box definition
-> for simplicity's sake. In replaced elements, the content area is the
-> intrinsic height of the element plus any margins, borders, or padding.
+ In nonreplaced elements, this can be the box described by the em-boxes
+ of every character in the element, strung together, or else the box
+ described by the character glyphs in the element. In CSS2.1 and later,
+ user agents can choose either. This text uses the em-box definition
+ for simplicity's sake. In replaced elements, the content area is the
+ intrinsic height of the element plus any margins, borders, or padding.
 
 *Leading*
 
-> The difference between the values of font-size and lineheight. Half
-> this difference is applied to the top and half to the bottom of the
-> content area. These additions to the content area are called, not
-> surprisingly, *half-leading*. Leading is applied only to nonreplaced
-> elements.
+ The difference between the values of font-size and lineheight. Half
+ this difference is applied to the top and half to the bottom of the
+ content area. These additions to the content area are called, not
+ surprisingly, *half-leading*. Leading is applied only to nonreplaced
+ elements.
 
 *Inline box*
 
-> The box described by the addition of the leading to the content area.
-> For nonreplaced elements, the height of the inline box of an element
-> will be equal to the value for line-height. For replaced elements, the
-> height of the inline box of an element will be equal to the content
-> area, as leading is not applied to replaced elements.
+The box described by the addition of the leading to the content area.
+For nonreplaced elements, the height of the inline box of an element
+will be equal to the value for line-height. For replaced elements, the
+height of the inline box of an element will be equal to the content
+area, as leading is not applied to replaced elements.
 
 *Line box*
 
-> The shortest box that bounds the highest and lowest points of the
-> inline boxes that are found in the line. In other words, the top edge
-> of the line box will be placed along the top of the highest inline box
-> top, and the bottom of the line box is placed along the bottom of the
-> lowest inline box bottom. (See Figure 1-3.
+The shortest box that bounds the highest and lowest points of the
+inline boxes that are found in the line. In other words, the top edge
+of the line box will be placed along the top of the highest inline box
+top, and the bottom of the line box is placed along the bottom of the
+lowest inline box bottom. (See Figure 1-3.
 
 *Figure 1-3. Inline layout details*
 
@@ -824,41 +824,41 @@ There are five types of positioning:
 
 *Static*
 
-> The element's box is generated as normal. Block-level elements
-> generate a rectangular box that is part of the document's flow, and
-> inline-level boxes generate one or more line boxes that flow within
-> their parent element.
+The element's box is generated as normal. Block-level elements
+generate a rectangular box that is part of the document's flow, and
+inline-level boxes generate one or more line boxes that flow within
+their parent element.
 
 *Relative*
 
-> The element's box is offset by some distance. Its containing block can
-> be considered to be the area that the element would occupy if it were
-> not positioned. The element retains the shape it would have had were
-> it not positioned, and the space that the element would otherwise have
-> occupied in the normal flow is preserved.
+The element's box is offset by some distance. Its containing block can
+be considered to be the area that the element would occupy if it were
+not positioned. The element retains the shape it would have had were
+it not positioned, and the space that the element would otherwise have
+occupied in the normal flow is preserved.
 
 *Absolute*
 
-> The element's box is completely removed from the flow of the document
-> and positioned with respect to its containing block, which may be
-> another element in the document or the initial containing block
-> (described in the next section). Whatever space the element might have
-> occupied in the normal document flow is closed up, as though the
-> element did not exist. The positioned element generates a block box,
-> regardless of the type of box it would generate if it were in the
-> normal flow.
+The element's box is completely removed from the flow of the document
+and positioned with respect to its containing block, which may be
+another element in the document or the initial containing block
+(described in the next section). Whatever space the element might have
+occupied in the normal document flow is closed up, as though the
+element did not exist. The positioned element generates a block box,
+regardless of the type of box it would generate if it were in the
+normal flow.
 
 *Sticky*
 
-> The element's box stays in the normal flow until it reaches a sticky
-> edge of the containing box, at which time it "sticks" there as if
-> absolutely positioned. The space that the element would otherwise have
-> occupied in the normal flow is preserved.
+The element's box stays in the normal flow until it reaches a sticky
+edge of the containing box, at which time it "sticks" there as if
+absolutely positioned. The space that the element would otherwise have
+occupied in the normal flow is preserved.
 
 *Fixed*
 
-> The element's box behaves as though set to absolute, but its
-> containing block is the viewport itself.
+The element's box behaves as though set to absolute, but its
+containing block is the viewport itself.
 
 ### The Containing Block
 
@@ -875,10 +875,10 @@ The containing block of a positioned element is determined as follows:
 
 **Positioning**
 
-> inline-block ancestor box. Despite this rule, relatively positioned
-> elements are still simply offset (not positioned with respect to the
-> containing block described here) and statically positioned elements do
-> not move from their place in the normal flow.
+inline-block ancestor box. Despite this rule, relatively positioned
+elements are still simply offset (not positioned with respect to the
+containing block described here) and statically positioned elements do
+not move from their place in the normal flow.
 
 3.  For nonroot elements that have a position value of absolute, the
     containing block is set to the nearest ancestor (of any kind) that
@@ -1019,86 +1019,87 @@ but the components are relatively simple to list and explain:
 
 *&lt;length&gt; &vert; &lt;percentage&gt;*
 
-> Any non-negative length or percentage value. Thus, 5em defines a 5-em
-> gap between grid lines, whereas 5% creates a gap between lines that is
-> 5% of the total grid length in the given direction (i.e., the
-> horizontal length for grid rows, and the vertical length for columns).
+Any non-negative length or percentage value. Thus, 5em defines a 5-em
+gap between grid lines, whereas 5% creates a gap between lines that is
+5% of the total grid length in the given direction (i.e., the
+horizontal length for grid rows, and the vertical length for columns).
 
 *&lt;flex&gt;*
 
-> A positive real number with the unit identifier fr (e.g., 2fr or
-> 3.14fr) which defines a *flex factor* for the grid track.
+A positive real number with the unit identifier fr (e.g., 2fr or
+3.14fr) which defines a *flex factor* for the grid track.
 
 min-content
 
-> Sets the grid track's width (or height) to be as small as possible
-> while still containing all the content within the grid track. For
-> example, column tracks that contain only text will become as narrow as
-> the widest run of text that cannot be line-broken within the track.
+Sets the grid track's width (or height) to be as small as possible
+while still containing all the content within the grid track. For
+example, column tracks that contain only text will become as narrow as
+the widest run of text that cannot be line-broken within the track.
 
 max-content
 
-> Sets the grid track's width (or height) to be large enough to contain
-> the largest rendering of all the content within the grid track. For
-> example, column tracks that contain only text will become as wide as
-> the longest run of text, *without* any line-wrapping of the text.
+Sets the grid track's width (or height) to be large enough to contain
+the largest rendering of all the content within the grid track. For
+example, column tracks that contain only text will become as wide as
+the longest run of text, *without* any line-wrapping of the text.
 
 auto
 
-> In most cases, auto is equivalent to the largest minimum size of the
-> grid items occupying the grid track; that is, once all the minimum
-> sizes of the grid items in the track have been determined, the track
-> is made as wide as the widest of those minimums. When auto is used as
-> a maximum value (see minmax() later in this list), it is identical to
-> max-content.
+In most cases, auto is equivalent to the largest minimum size of the
+grid items occupying the grid track; that is, once all the minimum
+sizes of the grid items in the track have been determined, the track
+is made as wide as the widest of those minimums. When auto is used as
+a maximum value (see minmax() later in this list), it is identical to
+max-content.
 
 minmax(*&lt;min&gt;,&lt;max&gt;*)
 
-> Sets a range of sizes outside which the grid track cannot grow or
-> shrink. Either *&lt;min&gt;* or *&lt;max&gt;* can be a *&lt;length&gt;* or
-> *&lt;percentage&gt;* value, min-content, or max-content. *&lt;max&gt;* can be
-> a *&lt;flex&gt;* value, but *&lt;min&gt;* cannot. If the minimum value
-> computes to be larger than the maximum computed value, the maximum
-> sizing is ignored and the minimum size is used as a minimum.
+Sets a range of sizes outside which the grid track cannot grow or
+shrink. Either *&lt;min&gt;* or *&lt;max&gt;* can be a *&lt;length&gt;* or
+*&lt;percentage&gt;* value, min-content, or max-content. *&lt;max&gt;* can be
+a *&lt;flex&gt;* value, but *&lt;min&gt;* cannot. If the minimum value
+computes to be larger than the maximum computed value, the maximum
+sizing is ignored and the minimum size is used as a minimum.
 
 fit-content( &lbrack; *&lt;length&gt; &vert; &lt;percentage&gt;* &rbrack; )
 
-> Equivalent to minmax(auto,max-content) with an exception: if the
-> track's size is larger than the auto value's computed value, that size
-> can't go higher than the given value (a *&lt;length&gt;* or
-> *&lt;percentage&gt;*). This is intended to let authors declare a maximum
-> track size while still letting the track size be content-bound below
-> that maximum.
+Equivalent to minmax(auto,max-content) with an exception: if the
+track's size is larger than the auto value's computed value, that size
+can't go higher than the given value (a *&lt;length&gt;* or
+*&lt;percentage&gt;*). This is intended to let authors declare a maximum
+track size while still letting the track size be content-bound below
+that maximum.
 
 repeat( &lbrack; *&lt;integer&gt; &vert;* auto-fill *&vert;* auto-fit &rbrack; ,
 *&lt;track-list&gt;* ) Allows authors to repeat a pattern of grid track
-sizes as many times as they like. The *&lt;integer&gt;* value must be posi‐
+sizes as many times as they like. The *&lt;integer&gt;* value must be positive.
+
 
 **Grid Layout**
-> tive. auto-fill and auto-fit delegate the number of tracks to the user
-> agent. *&lt;track-list&gt;* can be any valid combination of track sizes.
+auto-fill and auto-fit delegate the number of tracks to the user
+agent. *&lt;track-list&gt;* can be any valid combination of track sizes.
 
 There are three kinds of track sizing. These are:
 
 *Fixed*
 
-> Tracks are given a size in absolute lengths (such as px or em), or
-> sized with %. Percentage values count as fixed track sizes because
-> they are always the same for a given grid container size. The tracks'
-> sizing does not depend on their contents.
+Tracks are given a size in absolute lengths (such as px or em), or
+sized with %. Percentage values count as fixed track sizes because
+they are always the same for a given grid container size. The tracks'
+sizing does not depend on their contents.
 
 *Flexible*
 
-> Tracks are given a flex or fractional sizing via the fr unit. Their
-> sizing does not depend on their contents.
+Tracks are given a flex or fractional sizing via the fr unit. Their
+sizing does not depend on their contents.
 
 *Intrinsic*
 
-> The tracks' size is dependent on the things found within them; i.e.,
-> with min-content, max-content, fit-content(), and auto. These tracks
-> may always be the same size for a given container size and set of
-> content, but they are not regarded as fixed for layout purposes
-> because their contents directly affect their sizing.
+The tracks' size is dependent on the things found within them; i.e.,
+with min-content, max-content, fit-content(), and auto. These tracks
+may always be the same size for a given container size and set of
+content, but they are not regarded as fixed for layout purposes
+because their contents directly affect their sizing.
 
 The process of actually determining the size of grid tracks, including
 what to do when track sizes are overconstrained or could lead to
@@ -1366,28 +1367,28 @@ like property names, are not case-sensitive.
 CSS defines three "global" keywords that are accepted by every property
 in the specification: inherit
 
-> Forces the value for the property to be inherited from the element's
-> parent element, even if the property in question is not inherited
-> (e.g., background-image). Another way to think of this is that the
-> value is copied from the parent element.
+Forces the value for the property to be inherited from the element's
+parent element, even if the property in question is not inherited
+(e.g., background-image). Another way to think of this is that the
+value is copied from the parent element.
 
 initial
 
-> Forces the value of the property to be the initial value defined by
-> the relevant CSS module. For example, fontstyle: initial sets the
-> value of font-style to normal regardless of the font-style value that
-> would have been inherited from the parent element. In cases where the
-> initial value is defined as determined by the user agent, such as for
-> font-size, the value is set to the "default" defined by the user
-> agent's preferences.
+Forces the value of the property to be the initial value defined by
+the relevant CSS module. For example, fontstyle: initial sets the
+value of font-style to normal regardless of the font-style value that
+would have been inherited from the parent element. In cases where the
+initial value is defined as determined by the user agent, such as for
+font-size, the value is set to the "default" defined by the user
+agent's preferences.
 
 unset
 
-> Combines the effects of both inherit and initial, with a rudimentary
-> logic built in for good measure. If a property is inherited (e.g.,
-> color), then unset has the same effect as inherit. If the property is
-> *not* inherited (e.g., backgroundimage), then unset has the same
-> effect as initial.
+Combines the effects of both inherit and initial, with a rudimentary
+logic built in for good measure. If a property is inherited (e.g.,
+color), then unset has the same effect as inherit. If the property is
+*not* inherited (e.g., backgroundimage), then unset has the same
+effect as initial.
 
 If you have a situation where you want to set all of the properties on
 an element to their default values, thus breaking any chains of
@@ -1398,61 +1399,61 @@ Color values can be expressed in a variety of ways:
 
 *#RRGGBB*
 
-> This is a hex-pair notation familiar to authors using traditional
-> HTML. In this format, the first pair of digits corresponds to the red
-> level, the second pair to the green, and the third pair to the blue.
-> Each pair is in hexadecimal notation in the range 00--FF (decimal
-> 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is
-> written #FF0000, and so on.
+This is a hex-pair notation familiar to authors using traditional
+HTML. In this format, the first pair of digits corresponds to the red
+level, the second pair to the green, and the third pair to the blue.
+Each pair is in hexadecimal notation in the range 00--FF (decimal
+0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is
+written #FF0000, and so on.
 
 *#RGB*
 
-> This is a shorter form of the six-digit notation described previously.
-> In this format, each digit is replicated to arrive at an equivalent
-> six-digit value; thus, #F8C becomes #FF88CC.
+This is a shorter form of the six-digit notation described previously.
+In this format, each digit is replicated to arrive at an equivalent
+six-digit value; thus, #F8C becomes #FF88CC.
 
 *#RRGGBBAA*
 
-> An extension of the #RRGGBB notation which adds an alpha channel. As
-> with the R, G, and B values, the A (alpha) value is in hexadecimal
-> notation in the range 00-- FF. These are mapped from hexadecimal to
-> decimal in the range 0--1; thus, #00FF0099 is equivalent to the color
-> #00FF00 (light green) with an opacity of 0.6. The opacity here is
-> derived by converting hexadecimal 99 to decimal 153, and then dividing
-> 153 by 255 to get 0.6. Put another way, #00FF0099 is exactly
-> equivalent to rgba(0,255,0,0.6). Note: support for this notation first
-> emerged in early 2016.
+An extension of the #RRGGBB notation which adds an alpha channel. As
+with the R, G, and B values, the A (alpha) value is in hexadecimal
+notation in the range 00-- FF. These are mapped from hexadecimal to
+decimal in the range 0--1; thus, #00FF0099 is equivalent to the color
+#00FF00 (light green) with an opacity of 0.6. The opacity here is
+derived by converting hexadecimal 99 to decimal 153, and then dividing
+153 by 255 to get 0.6. Put another way, #00FF0099 is exactly
+equivalent to rgba(0,255,0,0.6). Note: support for this notation first
+emerged in early 2016.
 
 *#RGBA*
 
-> This is a shorter form of the eight-digit #RRGGBBAA notation described
-> previously. In this format, each digit is replicated to arrive at an
-> equivalent eight-digit value; thus,
->
-> #F8C6 becomes #FF88CC66. Note: support for this notation first emerged
-> in early 2016.
+This is a shorter form of the eight-digit #RRGGBBAA notation described
+previously. In this format, each digit is replicated to arrive at an
+equivalent eight-digit value; thus,
+
+#F8C6 becomes #FF88CC66. Note: support for this notation first emerged
+in early 2016.
 
 *rgb(rrr,ggg,bbb)*
 
-> This format allows the author to use RGB values in the range 0--255;
-> only integers are permitted. Not coincidentally, this range is the
-> decimal equivalent of 00--FF in hexadecimal. In this format, "pure"
-> green is rgb(0,255,0), and white is represented as rgb(255,255,255).
+This format allows the author to use RGB values in the range 0--255;
+only integers are permitted. Not coincidentally, this range is the
+decimal equivalent of 00--FF in hexadecimal. In this format, "pure"
+green is rgb(0,255,0), and white is represented as rgb(255,255,255).
 
 *rgb(rrr.rr%,ggg.gg%,bbb.bb%)*
 
-> This format allows the author to use RGB values in the range 0% to
-> 100%, with decimal values allowed (e.g., 75.5%). The value for black
-> is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).
+This format allows the author to use RGB values in the range 0% to
+100%, with decimal values allowed (e.g., 75.5%). The value for black
+is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).
 
 *hsl(hhh.hh,sss.ss%,lll.ll%)*
 
-> This format permits authors to specify a color by its hue angle,
-> saturation, and lightness (HSL). The hue angle is always a unitless
-> number or a *&lt;degree&gt;* value in the range 0 to 360, and the
-> saturation and brightness values are always percentages. Hue angles 0
-> and 360 are equivalent, and are both red. Hue angles greater than 360
-> can be
+This format permits authors to specify a color by its hue angle,
+saturation, and lightness (HSL). The hue angle is always a unitless
+number or a *&lt;degree&gt;* value in the range 0 to 360, and the
+saturation and brightness values are always percentages. Hue angles 0
+and 360 are equivalent, and are both red. Hue angles greater than 360
+can be
 
 **Color Values**
 declared, but they are normalized to the 0--360 range; thus, setting a
@@ -1465,38 +1466,38 @@ solid black if lightness is 0% and solid white if lightness is 100%. The
 common colors---is 50%. *rgba(rrr,ggg,bbb,a.aa)
 rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)*
 
-> These extend the previous three formats to include an alpha (opacity)
-> value. The alpha value must be a real number between 0 and 1
-> inclusive; percentages are not permitted for the alpha value. Thus,
-> rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
-> are all equivalent half-opaque red.
+These extend the previous three formats to include an alpha (opacity)
+value. The alpha value must be a real number between 0 and 1
+inclusive; percentages are not permitted for the alpha value. Thus,
+rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
+are all equivalent half-opaque red.
 
 *&lt;keyword&gt;*
 
-> One of 16 recognized keywords based on the original Windows VGA
-> colors. These keywords are aqua, black, blue, fuchsia, gray, green,
-> lime, maroon, navy, olive, purple, red, silver, teal, white, and
-> yellow. Browsers generally also recognize the 148 color keywords
-> documented in the [CSS Color Module Level 4
-> specification](http://www.w3.org/TR/css-color-4/), referred to for
-> historical reasons as "the X11 colors" (though the list does not
-> precisely replicate X11's colors).
+One of 16 recognized keywords based on the original Windows VGA
+colors. These keywords are aqua, black, blue, fuchsia, gray, green,
+lime, maroon, navy, olive, purple, red, silver, teal, white, and
+yellow. Browsers generally also recognize the 148 color keywords
+documented in the [CSS Color Module Level 4
+specification](http://www.w3.org/TR/css-color-4/), referred to for
+historical reasons as "the X11 colors" (though the list does not
+precisely replicate X11's colors).
 
 currentColor
 
-> A special keyword that represents the current computed value of the
-> element's color property. This means you can declare background-color:
-> currentColor and set the element's background to be the same color as
-> its foreground (not recommended). When applied to the color property,
-> it is equivalent to declaring color: inherit. It can also be used on
-> borders; border: 1px solid is equivalent to border: 1px solid
-> currentColor. This can be quite useful when (un)setting a border's
-> color via DOM scripting.
+A special keyword that represents the current computed value of the
+element's color property. This means you can declare background-color:
+currentColor and set the element's background to be the same color as
+its foreground (not recommended). When applied to the color property,
+it is equivalent to declaring color: inherit. It can also be used on
+borders; border: 1px solid is equivalent to border: 1px solid
+currentColor. This can be quite useful when (un)setting a border's
+color via DOM scripting.
 
 transparent
 
-> A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
-> which is the computed value any time transparent is used.
+A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
+which is the computed value any time transparent is used.
 
 ## Number Values
 A number value is expressed as a positive or negative number
@@ -1532,40 +1533,40 @@ The available absolute units are:
 
 *Centimeters* (cm)
 
-> The centimeters found on rulers the world over. There are 2.54
-> centimeters to an inch, and 1 centimeter equals 0.394 inches. The same
-> mapping warnings that applied to inches also apply to centimeters.
+The centimeters found on rulers the world over. There are 2.54
+centimeters to an inch, and 1 centimeter equals 0.394 inches. The same
+mapping warnings that applied to inches also apply to centimeters.
 
 *Millimeters* (mm)
 
-> There are 10 millimeters to a centimeter, so you get 25.4 millimeters
-> to an inch, and 1 millimeter equals 0.0394 inches. Bear in mind the
-> previous warnings about mapping lengths to displays.
+There are 10 millimeters to a centimeter, so you get 25.4 millimeters
+to an inch, and 1 millimeter equals 0.0394 inches. Bear in mind the
+previous warnings about mapping lengths to displays.
 
 *Quarter-millimeters* (q)
 
-> Exactly what they say they are: one-fourth of a millimeter.
->
-> In other words, 4q equals one millimeter, and 400q equals one
-> centimeter. Again, bear in mind the previous mapping warnings.
+Exactly what they say they are: one-fourth of a millimeter.
+
+In other words, 4q equals one millimeter, and 400q equals one
+centimeter. Again, bear in mind the previous mapping warnings.
 
 *Inches* (in)
 
-> As you might expect, the same inches found on typical US rulers. The
-> mapping from inches to a display device is usually approximate at
-> best, because many systems have no concept of the relation of their
-> display areas to "realworld" measurements such as inches. Thus, inches
-> should be used with extreme caution in screen design.
+As you might expect, the same inches found on typical US rulers. The
+mapping from inches to a display device is usually approximate at
+best, because many systems have no concept of the relation of their
+display areas to "realworld" measurements such as inches. Thus, inches
+should be used with extreme caution in screen design.
 
 *Points* (pt)
 
-> Points are standard typographical measures used by printers and
-> typesetters for centuries and by word-processing programs for decades.
-> By modern definition, there are 72 points to an inch. Therefore, the
-> capital letters of text set to 12 points should be 1/6 of an inch
-> tall. For example, p {font-size: 18pt;} is equivalent to p {font-size:
-> 0.25in;}, assuming proper mapping of lengths to the display
-> environment (see previous comments).
+Points are standard typographical measures used by printers and
+typesetters for centuries and by word-processing programs for decades.
+By modern definition, there are 72 points to an inch. Therefore, the
+capital letters of text set to 12 points should be 1/6 of an inch
+tall. For example, p {font-size: 18pt;} is equivalent to p {font-size:
+0.25in;}, assuming proper mapping of lengths to the display
+environment (see previous comments).
 
 *Picas* (pc)
 
@@ -1580,74 +1581,74 @@ The available relative units are:
 
 *Em-height* (em)
 
-> This refers to the em-height of a given font face. In CSS, the
-> em-height is equivalent to the height of the character box for the
-> font face, which is to say the computed value of font-size. Ems can be
-> used to set relative sizes for fonts; for example, font-size: 1.2em is
-> the same as saying fontsize: 120%.
+This refers to the em-height of a given font face. In CSS, the
+em-height is equivalent to the height of the character box for the
+font face, which is to say the computed value of font-size. Ems can be
+used to set relative sizes for fonts; for example, font-size: 1.2em is
+the same as saying fontsize: 120%.
 
 *Root element em-height* (rem)
 
-> Equal to the em-height of the root element (in HTML, the html
-> element).
+Equal to the em-height of the root element (in HTML, the html
+element).
 
 *X-height* (ex)
 
-> This refers to the x-height of the font face, which is to say the
-> height of the lowercase "x" character in the given font face. However,
-> the vast majority of font faces do not include their x-height, so many
-> browsers approximate it (poorly) by simply setting 1ex to be equal to
-> 0.5em.
+This refers to the x-height of the font face, which is to say the
+height of the lowercase "x" character in the given font face. However,
+the vast majority of font faces do not include their x-height, so many
+browsers approximate it (poorly) by simply setting 1ex to be equal to
+0.5em.
 
 *ZERO width* (ch)
 
-> This refers to the width of a single zero (Unicode U+0300, "ZERO") in
-> the current font family and size. This is often, but erroneously,
-> assumed to mean "one character." This will only be true in monospace
-> fonts, where all characters
+This refers to the width of a single zero (Unicode U+0300, "ZERO") in
+the current font family and size. This is often, but erroneously,
+assumed to mean "one character." This will only be true in monospace
+fonts, where all characters are the same width.
 
 **Length Values**
-> are the same width. Since most proportional fonts have zeros that are
-> slimmer than the alphabetic symbols, setting something like width:
-> 60ch will often result in lines of text with fewer than 60 characters.
+Since most proportional fonts have zeros that are
+slimmer than the alphabetic symbols, setting something like width:
+60ch will often result in lines of text with fewer than 60 characters.
 
 *Pixels* (px)
 
-> A pixel is usually thought of as a small box on a display, but CSS
-> defines pixels more abstractly. In CSS terms, a pixel is defined to be
-> about the size required to yield 96 units per inch. Many user agents
-> ignore this definition in favor of simply addressing the pixels on the
-> display, but others (such as those on high-resolution mobile devices)
-> go the CSS route, treating each px as being multiple physical
-> on-screen pixels.
+A pixel is usually thought of as a small box on a display, but CSS
+defines pixels more abstractly. In CSS terms, a pixel is defined to be
+about the size required to yield 96 units per inch. Many user agents
+ignore this definition in favor of simply addressing the pixels on the
+display, but others (such as those on high-resolution mobile devices)
+go the CSS route, treating each px as being multiple physical
+on-screen pixels.
 
 *Viewport width unit* (vw)
 
-> This unit is calculated with respect to the viewport's width, which is
-> divided by 100. If the viewport is 937 pixels wide, for example, 1vw
-> is equal to 9.37px. If the viewport's width changes, say by dragging
-> the browser window to be wider or narrower, the value of vw changes
-> along with it.
+This unit is calculated with respect to the viewport's width, which is
+divided by 100. If the viewport is 937 pixels wide, for example, 1vw
+is equal to 9.37px. If the viewport's width changes, say by dragging
+the browser window to be wider or narrower, the value of vw changes
+along with it.
 
 *Viewport height unit* (vh)
 
-> This unit is calculated with respect to the viewport's height, which
-> is divided by 100. If the viewport is 650 pixels tall, for example,
-> 1vh is equal to 6.5px. If the viewport's height changes, say by
-> dragging the browser window to be taller or shorter, the value of vh
-> changes along with it.
+This unit is calculated with respect to the viewport's height, which
+is divided by 100. If the viewport is 650 pixels tall, for example,
+1vh is equal to 6.5px. If the viewport's height changes, say by
+dragging the browser window to be taller or shorter, the value of vh
+changes along with it.
 
 *Viewport minimum unit* (vmin)
 
-> This unit is 1/100 of the viewport's width or height, whichever is
-> *lesser*. Thus, given a viewport that is 937 pixels wide by 650 pixels
-> tall, 1vmin is equal to 6.5px.
+This unit is 1/100 of the viewport's width or height, whichever is
+*lesser*. Thus, given a viewport that is 937 pixels wide by 650 pixels
+tall, 1vmin is equal to 6.5px.
 
 *Viewport maximum unit* (vmax)
 
-> This unit is 1/100 of the viewport's width or height, whichever is
-> *greater*. Thus, given a viewport that is 937 pixels wide by 650
-> pixels tall, 1vmax is equal to 9.37px.
+This unit is 1/100 of the viewport's width or height, whichever is
+*greater*. Thus, given a viewport that is 937 pixels wide by 650
+pixels tall, 1vmax is equal to 9.37px.
 
 ## Fraction Values
 
@@ -1985,11 +1986,11 @@ within an attribute's value.
 one of a hyphen-separated list of values, starting with the value
 provided in the selector.
 
-> In an HTML document, the language of an element is determined by its
-> lang attribute. If an element does not have one, its language is
-> determined by the lang attribute of its nearest ancestor that does
-> have one, or, lacking that, by the Content-Language HTTP header
-> response field (or the respective meta http-equiv) for the document.
+In an HTML document, the language of an element is determined by its
+lang attribute. If an element does not have one, its language is
+determined by the lang attribute of its nearest ancestor that does
+have one, or, lacking that, by the Content-Language HTTP header
+response field (or the respective meta http-equiv) for the document.
 
 **Example** html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
 
@@ -2048,7 +2049,7 @@ h2:first-of-type {color: fuchsia;}
 |                | document---it cannot be assigned from CSS. The      |
 |                | handling of :lang is the same as for &vert;= attribute  |
 |                | selectors.                                          |
-| > **Examples** | html:lang(en) {background: silver;} &ast;:lang(fr)     |
+| **Examples** | html:lang(en) {background: silver;} &ast;:lang(fr)     |
 |                | {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}                    |
 | **:last-child** |                                                     |
 | **Applies to**    | Any element                                         |
@@ -2056,7 +2057,7 @@ h2:first-of-type {color: fuchsia;}
 |                | another element. Thus, div:last-child will select   |
 |                | any div that is the last child of another element,  |
 |                | *not* the last child element of any div.            |
-| > **Examples** | td:last-child {border-right: 1px solid;}            |
+| **Examples** | td:last-child {border-right: 1px solid;}            |
 |                | p:last-child {margin-bottom: 2em;}                  |
 
 ### :last-of-type
@@ -2351,35 +2352,35 @@ browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
 
 +----------------+-----------------------------------------------------+
-| > **::after**  |                                                     |
+| **::after**  |                                                     |
 +================+=====================================================+
-| >              | A pseudo-element containing generated content       |
+|              | A pseudo-element containing generated content       |
 |  **Generates** | placed after the content in the element             |
 +----------------+-----------------------------------------------------+
-| > *            | Inserts generated content at the end of an          |
+| *            | Inserts generated content at the end of an          |
 | *Description** | element's content. By default, the pseudo-element   |
 |                | is inline, but this can be changed using the        |
 |                | property display.                                   |
 +----------------+-----------------------------------------------------+
-| > **Examples** | a.external:after {                                  |
+| **Examples** | a.external:after {                                  |
 |                |                                                     |
 |                | content: &quot; &quot; url(/icons/globe.gif);}              |
 |                |                                                     |
 |                | p:after {content: &quot; &vert;; &quot;;}                       |
 +----------------+-----------------------------------------------------+
-| > **::before** |                                                     |
+| **::before** |                                                     |
 +----------------+-----------------------------------------------------+
-| >              | A pseudo-element containing generated content       |
+|              | A pseudo-element containing generated content       |
 |  **Generates** | placed before the content in the element            |
 +----------------+-----------------------------------------------------+
-| > *            | Inserts generated content at the beginning of an    |
+| *            | Inserts generated content at the beginning of an    |
 | *Description** | element's content. By default, the pseudo-element   |
 |                | is                                                  |
 +----------------+-----------------------------------------------------+
 
 **Pseudo-Elements**
 
-> inline, but this can be changed using the property display.
+inline, but this can be changed using the property display.
 
 **Examples** a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} p:before
 {content: attr(class);} a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
@@ -2387,10 +2388,10 @@ but the doublecolon syntax is recommended.
 ### ::first-letter
 
 +----------------+-----------------------------------------------------+
-| >              | A pseudo-element that contains the first letter of  |
+|              | A pseudo-element that contains the first letter of  |
 |  **Generates** | an element                                          |
 +================+=====================================================+
-| > *            | Styles the first letter of an element. Any leading  |
+| *            | Styles the first letter of an element. Any leading  |
 | *Description** | punctuation should be styled along with the first   |
 |                | letter. Some languages have letter combinations     |
 |                | that should be treated as a single character, and a |
@@ -2402,10 +2403,10 @@ but the doublecolon syntax is recommended.
 |                | table-caption, or inlineblock. There is a limited   |
 |                | set of properties that can apply to a first letter. |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1:first-letter {font-size: 166%;} p:first-letter   |
+| **Examples** | h1:first-letter {font-size: 166%;} p:first-letter   |
 |                | {text-decoration: underline;}                       |
 +----------------+-----------------------------------------------------+
-| > **           |                                                     |
+| **           |                                                     |
 | ::first-line** |                                                     |
 +----------------+-----------------------------------------------------+
 
@@ -2433,20 +2434,20 @@ The placement of media queries will be very familiar to any author who
 has ever set a media type. Here are two ways of applying an external
 stylesheet when rendering the document on a color printer:
 
-> &lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
-> (color)&quot; rel=&quot;stylesheet&quot;&gt;
->
-> &#64;import url(print-color.css) print and (color);
+&lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
+(color)&quot; rel=&quot;stylesheet&quot;&gt;
+
+&#64;import url(print-color.css) print and (color);
 
 Anywhere a media type can be used, a media query can be used. This means
 that it is possible to list more than one query in a comma-separated
 list:
 
-> &lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
-> (color), projection and (color)&quot; rel=&quot;stylesheet&quot;&gt;
->
-> &#64;import url(print-color.css) print and (color), projection and
-> (color);
+&lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
+(color), projection and (color)&quot; rel=&quot;stylesheet&quot;&gt;
+
+&#64;import url(print-color.css) print and (color), projection and
+(color);
 
 In any situation where one of the media queries evaluates to true, the
 associated stylesheet is applied. Thus, given the previous &#64;import,
@@ -2462,28 +2463,28 @@ features. Each media feature is enclosed in parentheses, and multiple
 features are linked with the and keyword. There are two logical keywords
 in media queries: and
 
-> Links together two or more media features in such a way that all of
-> them must be true for the query to be true. For example, (color) and
-> (orientation: landscape) and (min-device-width: 800px) means that all
-> three conditions must be satisfied: if the media environment has
-> color, and is in landscape orientation, and the device's display is at
-> least 800 pixels wide, the stylesheet is used.
+Links together two or more media features in such a way that all of
+them must be true for the query to be true. For example, (color) and
+(orientation: landscape) and (min-device-width: 800px) means that all
+three conditions must be satisfied: if the media environment has
+color, and is in landscape orientation, and the device's display is at
+least 800 pixels wide, the stylesheet is used.
 
 not
 
-> Negates the entire query so that if all of the conditions are true,
-> the stylesheet is *not* applied. For example, not
->
-> (color) and (orientation: landscape) and (mindevice-width: 800px)
-> means that if the three conditions are satisfied, the statement is
-> negated. Thus, if the media environment has color, and is in landscape
-> orientation, and the device's display is at least 800 pixels wide, the
-> stylesheet is *not* used. In all other cases, it will be used. Note
-> that the not keyword can only be used at the beginning of a media
-> query. It is *not* legal to write something like (color) and not
-> (min-device-width: 800px). In such cases, the query will be ignored.
-> Note also that browsers too old to understand media queries will
-> always skip a stylesheet whose media descriptor starts with not.
+Negates the entire query so that if all of the conditions are true,
+the stylesheet is *not* applied. For example, not
+
+(color) and (orientation: landscape) and (mindevice-width: 800px)
+means that if the three conditions are satisfied, the statement is
+negated. Thus, if the media environment has color, and is in landscape
+orientation, and the device's display is at least 800 pixels wide, the
+stylesheet is *not* used. In all other cases, it will be used. Note
+that the not keyword can only be used at the beginning of a media
+query. It is *not* legal to write something like (color) and not
+(min-device-width: 800px). In such cases, the query will be ignored.
+Note also that browsers too old to understand media queries will
+always skip a stylesheet whose media descriptor starts with not.
 
 There is no or keyword for use within a given query, but the commas that
 separate a list of queries serve the function of an or; that is, screen,
@@ -2497,12 +2498,12 @@ backward incompatibility.
 
 only
 
-> Used to hide a stylesheet from browsers too old to understand media
-> queries. For example, to apply a stylesheet in all media, but only in
-> those browsers that understand media queries, you would write
-> something like &#64;import url(new.css) only all. In browsers that do
-> understand media queries, the only keyword is ignored. Note that the
-> only keyword can be used only at the beginning of a media query.
+Used to hide a stylesheet from browsers too old to understand media
+queries. For example, to apply a stylesheet in all media, but only in
+those browsers that understand media queries, you would write
+something like &#64;import url(new.css) only all. In browsers that do
+understand media queries, the only keyword is ignored. Note that the
+only keyword can be used only at the beginning of a media query.
 
 ### Media Query Values
 
@@ -2511,143 +2512,141 @@ early 2018) are not used in any other context:
 
 *&lt;ratio&gt;*
 
-> A ratio value is two positive *&lt;integer&gt;* values separated by a
-> solidus (/) and optional whitespace. The first value refers to the
-> width, and the second to the height. Thus, to express a
-> width-to-height ratio of 16:9, you can write 16/9 or 16 / 9.
+A ratio value is two positive *&lt;integer&gt;* values separated by a
+solidus (/) and optional whitespace. The first value refers to the
+width, and the second to the height. Thus, to express a
+width-to-height ratio of 16:9, you can write 16/9 or 16 / 9.
 
 *&lt;resolution&gt;*
 
-> A resolution value is a positive *&lt;integer&gt;* followed by either of
-> the unit identifiers dpi or dpcm. As usual, whitespace is not
-> permitted between the *&lt;integer&gt;* and the identifier.
+A resolution value is a positive *&lt;integer&gt;* followed by either of
+the unit identifiers dpi or dpcm. As usual, whitespace is not
+permitted between the *&lt;integer&gt;* and the identifier.
 
 ### Media Features
 
 As of early 2018, the available media features are as follows. Note that
 their values cannot be negative: width*,* min-width*,* max-width
 
-> *Values: &lt;length&gt;*
->
-> Refers to the width of the display area of the user agent. In a
-> screen-media web browser, this is the width of the viewport plus any
-> scrollbars. In paged media, this is the width of the page box. Thus,
-> (minwidth: 850px) applies when the viewport is greater than 850 pixels
-> wide.
+*Values: &lt;length&gt;*
+
+Refers to the width of the display area of the user agent. In a
+screen-media web browser, this is the width of the viewport plus any
+scrollbars. In paged media, this is the width of the page box. Thus,
+(minwidth: 850px) applies when the viewport is greater than 850 pixels
+wide.
 
 device-width*,* min-device-width*,* max-device-width
 
-> *Values: &lt;length&gt;*
->
-> Refers to the width of the complete rendering area of the output
-> device. In screen media, this is the width of the screen. In paged
-> media, this is the width of the page. Thus, (max-device-width: 1200px)
-> applies when the device's output area is less than 1,200 pixels wide.
+*Values: &lt;length&gt;*
+
+Refers to the width of the complete rendering area of the output
+device. In screen media, this is the width of the screen. In paged
+media, this is the width of the page. Thus, (max-device-width: 1200px)
+applies when the device's output area is less than 1,200 pixels wide.
 
 height*,* min-height*,* max-height
 
-> *Values: &lt;length&gt;*
->
-> Refers to the height of the display area of the user agent. In a
-> screen-media web browser, this is the height of the viewport plus any
-> scrollbars. In paged media, this is the height of the page box. Thus,
->
-> (height: 567px) applies when the viewport's height is precisely 567
-> pixels tall.
+*Values: &lt;length&gt;*
+
+Refers to the height of the display area of the user agent. In a
+screen-media web browser, this is the height of the viewport plus any
+scrollbars. In paged media, this is the height of the page box. Thus,
+
+(height: 567px) applies when the viewport's height is precisely 567
+pixels tall.
 
 device-height*,* min-device-height*,* max-device-height
 
-> *Values: &lt;length&gt;*
->
-> Refers to the height of the complete rendering area of the output
-> device. In screen media, this is the height of the screen. In paged
-> media, this is the height of the page. Thus, (max-device-height:
-> 400px) applies when the device's output area is less than 400 pixels
-> tall.
+*Values: &lt;length&gt;*
+Refers to the height of the complete rendering area of the output
+device. In screen media, this is the height of the screen. In paged
+media, this is the height of the page. Thus, (max-device-height:
+400px) applies when the device's output area is less than 400 pixels
+tall.
 
 aspect-ratio*,* min-aspect-ratio*,* max-aspect-ratio
 
-> *Values: &lt;ratio&gt;*
->
-> Refers to the ratio that results from comparing the width media
-> feature to the height media feature (see the definition of
-> *&lt;ratio&gt;*). Thus, (min-aspect-ratio: 2/1) applies to any viewport
-> whose width-to-height ratio is at least 2:1.
+*Values: &lt;ratio&gt;*
+
+Refers to the ratio that results from comparing the width media
+feature to the height media feature (see the definition of
+*&lt;ratio&gt;*). Thus, (min-aspect-ratio: 2/1) applies to any viewport
+whose width-to-height ratio is at least 2:1.
 
 device-aspect-ratio*,* min-device-aspect-ratio*,* max-deviceaspect-ratio
 
-> *Values: &lt;length&gt;*
->
-> Refers to the ratio that results from comparing the device-width media
-> feature to the device-height media feature (see the definition of
-> *&lt;ratio&gt;*). Thus, (device-aspect-ratio: 16/9) applies to any output
-> device whose display area width-to-height ratio is exactly 16:9.
+*Values: &lt;length&gt;*
+Refers to the ratio that results from comparing the device-width media
+feature to the device-height media feature (see the definition of
+*&lt;ratio&gt;*). Thus, (device-aspect-ratio: 16/9) applies to any output
+device whose display area width-to-height ratio is exactly 16:9.
 
 color*,* min-color*,* max-color
 
-> *Values: &lt;integer&gt;*
->
-> Refers to the presence of color-display capability in the output
-> device, with an optional number representing the number of bits used
-> in each color component. Thus, (color) applies to any device with any
-> color depth at all, whereas (min-color: 4) means there must be at
-> least four bits used per color component. Any device that does not
-> support color will return 0.
+*Values: &lt;integer&gt;*
+
+Refers to the presence of color-display capability in the output
+device, with an optional number representing the number of bits used
+in each color component. Thus, (color) applies to any device with any
+color depth at all, whereas (min-color: 4) means there must be at
+least four bits used per color component. Any device that does not
+support color will return 0.
 
 color-index*,* min-color-index*,* max-color-index
 
-> *Values: &lt;integer&gt;*
->
-> Refers to the total number of colors available in the output device's
-> color lookup table. Thus, (min-colorindex: 256) applies to any device
-> with a minimum of 256 colors available. Any device that does not use a
-> color lookup table will return 0.
+*Values: &lt;integer&gt;*
+
+Refers to the total number of colors available in the output device's
+color lookup table. Thus, (min-colorindex: 256) applies to any device
+with a minimum of 256 colors available. Any device that does not use a
+color lookup table will return 0.
 
 monochrome*,* min-monochrome*,* max-monochrome
 
-> *Values: &lt;integer&gt;*
->
-> Refers to the presence of a monochrome display, with an optional
-> number of bits per pixel in the output device's frame buffer. Thus,
-> (monochrome) applies to any monochrome output device, whereas
-> (minmonochrome: 2) applies to any monochrome output device with a
-> minimum of two bits per pixel in the frame buffer. Any device that is
-> not monochrome will return 0.
+*Values: &lt;integer&gt;*
+
+Refers to the presence of a monochrome display, with an optional
+number of bits per pixel in the output device's frame buffer. Thus,
+(monochrome) applies to any monochrome output device, whereas
+(minmonochrome: 2) applies to any monochrome output device with a
+minimum of two bits per pixel in the frame buffer. Any device that is
+not monochrome will return 0.
 
 resolution*,* min-resolution*,* max-resolution
 
-> *Values: &lt;resolution&gt;*
->
-> Refers to the resolution of the output device in terms of pixel
-> density, measured in either dots per inch (dpi) or dots per centimeter
-> (dpcm). If an output device has pixels that are not square, the least
-> dense axis is used; for example, if a device is 100dpcm along one axis
-> and 120dpcm along the other, 100dpcm is the value returned.
-> Additionally, a bare resolution feature query can never match (though
-> min-resolution and max-resolution can).
+*Values: &lt;resolution&gt;*
+
+Refers to the resolution of the output device in terms of pixel
+density, measured in either dots per inch (dpi) or dots per centimeter
+(dpcm). If an output device has pixels that are not square, the least
+dense axis is used; for example, if a device is 100dpcm along one axis
+and 120dpcm along the other, 100dpcm is the value returned.
+Additionally, a bare resolution feature query can never match (though
+min-resolution and max-resolution can).
 
 orientation
 
-> *Values:* portrait *&vert;* landscape
->
-> Refers to the output device's total output area, where portrait is
-> returned if the media feature height is equal to or greater than the
-> media feature width. Otherwise, the result is landscape.
+*Values:* portrait *&vert;* landscape
+
+Refers to the output device's total output area, where portrait is
+returned if the media feature height is equal to or greater than the
+media feature width. Otherwise, the result is landscape.
 
 scan
 
-> *Values:* progressive *&vert;* interlace
->
-> Refers to the scanning process used in an output device with a media
-> type of tv.
+*Values:* progressive *&vert;* interlace
+
+Refers to the scanning process used in an output device with a media
+type of tv.
 
 grid
 
-> *Values:* 0 *&vert;* 1
->
-> Refers to the presence (or absence) of a grid-based output device,
-> such as a tty terminal. A grid-based device will return 1; otherwise,
-> 0 is returned.
+*Values:* 0 *&vert;* 1
+
+Refers to the presence (or absence) of a grid-based output device,
+such as a tty terminal. A grid-based device will return 1; otherwise,
+0 is returned.
 
 ## Feature Queries
 
@@ -2661,9 +2660,9 @@ Otherwise, they are ignored.
 A basic example is to ask the browser if it supports backgroundcolor:
 red:
 
-> **&#64;supports** (**background-color**: red) { **html**
-> {**background-color**: yellow;} **body** {**background-color**:
-> white;} }
+**&#64;supports** (**background-color**: red) { **html**
+{**background-color**: yellow;} **body** {**background-color**:
+white;} }
 
 There is no obligation to use the property-value combination in the
 query in the subsequent rules. In fact, there's no obligation even to
@@ -2675,25 +2674,25 @@ Feature queries are useful when applying advanced CSS features. For
 example, converting a float-based layout to grid might look something
 like this:
 
-> &lbrack;..**.float** **layout** **rules** **here**...&rbrack;
->
-> **&#64;supports** (**display**: grid) {
->
-> &lbrack;..**.grid** **layout** **rules** **here**...&rbrack;
->
-> &lbrack;..**.rules** **that** **turn** **off** **margins**, **clearing**,
-> **and** **other** **rules** **needed** **for** **float** **layout**
->
-> **but** **not** **in** **grid** **layout**...&rbrack; }
+&lbrack;..**.float** **layout** **rules** **here**...&rbrack;
+
+**&#64;supports** (**display**: grid) {
+
+&lbrack;..**.grid** **layout** **rules** **here**...&rbrack;
+
+&lbrack;..**.rules** **that** **turn** **off** **margins**, **clearing**,
+**and** **other** **rules** **needed** **for** **float** **layout**
+
+**but** **not** **in** **grid** **layout**...&rbrack; }
 
 It's also possible to do a negated feature query using the keyword not:
 
-> **&#64;supports** **not** (**shape-outside**: circle()) {
->
-> &lbrack;..**.rules** **for** **use** **in** **browsers** **that**
-> **don**&apos;**t** **understand**
->
-> **circle** **float** **shapes**...&rbrack; }
+**&#64;supports** **not** (**shape-outside**: circle()) {
+
+&lbrack;..**.rules** **for** **use** **in** **browsers** **that**
+**don**&apos;**t** **understand**
+
+**circle** **float** **shapes**...&rbrack; }
 
 **Feature Queries**
 
@@ -2769,7 +2768,7 @@ Any user agent that has fully implemented the Cascading and Inheritance
 module will honor the following values for all properties. Think of it
 as a given property's value syntax being written something like:
 
-> &lbrack; *(listed value syntax)* &rbrack; &vert; inherit &vert; initial &vert; unset
+&lbrack; *(listed value syntax)* &rbrack; &vert; inherit &vert; initial &vert; unset
 
 These three keywords are not listed in the following property
 definitions, for purposes of clarity. The exception is the property all,
@@ -2781,30 +2780,30 @@ these keywords' meaning, see Chapter 2.
 ### align-content Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | flex-start &vert; flex-end &vert; center &vert; space-between &vert; |
+| **Values**  | flex-start &vert; flex-end &vert; center &vert; space-between &vert; |
 |               | space-around &vert; space-evenly &vert; stretch              |
 +===============+======================================================+
-| > **Initial   | stretch                                              |
-| > value**     |                                                      |
+| **Initial   | stretch                                              |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | As declared                                          |
-| > value**     |                                                      |
+| **Computed  | As declared                                          |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | Flex containers                                      |
-| > to**        |                                                      |
+| **Applies   | Flex containers                                      |
+| to**        |                                                      |
 +---------------+------------------------------------------------------+
-| > **          | Defines the distribution of flex lines along the     |
+| **          | Defines the distribution of flex lines along the     |
 | Description** | cross axis of a flex container, given that the       |
 |               | container's cross-axis length does not equal the sum |
 |               | of the flex lines' size along the same axis.         |
 +---------------+------------------------------------------------------+
-| >             | aside {display: flex; align-content: center;}        |
+|             | aside {display: flex; align-content: center;}        |
 |  **Examples** |                                                      |
 |               | section {display: flex; height: 90vh;                |
 |               |                                                      |
 |               | align-content: flex-end;}                            |
 +---------------+------------------------------------------------------+
-| > **Note**    | As of early 2018, there are plans to have this       |
+| **Note**    | As of early 2018, there are plans to have this       |
 |               | property apply to many (or all) elements, not just   |
 |               | flex                                                 |
 +---------------+------------------------------------------------------+
@@ -2817,82 +2816,82 @@ the center value, this change would make vertical centering of content
 trivial in nearly all cases.
 
 +----------------+-----------------------------------------------------+
-| > *            | **Inh. N Anim. N**                                  |
+| *            | **Inh. N Anim. N**                                  |
 | *align-items** |                                                     |
 +================+=====================================================+
-| > **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert;     |
+| **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert;     |
 |                | stretch                                             |
 +----------------+-----------------------------------------------------+
-| > **Initial    | stretch                                             |
-| > value**      |                                                     |
+| **Initial    | stretch                                             |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Flex containers, grid containers, and multicolumn   |
-| > to**         | containers                                          |
+| **Applies    | Flex containers, grid containers, and multicolumn   |
+| to**         | containers                                          |
 +----------------+-----------------------------------------------------+
-| > *            | Sets a flex-container-wide default for items'       |
+| *            | Sets a flex-container-wide default for items'       |
 | *Description** | alignment with respect to the cross axis of the     |
 |                | flex line they occupy. baseline alignment means the |
 |                | items in a line are all placed such that the        |
 |                | baselines of their first lines of text line up.     |
 +----------------+-----------------------------------------------------+
-| > **Examples** | div.flexy {align-items: flex-start;}                |
+| **Examples** | div.flexy {align-items: flex-start;}                |
 |                | section.gallery {align-items: baseline;}            |
 +----------------+-----------------------------------------------------+
-| > **Note**     | As of early 2018, there are plans to have this      |
+| **Note**     | As of early 2018, there are plans to have this      |
 |                | property apply to many (or all) elements and be     |
 |                | given the values start and end to replicate         |
 |                | flex-start and flex-end behavior for non-flex       |
 |                | environments.                                       |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 | **align-self** |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert;     |
+| **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert;     |
 |                | stretch                                             |
 +----------------+-----------------------------------------------------+
-| > **Initial    | stretch                                             |
-| > value**      |                                                     |
+| **Initial    | stretch                                             |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Flex and grid items                                 |
-| > to**         |                                                     |
+| **Applies    | Flex and grid items                                 |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Sets the alignment for a single item with respect   |
+| *            | Sets the alignment for a single item with respect   |
 | *Description** | to the cross axis of the flex line it occupies.     |
 |                | baseline                                            |
 +----------------+-----------------------------------------------------+
 
-> alignment means the baseline of the item's first line of text is
-> aligned with the lowest first-line baseline in the flex line.
+alignment means the baseline of the item's first line of text is
+aligned with the lowest first-line baseline in the flex line.
 
 **Examples** div.flexy .midpointed {align-self: center;}
 
-> section.gallery h1 {align-self: stretch;}
+section.gallery h1 {align-self: stretch;}
 
 **Note** As of early 2018, there are plans to have this property apply
 to many (or all) elements, and be given the values start and end to
 replicate flex-start and flex-end behavior for non-flex environments.
 
 +----------------+-----------------------------------------------------+
-| > **all**      | **Inh. N Anim. N**                                  |
+| **all**      | **Inh. N Anim. N**                                  |
 +================+=====================================================+
-| > **Values**   | inherit &vert; initial &vert; unset                         |
+| **Values**   | inherit &vert; initial &vert; unset                         |
 +----------------+-----------------------------------------------------+
-| > **Initial    | See individual properties                           |
-| > value**      |                                                     |
+| **Initial    | See individual properties                           |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Applies the declared value to all properties        |
+| *            | Applies the declared value to all properties        |
 | *Description** | *except* direction and unicode-bidi, which are      |
 |                | exempted for accessibility and historical reasons.  |
 |                | This allows an author to, for example, force an     |
@@ -2901,19 +2900,19 @@ replicate flex-start and flex-end behavior for non-flex environments.
 |                | of values for all properties (except the exempted   |
 |                | two).                                               |
 +----------------+-----------------------------------------------------+
-| > **Examples** | &ast;.blendin {all: inherit;}                          |
+| **Examples** | &ast;.blendin {all: inherit;}                          |
 |                |                                                     |
 |                | &ast;.embedded {all: unset;}                           |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **animation** |                                                     |
 +----------------+-----------------------------------------------------+
 
 **Values** &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
 
-> *&lt;animation-timing-function&gt;* ‖ *&lt;animation-delay&gt;* ‖
-> *&lt;animation-iteration-count&gt;* ‖ *&lt;animationdirection&gt;* ‖
-> *&lt;animation-fill-mode&gt;* ‖ *&lt;animationplay-state&gt;* &rbrack;#
+*&lt;animation-timing-function&gt;* ‖ *&lt;animation-delay&gt;* ‖
+*&lt;animation-iteration-count&gt;* ‖ *&lt;animationdirection&gt;* ‖
+*&lt;animation-fill-mode&gt;* ‖ *&lt;animationplay-state&gt;* &rbrack;#
 
 **Initial value** 0s ease 0s 1 normal none running none
 
@@ -2930,9 +2929,9 @@ the delay, but this cannot be guaranteed.
 
 **Examples** div#slide {animation: &apos;slide&apos; 2.5s linear
 
-> 0 1 normal;}
+0 1 normal;}
 >
-> h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
+h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
 
 ### animation-delay Inh. N Anim. N
 
@@ -2955,7 +2954,7 @@ the delay, but this cannot be guaranteed.
   **Examples**      body {animation-delay: 1s, 2000ms, 4s;}
   ------------------------------------------------------------------------
 
-> a:hover {animation-delay: 400ms;}
+a:hover {animation-delay: 400ms;}
 
 ### animation-direction Inh. N Anim. N
 
@@ -2978,7 +2977,7 @@ to its starting place and move 300 pixels right again, over and over
 until the animation stops (assuming it ever does). **Examples** body
 {animation-direction:
 
-> alternate, normal, normal;} #scanner {animation-direction: normal;}
+alternate, normal, normal;} #scanner {animation-direction: normal;}
 
 ### animation-duration Inh. N Anim. N
 
@@ -3003,7 +3002,7 @@ until the animation stops (assuming it ever does). **Examples** body
   **Examples**      h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
   ------------------------------------------------------------------------
 
-> .zip {animation-duration: 90ms;}
+.zip {animation-duration: 90ms;}
 
 ### animation-iteration-count Inh. N Anim. N
 
@@ -3057,7 +3056,7 @@ ol.dance {animation-iteration-count: infinite;}
 
 **Examples** html {animation-name: turn, slide, none;}
 
-> h2 {animation-name: flip;}
+h2 {animation-name: flip;}
 
 ### animation-play-state Inh. N Anim. N
 
@@ -3080,27 +3079,27 @@ ol.dance {animation-iteration-count: infinite;}
   **Examples**      pre {animation-play-state:
   ------------------------------------------------------------------------
 
-> running, paused, running;} table {animation-play-state: running;}
+running, paused, running;} table {animation-play-state: running;}
 
 ### animation-timing-function Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;          |
+| **Values**  | &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;          |
 |               | ease-in-out &vert; step-start &vert; step-end &vert;             |
 |               | steps(*&lt;integer&gt;*, start) &vert; steps(*&lt;integer&gt;*,  |
 |               | end) &vert; cubic-bezier(*&lt;number&gt;*,                   |
 |               | *&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*) &rbrack;#          |
 +===============+======================================================+
-| > **Initial   | ease                                                 |
-| > value**     |                                                      |
+| **Initial   | ease                                                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | As declared                                          |
-| > value**     |                                                      |
+| **Computed  | As declared                                          |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | All elements, ::before and ::after pseudoelements    |
-| > to**        |                                                      |
+| **Applies   | All elements, ::before and ::after pseudoelements    |
+| to**        |                                                      |
 +---------------+------------------------------------------------------+
-| > **          | Defines how an animation is run over the course of   |
+| **          | Defines how an animation is run over the course of   |
 | Description** | the animation's full cycle or within an individual   |
 |               | keyframe, depending on where the property is used.   |
 |               | The keywords are all defined to have cubicbezier()   |
@@ -3109,7 +3108,7 @@ ol.dance {animation-iteration-count: infinite;}
 |               | consistent effects across user agents                |
 +---------------+------------------------------------------------------+
 
-> ---but, as always, authors are cautioned not to count on that.
+---but, as always, authors are cautioned not to count on that.
 
 **Examples** h1 {animation-timing-function: ease, ease-in,
 cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
@@ -3118,17 +3117,17 @@ linear;}
 ### backface-visibility Inh. N Anim. N
 
 +-------------------+--------------------------------------------------+
-| > **Values**      | visible &vert; hidden                                |
+| **Values**      | visible &vert; hidden                                |
 +===================+==================================================+
-| > **Initial       | visible                                          |
-| > value**         |                                                  |
+| **Initial       | visible                                          |
+| value**         |                                                  |
 +-------------------+--------------------------------------------------+
-| > **Computed      | As declared                                      |
-| > value**         |                                                  |
+| **Computed      | As declared                                      |
+| value**         |                                                  |
 +-------------------+--------------------------------------------------+
-| > **Applies to**  | Any transformable element                        |
+| **Applies to**  | Any transformable element                        |
 +-------------------+--------------------------------------------------+
-| > **Description** | Defines whether the back side of an element is   |
+| **Description** | Defines whether the back side of an element is   |
 |                   | visible once the element has been rotated in a   |
 |                   | simulated 3D space and is "facing away" from the |
 |                   | viewer. If the value is hidden, the element will |
@@ -3136,10 +3135,10 @@ linear;}
 |                   | such that the front side of the element is once  |
 |                   | more "facing toward" the viewer.                 |
 +-------------------+--------------------------------------------------+
-| > **Examples**    | div.card {backface-visibility: hidden;}          |
+| **Examples**    | div.card {backface-visibility: hidden;}          |
 |                   | span.cubeside {backface-visibility: visible;}    |
 +-------------------+--------------------------------------------------+
-| > **background**  | **Inh. N Anim. P**                               |
+| **background**  | **Inh. N Anim. P**                               |
 +-------------------+--------------------------------------------------+
 | **Values**        | &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    |
 +-------------------+--------------------------------------------------+
@@ -3162,46 +3161,46 @@ linear;}
 |                   | not explicitly supplied.                         |
 +-------------------+--------------------------------------------------+
 
-> Thus, the following two rules will have the same appearance:
->
-> background: yellow;
->
-> background: yellow none top left repeat; Furthermore, these defaults
-> can override previous declarations made with more specific background
-> properties. For example, given the following rules:
->
-> h1 {background-repeat: repeat-x;} h1, h2 {background: yellow
-> url(headback.gif);} the repeat value for both h1 and h2 elements will
-> be set to the default of repeat, overriding the previously declared
-> value of repeat-x.
->
-> When declaring multiple backgrounds, only the last may have a
-> background color. In cases where multiple background images overlap,
-> the images are stacked with the first highest and the last lowest.
-> This is the exact reverse of how overlapping is handled in CSS
-> positioning, and so may seem counterintuitive.
+Thus, the following two rules will have the same appearance:
+
+background: yellow;
+
+background: yellow none top left repeat; Furthermore, these defaults
+can override previous declarations made with more specific background
+properties. For example, given the following rules:
+
+h1 {background-repeat: repeat-x;} h1, h2 {background: yellow
+url(headback.gif);} the repeat value for both h1 and h2 elements will
+be set to the default of repeat, overriding the previously declared
+value of repeat-x.
+
+When declaring multiple backgrounds, only the last may have a
+background color. In cases where multiple background images overlap,
+the images are stacked with the first highest and the last lowest.
+This is the exact reverse of how overlapping is handled in CSS
+positioning, and so may seem counterintuitive.
 
 **Examples** body {background: white url(bg41.gif) fixed center
 repeat-x;} p {background:
 
-> url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
-> #555;} pre {background: yellow;}
+url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
+#555;} pre {background: yellow;}
 
 ### background-attachment Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | &lbrack; scroll &vert; fixed &vert; local &rbrack;#                      |
+| **Values**  | &lbrack; scroll &vert; fixed &vert; local &rbrack;#                      |
 +===============+======================================================+
-| > **Initial   | scroll                                               |
-| > value**     |                                                      |
+| **Initial   | scroll                                               |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | As declared                                          |
-| > value**     |                                                      |
+| **Computed  | As declared                                          |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | All elements                                         |
-| > to**        |                                                      |
+| **Applies   | All elements                                         |
+| to**        |                                                      |
 +---------------+------------------------------------------------------+
-| > **          | Defines whether background images scroll along with  |
+| **          | Defines whether background images scroll along with  |
 | Description** | the element when the document is scrolled. This      |
 |               | property can be used to create "aligned"             |
 |               | backgrounds; for more details, see Chapter 9 of      |
@@ -3210,7 +3209,7 @@ repeat-x;} p {background:
 
 **Examples** body {background-attachment: scroll, scroll, fixed;}
 
-> div.fixbg {background-attachment: fixed;}
+div.fixbg {background-attachment: fixed;}
 
 ### background-blend-mode Inh. N Anim. N
 
@@ -3230,16 +3229,16 @@ repeat-x;} p {background:
   **Description**   Changes how overlapping background images are
   ------------------------------------------------------------------------
 
-> composited against an "empty" backdrop. The "backdrop" here is a
-> transparent layer underneath the background color. The default of
-> normal imposes simple alpha blending, as CSS has permitted since its
-> inception. The others cause the background image and its backdrop to
-> be combined in various ways; for example, lighten means that the final
-> result will show, at each pixel, either the image or its backdrop,
-> whichever is lighter. darken is the same, except the darker of the two
-> pixels will be shown. The results of these are likely to be familiar
-> to users of Photoshop or any other graphic-editing tool. Compositing
-> of multiple background layers is done back to front.
+composited against an "empty" backdrop. The "backdrop" here is a
+transparent layer underneath the background color. The default of
+normal imposes simple alpha blending, as CSS has permitted since its
+inception. The others cause the background image and its backdrop to
+be combined in various ways; for example, lighten means that the final
+result will show, at each pixel, either the image or its backdrop,
+whichever is lighter. darken is the same, except the darker of the two
+pixels will be shown. The results of these are likely to be familiar
+to users of Photoshop or any other graphic-editing tool. Compositing
+of multiple background layers is done back to front.
 
 **Examples** li.shadowed {background-blend-mode: darken;} aside
 {background-blend-mode: color-burn, luminosity, darken;}
@@ -3260,24 +3259,24 @@ the content edge itself.
 
 **Examples** body {background-clip: content-box;}
 
-> .callout {background-clip: content-box, border-box, padding-box;}
+.callout {background-clip: content-box, border-box, padding-box;}
 
 +----------------+-------------------------------------+---------------+
-| > **back       |                                     | **Inh. N      |
+| **back       |                                     | **Inh. N      |
 | ground-color** |                                     | Anim. Y**     |
 +================+=====================================+===============+
-| > **Values**   | *&lt;color&gt;*                         |               |
+| **Values**   | *&lt;color&gt;*                         |               |
 +----------------+-------------------------------------+---------------+
-| > **Initial    | transparent                         |               |
-| > value**      |                                     |               |
+| **Initial    | transparent                         |               |
+| value**      |                                     |               |
 +----------------+-------------------------------------+---------------+
-| > **Computed   | As declared                         |               |
-| > value**      |                                     |               |
+| **Computed   | As declared                         |               |
+| value**      |                                     |               |
 +----------------+-------------------------------------+---------------+
-| > **Applies    | All elements                        |               |
-| > to**         |                                     |               |
+| **Applies    | All elements                        |               |
+| to**         |                                     |               |
 +----------------+-------------------------------------+---------------+
-| > *            | Defines a solid color for the       |               |
+| *            | Defines a solid color for the       |               |
 | *Description** | background of the element. This     |               |
 |                | color fills the box defined by the  |               |
 |                | value of background-clip---by       |               |
@@ -3292,7 +3291,7 @@ the content edge itself.
 |                | the background color extends into   |               |
 |                | the border area.                    |               |
 +----------------+-------------------------------------+---------------+
-| > **Examples** | h4 {background-color: white;}       |               |
+| **Examples** | h4 {background-color: white;}       |               |
 |                |                                     |               |
 |                | p {background-color:                |               |
 |                | rgba(50%,50%,50%,0.33);}            |               |
@@ -3316,8 +3315,8 @@ infinitely, along one axis, or not at all. The initial background image
 (the origin image) is placed according to the value of
 background-position. **Examples** body {background-image:
 
-> url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
-> url(http://www.pix.org/dots.png);}
+url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
+url(http://www.pix.org/dots.png);}
 
 ### background-origin Inh. N Anim. N
 
@@ -3360,26 +3359,26 @@ background-position. **Examples** body {background-image:
 h1 {background-origin: content-box, padding-box;}
 
 +----------------+-------------------------------------+---------------+
-| > **backgro    |                                     | **Inh. N      |
+| **backgro    |                                     | **Inh. N      |
 | und-position** |                                     | Anim. Y**     |
 +================+=====================================+===============+
-| > **Values**   | *&lt;position&gt;*&#35;                    |               |
+| **Values**   | *&lt;position&gt;*&#35;                    |               |
 +----------------+-------------------------------------+---------------+
-| > **Initial    | 0% 0%                               |               |
-| > value**      |                                     |               |
+| **Initial    | 0% 0%                               |               |
+| value**      |                                     |               |
 +----------------+-------------------------------------+---------------+
-| > **Computed   | The absolute length offsets, if     |               |
-| > value**      | *&lt;length&gt;* is specified;          |               |
+| **Computed   | The absolute length offsets, if     |               |
+| value**      | *&lt;length&gt;* is specified;          |               |
 |                | otherwise, percentage values        |               |
 +----------------+-------------------------------------+---------------+
-| > *            | Refer to the corresponding point on |               |
+| *            | Refer to the corresponding point on |               |
 | *Percentages** | both the element and the origin     |               |
 |                | image                               |               |
 +----------------+-------------------------------------+---------------+
-| > **Applies    | Block-level and replaced elements   |               |
-| > to**         |                                     |               |
+| **Applies    | Block-level and replaced elements   |               |
+| to**         |                                     |               |
 +----------------+-------------------------------------+---------------+
-| > *            | Defines the position(s) of one or   |               |
+| *            | Defines the position(s) of one or   |               |
 | *Description** | more backgrounds' origin images (as |               |
 |                | defined by background-image); this  |               |
 |                | is the point from which any         |               |
@@ -3406,7 +3405,7 @@ h1 {background-origin: content-box, padding-box;}
 |                | image is placed can be affected by  |               |
 |                | the value of background-origin.     |               |
 +----------------+-------------------------------------+---------------+
-| > **Examples** | body {background-position: top      |               |
+| **Examples** | body {background-position: top      |               |
 |                | center;} div#navbar                 |               |
 |                | {background-position:               |               |
 |                |                                     |               |
@@ -3443,25 +3442,25 @@ equivalent to no-repeat repeat.
 
 **Examples** body {background-repeat: no-repeat;}
 
-> h2 {background-repeat: repeat-x, repeat-y;} ul {background-repeat:
-> repeat-y, round space, repeat;}
+h2 {background-repeat: repeat-x, repeat-y;} ul {background-repeat:
+repeat-y, round space, repeat;}
 
 ### background-size Inh. N Anim. Y
 
 +---------------+------------------------------------------------------+
-| > **Values**  | &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto       |
+| **Values**  | &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto       |
 |               | &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#                      |
 +===============+======================================================+
-| > **Initial   | auto                                                 |
-| > value**     |                                                      |
+| **Initial   | auto                                                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | As declared, but with all lengths made absolute and  |
-| > value**     | any missing auto keywords added                      |
+| **Computed  | As declared, but with all lengths made absolute and  |
+| value**     | any missing auto keywords added                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | All elements                                         |
-| > to**        |                                                      |
+| **Applies   | All elements                                         |
+| to**        |                                                      |
 +---------------+------------------------------------------------------+
-| > **          | Defines the size of one or more background origin    |
+| **          | Defines the size of one or more background origin    |
 | Description** | images. If two keywords are used (e.g., 50px 25%),   |
 |               | the first defines the horizontal size of the image   |
 |               | and the second defines the vertical size. The origin |
@@ -3469,40 +3468,40 @@ equivalent to no-repeat repeat.
 |               | background with 100% 100%. By contrast, cover scales |
 +---------------+------------------------------------------------------+
 
-> up the image to cover the entire background even if some of it exceeds
-> the background area and is thus clipped, and contain scales up the
-> origin image so that at least one of its dimensions exactly fills the
-> corresponding axis of the background area.
+up the image to cover the entire background even if some of it exceeds
+the background area and is thus clipped, and contain scales up the
+origin image so that at least one of its dimensions exactly fills the
+corresponding axis of the background area.
 
 **Examples** body {background-size: 100% 90%;}
 
-> div.photo {background-size: cover;}
+div.photo {background-size: cover;}
 
 +----------------+-----------------------------------------------------+
-| > **border**   | **Inh. N Anim. P**                                  |
+| **border**   | **Inh. N Anim. P**                                  |
 +================+=====================================================+
-| > **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
+| **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
 |                | *&lt;bordercolor&gt;* &rbrack;                                |
 +----------------+-----------------------------------------------------+
-| > **Initial    | Refer to individual properties                      |
-| > value**      |                                                     |
+| **Initial    | Refer to individual properties                      |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| >              | Border width and color; not border style            |
+|              | Border width and color; not border style            |
 | **Animatable** |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the width, color, |
+| *            | A shorthand property that defines the width, color, |
 | *Description** | and style of an element's border. Note that while   |
 |                | none of the values are actually required, omitting  |
 |                | a border style will result in no border being       |
 |                | applied because the default border style is none.   |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1 {border: 2px dashed olive;} a:link {border: blue |
+| **Examples** | h1 {border: 2px dashed olive;} a:link {border: blue |
 |                | solid 1px;}                                         |
 |                |                                                     |
 |                | p.warning {border: double 5px red;}                 |
@@ -3527,12 +3526,12 @@ equivalent to no-repeat repeat.
                     and style of the bottom border of an element. As
   ------------------------------------------------------------------------
 
-> with border, omission of a border style will result in no border
-> appearing.
+with border, omission of a border style will result in no border
+appearing.
 
 **Examples** ul {border-bottom: 0.5in groove green;}
 
-> a:active {border-bottom: purple 2px dashed;}
+a:active {border-bottom: purple 2px dashed;}
 
 ### border-bottom-color Inh. N Anim. Y
 
@@ -3548,7 +3547,7 @@ none or hidden for any visible border to appear.
 
 **Examples** ul {border-bottom-color: green;}
 
-> a:active {border-bottom-color: purple;}
+a:active {border-bottom-color: purple;}
 
 ### border-bottom-left-radius Inh. N Anim. Y
 
@@ -3575,7 +3574,7 @@ none or hidden for any visible border to appear.
   **Examples**      h1 {border-bottom-left-radius: 10%;}
   ------------------------------------------------------------------------
 
-> h2 {border-bottom-left-radius: 1em 10px;}
+h2 {border-bottom-left-radius: 1em 10px;}
 
 ### border-bottom-right-radius Inh. N Anim. Y
 
@@ -3598,12 +3597,12 @@ none or hidden for any visible border to appear.
                     sec‐
   ------------------------------------------------------------------------
 
-> ond is the vertical radius. See border-radius for a description of how
-> the values create the rounding shape.
+ond is the vertical radius. See border-radius for a description of how
+the values create the rounding shape.
 
 **Examples** h1 {border-bottom-right-radius: 10%;}
 
-> h2 {border-bottom-right-radius: 1em 10px;}
+h2 {border-bottom-right-radius: 1em 10px;}
 
 ### border-bottom-style Inh. N Anim. N
 
@@ -3621,12 +3620,12 @@ none or hidden for any visible border to appear.
   **Description**   Defines the style for the bottom border of an ele‐
   ------------------------------------------------------------------------
 
-> ment. The value must be something other than none or hidden for any
-> border to appear.
+ment. The value must be something other than none or hidden for any
+border to appear.
 
 **Examples** ul {border-bottom-style: groove;}
 
-> a:active {border-bottom-style: dashed;}
+a:active {border-bottom-style: dashed;}
 
 ### border-bottom-width Inh. N Anim. Y
 
@@ -3645,7 +3644,7 @@ effectively reset to 0. Negative length values are not permitted.
 
 **Examples** ul {border-bottom-width: 0.5in;}
 
-> a:active {border-bottom-width: 2px;}
+a:active {border-bottom-width: 2px;}
 
 ### border-collapse Inh. Y Anim. Y
 
@@ -3687,7 +3686,7 @@ something other than none or hidden for any visible border to appear.
 
 **Examples** h1 {border-color: purple;}
 
-> a:visited {border-color: maroon;}
+a:visited {border-color: maroon;}
 
 #### border-image Inh. N Anim. P
 
@@ -3734,10 +3733,10 @@ something other than none or hidden for any visible border to appear.
 | **Examples**  | div.starry {border-image:                            |
 +---------------+------------------------------------------------------+
 
-> url(stargrid.png) 5px repeat;}
+url(stargrid.png) 5px repeat;}
 >
-> aside {border-image: url(asides.png) 100 50 150 / 8 3 13 / 2 stretch
-> round;}
+aside {border-image: url(asides.png) 100 50 150 / 8 3 13 / 2 stretch
+round;}
 
 ### border-image-outset Inh. N Anim. Y
 
@@ -3757,31 +3756,31 @@ something other than none or hidden for any visible border to appear.
                     define distances from the top, right, bottom, and left
   ------------------------------------------------------------------------
 
-> edges of the border image, in that order. Numbers are calculated with
-> respect to the image's intrinsic coordinate system; thus, for a raster
-> image, the number 7 is taken to mean seven pixels. Images in formats
-> such as SVG may have different coordinate systems. Negative values are
-> not permitted.
+edges of the border image, in that order. Numbers are calculated with
+respect to the image's intrinsic coordinate system; thus, for a raster
+image, the number 7 is taken to mean seven pixels. Images in formats
+such as SVG may have different coordinate systems. Negative values are
+not permitted.
 
 **Examples** aside {border-image-outset: 2;}
 
-> div#pow {border-image-outset: 10 17 13 5;}
+div#pow {border-image-outset: 10 17 13 5;}
 
 ### border-image-repeat Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}       |
+| **Values**  | &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}       |
 +===============+======================================================+
-| > **Initial   | stretch                                              |
-| > value**     |                                                      |
+| **Initial   | stretch                                              |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | Two keywords, one for each axis                      |
-| > value**     |                                                      |
+| **Computed  | Two keywords, one for each axis                      |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | All elements, except internal table elements when    |
-| > to**        | border-collapse is collapse                          |
+| **Applies   | All elements, except internal table elements when    |
+| to**        | border-collapse is collapse                          |
 +---------------+------------------------------------------------------+
-| > **          | Defines the repetition pattern (or lack thereof) of  |
+| **          | Defines the repetition pattern (or lack thereof) of  |
 | Description** | the sides of a border image. stretch causes a single |
 |               | copy of the image to be stretched to fit the border  |
 |               | segment (top, right, bottom, or left). repeat        |
@@ -3790,13 +3789,13 @@ something other than none or hidden for any visible border to appear.
 |               | ever tiled                                           |
 +---------------+------------------------------------------------------+
 
-> along one axis. round "tiles" the border image as many times as it
-> will fit without clipping, then (if necessary) scales the entire set
-> of tiled images to exactly fit the border segment.
+along one axis. round "tiles" the border image as many times as it
+will fit without clipping, then (if necessary) scales the entire set
+of tiled images to exactly fit the border segment.
 
 **Examples** div.starry {border-image-repeat: repeat;}
 
-> aside {border-image-repeat: stretch round;}
+aside {border-image-repeat: stretch round;}
 
 ### border-image-slice Inh. N Anim. P
 
@@ -3840,7 +3839,7 @@ something other than none or hidden for any visible border to appear.
 
 **Examples** div.starry {border-image-slice: 5px;}
 
-> aside {border-image-slice: 100 50 150;}
+aside {border-image-slice: 100 50 150;}
 
 ### border-image-source Inh. N Anim. N
 
@@ -3861,30 +3860,30 @@ something other than none or hidden for any visible border to appear.
   **Examples**      div.starry {border-image-source:
   ------------------------------------------------------------------------
 
-> url(stargrid.png);}
->
-> aside {border-image-source: url(asides.png);}
+url(stargrid.png);}
+
+aside {border-image-source: url(asides.png);}
 
 ### border-image-width Inh. N Anim. Y
 
 +---------------+------------------------------------------------------+
-| > **Values**  | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  |
+| **Values**  | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  |
 |               | &vert; auto &rbrack;{1,4}                                      |
 +===============+======================================================+
-| > **Initial   | 1                                                    |
-| > value**     |                                                      |
+| **Initial   | 1                                                    |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | Four values, each a percentage, a number, a          |
-| > value**     | *&lt;length&gt;* made absolute, or the auto keyword      |
+| **Computed  | Four values, each a percentage, a number, a          |
+| value**     | *&lt;length&gt;* made absolute, or the auto keyword      |
 +---------------+------------------------------------------------------+
-| > **          | Relative to the width/height of the entire border    |
+| **          | Relative to the width/height of the entire border    |
 | Percentages** | image area; that is, the outer edges of the border   |
 |               | box                                                  |
 +---------------+------------------------------------------------------+
-| > **Applies   | All elements, except table elements when             |
-| > to**        | bordercollapse is collapse                           |
+| **Applies   | All elements, except table elements when             |
+| to**        | bordercollapse is collapse                           |
 +---------------+------------------------------------------------------+
-| > **          | Defines an image width for each of the four sides of |
+| **          | Defines an image width for each of the four sides of |
 | Description** | an image border. Border image slices that have a     |
 |               | different width than the border image width value    |
 |               | are scaled to match it, which may impact how they    |
@@ -3901,70 +3900,70 @@ something other than none or hidden for any visible border to appear.
 |               | border area, it                                      |
 +---------------+------------------------------------------------------+
 
-> will be clipped by default (but border-imageoutset may prevent this).
-> If it is narrower or shorter than the border area, it will not be
-> scaled up. Negative values are not permitted.
+will be clipped by default (but border-imageoutset may prevent this).
+If it is narrower or shorter than the border area, it will not be
+scaled up. Negative values are not permitted.
 
 **Examples** aside {border-image-width: 8 3 13;}
 
-> div#pow{border-image-width: 25px 35;}
+div#pow{border-image-width: 25px 35;}
 
 +----------------+-----------------------------------------------------+
-| > *            | **Inh. N Anim. P**                                  |
+| *            | **Inh. N Anim. P**                                  |
 | *border-left** |                                                     |
 +================+=====================================================+
-| > **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
+| **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
 |                | *&lt;bordercolor&gt;* &rbrack;                                |
 +----------------+-----------------------------------------------------+
-| > **Initial    | See individual properties                           |
-| > value**      |                                                     |
+| **Initial    | See individual properties                           |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties (border-width, etc.)      |
-| > value**      |                                                     |
+| **Computed   | See individual properties (border-width, etc.)      |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| >              | Border width and color; not border style            |
+|              | Border width and color; not border style            |
 | **Animatable** |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the width, color, |
+| *            | A shorthand property that defines the width, color, |
 | *Description** | and style of the left border of an element. As with |
 |                | border, omission of a border style will result in   |
 |                | no border appearing.                                |
 +----------------+-----------------------------------------------------+
-| > **Examples** | p {border-left: 3em solid gray;} pre {border-left:  |
+| **Examples** | p {border-left: 3em solid gray;} pre {border-left:  |
 |                | double black 4px;}                                  |
 +----------------+-----------------------------------------------------+
 
 ### border-left-color Inh. N Anim. Y
 
 +---------------+------------------------------------------------------+
-| > **Values**  | *&lt;color&gt;*                                          |
+| **Values**  | *&lt;color&gt;*                                          |
 +===============+======================================================+
-| > **Initial   | currentColor                                         |
-| > value**     |                                                      |
+| **Initial   | currentColor                                         |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | A color                                              |
-| > value**     |                                                      |
+| **Computed  | A color                                              |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | All elements                                         |
-| > to**        |                                                      |
+| **Applies   | All elements                                         |
+| to**        |                                                      |
 +---------------+------------------------------------------------------+
-| > **          | Defines the color for the visible portions of the    |
+| **          | Defines the color for the visible portions of the    |
 | Description** | left border of an element. The border's style must   |
 |               | be something other than none or hidden for any       |
 |               | visible border to appear.                            |
 +---------------+------------------------------------------------------+
-| >             |                                                      |
+|             |                                                      |
 |  **Examples** |                                                      |
-| > p           |                                                      |
-| > {borde      |                                                      |
+| p           |                                                      |
+| {borde      |                                                      |
 | r-left-color: |                                                      |
-| > gray;} pre  |                                                      |
-| > {borde      |                                                      |
+| gray;} pre  |                                                      |
+| {borde      |                                                      |
 | r-left-color: |                                                      |
-| > black;}     |                                                      |
+| black;}     |                                                      |
 +---------------+------------------------------------------------------+
 
 ### border-left-style Inh. N Anim. N
@@ -3987,7 +3986,7 @@ something other than none or hidden for any visible border to appear.
   **Examples**      p {border-left-style: solid;}
   ------------------------------------------------------------------------
 
-> pre {border-left-style: double;}
+pre {border-left-style: double;}
 
 ### border-left-width Inh. N Anim. Y
 
@@ -4010,14 +4009,14 @@ something other than none or hidden for any visible border to appear.
   **Examples**      p {border-left-width: 3em;}
   ------------------------------------------------------------------------
 
-> pre {border-left-width: 4px;}
+pre {border-left-width: 4px;}
 
 #### border-radius Inh. N Anim. Y
 
 **Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
 *&lt;length&gt;* &vert;
 
-> *&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?
+*&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?
 
 **Initial value** 0
 
@@ -4088,12 +4087,12 @@ something other than none or hidden for any visible border to appear.
   **Description**   A shorthand property that defines the width, color,
   ------------------------------------------------------------------------
 
-> and style of the right border of an element. As with border, omission
-> of a border style will result in no border appearing.
+and style of the right border of an element. As with border, omission
+of a border style will result in no border appearing.
 
 **Examples** img {border-right: 30px dotted blue;}
 
-> h3 {border-right: cyan 1em inset;}
+h3 {border-right: cyan 1em inset;}
 
 ### border-right-color Inh. N Anim. Y
 
@@ -4115,16 +4114,16 @@ something other than none or hidden for any visible border to appear.
   **Examples**      img {border-right-color: blue;}
   ------------------------------------------------------------------------
 
-> h3 {border-right-color: cyan;}
+h3 {border-right-color: cyan;}
 
 ### border-right-style Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;       |
+| **Values**  | none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;       |
 |               | double &vert; groove &vert; ridge &vert; inset &vert; outset         |
 +===============+======================================================+
-| > **Initial   | none                                                 |
-| > value**     |                                                      |
+| **Initial   | none                                                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
 | **Computed    |                                                      |
 | value** As    |                                                      |
@@ -4139,7 +4138,7 @@ appear.
 
 **Examples** img {border-right-style: dotted;}
 
-> h3 {border-right-style: inset;}
+h3 {border-right-style: inset;}
 
 ### border-right-width Inh. N Anim. Y
 
@@ -4157,29 +4156,29 @@ appear.
                     which will take effect only if the border's style is
   ------------------------------------------------------------------------
 
-> something other than none or hidden. If the border style is none, the
-> border width is effectively reset to 0. Negative length values are not
-> permitted.
+something other than none or hidden. If the border style is none, the
+border width is effectively reset to 0. Negative length values are not
+permitted.
 
 **Examples** img {border-right-width: 30px;}
 
-> h3 {border-right-width: 1em;}
+h3 {border-right-width: 1em;}
 
 #### border-spacing Inh. Y Anim. Y
 
 +---------------+------------------------------------------------------+
-| > **Values**  | *&lt;length&gt;* *&lt;length&gt;*?                           |
+| **Values**  | *&lt;length&gt;* *&lt;length&gt;*?                           |
 +===============+======================================================+
-| > **Initial   | 0                                                    |
-| > value**     |                                                      |
+| **Initial   | 0                                                    |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | Two absolute lengths                                 |
-| > value**     |                                                      |
+| **Computed  | Two absolute lengths                                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Applies   | Elements with the display value table or tableinline |
-| > to**        |                                                      |
+| **Applies   | Elements with the display value table or tableinline |
+| to**        |                                                      |
 +---------------+------------------------------------------------------+
-| > **          | Defines the distance between table cell borders in   |
+| **          | Defines the distance between table cell borders in   |
 | Description** | the separated borders table layout model. The first  |
 |               | of the two length values is the horizontal           |
 |               | separation and the second is the vertical            |
@@ -4190,7 +4189,7 @@ appear.
 
 **Examples** table {border-spacing: 0;}
 
-> table {border-spacing: 3px 5px;}
+table {border-spacing: 3px 5px;}
 
 **Note** This property is ignored unless the value of bordercollapse is
 separate.
@@ -4198,20 +4197,20 @@ separate.
 #### border-style Inh. N Anim. N
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   |
+| **Values**   | &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   |
 |                | double &vert; groove &vert; ridge &vert; inset &vert; outset        |
 |                | &rbrack;{1,4}                                             |
 +================+=====================================================+
-| > **Initial    | See individual properties                           |
-| > value**      |                                                     |
+| **Initial    | See individual properties                           |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties (border-top-style, etc.)  |
-| > value**      |                                                     |
+| **Computed   | See individual properties (border-top-style, etc.)  |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property used to define the styles for  |
+| *            | A shorthand property used to define the styles for  |
 | *Description** | the overall border of an element or for each side   |
 |                | individually. The value of any border must be       |
 |                | something other than none or hidden for the border  |
@@ -4222,36 +4221,36 @@ separate.
 |                | to 0. Any unrecognized value from the list of       |
 |                | values should be reinterpreted as solid.            |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1 {border-style: solid;} img {border-style:        |
+| **Examples** | h1 {border-style: solid;} img {border-style:        |
 |                | inset;}                                             |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. P**                                  |
+|              | **Inh. N Anim. P**                                  |
 | **border-top** |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
+| **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
 |                | *&lt;bordercolor&gt;* &rbrack;                                |
 +----------------+-----------------------------------------------------+
-| > **Initial    | See individual properties                           |
-| > value**      |                                                     |
+| **Initial    | See individual properties                           |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties (border-width, etc.)      |
-| > value**      |                                                     |
+| **Computed   | See individual properties (border-width, etc.)      |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| >              | Border width and color; not border style            |
+|              | Border width and color; not border style            |
 | **Animatable** |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the width, color, |
+| *            | A shorthand property that defines the width, color, |
 | *Description** | and style of the top border of an element. As with  |
 +----------------+-----------------------------------------------------+
 
-> border, omission of a border style will result in no border appearing.
+border, omission of a border style will result in no border appearing.
 
 **Examples** ul {border-top: 0.5in solid black;}
 
-> h1 {border-top: dashed 1px gray;}
+h1 {border-top: dashed 1px gray;}
 
 ### border-top-color Inh. N Anim. Y
 
@@ -4267,7 +4266,7 @@ none or hidden for any visible border to appear.
 
 **Examples** ul {border-top-color: black;}
 
-> h1 {border-top-color: gray;}
+h1 {border-top-color: gray;}
 
 ### border-top-left-radius Inh. N Anim. Y
 
@@ -4293,7 +4292,7 @@ none or hidden for any visible border to appear.
   **Examples**      h1 {border-top-left-radius: 10%;}
   ------------------------------------------------------------------------
 
-> h2 {border-top-left-radius: 1em 10px;}
+h2 {border-top-left-radius: 1em 10px;}
 
 ### border-top-right-radius Inh. N Anim. Y
 
@@ -4320,7 +4319,7 @@ none or hidden for any visible border to appear.
   **Examples**      h1 {border-top-right-radius: 10%;}
   ------------------------------------------------------------------------
 
-> h2 {border-top-right-radius: 1em 10px;}
+h2 {border-top-right-radius: 1em 10px;}
 
 ### border-top-style Inh. N Anim. N
 
@@ -4342,7 +4341,7 @@ none or hidden for any visible border to appear.
   **Examples**      ul {border-top-style: solid;}
   ------------------------------------------------------------------------
 
-> h1 {border-top-style: dashed;}
+h1 {border-top-style: dashed;}
 
 ### border-top-width Inh. N Anim. Y
 
@@ -4365,23 +4364,23 @@ none or hidden for any visible border to appear.
   **Examples**      ul {border-top-width: 0.5in;}
   ------------------------------------------------------------------------
 
-> h1 {border-top-width: 1px;}
+h1 {border-top-width: 1px;}
 
 #### border-width Inh. N Anim. Y
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  |
+| **Values**   | &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  |
 +================+=====================================================+
-| > **Initial    | See individual properties                           |
-| > value**      |                                                     |
+| **Initial    | See individual properties                           |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties (border-top-style, etc.)  |
-| > value**      |                                                     |
+| **Computed   | See individual properties (border-top-style, etc.)  |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the width for the |
+| *            | A shorthand property that defines the width for the |
 | *Description** | overall border of an element or for each side       |
 |                | individually. The width will take effect for a      |
 |                | given border only if the border's style is          |
@@ -4390,19 +4389,19 @@ none or hidden for any visible border to appear.
 |                | reset to 0. Negative length values are not          |
 |                | permitted.                                          |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1 {border-width: 2ex;}                             |
+| **Examples** | h1 {border-width: 2ex;}                             |
 |                |                                                     |
 |                | img {border-width: 5px thick thin 1em;}             |
 +----------------+-----------------------------------------------------+
-| > **bottom**   | **Inh. N Anim. P**                                  |
+| **bottom**   | **Inh. N Anim. P**                                  |
 +----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
 +----------------+-----------------------------------------------------+
-| > **Initial    | auto                                                |
-| > value**      |                                                     |
+| **Initial    | auto                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | For static elements, auto; for length values, the   |
-| > value**      | corresponding absolute length; for percentage       |
+| **Computed   | For static elements, auto; for length values, the   |
+| value**      | corresponding absolute length; for percentage       |
 |                | values, the specified value; otherwise, auto        |
 +----------------+-----------------------------------------------------+
 | *              |                                                     |
@@ -4426,7 +4425,7 @@ negative of the value of top.
 
 **Examples** div#footer {position: fixed; bottom: 0;}
 
-> sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
+sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
 
 ### box-decoration-break Inh. N Anim. N
 
@@ -4448,15 +4447,15 @@ negative of the value of top.
                     apart. The most common case is an inline element that
   ------------------------------------------------------------------------
 
-> wraps across one or more line breaks. With the default behavior,
-> slice, the pieces of the inline element are drawn as though the whole
-> element was laid out in a single line and then sliced apart at each
-> line break. If clone is declared, then each piece of the element is
-> decorated as though they were separate elements sharing the same
-> styles.
->
-> box-decoration-break also applies to block boxes that are split across
-> columns or pages.
+wraps across one or more line breaks. With the default behavior,
+slice, the pieces of the inline element are drawn as though the whole
+element was laid out in a single line and then sliced apart at each
+line break. If clone is declared, then each piece of the element is
+decorated as though they were separate elements sharing the same
+styles.
+
+box-decoration-break also applies to block boxes that are split across
+columns or pages.
 
 **Examples** span {box-decoration-break: clone;} a
 {box-decoration-break: slice;}
@@ -4464,20 +4463,20 @@ negative of the value of top.
 #### box-shadow Inh. N Anim. Y
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&            |
+| **Values**   | none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&            |
 |                | *&lt;color&gt;*?&rbrack;#                                     |
 +================+=====================================================+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
+| **Initial    | none                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | *&lt;length&gt;* values as absolute length values;      |
-| > value**      | *&lt;color&gt;* values as computed internally;          |
+| **Computed   | *&lt;length&gt;* values as absolute length values;      |
+| value**      | *&lt;color&gt;* values as computed internally;          |
 |                | otherwise, as declared                              |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines one or more shadows that are derived from   |
+| *            | Defines one or more shadows that are derived from   |
 | *Description** | the shape of the element box. Either outset         |
 |                | ("drop") shadows or inset shadows can be defined,   |
 |                | the latter with use of the optional inset keyword.  |
@@ -4500,12 +4499,12 @@ negative of the value of top.
 |                | inset shadows are only visible inside the border    |
 |                | edge and are never drawn beyond it.                 |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1 {box-shadow: 5px 10px gray;} table th            |
+| **Examples** | h1 {box-shadow: 5px 10px gray;} table th            |
 |                | {box-shadow: inset 0.5em 0.75em 5px −2px            |
 |                |                                                     |
 |                | rgba(255,0,0,0.5);}                                 |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 | **box-sizing** |                                                     |
 +----------------+-----------------------------------------------------+
 
@@ -4526,8 +4525,8 @@ the bottom outer border edge. Any padding or border widths are
 "subtracted" from those dimensions instead of the historical "additive"
 behavior. Thus, given:
 
-> body {box-sizing: border-box; width: 880px; padding: 0 20px;} the
-> final width of the content area will be 840 pixels (880--20--20).
+body {box-sizing: border-box; width: 880px; padding: 0 20px;} the
+final width of the content area will be 840 pixels (880--20--20).
 
 **Example** body {box-sizing: padding-box;}
 
@@ -4551,20 +4550,20 @@ element placed just before (or after) the table.
 dropped due to a lack of widespread support.
 
 +----------------+-----------------------------------------------------+
-| > **clear**    | **Inh. N Anim. N**                                  |
+| **clear**    | **Inh. N Anim. N**                                  |
 +================+=====================================================+
-| > **Values**   | left &vert; right &vert; both &vert; none                       |
+| **Values**   | left &vert; right &vert; both &vert; none                       |
 +----------------+-----------------------------------------------------+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
+| **Initial    | none                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Block-level elements                                |
-| > to**         |                                                     |
+| **Applies    | Block-level elements                                |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines to which side (or sides) of an element no   |
+| *            | Defines to which side (or sides) of an element no   |
 | *Description** | floating element may be placed. If normal layout of |
 |                | a cleared element would result in a floated element |
 |                | appearing on the cleared side, the cleared element  |
@@ -4578,9 +4577,9 @@ dropped due to a lack of widespread support.
 |                | border edge is just below the bottom outer margin   |
 |                | edge of a floated element on the declared side.     |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1 {clear: both;} p + h3 {clear: right;}            |
+| **Examples** | h1 {clear: both;} p + h3 {clear: right;}            |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. P**                                  |
+|              | **Inh. N Anim. P**                                  |
 |  **clip-path** |                                                     |
 +----------------+-----------------------------------------------------+
 
@@ -4609,97 +4608,97 @@ clipping shape.
 
 **Examples** p.clipped {clip-path: url(shapes.svg#cloud02);}
 
-> p.rounded {clip-path: ellipse(100px 50px at 75% 25%);}
->
-> p.diamond {clip-path:
->
-> polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
+p.rounded {clip-path: ellipse(100px 50px at 75% 25%);}
+
+p.diamond {clip-path:
+
+polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **clip-rule** |                                                     |
 +================+=====================================================+
-| > **Values**   | nonzero &vert; evenodd                                  |
+| **Values**   | nonzero &vert; evenodd                                  |
 +----------------+-----------------------------------------------------+
-| > **Initial    | nonzero                                             |
-| > value**      |                                                     |
+| **Initial    | nonzero                                             |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All SVG graphics elements (circle, ellipse, image,  |
-| > to**         | line, path, polygon, polyline, rect, text, and use) |
+| **Applies    | All SVG graphics elements (circle, ellipse, image,  |
+| to**         | line, path, polygon, polyline, rect, text, and use) |
 |                | *if and only if* they are children of a clipPath    |
 |                | element                                             |
 +----------------+-----------------------------------------------------+
-| > *            | Alters the way in which portions of a path that     |
+| *            | Alters the way in which portions of a path that     |
 | *Description** | overlap each other cause the resulting shape to be  |
 |                | filled. A nonzero rule causes the entire shape to   |
 |                | be filled. evenodd can result in portions of the    |
 |                | shape's interior being fully transparent.           |
 +----------------+-----------------------------------------------------+
-| > **Examples** | span.fullshape {clip-rule: nonzero;} span.knockouts |
+| **Examples** | span.fullshape {clip-rule: nonzero;} span.knockouts |
 |                | {clip-rule: evenodd;}                               |
 +----------------+-----------------------------------------------------+
-| > **color**    | **Inh. Y Anim. Y**                                  |
+| **color**    | **Inh. Y Anim. Y**                                  |
 +----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;color&gt;*                                         |
+| **Values**   | *&lt;color&gt;*                                         |
 +----------------+-----------------------------------------------------+
-| > **Initial    | User agent--specific                                |
-| > value**      |                                                     |
+| **Initial    | User agent--specific                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines the foreground color of an element, which   |
+| *            | Defines the foreground color of an element, which   |
 | *Description** | in HTML rendering means the text of an element;     |
 |                | raster images are not affected by color. This is    |
 |                | also the color applied to any borders of the        |
 |                | element,                                            |
 +----------------+-----------------------------------------------------+
 
-> unless overridden by border-color or one of the other border color
-> properties (border-top-color, etc.).
->
-> For color keywords (such as navy) and RGB hex values (such as #008800
-> or #080), the computed value is the rgb() equivalent. For transparent,
-> the computed value is rgba(0,0,0,0); for currentColor, the computed
-> value is inherit. For all other values, the computed value is the same
-> as the declared value.
+unless overridden by border-color or one of the other border color
+properties (border-top-color, etc.).
+
+For color keywords (such as navy) and RGB hex values (such as #008800
+or #080), the computed value is the rgb() equivalent. For transparent,
+the computed value is rgba(0,0,0,0); for currentColor, the computed
+value is inherit. For all other values, the computed value is the same
+as the declared value.
 
 **Examples** strong {color: rgb(255,128,128);} h3 {color: navy;}
 
-> p.warning {color: #ff0000;}
+p.warning {color: #ff0000;}
 
 pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
 
 +----------------+-----------------------------------------------------+
-| > **content**  | **Inh. N Anim. N**                                  |
+| **content**  | **Inh. N Anim. N**                                  |
 +================+=====================================================+
-| > **Values**   | normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;           |
+| **Values**   | normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;           |
 |                | *&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;          |
 |                | open-quote &vert; close-quote &vert; no-open-quote &vert;       |
 |                | no-close-quote &rbrack;+                                  |
 +----------------+-----------------------------------------------------+
-| > **Initial    | normal                                              |
-| > value**      |                                                     |
+| **Initial    | normal                                              |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | For *&lt;uri&gt;* values, an absolute URI; for          |
-| > value**      | attribute references, the resulting string;         |
+| **Computed   | For *&lt;uri&gt;* values, an absolute URI; for          |
+| value**      | attribute references, the resulting string;         |
 |                | otherwise, as declared                              |
 +----------------+-----------------------------------------------------+
-| > **Applies    | ::before and ::after pseudo-elements                |
-| > to**         |                                                     |
+| **Applies    | ::before and ::after pseudo-elements                |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines the generated content placed before or      |
+| *            | Defines the generated content placed before or      |
 | *Description** | after an element. By default, this is likely to be  |
 |                | inline content, but the type of box the content     |
 |                | creates can be defined using the property display.  |
 +----------------+-----------------------------------------------------+
-| > **Examples** | p::before {content: &quot;Paragraph&hellip;&quot;;}             |
+| **Examples** | p::before {content: &quot;Paragraph&hellip;&quot;;}             |
 |                | a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;  |
 |                |                                                     |
 |                | font-size: smaller;}                                |
@@ -4721,31 +4720,31 @@ decremented) by any value, positive or negative or 0. If no
 
 **Examples** h1 {counter-increment: section;}
 
-> &ast;.backward li {counter-increment: counter −1;}
+&ast;.backward li {counter-increment: counter −1;}
 
 #### counter-reset Inh. N Anim. N
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none      |
+| **Values**   | &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none      |
 +================+=====================================================+
-| > **Initial    | User agent--dependent                               |
-| > value**      |                                                     |
+| **Initial    | User agent--dependent                               |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | With this property, counters can be reset (or set   |
+| *            | With this property, counters can be reset (or set   |
 | *Description** | for the first time) to any value, positive or       |
 |                | negative. If no *&lt;integer&gt;* is supplied, it       |
 |                | defaults to 0.                                      |
 +----------------+-----------------------------------------------------+
-| > **Examples** | h1 {counter-reset: section;} h2 {counter-reset:     |
+| **Examples** | h1 {counter-reset: section;} h2 {counter-reset:     |
 |                | subsec 1;}                                          |
 +----------------+-----------------------------------------------------+
-| > **cursor**   | **Inh. Y Anim. N**                                  |
+| **cursor**   | **Inh. Y Anim. N**                                  |
 +----------------+-----------------------------------------------------+
 | **Values**     | &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  |
 |                | &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help  |
@@ -4764,8 +4763,8 @@ decremented) by any value, positive or negative or 0. If no
 | value**        | resolves to a                                       |
 +----------------+-----------------------------------------------------+
 
-> supported file type, a single absolute URI with optional *x*,*y*
-> coordinates; otherwise, as declared **Applies to** All elements
+supported file type, a single absolute URI with optional *x*,*y*
+coordinates; otherwise, as declared **Applies to** All elements
 
 **Description** Defines the cursor shape to be used when a mouse pointer
 is placed within the boundary of an element. Authors are cautioned to
@@ -4774,62 +4773,62 @@ be easily confused by changes that seem counterintuitive. For example,
 making any noninteractive element switch the cursor state to pointer is
 quite likely to cause user frustration.
 
-> Note that the value syntax makes URI values optional, but the keyword
-> mandatory. Thus, you can specify any number of URIs to external cursor
-> resources, but the value *must* end with a keyword. Leaving off the
-> keyword will cause conforming user agents to drop the declaration
-> entirely.
+Note that the value syntax makes URI values optional, but the keyword
+mandatory. Thus, you can specify any number of URIs to external cursor
+resources, but the value *must* end with a keyword. Leaving off the
+keyword will cause conforming user agents to drop the declaration
+entirely.
 >
-> CSS3 allows two numbers to be supplied with a *&lt;uri&gt;* value. These
-> define the *x*,*y* coordinates of the cursor's "active point"; that
-> is, the point in the cursor that is used for determining hover states,
-> active actions, and so forth. If no numbers are supplied and the
-> cursor image has no "intrinsic hotspot" (to quote the specification),
-> the top-left corner of the image is used (equivalent to 0 0). Note
-> that the numbers are unitless and are interpreted relative to the
-> "cursor's coordinate system" (to quote again).
+CSS3 allows two numbers to be supplied with a *&lt;uri&gt;* value. These
+define the *x*,*y* coordinates of the cursor's "active point"; that
+is, the point in the cursor that is used for determining hover states,
+active actions, and so forth. If no numbers are supplied and the
+cursor image has no "intrinsic hotspot" (to quote the specification),
+the top-left corner of the image is used (equivalent to 0 0). Note
+that the numbers are unitless and are interpreted relative to the
+"cursor's coordinate system" (to quote again).
 
 **Examples** a.moreinfo {cursor: help;}
 
 a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 
 +----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. Y**                                  |
+|              | **Inh. Y Anim. Y**                                  |
 |  **direction** |                                                     |
 +================+=====================================================+
-| > **Values**   | ltr &vert; rtl                                          |
+| **Values**   | ltr &vert; rtl                                          |
 +----------------+-----------------------------------------------------+
-| > **Initial    | ltr                                                 |
-| > value**      |                                                     |
+| **Initial    | ltr                                                 |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines the base writing direction of blocks and    |
+| *            | Defines the base writing direction of blocks and    |
 | *Description** | the direction of embeddings and overrides for the   |
 |                | Unicode Bidirectional Algorithm (sometimes called   |
 +----------------+-----------------------------------------------------+
 
-> *bidi*). Furthermore, it changes the way a number of properties and
-> layout decisions are handled, including but not limited to the
-> placement of table cells in a table row and the layout algorithms for
-> block boxes.
+*bidi*). Furthermore, it changes the way a number of properties and
+layout decisions are handled, including but not limited to the
+placement of table cells in a table row and the layout algorithms for
+block boxes.
 >
-> For a variety of reasons, authors are strongly encouraged to use the
-> HTML attribute dir rather than the CSS property direction. User agents
-> that do not support bidirectional text are permitted to ignore this
-> property.
+For a variety of reasons, authors are strongly encouraged to use the
+HTML attribute dir rather than the CSS property direction. User agents
+that do not support bidirectional text are permitted to ignore this
+property.
 
 **Examples** &ast;:lang(en) {direction: ltr;}
 
-> &ast;:lang(ar) {direction: rtl;}
+&ast;:lang(ar) {direction: rtl;}
 >
-> &lbrack; *&lt;display-outside&gt;* ‖ *&lt;display-inside&gt;* &rbrack; &vert;
-> *&lt;displaylistitem&gt;* &vert; *&lt;display-internal&gt;* &vert; *&lt;display-box&gt;*
-> &vert;
+&lbrack; *&lt;display-outside&gt;* ‖ *&lt;display-inside&gt;* &rbrack; &vert;
+*&lt;displaylistitem&gt;* &vert; *&lt;display-internal&gt;* &vert; *&lt;display-box&gt;*
+&vert;
 
 **display**
 
@@ -4837,7 +4836,7 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 
 **Values**
 
-> *&lt;display-legacy&gt;*
+*&lt;display-legacy&gt;*
 
 **Definitions**
 
@@ -4876,81 +4875,81 @@ HTML can be tricky, as it upsets the display hierarchy already defined
 in HTML, but it can also be very useful. In the case of XML, which has
 no such built-in visual hierarchy, display is indispensable.
 
-> The value none is often used to make elements "disappear," since it
-> removes the element and all of its descendant elements from the
-> presentation. This is true not just in visual media, but in all media;
-> thus, setting an element to display: none will prevent it from being
-> spoken by a speaking browser.
+The value none is often used to make elements "disappear," since it
+removes the element and all of its descendant elements from the
+presentation. This is true not just in visual media, but in all media;
+thus, setting an element to display: none will prevent it from being
+spoken by a speaking browser.
 >
-> The value run-in was long a part of CSS2.1 but was dropped in early
-> 2011 because of inconsistencies among browsers. Despite this, it is
-> still listed as part of CSS3.
+The value run-in was long a part of CSS2.1 but was dropped in early
+2011 because of inconsistencies among browsers. Despite this, it is
+still listed as part of CSS3.
 
 **Examples** h1 {display: block;}
 
-> li {display: list-item;} img {display: inline;} .hide {display: none;}
-> tr {display: table-row;}
+li {display: list-item;} img {display: inline;} .hide {display: none;}
+tr {display: table-row;}
 
 +----------------+-----------------------------------------------------+
-| > *            | **Inh. Y Anim. N**                                  |
+| *            | **Inh. Y Anim. N**                                  |
 | *empty-cells** |                                                     |
 +================+=====================================================+
-| > **Values**   | show &vert; hide                                        |
+| **Values**   | show &vert; hide                                        |
 +----------------+-----------------------------------------------------+
-| > **Initial    | show                                                |
-| > value**      |                                                     |
+| **Initial    | show                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Elements with the display value table-cell          |
-| > to**         |                                                     |
+| **Applies    | Elements with the display value table-cell          |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines the presentation of table cells that        |
+| *            | Defines the presentation of table cells that        |
 | *Description** | contain no content. If shown, the cell's borders    |
 |                | and background are drawn. This property is only     |
 |                | honored if border-collapse is set to separate;      |
 |                | otherwise, it is ignored.                           |
 +----------------+-----------------------------------------------------+
-| > **Example**  | th, td {empty-cells: show;}                         |
+| **Example**  | th, td {empty-cells: show;}                         |
 +----------------+-----------------------------------------------------+
-| > **Note**     | empty-cells has no effect unless the value of       |
+| **Note**     | empty-cells has no effect unless the value of       |
 |                | border-collapse is separate.                        |
 +----------------+-----------------------------------------------------+
 
 +----------------+-----------------------------------------------------+
-| > **filter**   | **Inh. N Anim. Y**                                  |
+| **filter**   | **Inh. N Anim. Y**                                  |
 +================+=====================================================+
-| > **Values**   | &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  |
+| **Values**   | &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  |
 |                | dropshadow() &vert; grayscale() &vert; hue-rotate() &vert;      |
 |                | invert() &vert; opacity() &vert; sepia() &vert; saturate() &vert;   |
 |                | url() &rbrack;#                                           |
 +----------------+-----------------------------------------------------+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
+| **Initial    | none                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements (in SVG, applies to all graphics       |
-| > to**         | elements and all container elements except the defs |
+| **Applies    | All elements (in SVG, applies to all graphics       |
+| to**         | elements and all container elements except the defs |
 |                | element)                                            |
 +----------------+-----------------------------------------------------+
-| > *            | Applies a visual filter to the element, resulting   |
+| *            | Applies a visual filter to the element, resulting   |
 | *Description** | in an alteration of its final appearance. url()     |
 |                | values point to filter elements in SVG files,       |
 |                | either externally or embedded within the HTML       |
 |                | document. SVG filters can be quite complex and      |
 |                | powerful.                                           |
 +----------------+-----------------------------------------------------+
-| > **Examples** | img.oldschool {filter: sepia(0.9);} h2.glowshadow   |
+| **Examples** | img.oldschool {filter: sepia(0.9);} h2.glowshadow   |
 |                | {filter:                                            |
 |                |                                                     |
 |                | drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em     |
 |                | 0.75em 30px gray);} div.logo {filter:               |
 |                | url(/assets/filters.svg#spotlight);}                |
 +----------------+-----------------------------------------------------+
-| > **flex**     | **Inh. N Anim. P**                                  |
+| **flex**     | **Inh. N Anim. P**                                  |
 +----------------+-----------------------------------------------------+
 
   ------------------------------------------------------------------------
@@ -5033,114 +5032,114 @@ no such built-in visual hierarchy, display is indispensable.
 #### flex-direction Inh. N Anim. N
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | row &vert; row-reverse &vert; column &vert; column-reverse      |
+| **Values**   | row &vert; row-reverse &vert; column &vert; column-reverse      |
 +================+=====================================================+
-| > **Initial    | row                                                 |
-| > value**      |                                                     |
+| **Initial    | row                                                 |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Flex containers                                     |
-| > to**         |                                                     |
+| **Applies    | Flex containers                                     |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines the direction in which flex items will be   |
+| *            | Defines the direction in which flex items will be   |
 | *Description** | flowed into the flex container, which in turn       |
 |                | defines how the flex lines will fill the flex       |
 |                | container.                                          |
 +----------------+-----------------------------------------------------+
-| > **Examples** | div.gallery {display: flex; flex-direction: row;}   |
+| **Examples** | div.gallery {display: flex; flex-direction: row;}   |
 |                |                                                     |
 |                | section.appetizers {display: flex; flex-direction:  |
 |                | column;}                                            |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **flex-flow** |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;*              |
+| **Values**   | *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;*              |
 +----------------+-----------------------------------------------------+
-| > **Initial    | row nowrap                                          |
-| > value**      |                                                     |
+| **Initial    | row nowrap                                          |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Flex containers                                     |
-| > to**         |                                                     |
+| **Applies    | Flex containers                                     |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property encompassing the flexdirection |
+| *            | A shorthand property encompassing the flexdirection |
 | *Description** | and flex-wrap properties. Note that the default     |
 |                | wrapping value is nowrap (see flex-wrap).           |
 +----------------+-----------------------------------------------------+
-| > **Examples** | div.gallery {display: flex; flex-flow: row wrap;}   |
+| **Examples** | div.gallery {display: flex; flex-flow: row wrap;}   |
 |                |                                                     |
 |                | nav.sidenav {display: flex; flex-flow: column       |
 |                | nowrap;}                                            |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. Y**                                  |
+|              | **Inh. N Anim. Y**                                  |
 |  **flex-grow** |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;number&gt;*                                        |
+| **Values**   | *&lt;number&gt;*                                        |
 +----------------+-----------------------------------------------------+
-| > **Initial    | 0                                                   |
-| > value**      |                                                     |
+| **Initial    | 0                                                   |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Flex items (children of flex containers)            |
-| > to**         |                                                     |
+| **Applies    | Flex items (children of flex containers)            |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Sets the *growth factor* for a flex item. The value |
+| *            | Sets the *growth factor* for a flex item. The value |
 | *Description** | supplied is summed up with all the growth factors   |
 |                | of                                                  |
 +----------------+-----------------------------------------------------+
 
-> the other flex items in the same flex line, and the amount they grow
-> is scaled in proportion to their growth factors as a percentage of the
-> whole.
+the other flex items in the same flex line, and the amount they grow
+is scaled in proportion to their growth factors as a percentage of the
+whole.
 
 **Examples** nav ul li {flex-grow: 1;}
 
-> ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
-> {flex-grow: 0.5;}
+ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
+{flex-grow: 0.5;}
 
 **Note** It is *strongly* recommended that instead of this prop‐
 
-> erty, authors use the flex shorthand property to set an item's flex
-> growth factor.
+erty, authors use the flex shorthand property to set an item's flex
+growth factor.
 
 +----------------+-----------------------------------------------------+
-| > *            | **Inh. N Anim. Y**                                  |
+| *            | **Inh. N Anim. Y**                                  |
 | *flex-shrink** |                                                     |
 +================+=====================================================+
-| > **Values**   | *&lt;number&gt;*                                        |
+| **Values**   | *&lt;number&gt;*                                        |
 +----------------+-----------------------------------------------------+
-| > **Initial    | 1                                                   |
-| > value**      |                                                     |
+| **Initial    | 1                                                   |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Flex items (children of flex containers)            |
-| > to**         |                                                     |
+| **Applies    | Flex items (children of flex containers)            |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Sets the *shrink factor* for a flex item. The value |
+| *            | Sets the *shrink factor* for a flex item. The value |
 | *Description** | supplied is summed up with all the shrink factors   |
 |                | of the other flex items in the same flex line, and  |
 |                | the amount they shrink is scaled proportional to    |
 |                | their shrink factors as a percentage of the whole.  |
 +----------------+-----------------------------------------------------+
-| > **Examples** | nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/    |
+| **Examples** | nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/    |
 |                |                                                     |
 |                | ol.gallery li {flex-shrink: 0.5;} div span.whatevs  |
 |                | {flex-shrink: 1;}                                   |
 +----------------+-----------------------------------------------------+
-| > **Note**     | It is *strongly* recommended that instead of this   |
+| **Note**     | It is *strongly* recommended that instead of this   |
 |                | property, authors use the flex shorthand property   |
 |                | to set an item's flex shrink factor.                |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **flex-wrap** |                                                     |
 +----------------+-----------------------------------------------------+
 
@@ -5188,34 +5187,34 @@ interpretation of statements like "as narrow as possible."
 
 **Examples** img.figure {float: left;}
 
-> p.sidebar {float: right; width: 15em;}
+p.sidebar {float: right; width: 15em;}
 
 +----------------+-----------------------------------------------------+
-| > **font**     | **Inh. Y Anim. P**                                  |
+| **font**     | **Inh. Y Anim. P**                                  |
 +================+=====================================================+
-| > **Values**   | &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  |
+| **Values**   | &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  |
 |                | ‖ *&lt;fontweight&gt;* &rbrack;? *&lt;font-size&gt;* &lbrack; /         |
 |                | *&lt;line-height&gt;* &rbrack;? *&lt;fontfamily&gt;*&rbrack; &vert; caption |
 |                | &vert; icon &vert; menu &vert; message-box &vert; small-caption &vert;  |
 |                | status-bar                                          |
 +----------------+-----------------------------------------------------+
-| > **Initial    | Refer to individual properties                      |
-| > value**      |                                                     |
+| **Initial    | Refer to individual properties                      |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties (font-style, etc.)        |
-| > value**      |                                                     |
+| **Computed   | See individual properties (font-style, etc.)        |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Calculated with respect to the parent element for   |
+| *            | Calculated with respect to the parent element for   |
 | *Percentages** | *&lt;font-size&gt;* and with respect to the element's   |
 |                | *&lt;fontsize&gt;* for *&lt;line-height&gt;*                |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| >              | Refer to individual font properties to see which    |
+|              | Refer to individual font properties to see which    |
 | **Animatable** | are animatable                                      |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property used to set all the aspects of |
+| *            | A shorthand property used to set all the aspects of |
 | *Description** | an element's font at once. It can also be used to   |
 |                | set the element's font to match an aspect of the    |
 |                | user's computing environment using keywords such as |
@@ -5225,7 +5224,7 @@ interpretation of statements like "as narrow as possible."
 |                | keyword must end with the font family. Otherwise,   |
 |                | the font declaration will be ignored.               |
 +----------------+-----------------------------------------------------+
-| > **Examples** | p {font: small-caps italic bold small/              |
+| **Examples** | p {font: small-caps italic bold small/              |
 |                |                                                     |
 |                | 1.25em Helvetica,sans-serif;}                       |
 |                |                                                     |
@@ -5235,16 +5234,16 @@ interpretation of statements like "as narrow as possible."
 |                |                                                     |
 |                | .figure span {font: icon;}                          |
 +----------------+-----------------------------------------------------+
-| > *            | **Inh. Y Anim. N**                                  |
+| *            | **Inh. Y Anim. N**                                  |
 | *font-family** |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    |
+| **Values**   | &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    |
 +----------------+-----------------------------------------------------+
-| > **Initial    | User agent--specific                                |
-| > value**      |                                                     |
+| **Initial    | User agent--specific                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
 | **Applies to** |                                                     |
 | All elements   |                                                     |
@@ -5263,8 +5262,8 @@ should *never* be quoted.
 **Examples** p {font-family: Helvetica, Arial, sans-serif;} li
 {font-family: Georgia, Times, TimesNR,
 
-> &quot;New Century Schoolbook&quot;, serif;} pre {font-family: Consolas,
-> &quot;Courier New&quot;, &quot;Andale Mono&quot;, Monaco, monospace;}
+&quot;New Century Schoolbook&quot;, serif;} pre {font-family: Consolas,
+&quot;Courier New&quot;, &quot;Andale Mono&quot;, Monaco, monospace;}
 
 ### font-feature-settings Inh. Y Anim. N
 
@@ -5299,18 +5298,18 @@ should *never* be quoted.
 #### font-kerning Inh. Y Anim. N
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | auto &vert; normal &vert; none                              |
+| **Values**   | auto &vert; normal &vert; none                              |
 +================+=====================================================+
-| > **Initial    | auto                                                |
-| > value**      |                                                     |
+| **Initial    | auto                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | In effect, allows the author to disable kerning of  |
+| *            | In effect, allows the author to disable kerning of  |
 | *Description** | text for a given element. The default of auto tells |
 |                | user agents to do what they normally do, whatever   |
 |                | that is. normal directs the user agent to use any   |
@@ -5321,12 +5320,12 @@ should *never* be quoted.
 |                | kerning is done *before* any letter spacing is      |
 |                | altered (see letterspacing).                        |
 +----------------+-----------------------------------------------------+
-| > **Examples** | body {kerning: normal;} div.typewriter {kerning:    |
+| **Examples** | body {kerning: normal;} div.typewriter {kerning:    |
 |                | none;}                                              |
 +----------------+-----------------------------------------------------+
-| > **Note**     | Has a corresponding &#64;font-face descriptor.         |
+| **Note**     | Has a corresponding &#64;font-face descriptor.         |
 +----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. P**                                  |
+|              | **Inh. Y Anim. P**                                  |
 |  **font-size** |                                                     |
 +----------------+-----------------------------------------------------+
 | **Values**     | xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  |
@@ -5353,19 +5352,19 @@ should *never* be quoted.
 |                | length value, or a                                  |
 +----------------+-----------------------------------------------------+
 
-> percentage value. Negative length and percentage values are not
-> permitted. The dangers of font size assignment are many and varied,
-> and use of points is particularly discouraged in web design as there
-> is no certain relationship between points and the pixels on a screen.
-> It's a matter of historical interest that because of early
-> misunderstandings, setting the font-size to medium led to different
-> results in early versions of Internet Explorer and Navigator 4.x.
+percentage value. Negative length and percentage values are not
+permitted. The dangers of font size assignment are many and varied,
+and use of points is particularly discouraged in web design as there
+is no certain relationship between points and the pixels on a screen.
+It's a matter of historical interest that because of early
+misunderstandings, setting the font-size to medium led to different
+results in early versions of Internet Explorer and Navigator 4.x.
 
 **Examples** h2 {font-size: 200%;}
 
-> code {font-size: 0.9em;}
+code {font-size: 0.9em;}
 >
-> p.caption {font-size: 9px;}
+p.caption {font-size: 9px;}
 
 ### font-size-adjust Inh. Y Anim. Y
 
@@ -5388,7 +5387,7 @@ should *never* be quoted.
   **Examples**      body {font-family: Helvetica, sans-serif;
   ------------------------------------------------------------------------
 
-> font-size-adjust: 0.53;}
+font-size-adjust: 0.53;}
 
 #### font-stretch Inh. Y Anim. N
 
@@ -5410,21 +5409,21 @@ only swap in a variant face (if it exists).
 descriptor.
 
 +----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. N**                                  |
+|              | **Inh. Y Anim. N**                                  |
 | **font-style** |                                                     |
 +================+=====================================================+
-| > **Values**   | italic &vert; oblique &vert; normal                         |
+| **Values**   | italic &vert; oblique &vert; normal                         |
 +----------------+-----------------------------------------------------+
-| > **Initial    | normal                                              |
-| > value**      |                                                     |
+| **Initial    | normal                                              |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines whether the font uses an italic, oblique,   |
+| *            | Defines whether the font uses an italic, oblique,   |
 | *Description** | or normal font face. Italic text is generally       |
 |                | defined as a separate face within the font family.  |
 |                | It is theoretically possible for a user agent to    |
@@ -5434,9 +5433,9 @@ descriptor.
 |                | text and almost always render both in exactly the   |
 |                | same way.                                           |
 +----------------+-----------------------------------------------------+
-| > **Examples** | em {font-style: oblique;} i {font-style: italic;}   |
+| **Examples** | em {font-style: oblique;} i {font-style: italic;}   |
 +----------------+-----------------------------------------------------+
-| > **Note**     | Has a corresponding &#64;font-face descriptor.         |
+| **Note**     | Has a corresponding &#64;font-face descriptor.         |
 +----------------+-----------------------------------------------------+
 
 #### font-synthesis Inh. Y Anim. N
@@ -5450,15 +5449,15 @@ descriptor.
 **Description** Defines whether user agents are permitted to
 programmatically generate bold or italic variants for
 
-> fonts that don't have bold or italic faces. This is generally frowned
-> upon by typographers, and the results can be visually displeasing, but
-> it does permit visual emphasis of text in font families that lack the
-> necessary faces. If you don't want to risk it, use none to suppress
-> this behavior.
+fonts that don't have bold or italic faces. This is generally frowned
+upon by typographers, and the results can be visually displeasing, but
+it does permit visual emphasis of text in font families that lack the
+necessary faces. If you don't want to risk it, use none to suppress
+this behavior.
 
 **Examples** h1 {font-synthesis: none;}
 
-> pre code {font-synthesis: style;}
+pre code {font-synthesis: style;}
 
 #### font-variant Inh. Y Anim. N
 
@@ -5500,31 +5499,31 @@ programmatically generate bold or italic variants for
 | Description** | It                                                   |
 +---------------+------------------------------------------------------+
 
-> is theoretically possible for a user agent to compute a small-caps
-> font face from the normal face.
+is theoretically possible for a user agent to compute a small-caps
+font face from the normal face.
 
 **Examples** h3 {font-variant: small-caps;} p {font-variant: normal;}
 
 **Note** Has a corresponding &#64;font-face descriptor.
 
 +----------------+-----------------------------------------------------+
-| > *            | **Inh. Y Anim. N**                                  |
+| *            | **Inh. Y Anim. N**                                  |
 | *font-weight** |                                                     |
 +================+=====================================================+
-| > **Values**   | normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   |
+| **Values**   | normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   |
 |                | &vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900    |
 +----------------+-----------------------------------------------------+
-| > **Initial    | normal                                              |
-| > value**      |                                                     |
+| **Initial    | normal                                              |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | One of the numeric values (100, etc.), or one of    |
-| > value**      | the numeric values plus one of the relative values  |
+| **Computed   | One of the numeric values (100, etc.), or one of    |
+| value**      | the numeric values plus one of the relative values  |
 |                | (bolder or lighter)                                 |
 +----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Defines the font weight used in rendering an        |
+| *            | Defines the font weight used in rendering an        |
 | *Description** | element's text. The numeric value 400 is equivalent |
 |                | to the keyword normal, and 700 is equivalent to     |
 |                | bold. If a font has only two weights---normal and   |
@@ -5534,13 +5533,13 @@ programmatically generate bold or italic variants for
 |                | least as light as the next lowest number and at     |
 |                | least as heavy as the next highest number.          |
 +----------------+-----------------------------------------------------+
-| > **Examples** | b {font-weight: 700;} strong {font-weight: bold;}   |
+| **Examples** | b {font-weight: 700;} strong {font-weight: bold;}   |
 |                |                                                     |
 |                | .delicate {font-weight: lighter;}                   |
 +----------------+-----------------------------------------------------+
-| > **Note**     | Has a corresponding &#64;font-face descriptor.         |
+| **Note**     | Has a corresponding &#64;font-face descriptor.         |
 +----------------+-----------------------------------------------------+
-| > **grid**     | **Inh. N Anim. N**                                  |
+| **grid**     | **Inh. N Anim. N**                                  |
 +----------------+-----------------------------------------------------+
 | **Values**     | none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    |
 |                | *&lt;gridtemplate-columns&gt;* &rbrack; &vert; &lbrack;                 |
@@ -5563,36 +5562,36 @@ programmatically generate bold or italic variants for
 
 definition of an element's grid system, not counting
 
-> grid gaps. The value syntax can become quite complex and, for
-> clarity's sake, most authors rely on the individual properties instead
-> of grid, but there are no technical reasons to avoid grid.
+grid gaps. The value syntax can become quite complex and, for
+clarity's sake, most authors rely on the individual properties instead
+of grid, but there are no technical reasons to avoid grid.
 
 **Example** body {display: grid; grid:
 
-> &quot;header header header header&quot; 3em
+&quot;header header header header&quot; 3em
 >
-> &quot;. content sidebar .&quot; 1fr
+&quot;. content sidebar .&quot; 1fr
 >
-> &quot;footer footer footer footer&quot; 5em /
+&quot;footer footer footer footer&quot; 5em /
 >
-> 2em 3fr minmax(10em,1fr) 2em;}
+2em 3fr minmax(10em,1fr) 2em;}
 
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **grid-area** |                                                     |
 +================+=====================================================+
-| > **Values**   | *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}        |
+| **Values**   | *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}        |
 +----------------+-----------------------------------------------------+
-| > **Initial    | See individual properties                           |
-| > value**      |                                                     |
+| **Initial    | See individual properties                           |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Grid items and absolutely positioned elements, if   |
-| > to**         | their containing block is a grid container          |
+| **Applies    | Grid items and absolutely positioned elements, if   |
+| to**         | their containing block is a grid container          |
 +----------------+-----------------------------------------------------+
-| > *            | Used to assign a grid item to a specific area of a  |
+| *            | Used to assign a grid item to a specific area of a  |
 | *Description** | defined grid. This can be done using a single       |
 |                | identifier, or using slash-separated grid line      |
 |                | identifiers. If all four grid lines are supplied,   |
@@ -5602,7 +5601,7 @@ definition of an element's grid system, not counting
 |                | top-right-bottom-left order for margins, padding,   |
 |                | and so on.                                          |
 +----------------+-----------------------------------------------------+
-| > **Examples** | #masthead {grid-area: header;}                      |
+| **Examples** | #masthead {grid-area: header;}                      |
 |                |                                                     |
 |                | #sidebar {grid-area: 1 / 2 / 1 / 3;}                |
 +----------------+-----------------------------------------------------+
@@ -5617,13 +5616,13 @@ definition of an element's grid system, not counting
 ***&lt;track-breadth&gt;** &lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;
 min-content &vert;
 
-> max-content &vert; auto
+max-content &vert; auto
 
 **Initial value** auto
 
 Depends on the specific track sizing
 
-> Grid containers
+Grid containers
 
 **Description** Defines the sizing of column tracks for columns that are
 automatically generated; that is, columns that are created because a
@@ -5632,8 +5631,8 @@ columns.
 
 **Example** div.grid {display: grid;
 
-> grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
-> grid-auto-columns: 20em;}
+grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
+grid-auto-columns: 20em;}
 
 #### grid-auto-flow Inh. N Anim. N
 
@@ -5652,25 +5651,25 @@ the grid container.
 
 **Examples** section.menu {grid-auto-flow: column;}
 
-> div.gallery {grid-auto-flow: row dense;}
+div.gallery {grid-auto-flow: row dense;}
 
 #### grid-auto-rows Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   |
+| **Values**  | *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   |
 |               | *&lt;trackbreadth&gt;*)                                  |
 +===============+======================================================+
-| > *           | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;    |
+| *           | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;    |
 | *Definition** | min-content &vert; max-content &vert; auto                   |
-| >             |                                                      |
-| > ***&lt;track  |                                                      |
+|             |                                                      |
+| ***&lt;track  |                                                      |
 | -breadth&gt;*** |                                                      |
 +---------------+------------------------------------------------------+
-| > **Initial   | auto                                                 |
-| > value**     |                                                      |
+| **Initial   | auto                                                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
-| > **Computed  | Depends on the specific track sizing                 |
-| > value**     |                                                      |
+| **Computed  | Depends on the specific track sizing                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
 | **Applies     |                                                      |
 | to** Grid     |                                                      |
@@ -5683,8 +5682,8 @@ item needs to be placed outside the explicitly defined grid rows.
 
 **Example** div.grid {display: grid;
 
-> grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
-> grid-auto-rows: 80px;}
+grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
+grid-auto-rows: 80px;}
 
 #### grid-column Inh. N Anim. N
 
@@ -5718,20 +5717,20 @@ item needs to be placed outside the explicitly defined grid rows.
 | **Examples**  | header {grid-column: 1 / -1;}                        |
 +---------------+------------------------------------------------------+
 
-> #sidebar {grid-column: 1 / span 2;} footer {grid-column: footer / 4;}
+#sidebar {grid-column: 1 / span 2;} footer {grid-column: footer / 4;}
 
 ### grid-column-end Inh. N Anim. N
 
 **Values** auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* && *&lt;custom-*
 
-> *ident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖ *&lt;customident&gt;* &rbrack;&rbrack;
+*ident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖ *&lt;customident&gt;* &rbrack;&rbrack;
 
 **Initial value** auto
 
-> As declared
+As declared
 >
-> Grid items and absolutely positioned elements, if their containing
-> block is a grid container
+Grid items and absolutely positioned elements, if their containing
+block is a grid container
 
 **Description** Defines the column grid line on which an element's
 layout ends, or (when using the span keyword) the number of column
@@ -5739,7 +5738,7 @@ tracks, or identified column tracks, the element spans.
 
 **Examples** header {grid-column-end: main-content;}
 
-> #sidebar {grid-column-end: span 2;} footer {grid-column-end: 4;}
+#sidebar {grid-column-end: span 2;} footer {grid-column-end: 4;}
 
 ### grid-column-gap Inh. N Anim. Y
 
@@ -5765,12 +5764,12 @@ containers as well as grid containers.
 ### grid-column-start Inh. N Anim. N
 
 +---------------+------------------------------------------------------+
-| > **Values**  | auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    |
+| **Values**  | auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    |
 |               | *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* |
 |               | ‖ *&lt;customident&gt;* &rbrack;&rbrack;                             |
 +===============+======================================================+
-| > **Initial   | auto                                                 |
-| > value**     |                                                      |
+| **Initial   | auto                                                 |
+| value**     |                                                      |
 +---------------+------------------------------------------------------+
 | **Computed    |                                                      |
 | value** As    |                                                      |
@@ -5787,36 +5786,36 @@ defined by gridcolumn-end.
 
 **Examples** header {grid-column-start: masthead;}
 
-> #sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
+#sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
 
 +----------------+-----------------------------------------------------+
-| > **grid-gap** | **Inh. N Anim. Y**                                  |
+| **grid-gap** | **Inh. N Anim. Y**                                  |
 +================+=====================================================+
-| > **Values**   | *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*            |
+| **Values**   | *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*            |
 +----------------+-----------------------------------------------------+
-| > **Initial    | 0 0                                                 |
-| > value**      |                                                     |
+| **Initial    | 0 0                                                 |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Grid containers                                     |
-| > to**         |                                                     |
+| **Applies    | Grid containers                                     |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | A shorthand property encompassing the grid-rowgap   |
+| *            | A shorthand property encompassing the grid-rowgap   |
 | *Description** | and grid-column-gap properties, in that order. If   |
 |                | only one value is supplied, the value is assumed to |
 |                | be the same for both row and column gaps.           |
 +----------------+-----------------------------------------------------+
-| > **Examples** | #grid {display: grid; grid-gap: 12px 1em;}          |
+| **Examples** | #grid {display: grid; grid-gap: 12px 1em;}          |
 |                | div.gallery {display: grid; grid-gap: 2.5vw;}       |
 +----------------+-----------------------------------------------------+
-| > **Note**     | As of early 2018, the CSS Working Group intends to  |
+| **Note**     | As of early 2018, the CSS Working Group intends to  |
 |                | change this property to simply gap and have it      |
 |                | apply to multicolumn and flex containers as well as |
 |                | grid containers.                                    |
 +----------------+-----------------------------------------------------+
-| > **grid-row** | **Inh. N Anim. N**                                  |
+| **grid-row** | **Inh. N Anim. N**                                  |
 +----------------+-----------------------------------------------------+
 
 **Values** *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?
@@ -5826,14 +5825,14 @@ defined by gridcolumn-end.
 ***&lt;grid-line&gt;*** auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
 *&lt;identifier&gt;*? &rbrack; &vert;
 
-> &lbrack; span && &lbrack; *&lt;integer&gt;* &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;
+&lbrack; span && &lbrack; *&lt;integer&gt;* &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;
 
 **Initial value** auto
 
-> As declared
+As declared
 >
-> Grid items and absolutely positioned elements, if their containing
-> block is a grid container
+Grid items and absolutely positioned elements, if their containing
+block is a grid container
 
 **Description** Acts as a shorthand property encompassing the
 grid-row-start and grid-row-end properties. When a single number or
@@ -5842,9 +5841,9 @@ number) or the same identifier.
 
 **Examples** #sidebar {grid-row: 1 / -1;}
 
-> footer {grid-row: footer-start / footer-end;}
+footer {grid-row: footer-start / footer-end;}
 >
-> header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
+header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
 
 #### grid-row-end Inh. N Anim. N
 
@@ -5869,7 +5868,7 @@ number) or the same identifier.
   **Examples**      header {grid-row-end: span 1;}
   ------------------------------------------------------------------------
 
-> #sidebar {grid-row-end: -1;} footer {grid-row-end: footer-end;}
+#sidebar {grid-row-end: -1;} footer {grid-row-end: footer-end;}
 
 #### grid-row-gap Inh. N Anim. Y
 
@@ -5916,8 +5915,8 @@ containers as well as grid containers.
   **Examples**      header {grid-row-start: masthead;}
   ------------------------------------------------------------------------
 
-> #sidebar {grid-row-start: span 1;} footer {grid-row-start:
-> footer-start;}
+#sidebar {grid-row-start: span 1;} footer {grid-row-start:
+footer-start;}
 
 ### grid-template-areas Inh. N Anim. N
 
@@ -5938,21 +5937,21 @@ patterns of text, no areas defined with this property can overlap.
 
 **Examples** #grid {display: grid;
 
-> grid-template-areas:
+grid-template-areas:
 >
-> &quot;h h h h&quot;
+&quot;h h h h&quot;
 >
-> &quot;l c c r&quot;
+&quot;l c c r&quot;
 >
-> &quot;l f f f&quot;;}
+&quot;l f f f&quot;;}
 >
-> #grid2 {display: grid; grid-template-areas:
+#grid2 {display: grid; grid-template-areas:
 >
-> &quot;header header header header&quot;
+&quot;header header header header&quot;
 >
-> &quot;leftside content content rightside&quot;
+&quot;leftside content content rightside&quot;
 >
-> &quot;leftside footer footer footer&quot;;}
+&quot;leftside footer footer footer&quot;;}
 
 ### grid-template-columns Inh. N Anim. N
 
@@ -5975,34 +5974,34 @@ patterns of text, no areas defined with this property can overlap.
   **Examples**      aside {grid-template-columns:
   ------------------------------------------------------------------------
 
-> max-content min-content max-content;} article {grid-template-columns:
-> 15em 4.5fr 3fr 10%;} section {grid-template-columns:
+max-content min-content max-content;} article {grid-template-columns:
+15em 4.5fr 3fr 10%;} section {grid-template-columns:
 >
-> &lbrack;start col-a&rbrack; 200px &lbrack;col-b&rbrack; 50% &lbrack;col-c&rbrack; 1fr
+&lbrack;start col-a&rbrack; 200px &lbrack;col-b&rbrack; 50% &lbrack;col-c&rbrack; 1fr
 >
-> &lbrack;stop end last&rbrack;;}
+&lbrack;stop end last&rbrack;;}
 
 ### grid-template-rows Inh. N Anim. N
 
 +----------------+-----------------------------------------------------+
-| > **Values**   | none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   |
+| **Values**   | none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   |
 +================+=====================================================+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
+| **Initial    | none                                                |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Computed   | As declared, with lengths made absolute             |
-| > value**      |                                                     |
+| **Computed   | As declared, with lengths made absolute             |
+| value**      |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Refer to the block size (usually height) of the     |
+| *            | Refer to the block size (usually height) of the     |
 | *Percentages** | grid container                                      |
 +----------------+-----------------------------------------------------+
-| > **Applies    | Grid containers                                     |
-| > to**         |                                                     |
+| **Applies    | Grid containers                                     |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > *            | Provides authors a way to define grid line names    |
+| *            | Provides authors a way to define grid line names    |
 | *Description** | and track sizes for rows in the explicit grid.      |
 +----------------+-----------------------------------------------------+
-| > **Examples** | aside {grid-template-rows: 200px 50% 100px;}        |
+| **Examples** | aside {grid-template-rows: 200px 50% 100px;}        |
 |                | article {grid-template-rows: 3em minmax(5em,1fr)    |
 |                | 2em;} section {grid-template-rows:                  |
 |                |                                                     |
@@ -6010,7 +6009,7 @@ patterns of text, no areas defined with this property can overlap.
 |                |                                                     |
 |                | &lbrack;footer&rbrack; 2em &lbrack;stop end&rbrack;;}                       |
 +----------------+-----------------------------------------------------+
-| > **height**   | **Inh. N Anim. Y**                                  |
+| **height**   | **Inh. N Anim. Y**                                  |
 +----------------+-----------------------------------------------------+
 | **Values**     | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
 +----------------+-----------------------------------------------------+
@@ -6035,27 +6034,18 @@ patterns of text, no areas defined with this property can overlap.
 | **Examples**   | img.icon {height: 50px;}                            |
 +----------------+-----------------------------------------------------+
 
-> h1 {height: 1.75em;}
+h1 {height: 1.75em;}
 
-+----------------+-----------------------------------------------------+
-| > **hyphens**  | **Inh. Y Anim. N**                                  |
-+================+=====================================================+
-| > **Values**   | manual &vert; auto &vert; none                              |
-+----------------+-----------------------------------------------------+
-| > **Initial    | manual                                              |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | No                                                  |
-| *Animatabale** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Used to declare whether the hyphenation of words at |
-| *Description** | line breaks must be done manually (e.g., with a     |
+|----------------|-----------------------------------------------------|
+| **hyphens**  | **Inh. Y Anim. N**                                  |
+| **Values**   | manual &vert; auto &vert; none                              |
+| **Initial value**   | manual                                              |
+| **Computed value**  | As declared                                         |
+|             | No                                                  |
+| **Animatabale** |                                                     |
+| **Applies to**   | All elements                                        |
+|             | Used to declare whether the hyphenation of words at |
+| **Description** | line breaks must be done manually (e.g., with a     |
 |                | "soft hyphen"---&shy; or U+00AD---inserted into the |
 |                | document) or can be done automatically by the user  |
 |                | agent. In the case of none, all hyphenation is      |
@@ -6063,31 +6053,21 @@ patterns of text, no areas defined with this property can overlap.
 |                | document. Automatic hyphenation is heavily          |
 |                | languagedependent, and may vary greatly between     |
 |                | user agents.                                        |
-+----------------+-----------------------------------------------------+
-| > **Examples** | h1, h2 {hyphens: none;} aside.poem {hyphens:        |
+| **Examples** | h1, h2 {hyphens: none;} aside.poem {hyphens:        |
 |                | manual;}                                            |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **isolation** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**     | auto &vert; isolate                                     |
-+----------------+-----------------------------------------------------+
-| **Initial      | auto                                                |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed     | As declared                                         |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
+| **Initial value**     | auto                                                |
+| **Computed value**    | As declared                                         |
 | **Applies to** | All elements (in SVG, it applies to container       |
 |                | elements, graphics elements, and                    |
 |                | graphics-referencing elements)                      |
-+----------------+-----------------------------------------------------+
-| *              | Determines whether an element creates an isolated   |
-| *Description** | blending context. An isolated element will only     |
+|               | Determines whether an element creates an isolated   |
+| **Description** | blending context. An isolated element will only     |
 |                | blend with itself; that is, the foreground portions |
 |                | of the element will blend with the background       |
 |                | portions                                            |
-+----------------+-----------------------------------------------------+
 
 of that same element, but *not* with the backdrop of its parent element
 or any other elements that might appear behind it. The visual effect can
@@ -6099,50 +6079,33 @@ from its ancestors.
 
 ### justify-content Inh. N Anim. N
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | flex-start &vert; flex-end &vert; center &vert; space-between   |
+|----------------|-----------------------------------------------------|
+| **Values**   | flex-start &vert; flex-end &vert; center &vert; space-between   |
 |                | &vert; space-around &vert; space-evenly                     |
-+================+=====================================================+
-| > **Initial    | flex-start                                          |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Conputed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Flex containers                                     |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the distribution of flex items along the    |
-| *Description** | main axis of a flex container.                      |
-+----------------+-----------------------------------------------------+
-| > **Examples** | nav {justify-content: space-evenly;} div.gallery    |
+| **Initial value**    | flex-start                                          |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | Flex containers                                     |
+|             | Defines the distribution of flex items along the    |
+| **Description** | main axis of a flex container.                      |
+| **Examples** | nav {justify-content: space-evenly;} div.gallery    |
 |                | {justify-content: space-between;}                   |
-+----------------+-----------------------------------------------------+
-| > **Note**     | As of early 2018, there are plans to have this      |
+| **Note**     | As of early 2018, there are plans to have this      |
 |                | property apply to many (or all) elements, not just  |
 |                | flex containers, and be given the values start and  |
 |                | end to replicate flex-start and flex-end behavior   |
 |                | for non-flex environments.                          |
-+----------------+-----------------------------------------------------+
-| > **left**     | **Inh. N Anim. P**                                  |
-+----------------+-----------------------------------------------------+
+| **left**     | **Inh. N Anim. P**                                  |
 | **Values**     | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
-+----------------+-----------------------------------------------------+
-| **Initial      | auto                                                |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed     | For static elements, auto; for length values, the   |
-| value**        | corresponding absolute length; for percentage       |
+| **Initial value**     | auto                                                |
+|          |                                                     |
+| **Computed value**    | For static elements, auto; for length values, the   |
+|                | corresponding absolute length; for percentage       |
 |                | values, the specified value; otherwise, auto        |
-+----------------+-----------------------------------------------------+
-| *              | Refer to the height of the containing block for top |
-| *Percentages** | and bottom, and the width of the containing block   |
+|               | Refer to the height of the containing block for top |
+| **Percentages** | and bottom, and the width of the containing block   |
 |                | for right and left                                  |
-+----------------+-----------------------------------------------------+
 | **Applies to** | Positioned elements                                 |
-+----------------+-----------------------------------------------------+
 | **Animatable** | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
-+----------------+-----------------------------------------------------+
 
 **Description** Defines the offset between the left outer margin edge of
 an absolutely positioned element and the left edge of its containing
@@ -6151,24 +6114,20 @@ element is offset to the right of its starting position.
 
 **Examples** div#footer {position: fixed; left: 0;}
 
-> &ast;.hanger {position: relative; left: −25px;}
+&ast;.hanger {position: relative; left: −25px;}
 
 #### letter-spacing Inh. Y Anim. Y
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; normal                              |
-+================+=====================================================+
-| > **Initial    | normal                                              |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | For length values, the absolute length; otherwise,  |
-| > value**      |                                                     |
+|----------------|-----------------------------------------------------|
+| **Values**   | *&lt;length&gt;* &vert; normal                              |
+| **Initial    | normal                                              |
+| value**      |                                                     |
+| **Computed   | For length values, the absolute length; otherwise,  |
+| value**      |                                                     |
 |                | normal                                              |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the amount of whitespace to be inserted     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| *            | Defines the amount of whitespace to be inserted     |
 | *Description** | between the character boxes of text. Because        |
 |                | character glyphs are typically narrower than their  |
 |                | character boxes, length values create a modifier to |
@@ -6176,53 +6135,46 @@ element is offset to the right of its starting position.
 |                | (most likely) synonymous with 0. Negative length    |
 |                | and percentage values are permitted and will cause  |
 |                | letters to bunch closer together.                   |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p.spacious {letter-spacing: 6px;} em                |
+| **Examples** | p.spacious {letter-spacing: 6px;} em                |
 |                | {letter-spacing: 0.2em;}                            |
 |                |                                                     |
 |                | p.cramped {letter-spacing: −0.5em;}                 |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. Y**                                  |
+|              | **Inh. Y Anim. Y**                                  |
 | **line-break** |                                                     |
+| **Values**   | auto &vert; loose &vert; normal &vert; strict                   |
+| **Initial    | auto                                                |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
 +----------------+-----------------------------------------------------+
-| > **Values**   | auto &vert; loose &vert; normal &vert; strict                   |
-+----------------+-----------------------------------------------------+
-| > **Initial    | auto                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Affects the wrapping of lines of text in CJK        |
+| *            | Affects the wrapping of lines of text in CJK        |
 | *Description** | (Chinese-Japanese-Korean) text. The precise         |
 |                | meanings of loose, normal, and strict are left      |
 |                | unde‐                                               |
-+----------------+-----------------------------------------------------+
-| > fined, so    |                                                     |
-| > the only     |                                                     |
-| > solid        |                                                     |
-| > expectation  |                                                     |
-| > is that      |                                                     |
-| > loose will   |                                                     |
-| > use the      |                                                     |
-| > "least       |                                                     |
-| > restrictive" |                                                     |
-| >              |                                                     |
+| fined, so    |                                                     |
+| the only     |                                                     |
+| solid        |                                                     |
+| expectation  |                                                     |
+| is that      |                                                     |
+| loose will   |                                                     |
+| use the      |                                                     |
+| "least       |                                                     |
+| restrictive" |                                                     |
+|              |                                                     |
 | line-breaking, |                                                     |
-| > normal will  |                                                     |
-| > use the      |                                                     |
-| > "most        |                                                     |
-| > common"      |                                                     |
-| >              |                                                     |
+| normal will  |                                                     |
+| use the      |                                                     |
+| "most        |                                                     |
+| common"      |                                                     |
+|              |                                                     |
 | line-breaking, |                                                     |
-| > and strict   |                                                     |
-| > will use the |                                                     |
-| > "most        |                                                     |
-| > stringent"   |                                                     |
-| >              |                                                     |
+| and strict   |                                                     |
+| will use the |                                                     |
+| "most        |                                                     |
+| stringent"   |                                                     |
+|              |                                                     |
 | line-breaking. |                                                     |
 |                |                                                     |
 | **Example**    |                                                     |
@@ -6233,24 +6185,17 @@ element is offset to the right of its starting position.
 | **line-height  |                                                     |
 | Inh. Y Anim.   |                                                     |
 | Y**            |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**     | *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; |
 |                | normal                                              |
-+----------------+-----------------------------------------------------+
-| **Initial      | normal                                              |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed     | For length and percentage values, the absolute      |
-| value**        | value; otherwise, as declared                       |
-+----------------+-----------------------------------------------------+
-| *              | Relative to the font size of the element            |
-| *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
+| **Initial value**     | normal                                              |
+| **Computed value**    | For length and percentage values, the absolute      |
+|                | value; otherwise, as declared                       |
+|                | Relative to the font size of the element            |
+| **Percentages** |                                                     |
 | **Applies to** | All elements (but see text regarding replaced and   |
 |                | block-level elements)                               |
-+----------------+-----------------------------------------------------+
-| *              | This property influences the layout of line boxes.  |
-| *Description** | When applied to a block-level element, it defines   |
+|                | This property influences the layout of line boxes.  |
+| **Description** | When applied to a block-level element, it defines   |
 |                | the minimum (but not the maximum) distance between  |
 |                | baselines within that element. When applied to an   |
 |                | inline element, it is used to define the *leading*  |
@@ -6266,48 +6211,34 @@ element is offset to the right of its starting position.
 |                | A raw number value assigns a scaling factor, which  |
 |                | is inherited instead of a computed value. Negative  |
 |                | values are not permitted.                           |
-+----------------+-----------------------------------------------------+
 | **Examples**   | p {line-height: 1.5em;}                             |
-+----------------+-----------------------------------------------------+
 
 h2 {line-height: 200%;} ul {line-height: 1.2;} pre {line-height:
 0.75em;}
 
-+----------------+-----------------------------------------------------+
-| >              | **Inh. Y Anim. N**                                  |
+|----------------|-----------------------------------------------------|
+|              | **Inh. Y Anim. N**                                  |
 | **list-style** |                                                     |
-+================+=====================================================+
-| > **Values**   | &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ |
+| **Values**   | &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ |
 |                | *&lt;list-styleposition&gt;* &rbrack;                         |
-+----------------+-----------------------------------------------------+
-| > **Initial    | Refer to individual properties                      |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties                           |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Elements whose display value is list-item           |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the marker type,  |
-| *Description** | whether a symbol or an image, and its (crude)       |
+| **Initial value**    | Refer to individual properties                      |
+| **Computed value**  | See individual properties                           |
+| **Applies to**   | Elements whose display value is list-item           |
+|             | A shorthand property that defines the marker type,  |
+| **Description** | whether a symbol or an image, and its (crude)       |
 |                | placement. Because it applies to any element that   |
 |                | has a display value of list-item, it will apply     |
 |                | only to li elements in ordinary HTML, although it   |
 |                | can be applied to any element and subsequently      |
 |                | inherited by list-item elements.                    |
-+----------------+-----------------------------------------------------+
-| > **Examples** | ul {list-style: square url(bullet3.gif) outer;} /&ast; |
+| **Examples** | ul {list-style: square url(bullet3.gif) outer;} /&ast; |
 |                | values are inherited by &apos;li&apos; elements &ast;/         |
 |                |                                                     |
 |                | ol {list-style: upper-roman;}                       |
-+----------------+-----------------------------------------------------+
 
 ### list-style-image Inh. Y Anim. N
 
-  ------------------------------------------------------------------------
   **Values**        *&lt;uri&gt;* &vert; *&lt;image&gt;* &vert; none
-  ----------------- ------------------------------------------------------
   **Initial value** none
 
   **Computed        For *&lt;uri&gt;* values, the absolute URI; otherwise,
@@ -6321,9 +6252,8 @@ h2 {line-height: 200%;} ul {line-height: 1.2;} pre {line-height:
                     be crudely controlled using list-styleposition.
 
   **Examples**      ul {list-style-image: url(bullet3.gif);}
-  ------------------------------------------------------------------------
 
-> ul li {list-style-image:
+ul li {list-style-image:
 
 url(\\http://example.org/pix/checkmark.png);}
 
@@ -6345,7 +6275,7 @@ inserted at the beginning of the list item's content.
 
 **Examples** li {list-style-position: outside;}
 
-> ol li {list-style-position: inside;}
+ol li {list-style-position: inside;}
 
 ### list-style-type Inh. Y Anim. N
 
@@ -6375,36 +6305,26 @@ types, but as of early 2018, support for these newer list types has some
 spotty parts. Use caution when using list types beyond those provided by
 CSS2.1.
 
-> There is no defined behavior for what happens when a list using an
-> alphabetic ordering exceeds the letters in the list. For example, once
-> an upper-latin list reaches "Z," the specification does not say what
-> the next bullet should be. (Two possible answers are "AA" and "ZA.")
-> This is the case regardless of the alphabet in use. Thus, there is no
-> guarantee that different user agents will act consistently.
+There is no defined behavior for what happens when a list using an
+alphabetic ordering exceeds the letters in the list. For example, once
+an upper-latin list reaches "Z," the specification does not say what
+the next bullet should be. (Two possible answers are "AA" and "ZA.")
+This is the case regardless of the alphabet in use. Thus, there is no
+guarantee that different user agents will act consistently.
 
 **Examples** ul {list-style-type: square;}
 
-> ol {list-style-type: lower-roman;}
+ol {list-style-type: lower-roman;}
 
-+----------------+-----------------------------------------------------+
-| > **margin**   | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
-| > **Values**   | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4} |
-+----------------+-----------------------------------------------------+
-| > **Initial    | Not defined                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties                           |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the width of the containing block          |
-| *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the width of the  |
-| *Description** | overall margin for an element or sets distinct      |
+| **margin**   | **Inh. N Anim. Y**                                  |
+| **Values**   | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4} |
+| **Initial value**   | Not defined                                         |
+| **Computed value**  | See individual properties                           |
+|                | Refer to the width of the containing block          |
+| **Percentages** |                                                     |
+| **Applies to**   | All elements                                        |
+| **Description** | A shorthand property that defines the width of the  |
+|                | overall margin for an element or sets distinct      |
 |                | widths for the individual side margins. Vertically  |
 |                | adjacent margins of block-level elements are        |
 |                | collapsed, whereas inline elements effectively do   |
@@ -6413,20 +6333,19 @@ CSS2.1.
 |                | margins on floated elements. Negative margin values |
 |                | are permitted, but caution is warranted because     |
 |                | negative values                                     |
-+----------------+-----------------------------------------------------+
 
-> can cause elements to overlap other elements or to appear to be wider
-> than their parent elements.
+can cause elements to overlap other elements or to appear to be wider
+than their parent elements.
 
 **Examples** h1 {margin: 2ex;}
 
-> p {margin: auto;} img {margin: 10px;}
+p {margin: auto;} img {margin: 10px;}
 
 #### margin-bottom Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-  ----------------- ------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Initial value** 0
 
   **Computed        For length values, the absolute length; otherwise, as
@@ -6441,9 +6360,9 @@ CSS2.1.
                     warranted (see margin).
 
   **Examples**      ul {margin-bottom: 0.5in;}
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
 
-> h1 {margin-bottom: 2%;}
+h1 {margin-bottom: 2%;}
 
 #### margin-left Inh. N Anim. Y
 
@@ -6464,15 +6383,15 @@ CSS2.1.
                     warranted (see margin).
 
   **Examples**      p {margin-left: 5%;}
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
 
-> pre {margin-left: 3em;}
+pre {margin-left: 3em;}
 
 #### margin-right Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-  ----------------- ------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Initial value** 0
 
   **Computed        For length values, the absolute length; otherwise, as
@@ -6487,63 +6406,48 @@ CSS2.1.
                     warranted (see margin).
 
   **Examples**      img {margin-right: 30px;}
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
 
-> ol {margin-right: 5em;}
+ol {margin-right: 5em;}
 
 #### margin-top Inh. N Anim. Y
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
-+================+=====================================================+
-| > **Initial    | 0                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | For length values, the absolute length; otherwise,  |
-| > value**      | as declared                                         |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the width of the containing block          |
+|----------------|-----------------------------------------------------|
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
+| **Initial    | 0                                                   |
+| value**      |                                                     |
+| **Computed   | For length values, the absolute length; otherwise,  |
+| value**      | as declared                                         |
+| *            | Refer to the width of the containing block          |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the width of the top margin for an element. |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| *            | Defines the width of the top margin for an element. |
 | *Description** | Negative values are permitted, but caution is       |
 |                | warranted (see margin).                             |
-+----------------+-----------------------------------------------------+
-| > **Examples** | ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     |
-+----------------+-----------------------------------------------------+
-| > **mask**     | **Inh. N Anim. P**                                  |
-+----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; /      |
+| **Examples** | ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     |
+| **mask**     | **Inh. N Anim. P**                                  |
+| **Values**   | &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; /      |
 |                | *&lt;masksize&gt;* &rbrack;? ‖ *&lt;mask-repeat&gt;* ‖            |
 |                | *&lt;mask-clip&gt;* ‖ *&lt;maskorigin&gt;* ‖                |
 |                | *&lt;mask-composite&gt;* ‖ *&lt;mask-mode&gt;* &rbrack;#          |
-+----------------+-----------------------------------------------------+
 | **Initial      |                                                     |
 | value** See    |                                                     |
 | individual     |                                                     |
 | properties     |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | As declared                                         |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies to** | All elements (in SVG, applies to all graphics       |
 |                | elements and all container elements except the defs |
 |                | element)                                            |
-+----------------+-----------------------------------------------------+
 | **Animatable** | Refer to individual mask properties to see which    |
 |                | are animatable                                      |
-+----------------+-----------------------------------------------------+
 | *              | A shorthand property encompassing all the other     |
 | *Description** | image masking properties. It is analogous to        |
 |                | background as compared to the various background    |
 |                | properties, and many of the masking and background  |
 |                | properties share values and behaviors.              |
-+----------------+-----------------------------------------------------+
 | **Examples**   | img.masked {mask:                                   |
-+----------------+-----------------------------------------------------+
 
 url(#mask) no-repeat center/cover luminance;}
 
@@ -6554,34 +6458,28 @@ add;
 }
 
 +----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 |  **mask-clip** |                                                     |
 +================+=====================================================+
-| > **Values**   | &lbrack; content-box &vert; padding-box &vert; border-box &vert;      |
+| **Values**   | &lbrack; content-box &vert; padding-box &vert; border-box &vert;      |
 |                | margin-box &vert; fill-box &vert; stroke-box &vert; view-box &vert; |
 |                | no-clip &rbrack;#                                         |
-+----------------+-----------------------------------------------------+
-| > **Initial    | border-box                                          |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements (in SVG, applies to all graphics       |
-| > to**         | elements and all container elements except the defs |
+| **Initial    | border-box                                          |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | All elements (in SVG, applies to all graphics       |
+| to**         | elements and all container elements except the defs |
 |                | element)                                            |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the outer edge of the visible portions of   |
+| *            | Defines the outer edge of the visible portions of   |
 | *Description** | an element's mask, as an aspect of the element's    |
 |                | box model. This allows authors to apply a masking   |
 |                | shape to an element but then further reduce the     |
 |                | visible parts of the element without having to      |
 |                | directly alter the mask shape.                      |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p:nth-child(1) {mask-clip: border-box;}             |
+| **Examples** | p:nth-child(1) {mask-clip: border-box;}             |
 |                | p:nth-child(2) {mask-clip: padding-box;}            |
 |                | p:nth-child(3) {mask-clip: content-box;}            |
-+----------------+-----------------------------------------------------+
 
 ### mask-composite
 
@@ -6600,12 +6498,11 @@ add;
                     result sometimes dependent on the order of the mask
                     shapes. For example, if a square mask is atop a
                     circular mask and the value of mask-composite is
-  ------------------------------------------------------------------------
 
-> subtract, then the circle is subtracted from the square. If the order
-> is reversed so the circle is atop the square, then the square is
-> subtracted from the circle. For the other values, the result should
-> not depend on the masks' stacking order.
+subtract, then the circle is subtracted from the square. If the order
+is reversed so the circle is atop the square, then the square is
+subtracted from the circle. For the other values, the result should
+not depend on the masks' stacking order.
 
 **Examples** img.masked {mask-composite: add;}
 
@@ -6613,47 +6510,40 @@ span.mask3 {mask-composite: subtract, add, add;}
 
 #### mask-image Inh. N Anim. N
 
-+---------------+------------------------------------------------------+
-| > **Values**  | &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;#      |
-+===============+======================================================+
-| > **          | Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     |
+|----------------|-----------------------------------------------------|
+| **Values**  | &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;#      |
+| **          | Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     |
 | Definitions** | *&lt;imageset()&gt;*, *&lt;element()&gt;*,                   |
-| >             | *&lt;cross-fade()&gt;*, or *&lt;gradient&gt;*                |
-| > **          |                                                      |
+|             | *&lt;cross-fade()&gt;*, or *&lt;gradient&gt;*                |
+| **          |                                                      |
 | *&lt;image&gt;*** |                                                      |
-+---------------+------------------------------------------------------+
-| > ***&lt;mas    | A url() that points to a mask element in an SVG      |
+| ***&lt;mas    | A url() that points to a mask element in an SVG      |
 | k-source&gt;*** | image                                                |
-+---------------+------------------------------------------------------+
-| > **Initial   | none                                                 |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Computed  | As declared                                          |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Applies   | All elements (in SVG, applies to all graphics        |
-| > to**        | elements and all container elements except the defs  |
+| **Initial   | none                                                 |
+| value**     |                                                      |
+| **Computed  | As declared                                          |
+| value**     |                                                      |
+| **Applies   | All elements (in SVG, applies to all graphics        |
+| to**        | elements and all container elements except the defs  |
 |               | element)                                             |
-+---------------+------------------------------------------------------+
-| > **          | Applies an image, or a portion of an SVG image, to   |
+| **          | Applies an image, or a portion of an SVG image, to   |
 | Description** | an element as a masking shape. The result is that    |
 |               | the                                                  |
-+---------------+------------------------------------------------------+
 
-> masked element has portions of itself made invisible, while others are
-> wholly or partially visible. The exact visual result will depend on
-> the value of maskmode; by default, the alpha channel of the maskimage
-> will be used to determine the masking of the element.
+masked element has portions of itself made invisible, while others are
+wholly or partially visible. The exact visual result will depend on
+the value of maskmode; by default, the alpha channel of the maskimage
+will be used to determine the masking of the element.
 
 **Examples** &ast;.masked.compass {mask-image: url(Compass.png);}
 
-> &ast;.masked.theatre {mask-image: url(theatre-masks.svg);}
+&ast;.masked.theatre {mask-image: url(theatre-masks.svg);}
 
 #### mask-mode Inh. N Anim. N
 
   ------------------------------------------------------------------------
   **Values**        &lbrack; alpha &vert; luminance &vert; match-source &rbrack;#
-  ----------------- ------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Initial value** match-source
 
   **Computed        As declared
@@ -6680,9 +6570,8 @@ span.mask3 {mask-composite: subtract, add, add;}
                     luminance.
 
   **Examples**      p {mask-mode: alpha;}
-  ------------------------------------------------------------------------
 
-> img.lum {mask-mode: luminance, alpha;}
+img.lum {mask-mode: luminance, alpha;}
 
 ### mask-origin
 
@@ -6704,15 +6593,14 @@ span.mask3 {mask-composite: subtract, add, add;}
                     sizing, repeating, or positioning it.
 
   **Examples**      div.inset {mask-origin: content-box;}
-  ------------------------------------------------------------------------
 
-> svg#radio {mask-origin: stroke-box, fill-box;}
+svg#radio {mask-origin: stroke-box, fill-box;}
 
 #### mask-position Inh. N Anim. P
 
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Values**        *&lt;position&gt;*&#35;
-  ----------------- ------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Initial value** 0% 0%
 
   **Computed        As declared
@@ -6729,63 +6617,48 @@ span.mask3 {mask-composite: subtract, add, add;}
                     corner of the box defined by maskorigin.
 
   **Examples**      p:nth-child(1) {mask-position: top right;}
-  ------------------------------------------------------------------------
 
-> p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
-> {mask-position: 5em 120%;}
+p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
+{mask-position: 5em 120%;}
 
 #### mask-repeat Inh. N Anim. Y
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    |
+|----------------|-----------------------------------------------------|
+| **Values**   | &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    |
 |                | round &vert; no-repeat &rbrack;{1,2} &rbrack;#                      |
-+================+=====================================================+
-| > **Initial    | repeat                                              |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements (in SVG, applies to all graphics       |
-| > to**         | elements and all container elements except the defs |
+| **Initial    | repeat                                              |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | All elements (in SVG, applies to all graphics       |
+| to**         | elements and all container elements except the defs |
 |                | element)                                            |
-+----------------+-----------------------------------------------------+
-| > *            | Allows authors to repeat a masking image in a       |
+| *            | Allows authors to repeat a masking image in a       |
 | *Description** | manner identical to the repetition of background    |
 |                | images. Note that the default is to repeat a mask   |
 |                | in all directions.                                  |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p:nth-child(1) {mask-repeat: repeat;}               |
+| **Examples** | p:nth-child(1) {mask-repeat: repeat;}               |
 |                | p:nth-child(2) {mask-repeat: repeat round;}         |
 |                | p:nth-child(3) {mask-repeat: space no-repeat;}      |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. P**                                  |
+|              | **Inh. N Anim. P**                                  |
 |  **mask-size** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**     | &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto      |
 |                | &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#                     |
-+----------------+-----------------------------------------------------+
 | **Initial      | auto                                                |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | As declared, with length values converted to        |
 | value**        | absolute lengths                                    |
-+----------------+-----------------------------------------------------+
 | **Applies to** | All elements (in SVG, applies to all graphics       |
 |                | elements and all container elements except the defs |
 |                | element)                                            |
-+----------------+-----------------------------------------------------+
 | **Animatable** | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
-+----------------+-----------------------------------------------------+
 | *              | Sets the size of the initial masking image in a     |
 | *Description** | manner identical to the sizing of background        |
 |                | images.                                             |
-+----------------+-----------------------------------------------------+
 | **Examples**   | p:nth-child(1) {mask-size: 80%;}                    |
-+----------------+-----------------------------------------------------+
 
-> p:nth-child(2) {mask-size: 2em 3em, 100%;} p:nth-child(3) {mask-size:
-> cover, 100%, contain;}
+p:nth-child(2) {mask-size: 2em 3em, 100%;} p:nth-child(3) {mask-size:
+cover, 100%, contain;}
 
 ### mask-type
 
@@ -6806,94 +6679,70 @@ mask element masks default to luminance.
 
 #### max-height Inh. N Anim. P
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none            |
-+================+=====================================================+
-| > **Initial    | none                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | For percentages, as declared; for length values,    |
-| > value**      | the absolute length; otherwise, none                |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the height of the containing block         |
+|----------------|-----------------------------------------------------|
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none            |
+| **Initial    | none                                                |
+| value**      |                                                     |
+| **Computed   | For percentages, as declared; for length values,    |
+| value**      | the absolute length; otherwise, none                |
+| *            | Refer to the height of the containing block         |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements except nonreplaced inline elements and |
-| > to**         | table elements                                      |
-+----------------+-----------------------------------------------------+
-| >              | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
+| **Applies    | All elements except nonreplaced inline elements and |
+| to**         | table elements                                      |
+|              | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
 | **Animatable** |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines a maximum constraint on the height of the   |
+| *            | Defines a maximum constraint on the height of the   |
 | *Description** | element (the exact nature of that height is         |
 |                | dependent on the value of box-sizing). Thus, the    |
 |                | element can be shorter than the declared value but  |
 |                | not taller.                                         |
 |                |                                                     |
 |                | Negative values are not permitted.                  |
-+----------------+-----------------------------------------------------+
-| > **Example**  | div#footer {max-height: 3em;}                       |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. P**                                  |
+| **Example**  | div#footer {max-height: 3em;}                       |
+|              | **Inh. N Anim. P**                                  |
 |  **max-width** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none            |
-+----------------+-----------------------------------------------------+
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none            |
 | **Initial      |                                                     |
 | value** none   |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | For percentages, as declared; for length values,    |
 | value**        | the absolute length; otherwise, none                |
-+----------------+-----------------------------------------------------+
 | *              | Refer to the height of the containing block         |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies to** | All elements except nonreplaced inline elements and |
 |                | table elements                                      |
-+----------------+-----------------------------------------------------+
 | **Animatable** | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
-+----------------+-----------------------------------------------------+
 | *              | Defines a maximum constraint on the width of the    |
 | *Description** | element (the exact nature of that width is          |
 |                | dependent on the value of box-sizing). Thus, the    |
 |                | element can                                         |
-+----------------+-----------------------------------------------------+
 
-> be narrower than the declared value but not wider. Negative values are
-> not permitted.
+be narrower than the declared value but not wider. Negative values are
+not permitted.
 
 **Example** #sidebar img {width: 50px; max-width: 100%;}
 
 #### min-height Inh. N Anim. Y
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;*                    |
-+================+=====================================================+
-| > **Initial    | 0                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | For percentages, as declared; for length values,    |
-| > value**      | the absolute length                                 |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the width of the containing block          |
+|----------------|-----------------------------------------------------|
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;*                    |
+| **Initial    | 0                                                   |
+| value**      |                                                     |
+| **Computed   | For percentages, as declared; for length values,    |
+| value**      | the absolute length                                 |
+| *            | Refer to the width of the containing block          |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements except nonreplaced inline elements and |
-| > to**         | table elements                                      |
-+----------------+-----------------------------------------------------+
-| > *            | Defines a minimum constraint on the height of the   |
+| **Applies    | All elements except nonreplaced inline elements and |
+| to**         | table elements                                      |
+| *            | Defines a minimum constraint on the height of the   |
 | *Description** | element (the exact nature of that height is         |
 |                | dependent on the value of box-sizing). Thus, the    |
 |                | element can be taller than the declared value, but  |
 |                | not shorter.                                        |
 |                |                                                     |
 |                | Negative values are not permitted.                  |
-+----------------+-----------------------------------------------------+
-| > **Example**  | div#footer {min-height: 1em;}                       |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. Y**                                  |
+| **Example**  | div#footer {min-height: 1em;}                       |
+|              | **Inh. N Anim. Y**                                  |
 |  **min-width** |                                                     |
-+----------------+-----------------------------------------------------+
 
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
@@ -6911,31 +6760,26 @@ mask element masks default to luminance.
   **Description**   Defines a minimum constraint on the width of the
                     element (the exact nature of that width is dependent
                     on the value of box-sizing). Thus, the element can
-  ------------------------------------------------------------------------
 
-> be wider than the declared value, but not narrower. Negative values
-> are not permitted.
+be wider than the declared value, but not narrower. Negative values
+are not permitted.
 
 **Example** div.aside {width: 13em; max-width: 33%;}
 
 #### mix-blend-mode Inh. N Anim. N
 
-+---------------+------------------------------------------------------+
-| > **Values**  | normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; |
+|----------------|-----------------------------------------------------|
+| **Values**  | normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; |
 |               | lighten &vert; color-dodge &vert; color-burn &vert; hard-light   |
 |               | &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;   |
 |               | saturation &vert; color &vert; luminosity                    |
-+===============+======================================================+
-| > **Initial   | normal                                               |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Computed  | As declared                                          |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Applies   | All elements                                         |
-| > to**        |                                                      |
-+---------------+------------------------------------------------------+
-| > **          | Changes how an element is composited with its        |
+| **Initial   | normal                                               |
+| value**     |                                                      |
+| **Computed  | As declared                                          |
+| value**     |                                                      |
+| **Applies   | All elements                                         |
+| to**        |                                                      |
+| **          | Changes how an element is composited with its        |
 | Description** | backdrop. The "backdrop" consists of any ancestor    |
 |               | backgrounds and other elements that are "behind" the |
 |               | element being styled. The default of normal imposes  |
@@ -6949,27 +6793,20 @@ mask element masks default to luminance.
 |               | The results of these are likely to be familiar to    |
 |               | users of Photoshop or any other graphic-editing      |
 |               | tool.                                                |
-+---------------+------------------------------------------------------+
-| >             | li.shadowed {mix-blend-mode: darken;} aside          |
+|             | li.shadowed {mix-blend-mode: darken;} aside          |
 |  **Examples** | {mix-blend-mode:                                     |
 |               |                                                      |
 |               | color-burn, luminosity, darken;}                     |
-+---------------+------------------------------------------------------+
-| > *           | **Inh. N Anim. N**                                   |
+| *           | **Inh. N Anim. N**                                   |
 | *object-fit** |                                                      |
-+---------------+------------------------------------------------------+
-| > **Values**  | fill &vert; contain &vert; cover &vert; scale-down &vert; none       |
-+---------------+------------------------------------------------------+
-| > **Initial   | fill                                                 |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Computed  | As declared                                          |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Applies   | Replaced elements                                    |
-| > to**        |                                                      |
-+---------------+------------------------------------------------------+
-| > **          | Alters the way an image's contents are sized with    |
+| **Values**  | fill &vert; contain &vert; cover &vert; scale-down &vert; none       |
+| **Initial   | fill                                                 |
+| value**     |                                                      |
+| **Computed  | As declared                                          |
+| value**     |                                                      |
+| **Applies   | Replaced elements                                    |
+| to**        |                                                      |
+| **          | Alters the way an image's contents are sized with    |
 | Description** | respect to its content box. The default, fill,       |
 |               | causes the image to be stretched or squashed to fit  |
 |               | its height and width, as images always have. none    |
@@ -6984,11 +6821,9 @@ mask element masks default to luminance.
 |               | means the image will stay its intrinsic size unless  |
 |               | it's too big to fit into the element box, in which   |
 |               | case it will be scaled down to fit.                  |
-+---------------+------------------------------------------------------+
-| >             | img:nth-of-type(1) {object-fit: none;}               |
+|             | img:nth-of-type(1) {object-fit: none;}               |
 |  **Examples** | img:nth-of-type(2) {object-fit: fill;}               |
 |               | img:nth-of-type(3) {object-fit: cover;}              |
-+---------------+------------------------------------------------------+
 
 ### object-position Inh. N Anim. Y
 
@@ -7006,27 +6841,21 @@ background origin images can be positioned.
 
 **Examples** img:nth-of-type(1) {object-position: center;}
 
-> img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
-> {object-position: left 142%;}
+img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
+{object-position: left 142%;}
 
-+----------------+-----------------------------------------------------+
-| > **opacity**  | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
-| > **Values**   | *&lt;number&gt;*                                        |
-+----------------+-----------------------------------------------------+
-| > **Initial    | 1                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | Same as declared (or a clipped value if declared    |
-| > value**      | value must be clipped)                              |
-+----------------+-----------------------------------------------------+
-| > *            | Defines an element's degree of opacity using a      |
+|----------------|-----------------------------------------------------|
+| **opacity**  | **Inh. N Anim. Y**                                  |
+| **Values**   | *&lt;number&gt;*                                        |
+| **Initial    | 1                                                   |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| **Computed   | Same as declared (or a clipped value if declared    |
+| value**      | value must be clipped)                              |
+| *            | Defines an element's degree of opacity using a      |
 | *Description** | number in the range 0--1, inclusive. Any values     |
 |                | outside that range are clipped to the nearest edge  |
 |                | (0 or 1). This property affects every visible       |
@@ -7044,11 +6873,8 @@ background origin images can be positioned.
 |                | absolutely positioned element with opacity less     |
 |                | than 1 and a z-index of auto force-alters the       |
 |                | z-index value to 0.                                 |
-+----------------+-----------------------------------------------------+
-| > **Examples** | h2 {opacity: 0.8;} .hideme {opacity: 0;}            |
-+----------------+-----------------------------------------------------+
-| > **order**    | **Inh. N Anim. Y**                                  |
-+----------------+-----------------------------------------------------+
+| **Examples** | h2 {opacity: 0.8;} .hideme {opacity: 0;}            |
+| **order**    | **Inh. N Anim. Y**                                  |
 
 **Values** *&lt;integer&gt;*
 
@@ -7072,31 +6898,23 @@ grid items.
 
 **Examples** li:nth-of-type(6) {order: 1;}
 
-> li:nth-of-type(14) {order: -1;}
+li:nth-of-type(14) {order: -1;}
 
-+----------------+-----------------------------------------------------+
-| > **orphans**  | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
-| > **Values**   | *&lt;integer&gt;*                                       |
-+----------------+-----------------------------------------------------+
-| > **Initial    | 2                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Block-level elements                                |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the minimum number of text lines within an  |
+|----------------|-----------------------------------------------------|
+| **orphans**  | **Inh. N Anim. Y**                                  |
+| **Values**   | *&lt;integer&gt;*                                       |
+| **Initial    | 2                                                   |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | Block-level elements                                |
+| to**         |                                                     |
+| *            | Defines the minimum number of text lines within an  |
 | *Description** | element that can be left at the bottom of a page.   |
 |                | This can affect the placement of page breaks within |
 |                | the element.                                        |
-+----------------+-----------------------------------------------------+
-| > **Examples** | p {orphans: 4;} ul {orphans: 2;}                    |
-+----------------+-----------------------------------------------------+
-| > **outline**  | **Inh. N Anim. P**                                  |
-+----------------+-----------------------------------------------------+
+| **Examples** | p {orphans: 4;} ul {orphans: 2;}                    |
+| **outline**  | **Inh. N Anim. P**                                  |
 
 **Values** &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
 *&lt;outlinewidth&gt;* &rbrack;
@@ -7117,7 +6935,7 @@ they do not change or otherwise affect the placement of elements.
 
 **Examples** &ast;&lbrack;href&rbrack;:focus {outline: 2px dashed invert;}
 
-> form:focus {outline: outset cyan 0.25em;}
+form:focus {outline: outset cyan 0.25em;}
 
 #### outline-color Inh. N Anim. Y
 
@@ -7136,7 +6954,7 @@ of color for the element.
 
 **Examples** &ast;&lbrack;href&rbrack;:focus {outline-color: invert;}
 
-> form:focus {outline-color: cyan;}
+form:focus {outline-color: cyan;}
 
 #### outline-offset Inh. N Anim. N
 
@@ -7156,14 +6974,14 @@ Note that outline-offset cannot be set via the shorthand outline.
 
 **Examples** &ast;&lbrack;href&rbrack;:focus {outline-offset: 0.33em;}
 
-> form:focus {outline-offset: −1px;}
+form:focus {outline-offset: −1px;}
 
 #### outline-style Inh. N Anim. N
 
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Values**        auto &vert; none &vert; solid &vert; dotted &vert; dashed &vert; double &vert;
                     groove &vert; ridge &vert; inset &vert; outset
-  ----------------- ------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Initial value** none
 
   **Computed        As declared
@@ -7172,20 +6990,20 @@ Note that outline-offset cannot be set via the shorthand outline.
   **Applies to**    All elements
 
   **Description**   Defines the style for the overall border of an ele‐
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
 
-> ment. The style must be something other than none for any outline to
-> appear.
+ment. The style must be something other than none for any outline to
+appear.
 
 **Examples** &ast;&lbrack;href&rbrack;:focus {outline-style: dashed;}
 
-> form:focus {outline-style: outset;}
+form:focus {outline-style: outset;}
 
 #### outline-width Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; thin &vert; medium &vert; thick
-  ----------------- ------------------------------------------------------
+|----------------|-----------------------------------------------------|
   **Initial value** medium
 
   **Computed        An absolute length, or 0 if the style of the outline
@@ -7196,12 +7014,12 @@ Note that outline-offset cannot be set via the shorthand outline.
   **Description**   Defines the width for the overall outline of an
                     element. The width will take effect for a given
                     outline
-  ------------------------------------------------------------------------
+|----------------|-----------------------------------------------------|
 
-> only if the value of outline-style is something other than none. If
-> the style *is* none, the width is
+only if the value of outline-style is something other than none. If
+the style *is* none, the width is
 
-+---------------+------------------------------------------------------+
+|----------------|-----------------------------------------------------|
 | **Examples**  | effectively reset to 0. Negative length values are   |
 |               | not permitted.                                       |
 | **overflow**  |                                                      |
@@ -7209,32 +7027,26 @@ Note that outline-offset cannot be set via the shorthand outline.
 |               | {outline-width: 0.25em;}                             |
 |               |                                                      |
 |               | **Inh. N Anim. N**                                   |
-+===============+======================================================+
 | **Values**    | visible &vert; hidden &vert; scroll &vert; auto                  |
-+---------------+------------------------------------------------------+
 | **Initial     | visible                                              |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed    | As declared                                          |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Applies     | Block-level and replaced elements                    |
 | to**          |                                                      |
-+---------------+------------------------------------------------------+
 | **            | A shorthand property that defines what happens to    |
 | Description** | content that overflows the content area of an ele‐   |
-+---------------+------------------------------------------------------+
 
-> ment. For the value scroll, user agents should provide a scrolling
-> mechanism whether or not it is actually needed; for example,
-> scrollbars would appear even if all content can fit within the element
-> box. If two values are supplied, the first defines the value of
-> overflow-x and the second defines overflow-y. Otherwise, a single
-> value defines both.
+ment. For the value scroll, user agents should provide a scrolling
+mechanism whether or not it is actually needed; for example,
+scrollbars would appear even if all content can fit within the element
+box. If two values are supplied, the first defines the value of
+overflow-x and the second defines overflow-y. Otherwise, a single
+value defines both.
 
 **Examples** #masthead {overflow: hidden;}
 
-> object {overflow: visible scroll;}
+object {overflow: visible scroll;}
 
 #### overflow-wrap Inh. Y Anim. Y
 
@@ -7251,8 +7063,8 @@ values of other properties. If break-word is set, the linebreaking will
 *only* occur if the word is placed on a new text line and still cannot
 fit inside its element's
 
-> containing block. (This behavior is in contrast to word-break, which
-> does not force a pre-word line break.)
+containing block. (This behavior is in contrast to word-break, which
+does not force a pre-word line break.)
 
 **Example** pre {overflow-wrap: break-word;}
 
@@ -7260,31 +7072,23 @@ fit inside its element's
 supported word-wrap in the past now use it as an alias for
 overflow-wrap.
 
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|----------------|-----------------------------------------------------|
+|              | **Inh. N Anim. N**                                  |
 | **overflow-x** |                                                     |
-+================+=====================================================+
-| > **Values**   | visible &vert; hidden &vert; scroll &vert; auto                 |
-+----------------+-----------------------------------------------------+
-| > **Initial    | visible                                             |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Block-level and replaced elements                   |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the overflow behavior along the horizontal  |
+| **Values**   | visible &vert; hidden &vert; scroll &vert; auto                 |
+| **Initial    | visible                                             |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | Block-level and replaced elements                   |
+| to**         |                                                     |
+| *            | Defines the overflow behavior along the horizontal  |
 | *Description** | (x) axis of the element; that is, the left and      |
 |                | right edges of the element.                         |
-+----------------+-----------------------------------------------------+
-| > **Examples** | #masthead {overflow-x: hidden;} object {overflow-x: |
+| **Examples** | #masthead {overflow-x: hidden;} object {overflow-x: |
 |                | visible;}                                           |
-+----------------+-----------------------------------------------------+
-| >              | **Inh. N Anim. N**                                  |
+|              | **Inh. N Anim. N**                                  |
 | **overflow-y** |                                                     |
-+----------------+-----------------------------------------------------+
 
 **Values** visible &vert; hidden &vert; scroll &vert; auto
 
@@ -7300,24 +7104,18 @@ axis of the element; that is, the top and bottom edges of the element.
 **Examples** #masthead {overflow-y: hidden;} object {overflow-y:
 scroll;}
 
-+----------------+-----------------------------------------------------+
-| > **padding**  | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
-| > **Values**   | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4}         |
-+----------------+-----------------------------------------------------+
-| > **Initial    | Not defined for shorthand elements                  |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | See individual properties (padding-top, etc.)       |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the width of the containing block          |
+|----------------|-----------------------------------------------------|
+| **padding**  | **Inh. N Anim. Y**                                  |
+| **Values**   | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4}         |
+| **Initial    | Not defined for shorthand elements                  |
+| value**      |                                                     |
+| **Computed   | See individual properties (padding-top, etc.)       |
+| value**      |                                                     |
+| *            | Refer to the width of the containing block          |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | A shorthand property that defines the width of the  |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| *            | A shorthand property that defines the width of the  |
 | *Description** | overall padding for an element or sets the widths   |
 |                | of each individual side's padding. Padding set on   |
 |                | inline nonreplaced elements does not affect         |
@@ -7327,17 +7125,14 @@ scroll;}
 |                | overlap other content. The background of the        |
 |                | element will extend throughout the padding.         |
 |                | Negative padding values are not permitted.          |
-+----------------+-----------------------------------------------------+
-| > **Examples** | img {padding: 10px;} h1 {padding: 2ex 0.33em;}      |
+| **Examples** | img {padding: 10px;} h1 {padding: 2ex 0.33em;}      |
 |                |                                                     |
 |                | pre {padding: 0.75em 0.5em 1em 0.5em;}              |
-+----------------+-----------------------------------------------------+
 
 #### padding-bottom Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
+|-----------------|-------------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  ----------------- ------------------------------------------------------
   **Initial value** 0
 
   **Computed        For percentage values, as declared; for length values,
@@ -7351,15 +7146,13 @@ scroll;}
                     element. Bottom padding set on inline nonreplaced
                     elements does not affect line-height calculations;
                     therefore, such an element with both bottom padding
-                    and a background may visibly extend into
-  ------------------------------------------------------------------------
-
-> other lines and potentially overlap other content. Negative padding
-> values are not permitted.
+                    and a background may visibly extend into other lines 
+					and potentially overlap other content. Negative padding
+					values are not permitted.
 
 **Examples** ul {padding-bottom: 0.5in;}
 
-> h1 {padding-bottom: 2%;}
+h1 {padding-bottom: 2%;}
 
 #### padding-left Inh. N Anim. Y
 
@@ -7378,20 +7171,18 @@ scroll;}
   **Description**   Defines the width of the left padding for an element.
                     Left padding set for an inline nonreplaced element
                     will appear only on the left edge of the first inline
-  ------------------------------------------------------------------------
 
-> box generated by the element. Negative padding values are not
-> permitted.
+box generated by the element. Negative padding values are not
+permitted.
 
 **Examples** p {padding-left: 5%;}
 
-> pre {padding-left: 3em;}
+pre {padding-left: 3em;}
 
 #### padding-right Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
+|--------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  ----------------- ------------------------------------------------------
   **Initial value** 0
 
   **Computed        For percentage values, as declared; for length values,
@@ -7406,41 +7197,32 @@ scroll;}
                     will appear only on the right edge of the last inline
                     box generated by the element. Negative padding values
                     are not permitted.
-  ------------------------------------------------------------------------
 
 **Examples** img {padding-right: 30px;}
 
-> ol {padding-right: 5em;}
+ol {padding-right: 5em;}
 
 #### padding-top Inh. N Anim. Y
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;*                    |
-+================+=====================================================+
-| > **Initial    | 0                                                   |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | For percentage values, as declared; for length      |
-| > value**      | values, the absolute length                         |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the width of the containing block          |
+|--------------|-----------------------------------------------------|
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;*                    |
+| **Initial    | 0                                                   |
+| value**      |                                                     |
+| **Computed   | For percentage values, as declared; for length      |
+| value**      | values, the absolute length                         |
+| *            | Refer to the width of the containing block          |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the width of the top padding for an         |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| *            | Defines the width of the top padding for an         |
 | *Description** | element. Top padding set on inline nonreplaced      |
 |                | elements does not affect line-height calculations;  |
 |                | therefore, such an element with both top padding    |
 |                | and a background may visibly extend into other      |
 |                | lines and potentially overlap other content.        |
 |                | Negative padding values are not permitted.          |
-+----------------+-----------------------------------------------------+
-| > **Examples** | ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   |
-+----------------+-----------------------------------------------------+
-| > **page**     | **Inh. N Anim. N**                                  |
-+----------------+-----------------------------------------------------+
+| **Examples** | ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   |
+| **page**     | **Inh. N Anim. N**                                  |
 
 **Values** *&lt;identifier&gt;* &vert; auto
 
@@ -7454,34 +7236,29 @@ scroll;}
 displaying the element. The emphasis of the word "should" is taken
 directly from the specification, so author beware.
 
-> The intended effect is that if an element has a value of page that is
-> different than that of the preceding element, at least one page break
-> is inserted before the element and a new page started using the page
-> type declared by page. (Multiple page breaks may be used if other
-> styles call for using a right- or lefthand page when starting the new
-> page.)
+The intended effect is that if an element has a value of page that is
+different than that of the preceding element, at least one page break
+is inserted before the element and a new page started using the page
+type declared by page. (Multiple page breaks may be used if other
+styles call for using a right- or lefthand page when starting the new
+page.)
 
 **Examples** &#64;page wide {size: landscape;}
 
-> table.summary {page: wide;}
+table.summary {page: wide;}
 
-+----------------+------------------------------------+----------------+
-| > **page       |                                    | **Inh. N Anim. |
+|--------------|-----------------------------------------------------|
+| **page       |                                    | **Inh. N Anim. |
 | -break-after** |                                    | N**            |
-+================+====================================+================+
-| > **Values**   | auto &vert; always                     |                |
-+----------------+------------------------------------+----------------+
-| > **Initial    | auto                               |                |
-| > value**      |                                    |                |
-+----------------+------------------------------------+----------------+
-| > **Computed   | As declared                        |                |
-| > value**      |                                    |                |
-+----------------+------------------------------------+----------------+
-| > **Applies    | Nonfloated block-level elements    |                |
-| > to**         | with a position value of relative  |                |
+| **Values**   | auto &vert; always                     |                |
+| **Initial    | auto                               |                |
+| value**      |                                    |                |
+| **Computed   | As declared                        |                |
+| value**      |                                    |                |
+| **Applies    | Nonfloated block-level elements    |                |
+| to**         | with a position value of relative  |                |
 |                | or static                          |                |
-+----------------+------------------------------------+----------------+
-| > *            | Defines whether one or more page   |                |
+| *            | Defines whether one or more page   |                |
 | *Description** | breaks should be placed after an   |                |
 |                | element. Although it is            |                |
 |                | theoretically possible to force    |                |
@@ -7494,16 +7271,13 @@ directly from the specification, so author beware.
 |                | element to make the next page be a |                |
 |                | lefthand page; similarly, right is |                |
 |                | used for a righthand page.         |                |
-+----------------+------------------------------------+----------------+
-| > **Examples** | section {page-break-after:         |                |
+| **Examples** | section {page-break-after:         |                |
 |                | always;} h1 {page-break-after:     |                |
 |                | avoid;}                            |                |
-+----------------+------------------------------------+----------------+
-| > **Note**     | This property is essentially       |                |
+| **Note**     | This property is essentially       |                |
 |                | replaced by breakafter, but        |                |
 |                | browser support for                |                |
 |                | page-break-after may be stronger.  |                |
-+----------------+------------------------------------+----------------+
 
 ### page-break-before Inh. N Anim. N
 
@@ -7529,25 +7303,20 @@ avoid;}
 
 **Note** This property is essentially replaced by break-
 
-> before, but browser support for page-breakbefore may be stronger.
+before, but browser support for page-breakbefore may be stronger.
 
-+-------------------+----------------------------------+---------------+
-| > **pa            |                                  | **Inh. Y      |
+|--------------|-----------------------------------------------------|
+| **pa            |                                  | **Inh. Y      |
 | ge-break-inside** |                                  | Anim. N**     |
-+===================+==================================+===============+
-| > **Values**      | auto &vert; avoid                    |               |
-+-------------------+----------------------------------+---------------+
-| > **Initial       | auto                             |               |
-| > value**         |                                  |               |
-+-------------------+----------------------------------+---------------+
-| > **Computed      | As declared                      |               |
-| > value**         |                                  |               |
-+-------------------+----------------------------------+---------------+
-| > **Applies to**  | Nonfloated block-level elements  |               |
+| **Values**      | auto &vert; avoid                    |               |
+| **Initial       | auto                             |               |
+| value**         |                                  |               |
+| **Computed      | As declared                      |               |
+| value**         |                                  |               |
+| **Applies to**  | Nonfloated block-level elements  |               |
 |                   | with a position value of         |               |
 |                   | relative or static               |               |
-+-------------------+----------------------------------+---------------+
-| > **Description** | Defines whether a page break     |               |
+| **Description** | Defines whether a page break     |               |
 |                   | should be avoided within the     |               |
 |                   | element. Note that such          |               |
 |                   | avoidance may not be possible;   |               |
@@ -7556,20 +7325,15 @@ avoid;}
 |                   | lengthy document will not        |               |
 |                   | prevent the insertion of page    |               |
 |                   | breaks by the user agent.        |               |
-+-------------------+----------------------------------+---------------+
-| > **Example**     | table {page-break-inside:        |               |
+| **Example**     | table {page-break-inside:        |               |
 |                   | avoid;}                          |               |
-+-------------------+----------------------------------+---------------+
-| > **Note**        | This property is essentially     |               |
+| **Note**        | This property is essentially     |               |
 |                   | replaced by breakbefore, but     |               |
 |                   | browser support for              |               |
 |                   | page-breakbefore may be          |               |
 |                   | stronger.                        |               |
-+-------------------+----------------------------------+---------------+
-| > **perspective** | **Inh. N Anim. Y**               |               |
-+-------------------+----------------------------------+---------------+
-| > **Values**      | none &vert; *&lt;length&gt;*             |               |
-+-------------------+----------------------------------+---------------+
+| **perspective** | **Inh. N Anim. Y**               |               |
+| **Values**      | none &vert; *&lt;length&gt;*             |               |
 
 **Initial value** none
 
@@ -7585,38 +7349,29 @@ none.
 
 **Examples** body {perspective: 250;} /&ast; middlin&apos; &ast;/
 
-> #wrapper {perspective: 10;} /&ast; extreme &ast;/
+#wrapper {perspective: 10;} /&ast; extreme &ast;/
 
 ### perspective-origin Inh. N Anim. P
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | *&lt;position&gt;*                                      |
-+================+=====================================================+
-| > **Initial    | 50% 50%                                             |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | A percentage, except for length values, which are   |
-| > value**      | converted to an absolute length                     |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the size of the bounding box               |
+|--------------|-----------------------------------------------------|
+| **Values**   | *&lt;position&gt;*                                      |
+| **Initial    | 50% 50%                                             |
+| value**      |                                                     |
+| **Computed   | A percentage, except for length values, which are   |
+| value**      | converted to an absolute length                     |
+| *            | Refer to the size of the bounding box               |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Any transformable element                           |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| >              | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
+| **Applies    | Any transformable element                           |
+| to**         |                                                     |
+|              | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
 | **Animatable** |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the origin point of the apparent 3D         |
+| *            | Defines the origin point of the apparent 3D         |
 | *Description** | perspective within the element. In effect, it       |
 |                | defines the point in the element that appears to be |
 |                | directly in front of the viewer.                    |
-+----------------+-----------------------------------------------------+
-| > **Examples** | body {perspective-origin: bottom right;} #wrapper   |
+| **Examples** | body {perspective-origin: bottom right;} #wrapper   |
 |                | div {perspective-origin: 0 50%;}                    |
-+----------------+-----------------------------------------------------+
-| > **position** | **Inh. N Anim. N**                                  |
-+----------------+-----------------------------------------------------+
+| **position** | **Inh. N Anim. N**                                  |
 
 **Values** static &vert; relative &vert; sticky &vert; absolute &vert; fixed
 
@@ -7632,33 +7387,25 @@ offset from its default placement in the normal flow.
 
 **Examples** #footer {position: fixed; bottom: 0;}
 
-> &ast;.offset {position: relative; top: 0.5em;}
+&ast;.offset {position: relative; top: 0.5em;}
 
-+----------------+-----------------------------------------------------+
-| > **quotes**   | **Inh. Y Anim. N**                                  |
-+================+=====================================================+
-| > **Values**   | &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none            |
-+----------------+-----------------------------------------------------+
-| > **Initial    | User agent--dependent                               |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | As declared                                         |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | All elements                                        |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the quotation pattern used with quotes and  |
+|--------------|-----------------------------------------------------|
+| **quotes**   | **Inh. Y Anim. N**                                  |
+| **Values**   | &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none            |
+| **Initial    | User agent--dependent                               |
+| value**      |                                                     |
+| **Computed   | As declared                                         |
+| value**      |                                                     |
+| **Applies    | All elements                                        |
+| to**         |                                                     |
+| *            | Defines the quotation pattern used with quotes and  |
 | *Description** | nested quotes. The actual quote marks are inserted  |
 |                | via the content property's open-quote and           |
 |                | closequote values.                                  |
-+----------------+-----------------------------------------------------+
-| > **Examples** | q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot;;} q     |
+| **Examples** | q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot;;} q     |
 |                | {quotes: &apos;\\201C&apos; &apos;\\201D&apos; &apos;\\2018&apos;           |
 |                | &apos;\\2019&apos;;}                                        |
-+----------------+-----------------------------------------------------+
-| > **resize**   | **Inh. N Anim. N**                                  |
-+----------------+-----------------------------------------------------+
+| **resize**   | **Inh. N Anim. N**                                  |
 
 **Values** none &vert; both &vert; horizontal &vert; vertical
 
@@ -7674,53 +7421,40 @@ left to the user agent and is likely dependent on the writing direction.
 
 **Examples** textarea {resize: vertical;} iframe {resize: both;}
 
-+----------------+-----------------------------------------------------+
-| > **right**    | **Inh. N Anim. P**                                  |
-+================+=====================================================+
-| > **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
-+----------------+-----------------------------------------------------+
-| > **Initial    | auto                                                |
-| > value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Computed   | For static elements, auto; for length values, the   |
-| > value**      | corresponding absolute length; for percentage       |
+|--------------|-----------------------------------------------------|
+| **right**    | **Inh. N Anim. P**                                  |
+| **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
+| **Initial    | auto                                                |
+| value**      |                                                     |
+| **Computed   | For static elements, auto; for length values, the   |
+| value**      | corresponding absolute length; for percentage       |
 |                | values, the specified value; otherwise, auto        |
-+----------------+-----------------------------------------------------+
-| > *            | Refer to the height of the containing block         |
+| *            | Refer to the height of the containing block         |
 | *Percentages** |                                                     |
-+----------------+-----------------------------------------------------+
-| > **Applies    | Positioned elements                                 |
-| > to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| >              | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
+| **Applies    | Positioned elements                                 |
+| to**         |                                                     |
+|              | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
 | **Animatable** |                                                     |
-+----------------+-----------------------------------------------------+
-| > *            | Defines the offset between the right outer margin   |
+| *            | Defines the offset between the right outer margin   |
 | *Description** | edge of a positioned element and the right edge of  |
 |                | its containing block.                               |
-+----------------+-----------------------------------------------------+
-| > **Examples** | div#footer {position: fixed; right: 0;}             |
+| **Examples** | div#footer {position: fixed; right: 0;}             |
 |                | &ast;.overlapper {position: relative; right: −25px;}   |
-+----------------+-----------------------------------------------------+
 
 ### shape-image-threshold Inh. N Anim. Y
 
-+---------------+------------------------------------------------------+
-| > **Values**  | *&lt;number&gt;*                                         |
-+===============+======================================================+
-| > **Initial   | 0.0                                                  |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Computed  | The same as the specified value after clipping the   |
-| > value**     | *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;               |
-+---------------+------------------------------------------------------+
-| > **Applies   | Floats                                               |
-| > to**        |                                                      |
-+---------------+------------------------------------------------------+
-| > **          | Changes the alpha channel value that acts as a       |
+|--------------|-----------------------------------------------------|
+| **Values**  | *&lt;number&gt;*                                         |
+| **Initial   | 0.0                                                  |
+| value**     |                                                      |
+| **Computed  | The same as the specified value after clipping the   |
+| value**     | *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;               |
+| **Applies   | Floats                                               |
+| to**        |                                                      |
+| **          | Changes the alpha channel value that acts as a       |
 | Description** | threshold for float shape creation via an image. By  |
-| >             | default, only fully transparent areas in the shape's |
-| >             | source image are used to define the float shape. If  |
+|             | default, only fully transparent areas in the shape's |
+|             | source image are used to define the float shape. If  |
 |  **Examples** | the value is changed to 0.7, then all areas of the   |
 |               | source image that are 70% or more transparent are    |
 |               | used to define the float shape. This allows for the  |
@@ -7730,13 +7464,11 @@ left to the user agent and is likely dependent on the writing direction.
 |               |                                                      |
 |               | aside.illustrate {shape-image-threshold: 0.667;}     |
 |               | img.floated {shape-image-threshold: 0.1;}            |
-+---------------+------------------------------------------------------+
 
 #### shape-margin Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
+|--------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  ----------------- ------------------------------------------------------
   **Initial value** 0
 
   **Computed        An absolute length
@@ -7756,50 +7488,41 @@ left to the user agent and is likely dependent on the writing direction.
                     traditional rectangular float box.
 
   **Examples**      #one {shape-margin: 0;}
-  ------------------------------------------------------------------------
 
-> #two {shape-margin: 1.5em;}
+#two {shape-margin: 1.5em;}
 >
-> #thr (shape-margin: 10%;}
+#thr (shape-margin: 10%;}
 
 #### shape-outside Inh. N Anim. P
 
-+---------------+------------------------------------------------------+
-| > **Values**  | none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; |
+|--------------|-----------------------------------------------------|
+| **Values**  | none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; |
 |               | *&lt;image&gt;*                                          |
-+===============+======================================================+
-| > **          | inset &vert; circle() &vert; ellipse() &vert; polygon()          |
+| **          | inset &vert; circle() &vert; ellipse() &vert; polygon()          |
 | Definitions** |                                                      |
-| >             |                                                      |
-| > ***&lt;bas    |                                                      |
+|             |                                                      |
+| ***&lt;bas    |                                                      |
 | ic-shape&gt;*** |                                                      |
-+---------------+------------------------------------------------------+
-| > ***&lt;s      | margin-box &vert; border-box &vert; padding-box &vert;           |
+| ***&lt;s      | margin-box &vert; border-box &vert; padding-box &vert;           |
 | hape-box&gt;*** | contentbox                                           |
-+---------------+------------------------------------------------------+
-| > **Initial   | none                                                 |
-| > value**     |                                                      |
-+---------------+------------------------------------------------------+
-| > **Computed  | For a *&lt;basic-shape&gt;*, as defined for an           |
-| > value**     | *&lt;image&gt;*, its URI made absolute; otherwise, as    |
+| **Initial   | none                                                 |
+| value**     |                                                      |
+| **Computed  | For a *&lt;basic-shape&gt;*, as defined for an           |
+| value**     | *&lt;image&gt;*, its URI made absolute; otherwise, as    |
 |               | declared                                             |
-+---------------+------------------------------------------------------+
-| > **Applies   | Floats                                               |
-| > to**        |                                                      |
-+---------------+------------------------------------------------------+
-| > *           | *&lt;basic-shape&gt;* values only                        |
+| **Applies   | Floats                                               |
+| to**        |                                                      |
+| *           | *&lt;basic-shape&gt;* values only                        |
 | *Animatable** |                                                      |
-+---------------+------------------------------------------------------+
-| > **          | Defines the shape of a floated element for the       |
+| **          | Defines the shape of a floated element for the       |
 | Description** | purposes of calculating text flow past the float.    |
 |               | Possibilities include defining a polygon that echoes |
 |               | the outer                                            |
-+---------------+------------------------------------------------------+
 
-> edge of an illustration, or using that image's transparent areas to
-> define the float shape. Shapes are clipped at the edges of the shape's
-> outer margin edge, so a float shape can never be larger than the
-> unshaped version of that float.
+edge of an illustration, or using that image's transparent areas to
+define the float shape. Shapes are clipped at the edges of the shape's
+outer margin edge, so a float shape can never be larger than the
+unshaped version of that float.
 
 **Examples** img.web20 {shape-outside: inset(7% round 0.5em/5px);}
 img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
@@ -7862,11 +7585,9 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 | *Description** | they are present in the displayed source *and* are  |
 |                | honored for display due to the value of whitespace. |
 |                | An *&lt;integer&gt;* value sets the number of           |
-|                |                                                     |
 |                | "spaces" a tab character will generate.             |
 | ---------------- | ----------------------------------------------------- |
 | **Examples** | pre.source {tab-size: 4;}                           |
-|                |                                                     |
 |                | p.typer {tab-size: 0.25in;}                         |
 +----------------+-----------------------------------------------------+
 
@@ -7892,7 +7613,7 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 
   **Examples**      table.data {table-display: fixed;}
 
-> table.directory {table-display: auto;}
+table.directory {table-display: auto;}
 
 | ---------------- | ----------------------------------------------------- |
 |               | **Inh. Y Anim. N**                                  |
@@ -7938,10 +7659,11 @@ the line's content; results may vary by user agent.
 
 **Examples** p {text-align-last: justify;}
 
-> h4 {text-align-last: right;}
+h4 {text-align-last: right;}
 
 ### text-decoration Inh. N Anim. N
 
+|--------------|-----------------------------------------------------|
 | **Values**   | none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    |
 |                | blink &rbrack;                                            |
 | **Initial value**   | none                                                |
@@ -8039,12 +7761,11 @@ h2 {text-indent: −25px;}
   **Applies to**    All elements
 
   **Description**   Sets the approach used to render text, allowing
-  ------------------------------------------------------------------------
 
-> authors to decide if speed, legibility, or precision is most
-> important. Note that some user agents always optimize for legibility
-> when rendering HTML text, so this property may have minimal or no
-> effect outside of SVG (which is where it started out).
+authors to decide if speed, legibility, or precision is most
+important. Note that some user agents always optimize for legibility
+when rendering HTML text, so this property may have minimal or no
+effect outside of SVG (which is where it started out).
 
 **Examples** p {text-rendering: optimizeSpeed;}
 
@@ -8068,15 +7789,16 @@ svg tspan {text-rendering: optimizeLegibility;}
                     from the first on top to the last on the bottom. The
                     three length values that can be declared are, in
 
-> order: horizontal offset, vertical offset, and blur distance. When
-> positive, the offset values go down and to the right; when negative,
-> they go back and to the left. Blur values cannot be negative.
+order: horizontal offset, vertical offset, and blur distance. When
+positive, the offset values go down and to the right; when negative,
+they go back and to the left. Blur values cannot be negative.
 
 **Examples** h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 −3px 0.5em blue;}
 
 #### text-transform Inh. Y Anim. N
 
+|--------------|-----------------------------------------------------|
 | **Values**   | uppercase &vert; lowercase &vert; capitalize &vert; none        |
 | **Initial value**   | none                                                |
 | **Computed value**  | As declared                                         |
@@ -8110,13 +7832,10 @@ svg tspan {text-rendering: optimizeLegibility;}
 |                | If one of them is auto, it becomes the negative of  |
 |                | the other; if neither is auto, bottom becomes the   |
 |                | negative of the value of top. |
-
-+----------------+-----------------------------------------------------+
 |               | **Inh. N Anim. P**                                  |
 | **transform** |                                                     |
 | **Values**   | *&lt;transform-list&gt;* &vert; none                        |
 | **Initial value**   | none                                                |
-+----------------+-----------------------------------------------------+
 | **Computed value**  | As declared, except for relative length values,     |
 |               | which are converted to an absolute length           |
 | *            | Refer to the size of the bounding box               |
@@ -8140,6 +7859,7 @@ svg tspan {text-rendering: optimizeLegibility;}
 
 ### transform-origin Inh. N Anim. P
 
+|--------------|-----------------------------------------------------|
 | **Values**  | *&lt;position&gt;*                                       |
 | **Initial value**  | 50% 50%                                              |
 | **Computed value** | A percentage, except for length values, which are    |
@@ -8152,18 +7872,17 @@ svg tspan {text-rendering: optimizeLegibility;}
 | **          | Defines the origin point for an element's transforms |
 | Description** | in either 2D or simulated 3D space. The marked-as-   |
 
-> optional *&lt;length&gt;* values are what define a 3D origin point;
-> without them, the value is necessarily in 2D space.
+optional *&lt;length&gt;* values are what define a 3D origin point;
+without them, the value is necessarily in 2D space.
 
 **Examples** table th {transform-origin: bottom left;}
 
-> li {transform-origin: 10% 10px 10em;}
+li {transform-origin: 10% 10px 10em;}
 
 ### transform-style Inh. N Anim. N
 
-+----------------+-----------------------------------------------------+
-| > **Values**   | flat &vert; preserve-3d                                 |
-+================+=====================================================+
+|--------------|-----------------------------------------------------|
+| **Values**   | flat &vert; preserve-3d                                 |
 | **Initial value**   | flat                                                |
 | **Computed value**  | As declared                                         |
 | **Applies to**   | Any transformable element                           |
@@ -8190,17 +7909,18 @@ svg tspan {text-rendering: optimizeLegibility;}
 | *Description** | one or more of an element's transitions from one    |
 |                | state to another.                                   |
 
-> Even though it is not (as of this writing) explicitly defined in the
-> value syntax, descriptive text in the specification defines that when
-> two *&lt;time&gt;* values are declared, the first is the duration and the
-> second is the delay. If only one is declared, it defines only the
-> duration.
+Even though it is not (as of this writing) explicitly defined in the
+value syntax, descriptive text in the specification defines that when
+two *&lt;time&gt;* values are declared, the first is the duration and the
+second is the delay. If only one is declared, it defines only the
+duration.
 
 **Examples** a:hover {transition: color 1s 0.25s ease-in-out;} h1
 {transition: linear all 10s;}
 
 ### transition-delay Inh. N Anim. N
 
+|--------------|-----------------------------------------------------|
   **Values**        *&lt;time&gt;*&#35;
   **Initial value** 0s
 
@@ -8214,16 +7934,16 @@ svg tspan {text-rendering: optimizeLegibility;}
                     For example, if a transition is defined to begin on
                     hover but has a delay of 0.5s, the transition will
 
-> actually begin half a second after the element is first hovered over.
-> Negative time values are permitted, but rather than creating a
-> paradox, this simply jumps the transition to the point it would have
-> reached had it been started at the defined time offset in the past. In
-> other words, it will be started partway through the transition and run
-> to its conclusion.
+actually begin half a second after the element is first hovered over.
+Negative time values are permitted, but rather than creating a
+paradox, this simply jumps the transition to the point it would have
+reached had it been started at the defined time offset in the past. In
+other words, it will be started partway through the transition and run
+to its conclusion.
 
 **Examples** a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
 
-> h1 {transition-delay: 0;}
+h1 {transition-delay: 0;}
 
 ### transition-duration Inh. N Anim. N
 
@@ -8242,10 +7962,10 @@ as 0s.
 
 **Examples** a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
 
-> h1 {transition-duration: 10s;}
+h1 {transition-duration: 10s;}
 
 ### transition-property Inh. N Anim. N
-
+|--------------|-----------------------------------------------------|
 | **Values**    | none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#            |
 | **Initial     | all                                                  |
 | value**       |                                                      |
@@ -8280,7 +8000,7 @@ ease-in-out &vert;
 
 cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
 
-> *&lt;number&gt;*)
+*&lt;number&gt;*)
 
   ------------------------------------------------------------------------
   **Initial value** ease
@@ -8300,9 +8020,9 @@ cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
   **Examples**      a&lbrack;href&rbrack;:hover {transition-timing-function:
   ------------------------------------------------------------------------
 
-> ease-in-out;}
+ease-in-out;}
 >
-> h1 {transition-timing-function: linear;}
+h1 {transition-timing-function: linear;}
 
 #### unicode-bidi Inh. N Anim. Y
 
@@ -8338,9 +8058,9 @@ bottom &vert; text-bottom &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;*
                     which it resides. Negative length and percentage values 
 					are permitted, and they lower the element instead of raising it. |
 
-> In table cells, this property sets the alignment of the content of the
-> cell within the cell box. When applied to table cells, only the values
-> baseline, top, middle, and bottom are recognized.
+In table cells, this property sets the alignment of the content of the
+cell within the cell box. When applied to table cells, only the values
+baseline, top, middle, and bottom are recognized.
 
 **Examples** sup {vertical-align: super;}
 
@@ -8369,9 +8089,9 @@ bottom &vert; text-bottom &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
 **Values** normal &vert; nowrap &vert; pre &vert; pre-wrap &vert; pre-line
 
-> normal
+normal
 >
-> As declared
+As declared
 
 **Applies to** All elements
 
@@ -8389,7 +8109,7 @@ normal.
 
 **Examples** td {white-space: nowrap;}
 
-> tt {white-space: pre;}
+tt {white-space: pre;}
 
 | ------------------- | --------------------------------------------------- |
 | **widows**   | **Inh. N Anim. Y**                                  |
@@ -8407,7 +8127,7 @@ normal.
 
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 
-> auto
+auto
 
 | ---------------- | ------------------------------------------------------ |
 |                  |  For auto and percentage values, as declared; |
@@ -8424,9 +8144,9 @@ normal.
 
   **Examples**      table {width: 80%;}
 
-> #sidebar {width: 20%;}
+#sidebar {width: 20%;}
 >
-> .figure img {width: 200px;}
+.figure img {width: 200px;}
 
 |              | **Inh. Y Anim. Y**                                  |
 | **word-break** |                                                     |
@@ -8447,9 +8167,9 @@ normal.
 
 **Values** *&lt;length&gt;* &vert; normal
 
-> normal
+normal
 >
-> For normal, the absolute length 0; otherwise, the absolute length
+For normal, the absolute length 0; otherwise, the absolute length
 
 **Applies to** All elements
 
@@ -8462,7 +8182,7 @@ closer together.
 
 **Examples** p.spacious {word-spacing: 6px;} em {word-spacing: 0.2em;}
 
-> p.cramped {word-spacing: −0.5em;}
+p.cramped {word-spacing: −0.5em;}
 
 #### writing-mode Inh. Y Anim. Y
 
@@ -8486,7 +8206,7 @@ closer together.
 |                  |  with horizontal-tb. |
 |  **Examples**    |  &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} |
 
-> &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;}
+&lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;}
 
 ### z-index
 
@@ -8515,19 +8235,19 @@ numbers are farther away.
 
 &#35;
 
-> for ID selector, 51 for value definitions, 74
+for ID selector, 51 for value definitions, 74
 
 && for value definitions, 74
 
 &ast; for value definitions, 74
 
-> selector, 49
+selector, 49
 
 &plus;
 
 for adjacent sibling selector,
 
-> 50
+50
 
 for value definitions, 74 &dash;- for custom identifiers, 47
 
@@ -8563,13 +8283,13 @@ pseudo-class, 60 adjacent sibling selector, 50 ::after pseudo-element,
 
 align-self property, 76 alignment
 
-> of flex items, 21 table cell contents, 34 text alignment, 172
-> vertical, 181
+of flex items, 21 table cell contents, 34 text alignment, 172
+vertical, 181
 
 all property, 76 alpha (color opacity), 37 alternate style sheets, 3 and
 keyword, for media queries,
 
-> 66
+66
 
 angle units, 43 animatable properties, 73 animation property, 77
 animation-delay property, 78 animation-direction property, 78
@@ -8578,12 +8298,12 @@ animation-duration property, 79 animation-iteration count property, 80
 animation-name property, 80 animation-play-state property, 81
 animation-timing-function prop‐
 
-> erty, 81
+erty, 81
 
 aspect value, 124 at-rules, 6 attribute values, 45 auto value
 
-> with block-level layout, 14 with grid layout, 25 with inline layout,
-> 15
+with block-level layout, 14 with grid layout, 25 with inline layout,
+15
 
 automatic table layout, 29-31
 
@@ -8600,7 +8320,7 @@ background-position property, 87 background-repeat property, 87
 background-size property, 88 basic visual layout, 13-17 ::before
 pseudo-element, 63 beginning substring attribute
 
-> value selector, 52
+value selector, 52
 
 block-level boxes, 12 block-level layout, 13 border property, 89
 border-bottom property, 89 border-bottom-color property, 90
@@ -8643,13 +8363,13 @@ collapsing cell borders model,
 
 32-33 color
 
-> background color, 85
->
-> border color, 90, 92, 97, 100,
->
-> 103
->
-> outline color, 157
+background color, 85
+
+border color, 90, 92, 97, 100,
+
+103
+
+outline color, 157
 
 color keywords, 38 color property, 38, 110 color values, 36-39 columns,
 table (see table layout) comments, 7 conflict resolution (see cascade
@@ -8660,27 +8380,27 @@ counter-increment property, 111 counter-reset property, 112
 &#64;counter-style rule, 6 currentColor keyword, 38 cursor property, 112
 custom properties, 46 cycles, animation (see animation
 
-> entries)
+entries)
 
 **D**
 
 declaration block (in style rules),
 
-> 5
+5
 
 declarations (in style rules), 5 decoration box, 106 text, 173
 decrementing counters, 112 delay
 
-> animation, 78 transition, 179
+animation, 78 transition, 179
 
 descendant selector, 50 direction
 
-> animation, 78 base direction, 113
+animation, 78 base direction, 113
 
 direction property, 113 :disabled pseudo-class, 61 display property, 11,
 114 display roles, element, 11 duration
 
-> animation, 79 transition, 179
+animation, 79 transition, 179
 
 **E** element boxes, 13 element classifications, 10 element display
 roles, 11 element layout basics, 13-17 element positioning, 18-20
@@ -8701,7 +8421,7 @@ feature queries, 70 filter property, 116 :first-child pseudo-class, 54
 
 fit-content value, for grid layout,
 
-> 25
+25
 
 fixed positioning, 19 fixed table layout, 29 fixed tracks, 26 flex
 property, 116 flex-basis property, 117 flex-direction property, 118
@@ -8739,7 +8459,7 @@ notation, 36
 
 horizontal alignment (see align‐
 
-> ment)
+ment)
 
 :hover pseudo-class, 62
 
@@ -8756,8 +8476,8 @@ HTML-style comments, 7 HTTP Link headers, 4 httpd.conf file, 4 hue
 
 **I** ID selector, 51 identifier values, 45 image
 
-> background image, 85 border image, 93-97 float shape creation, 168
-> list item image, 141 masking, 147
+background image, 85 border image, 93-97 float shape creation, 168
+list item image, 141 masking, 147
 
 &#64;import directive, 2
 
@@ -8766,13 +8486,13 @@ incrementing counters, 112 indent, text, 173 inherit keyword, 35
 
 inheritance (in style precedence),
 
-> 9
+9
 
 inherited properties, 73 initial keyword, 36 inline layout (inline
 boxes), 14 inline styles, 1 inline-level boxes, 12 interaction
 pseudo-classes, list of,
 
-> 60-63
+60-63
 
 intrinsic tracks, 26 isolation property, 137
 
@@ -8805,18 +8525,18 @@ property, 147 mask-mode property, 148 mask-origin property, 149
 mask-position property, 149 mask-repeat property, 150 mask-size
 property, 150 mask-type property, 151 max-content value, for grid lay‐
 
-> out, 25
+out, 25
 
 max-height property, 151 max-width property, 151 media attribute (link),
 3 media pseudo-attribute (xmlstyle‐
 
-> sheet), 4
+sheet), 4
 
 media queries, 65-70 basic concepts, 65-67 features, 67-70 values, 67-70
 &#64;media rule, 7 millimeter (length unit), 40 min-content value, for grid
 lay‐
 
-> out, 24
+out, 24
 
 min-height property, 152 min-width property, 152 minmax value, for grid
 layout, 25 mix-blend-mode property, 153
@@ -8844,12 +8564,12 @@ object-fit property, 154 object-position property, 154 offset, outline,
 property, 155 order property, 155 ordered lists (see list entries)
 origin
 
-> for 3D perspective, 166 for background, 86 for masks, 149 for
-> transformation, 177 orphans property, 156 outline property, 156
-> outline-color property, 157 outline-offset property, 157 outline-style
-> property, 158 outline-width property, 158 outset, border image, 94
-> overflow property, 159 overflow-wrap property, 159 overflow-x
-> property, 160 overflow-y property, 160
+for 3D perspective, 166 for background, 86 for masks, 149 for
+transformation, 177 orphans property, 156 outline property, 156
+outline-color property, 157 outline-offset property, 157 outline-style
+property, 158 outline-width property, 158 outset, border image, 94
+overflow property, 159 overflow-wrap property, 159 overflow-x
+property, 160 overflow-y property, 160
 
 **P**
 
@@ -8866,14 +8586,14 @@ item marker, 142 mask, 149 object, 154
 position property, 166 position values, 44 positioning, 18-20
 precedence, style, 8-10 properties
 
-> complete list of, 75-186 inheritance and animation, 73 universal
-> values, 75 value syntax conventions,
+complete list of, 75-186 inheritance and animation, 73 universal
+values, 75 value syntax conventions,
 >
-> 73-75
+73-75
 
 properties (in style rules), 5 pseudo-classes, list of, 53-59
 
-> interaction, 60-63 negation, 59 structural, 53-63
+interaction, 60-63 negation, 59 structural, 53-63
 
 pseudo-elements, list of, 63
 
@@ -8888,7 +8608,7 @@ quarter-millimeter (length unit),
 radius, border box, 90, 98, 103 relative length units, 41 relative
 positioning, 18 repeat
 
-> background, 87 border image, 94 mask, 150
+background, 87 border image, 94 mask, 150
 
 repeat value, for grid layout, 25 replaced elements, 11 resetting
 counters, 112 resize property, 167 RGB color notations, 36 right
@@ -8905,28 +8625,28 @@ selectors, complete list of, 49-53
 
 shadow
 
-> box, 107 text, 175
+box, 107 text, 175
 
 shape, cursor, 112 shape-image-threshold property,
 
 168 shape-margin property, 169 shape-outside property, 169 shrink
 factor, 119 simple attribute selector, 52 size
 
-> background, 88 border, 91, 98, 101, 104, 105 border image, 96 box, 107
-> elements, 136, 183 font, 123 line height, 140 margin, 143 mask, 150
-> maximum, defining, 151 minimum, defining, 152 outline, 158 padding,
-> 161 resize functionality, 167
+background, 88 border, 91, 98, 101, 104, 105 border image, 96 box, 107
+elements, 136, 183 font, 123 line height, 140 margin, 143 mask, 150
+maximum, defining, 151 minimum, defining, 152 outline, 158 padding,
+161 resize functionality, 167
 
 size property, 170 slice distances, 95 source, image, 96 spacing
 
-> background images, 88 border spacing, 101 letter spacing, 139 word
-> spacing, 184
+background images, 88 border spacing, 101 letter spacing, 139 word
+spacing, 184
 
 specificity (in style precedence), 8 static positioning, 18 strings, 44
 
 structural pseudo-classes, list of,
 
-> 53-59
+53-59
 
 structure of style sheets, 5 style attribute, 1 &lt;style&gt; element, 2
 style inheritance, 9 style precedence, 8-10 style sheet structure, 5
@@ -8939,17 +8659,17 @@ style sheets, types of, 1-4 styles, adding, 1-4
 tab-size property, 171 table captions, 108 table cells, empty, 115 table
 columns (see column
 
-> entries)
+entries)
 
 table layout, 27-34
 
-> automatic layout, 29-31 collapsing cell borders, 32-33 fixed layout,
-> 29 vertical alignment within cells, 34
+automatic layout, 29-31 collapsing cell borders, 32-33 fixed layout,
+29 vertical alignment within cells, 34
 
 table-layout property, 171 :target pseudo-class, 62 text style (see font
 entries; letter
 
-> entries; word entries)
+entries; word entries)
 
 text-align property, 172 text-align-last property, 172 text-decoration
 property, 173 text-indent property, 173 text-orientation property, 174
@@ -8972,16 +8692,16 @@ list entries) unset keyword, 36 URIs (URI values), 43
 
 values, 35-47
 
-> angle values, 43 attribute values, 45 calculation values, 45 color
-> values, 36-39 fraction values, 43 frequency values, 44 identifier
-> values, 45 keywords, 35 length values, 39-42 media query values, 67-70
-> number values, 39 percentage values, 39 position values, 44 strings,
-> 44 syntax conventions, 73-75 time values, 43 URI values, 43 variable
-> values, 46
+angle values, 43 attribute values, 45 calculation values, 45 color
+values, 36-39 fraction values, 43 frequency values, 44 identifier
+values, 45 keywords, 35 length values, 39-42 media query values, 67-70
+number values, 39 percentage values, 39 position values, 44 strings,
+44 syntax conventions, 73-75 time values, 43 URI values, 43 variable
+values, 46
 
 values for properties (in style
 
-> rules), 5
+rules), 5
 
 variable values, 46 vertical alignment (see alignment) vertical-align
 property, 181 VGA color keywords, 38 viewport height unit, 42 viewport
