@@ -99,11 +99,12 @@ complies with such licenses and/or rights.
 > Feature Queries 70
 
 ## Chapter 4: Property Reference 73
-> Inheritance and Animation 73
-> Value Syntax Conventions 73
-> Universal Values 75
+Inheritance and Animation 73
+Value Syntax Conventions 73
+Universal Values 75
 
 Properties 75 **Index 187**
+
 ### iv &vert; Table of Contents
 # Preface
 Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
@@ -115,14 +116,14 @@ to CSS3 properties.
 ## Conventions Used in This Book
 The following typographical conventions are used in this book:
 *Italic*
-> Used to indicate new terms, URLs, filenames, file extensions,
-> directories, commands and options, and program names. For example, a
-> path in the filesystem will appear as *C:\\windows\\system*.
+Used to indicate new terms, URLs, filenames, file extensions,
+directories, commands and options, and program names. For example, a
+path in the filesystem will appear as *C:\\windows\\system*.
 *&lt;Italic&gt; inside angle brackets*
-> Shows text that should be replaced with user-supplied values or by
-> values determined by context.
+Shows text that should be replaced with user-supplied values or by
+values determined by context.
 Constant width
-> Used to show the contents of files, or the output from commands.
+Used to show the contents of files, or the output from commands.
 There are further conventions relating to value syntax. These are
 explained at the beginning of Chapter 4.
 
@@ -147,9 +148,9 @@ permission given above, feel free to contact us at
 *permissions@oreilly.com*.
 
 ## O'Reilly Safari
-> [*Safari*](http://oreilly.com/safari) (formerly Safari Books Online)
-> is a membership-based training and reference platform for enterprise,
-> government, educators, and individuals.
+[*Safari*](http://oreilly.com/safari) (formerly Safari Books Online)
+is a membership-based training and reference platform for enterprise,
+government, educators, and individuals.
 Members have access to thousands of books, training videos, Learning
 Paths, interactive tutorials, and curated playlists from
 
@@ -171,12 +172,12 @@ Visit Eric A. Meyer's website at
 [&#64;meyerweb](http://twitter.com/#!/meyerweb) on Twitter.
 Please address comments and questions concerning this book to the
 publisher:
-> O'Reilly Media, Inc.
-> 1005 Gravenstein Highway North
-> Sebastopol, CA 95472
-> 800-998-9938 (in the United States or Canada)
-> 707-829-0515 (international or local)
-> 707-829-0104 (fax)
+O'Reilly Media, Inc.
+1005 Gravenstein Highway North
+Sebastopol, CA 95472
+800-998-9938 (in the United States or Canada)
+707-829-0515 (international or local)
+707-829-0104 (fax)
 
 We have a web page for this book, where we list errata, examples, and
 any additional information. You can access this page at
@@ -202,7 +203,7 @@ via the style attribute. The value of a style attribute is a
 *declaration block* (see the section "Rule Structure" on page 5) without
 the curly braces:
 &lt;p style=&quot;color: red; background: yellow;&quot;&gt;Look out!
-> This text is alarmingly presented!&lt;/p&gt;
+This text is alarmingly presented!&lt;/p&gt;
 Note that as of this writing, only the content of a single declaration
 block can be used as a style attribute value. For example, it is not
 possible to place hover styles (using :hover) in a style attribute, nor
@@ -216,12 +217,14 @@ the style attribute, and thus inline styles.
 ### Embedded Stylesheets
 A stylesheet can be embedded within an HTML document using the style
 element:
-> **&lt;html&gt;&lt;head&gt;&lt;title&gt;**Stylin&apos;!**&lt;/title&gt;**
-> **&lt;style** type=&quot;text/css&quot;**&gt; h1** {**color**: purple;}
-> **p** {**font-size**: smaller; **color**: gray;}
-> **&lt;/style&gt;**
-> **&lt;/head&gt;** &hellip;
-> **&lt;/html&gt;**
+```
+**&lt;html&gt;&lt;head&gt;&lt;title&gt;**Stylin&apos;!**&lt;/title&gt;**
+**&lt;style** type=&quot;text/css&quot;**&gt; h1** {**color**: purple;}
+**p** {**font-size**: smaller; **color**: gray;}
+**&lt;/style&gt;**
+**&lt;/head&gt;** &hellip;
+**&lt;/html&gt;**
+```
 
 XML-based languages may or may not provide an equivalent capability;
 always check the document type definition (DTD) to be certain.
@@ -243,16 +246,17 @@ An external stylesheet can be referenced in one of three ways.
 One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
 stylesheet:
-
-> **&lt;head&gt;&lt;title&gt;**My Document**&lt;/title&gt;**
-> **&lt;style** type=&quot;text/css&quot;**&gt;**
-> **&#64;import** url(site.css);
-> **&#64;import** url(navbar.css);
-> **&#64;import** url(footer.css) **screen** **and** (**min-width**:
-> 960px);
-> **body** {**background**: yellow;}
-> **&lt;/style&gt;**
-> **&lt;/head&gt;**
+```
+**&lt;head&gt;&lt;title&gt;**My Document**&lt;/title&gt;**
+**&lt;style** type=&quot;text/css&quot;**&gt;**
+**&#64;import** url(site.css);
+**&#64;import** url(navbar.css);
+**&#64;import** url(footer.css) **screen** **and** (**min-width**:
+960px);
+**body** {**background**: yellow;}
+**&lt;/style&gt;**
+**&lt;/head&gt;**
+```
 
 Note that &#64;import directives can appear at the top (and, according to
 the specification, *only* at the top) of any stylesheet. Thus, one
@@ -263,14 +267,16 @@ stylesheet with a document. Multiple link elements are permitted. The
 media attribute can be used to restrict a stylesheet to one or more
 media environments:
 
-> **&lt;head&gt;**
-> **&lt;title&gt;**A Document**&lt;/title&gt;**
-> **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
-> media=&quot;all&quot;**&gt;**
-> **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;web.css&quot;
-> media=&quot;screen and (max-width: 960px)&quot;**&gt;**
-> **&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
-> media=&quot;print and (color-depth: 2)&quot;**&gt; &lt;/head&gt;**
+```
+**&lt;head&gt;**
+**&lt;title&gt;**A Document**&lt;/title&gt;**
+**&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
+media=&quot;all&quot;**&gt;**
+**&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;web.css&quot;
+media=&quot;screen and (max-width: 960px)&quot;**&gt;**
+**&lt;link** rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
+media=&quot;print and (color-depth: 2)&quot;**&gt; &lt;/head&gt;**
+```
 
 It is also possible to link to alternate stylesheets, but few browsers
 provide a way for users to make use of them. As of this writing, most or
@@ -289,12 +295,14 @@ the prolog of an XML document. Multiple xml-stylesheet processing
 instructions are permitted. The media pseudo-attribute can be used to
 restrict a stylesheet to one or more forms of media:
 
-> &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;basic.css&quot;
-> media=&quot;all&quot;?&gt;
-> &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;web.css&quot;
-> media=&quot;screen&quot;?&gt;
-> &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;paper.css&quot;
-> media=&quot;print&quot;?&gt;
+```
+&lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;basic.css&quot;
+media=&quot;all&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;web.css&quot;
+media=&quot;screen&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;paper.css&quot;
+media=&quot;print&quot;?&gt;
+```
 
 **HTTP Link headers**
 The last (and least common by far) way of associating an external
@@ -305,15 +313,23 @@ directive.
 Adding a line such as this to the *.htaccess* file at the root level of
 your server will make this happen for all pages on the site, where
 /style.css is the server path of the stylesheet to be loaded:
-> Header add Link
-> &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
+Header add Link
+```
+&quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
+```
 As an alternative to using *.htaccess*, which has been known to cause
 performance problems, you can edit your *httpd.conf* file to do the same
 thing:
-> &lt;Directory /usr/local/username/httpdocs&gt;
-> Header add Link
-> &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
-&lt;/Directory&gt; where /usr/local/username/httpdocs is replaced with the
+```
+&lt;Directory /usr/local/username/httpdocs&gt;
+```
+Header add Link
+```
+&quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
+&lt;/Directory&gt; 
+```
+
+where /usr/local/username/httpdocs is replaced with the
 Unix pathname of your website's actual home directory, and /style.css is
 replaced with the location of the stylesheet within that home directory.
 As of this writing, HTTP headers were not supported by all user agents,
@@ -350,73 +366,83 @@ properties.
 ## At-rules
 A CSS *at-rule* is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:
-&#64;charset
-> Allows an author to define the encoding of the styles within the
-> stylesheet (e.g., &#64;charset &quot;utf-8&quot;;). This enables authors to
-> define the encoding of their styles even when they do not control the
-> encoding of the file or system in which the styles are written. If
-> multiple &#64;charset rules are declared, only the first will be used.
-> This *must* be the first line of a stylesheet in which it appears, and
-> *cannot* be preceded by any character. &#64;charset cannot be used in a
-> stylesheet embedded in a document.
-&#64;import
 
-> Allows an author to include the styles of another stylesheet (see
-> "@import directive" on page 2). Multiple
->
-> &#64;import rules are permitted. Any &#64;import rules *must* appear before
-> all other parts of the stylesheet except for &#64;charset.
+&#64;charset
+Allows an author to define the encoding of the styles within the
+stylesheet (e.g., &#64;charset &quot;utf-8&quot;;). This enables authors to
+define the encoding of their styles even when they do not control the
+encoding of the file or system in which the styles are written. If
+multiple &#64;charset rules are declared, only the first will be used.
+This *must* be the first line of a stylesheet in which it appears, and
+*cannot* be preceded by any character. &#64;charset cannot be used in a
+stylesheet embedded in a document.
+
+&#64;import
+Allows an author to include the styles of another stylesheet (see
+"@import directive" on page 2). Multiple
+
+&#64;import rules are permitted. Any &#64;import rules *must* appear before
+all other parts of the stylesheet except for &#64;charset.
 
 &#64;namespace
-> Allows an author to define an XML namespace to be used in selectors
-> (e.g., &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting
-> the use of svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG
-> files differently than &lt;a&gt; elements in HTML). Multiple
-> &#64;namespace rules are permitted. Any &#64;namespace *must* appear before
-> all other parts of the stylesheet except for &#64;charset and &#64;import
-> rules.
+Allows an author to define an XML namespace to be used in selectors
+(e.g., &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting
+the use of svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG
+files differently than &lt;a&gt; elements in HTML). Multiple
+&#64;namespace rules are permitted. Any &#64;namespace *must* appear before
+all other parts of the stylesheet except for &#64;charset and &#64;import
+rules.
 Besides these statements, there are a number of conditional atrules.
 These include: &#64;counter-style
-> Defines symbol and counting patterns used in CSS counters (e.g., the
-> numbering of list items in an ordered list).
+Defines symbol and counting patterns used in CSS counters (e.g., the
+numbering of list items in an ordered list).
+
 &#64;font-face
-> Defines an external font to be downloaded and used, including
-> definitions of the identifiers to be used in other style rules. This
-> is part of what is often called "web fonts" or "custom fonts."
+Defines an external font to be downloaded and used, including
+definitions of the identifiers to be used in other style rules. This
+is part of what is often called "web fonts" or "custom fonts."
+
 &#64;keyframes
-> Defines the states of various steps in an animation sequence, grouped
-> together under a unique identifier.
+Defines the states of various steps in an animation sequence, grouped
+together under a unique identifier.
+
 &#64;media
-> Defines the media types and parameters in which a block of styles are
-> to be applied: e.g., writing &#64;media (maxwidth: 600px) and then the
-> styles to be used for smaller screens. This is the key to Responsive
-> Web Design.
+Defines the media types and parameters in which a block of styles are
+to be applied: e.g., writing &#64;media (maxwidth: 600px) and then the
+styles to be used for smaller screens. This is the key to Responsive
+Web Design.
+
 &#64;supports
-> Defines the browser-support conditions under which a block of styles
-> should be used: e.g., writing &#64;supports
->
-> (display: grid) and then the styles that should be used in a CSS
-> Grid--supporting browser.
+Defines the browser-support conditions under which a block of styles
+should be used: e.g., writing &#64;supports
+
+(display: grid) and then the styles that should be used in a CSS
+Grid--supporting browser.
 There are other proposed at-rules which are, as of early 2018, at
 various stages of development. These include &#64;document,
 &#64;font-feature-values, &#64;page, and &#64;viewport.
+
 ## Comments
 Including comments in CSS is simple. You open with /&ast; and end with &ast;/,
 like this:
 /&ast; This is a comment! &ast;/ Comments can be multiple lines long:
-> /&ast; This is a comment!
-> This is a continuation of the comment.
-> And so is this. &ast;/
+/&ast; This is a comment!
+This is a continuation of the comment.
+And so is this. &ast;/
 They can also occur anywhere within a stylesheet except in the middle of
 a property name or value:
 **Comments**
-> **h1***/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
-> rgba(23,58,89,0.42) */&ast; RGB + opacity &ast;/*;}
+
+```
+**h1***/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
+rgba(23,58,89,0.42) */&ast; RGB + opacity &ast;/*;}
+```
 HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
 stylesheets so as to hide the styles from browsers so old that they
 don't understand HTML 3.2. They do *not* act as CSS comments; that is,
 anything contained in an HTML comment will be seen and interpreted by
 the CSS parser.
+
 ## Style Precedence
 A single HTML document can import and link to multiple external
 stylesheets, contain one or more embedded stylesheets, and make use of
@@ -425,12 +451,13 @@ conflict with one another. Cascading Style Sheets uses a mechanism
 called the *cascade* to resolve any such conflicts and arrive at a final
 set of styles to be applied to the document. Two key components of the
 cascade are specificity and inheritance.
+
 ### Specificity Calculations
 *Specificity* describes the weight of a selector and any declarations
 associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
+
 *Table 1-1. Selector type specificity*
-| ---------------------- | ------------------------------- | ------------- |
 | Selector type        | Example                       | Specificity |
 | ---------------------- | ------------------------------- | ------------- |
 | Universal selector   | &ast;                            | 0,0,0,0     |
