@@ -396,8 +396,9 @@ associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
 
 *Table 1-1. Selector type specificity*
-| --------------- | ------------------------------------ | --------------- |
+
 | Selector type        | Example                       | Specificity |
+| --------------- | ------------------------------------ | --------------- |
 | Universal selector   | &ast;                            | 0,0,0,0     |
 | Combinator           |                               |             |
 |                        | &plus;                            |             |
@@ -4644,28 +4645,21 @@ decremented) by any value, positive or negative or 0. If no
 
 #### counter-reset Inh. N Anim. N
 
-+----------------+-----------------------------------------------------+
 | **Values**   | &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none      |
-+================+=====================================================+
-| **Initial    | User agent--dependent                               |
-| value**      |                                                     |
+| **Initial**    | User agent--dependent                               |
+| **value**      |                                                     |
 +----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | All elements                                        |
-| to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| *            | With this property, counters can be reset (or set   |
-| *Description** | for the first time) to any value, positive or       |
+| **value**      |                                                     |
+| **Applies**    | All elements                                        |
+| **to**         |                                                     |
+|             | With this property, counters can be reset (or set   |
+| **Description** | for the first time) to any value, positive or       |
 |                | negative. If no *&lt;integer&gt;* is supplied, it       |
 |                | defaults to 0.                                      |
-+----------------+-----------------------------------------------------+
 | **Examples** | h1 {counter-reset: section;} h2 {counter-reset:     |
 |                | subsec 1;}                                          |
-+----------------+-----------------------------------------------------+
 | **cursor**   | **Inh. Y Anim. N**                                  |
-+----------------+-----------------------------------------------------+
 | **Values**     | &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  |
 |                | &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help  |
 |                | &vert; pointer &vert; progress &vert; wait &vert; cell &vert; crosshair |
@@ -4675,13 +4669,10 @@ decremented) by any value, positive or negative or 0. If no
 |                | &vert; sw-resize &vert; w-resize &vert; ew-resize &vert; ns-resize  |
 |                | &vert; nesw-resize &vert; nwse-resize &vert; col-resize &vert;      |
 |                | row-resize &vert; allscroll &rbrack;                          |
-+----------------+-----------------------------------------------------+
-| **Initial      | auto                                                |
-| value**        |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed     | For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*        |
-| value**        | resolves to a                                       |
-+----------------+-----------------------------------------------------+
+| **Initial**      | auto                                                |
+| **value**        |                                                     |
+| **Computed**     | For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*        |
+| **value**        | resolves to a                                       |
 
 supported file type, a single absolute URI with optional *x*,*y*
 coordinates; otherwise, as declared **Applies to** All elements
@@ -4698,7 +4689,7 @@ mandatory. Thus, you can specify any number of URIs to external cursor
 resources, but the value *must* end with a keyword. Leaving off the
 keyword will cause conforming user agents to drop the declaration
 entirely.
->
+
 CSS3 allows two numbers to be supplied with a *&lt;uri&gt;* value. These
 define the *x*,*y* coordinates of the cursor's "active point"; that
 is, the point in the cursor that is used for determining hover states,
@@ -4712,23 +4703,17 @@ that the numbers are unitless and are interpreted relative to the
 
 a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 
-+----------------+-----------------------------------------------------+
 |              | **Inh. Y Anim. Y**                                  |
 |  **direction** |                                                     |
-+================+=====================================================+
 | **Values**   | ltr &vert; rtl                                          |
-+----------------+-----------------------------------------------------+
-| **Initial    | ltr                                                 |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
+| **Initial**    | ltr                                                 |
+| **value**      |                                                     |
 | **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | All elements                                        |
-| to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| *            | Defines the base writing direction of blocks and    |
-| *Description** | the direction of embeddings and overrides for the   |
+| **value**      |                                                     |
+| **Applies**    | All elements                                        |
+| **to**         |                                                     |
+|             | Defines the base writing direction of blocks and    |
+| **Description** | the direction of embeddings and overrides for the   |
 |                | Unicode Bidirectional Algorithm (sometimes called   |
 +----------------+-----------------------------------------------------+
 
@@ -4745,7 +4730,7 @@ property.
 **Examples** &ast;:lang(en) {direction: ltr;}
 
 &ast;:lang(ar) {direction: rtl;}
->
+
 &lbrack; *&lt;display-outside&gt;* ‖ *&lt;display-inside&gt;* &rbrack; &vert;
 *&lt;displaylistitem&gt;* &vert; *&lt;display-internal&gt;* &vert; *&lt;display-box&gt;*
 &vert;
@@ -4771,12 +4756,10 @@ ruby
 ***&lt;display-internal&gt;***table-row-group &vert; table-header-group &vert;
 table-
 
-  ---------------------------------------------------------------------------------
                              footer-group &vert; table-row &vert; table-cell &vert;
                              tablecolumn-group &vert; table-column &vert; table-caption &vert;
                              ruby-base &vert; ruby-text &vert; ruby-base-container &vert;
                              ruby-text-container
-  -------------------------- ------------------------------------------------------
   ***&lt;display-box&gt;***      contents &vert; none
 
   ***&lt;display-legacy&gt;***   inline-block &vert; inline-list-item &vert; inline-table &vert;
@@ -4787,7 +4770,6 @@ table-
   **Computed value**         As declared
 
   **Applies to**             All elements
-  ---------------------------------------------------------------------------------
 
 **Description** Defines the kind of display box an element generates
 during layout. Gratuitous use of display with a document type such as
@@ -4810,72 +4792,52 @@ still listed as part of CSS3.
 li {display: list-item;} img {display: inline;} .hide {display: none;}
 tr {display: table-row;}
 
-+----------------+-----------------------------------------------------+
 | *            | **Inh. Y Anim. N**                                  |
 | *empty-cells** |                                                     |
-+================+=====================================================+
 | **Values**   | show &vert; hide                                        |
-+----------------+-----------------------------------------------------+
-| **Initial    | show                                                |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | Elements with the display value table-cell          |
-| to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| *            | Defines the presentation of table cells that        |
-| *Description** | contain no content. If shown, the cell's borders    |
+| **Initial**    | show                                                |
+| **value**      |                                                     |
+| **Computed**   | As declared                                         |
+| **value**      |                                                     |
+| **Applies**    | Elements with the display value table-cell          |
+| **to**         |                                                     |
+|             | Defines the presentation of table cells that        |
+| **Description** | contain no content. If shown, the cell's borders    |
 |                | and background are drawn. This property is only     |
 |                | honored if border-collapse is set to separate;      |
 |                | otherwise, it is ignored.                           |
-+----------------+-----------------------------------------------------+
 | **Example**  | th, td {empty-cells: show;}                         |
-+----------------+-----------------------------------------------------+
 | **Note**     | empty-cells has no effect unless the value of       |
 |                | border-collapse is separate.                        |
-+----------------+-----------------------------------------------------+
 
-+----------------+-----------------------------------------------------+
 | **filter**   | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
 | **Values**   | &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  |
 |                | dropshadow() &vert; grayscale() &vert; hue-rotate() &vert;      |
 |                | invert() &vert; opacity() &vert; sepia() &vert; saturate() &vert;   |
 |                | url() &rbrack;#                                           |
-+----------------+-----------------------------------------------------+
-| **Initial    | none                                                |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | All elements (in SVG, applies to all graphics       |
-| to**         | elements and all container elements except the defs |
+| **Initial**    | none                                                |
+| **value**      |                                                     |
+| **Computed**   | As declared                                         |
+| **value**      |                                                     |
+| **Applies**    | All elements (in SVG, applies to all graphics       |
+| **to**         | elements and all container elements except the defs |
 |                | element)                                            |
-+----------------+-----------------------------------------------------+
-| *            | Applies a visual filter to the element, resulting   |
-| *Description** | in an alteration of its final appearance. url()     |
+|                | Applies a visual filter to the element, resulting   |
+| **Description** | in an alteration of its final appearance. url()     |
 |                | values point to filter elements in SVG files,       |
 |                | either externally or embedded within the HTML       |
 |                | document. SVG filters can be quite complex and      |
 |                | powerful.                                           |
-+----------------+-----------------------------------------------------+
 | **Examples** | img.oldschool {filter: sepia(0.9);} h2.glowshadow   |
 |                | {filter:                                            |
 |                |                                                     |
 |                | drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em     |
 |                | 0.75em 30px gray);} div.logo {filter:               |
 |                | url(/assets/filters.svg#spotlight);}                |
-+----------------+-----------------------------------------------------+
 | **flex**     | **Inh. N Anim. P**                                  |
-+----------------+-----------------------------------------------------+
 
-  ------------------------------------------------------------------------
-  **Values**        &lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*? ‖
+  **Values**        &lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*?
                     *&lt;flex-basis&gt;* &rbrack; &vert; none
-  ----------------- ------------------------------------------------------
   **Initial value** 0 1 auto
 
   **Computed        Refer to individual properties
@@ -4892,13 +4854,11 @@ tr {display: table-row;}
   **Description**   A shorthand property encompassing the flex-grow,
                     flex-shrink, and flex-basis properties, used to set
                     the proportion and types of flexibility permitted
-  ------------------------------------------------------------------------
 
-+---------------+------------------------------------------------------+
 | **Examples**  | for a flex item. The minimum valid value is a flex   |
 |               | basis on its own, in which case the growth and       |
-| **Note        | shrink factors are set to their defaults of 0 and 1, |
-| flex-basis**  | respectively. Including the growth and shrink        |
+| **Note**        | shrink factors are set to their defaults of 0 and 1, |
+| **flex-basis**  | respectively. Including the growth and shrink        |
 |               | factors is optional, but if one is included, the     |
 |               | other *must* also be present.                        |
 |               |                                                      |
@@ -4916,30 +4876,20 @@ tr {display: table-row;}
 |               | encompasses.                                         |
 |               |                                                      |
 |               | **Inh. N Anim. P**                                   |
-+===============+======================================================+
 | **Values**    | content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    |
 |               | auto &rbrack;                                              |
-+---------------+------------------------------------------------------+
-| **Initial     | auto                                                 |
-| value**       |                                                      |
-+---------------+------------------------------------------------------+
-| **Computed    | As declared, with length values made absolute        |
-| value**       |                                                      |
-+---------------+------------------------------------------------------+
-| **            | Relative to the flex container's inner main axis     |
-| Percentages** | size                                                 |
-+---------------+------------------------------------------------------+
-| **Applies     | Flex items (children of flex containers)             |
-| to**          |                                                      |
-+---------------+------------------------------------------------------+
-| *             | *&lt;length&gt;* and *&lt;percentage&gt;* values only        |
-| *Animatable** |                                                      |
-+---------------+------------------------------------------------------+
-| **            | Defines the initial size of a flex item, used as a   |
-| Description** | basis for all subsequent flex sizing calculations.   |
+| **Initial value**    | auto                                                 |
+| **Computed value**   | As declared, with length values made absolute        |
+| **Percentages**            | Relative to the flex container's inner main axis size    |
+| **Applies to** |                                                  |
+|                | Flex items (children of flex containers)             |
+|                |                                                      |
+| **Animatable** | *&lt;length&gt;* and *&lt;percentage&gt;* values only        |
+|                |   |
+| **Description** | Defines the initial size of a flex item, used as a 
+|               | basis for all subsequent flex sizing calculations.   |
 |               | This can override an explicitly assigned width value |
 |               | for the element.                                     |
-+---------------+------------------------------------------------------+
 | **Examples**  | nav ul li {flex-basis: 50%;} ol.gallery li           |
 |               | {flex-basis: 300px;} div span.whatevs {flex-basis:   |
 |               | auto;}                                               |
@@ -4952,12 +4902,10 @@ tr {display: table-row;}
 | **Values**   | row &vert; row-reverse &vert; column &vert; column-reverse      |
 | **Initial    | row                                                 |
 | value**      |                                                     |
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-| **Applies    | Flex containers                                     |
-| to**         |                                                     |
-| *            | Defines the direction in which flex items will be   |
-| *Description** | flowed into the flex container, which in turn       |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | Flex containers                                     |
+|             | Defines the direction in which flex items will be   |
+| **Description** | flowed into the flex container, which in turn       |
 |                | defines how the flex lines will fill the flex       |
 |                | container.                                          |
 | **Examples** | div.gallery {display: flex; flex-direction: row;}   |
@@ -4967,35 +4915,27 @@ tr {display: table-row;}
 |              | **Inh. N Anim. N**                                  |
 |  **flex-flow** |                                                     |
 | **Values**   | *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;*              |
-| **Initial    | row nowrap                                          |
-| value**      |                                                     |
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-| **Applies    | Flex containers                                     |
-| to**         |                                                     |
-| *            | A shorthand property encompassing the flexdirection |
-| *Description** | and flex-wrap properties. Note that the default     |
+| **Initial value**   | row nowrap                                          |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | Flex containers                                     |
+| **Description** | A shorthand property encompassing the flexdirection |
+|                 | and flex-wrap properties. Note that the default     |
 |                | wrapping value is nowrap (see flex-wrap).           |
 | **Examples** | div.gallery {display: flex; flex-flow: row wrap;}   |
 |                |                                                     |
 |                | nav.sidenav {display: flex; flex-flow: column       |
 |                | nowrap;}                                            |
 |              | **Inh. N Anim. Y**                                  |
-|  **flex-grow** |                                                     |
+| **flex-grow** |                                                     |
 | **Values**   | *&lt;number&gt;*                                        |
-| **Initial    | 0                                                   |
-| value**      |                                                     |
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-| **Applies    | Flex items (children of flex containers)            |
-| to**         |                                                     |
-| *            | Sets the *growth factor* for a flex item. The value |
-| *Description** | supplied is summed up with all the growth factors   |
-|                | of                                                  |
-
-the other flex items in the same flex line, and the amount they grow
-is scaled in proportion to their growth factors as a percentage of the
-whole.
+| **Initial value**   | 0                                                   |
+| **Computed value**  | As declared                                         |
+| **Applies to**    | Flex items (children of flex containers)            |
+|             |                                                     |
+|             | Sets the *growth factor* for a flex item. The value |
+| **Description** | Sets the *growth factor* for a flex item. The value |
+|                 | supplied is summed up with all the growth factors of the flex items in the same flex line, |
+|                | and the amount they grow is scaled in proportion to their growth factors as a percentage of the whole. |
 
 **Examples** nav ul li {flex-grow: 1;}
 
