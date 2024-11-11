@@ -1,137 +1,106 @@
-<!-- page i -->
-![](images/media/image5.jpg){width="4.25in" height="7.0in"}
-<!-- page ii -->
-**CSS Pocket Reference**
+---
+title: "CSS Reference"
+---
 
-### FIFTH EDITION
+<!-- page i -->
+<!-- ![](images/image005.jpg){width="4.25in" height="7.0in"} -->
+<!-- page ii -->
+
+## CSS Reference
 
 ***Eric A. Meyer***
 
-![](images/media/image6.jpg){width="2.850301837270341in"
-height="0.18005686789151357in"}
+<!-- ![](images/image006.jpg){width="2.850301837270341in" height="0.18005686789151357in"} -->
 
-**CSS Pocket Reference** by Eric A. Meyer
+### CSS Pocket Reference
+#### by Eric A. Meyer
 
-Copyright © 2018 O'Reilly Media, Inc. All rights reserved.
-Printed in the United States of America.
-Published by O'Reilly Media, Inc., 1005 Gravenstein Highway North,
-Sebastopol, CA 95472.
+##### Copyright © 2018 O'Reilly Media, Inc. All rights reserved.
 
-O'Reilly books may be purchased for educational, business, or sales
-promotional use. Online editions are also available for most titles
-([*http://oreilly.com/* *safari*)](http://oreilly.com/safari). For more
-information, contact our corporate/institutional sales department:
-800-998-9938 or *corporate@oreilly.com*.
+##### Printed in the United States of America.
 
-**Editor:** Angela Rufino **Indexer:** WordCo Indexing Services, Inc.
+##### Published by O'Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol, CA 95472.
 
-**Production Editor:** Colleen Cole **Interior Designer:** David Futato
+### [Table of Contents](#table-of-contents)
 
-**Copyeditor:** Molly Ives Brower **Cover Designer:** Karen Montgomery
-**Proofreader:** Rachel Head **Illustrator:** Rebecca Demarest
+## Preface
 
-2018-04-02: First Release
+## Chapter 1: Basic Concepts
+>### 1.1 [**Adding Styles to HTML**](#ch1-1-1)
+>### 1.2 [**Rule Structure**](#ch1-2-1)
+>### 1.3 [**At-rules**](#ch1-3-1)
+>### 1.4 [**Comments**](#ch1-4-1)
+>### 1.5 [**Style Precedence**](#ch1-5-1)
+>### 1.6 [**Element Classification**](#ch1-6-1)
+>### 1.7 [**Element Display Roles**](#ch1-7-1)
+>### 1.8 [**Basic Visual Layout**](#ch1-8-1)
+>### 1.9 [**Floating**](#ch1-9-1)
+>### 1.10 [**Positioning**](#ch1-10-1)
+>### 1.11 [**Flexible Box Layout**](#ch1-11-1)
+>### 1.12 [**Grid Layout**](#ch1-12-1)
+>### 1.13 [**Table Layout**](#ch1-13-1)
 
-See <a href="http://oreilly.com/catalog/errata.csp?isbn=9781492033394">http://oreilly.com/catalog/errata.csp?isbn=9781492033394</a
-for release details.
+## Chapter 2: Values
+>### 2.1 [**Keywords**](#ch2-1-1)
+>### 2.2 [**Color Values**](#ch2-2-1)
+>### 2.3 [**Number Values**](#ch2-3-1)
+>### 2.4 [**Percentage Values**](#ch2-4-1)
+>### 2.5 [**Length Values**](#ch2-5-1)
+>### 2.6 [**Fraction Values**](#ch2-6-1)
+>### 2.7 [**URIs**](#ch2-7-1)
+>### 2.8 [**Angles**](#ch2-8-1)
+>### 2.9 [**Times**](#ch2-9-1)
+>### 2.10 [**Frequencies**](#ch2-10-1)
+>### 2.11 [**Position**](#ch2-11-1)
+>### 2.12 [**Strings**](#ch2-12-1)
+>### 2.13 [**Identifiers**](#ch2-13-1)
+>### 2.14 [**Attribute Values**](#ch2-14-1)
+>### 2.15 [**Calculation Values**](#ch2-15-1)
+>### 2.16 [**Variable Values**](#ch2-16-1)
 
-The O'Reilly logo is a registered trademark of O'Reilly Media, Inc. *CSS
-Pocket Reference*, the cover image, and related trade dress are
-trademarks of O'Reilly Media, Inc.
+## Chapter 3: Selector and Queries
+>### 3.1 [**Selectors**](#ch3-1-1)
+>### 3.2 [**Structural Pseudo-Classes**](#ch3-2-1)
+>### 3.3 [**The Negation Pseudo-Classes**](#ch3-3-1)
+>### 3.4 [**Interaction Pseudo-Classes**](#ch3-4-1)
+>### 3.5 [**Pseudo-Elements**](#ch3-5-1)
+>### 3.6 [**Media Queries**](#ch3-6-1)
+>### 3.7 [**Feature Queries**](#ch3-7-1)
 
-While the publisher and the author have used good faith efforts to
-ensure that the information and instructions contained in this work are
-accurate, the publisher and the author disclaim all responsibility for
-errors or omissions, including without limitation responsibility for
-damages resulting from the use of or reliance on this work. Use of the
-information and instructions contained in this work is at your own risk.
-If any code samples or other technology this work contains or describes
-is subject to open source licenses or the intellectual property rights
-of others, it is your responsibility to ensure that your use thereof
-complies with such licenses and/or rights.
+## Chapter 4: Property Reference
+>### 4.1 [**Inheritance and Animation**](#ch4-1-1)
+>### 4.2 [**Value Syntax Conventions**](#ch4-2-1)
+>### 4.3 [**Universal Values**](#ch4-3-1)
+>### 4.4 [**Properties**](#ch4-4-1)
 
-978-1-492-03339-4
-
-&lbrack;M&rbrack;
-<!-- page iii -->
-**Table of Contents**
-
-**Preface v**
-
-## Chapter 1: Basic Concepts 1
-Adding Styles to HTML 1
-Rule Structure 5
-At-rules 6
-Comments 7
-Style Precedence 8
-Element Classification 10
-Element Display Roles 11
-Basic Visual Layout 13
-Floating 17
-Positioning 18
-Flexible Box Layout 20
-Grid Layout 22
-Table Layout 27
-
-## Chapter 2: Values 35
-Keywords 35 Color Values 36
-<!-- page iv -->
-Number Values 39
-Percentage Values 39
-Length Values 39
-Fraction Values 43
-URIs 43
-Angles 43
-Times 43
-Frequencies 44
-Position 44
-Strings 44
-Identifiers 45
-Attribute Values 45
-Calculation Values 45
-Variable Values 46
-
-## Chapter 3: Selectors and Queries 49
-Selectors 49
-Structural Pseudo-Classes 53
-The Negation Pseudo-Class 59
-Interaction Pseudo-Classes 60
-Pseudo-Elements 63
-Media Queries 65
-Feature Queries 70
-
-## Chapter 4: Property Reference 73
-Inheritance and Animation 73
-Value Syntax Conventions 73
-Universal Values 75
-
-Properties 75 **Index 187**
-
-### iv &vert; Table of Contents
 <!-- page v -->
-# Preface
+### Preface
 Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
 standard for the visual presentation of web pages (although it can be
 used in other settings as well). After a short introduction to the key
 concepts of CSS, this pocket reference provides an alphabetical
 reference to all CSS3 selectors, followed by an alphabetical reference
 to CSS3 properties.
-## Conventions Used in This Book
+
+### Conventions Used in This Book
 The following typographical conventions are used in this book:
 *Italic*
 Used to indicate new terms, URLs, filenames, file extensions,
 directories, commands and options, and program names. For example, a
 path in the filesystem will appear as *C:\\windows\\system*.
+
 *&lt;Italic&gt; inside angle brackets*
 Shows text that should be replaced with user-supplied values or by
 values determined by context.
+
 Constant width
 Used to show the contents of files, or the output from commands.
+
 <!-- page vi -->
 There are further conventions relating to value syntax. These are
 explained at the beginning of Chapter 4.
 
-## Using Code Examples
+### Using Code Examples
 This book is here to help you get your job done. In general, you may use
 the code in this book in your programs and documentation. You do not
 need to contact us for permission unless you're reproducing a
@@ -143,82 +112,33 @@ example code does not require permission. Incorporating a significant
 amount of example code from this book into your product's documentation
 does require permission.
 
-We appreciate, but do not require, attribution. An attribution usually
-includes the title, author, publisher, and ISBN. For example: "*CSS
-Pocket Reference*, 5th Edition, by Eric A. Meyer (O'Reilly). Copyright
-2018 O'Reilly Media, Inc., 978-1-492-03339-4."
-If you feel your use of code examples falls outside fair use or the
-permission given above, feel free to contact us at
-*permissions@oreilly.com*.
-
-## O'Reilly Safari
-[*Safari*](http://oreilly.com/safari) (formerly Safari Books Online)
-is a membership-based training and reference platform for enterprise,
-government, educators, and individuals.
-Members have access to thousands of books, training videos, Learning
-Paths, interactive tutorials, and curated playlists from
-
-### vi &vert; Preface
-<!-- page vii -->
-over 250 publishers, including O'Reilly Media, Harvard Business Review,
-Prentice Hall Professional, Addison-Wesley Professional, Microsoft
-Press, Sams, Que, Peachpit Press, Adobe, Focal Press, Cisco Press, John
-Wiley & Sons, Syngress, Morgan Kaufmann, IBM Redbooks, Packt, Adobe
-Press, FT Press, Apress, Manning, New Riders, McGraw-Hill, Jones &
-Bartlett, and Course Technology, among others.
-
-For more information, please visit
-[*http://oreilly.com/safari*.](http://oreilly.com/safari)
-
-## How to Contact Us
-Visit Eric A. Meyer's website at
-[*http://meyerweb.com/*](http://meyerweb.com/) or follow
-[&#64;meyerweb](http://twitter.com/#!/meyerweb) on Twitter.
-Please address comments and questions concerning this book to the
-publisher:
-O'Reilly Media, Inc.
-1005 Gravenstein Highway North
-Sebastopol, CA 95472
-800-998-9938 (in the United States or Canada)
-707-829-0515 (international or local)
-707-829-0104 (fax)
-
-We have a web page for this book, where we list errata, examples, and
-any additional information. You can access this page at
-[*http://bit.ly/css-pocket-ref-5e*.](http://bit.ly/css-pocket-ref-5e)
-To comment or ask technical questions about this book, send email to
-*bookquestions@oreilly.com*.
-For more information about our books, courses, conferences, and news,
-see our website at [*http://www.oreilly.com*](http://www.oreilly.com/).
-Find us on Facebook:
-[*http://facebook.com/oreilly*](http://facebook.com/oreilly)
-Follow us on Twitter:
-[*http://twitter.com/oreillymedia*](http://twitter.com/oreillymedia)
-Watch us on YouTube:
-[*http://www.youtube.com/oreillymedia*](http://www.youtube.com/oreillymedia)
-
-**Preface &vert;**
 <!-- page 1 -->
-**CHAPTER 1 Basic Concepts**
+## CHAPTER 1 Basic Concepts
 
-## Adding Styles to HTML
+### Adding Styles to HTML
 Styles can be applied to documents in three distinct ways, as discussed
-in the following sections. **Inline Styles**
+in the following sections.
+
+#### Inline Styles
 In HTML, style information can be specified for an individual element
 via the style attribute. The value of a style attribute is a
 *declaration block* (see the section "Rule Structure" on page 5) without
 the curly braces:
+<pre>
 &lt;p style=&quot;color: red; background: yellow;&quot;&gt;Look out!
 This text is alarmingly presented!&lt;/p&gt;
+</pre>
 Note that as of this writing, only the content of a single declaration
 block can be used as a style attribute value. For example, it is not
 possible to place hover styles (using :hover) in a style attribute, nor
 can &#64;import be used in this context.
+
 Although typical XML document languages (such as SVG) support the style
 attribute, it is unlikely that *all* XML languages will support a
 similar capability. Because of this---and especially because it
 encourages poor authoring practices---authors are discouraged from using
 the style attribute, and thus inline styles.
+
 <!-- page 2 -->
 ### Embedded Stylesheets
 A stylesheet can be embedded within an HTML document using the style
