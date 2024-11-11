@@ -1628,17 +1628,17 @@ complicated:
 <pre>
 &lbrack;
 
-&lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; *&lt;percentage&gt;* &vert;
-*&lt;length&gt;* &rbrack; &vert;
+&lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert;
+<i>&lt;length&gt;</i> &rbrack; &vert;
 
-&lbrack; left &vert; center &vert; right &vert; *&lt;percentage&gt;* &vert; *&lt;length&gt;* &rbrack;
+&lbrack; left &vert; center &vert; right &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack;
 
-&lbrack; top &vert; center &vert; bottom &vert; *&lt;percentage&gt;* &vert; *&lt;length&gt;* &rbrack; &vert;
+&lbrack; top &vert; center &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack; &vert;
 
-&lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; *&lt;percentage&gt;* &vert; *&lt;length&gt;*
+&lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i>
 &rbrack;? &rbrack; &&
 
-&lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; *&lt;percentage&gt;* &vert; *&lt;length&gt;*
+&lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i>
 &rbrack;? &rbrack; &rbrack;
 </pre>
 
