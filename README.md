@@ -1839,8 +1839,7 @@ nav a &#126; a {border-left: 1px solid border;}
 |                | .example {background: olive;}                       |
 |                |                                                     |
 |                | .note.caution {background: yellow;}                 |
-| **ID         |                                                     |
-| Selector**   |                                                     |
+| **ID Selector**   |                                                     |
 | **Pattern**  | element1#idname                                     |
 | **Description** | In languages that permit it, such as HTML or SVG, |
 |                | an ID selector selects elements that have an id     |
@@ -1853,11 +1852,9 @@ nav a &#126; a {border-left: 1px solid border;}
 | h1#page-title  |                                                     |
 | {font-size:    |                                                     |
 | 250%;}         |                                                     |
-|                |                                                     |
 | body#home    |                                                     |
 | {background: |                                                     |
 | silver;}     |                                                     |
-|               |                                                     |
 | #example     |                                                     |
 | {background: |                                                     |
 | lime;}       |                                                     |
@@ -1993,10 +1990,13 @@ h2:first-of-type {color: fuchsia;}
 type, as compared to all its sibling elements. Thus, div:last-of-type
 will select any div that is the last child div of another element.
 **Examples** 
+
 <pre>
 td:last-of-type {border-right: 1px dotted;} h2:last-of-type {color: fuchsia;}
 </pre>
+
 Any element
+
 <pre>
 :nth-child (a n± b)
 </pre>
@@ -2145,12 +2145,14 @@ that it deserves its own subsection.
 |                | either a paragraph or a section, use                |
 |                | &ast;:not(p):not(section).                             |
 
-### The Negation Pseudo-Class 
+### The Negation Pseudo-Class
 As of early 2018, the "simple selector" restriction means that
 grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
 Selectors Level 4.
+
 **Examples** ul &ast;:not(li) {text-indent: 2em;}
+
 <pre>
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
 <pre>
@@ -4941,77 +4943,55 @@ tr {display: table-row;}
 | **Examples**  | nav ul li {flex-basis: 50%;} ol.gallery li           |
 |               | {flex-basis: 300px;} div span.whatevs {flex-basis:   |
 |               | auto;}                                               |
-+---------------+------------------------------------------------------+
 | **Note**      | It is *strongly* recommended that instead of this    |
 |               | property, authors use the flex shorthand property to |
 |               | set an item's flex basis.                            |
-+---------------+------------------------------------------------------+
 
 #### flex-direction Inh. N Anim. N
 
-+----------------+-----------------------------------------------------+
 | **Values**   | row &vert; row-reverse &vert; column &vert; column-reverse      |
-+================+=====================================================+
 | **Initial    | row                                                 |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | Flex containers                                     |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Defines the direction in which flex items will be   |
 | *Description** | flowed into the flex container, which in turn       |
 |                | defines how the flex lines will fill the flex       |
 |                | container.                                          |
-+----------------+-----------------------------------------------------+
 | **Examples** | div.gallery {display: flex; flex-direction: row;}   |
 |                |                                                     |
 |                | section.appetizers {display: flex; flex-direction:  |
 |                | column;}                                            |
-+----------------+-----------------------------------------------------+
 |              | **Inh. N Anim. N**                                  |
 |  **flex-flow** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**   | *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;*              |
-+----------------+-----------------------------------------------------+
 | **Initial    | row nowrap                                          |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | Flex containers                                     |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | A shorthand property encompassing the flexdirection |
 | *Description** | and flex-wrap properties. Note that the default     |
 |                | wrapping value is nowrap (see flex-wrap).           |
-+----------------+-----------------------------------------------------+
 | **Examples** | div.gallery {display: flex; flex-flow: row wrap;}   |
 |                |                                                     |
 |                | nav.sidenav {display: flex; flex-flow: column       |
 |                | nowrap;}                                            |
-+----------------+-----------------------------------------------------+
 |              | **Inh. N Anim. Y**                                  |
 |  **flex-grow** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**   | *&lt;number&gt;*                                        |
-+----------------+-----------------------------------------------------+
 | **Initial    | 0                                                   |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | Flex items (children of flex containers)            |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Sets the *growth factor* for a flex item. The value |
 | *Description** | supplied is summed up with all the growth factors   |
 |                | of                                                  |
-+----------------+-----------------------------------------------------+
 
 the other flex items in the same flex line, and the amount they grow
 is scaled in proportion to their growth factors as a percentage of the
@@ -5027,39 +5007,29 @@ ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 erty, authors use the flex shorthand property to set an item's flex
 growth factor.
 
-+----------------+-----------------------------------------------------+
 | *            | **Inh. N Anim. Y**                                  |
 | *flex-shrink** |                                                     |
-+================+=====================================================+
 | **Values**   | *&lt;number&gt;*                                        |
-+----------------+-----------------------------------------------------+
 | **Initial    | 1                                                   |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | Flex items (children of flex containers)            |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Sets the *shrink factor* for a flex item. The value |
 | *Description** | supplied is summed up with all the shrink factors   |
 |                | of the other flex items in the same flex line, and  |
 |                | the amount they shrink is scaled proportional to    |
 |                | their shrink factors as a percentage of the whole.  |
-+----------------+-----------------------------------------------------+
 | **Examples** | nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/    |
 |                |                                                     |
 |                | ol.gallery li {flex-shrink: 0.5;} div span.whatevs  |
 |                | {flex-shrink: 1;}                                   |
-+----------------+-----------------------------------------------------+
 | **Note**     | It is *strongly* recommended that instead of this   |
 |                | property, authors use the flex shorthand property   |
 |                | to set an item's flex shrink factor.                |
-+----------------+-----------------------------------------------------+
 |              | **Inh. N Anim. N**                                  |
 |  **flex-wrap** |                                                     |
-+----------------+-----------------------------------------------------+
 
 **Values** nowrap &vert; wrap &vert; wrap-reverse
 
@@ -5107,31 +5077,23 @@ interpretation of statements like "as narrow as possible."
 
 p.sidebar {float: right; width: 15em;}
 
-+----------------+-----------------------------------------------------+
 | **font**     | **Inh. Y Anim. P**                                  |
-+================+=====================================================+
 | **Values**   | &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  |
 |                | ‖ *&lt;fontweight&gt;* &rbrack;? *&lt;font-size&gt;* &lbrack; /         |
 |                | *&lt;line-height&gt;* &rbrack;? *&lt;fontfamily&gt;*&rbrack; &vert; caption |
 |                | &vert; icon &vert; menu &vert; message-box &vert; small-caption &vert;  |
 |                | status-bar                                          |
-+----------------+-----------------------------------------------------+
 | **Initial    | Refer to individual properties                      |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | See individual properties (font-style, etc.)        |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Calculated with respect to the parent element for   |
 | *Percentages** | *&lt;font-size&gt;* and with respect to the element's   |
 |                | *&lt;fontsize&gt;* for *&lt;line-height&gt;*                |
-+----------------+-----------------------------------------------------+
 | **Applies    | All elements                                        |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 |              | Refer to individual font properties to see which    |
 | **Animatable** | are animatable                                      |
-+----------------+-----------------------------------------------------+
 | *            | A shorthand property used to set all the aspects of |
 | *Description** | an element's font at once. It can also be used to   |
 |                | set the element's font to match an aspect of the    |
@@ -5141,7 +5103,6 @@ p.sidebar {float: right; width: 15em;}
 |                | that order*, and any font value that is not a       |
 |                | keyword must end with the font family. Otherwise,   |
 |                | the font declaration will be ignored.               |
-+----------------+-----------------------------------------------------+
 | **Examples** | p {font: small-caps italic bold small/              |
 |                |                                                     |
 |                | 1.25em Helvetica,sans-serif;}                       |
@@ -5151,21 +5112,15 @@ p.sidebar {float: right; width: 15em;}
 |                | encouraged for fallback purposes &ast;/                |
 |                |                                                     |
 |                | .figure span {font: icon;}                          |
-+----------------+-----------------------------------------------------+
 | *            | **Inh. Y Anim. N**                                  |
 | *font-family** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**   | &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    |
-+----------------+-----------------------------------------------------+
 | **Initial    | User agent--specific                                |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies to** |                                                     |
 | All elements   |                                                     |
-+----------------+-----------------------------------------------------+
 
 **Description** Defines a font family to be used in the display of an
 element's text. Note that use of a specific font family (e.g., Geneva)
@@ -5185,48 +5140,35 @@ should *never* be quoted.
 
 ### font-feature-settings Inh. Y Anim. N
 
-+---------------+------------------------------------------------------+
 | **Values**    | normal &vert; *&lt;feature-tag-value&gt;*&#35;                  |
-+===============+======================================================+
 | **Initial     | normal                                               |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed    | As declared                                          |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Applies     | All elements                                         |
 | to**          |                                                      |
-+---------------+------------------------------------------------------+
 | **            | Used to turn font features on and off; examples      |
 | Description** | include ligatures, old-style numbers, and more.      |
 |               | Whether a font feature actually can be enabled       |
 |               | depends entirely on the font face being used:        |
 |               | turning ligatures on or off can only work if the     |
 |               | face has defined ligatures in the first place.       |
-+---------------+------------------------------------------------------+
 | **Examples**  | h1 {font-feature-settings: &quot;liga&quot;;}                |
 |               |                                                      |
 |               | ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on, |
 |               |                                                      |
 |               | &quot;zero&quot; on;}                                        |
-+---------------+------------------------------------------------------+
 | **Note**      | Has a corresponding &#64;font-face descriptor.          |
-+---------------+------------------------------------------------------+
 
 #### font-kerning Inh. Y Anim. N
 
-+----------------+-----------------------------------------------------+
 | **Values**   | auto &vert; normal &vert; none                              |
-+================+=====================================================+
 | **Initial    | auto                                                |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | All elements                                        |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | In effect, allows the author to disable kerning of  |
 | *Description** | text for a given element. The default of auto tells |
 |                | user agents to do what they normally do, whatever   |
@@ -5237,38 +5179,27 @@ should *never* be quoted.
 |                | and the user agent would make use of it. Note that  |
 |                | kerning is done *before* any letter spacing is      |
 |                | altered (see letterspacing).                        |
-+----------------+-----------------------------------------------------+
 | **Examples** | body {kerning: normal;} div.typewriter {kerning:    |
 |                | none;}                                              |
-+----------------+-----------------------------------------------------+
 | **Note**     | Has a corresponding &#64;font-face descriptor.         |
-+----------------+-----------------------------------------------------+
 |              | **Inh. Y Anim. P**                                  |
 |  **font-size** |                                                     |
-+----------------+-----------------------------------------------------+
 | **Values**     | xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  |
 |                | x-large &vert; xx-large &vert; smaller &vert; larger &vert;         |
 |                | *&lt;length&gt;* &vert;                                     |
 |                |                                                     |
 |                | *&lt;percentage&gt;*                                    |
-+----------------+-----------------------------------------------------+
 | **Initial      | medium                                              |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | For length values, the absolute length; otherwise,  |
 | value**        | as declared                                         |
-+----------------+-----------------------------------------------------+
 | *              | Calculated with respect to the parent element's     |
 | *Percentages** | font size                                           |
-+----------------+-----------------------------------------------------+
 | **Applies to** | All elements                                        |
-+----------------+-----------------------------------------------------+
 | **Animatable** | *&lt;length&gt;* and *&lt;percentage&gt;* values only       |
-+----------------+-----------------------------------------------------+
 | *              | Defines the size of the font. The size can be       |
 | *Description** | defined as an absolute size, a relative size, a     |
 |                | length value, or a                                  |
-+----------------+-----------------------------------------------------+
 
 percentage value. Negative length and percentage values are not
 permitted. The dangers of font size assignment are many and varied,
@@ -5286,9 +5217,7 @@ p.caption {font-size: 9px;}
 
 ### font-size-adjust Inh. Y Anim. Y
 
-  ------------------------------------------------------------------------
   **Values**        *&lt;number&gt;* &vert; none
-  ----------------- ------------------------------------------------------
   **Initial value** none
 
   **Computed        As declared
@@ -5303,7 +5232,6 @@ p.caption {font-size: 9px;}
                     divided by its font size.
 
   **Examples**      body {font-family: Helvetica, sans-serif;
-  ------------------------------------------------------------------------
 
 font-size-adjust: 0.53;}
 
@@ -5326,21 +5254,15 @@ only swap in a variant face (if it exists).
 {font-stretch: condensed;} **Note** Has a corresponding &#64;font-face
 descriptor.
 
-+----------------+-----------------------------------------------------+
 |              | **Inh. Y Anim. N**                                  |
 | **font-style** |                                                     |
-+================+=====================================================+
 | **Values**   | italic &vert; oblique &vert; normal                         |
-+----------------+-----------------------------------------------------+
 | **Initial    | normal                                              |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | All elements                                        |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Defines whether the font uses an italic, oblique,   |
 | *Description** | or normal font face. Italic text is generally       |
 |                | defined as a separate face within the font family.  |
@@ -5350,11 +5272,8 @@ descriptor.
 |                | recognize the difference between italic and oblique |
 |                | text and almost always render both in exactly the   |
 |                | same way.                                           |
-+----------------+-----------------------------------------------------+
 | **Examples** | em {font-style: oblique;} i {font-style: italic;}   |
-+----------------+-----------------------------------------------------+
 | **Note**     | Has a corresponding &#64;font-face descriptor.         |
-+----------------+-----------------------------------------------------+
 
 #### font-synthesis Inh. Y Anim. N
 
@@ -5379,10 +5298,8 @@ pre code {font-synthesis: style;}
 
 #### font-variant Inh. Y Anim. N
 
-+---------------+------------------------------------------------------+
 | **Values      | normal &vert; small-caps                                 |
 | (CSS2.1)**    |                                                      |
-+===============+======================================================+
 | **Values      | normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖       |
 | (Level 3)**   |                                                      |
 |               | *&lt;discretionary-lig-values&gt;* ‖                     |
@@ -5403,19 +5320,14 @@ pre code {font-synthesis: style;}
 |               | slashed-zero ‖ *&lt;east-asian-variant-values&gt;* ‖     |
 |               |                                                      |
 |               | *&lt;east-asian-width-values&gt;* ‖ ruby &rbrack;              |
-+---------------+------------------------------------------------------+
 | **Initial     | normal                                               |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed    | As declared                                          |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Applies     | All elements                                         |
 | to**          |                                                      |
-+---------------+------------------------------------------------------+
 | **            | Defines whether text is set in the small-caps style. |
 | Description** | It                                                   |
-+---------------+------------------------------------------------------+
 
 is theoretically possible for a user agent to compute a small-caps
 font face from the normal face.
@@ -5424,23 +5336,17 @@ font face from the normal face.
 
 **Note** Has a corresponding &#64;font-face descriptor.
 
-+----------------+-----------------------------------------------------+
 | *            | **Inh. Y Anim. N**                                  |
 | *font-weight** |                                                     |
-+================+=====================================================+
 | **Values**   | normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   |
 |                | &vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900    |
-+----------------+-----------------------------------------------------+
 | **Initial    | normal                                              |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | One of the numeric values (100, etc.), or one of    |
 | value**      | the numeric values plus one of the relative values  |
 |                | (bolder or lighter)                                 |
-+----------------+-----------------------------------------------------+
 | **Applies    | All elements                                        |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Defines the font weight used in rendering an        |
 | *Description** | element's text. The numeric value 400 is equivalent |
 |                | to the keyword normal, and 700 is equivalent to     |
@@ -5450,33 +5356,24 @@ font face from the normal face.
 |                | the visual result of each numeric value must be at  |
 |                | least as light as the next lowest number and at     |
 |                | least as heavy as the next highest number.          |
-+----------------+-----------------------------------------------------+
 | **Examples** | b {font-weight: 700;} strong {font-weight: bold;}   |
 |                |                                                     |
 |                | .delicate {font-weight: lighter;}                   |
-+----------------+-----------------------------------------------------+
 | **Note**     | Has a corresponding &#64;font-face descriptor.         |
-+----------------+-----------------------------------------------------+
 | **grid**     | **Inh. N Anim. N**                                  |
-+----------------+-----------------------------------------------------+
 | **Values**     | none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    |
 |                | *&lt;gridtemplate-columns&gt;* &rbrack; &vert; &lbrack;                 |
 |                | *&lt;line-names&gt;*? *&lt;string&gt; &lt;track-size&gt;*?      |
 |                | *&lt;line-names&gt;*? &rbrack;+ &lbrack; / *&lt;track-list&gt;* &rbrack;? &vert;  |
 |                | &lbrack; *&lt;grid-auto-flow&gt;* &lbrack; *&lt;grid-auto-rows&gt;* &lbrack;  |
 |                | / *&lt;gridauto-columns&gt;* &rbrack;? &rbrack;? &rbrack; &rbrack;              |
-+----------------+-----------------------------------------------------+
 | **Initial      | See individual properties                           |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | See individual properties                           |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies to** | Grid containers                                     |
-+----------------+-----------------------------------------------------+
 | *              | A shorthand property allowing the almost complete   |
 | *Description** |                                                     |
-+----------------+-----------------------------------------------------+
 
 definition of an element's grid system, not counting
 
@@ -5487,28 +5384,22 @@ of grid, but there are no technical reasons to avoid grid.
 **Example** body {display: grid; grid:
 
 &quot;header header header header&quot; 3em
->
+
 &quot;. content sidebar .&quot; 1fr
->
+
 &quot;footer footer footer footer&quot; 5em /
->
+
 2em 3fr minmax(10em,1fr) 2em;}
 
-+----------------+-----------------------------------------------------+
 |              | **Inh. N Anim. N**                                  |
 |  **grid-area** |                                                     |
-+================+=====================================================+
 | **Values**   | *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}        |
-+----------------+-----------------------------------------------------+
 | **Initial    | See individual properties                           |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | Grid items and absolutely positioned elements, if   |
 | to**         | their containing block is a grid container          |
-+----------------+-----------------------------------------------------+
 | *            | Used to assign a grid item to a specific area of a  |
 | *Description** | defined grid. This can be done using a single       |
 |                | identifier, or using slash-separated grid line      |
@@ -5518,11 +5409,9 @@ of grid, but there are no technical reasons to avoid grid.
 |                | (right), which is the reverse of the usual          |
 |                | top-right-bottom-left order for margins, padding,   |
 |                | and so on.                                          |
-+----------------+-----------------------------------------------------+
 | **Examples** | #masthead {grid-area: header;}                      |
 |                |                                                     |
 |                | #sidebar {grid-area: 1 / 2 / 1 / 3;}                |
-+----------------+-----------------------------------------------------+
 
 ### grid-auto-columns Inh. N Anim. N
 
@@ -5573,26 +5462,20 @@ div.gallery {grid-auto-flow: row dense;}
 
 #### grid-auto-rows Inh. N Anim. N
 
-+---------------+------------------------------------------------------+
 | **Values**  | *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   |
 |               | *&lt;trackbreadth&gt;*)                                  |
-+===============+======================================================+
 | *           | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;    |
 | *Definition** | min-content &vert; max-content &vert; auto                   |
 |             |                                                      |
 | ***&lt;track  |                                                      |
 | -breadth&gt;*** |                                                      |
-+---------------+------------------------------------------------------+
 | **Initial   | auto                                                 |
 | value**     |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed  | Depends on the specific track sizing                 |
 | value**     |                                                      |
-+---------------+------------------------------------------------------+
 | **Applies     |                                                      |
 | to** Grid     |                                                      |
 | containers    |                                                      |
-+---------------+------------------------------------------------------+
 
 **Description** Defines the sizing of row tracks for rows that are
 automatically generated; that is, rows that are created because a grid
@@ -5605,25 +5488,19 @@ grid-auto-rows: 80px;}
 
 #### grid-column Inh. N Anim. N
 
-+---------------+------------------------------------------------------+
 | **Values**    | *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?             |
 |               |                                                      |
 | *             |                                                      |
 | *Definition** |                                                      |
-+===============+======================================================+
 | ***&lt;g        | auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* &&      |
 | rid-line&gt;*** | *&lt;identifier&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;*  |
 |               | &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;                          |
-+---------------+------------------------------------------------------+
 | **Initial     | auto                                                 |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed    | As declared                                          |
 | value**       |                                                      |
-+---------------+------------------------------------------------------+
 | **Applies     | Grid items and absolutely positioned elements, if    |
 | to**          | their containing block is a grid container           |
-+---------------+------------------------------------------------------+
 | **            | Acts as a shorthand property encompassing the        |
 | Description** | grid-column-start and grid-column-end properties.    |
 |               | When a single number or identifier is given, the     |
@@ -5631,9 +5508,7 @@ grid-auto-rows: 80px;}
 |               | the same identifier. Negative numeric grid lines     |
 |               | count backward from the end of the explicit grid     |
 |               | (generally the right side).                          |
-+---------------+------------------------------------------------------+
 | **Examples**  | header {grid-column: 1 / -1;}                        |
-+---------------+------------------------------------------------------+
 
 #sidebar {grid-column: 1 / span 2;} footer {grid-column: footer / 4;}
 
@@ -5681,18 +5556,14 @@ containers as well as grid containers.
 
 ### grid-column-start Inh. N Anim. N
 
-+---------------+------------------------------------------------------+
 | **Values**  | auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    |
 |               | *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* |
 |               | ‖ *&lt;customident&gt;* &rbrack;&rbrack;                             |
-+===============+======================================================+
 | **Initial   | auto                                                 |
 | value**     |                                                      |
-+---------------+------------------------------------------------------+
 | **Computed    |                                                      |
 | value** As    |                                                      |
 | declared      |                                                      |
-+---------------+------------------------------------------------------+
 
 **Applies to** Grid items and absolutely positioned elements, if their
 containing block is a grid container
@@ -5706,35 +5577,25 @@ defined by gridcolumn-end.
 
 #sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
 
-+----------------+-----------------------------------------------------+
 | **grid-gap** | **Inh. N Anim. Y**                                  |
-+================+=====================================================+
 | **Values**   | *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*            |
-+----------------+-----------------------------------------------------+
 | **Initial    | 0 0                                                 |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared                                         |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Applies    | Grid containers                                     |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | A shorthand property encompassing the grid-rowgap   |
 | *Description** | and grid-column-gap properties, in that order. If   |
 |                | only one value is supplied, the value is assumed to |
 |                | be the same for both row and column gaps.           |
-+----------------+-----------------------------------------------------+
 | **Examples** | #grid {display: grid; grid-gap: 12px 1em;}          |
 |                | div.gallery {display: grid; grid-gap: 2.5vw;}       |
-+----------------+-----------------------------------------------------+
 | **Note**     | As of early 2018, the CSS Working Group intends to  |
 |                | change this property to simply gap and have it      |
 |                | apply to multicolumn and flex containers as well as |
 |                | grid containers.                                    |
-+----------------+-----------------------------------------------------+
 | **grid-row** | **Inh. N Anim. N**                                  |
-+----------------+-----------------------------------------------------+
 
 **Values** *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?
 
@@ -5760,16 +5621,14 @@ number) or the same identifier.
 **Examples** #sidebar {grid-row: 1 / -1;}
 
 footer {grid-row: footer-start / footer-end;}
->
+
 header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
 
 #### grid-row-end Inh. N Anim. N
 
-  ------------------------------------------------------------------------
   **Values**        auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
                     *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖
                     *&lt;customident&gt;* &rbrack;&rbrack;
-  ----------------- ------------------------------------------------------
   **Initial value** auto
 
   **Computed        As declared
@@ -5784,7 +5643,6 @@ header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
                     spans across.
 
   **Examples**      header {grid-row-end: span 1;}
-  ------------------------------------------------------------------------
 
 #sidebar {grid-row-end: -1;} footer {grid-row-end: footer-end;}
 
@@ -5811,11 +5669,9 @@ containers as well as grid containers.
 
 #### grid-row-start Inh. N Anim. N
 
-  ------------------------------------------------------------------------
   **Values**        auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
                     *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖
                     *&lt;customident&gt;* &rbrack;&rbrack;
-  ----------------- ------------------------------------------------------
   **Initial value** auto
 
   **Computed        As declared
@@ -5831,7 +5687,6 @@ containers as well as grid containers.
                     grid-row-end.
 
   **Examples**      header {grid-row-start: masthead;}
-  ------------------------------------------------------------------------
 
 #sidebar {grid-row-start: span 1;} footer {grid-row-start:
 footer-start;}
@@ -5856,26 +5711,24 @@ patterns of text, no areas defined with this property can overlap.
 **Examples** #grid {display: grid;
 
 grid-template-areas:
->
+
 &quot;h h h h&quot;
->
+
 &quot;l c c r&quot;
->
+
 &quot;l f f f&quot;;}
->
+
 #grid2 {display: grid; grid-template-areas:
->
+
 &quot;header header header header&quot;
->
+
 &quot;leftside content content rightside&quot;
->
+
 &quot;leftside footer footer footer&quot;;}
 
 ### grid-template-columns Inh. N Anim. N
 
-  ------------------------------------------------------------------------
   **Values**        none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*
-  ----------------- ------------------------------------------------------
   **Initial value** none
 
   **Computed        As declared, with lengths made absolute
@@ -5890,35 +5743,27 @@ grid-template-areas:
                     track sizes for columns in the explicit grid.
 
   **Examples**      aside {grid-template-columns:
-  ------------------------------------------------------------------------
 
 max-content min-content max-content;} article {grid-template-columns:
 15em 4.5fr 3fr 10%;} section {grid-template-columns:
->
+
 &lbrack;start col-a&rbrack; 200px &lbrack;col-b&rbrack; 50% &lbrack;col-c&rbrack; 1fr
->
+
 &lbrack;stop end last&rbrack;;}
 
 ### grid-template-rows Inh. N Anim. N
 
-+----------------+-----------------------------------------------------+
 | **Values**   | none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   |
-+================+=====================================================+
 | **Initial    | none                                                |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed   | As declared, with lengths made absolute             |
 | value**      |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Refer to the block size (usually height) of the     |
 | *Percentages** | grid container                                      |
-+----------------+-----------------------------------------------------+
 | **Applies    | Grid containers                                     |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Provides authors a way to define grid line names    |
 | *Description** | and track sizes for rows in the explicit grid.      |
-+----------------+-----------------------------------------------------+
 | **Examples** | aside {grid-template-rows: 200px 50% 100px;}        |
 |                | article {grid-template-rows: 3em minmax(5em,1fr)    |
 |                | 2em;} section {grid-template-rows:                  |
@@ -5926,35 +5771,25 @@ max-content min-content max-content;} article {grid-template-columns:
 |                | &lbrack;start masthead&rbrack; 3em &lbrack;content&rbrack; calc(100%-5em)   |
 |                |                                                     |
 |                | &lbrack;footer&rbrack; 2em &lbrack;stop end&rbrack;;}                       |
-+----------------+-----------------------------------------------------+
 | **height**   | **Inh. N Anim. Y**                                  |
-+----------------+-----------------------------------------------------+
 | **Values**     | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
-+----------------+-----------------------------------------------------+
 | **Initial      | auto                                                |
 | value**        |                                                     |
-+----------------+-----------------------------------------------------+
 | **Computed     | For auto and percentage values, as declared;        |
 | value**        | otherwise, an absolute length, unless the property  |
 |                | does not apply to the element (then auto)           |
-+----------------+-----------------------------------------------------+
 | *              | Calculated with respect to the height of the        |
 | *Percentages** | containing block (when valid)                       |
-+----------------+-----------------------------------------------------+
 | **Applies to** | All elements except nonreplaced inline elements,    |
 |                | table rows, and row groups                          |
-+----------------+-----------------------------------------------------+
 | *              | Defines the total height of portions of an element; |
 | *Description** | the exact portions depend on the value of           |
 |                | boxsizing. Negative length and percentage values    |
 |                | are not permitted.                                  |
-+----------------+-----------------------------------------------------+
 | **Examples**   | img.icon {height: 50px;}                            |
-+----------------+-----------------------------------------------------+
 
 h1 {height: 1.75em;}
 
-|----------------|-----------------------------------------------------|
 | **hyphens**  | **Inh. Y Anim. N**                                  |
 | **Values**   | manual &vert; auto &vert; none                              |
 | **Initial value**   | manual                                              |
@@ -5997,7 +5832,6 @@ from its ancestors.
 
 ### justify-content Inh. N Anim. N
 
-|----------------|-----------------------------------------------------|
 | **Values**   | flex-start &vert; flex-end &vert; center &vert; space-between   |
 |                | &vert; space-around &vert; space-evenly                     |
 | **Initial value**    | flex-start                                          |
@@ -6036,7 +5870,6 @@ element is offset to the right of its starting position.
 
 #### letter-spacing Inh. Y Anim. Y
 
-|----------------|-----------------------------------------------------|
 | **Values**   | *&lt;length&gt;* &vert; normal                              |
 | **Initial    | normal                                              |
 | value**      |                                                     |
@@ -6066,7 +5899,6 @@ element is offset to the right of its starting position.
 | value**      |                                                     |
 | **Applies    | All elements                                        |
 | to**         |                                                     |
-+----------------+-----------------------------------------------------+
 | *            | Affects the wrapping of lines of text in CJK        |
 | *Description** | (Chinese-Japanese-Korean) text. The precise         |
 |                | meanings of loose, normal, and strict are left      |
@@ -6134,7 +5966,6 @@ element is offset to the right of its starting position.
 h2 {line-height: 200%;} ul {line-height: 1.2;} pre {line-height:
 0.75em;}
 
-|----------------|-----------------------------------------------------|
 |              | **Inh. Y Anim. N**                                  |
 | **list-style** |                                                     |
 | **Values**   | &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ |
@@ -6261,9 +6092,7 @@ p {margin: auto;} img {margin: 10px;}
 
 #### margin-bottom Inh. N Anim. Y
 
-|----------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-|----------------|-----------------------------------------------------|
   **Initial value** 0
 
   **Computed        For length values, the absolute length; otherwise, as
@@ -6278,15 +6107,12 @@ p {margin: auto;} img {margin: 10px;}
                     warranted (see margin).
 
   **Examples**      ul {margin-bottom: 0.5in;}
-|----------------|-----------------------------------------------------|
 
 h1 {margin-bottom: 2%;}
 
 #### margin-left Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-  ----------------- ------------------------------------------------------
   **Initial value** 0
 
   **Computed        For length values, the absolute length; otherwise, as
@@ -6301,15 +6127,12 @@ h1 {margin-bottom: 2%;}
                     warranted (see margin).
 
   **Examples**      p {margin-left: 5%;}
-|----------------|-----------------------------------------------------|
 
 pre {margin-left: 3em;}
 
 #### margin-right Inh. N Anim. Y
 
-|----------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-|----------------|-----------------------------------------------------|
   **Initial value** 0
 
   **Computed        For length values, the absolute length; otherwise, as
@@ -6324,13 +6147,11 @@ pre {margin-left: 3em;}
                     warranted (see margin).
 
   **Examples**      img {margin-right: 30px;}
-|----------------|-----------------------------------------------------|
 
 ol {margin-right: 5em;}
 
 #### margin-top Inh. N Anim. Y
 
-|----------------|-----------------------------------------------------|
 | **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
 | **Initial    | 0                                                   |
 | value**      |                                                     |
@@ -6375,10 +6196,8 @@ add;
 
 }
 
-+----------------+-----------------------------------------------------+
 |              | **Inh. N Anim. N**                                  |
 |  **mask-clip** |                                                     |
-+================+=====================================================+
 | **Values**   | &lbrack; content-box &vert; padding-box &vert; border-box &vert;      |
 |                | margin-box &vert; fill-box &vert; stroke-box &vert; view-box &vert; |
 |                | no-clip &rbrack;#                                         |
@@ -6401,9 +6220,7 @@ add;
 
 ### mask-composite
 
-  ------------------------------------------------------------------------
   **Values**        &lbrack; add &vert; subtract &vert; intersect &vert; exclude &rbrack;#
-  ----------------- ------------------------------------------------------
   **Initial value** add
 
   **Computed        As declared
@@ -6428,7 +6245,6 @@ span.mask3 {mask-composite: subtract, add, add;}
 
 #### mask-image Inh. N Anim. N
 
-|----------------|-----------------------------------------------------|
 | **Values**  | &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;#      |
 | **          | Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     |
 | Definitions** | *&lt;imageset()&gt;*, *&lt;element()&gt;*,                   |
@@ -6459,9 +6275,7 @@ will be used to determine the masking of the element.
 
 #### mask-mode Inh. N Anim. N
 
-  ------------------------------------------------------------------------
   **Values**        &lbrack; alpha &vert; luminance &vert; match-source &rbrack;#
-|----------------|-----------------------------------------------------|
   **Initial value** match-source
 
   **Computed        As declared
@@ -6493,10 +6307,8 @@ img.lum {mask-mode: luminance, alpha;}
 
 ### mask-origin
 
-  ------------------------------------------------------------------------
   **Values**        &lbrack; content-box &vert; padding-box &vert; border-box &vert;
                     margin-box &vert; fill-box &vert; stroke-box &vert; view-box &rbrack;#
-  ----------------- ------------------------------------------------------
   **Initial value** border-box
 
   **Computed        As declared
@@ -6516,9 +6328,7 @@ svg#radio {mask-origin: stroke-box, fill-box;}
 
 #### mask-position Inh. N Anim. P
 
-|----------------|-----------------------------------------------------|
   **Values**        *&lt;position&gt;*&#35;
-|----------------|-----------------------------------------------------|
   **Initial value** 0% 0%
 
   **Computed        As declared
@@ -6541,7 +6351,6 @@ p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 
 #### mask-repeat Inh. N Anim. Y
 
-|----------------|-----------------------------------------------------|
 | **Values**   | &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    |
 |                | round &vert; no-repeat &rbrack;{1,2} &rbrack;#                      |
 | **Initial    | repeat                                              |
@@ -6597,7 +6406,6 @@ mask element masks default to luminance.
 
 #### max-height Inh. N Anim. P
 
-|----------------|-----------------------------------------------------|
 | **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none            |
 | **Initial    | none                                                |
 | value**      |                                                     |
@@ -6641,7 +6449,6 @@ not permitted.
 
 #### min-height Inh. N Anim. Y
 
-|----------------|-----------------------------------------------------|
 | **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;*                    |
 | **Initial    | 0                                                   |
 | value**      |                                                     |
@@ -6666,10 +6473,8 @@ not permitted.
 
 **Initial value** 0
 
-  ------------------------------------------------------------------------
-  **Computed        For percentages, as declared; for length values, the
-  value**           absolute length
-  ----------------- ------------------------------------------------------
+  **Computed value** For percentages, as declared; for length values, the
+                     absolute length
   **Percentages**   Refer to the width of the containing block
 
   **Applies to**    All elements except nonreplaced inline elements and
@@ -6686,7 +6491,6 @@ are not permitted.
 
 #### mix-blend-mode Inh. N Anim. N
 
-|----------------|-----------------------------------------------------|
 | **Values**  | normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; |
 |               | lighten &vert; color-dodge &vert; color-burn &vert; hard-light   |
 |               | &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;   |
@@ -6762,7 +6566,6 @@ background origin images can be positioned.
 img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
 {object-position: left 142%;}
 
-|----------------|-----------------------------------------------------|
 | **opacity**  | **Inh. N Anim. Y**                                  |
 | **Values**   | *&lt;number&gt;*                                        |
 | **Initial    | 1                                                   |
@@ -6818,7 +6621,6 @@ grid items.
 
 li:nth-of-type(14) {order: -1;}
 
-|----------------|-----------------------------------------------------|
 | **orphans**  | **Inh. N Anim. Y**                                  |
 | **Values**   | *&lt;integer&gt;*                                       |
 | **Initial    | 2                                                   |
@@ -6896,10 +6698,8 @@ form:focus {outline-offset: −1px;}
 
 #### outline-style Inh. N Anim. N
 
-|----------------|-----------------------------------------------------|
   **Values**        auto &vert; none &vert; solid &vert; dotted &vert; dashed &vert; double &vert;
                     groove &vert; ridge &vert; inset &vert; outset
-|----------------|-----------------------------------------------------|
   **Initial value** none
 
   **Computed        As declared
@@ -6908,7 +6708,6 @@ form:focus {outline-offset: −1px;}
   **Applies to**    All elements
 
   **Description**   Defines the style for the overall border of an ele‐
-|----------------|-----------------------------------------------------|
 
 ment. The style must be something other than none for any outline to
 appear.
@@ -6919,9 +6718,7 @@ form:focus {outline-style: outset;}
 
 #### outline-width Inh. N Anim. Y
 
-|----------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; thin &vert; medium &vert; thick
-|----------------|-----------------------------------------------------|
   **Initial value** medium
 
   **Computed        An absolute length, or 0 if the style of the outline
@@ -6932,12 +6729,9 @@ form:focus {outline-style: outset;}
   **Description**   Defines the width for the overall outline of an
                     element. The width will take effect for a given
                     outline
-|----------------|-----------------------------------------------------|
-
 only if the value of outline-style is something other than none. If
 the style *is* none, the width is
 
-|----------------|-----------------------------------------------------|
 | **Examples**  | effectively reset to 0. Negative length values are   |
 |               | not permitted.                                       |
 | **overflow**  |                                                      |
@@ -6990,7 +6784,6 @@ does not force a pre-word line break.)
 supported word-wrap in the past now use it as an alias for
 overflow-wrap.
 
-|----------------|-----------------------------------------------------|
 |              | **Inh. N Anim. N**                                  |
 | **overflow-x** |                                                     |
 | **Values**   | visible &vert; hidden &vert; scroll &vert; auto                 |
@@ -7022,7 +6815,6 @@ axis of the element; that is, the top and bottom edges of the element.
 **Examples** #masthead {overflow-y: hidden;} object {overflow-y:
 scroll;}
 
-|----------------|-----------------------------------------------------|
 | **padding**  | **Inh. N Anim. Y**                                  |
 | **Values**   | &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4}         |
 | **Initial    | Not defined for shorthand elements                  |
@@ -7049,7 +6841,6 @@ scroll;}
 
 #### padding-bottom Inh. N Anim. Y
 
-|-----------------|-------------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
   **Initial value** 0
 
@@ -7074,9 +6865,7 @@ h1 {padding-bottom: 2%;}
 
 #### padding-left Inh. N Anim. Y
 
-  ------------------------------------------------------------------------
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  ----------------- ------------------------------------------------------
   **Initial value** 0
 
   **Computed        For percentage values, as declared; for length values,
@@ -7099,7 +6888,6 @@ pre {padding-left: 3em;}
 
 #### padding-right Inh. N Anim. Y
 
-|--------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
   **Initial value** 0
 
@@ -7122,7 +6910,6 @@ ol {padding-right: 5em;}
 
 #### padding-top Inh. N Anim. Y
 
-|--------------|-----------------------------------------------------|
 | **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;*                    |
 | **Initial    | 0                                                   |
 | value**      |                                                     |
@@ -7165,7 +6952,6 @@ page.)
 
 table.summary {page: wide;}
 
-|--------------|-----------------------------------------------------|
 | **page       |                                    | **Inh. N Anim. |
 | -break-after** |                                    | N**            |
 | **Values**   | auto &vert; always                     |                |
@@ -7223,7 +7009,6 @@ avoid;}
 
 before, but browser support for page-breakbefore may be stronger.
 
-|--------------|-----------------------------------------------------|
 | **pa            |                                  | **Inh. Y      |
 | ge-break-inside** |                                  | Anim. N**     |
 | **Values**      | auto &vert; avoid                    |               |
@@ -7271,7 +7056,6 @@ none.
 
 ### perspective-origin Inh. N Anim. P
 
-|--------------|-----------------------------------------------------|
 | **Values**   | *&lt;position&gt;*                                      |
 | **Initial    | 50% 50%                                             |
 | value**      |                                                     |
@@ -7307,7 +7091,6 @@ offset from its default placement in the normal flow.
 
 &ast;.offset {position: relative; top: 0.5em;}
 
-|--------------|-----------------------------------------------------|
 | **quotes**   | **Inh. Y Anim. N**                                  |
 | **Values**   | &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none            |
 | **Initial    | User agent--dependent                               |
@@ -7339,7 +7122,6 @@ left to the user agent and is likely dependent on the writing direction.
 
 **Examples** textarea {resize: vertical;} iframe {resize: both;}
 
-|--------------|-----------------------------------------------------|
 | **right**    | **Inh. N Anim. P**                                  |
 | **Values**   | *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto            |
 | **Initial    | auto                                                |
@@ -7361,7 +7143,6 @@ left to the user agent and is likely dependent on the writing direction.
 
 ### shape-image-threshold Inh. N Anim. Y
 
-|--------------|-----------------------------------------------------|
 | **Values**  | *&lt;number&gt;*                                         |
 | **Initial   | 0.0                                                  |
 | value**     |                                                      |
@@ -7385,7 +7166,6 @@ left to the user agent and is likely dependent on the writing direction.
 
 #### shape-margin Inh. N Anim. Y
 
-|--------------|-----------------------------------------------------|
   **Values**        *&lt;length&gt;* &vert; *&lt;percentage&gt;*
   **Initial value** 0
 
@@ -7413,7 +7193,6 @@ left to the user agent and is likely dependent on the writing direction.
 
 #### shape-outside Inh. N Anim. P
 
-|--------------|-----------------------------------------------------|
 | **Values**  | none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; |
 |               | *&lt;image&gt;*                                          |
 | **          | inset &vert; circle() &vert; ellipse() &vert; polygon()          |
@@ -7446,13 +7225,10 @@ unshaped version of that float.
 img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 {shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
-| ---------------- | ----------------------------------------------------- |
 | **size**     | **Inh. N Anim. N**                                  |
 | **Values**   | auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     |
 |                | &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack;                 |
-| ---------------- | ----------------------------------------------------- |
 | **Initial value**   | auto                                                |
-| ---------------- | ----------------------------------------------------- |
 | **Computed value**  | *&lt;length&gt;* values as absolute length values;      |
 |                       | otherwise, as declared                              |
 | **Applies to**   | The page area                                       |
@@ -7475,7 +7251,6 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 |                | a square page box. Length values that use em or ex  |
 |                | units are calculated with respect to the computed   |
 |                | font size of the page context.                      |
-| ---------------- | ----------------------------------------------------- |
 | **Example**    |                                                     |
 | body           |                                                     |
 | {page-size:    |                                                     |
@@ -7485,35 +7260,25 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
 Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 
-| ---------------- | ----------------------------------------------------- |
 | **tab-size** | **Inh. Y Anim. Y**                                  |
-| ---------------- | ----------------------------------------------------- |
 | **Values**   | *&lt;length&gt;* &vert; *&lt;integer&gt;*                       |
-| ---------------- | ----------------------------------------------------- |
 | **Initial    | 8                                                   |
 | value**      |                                                     |
-| ---------------- | ----------------------------------------------------- |
 | **Computed   | The absolute-length equivalent of the value         |
 | value**      |                                                     |
-| ---------------- | ----------------------------------------------------- |
 | **Applies    | Block elements                                      |
 | to**         |                                                     |
-| ---------------- | ----------------------------------------------------- |
 | *            | Sets the width of tab characters' whitespace when   |
 | *Description** | they are present in the displayed source *and* are  |
 |                | honored for display due to the value of whitespace. |
 |                | An *&lt;integer&gt;* value sets the number of           |
 |                | "spaces" a tab character will generate.             |
-| ---------------- | ----------------------------------------------------- |
 | **Examples** | pre.source {tab-size: 4;}                           |
 |                | p.typer {tab-size: 0.25in;}                         |
-+----------------+-----------------------------------------------------+
 
 #### table-layout Inh. Y Anim. N
 
-| ---------------- | ----------------------------------------------------- |
   **Values**        auto &vert; fixed
-| ---------------- | ----------------------------------------------------- |
   **Initial value** auto
 
   **Computed        As declared
@@ -7533,22 +7298,16 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 
 table.directory {table-display: auto;}
 
-| ---------------- | ----------------------------------------------------- |
 |               | **Inh. Y Anim. N**                                  |
 | **text-align** |                                                     |
-| ---------------- | ----------------------------------------------------- |
 | **Values**   | start &vert; end &vert; left &vert; right &vert; center &vert; justify  |
 |                | &vert; match-parent &vert; start end                        |
-| ---------------- | ----------------------------------------------------- |
 | **Initial    | In CSS3, start; in CSS2.1, this was user            |
 | value**      | agent--specific, likely depending on writing        |
 |                | direction (e.g., left for Western languages like    |
 |                | English)                                            |
-| ---------------- | ----------------------------------------------------- |
 | **Computed value**  | As declared, except in the case of match-parent     |
-| ---------------- | ----------------------------------------------------- |
 | **Applies to**   | Block-level elements                                |
-| ---------------- | ----------------------------------------------------- |
 | **Description** | Defines the horizontal alignment of text within a   |
 |                 | block-level element by defining the point to which  |
 |                | line boxes are aligned. The value justify is        |
@@ -7556,7 +7315,6 @@ table.directory {table-display: auto;}
 |                | programmatically adjust the word (but not letter)   |
 |                | spacing of the line's content; results may vary by  |
 |                | user agent.                                         |
-| ---------------- | ----------------------------------------------------- |
 | **Examples** | p {text-align: justify;} h4 {text-align: center;}   |
 
 ### text-align-last Inh. Y Anim. N
@@ -7581,7 +7339,6 @@ h4 {text-align-last: right;}
 
 ### text-decoration Inh. N Anim. N
 
-|--------------|-----------------------------------------------------|
 | **Values**   | none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    |
 |                | blink &rbrack;                                            |
 | **Initial value**   | none                                                |
@@ -7663,9 +7420,9 @@ h2 {text-indent: −25px;}
 
   **Examples**      #one {text-orientation: mixed;}
 
-#two {text-orientation: upright;}
+### two {text-orientation: upright;}
 
-#thr {text-orientation: sideways;}
+### thr {text-orientation: sideways;}
 
 #### text-rendering Inh. Y Anim. Y
 
@@ -7716,7 +7473,6 @@ they go back and to the left. Blur values cannot be negative.
 
 #### text-transform Inh. Y Anim. N
 
-|--------------|-----------------------------------------------------|
 | **Values**   | uppercase &vert; lowercase &vert; capitalize &vert; none        |
 | **Initial value**   | none                                                |
 | **Computed value**  | As declared                                         |
@@ -7777,7 +7533,6 @@ they go back and to the left. Blur values cannot be negative.
 
 ### transform-origin Inh. N Anim. P
 
-|--------------|-----------------------------------------------------|
 | **Values**  | *&lt;position&gt;*                                       |
 | **Initial value**  | 50% 50%                                              |
 | **Computed value** | A percentage, except for length values, which are    |
@@ -7799,7 +7554,6 @@ li {transform-origin: 10% 10px 10em;}
 
 ### transform-style Inh. N Anim. N
 
-|--------------|-----------------------------------------------------|
 | **Values**   | flat &vert; preserve-3d                                 |
 | **Initial value**   | flat                                                |
 | **Computed value**  | As declared                                         |
@@ -7838,7 +7592,6 @@ duration.
 
 ### transition-delay Inh. N Anim. N
 
-|--------------|-----------------------------------------------------|
   **Values**        *&lt;time&gt;*&#35;
   **Initial value** 0s
 
@@ -7883,7 +7636,7 @@ as 0s.
 h1 {transition-duration: 10s;}
 
 ### transition-property Inh. N Anim. N
-|--------------|-----------------------------------------------------|
+
 | **Values**    | none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#            |
 | **Initial     | all                                                  |
 | value**       |                                                      |
@@ -7920,9 +7673,7 @@ cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
 
 *&lt;number&gt;*)
 
-  ------------------------------------------------------------------------
   **Initial value** ease
-  ----------------- ------------------------------------------------------
   **Computed        As declared
   value**           
 
@@ -7936,10 +7687,9 @@ cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
                     cubic-bezier() values.
 
   **Examples**      a&lbrack;href&rbrack;:hover {transition-timing-function:
-  ------------------------------------------------------------------------
 
 ease-in-out;}
->
+
 h1 {transition-timing-function: linear;}
 
 #### unicode-bidi Inh. N Anim. Y
@@ -7965,7 +7715,6 @@ bottom &vert; text-bottom &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
 **Initial value** baseline
 
-| ------------------- | --------------------------------------------------- |
 | **Computed values** | For percentage and length values, the absolute length; |
 |                     | otherwise, as declared |
 |  **Percentages**    | Refer to the value of line-height for the element |
@@ -7985,7 +7734,6 @@ baseline, top, middle, and bottom are recognized.
 .fnote {vertical-align: 50%;}
 
 |              | **Inh. Y Anim. N**                                  |
-| ------------------- | --------------------------------------------------- |
 | **visibility**      |                                                     |
 | **Values**   | visible &vert; hidden &vert; collapse                       |
 | **Initial    | visible                                             |
@@ -8008,7 +7756,7 @@ baseline, top, middle, and bottom are recognized.
 **Values** normal &vert; nowrap &vert; pre &vert; pre-wrap &vert; pre-line
 
 normal
->
+
 As declared
 
 **Applies to** All elements
@@ -8029,7 +7777,6 @@ normal.
 
 tt {white-space: pre;}
 
-| ------------------- | --------------------------------------------------- |
 | **widows**   | **Inh. N Anim. Y**                                  |
 | **Values**   | *&lt;integer&gt;*                                       |
 | **Initial value**   | 2                                                   |
@@ -8047,7 +7794,6 @@ tt {white-space: pre;}
 
 auto
 
-| ---------------- | ------------------------------------------------------ |
 |                  |  For auto and percentage values, as declared; |
 |                  |  otherwise, an absolute length, unless the property |
 |                  |  does not apply to the element (then auto) |
@@ -8063,7 +7809,7 @@ auto
   **Examples**      table {width: 80%;}
 
 #sidebar {width: 20%;}
->
+
 .figure img {width: 200px;}
 
 |              | **Inh. Y Anim. Y**                                  |
@@ -8086,7 +7832,7 @@ auto
 **Values** *&lt;length&gt;* &vert; normal
 
 normal
->
+
 For normal, the absolute length 0; otherwise, the absolute length
 
 **Applies to** All elements
@@ -8104,10 +7850,9 @@ p.cramped {word-spacing: −0.5em;}
 
 #### writing-mode Inh. Y Anim. Y
 
-| ---------------- | ---------------------------------------------------- |
 | **Values**       | horizontal-tb &vert; vertical-rl &vert; vertical-lr |
 |  **Initial value** | horizontal-tb |
-|  **Computed value** |      As declared |
+|  **Computed value** | As declared |
 |  **Applies to**   | All elements except table row groups, table column |
 |                   | groups, table rows, table columns, Ruby base |
 |                   | containers, and Ruby annotation containers |
@@ -8122,9 +7867,8 @@ p.cramped {word-spacing: −0.5em;}
 |                  |  text-orientation). Similarly, it's possible to take a |
 |                  |  normally vertical language and flow it horizontally |
 |                  |  with horizontal-tb. |
-|  **Examples**    |  &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} |
-
-&lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;}
+|  **Examples**    | &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} |
+|                  | &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;} |
 
 ### z-index
 
