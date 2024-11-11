@@ -173,6 +173,7 @@ One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
 stylesheet:
 <!-- page 3 -->
+
 <pre>
 <b>&lt;head&gt;&lt;title&gt;</b>My Document<b>&lt;/title&gt;</b>
 <b>&lt;style</b> type=&quot;text/css&quot;<b>&gt;</b>
@@ -242,16 +243,21 @@ Adding a line such as this to the *.htaccess* file at the root level of
 your server will make this happen for all pages on the site, where
 /style.css is the server path of the stylesheet to be loaded:
 Header add Link
+
 <pre>
 &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 </pre>
+
 As an alternative to using *.htaccess*, which has been known to cause
 performance problems, you can edit your *httpd.conf* file to do the same
 thing:
+
 <pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
 </pre>
+
 Header add Link
+
 <pre>
 &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 &lt;/Directory&gt; 
@@ -293,6 +299,7 @@ properties.
 
 <b>Rule Structure</b>
 <!-- page 6 -->
+
 ## At-rules
 A CSS *at-rule* is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:
@@ -367,6 +374,7 @@ a property name or value:
 <b>h1</b>*/&ast; heading-level-1 &ast;/* {color */&ast; foreground color &ast;/*:
 rgba(23,58,89,0.42) */&ast; RGB + opacity &ast;/*;}
 </pre>
+
 HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
 stylesheets so as to hide the styles from browsers so old that they
 don't understand HTML 3.2. They do *not* act as CSS comments; that is,
@@ -388,26 +396,21 @@ associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
 
 *Table 1-1. Selector type specificity*
-
+| --------------- | ------------------------------------ | --------------- |
 | Selector type        | Example                       | Specificity |
-| ---------------------- | ------------------------------- | ------------- |
 | Universal selector   | &ast;                            | 0,0,0,0     |
 | Combinator           |                               |             |
 |                        | &plus;                            |             |
-| ---------------------- | ------------------------------- | ------------- |
 | Element identifier   | div ::first-line              | 0,0,0,1     |
 |                       |                               |             |
 | Pseudo-element       |                               |             |
 | identifier           |                               |             |
-| ---------------------- | ------------------------------- | ------------- |
 | Class identifier     | .warning                      | 0,0,1,0     |
 |                       |                               |             |
 | Pseudo-class         | :hover                        |             |
 | identifier Attribute |                               |             |
 | identifier           | &lbrack;type=&quot;checkbox&quot;&rbrack;         |             |
-| ---------------------- | ------------------------------- | ------------- |
 | ID identifier        | #content                      | 0,1,0,0     |
-| ---------------------- | ------------------------------- | ------------- |
 | Inline style         | style=&quot;color: red;&quot;         | 1,0,0,0     |
 | attribute            |                               |             |
 
@@ -1731,8 +1734,8 @@ Custom properties are defined by giving a custom identifier a value,
 like this:
 
 <pre>
-**html** {
-&dash;-mainColor: #AEA434;
+<b>html</b> {
+  &dash;-mainColor: #AEA434;
 }
 </pre>
 
@@ -1810,10 +1813,13 @@ text or other elements between the two elements are ignored; only the
 elements and their positions in the document tree are considered.
 
 **Examples** h1 &#126; h2 {margin-top: 2.5em;}
+
 <pre>
 nav a &#126; a {border-left: 1px solid border;}
 </pre>
+
 ### Class Selector
+
 | --------------- | --------------------------------------------------- |
 | **Pattern**     | element1.classname                                  |
 |                 | element1.classname1.classname2                      |
@@ -1955,12 +1961,13 @@ children of their parent element.
 type, as compared to all its sibling elements. Thus, div:first-of-type
 will select any div that is the first child div of another element.
 **Examples** td:first-of-type {border-left: 1px dotted;}
+
 <pre>
 h2:first-of-type {color: fuchsia;}
 </pre>
+
 | --------------- | ---------------------------------------------------- |
 | **:lang**    |                                                     |
-+================+=====================================================+
 | **Applies to**    | Any element with associated language-encoding       |
 |                   | information.                                        |
 | **Description** | Matches elements based on their human-language      |
@@ -2069,6 +2076,7 @@ are interspersed between the various paragraphs.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 **Examples** td:nth-of-type(even) {background-color: #FCC;}
+
 <pre>
 img:nth-of-type(3n) {float: right;}
 </pre>
@@ -2104,8 +2112,10 @@ root-element selector is needed.
 **Examples** :root {font: medium serif;} :root &gt; &ast; {margin: 1.5em 0;}
 
 ## The Negation Pseudo-Class
+
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
+
 | -------------- | --------------------------------------------------- |
 |  **:not(*e*)** |                                                     |
 | **Applies to** | Any element                                         |
@@ -2151,6 +2161,7 @@ with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.
 
+| --------------- | ---------------------------------------------------- |
 |  **:active**  |                                                     |
 |  **Applies to**    | Any interaction element                             |
 |  *Description*            | Matches an element during the period in which it is |
@@ -2179,6 +2190,7 @@ elements based on their being enabled or disabled.
 input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px;}
 </pre>
 
+| --------------- | ---------------------------------------------------- |
 |  **:disabled** |                                                     |
 | **Applies to** | Any interaction element                             |
 | **Description** | Matches user interface elements that are not able   |
@@ -2217,27 +2229,28 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px
 
 **Interaction Pseudo-Classes**
 
-| **:hover**   |                                                     |
-| **Applies to** | Any interaction element                             |
+| --------------- | ---------------------------------------------------- |
+| **:hover**      |                                                     |
+| **Applies to**  | Any interaction element                             |
 | **Description** | Matches an element during the period in which it is |
 |                 | being *hovered* over (when the user is designating  |
-|                | an element without activating it). The most common  |
-|                | example of this is moving the mouse pointer inside  |
-|                | the boundaries of a hyperlink in an HTML document.  |
-|                | Other elements can in theory be hovered over,       |
-|                | although CSS doesn't define which ones.             |
-| **Examples** | a&lbrack;href&rbrack;:hover {text-decoration: underline;}       |
-|                |                                                     |
-|                | p:hover {background: yellow;}                       |
-| **:link**    |                                                     |
-| **Applies to** | A hyperlink to a resource that has not been visited |
+|                 | an element without activating it). The most common  |
+|                 | example of this is moving the mouse pointer inside  |
+|                 | the boundaries of a hyperlink in an HTML document.  |
+|                 | Other elements can in theory be hovered over,       |
+|                 | although CSS doesn't define which ones.             |
+| **Examples**    | a&lbrack;href&rbrack;:hover {text-decoration: underline;} |
+|                 |                                                     |
+|                 | p:hover {background: yellow;}                       |
+| **:link**       |                                                     |
+| **Applies to**  | A hyperlink to a resource that has not been visited |
 | **Description** | Matches a link to a URI that has not been visited;  |
 |                 | that is, the URI to which the link points does not  |
-|                | appear in the user agent's history. This state is   |
-|                | mutually exclusive with the :visited state.         |
-| **Examples** | a:link {color: blue;} &ast;:link {text-decoration:     |
-|                | underline;}                                         |
-| **:target**  |                                                     |
+|                 | appear in the user agent's history. This state is   |
+|                 | mutually exclusive with the :visited state.         |
+| **Examples**    | a:link {color: blue;} &ast;:link {text-decoration:  |
+|                 | underline;}                                         |
+| **:target**     |                                                     |
 
 **Applies to** Any element
 
@@ -2271,32 +2284,23 @@ colons to distinguish them from pseudoclasses. For historical reasons,
 browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
 
-+----------------+-----------------------------------------------------+
-| **::after**  |                                                     |
-+================+=====================================================+
-|              | A pseudo-element containing generated content       |
-|  **Generates** | placed after the content in the element             |
-+----------------+-----------------------------------------------------+
-| *            | Inserts generated content at the end of an          |
-| *Description** | element's content. By default, the pseudo-element   |
-|                | is inline, but this can be changed using the        |
-|                | property display.                                   |
-+----------------+-----------------------------------------------------+
-| **Examples** | a.external:after {                                  |
-|                |                                                     |
-|                | content: &quot; &quot; url(/icons/globe.gif);}              |
-|                |                                                     |
-|                | p:after {content: &quot; &vert;; &quot;;}                       |
-+----------------+-----------------------------------------------------+
-| **::before** |                                                     |
-+----------------+-----------------------------------------------------+
-|              | A pseudo-element containing generated content       |
-|  **Generates** | placed before the content in the element            |
-+----------------+-----------------------------------------------------+
-| *            | Inserts generated content at the beginning of an    |
-| *Description** | element's content. By default, the pseudo-element   |
-|                | is                                                  |
-+----------------+-----------------------------------------------------+
+| --------------- | -------------------------------------------------- |
+| **::after**     |                                                     |
+|                 | A pseudo-element containing generated content       |
+| **Generates**   | placed after the content in the element             |
+| **Description** | Inserts generated content at the end of an          |
+|                 | element's content. By default, the pseudo-element   |
+|                 | is inline, but this can be changed using the        |
+|                 | property display.                                   |
+| **Examples**    | a.external:after {                                  |
+|                 | content: &quot; &quot; url(/icons/globe.gif);}              |
+|                 | p:after {content: &quot; &vert;; &quot;;}                       |
+| **::before**    |                                                     |
+|                 | A pseudo-element containing generated content       |
+|  **Generates**  | placed before the content in the element            |
+| **Description** | Inserts generated content at the beginning of an    |
+|                 | element's content. By default, the pseudo-element   |
+|                 | is inline, but this can be changed using the property display. |
 
 **Pseudo-Elements**
 
@@ -2307,28 +2311,22 @@ inline, but this can be changed using the property display.
 
 ### ::first-letter
 
-+----------------+-----------------------------------------------------+
-|              | A pseudo-element that contains the first letter of  |
-|  **Generates** | an element                                          |
-+================+=====================================================+
-| *            | Styles the first letter of an element. Any leading  |
-| *Description** | punctuation should be styled along with the first   |
-|                | letter. Some languages have letter combinations     |
-|                | that should be treated as a single character, and a |
-|                | user agent may apply the first letter style to      |
-|                | both. Prior to CSS2.1, ::first-letter could be      |
-|                | attached only to block-level elements. CSS2.1       |
-|                | expanded its scope to include elements with a       |
-|                | display value of block, list-item, table-cell,      |
-|                | table-caption, or inlineblock. There is a limited   |
-|                | set of properties that can apply to a first letter. |
-+----------------+-----------------------------------------------------+
-| **Examples** | h1:first-letter {font-size: 166%;} p:first-letter   |
-|                | {text-decoration: underline;}                       |
-+----------------+-----------------------------------------------------+
-| **           |                                                     |
-| ::first-line** |                                                     |
-+----------------+-----------------------------------------------------+
+|  **Generates**   | A pseudo-element that contains the first letter of an element.  |
+| ---------------- | -------------------------------------------------- |
+| **Description** | Styles the first letter of an element. Any leading  |
+|                 | punctuation should be styled along with the first   |
+|                 | letter. Some languages have letter combinations     |
+|                 | that should be treated as a single character, and a |
+|                 | user agent may apply the first letter style to      |
+|                 | both. Prior to CSS2.1, ::first-letter could be      |
+|                 | attached only to block-level elements. CSS2.1       |
+|                 | expanded its scope to include elements with a       |
+|                 | display value of block, list-item, table-cell,      |
+|                 | table-caption, or inlineblock. There is a limited   |
+|                  | set of properties that can apply to a first letter. |
+| **Examples**     | h1:first-letter {font-size: 166%;} p:first-letter   |
+|                  | {text-decoration: underline;}                       |
+| **::first-line** |                                                     |
 
 **Generates** A pseudo-element that contains the first formatted line of
 an element
