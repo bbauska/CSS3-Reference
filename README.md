@@ -1793,8 +1793,8 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Universal Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>Pattern</h5> <h5>&ast;</h5>
-<h5>Description</h5>  <h5>Matches any element name in the document's language. If
+<h5>Pattern  &ast;</h5>
+<h5>Description  Matches any element name in the document's language. If
 a rule does not have an explicit selector, the universal selector is
 inferred.</h5>
 
