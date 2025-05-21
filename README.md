@@ -2235,47 +2235,45 @@ with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.
 
+| <h4>:active</h4>  |                                                     |
 | --------------- | ---------------------------------------------------- |
-|  <b>:active</b>  |                                                     |
 |  <b>Applies to</b>    | Any interaction element                             |
-|  *Description*            | Matches an element during the period in which it is |
-|                     | being activated. The most common example is         |
-|                | clicking on a hyperlink in an HTML document: while  |
-|                | the mouse button is being held down, the link is    |
-|                | active. There are other ways to activate elements,  |
-|                | and other elements can in theory be activated,      |
-|                | although CSS doesn't define them.                   |
-|  <b>Examples</b> | a:active {color: red;} &ast;:active {background:       |
-|                | blue;}                                              |
-|  <b>:checked</b> |                                                     |
-|  <b>Applies to</b>   | Any interaction element that has an on/off state    |
-| <b>Description</b> | Matches any user interface element that has been    |
-|                 | "toggled on," such as a checked checkbox or a       |
-|                | filled radio button.                                |
-| <b>Examples</b> |                                                     |
-|              |                                                     |
-|  input:checked |                                                     |
-| { outline:   |                                                     |
-| 3px solid    |                                                     |
-| rgba(127,    |                                                     |
-| 127,127,0.5);} |                                                     |
+|  <b>Description</b> | Matches an element during the period in which it is 
+                      being activated. The most common example is         
+                 clicking on a hyperlink in an HTML document: while  
+                 the mouse button is being held down, the link is    
+                 active. There are other ways to activate elements,  
+                 and other elements can in theory be activated,      
+                 although CSS doesn't define them.                   |
+|  <b>Examples</b> | a:active {color: red;} 
+                     &ast;:active {background: blue;} |
 
-<pre>
-input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px;}
-</pre>
-
+| <h4>:checked</h4> |                                                     |
 | --------------- | ---------------------------------------------------- |
-|  <b>:disabled</b> |                                                     |
+|  <b>Applies to</b>   | Any interaction element that has an on/off state    |
+| <b>Description</b> | Matches any user interface element that has been
+                  "toggled on," such as a checked checkbox or a
+                 filled radio button. |
+| <b>Examples</b> | input:checked { <br>
+                      outline: 3px solid rgba(127,127,127,0.5);}<br>
+                    input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { <br>
+					  box-shadow: red 0 0 5px;} |
+
+|  <h4>:disabled</h4> |                                                     |
+|-------------------|-----------------------------------------------------|
 | <b>Applies to</b> | Any interaction element                             |
-| <b>Description</b> | Matches user interface elements that are not able   |
-|                 | to accept user input because of language attributes |
-|                | or other nonpresentational means; for example,      |
-|                | &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note     |
-|                | that :disabled does *not* apply when an input       |
-|                | element has simply been removed from the viewport   |
-|                | with properties like position or display.           |
-| <b>Example</b>  | input:disabled {opacity: 0.5;}                      |
-| <b>:enabled</b> |                                                     |
+| <b>Description</b> | Matches user interface elements that are not able 
+                  to accept user input because of language attributes 
+                 or other nonpresentational means; for example,      
+                 &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note 
+                 that :disabled does *not* apply when an input     
+                 element has simply been removed from the viewport 
+                 with properties like position or display. |
+| <b>Example</b>  | input:disabled {opacity: 0.5;} |
+
+
+<h4>:enabled</h4>
+|-------------------|-----------------------------------------------------|
 | <b>Applies to</b>    | Any interaction element                             |
 | <b>Description</b> | Matches user interface elements that are able to    |
 |                 | accept user input and that can be set to "enabled"  |
@@ -2283,72 +2281,67 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px
 |                | itself. This includes any form input element in     |
 |                | (X)HTML, but does not include hyperlinks.           |
 | <b>Example</b>  | input:enabled {background: #FCC;}                   |
-| <b>:focus</b>   |                                                     |
+
+<h4>:focus</h4>
+|-------------------|-----------------------------------------------------|
 | <b>Applies to</b>   | Any interaction element                             |
-| <b>Description</b> | Matches an element during the period in which it    |
-|                 | has focus. One example from HTML is an input box    |
-|                | that has the text-input cursor within it such that  |
-|                | when the user starts typing, text will be entered   |
-|                | into that box. Other elements, such as hyperlinks,  |
-|                | can also have focus; however, CSS does not define   |
-|                | which elements may or may not have focus.           |
-| <b>Examples</b> |                                                     |
-| a:focus      |                                                     |
-| {outline:    |                                                     |
-| 1px dotted   |                                                     |
-| red;}        |                                                     |
-| input:focus  |                                                     |
-| {background: |                                                     |
-| yellow;}     |                                                     |
+| <b>Description</b> | Matches an element during the period in which it 
+                  has focus. One example from HTML is an input box    
+                 that has the text-input cursor within it such that  
+                 when the user starts typing, text will be entered   
+                 into that box. Other elements, such as hyperlinks,  
+                 can also have focus; however, CSS does not define   
+                 which elements may or may not have focus.           |
+| <b>Examples</b> | a:focus {outline: 1px dotted red;}
+                    input:focus {background: yellow;} 
 
-<b>Interaction Pseudo-Classes</b>
 
-| --------------- | ---------------------------------------------------- |
-| <b>:hover</b>      |                                                     |
+<h4>:hover</h4>
+|---------------|----------------------------------------------------|
 | <b>Applies to</b>  | Any interaction element                             |
-| <b>Description</b> | Matches an element during the period in which it is |
-|                 | being *hovered* over (when the user is designating  |
-|                 | an element without activating it). The most common  |
-|                 | example of this is moving the mouse pointer inside  |
-|                 | the boundaries of a hyperlink in an HTML document.  |
-|                 | Other elements can in theory be hovered over,       |
-|                 | although CSS doesn't define which ones.             |
-| <b>Examples</b>    | a&lbrack;href&rbrack;:hover {text-decoration: underline;} |
-|                 |                                                     |
-|                 | p:hover {background: yellow;}                       |
-| <b>:link</b>       |                                                     |
+| <b>Description</b> | Matches an element during the period in which it is 
+                  being *hovered* over (when the user is designating  
+                  an element without activating it). The most common  
+                  example of this is moving the mouse pointer inside  
+                  the boundaries of a hyperlink in an HTML document.  
+                  Other elements can in theory be hovered over,       
+                  although CSS doesn't define which ones.             |
+| <b>Examples</b>    | a&lbrack;href&rbrack;:hover {text-decoration: underline;}
+|                      p:hover {background: yellow;} |
+
+<h4>:link</h4>
+|---------------|----------------------------------------------------|
 | <b>Applies to</b>  | A hyperlink to a resource that has not been visited |
-| <b>Description</b> | Matches a link to a URI that has not been visited;  |
-|                 | that is, the URI to which the link points does not  |
-|                 | appear in the user agent's history. This state is   |
-|                 | mutually exclusive with the :visited state.         |
-| <b>Examples</b>    | a:link {color: blue;} &ast;:link {text-decoration:  |
-|                 | underline;}                                         |
-| <b>:target</b>     |                                                     |
+| <b>Description</b> | Matches a link to a URI that has not been visited;  
+                  that is, the URI to which the link points does not  
+                  appear in the user agent's history. This state is   
+                  mutually exclusive with the :visited state.   |
+| <b>Examples</b>    | a:link {color: blue;} 
+                       &ast;:link {text-decoration: underline;} |
 
-<b>Applies to</b> Any element
 
-<b>Description</b> Matches an element which is itself matched by the
-fragment identifier portion of the URI used to access the page. Thus,
-http://www.w3.org/TR/ css3-selectors/#target-pseudo would be matched by
-:target and would apply the declared styles to any element with the id
-of target-pseudo. If that element was a paragraph, it would also be
-matched by p:target.
+<h4>:target</h4>
+|---------------|----------------------------------------------------|
+| <b>Applies to</b> | Any element |
+| <b>Description</b> | Matches an element which is itself matched by the
+                       fragment identifier portion of the URI used to 
+					   access the page. Thus, http://www.w3.org/TR/ 
+					   css3-selectors/#target-pseudo would be 
+					   matched by :target and would apply the declared 
+					   styles to any element with the id of target-pseudo. 
+					   If that element was a paragraph, it would also be
+                       matched by p:target. |
+| <b>Example</b> |    :target {background: #EE0;}  |
 
-<b>Example</b> :target {background: #EE0;}
-
-### :visited
-
-<b>Applies to</b> A hyperlink to a resource that has already been visited
-
-<b>Description</b> Matches a link to a URI that has been visited; that is,
-the URI to which the link points appears in the user agent's history.
-This state is mutually exclusive with the :link state.
-
-<b>Examples</b> a:visited {color: purple;}
-<pre>
-&ast;:visited {color: gray;}
-</pre>
+<h4>:visited</h4>
+|-------------------|-----------------------------------------------------|
+| <b>Applies to</b> | A hyperlink to a resource that has already been visited |
+| <b>Description</b> | Matches a link to a URI that has been visited; that is,
+                       the URI to which the link points appears in the user 
+					   agent's history. This state is mutually exclusive with 
+					   the :link state. |
+| <b>Examples</b> | a:visited {color: purple;} <br>
+                    &ast;:visited {color: gray;}  |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5. Pseudo-Elements</h3>
@@ -2360,59 +2353,55 @@ colons to distinguish them from pseudoclasses. For historical reasons,
 browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
 
-| --------------- | -------------------------------------------------- |
-| <b>::after</b>     |                                                     |
-|                 | A pseudo-element containing generated content       |
-| <b>Generates</b>   | placed after the content in the element             |
-| <b>Description</b> | Inserts generated content at the end of an          |
-|                 | element's content. By default, the pseudo-element   |
-|                 | is inline, but this can be changed using the        |
-|                 | property display.                                   |
-| <b>Examples</b>    | a.external:after {                                  |
-|                 | content: &quot; &quot; url(/icons/globe.gif);}              |
-|                 | p:after {content: &quot; &vert;; &quot;;}                       |
-| <b>::before</b>    |                                                     |
-|                 | A pseudo-element containing generated content       |
-|  <b>Generates</b>  | placed before the content in the element            |
-| <b>Description</b> | Inserts generated content at the beginning of an    |
-|                 | element's content. By default, the pseudo-element   |
-|                 | is inline, but this can be changed using the property display. |
+<h4>::after</h4>
+|-------------------|-----------------------------------------------------|
+| <b>Generates</b>   | A pseudo-element containing generated content
+                       placed after the content in the element |
+| <b>Description</b> | Inserts generated content at the end of an element's
+                       content. By default, the pseudo-element is inline, 
+					   but this can be changed using the property display. |
+| <b>Examples</b>    | a.external:after { 
+                         content: &quot; &quot; url(/icons/globe.gif);} 
+                       p:after {content: &quot; &vert;; &quot;;} |
 
-<b>Pseudo-Elements</b>
+<h4>::before</h4>
+|-------------------|-----------------------------------------------------|
+| <b>Generates</b>  | A pseudo-element containing generated content
+                      placed before the content in the element            |
+| <b>Description</b> | Inserts generated content at the beginning of an  
+|                 | element's content. By default, the pseudo-element is 
+|                 | inline, but this can be changed using the property display. |
+| <b>Examples</b> | a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
+                    p:before {content: attr(class);} 
+					a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} |
 
-inline, but this can be changed using the property display.
+<h4>::first-letter<.h4>
+|-------------------|-----------------------------------------------------|
+| <b>Generates</b>   | A pseudo-element that contains the first letter of an element.  |
+| <b>Description</b> | Styles the first letter of an element. Any leading  
+                  punctuation should be styled along with the first   
+                  letter. Some languages have letter combinations     
+                  that should be treated as a single character, and a 
+                  user agent may apply the first letter style to      
+                  both. Prior to CSS2.1, ::first-letter could be      
+                  attached only to block-level elements. CSS2.1       
+                  expanded its scope to include elements with a       
+                  display value of block, list-item, table-cell,      
+                  table-caption, or inlineblock. There is a limited   
+                   set of properties that can apply to a first letter. |
+| <b>Examples</b>     | h1:first-letter {font-size: 166%;} 
+                        p:first-letter {text-decoration: underline;} |
 
-<b>Examples</b> a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} p:before
-{content: attr(class);} a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
-
-### ::first-letter
-
-|  <b>Generates</b>   | A pseudo-element that contains the first letter of an element.  |
-| ---------------- | -------------------------------------------------- |
-| <b>Description</b> | Styles the first letter of an element. Any leading  |
-|                 | punctuation should be styled along with the first   |
-|                 | letter. Some languages have letter combinations     |
-|                 | that should be treated as a single character, and a |
-|                 | user agent may apply the first letter style to      |
-|                 | both. Prior to CSS2.1, ::first-letter could be      |
-|                 | attached only to block-level elements. CSS2.1       |
-|                 | expanded its scope to include elements with a       |
-|                 | display value of block, list-item, table-cell,      |
-|                 | table-caption, or inlineblock. There is a limited   |
-|                  | set of properties that can apply to a first letter. |
-| <b>Examples</b>     | h1:first-letter {font-size: 166%;} p:first-letter   |
-|                  | {text-decoration: underline;}                       |
-| <b>::first-line</b> |                                                     |
-
-<b>Generates</b> A pseudo-element that contains the first formatted line of
-an element
-
-<b>Description</b> Styles the first line of text in an element, regardless
-of how many or how few words may appear in that line. ::first-line can
-be attached only to blocklevel elements. There is a limited set of
-properties that can apply to a first line.
-
-<b>Example</b> p.lead:first-line {font-weight: bold;}
+<h4>::first-line</h4>
+|-------------------|-----------------------------------------------------|
+| <b>Generates</b>  | A pseudo-element that contains the first formatted 
+                      line of an element |
+| <b>Description</b> | Styles the first line of text in an element, regardless
+                       of how many or how few words may appear in that 
+					   line. ::first-line can be attached only to blocklevel 
+					   elements. There is a limited set of properties that can 
+					   apply to a first line. |
+| <b>Example</b> | p.lead:first-line {font-weight: bold;} |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-1">3.6. Media Queries</h3>
