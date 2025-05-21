@@ -1,18 +1,18 @@
 ---
-title: "CSS Reference"
+title: "CSS3 Reference"
 ---
 
 <!-- page i -->
 <!-- ![](images/image005.jpg){width="4.25in" height="7.0in"} -->
 <!-- page ii -->
 
-## CSS Reference
+## CSS3 Reference
 
 ***Eric A. Meyer***
 
 <!-- ![](images/image006.jpg){width="2.850301837270341in" height="0.18005686789151357in"} -->
 
-### CSS Pocket Reference
+### CSS3 Pocket Reference
 #### by Eric A. Meyer
 
 ##### Copyright © 2018 O'Reilly Media, Inc. All rights reserved.
