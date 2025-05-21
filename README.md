@@ -1,8 +1,32 @@
 ---
-title: "CSS3 Reference"
+title: "CSS3 Reference Guide"
+---
+---
+title: |
+  CSS3 Reference Buide
+  by Brian Bauska
+author: "bbauska"
+date last editted: "5/21/2025 Wed 2+pm"
+output: 
+  markdown:
+    with some style
 ---
 
-## CSS3 Reference
+<h1 align="center">CSS Reference Guide</h1>
+<h6 align="center">(by Brian Bauska)</h6>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ readme.md of css3-ref.bauska.org ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. css reference guide logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image000.png?raw=true"
+  title="CSS3 Reference Guide"
+  alt="CSS3 Reference Guide."
+  style="width:20%;" />
+</p>
+
+## CSS3 Reference Guide
 
 ### [Table of Contents](#table-of-contents)
 
@@ -111,8 +135,9 @@ always check the document type definition (DTD) to be certain.
 While style elements are often found inside the head element, as shown
 in the preceding example, this is not required. Sometimes stylesheets
 are embedded near the end of a document for performance reasons.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>External Stylesheets</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Styles can be stored in a separate file. The primary advantage to using
 a separate file is that when commonly used styles are collected in a
 single file, all pages using those styles can be updated by editing a
@@ -120,9 +145,11 @@ single stylesheet. A downside is that it's generally more efficient to
 embed all styles (and scripts) into an HTML document in order to reduce
 network calls, although this downside will disappear as HTTP/2 usage
 increases.<p>
-<h5>An external stylesheet can be referenced in one of three ways.</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>An external stylesheet can be referenced in one of three ways.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>1. <b>&#64;import directive</b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
 stylesheet:</p>
@@ -139,17 +166,16 @@ stylesheet:</p>
 <b>&lt;/style&gt;</b>
 <b>&lt;/head&gt;</b>
 </pre>
-
 <p>Note that &#64;import directives can appear at the top (and, according to
 the specification, <i>only</i> at the top) of any stylesheet. Thus, one
 stylesheet could import another, which in turn would import a third.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>2. link element</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In HTML documents, the link element can be used to associate a
 stylesheet with a document. Multiple link elements are permitted. The
 media attribute can be used to restrict a stylesheet to one or more
 media environments:</p>
-
 <pre>
 <b>&lt;head&gt;</b>
 <b>&lt;title&gt;</b>A Document<b>&lt;/title&gt;</b>
@@ -160,14 +186,13 @@ media=&quot;screen and (max-width: 960px)&quot;<b>&gt;</b>
 <b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
 media=&quot;print and (color-depth: 2)&quot;<b>&gt; &lt;/head&gt;</b>
 </pre>
-
-It is also possible to link to alternate stylesheets, but few browsers
+<p>It is also possible to link to alternate stylesheets, but few browsers
 provide a way for users to make use of them. As of this writing, most or
 all known user agents load all linked stylesheets, including the
-alternate stylesheets, regardless of whether the user ever needs them.
-
+alternate stylesheets, regardless of whether the user ever needs them.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>xml-stylesheet processing instruction</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In XML documents (such as XHTML documents sent with a MIME type of
 text/xml, application/xml, or application/ xhtml+xml), an xml-stylesheet
 processing instruction can be used to associate a stylesheet with a
@@ -176,7 +201,6 @@ the prolog of an XML document. Multiple xml-stylesheet processing
 instructions are permitted. The media pseudo-attribute can be used to
 restrict a stylesheet to one or more forms of media:</p>
 <!-- page 4 -->
-
 <pre>
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;basic.css&quot;
   media=&quot;all&quot;?&gt;
@@ -185,31 +209,43 @@ restrict a stylesheet to one or more forms of media:</p>
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;paper.css&quot;
   media=&quot;print&quot;?&gt;
 </pre>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>3. <b>HTTP Link headers</b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The last (and least common by far) way of associating an external
 stylesheet with your pages is to use an HTTP Link header. This approach
 uses HTTP headers to replicate the effects of a link element or &#64;import
 directive.</p>
-
 <p>Adding a line such as this to the <i>.htaccess</i> file at the root level of
 your server will make this happen for all pages on the site, where
 /style.css is the server path of the stylesheet to be loaded:</p>
-
 <pre>
   &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 </pre>
-
+<h5>Explanation of the attributes:</h5>
+<pre>rel="stylesheet":</pre>
+<p>This attribute indicates that the linked file is a stylesheet, which defines how 
+the HTML content should be displayed.</p>
+<pre>href="style.css":</pre>
+<p>This attribute specifies the URL of the CSS file to be linked.</p>
+<pre>type="text/css":</pre>
+<p>This attribute specifies the MIME type of the linked file, indicating that it is 
+a CSS file. While technically redundant, it's good practice to include it for clarity.</p>
+<pre>media="all":</pre>
+<p>This attribute specifies that the stylesheet applies to all media types. This 
+means it will be applied to screens, printers, and any other media for which the 
+browser supports style sheets. If you want to target specific devices, you can use 
+other media types like screen, print, or speech or use media queries.</p>
 <p>As an alternative to using <i>.htaccess</i>, which has been known to cause
 performance problems, you can edit your <i>httpd.conf</i> file to do the same
 thing:</p>
-
+<p>In essence, this code snippet links an external CSS file to an HTML page, making 
+the styles defined in that file available for styling the HTML elements.</p>
 <pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
   &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 &lt;/Directory&gt; 
 </pre>
-
 <p>where /usr/local/username/httpdocs is replaced with the
 Unix pathname of your website's actual home directory, and /style.css is
 replaced with the location of the stylesheet within that home directory.</p>
@@ -217,7 +253,6 @@ replaced with the location of the stylesheet within that home directory.</p>
 most notably Internet Explorer and Safari. Thus, this technique is
 usually limited to production environments based on other user agents,
 and the occasional Easter egg for Firefox and Opera users.</p>
-
 <!-- page 5 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2-1">Rule Structure</h3>
@@ -246,14 +281,12 @@ separated from its value by a colon (:). Property names in CSS are not
 case-sensitive. Legal values for a property are defined by the property
 description. Chapter 4 provides details on acceptable values for CSS
 properties.</p>
-
 <!-- page 6 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3-1">1.3. <b><mark>&#64; At-rules</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A CSS <i>at-rule</i> is a statement or block of rules that begins with a
-specific identifier preceded by an @ sign. These are:</p>
-
+<p>A CSS <i>at-rule</i> is a statement or block of rules that begins with a specific 
+identifier preceded by an @ sign. These are:</p>
 <ul>
   <li><b><mark>&#64;charset</mark></b><br>
     Allows an author to define the encoding of the styles within the
@@ -301,9 +334,9 @@ These include:</p>
 	should be used: e.g., writing &#64;supports (display: grid) and then 
 	the styles that should be used in a CSS Grid--supporting browser.</li>
 </ul>
-<p>There are other proposed at-rules which are, as of early 2018, at
-various stages of development. These include &#64;document,
-&#64;font-feature-values, &#64;page, and &#64;viewport.</p>
+<p>There are other proposed at-rules which are, as of early 2018, at various stages of 
+development. These include &#64;document, &#64;font-feature-values, &#64;page, and 
+&#64;viewport.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-4-1">1.4. Comments</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -324,93 +357,84 @@ a property name or value:</p>
 </pre>
 
 <p>HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
-stylesheets so as to hide the styles from browsers so old that they
-don't understand HTML 3.2. They do <i>not</i> act as CSS comments; that is,
-anything contained in an HTML comment will be seen and interpreted by
-the CSS parser.</p>
+stylesheets so as to hide the styles from browsers so old that they don't understand HTML 
+3.2. They do <i>not</i> act as CSS comments; that is, anything contained in an HTML comment 
+will be seen and interpreted by the CSS parser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-5-1">1.5. Style Precedence</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A single HTML document can import and link to multiple external
-stylesheets, contain one or more embedded stylesheets, and make use of
-inline styles. In the process, it is quite possible that some rules will
-conflict with one another. Cascading Style Sheets uses a mechanism
-called the <i>cascade</i> to resolve any such conflicts and arrive at a final
-set of styles to be applied to the document. Two key components of the
-cascade are specificity and inheritance.
-
+<p>A single HTML document can import and link to multiple external stylesheets, contain 
+one or more embedded stylesheets, and make use of inline styles. In the process, it is 
+quite possible that some rules will conflict with one another. Cascading Style Sheets 
+uses a mechanism called the <i>cascade</i> to resolve any such conflicts and arrive at a 
+final set of styles to be applied to the document. Two key components of the cascade are 
+specificity and inheritance.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Specificity Calculations</h4>
-<i>Specificity</i> describes the weight of a selector and any declarations
-associated with it. Table 1-1 shows how much each part of a selector
-contributes to the total specificity of that selector.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><i>Specificity</i> describes the weight of a selector and any declarations associated 
+with it. Table 1-1 shows how much each part of a selector contributes to the total 
+specificity of that selector.</p>
 
 <!-- image002 -->
 
 <i>Table 1-1. Selector type specificity</i>
-
+!--
 Selector type Example        Specificity 
 Universal selector    &ast;     0,0,0,0     
 Combinator               
 &plus;         
 Element identifier    div ::first-line       0,0,0,1     
-                   
 Pseudo-element                   
 identifier               
 Class identifier      .warning       0,0,1,0     
-                   
 Pseudo-class  :hover     
 identifier Attribute             
 identifier    &lbrack;type=&quot;checkbox&quot;&rbrack;      
 ID identifier #content       0,1,0,0     
 Inline style  style=&quot;color: red;&quot;  1,0,0,0     
 attribute                
+-->
 
-Specificity values are cumulative; thus, a selector containing two
-element identifiers and a class identifier (e.g., div.aside p) has a
-specificity of 0,0,1,2. Specificity values are sorted from right to
-left; thus, a selector containing 11 element identifiers (0,0,0,11) has
-a lower specificity than a selector containing just a single class
-identifier (0,0,1,0).
-
-The !important directive gives a declaration more weight than
-nonimportant declarations. The declaration retains the specificity of
-its selectors and is used only in comparison with other important
-declarations. 
-
+<p>Specificity values are cumulative; thus, a selector containing two element identifiers 
+and a class identifier (e.g., div.aside p) has a specificity of 0,0,1,2. Specificity values 
+are sorted from right to left; thus, a selector containing 11 element identifiers (0,0,0,11) 
+has a lower specificity than a selector containing just a single class identifier (0,0,1,0).</p>
+<p>The !important directive gives a declaration more weight than nonimportant declarations. 
+The declaration retains the specificity of its selectors and is used only in comparison 
+with other important declarations.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inheritance</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The elements in a document form a treelike hierarchy, with the root element at the top 
+and the rest of the document structure spreading out below it (which makes it look more 
+like a tree root system, really). In an HTML document, the html element is at the top of 
+the tree, with the head and body elements descending from it. The rest of the document
+structure descends from those elements. In such a structure, elements lower down in the 
+tree are descendants of the ancestors, which are higher in the tree.</p>
 
-The elements in a document form a treelike hierarchy, with the root
-element at the top and the rest of the document structure spreading out
-below it (which makes it look more like a tree root system, really). In
-an HTML document, the html element is at the top of the tree, with the
-head and body elements descending from it. The rest of the document
-structure descends from those elements. In such a structure, elements
-lower down in the tree are descendants of the ancestors, which are
-higher in the tree.
+<p>CSS uses the document tree for the mechanism of <i>inheritance</i>, in which a style 
+applied to an element is inherited by its descendants. For example, if the body element 
+is set to have a color of red, that value propagates down the document tree to the elements 
+that descend from the body element. Inheritance is interrupted only by a conflicting style
+rule that applies directly to an element. Inherited values have no specificity at all 
+(which is <i>not</i> the same as having zero specificity).</p>
 
-CSS uses the document tree for the mechanism of <i>inheritance</i>, in which
-a style applied to an element is inherited by its descendants. For
-example, if the body element is set to have a color of red, that value
-propagates down the document tree to the elements that descend from the
-body element. Inheritance is interrupted only by a conflicting style
-rule that applies directly to an element. Inherited values have no
-specificity at all (which is <i>not</i> the same as having zero specificity).
-
-Note that some properties are not inherited. A property will always
-define whether it is inherited. Some examples of noninherited properties
-are padding, border, margin, and background.
-
-<h5>The Cascade</h5>
-The cascade is how CSS resolves conflicts between styles; in other
-words, it is the mechanism by which a user agent decides, for example,
-what color to make an element when two different rules apply to it and
-each one tries to set a different color. Here's how the cascade works:
+<p>Note that some properties are not inherited. A property will always define whether it 
+is inherited. Some examples of noninherited properties are padding, border, margin, and 
+background.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The Cascade</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The cascade is how CSS resolves conflicts between styles; in other words, it is the 
+mechanism by which a user agent decides, for example, what color to make an element when 
+two different rules apply to it and each one tries to set a different color. Here's how 
+the cascade works:</p>
 
 1.  Find all rules with a selector that matches a given element.
 
-2.  Sort all declarations applying to the given element by <i>explicit
-    weight</i>. Those rules that are marked !important have a higher
-    explicit weight than those that are not.
+2.  Sort all declarations applying to the given element by <i>explicit weight</i>. Those 
+    rules that are marked !important have a higher explicit weight than those that are not.
 
 3.  Sort all declarations applying to the given element by <i>origin</i>.
     There are three basic origins: author, reader, and user agent. Under
@@ -429,58 +453,52 @@ each one tries to set a different color. Here's how the cascade works:
     stylesheet are considered to come before all declarations within the
     stylesheet that imports them.
 
-Any presentational hints that come from non-CSS sources (e.g., the
+<p>Any presentational hints that come from non-CSS sources (e.g., the
 preference dialog within a browser) are given the same weight as the
-user agent's default styles (see step 2 above).
-
+user agent's default styles (see step 2 above).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-6-1">1.6 Element Classification</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Broadly speaking, CSS groups elements into two types: <i>nonreplaced</i> and
-<i>replaced</i>. Although the types may seem rather abstract, there actually
-are some profound differences in how the two types of elements are
-presented. These differences are explored in detail in Chapter 7 of
-[<i>CSS: The</i> <i>Definitive Guide</i>, 4th
-Edition](http://shop.oreilly.com/product/0636920012726.do) (O'Reilly).
-
+<p>Broadly speaking, CSS groups elements into two types: <i>nonreplaced</i> and <i>replaced</i>. 
+Although the types may seem rather abstract, there actually are some profound differences in how 
+the two types of elements are presented. These differences are explored in detail in Chapter 7 of 
+<a href="http://shop.oreilly.com/product/0636920012726.do"><i>CSS: The</i> <i>Definitive Guide</i>, 
+4th Edition</a> (O'Reilly).</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Nonreplaced Elements</h4>
-The majority of HTML elements are <i>nonreplaced elements</i>, which means
-their content is presented by the user agent inside a box generated by
-the element itself. For example, &lt;span&gt;hi there&lt;/span&gt; is a
-nonreplaced element, and the text hi there will be displayed by the user
-agent. Paragraphs, headings, table cells, lists, and almost everything
-else in HTML are nonreplaced elements.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The majority of HTML elements are <i>nonreplaced elements</i>, which means their content is 
+presented by the user agent inside a box generated by the element itself. For example, 
+&lt;span&gt;hi there&lt;/span&gt; is a nonreplaced element, and the text hi there will be 
+displayed by the user agent. Paragraphs, headings, table cells, lists, and almost everything
+else in HTML are nonreplaced elements.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Replaced Elements</h4>
-In contrast, <i>replaced elements</i> are those whose content is replaced by
-something not directly represented by document content. The most
-familiar HTML example is the img element, which is replaced by an image
-file external to the document itself. In fact, img itself has no actual
-content, as we can see by considering a simple example:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In contrast, <i>replaced elements</i> are those whose content is replaced by something 
+not directly represented by document content. The most familiar HTML example is the img 
+element, which is replaced by an image file external to the document itself. In fact, 
+img itself has no actual content, as we can see by considering a simple example:</p>
 <pre>
   <b>&lt;img</b> src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;<b>&gt;</b>
 </pre>
-There is no content contained in the element---only an element name and
-attributes. Only by replacing the element's lack of content with content
-found through other means (in this case, loading an external image
-specified by the src attribute) can the element have any presentation at
-all. Another example is the input element, which may be replaced with a
-radio button, checkbox, or text input box, depending on its type.
-Replaced elements also generate boxes in their display.
-
+<p>There is no content contained in the element---only an element name and attributes. 
+Only by replacing the element's lack of content with content found through other means 
+(in this case, loading an external image specified by the src attribute) can the element 
+have any presentation at all. Another example is the input element, which may be replaced 
+with a radio button, checkbox, or text input box, depending on its type. Replaced 
+elements also generate boxes in their display.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-7-1">1.7. Element Display Roles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In addition to being replaced or not, there are two basic types of
-element display roles in CSS: <i>block-level</i> and <i>inline-level</i>. All
-
-CSS display values fall into one of these two categories. It can be
-important to know which general role a box falls into, since some
-properties only apply to one type or the other. 
-
+<p>In addition to being replaced or not, there are two basic types of element display roles 
+in CSS: <i>block-level</i> and <i>inline-level</i>. All CSS display values fall into one 
+of these two categories. It can be important to know which general role a box falls into, 
+since some properties only apply to one type or the other.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Block-Level</h4>
-
-<i>Block-level boxes</i> are those where the element box (by default) fills
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><i>Block-level boxes</i> are those where the element box (by default) fills
 its parent element's content area width and cannot have other elements
 to its sides. In other words, block-level elements generate "breaks"
 before and after the element box. The most familiar block elements from
@@ -490,81 +508,77 @@ In addition to behaving in a manner consistent with other block
 elements, they generate a marker---typically a bullet for unordered
 lists or a number for ordered lists---which is "attached" to the element
 box. Except for the presence of this marker, list items are identical to
-other block elements.
+other block elements.</p>
 
-As of early 2018, the display values that create block boxes are block,
+<p>As of early 2018, the display values that create block boxes are block,
 list-item, table, table-row-group, table-headergroup,
 table-footer-group, table-column-group, table-row, table-column,
-table-cell, table-caption, flex, and grid.
-
+table-cell, table-caption, flex, and grid.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline-Level</h4>
-
-<i>Inline-level</i> boxes are those where an element box is generated within
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><i>Inline-level</i> boxes are those where an element box is generated within
 a line of text and does not break up the flow of that line. Perhaps the
 best-known inline element is the a element in HTML. Other examples are
 span and em. These elements do not generate a break before or after
 themselves, so they can appear within the content of another element
-without disrupting its display.
+without disrupting its display.</p>
 
-Note that although the CSS block and inline elements have a great deal
+<p>Note that although the CSS block and inline elements have a great deal
 in common with HTML block- and inline-level elements, there is an
 important difference. In HTML, block-level elements cannot descend from
 inline-level elements, whereas in CSS, there is no restriction on how
-display roles can be nested within each other.
+display roles can be nested within each other.</p>
 
-The display values that create inline boxes are: inline, inlineblock,
+<p>The display values that create inline boxes are: inline, inlineblock,
 inline-table, and ruby. As of this writing, it was not explicitly
 defined that the various Ruby-related values (e.g., ruby-text) also
-generate inline boxes, but this seems the most likely outcome.
-
+generate inline boxes, but this seems the most likely outcome.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-8-1">1.8. Basic Visual Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-CSS defines algorithms for laying out any element in a document. These
+<p>CSS defines algorithms for laying out any element in a document. These
 algorithms form the underpinnings of visual presentation in CSS. There
 are two primary kinds of layout, each with very different behaviors:
-<i>block-level</i> and <i>inline-level</i> layout.
-
+<i>block-level</i> and <i>inline-level</i> layout.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Block-Level Layout</h4>
-A block-level box in CSS generates a rectangular box called the <i>element
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A block-level box in CSS generates a rectangular box called the <i>element
 box</i>, which describes the amount of space occupied by an element. Figure
-1-2 shows the components of an element box.
+1-2 shows the components of an element box.</p>
 
 <!-- image003 -->
 <i>Figure 1-2. The complete box model</i>
 
-The following rules apply to an element box:
-
--   By default, the background of the element box extends to the outer
-    edge of the border, thus filling the content, padding, and border
-    areas (though this can be changed with background-clip). If the
-    border has any transparent portions (e.g., it is dotted or dashed),
-    the element background will be visible in those portions. The
-    background does not extend into the margin areas of the box. Any
-    outlines are drawn in the margin area and do not affect layout.
-
--   Only the margins, height, and width of an element box may be set to
-    auto.
-
--   Only margins can be given negative values.
-
--   The padding and border widths of the element box default to 0
-    (zero), and the border style defaults to none.
-
--   If box-sizing is content-box (the default value), the property width
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>The following rules apply to an element box:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>By default, the background of the element box extends to the outer edge of the 
+    border, thus filling the content, padding, and border areas (though this can be 
+	changed with background-clip). If the border has any transparent portions (e.g., it 
+	is dotted or dashed), the element background will be visible in those portions. The
+    background does not extend into the margin areas of the box. Any outlines are drawn 
+	in the margin area and do not affect layout.</li>
+  <li>Only the margins, height, and width of an element box may be set to auto.</li>
+  <li>Only margins can be given negative values.</li>
+  <li>The padding and border widths of the element box default to 0 (zero), and the 
+    border style defaults to none.</li>
+  <li>If box-sizing is content-box (the default value), the property width
     defines only the width of the content area; any padding, borders, or
     margins are added to it. The same is true for height with respect to
-    the height.
-
--   If box-sizing is padding-box, the property width defines the total
+    the height.</li>
+  <li>If box-sizing is padding-box, the property width defines the total
     width of the content and the padding. Any borders and margins are
-    added to it. The same is true for height with respect to the height.
-
--   If box-sizing is border-box, the property width defines the total
+    added to it. The same is true for height with respect to the height.</li>
+  <li>If box-sizing is border-box, the property width defines the total
     width of the content, padding, and borders; any margins are added to
-    it. The same is true for height with respect to the height.
-
+    it. The same is true for height with respect to the height.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline Layout</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 An inline-level box in CSS generates one or more rectangular boxes
 called <i>inline boxes</i>. The following rules apply to inline boxes:
 
@@ -593,8 +607,9 @@ for details.
 All inline elements have a line-height, which has a great deal to do
 with how the elements are displayed. The height of a line of text is
 determined by taking the following factors into account:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Anonymous text</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   Any string of characters not contained within an inline element. Thus,
   in the markup:
@@ -604,7 +619,9 @@ determined by taking the following factors into account:
   Note that the spaces are part  of the anonymous text, as a space is a character 
   like any other.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Em-box</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   The space taken up by a capital letter M in the given font; otherwise
   known as the character box. Actual glyphs can be taller or shorter
@@ -613,7 +630,9 @@ determined by taking the following factors into account:
   Edition](http://shop.oreilly.com/product/0636920012726.do). In
   CSS, the value of font-size determines the height of each em-box.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Content area</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   In nonreplaced elements, this can be the box described by the em-boxes
   of every character in the element, strung together, or else the box
@@ -630,7 +649,9 @@ determined by taking the following factors into account:
   surprisingly, <i>half-leading</i>. Leading is applied only to nonreplaced
   elements.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Inline box</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   The box described by the addition of the leading to the content area.
   For nonreplaced elements, the height of the inline box of an element
@@ -638,7 +659,9 @@ determined by taking the following factors into account:
   height of the inline box of an element will be equal to the content
   area, as leading is not applied to replaced elements.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Line box</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   The shortest box that bounds the highest and lowest points of the
   inline boxes that are found in the line. In other words, the top edge
@@ -744,7 +767,9 @@ occupied in the normal flow is preserved.
 The element's box behaves as though set to absolute, but its
 containing block is the viewport itself.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Containing Block</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 The containing block of a positioned element is determined as follows:
 
@@ -1030,7 +1055,9 @@ table. Figure 1-6 illustrates the components of a table.
 
 *Figure 1-6. Table layout components*
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Arrangement Rules</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In general, a table is laid out according to the following principles:
 
 -   Each row box encompasses a single row of grid cells. All of the row
@@ -1067,7 +1094,9 @@ In general, a table is laid out according to the following principles:
     be shortened until it fits within the table or row group that
     encloses it.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Fixed Table Layout</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The fixed-layout model is fast because its layout doesn't depend on the
 contents of table cells; it's driven by the width values of the table,
 columns, and cells within the first row of the table. The fixed-layout
@@ -1165,7 +1194,9 @@ table. This happens as follows:
 Once the last step is completed (and only then), the user agent can
 actually lay out the table.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Collapsing Cell Borders</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The collapsing cell model largely describes how HTML tables have always
 been laid out when they have no cell spacing. The following rules govern
 this model:
@@ -1223,7 +1254,9 @@ win and which will not:
 
 *Figure 1-7. Collapsing cell borders model*
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Vertical Alignment Within Cells</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The following describes the detailed process for aligning cell contents
 within a row:
 
@@ -1680,25 +1713,25 @@ attributes, can be addressed in this manner.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-15-1">2.15. Calculation Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Calculation values take the form calc(), with an equation inside the
+<p>Calculation values take the form calc(), with an equation inside the
 parentheses. calc() can be used wherever *&lt;length&gt;*, *&lt;frequency&gt;*,
 *&lt;angle&gt;*, *&lt;time&gt;*, *&lt;percentage&gt;*, *&lt;number&gt;*, or
-*&lt;integer&gt;* values are allowed. You can also use all these unit
+*&lt;integer&gt;* values are allowed. You can also use all these units.</p>
 
 <b>Identifiers</b>
-types within a calc() value, though there are some limitations to keep
-in mind.
+<p>types within a calc() value, though there are some limitations to keep
+in mind.</p>
 
-Inside the parentheses, you can construct simple mathematical
+<p>Inside the parentheses, you can construct simple mathematical
 expressions. The permitted operators are + (addition), -- (subtraction),
 &ast; (multiplcation), and / (division), as well as parentheses. These
 follow the traditional PEMDAS (parentheses, exponents, multiplication,
 division, addition, subtraction) precedence order---although in this
 case it's really just PMDAS, since as of early 2018, exponents are not
-permitted in calc().
+permitted in calc().</p>
 
-The basic limitation is that calc() does simple type-checking to make
-sure that units are compatible:
+<p>The basic limitation is that calc() does simple type-checking to make
+sure that units are compatible:</p>
 
 1.  To either side of a + or -- operator, both values must have the same
     unit type or must both be *&lt;number&gt;* and/or *&lt;integer&gt;* values
@@ -1715,21 +1748,19 @@ sure that units are compatible:
 4.  Any circumstance that creates division by zero makes the value
     invalid.
 
-There's one more notable limitation: whitespace is *required* to either
+<p>There's one more notable limitation: whitespace is *required* to either
 side of the + and - operators, while it is not for &ast; and /. This avoids
-ambiguity with respect to numeric values, which can be negative.
-
+ambiguity with respect to numeric values, which can be negative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-16-1">2.16. Variable Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As this book was being finished in early 2018, a new capability was
+<p>As this book was being finished in early 2018, a new capability was
 being added to CSS. The technical term for this is *custom properties*,
 even though what these really do is create (sort of) variables in your
 CSS. They do not, contrary to their name, create special CSS properties,
-in the sense of properties like color or font.
+in the sense of properties like color or font.</p>
 
-Custom properties are defined by giving a custom identifier a value,
-like this:
+<p>Custom properties are defined by giving a custom identifier a value, like this:</p>
 
 <pre>
 <b>html</b> {
@@ -1737,12 +1768,11 @@ like this:
 }
 </pre>
 
-The important thing is that any custom identifier of this type begins
+<p>The important thing is that any custom identifier of this type begins
 with *two* hyphens (&dash;-). Anything else, and the identifier will not be
-recognized, meaning the variable definition will fail.
+recognized, meaning the variable definition will fail.</p>
 
-The defined value can then be invoked later on using a var() value type,
-like this:
+<p>The defined value can then be invoked later on using a var() value type, like this:</p>
 
 <pre>
 <b>h1</b> {<b>color</b>: var(&dash;-mainColor);}
