@@ -1,7 +1,4 @@
 ---
-title: "CSS3 Reference Guide"
----
----
 title: |
   CSS3 Reference Buide
   by Brian Bauska
