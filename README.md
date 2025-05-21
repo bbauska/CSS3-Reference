@@ -1798,24 +1798,28 @@ scoped to the element to which they are applied.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1. Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### Universal Selector
+<h4>Universal Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** &ast;
 **Description** Matches any element name in the document's language. If
 a rule does not have an explicit selector, the universal selector is
 inferred.
 
-**Examples** &ast; {color: red;}
+**Examples** &ast; {color: red;}<br>
+             div &ast; p {color: blue;}
 
-div &ast; p {color: blue;} element1
-
-**Type Selector**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Type Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern**
 **Description** Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")
 **Examples** body {background: #FFF;} p {font-size: 1em;}
 
-### Descendant Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Descendant Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1 element2 ...
 **Description** Matches elements based on their status as a descendant
 of another element. The matched element can be a child, grandchild,
@@ -1823,7 +1827,10 @@ great-grandchild, etc. of the ancestor element. (CSS1 referred to these
 as "contextual selectors.")
 **Examples** body h1 {font-size: 200%;} table tr td div ul li {color:
 purple;} element1 &gt; element2
-**Child Selector**
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Child Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern**
 **Description** Matches an element based on its status as a child of
 another element. It is more restrictive than a descendant selector, as
@@ -1831,7 +1838,9 @@ only a child will be matched.
 **Examples** div &gt; p {color: cyan;}
 ul &gt; li {font-weight: bold;}
 
-### Adjacent Sibling Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Adjacent Sibling Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1 + element2
 **Description** Matches an element that is the following adjacent
 sibling of another element. (Sibling elements, as the name implies,
@@ -1845,7 +1854,9 @@ tree are considered.
 h1 + &ast; {margin-top: 0;}
 </pre>
 
-### General Sibling Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>General Sibling Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1 &#126; element2
 **Description** Matches an element that is a sibling of another element
 which it follows in the document tree. Any
@@ -1858,92 +1869,110 @@ elements and their positions in the document tree are considered.
 nav a &#126; a {border-left: 1px solid border;}
 </pre>
 
-### Class Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Class Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-| --------------- | --------------------------------------------------- |
-| **Pattern**     | element1.classname                                  |
-|                 | element1.classname1.classname2                      |
-| **Description** | In languages that permit it, such as HTML, SVG, and |
-|                | MathML, a class selector using "dot notation"       |
-|                | matches elements that have a class attribute        |
-|                | containing a specific value or values. The name of  |
-|                | the class value must immediately follow the dot.    |
-|                | Multiple class values can be chained together. If   |
-|                | no element name precedes the dot, the selector      |
-|                | matches all elements bearing that class value or    |
-|                | values.                                             |
-| **Examples**   | p.urgent {color: red;}                              |
-|                |                                                     |
-|                | a.external {font-style: italic;}                    |
-|                |                                                     |
-|                | .example {background: olive;}                       |
-|                |                                                     |
-|                | .note.caution {background: yellow;}                 |
-| **ID Selector**   |                                                     |
-| **Pattern**  | element1#idname                                     |
-| **Description** | In languages that permit it, such as HTML or SVG, |
-|                | an ID selector selects elements that have an id     |
-|                | attribute containing a specific value. The name of  |
-|                | the ID value must immediately follow the octothorpe |
-|                | (#). If no element name precedes the octothorpe,    |
-|                | the selector matches all elements containing that   |
-|                | ID value.                                           |
-| **Examples**   |                                                     |
-| h1#page-title  |                                                     |
-| {font-size:    |                                                     |
-| 250%;}         |                                                     |
-| body#home    |                                                     |
-| {background: |                                                     |
-| silver;}     |                                                     |
-| #example     |                                                     |
-| {background: |                                                     |
-| lime;}       |                                                     |
+ **Pattern**      element1.classname                                  
+                  element1.classname1.classname2                      
+ **Description**  In languages that permit it, such as HTML, SVG, and 
+                 MathML, a class selector using "dot notation"       
+                 matches elements that have a class attribute        
+                 containing a specific value or values. The name of  
+                 the class value must immediately follow the dot.    
+                 Multiple class values can be chained together. If   
+                 no element name precedes the dot, the selector      
+                 matches all elements bearing that class value or    
+                 values.                                             
+**Examples**    p.urgent {color: red;}                              
+                                                                     
+                 a.external {font-style: italic;}                    
+                                                                     
+                 .example {background: olive;}                       
+                                                                     
+                 .note.caution {background: yellow;}                 
 
-**Selectors**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>ID Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+ **Pattern**   element1#idname                                     
+ **Description**  In languages that permit it, such as HTML or SVG, 
+                 an ID selector selects elements that have an id     
+                 attribute containing a specific value. The name of  
+                 the ID value must immediately follow the octothorpe 
+                 (#). If no element name precedes the octothorpe,    
+                 the selector matches all elements containing that   
+                 ID value.                                           
+ **Examples**                                                        
+ h1#page-title                                                       
+ {font-size:                                                         
+ 250%;}                                                              
+ body#home                                                         
+ {background:                                                      
+ silver;}                                                          
+ #example                                                          
+ {background:                                                      
+ lime;}                                                            
 
-### Simple Attribute Selector
+<h3>Selectors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Simple Attribute Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;attr&rbrack;
 **Description** Matches elements based on the presence of an
 attribute, regardless of the attribute's value.
 
 **Examples** a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
-p&lbrack;class&rbrack; {border: 1px dotted silver;} **Exact Attribute Value
-Selector**
+p&lbrack;class&rbrack; {border: 1px dotted silver;} 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Exact Attribute Value Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;attr=&quot;value&quot;&rbrack;
 **Description** Matches elements based on the precise and complete value
 of an attribute.
 **Examples** a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
+p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} 
 
-### p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} Partial Attribute Value Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Partial Attribute Value Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
 **Description** Matches elements based on a portion of the
 spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;*value*&quot;&rbrack;
 is equivalent to *.value* (see above).
 **Examples** a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
+p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} 
 
-### p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} Beginning Substring Attribute Value Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Beginning Substring Attribute Value Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
 **Description** Matches elements based on a substring at the very
 beginning of an attribute's value.
-
 **Examples** a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 
-### Ending Substring Attribute Value Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Ending Substring Attribute Value Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
 **Description** Matches elements based on a substring at the very end of
 an attribute's value.
 **Example** a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 
-### Arbitrary Substring Attribute Value Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Arbitrary Substring Attribute Value Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
 **Description** Matches elements based on a substring found anywhere
 within an attribute's value.
-
 **Examples** a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
  div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
 
-### Language Attribute Selector
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Language Attribute Selector</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Pattern** element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
 **Description** Matches elements with a lang attribute whose value is
 one of a hyphen-separated list of values, starting with the value
@@ -1968,36 +1997,34 @@ example, selecting every other paragraph or elements that are the last
 children of their parent element.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### **:empty**
+<h4>:empty</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 | **Applies to** | Any element                                         |
-| **Description** | Matches elements that have no child nodes---that    |
-|                | is, no child elements *or* content nodes. Content   |
-|                | nodes are defined as any text, whitespace, entity   |
-|                | reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is    |
-|                | *not* empty because it has a single whitespace      |
-|                | character inside it; nor is the element empty if    |
-|                | that space is replaced with a newline. Note that    |
-|                | this pseudo-class does *not* apply to empty         |
-|                | elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so |
-|                | on.                                                 |
-| **Examples** | p:empty {padding: 1em; background: red;}            |
-|                | div:not(:empty) {border: 1px solid;                 |
-|                |                                                     |
-|                | padding: 1ch;} li:empty {display: none;}            |
+| **Description** | Matches elements that have no child nodes---that  
+                is, no child elements *or* content nodes. Content   
+                 nodes are defined as any text, whitespace, entity   
+                 reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
+                 *not* empty because it has a single whitespace      
+                 character inside it; nor is the element empty if    
+                 that space is replaced with a newline. Note that    
+                 this pseudo-class does *not* apply to empty         
+                 elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.|
+| **Examples** | p:empty {padding: 1em; background: red;}<br>
+                 div:not(:empty) {border: 1px solid;<br>
+                 padding: 1ch;} li:empty {display: none;} |
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### **:first-child**
+<h4>:first-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-| **Applies to**    | Any element                                         |
-| **Description** | Matches an element when it is the first child of    |
-|                | another element. Thus, div:first-child will select  |
-|                | any div that is the first child of another element, |
-|                | *not* the first child element of any div.           |
-| **Examples** | td:first-child {border-left: 1px solid;}            |
-|                | p:first-child {text-indent: 0; margin-top: 2em;}    |
+ **Applies to**    | Any element                                         |
+ **Description** | Matches an element when it is the first child of  
+                 another element. Thus, div:first-child will select  
+                 any div that is the first child of another element, 
+                 *not* the first child element of any div.           |
+ **Examples**  | td:first-child {border-left: 1px solid;}<br>
+                 p:first-child {text-indent: 0; margin-top: 2em;}    |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :first-of-type
+<h4>:first-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches an element when it is the first child of its
@@ -2010,7 +2037,7 @@ h2:first-of-type {color: fuchsia;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### **:lang**
+<h4>:lang</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 | **Applies to**    | Any element with associated language-encoding       |
 |                   | information.                                        |
@@ -2024,7 +2051,7 @@ h2:first-of-type {color: fuchsia;}
                 &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;} |                    |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### **:last-child**
+<h4>:last-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  **Applies to**    | Any element |
  **Description** | Matches an element when it is the last child of  
@@ -2035,7 +2062,7 @@ h2:first-of-type {color: fuchsia;}
                 p:last-child {margin-bottom: 2em;}      |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :last-of-type
+<h4>:last-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches an element when it is the last child of its
@@ -2051,7 +2078,7 @@ Any element
 
 <pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :nth-child(*a*n±*b*)
+<h4>:nth-child(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </pre>
 **Applies to**
@@ -2080,7 +2107,7 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :nth-last-child(*a*n±*b*)
+<h4>:nth-last-child(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Applies to** Any element
@@ -2098,7 +2125,7 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 tr:nth-last-child(odd) { background-color: #EEF;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :nth-last-of-type(*a*n±*b*)
+<h4>:nth-last-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches every *n*th child that is of the same type as
@@ -2119,7 +2146,7 @@ border: 2px solid;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :nth-of-type(*a*n±*b*)
+<h4>:nth-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Applies to** Any element
@@ -2142,7 +2169,7 @@ img:nth-of-type(3n) {float: right;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### :only-child
+<h4>:only-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches an element that is the only child element of its
@@ -2159,7 +2186,7 @@ Any element
 
 **:**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**only-of-type**
+<h4>only-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to**
 
@@ -2171,7 +2198,7 @@ type of its parent element. Note that an element can be selected by
 article:only-of-type {margin: 2em 0 3em;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**:root**
+<h4>:root</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** The root element
 
@@ -2218,7 +2245,7 @@ that it deserves its own subsection.
 |                | either a paragraph or a section, use                |
 |                | &ast;:not(p):not(section).                             |
 
-### The Negation Pseudo-Class
+<h4>The Negation Pseudo-Class</h4>
 As of early 2018, the "simple selector" restriction means that
 grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
