@@ -57,43 +57,13 @@ title: "CSS3 Reference"
 >### 4.4 [**Properties**](#ch4-4-1)
 
 <!-- page v -->
-### Preface
-Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
+<h2 style="text-align:right;">Preface</h2>
+<p>Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
 standard for the visual presentation of web pages (although it can be
 used in other settings as well). After a short introduction to the key
 concepts of CSS, this pocket reference provides an alphabetical
 reference to all CSS3 selectors, followed by an alphabetical reference
-to CSS3 properties.
-
-### Conventions Used in This Book
-The following typographical conventions are used in this book:
-*Italic*
-Used to indicate new terms, URLs, filenames, file extensions,
-directories, commands and options, and program names. For example, a
-path in the filesystem will appear as *C:\\windows\\system*.
-
-*&lt;Italic&gt; inside angle brackets*
-Shows text that should be replaced with user-supplied values or by
-values determined by context.
-
-Constant width
-Used to show the contents of files, or the output from commands.
-
-<!-- page vi -->
-There are further conventions relating to value syntax. These are
-explained at the beginning of Chapter 4.
-
-### Using Code Examples
-This book is here to help you get your job done. In general, you may use
-the code in this book in your programs and documentation. You do not
-need to contact us for permission unless you're reproducing a
-significant portion of the code. For example, writing a program that
-uses several chunks of code from this book does not require permission.
-Selling or distributing a CD-ROM of examples from O'Reilly books does
-require permission. Answering a question by citing this book and quoting
-example code does not require permission. Incorporating a significant
-amount of example code from this book into your product's documentation
-does require permission.
+to CSS3 properties.</p>
 
 <!-- page 1 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -101,13 +71,13 @@ does require permission.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1-1">1.1. Adding Styles to HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Styles can be applied to documents in three distinct ways, as discussed
-in the following sections.
+<p>Styles can be applied to documents in three distinct ways, as discussed in the 
+following sections.</p>
 
-#### Inline Styles
+<h4>Inline Styles</h4>
 In HTML, style information can be specified for an individual element
 via the style attribute. The value of a style attribute is a
-*declaration block* (see the section "Rule Structure" on page 5) without
+<i>declaration block</i> (see the section "Rule Structure" on page 5) without
 the curly braces:
 <pre>
 &lt;p style=&quot;color: red; background: yellow;&quot;&gt;Look out!
@@ -500,7 +470,7 @@ familiar HTML example is the img element, which is replaced by an image
 file external to the document itself. In fact, img itself has no actual
 content, as we can see by considering a simple example:
 
-**&lt;img** src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;**&gt;**
+<b>&lt;img</b> src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;<b>&gt;</b>
 
 There is no content contained in the element---only an element name and
 attributes. Only by replacing the element's lack of content with content
@@ -518,7 +488,7 @@ element display roles in CSS: *block-level* and *inline-level*. All
 
 CSS display values fall into one of these two categories. It can be
 important to know which general role a box falls into, since some
-properties only apply to one type or the other. **Block-Level**
+properties only apply to one type or the other. <b>Block-Level</b>
 
 *Block-level boxes* are those where the element box (by default) fills
 its parent element's content area width and cannot have other elements
@@ -535,7 +505,7 @@ other block elements.
 As of early 2018, the display values that create block boxes are block,
 list-item, table, table-row-group, table-headergroup,
 table-footer-group, table-column-group, table-row, table-column,
-table-cell, table-caption, flex, and grid. **Inline-Level**
+table-cell, table-caption, flex, and grid. <b>Inline-Level</b>
 
 *Inline-level* boxes are those where an element box is generated within
 a line of text and does not break up the flow of that line. Perhaps the
@@ -570,7 +540,7 @@ box*, which describes the amount of space occupied by an element. Figure
 
 *Figure 1-2. The complete box model*
 
-**Basic Visual Layout**
+<b>Basic Visual Layout</b>
 The following rules apply to an element box:
 
 -   By default, the background of the element box extends to the outer
@@ -639,11 +609,11 @@ determined by taking the following factors into account:
  Any string of characters not contained within an inline element. Thus,
  in the markup:
 
- **&lt;p&gt;**I&apos;m **&lt;em&gt;**so**&lt;/em&gt;** happy!**&lt;/p&gt;** the sequences
+ <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b> the sequences
  "I'm " and " happy!" are anonymous text. Note that the spaces are part
  of the anonymous text, as a space is a character like any other.
 
-**Basic Visual Layout**
+<b>Basic Visual Layout</b>
 *Em-box*
 
  The space taken up by a capital letter M in the given font; otherwise
@@ -714,7 +684,7 @@ the following rules:
     the left of the right outer edge of any left-floating element to its
     left.
 
-**Floating**
+<b>Floating</b>
 
 -   A floating element's top may not be higher than the inner top of its
     containing block.
@@ -742,7 +712,7 @@ the following rules:
 
 When elements are positioned, a number of special rules come into play.
 These rules govern not only the containing block of the element, but
-also how it is laid out within that element. **Types of Positioning**
+also how it is laid out within that element. <b>Types of Positioning</b>
 
 There are five types of positioning:
 
@@ -797,7 +767,7 @@ The containing block of a positioned element is determined as follows:
     static, its containing block is formed by the content edge of the
     nearest block-level, table-, cell-, or
 
-**Positioning**
+<b>Positioning</b>
 
 inline-block ancestor box. Despite this rule, relatively positioned
 elements are still simply offset (not positioned with respect to the
@@ -862,7 +832,7 @@ simplified version of the algorithm:
 
 2.  Any items that are inflexible are frozen in size. These are:
 
-**Flexible Box Layout**
+<b>Flexible Box Layout</b>
 
 -   Any item with a flex factor of zero
 
@@ -934,7 +904,7 @@ A grid is made up of the following components, as illustrated in Figure
     *inline axis* tracks, where (in Western languages) column tracks are
     on the block axis and row tracks are on the inline axis.
 
-**Grid Layout**
+<b>Grid Layout</b>
 *Figure 1-5. Grid layout components*
 
 The placement of grid lines can be quite complex, and is accomplished by
@@ -1003,7 +973,7 @@ repeat( &lbrack; *&lt;integer&gt; &vert;* auto-fill *&vert;* auto-fit &rbrack; ,
 sizes as many times as they like. The *&lt;integer&gt;* value must be positive.
 
 
-**Grid Layout**
+<b>Grid Layout</b>
 auto-fill and auto-fit delegate the number of tracks to the user
 agent. *&lt;track-list&gt;* can be any valid combination of track sizes.
 
@@ -1128,7 +1098,7 @@ At that point, the width of the table is set to be either the value of
 width for the table or the sum of the column widths, whichever is
 greater. If the table turns out to be wider than the column widths, the
 difference is divided by the number of columns and added to each of
-them. **Automatic Table Layout**
+them. <b>Automatic Table Layout</b>
 
 The automatic-layout model, although not as fast as the fixedlayout
 model, is likely to be much more familiar to authors, because it's
@@ -1227,7 +1197,7 @@ this model:
 -   Once they are collapsed, the borders between cells are centered on
     the hypothetical grid lines between the cells.
 
-**Collapsing borders**
+<b>Collapsing borders</b>
 When two or more borders are adjacent, they collapse into each other, as
 shown in Figure 1-7. There are strict rules governing which borders will
 win and which will not:
@@ -1392,7 +1362,7 @@ saturation and brightness values are always percentages. Hue angles 0
 and 360 are equivalent, and are both red. Hue angles greater than 360
 can be
 
-**Color Values**
+<b>Color Values</b>
 declared, but they are normalized to the 0--360 range; thus, setting a
 hue angle of 454 is equivalent to setting an angle of 94. Any HSL value,
 regardless of color angle, will be rendered as a shade of gray if the
@@ -1467,10 +1437,10 @@ permitted), followed immediately by a unit identifier. There should
 never be any space between the number and the unit identifier. A length
 value of 0 (zero) does not require a unit identifier.
 
-**Number Values**
+<b>Number Values</b>
 Length units are divided into two types: *absolute units*, which are (in
 theory) always measured in the same way, and *relative units*, which are
-measured in relation to other things. **Absolute Length Units**
+measured in relation to other things. <b>Absolute Length Units</b>
 
 The available absolute units are:
 
@@ -1517,8 +1487,8 @@ Another typographical term. A pica is equivalent to 12 points, which
 means there are 6 picas to an inch. The capital letters of text set to 1
 pica should be 1/6 of an inch tall. For example, p {font-size: 1.5pc;}
 would set text to be the same size as the example declarations found in
-the definition of points. Keep in mind the previous warnings. **Relative
-Length Units**
+the definition of points. Keep in mind the previous warnings. <b>Relative
+Length Units</b>
 
 The available relative units are:
 
@@ -1550,7 +1520,7 @@ the current font family and size. This is often, but erroneously,
 assumed to mean "one character." This will only be true in monospace
 fonts, where all characters are the same width.
 
-**Length Values**
+<b>Length Values</b>
 Since most proportional fonts have zeros that are
 slimmer than the alphabetic symbols, setting something like width:
 60ch will often result in lines of text with fewer than 60 characters.
@@ -1725,7 +1695,7 @@ parentheses. calc() can be used wherever *&lt;length&gt;*, *&lt;frequency&gt;*,
 *&lt;angle&gt;*, *&lt;time&gt;*, *&lt;percentage&gt;*, *&lt;number&gt;*, or
 *&lt;integer&gt;* values are allowed. You can also use all these unit
 
-**Identifiers**
+<b>Identifiers</b>
 types within a calc() value, though there are some limitations to keep
 in mind.
 
@@ -1792,7 +1762,7 @@ Note that these names are case-sensitive, so &dash;-maincolor and
 &dash;-MainColor are completely separate identifiers. Custom properties are
 scoped to the element to which they are applied.
 
-**Variable Values**
+<b>Variable Values</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3">3. CHAPTER 3 Selectors and Queries</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1800,55 +1770,55 @@ scoped to the element to which they are applied.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Universal Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** &ast;
-**Description** Matches any element name in the document's language. If
+<b>Pattern</b> &ast;
+<b>Description</b> Matches any element name in the document's language. If
 a rule does not have an explicit selector, the universal selector is
 inferred.
 
-**Examples** &ast; {color: red;}<br>
+<b>Examples</b> &ast; {color: red;}<br>
              div &ast; p {color: blue;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Type Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern**
-**Description** Matches the name of an element in the document's
+<b>Pattern</b>
+<b>Description</b> Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")
-**Examples** body {background: #FFF;} p {font-size: 1em;}
+<b>Examples</b> body {background: #FFF;} p {font-size: 1em;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Descendant Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1 element2 ...
-**Description** Matches elements based on their status as a descendant
+<b>Pattern</b> element1 element2 ...
+<b>Description</b> Matches elements based on their status as a descendant
 of another element. The matched element can be a child, grandchild,
 great-grandchild, etc. of the ancestor element. (CSS1 referred to these
 as "contextual selectors.")
-**Examples** body h1 {font-size: 200%;} table tr td div ul li {color:
+<b>Examples</b> body h1 {font-size: 200%;} table tr td div ul li {color:
 purple;} element1 &gt; element2
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Child Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern**
-**Description** Matches an element based on its status as a child of
+<b>Pattern</b>
+<b>Description</b> Matches an element based on its status as a child of
 another element. It is more restrictive than a descendant selector, as
 only a child will be matched.
-**Examples** div &gt; p {color: cyan;}
+<b>Examples</b> div &gt; p {color: cyan;}
 ul &gt; li {font-weight: bold;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adjacent Sibling Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1 + element2
-**Description** Matches an element that is the following adjacent
+<b>Pattern</b> element1 + element2
+<b>Description</b> Matches an element that is the following adjacent
 sibling of another element. (Sibling elements, as the name implies,
 share the same parent element.) Any anonymous text nodes between the two
 elements are ignored; only elements and their positions in the document
 tree are considered.
 
-**Examples** table + p {margin-top: 2.5em;}
+<b>Examples</b> table + p {margin-top: 2.5em;}
 
 <pre>
 h1 + &ast; {margin-top: 0;}
@@ -1857,13 +1827,13 @@ h1 + &ast; {margin-top: 0;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>General Sibling Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1 &#126; element2
-**Description** Matches an element that is a sibling of another element
+<b>Pattern</b> element1 &#126; element2
+<b>Description</b> Matches an element that is a sibling of another element
 which it follows in the document tree. Any
 text or other elements between the two elements are ignored; only the
 elements and their positions in the document tree are considered.
 
-**Examples** h1 &#126; h2 {margin-top: 2.5em;}
+<b>Examples</b> h1 &#126; h2 {margin-top: 2.5em;}
 
 <pre>
 nav a &#126; a {border-left: 1px solid border;}
@@ -1873,9 +1843,9 @@ nav a &#126; a {border-left: 1px solid border;}
 <h4>Class Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Pattern**      element1.classname                                  
+ <b>Pattern</b>      element1.classname                                  
                   element1.classname1.classname2                      
- **Description**  In languages that permit it, such as HTML, SVG, and 
+ <b>Description</b>  In languages that permit it, such as HTML, SVG, and 
                  MathML, a class selector using "dot notation"       
                  matches elements that have a class attribute        
                  containing a specific value or values. The name of  
@@ -1884,7 +1854,7 @@ nav a &#126; a {border-left: 1px solid border;}
                  no element name precedes the dot, the selector      
                  matches all elements bearing that class value or    
                  values.                                             
-**Examples**    p.urgent {color: red;}                              
+<b>Examples</b>    p.urgent {color: red;}                              
                                                                      
                  a.external {font-style: italic;}                    
                                                                      
@@ -1895,15 +1865,15 @@ nav a &#126; a {border-left: 1px solid border;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>ID Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Pattern**   element1#idname                                     
- **Description**  In languages that permit it, such as HTML or SVG, 
+ <b>Pattern</b>   element1#idname                                     
+ <b>Description</b>  In languages that permit it, such as HTML or SVG, 
                  an ID selector selects elements that have an id     
                  attribute containing a specific value. The name of  
                  the ID value must immediately follow the octothorpe 
                  (#). If no element name precedes the octothorpe,    
                  the selector matches all elements containing that   
                  ID value.                                           
- **Examples**                                                        
+ <b>Examples</b>                                                        
  h1#page-title                                                       
  {font-size:                                                         
  250%;}                                                              
@@ -1918,63 +1888,63 @@ nav a &#126; a {border-left: 1px solid border;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Simple Attribute Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;attr&rbrack;
-**Description** Matches elements based on the presence of an
+<b>Pattern</b> element1&lbrack;attr&rbrack;
+<b>Description</b> Matches elements based on the presence of an
 attribute, regardless of the attribute's value.
 
-**Examples** a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
+<b>Examples</b> a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
 p&lbrack;class&rbrack; {border: 1px dotted silver;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Exact Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;attr=&quot;value&quot;&rbrack;
-**Description** Matches elements based on the precise and complete value
+<b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
+<b>Description</b> Matches elements based on the precise and complete value
 of an attribute.
-**Examples** a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
+<b>Examples</b> a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
 p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Partial Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
-**Description** Matches elements based on a portion of the
+<b>Pattern</b> element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
+<b>Description</b> Matches elements based on a portion of the
 spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;*value*&quot;&rbrack;
 is equivalent to *.value* (see above).
-**Examples** a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
+<b>Examples</b> a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Beginning Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
-**Description** Matches elements based on a substring at the very
+<b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
+<b>Description</b> Matches elements based on a substring at the very
 beginning of an attribute's value.
-**Examples** a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
+<b>Examples</b> a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Ending Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
-**Description** Matches elements based on a substring at the very end of
+<b>Pattern</b> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
+<b>Description</b> Matches elements based on a substring at the very end of
 an attribute's value.
-**Example** a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
+<b>Example</b> a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Arbitrary Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
-**Description** Matches elements based on a substring found anywhere
+<b>Pattern</b> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
+<b>Description</b> Matches elements based on a substring found anywhere
 within an attribute's value.
-**Examples** a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
+<b>Examples</b> a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
  div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Language Attribute Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Pattern** element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
-**Description** Matches elements with a lang attribute whose value is
+<b>Pattern</b> element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
+<b>Description</b> Matches elements with a lang attribute whose value is
 one of a hyphen-separated list of values, starting with the value
 provided in the selector.
 
@@ -1984,7 +1954,7 @@ determined by the lang attribute of its nearest ancestor that does
 have one, or, lacking that, by the Content-Language HTTP header
 response field (or the respective meta http-equiv) for the document.
 
-**Example** html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
+<b>Example</b> html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-1">3.2. Structural Pseudo-Classes</h3>
@@ -1999,8 +1969,8 @@ children of their parent element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:empty</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-| **Applies to** | Any element                                         |
-| **Description** | Matches elements that have no child nodes---that  
+| <b>Applies to</b> | Any element                                         |
+| <b>Description</b> | Matches elements that have no child nodes---that  
                 is, no child elements *or* content nodes. Content   
                  nodes are defined as any text, whitespace, entity   
                  reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
@@ -2009,28 +1979,28 @@ children of their parent element.
                  that space is replaced with a newline. Note that    
                  this pseudo-class does *not* apply to empty         
                  elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.|
-| **Examples** | p:empty {padding: 1em; background: red;}<br>
+| <b>Examples</b> | p:empty {padding: 1em; background: red;}<br>
                  div:not(:empty) {border: 1px solid;<br>
                  padding: 1ch;} li:empty {display: none;} |
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:first-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Applies to**    | Any element                                         |
- **Description** | Matches an element when it is the first child of  
+ <b>Applies to</b>    | Any element                                         |
+ <b>Description</b> | Matches an element when it is the first child of  
                  another element. Thus, div:first-child will select  
                  any div that is the first child of another element, 
                  *not* the first child element of any div.           |
- **Examples**  | td:first-child {border-left: 1px solid;}<br>
+ <b>Examples</b>  | td:first-child {border-left: 1px solid;}<br>
                  p:first-child {text-indent: 0; margin-top: 2em;}    |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:first-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Applies to** Any element
-**Description** Matches an element when it is the first child of its
+<b>Applies to</b> Any element
+<b>Description</b> Matches an element when it is the first child of its
 type, as compared to all its sibling elements. Thus, div:first-of-type
 will select any div that is the first child div of another element.
-**Examples** td:first-of-type {border-left: 1px dotted;}
+<b>Examples</b> td:first-of-type {border-left: 1px dotted;}
 
 <pre>
 h2:first-of-type {color: fuchsia;}
@@ -2039,36 +2009,36 @@ h2:first-of-type {color: fuchsia;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:lang</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-| **Applies to**    | Any element with associated language-encoding       |
+| <b>Applies to</b>    | Any element with associated language-encoding       |
 |                   | information.                                        |
-| **Description** | Matches elements based on their human-language      |
+| <b>Description</b> | Matches elements based on their human-language      |
 |                 | encoding. Such language information must be         |
 |                | contained within, or otherwise associated with, the |
 |                | document---it cannot be assigned from CSS. The      |
 |                | handling of :lang is the same as for &vert;= attribute  |
 |                | selectors.                                          |
-| **Examples** | html:lang(en) {background: silver;} <br>
+| <b>Examples</b> | html:lang(en) {background: silver;} <br>
                 &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;} |                    |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:last-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Applies to**    | Any element |
- **Description** | Matches an element when it is the last child of  
+ <b>Applies to</b>    | Any element |
+ <b>Description</b> | Matches an element when it is the last child of  
                  another element. Thus, div:last-child will select  
                  any div that is the last child of another element, 
                  *not* the last child element of any div. |
- **Examples** | td:last-child {border-right: 1px solid;}<br>
+ <b>Examples</b> | td:last-child {border-right: 1px solid;}<br>
                 p:last-child {margin-bottom: 2em;}      |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:last-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Applies to** Any element
-**Description** Matches an element when it is the last child of its
+<b>Applies to</b> Any element
+<b>Description</b> Matches an element when it is the last child of its
 type, as compared to all its sibling elements. Thus, div:last-of-type
 will select any div that is the last child div of another element.
-**Examples** 
+<b>Examples</b> 
 
 <pre>
 td:last-of-type {border-right: 1px dotted;} h2:last-of-type {color: fuchsia;}
@@ -2081,9 +2051,9 @@ Any element
 <h4>:nth-child(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </pre>
-**Applies to**
+<b>Applies to</b>
 
-**Description** Matches every *n*th child with the pattern of selection
+<b>Description</b> Matches every *n*th child with the pattern of selection
 defined by the formula *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s
 and n represents an infinite series of integers, counting forward from
 the first child. Thus, to select every fourth child of the body element,
@@ -2101,7 +2071,7 @@ the body.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 
-**Examples** &ast;:nth-child(4n+1) {font-weight: bold;}
+<b>Examples</b> &ast;:nth-child(4n+1) {font-weight: bold;}
 <pre>
 tbody tr:nth-child(odd) {background-color: #EEF;}
 </pre>
@@ -2110,9 +2080,9 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
 <h4>:nth-last-child(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Applies to** Any element
+<b>Applies to</b> Any element
 
-**Description** Matches every *n*th child with the pattern of selection
+<b>Description</b> Matches every *n*th child with the pattern of selection
 defined by the formula *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s
 and n represents an infinite series of integers, *counting backward from
 the last child*. Thus, to select every fourth-to-last child of the body
@@ -2121,14 +2091,14 @@ element, starting with the last child, you would write body &gt;
 &ast;:nth-last-child(4n+1). This is, in effect, the mirror image of :nth-child.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
-**Examples** &ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
+<b>Examples</b> &ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
 tr:nth-last-child(odd) { background-color: #EEF;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-last-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Applies to** Any element
-**Description** Matches every *n*th child that is of the same type as
+<b>Applies to</b> Any element
+<b>Description</b> Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
 *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
 infinite series of integers, *counting backward from the last such
@@ -2139,7 +2109,7 @@ other elements (e.g., lists, tables, or other elements) are interspersed
 between the various paragraphs. In place of the *a*n±*b* formula, there
 are two keywords permitted: even and odd. These are equivalent to 2n and
 2n+1, respectively.
-**Examples** td:nth-last-of-type(even) {
+<b>Examples</b> td:nth-last-of-type(even) {
 <pre>
 background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
 border: 2px solid;}
@@ -2149,8 +2119,8 @@ border: 2px solid;}
 <h4>:nth-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Applies to** Any element
-**Description** Matches every *n*th child that is of the same type as
+<b>Applies to</b> Any element
+<b>Description</b> Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
 *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
 infinite series of integers, counting forward from the first such
@@ -2162,7 +2132,7 @@ true even if other elements (e.g., lists, tables, or other elements)
 are interspersed between the various paragraphs.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
-**Examples** td:nth-of-type(even) {background-color: #FCC;}
+<b>Examples</b> td:nth-of-type(even) {background-color: #FCC;}
 
 <pre>
 img:nth-of-type(3n) {float: right;}
@@ -2171,44 +2141,44 @@ img:nth-of-type(3n) {float: right;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:only-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Applies to** Any element
-**Description** Matches an element that is the only child element of its
+<b>Applies to</b> Any element
+<b>Description</b> Matches an element that is the only child element of its
 parent element. A common use case for this selector is to remove the
 border from any linked image, assuming that image is the only element in
 the link. Note that an element can be selected by :only-child even if it
 has its own child or children. It must simply be the only child of its
 parent.
 
-**Examples** a img:only-child {border: 0;}<br>
+<b>Examples</b> a img:only-child {border: 0;}<br>
              table div:only-child {margin: 5px;}
 
 Any element
 
-**:**
+<b>:</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>only-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Applies to**
+<b>Applies to</b>
 
-**Description** Matches an element that is the only child element of its
+<b>Description</b> Matches an element that is the only child element of its
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
 (such as divs within a div).
-**Examples** p em:only-of-type {font-weight: bold;} section
+<b>Examples</b> p em:only-of-type {font-weight: bold;} section
 article:only-of-type {margin: 2em 0 3em;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:root</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Applies to** The root element
+<b>Applies to</b> The root element
 
-**Description** This matches the document's root element, which in <br>
+<b>Description</b> This matches the document's root element, which in <br>
 HTML is always the html element. In SVG, it is the <br>
 svg element. In XML formats, the root element can <br>
 have any name; thus, a generic root-element selector <br>
 is needed.
 
-**Examples** :root {font: medium serif;}<br>
+<b>Examples</b> :root {font: medium serif;}<br>
              :root &gt; &ast; {margin: 1.5em 0;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2217,9 +2187,9 @@ is needed.
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
 
-|  **:not(*e*)** |                                                     |
-| **Applies to** | Any element                                         |
-| **Description** | Matches every element that is *not* described by    |
+|  <b>:not(*e*)</b> |                                                     |
+| <b>Applies to</b> | Any element                                         |
+| <b>Description</b> | Matches every element that is *not* described by    |
                 | the simple selector *e*. For example, you can       |
                 | select every element that is not a paragraph by     |
                 | stating &ast;:not(p).                                  |
@@ -2251,7 +2221,7 @@ grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
 Selectors Level 4.
 
-**Examples** ul &ast;:not(li) {text-indent: 2em;}
+<b>Examples</b> ul &ast;:not(li) {text-indent: 2em;}
 
 <pre>
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
@@ -2266,8 +2236,8 @@ an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.
 
 | --------------- | ---------------------------------------------------- |
-|  **:active**  |                                                     |
-|  **Applies to**    | Any interaction element                             |
+|  <b>:active</b>  |                                                     |
+|  <b>Applies to</b>    | Any interaction element                             |
 |  *Description*            | Matches an element during the period in which it is |
 |                     | being activated. The most common example is         |
 |                | clicking on a hyperlink in an HTML document: while  |
@@ -2275,14 +2245,14 @@ elements based on their being enabled or disabled.
 |                | active. There are other ways to activate elements,  |
 |                | and other elements can in theory be activated,      |
 |                | although CSS doesn't define them.                   |
-|  **Examples** | a:active {color: red;} &ast;:active {background:       |
+|  <b>Examples</b> | a:active {color: red;} &ast;:active {background:       |
 |                | blue;}                                              |
-|  **:checked** |                                                     |
-|  **Applies to**   | Any interaction element that has an on/off state    |
-| **Description** | Matches any user interface element that has been    |
+|  <b>:checked</b> |                                                     |
+|  <b>Applies to</b>   | Any interaction element that has an on/off state    |
+| <b>Description</b> | Matches any user interface element that has been    |
 |                 | "toggled on," such as a checked checkbox or a       |
 |                | filled radio button.                                |
-| **Examples** |                                                     |
+| <b>Examples</b> |                                                     |
 |              |                                                     |
 |  input:checked |                                                     |
 | { outline:   |                                                     |
@@ -2295,34 +2265,34 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px
 </pre>
 
 | --------------- | ---------------------------------------------------- |
-|  **:disabled** |                                                     |
-| **Applies to** | Any interaction element                             |
-| **Description** | Matches user interface elements that are not able   |
+|  <b>:disabled</b> |                                                     |
+| <b>Applies to</b> | Any interaction element                             |
+| <b>Description</b> | Matches user interface elements that are not able   |
 |                 | to accept user input because of language attributes |
 |                | or other nonpresentational means; for example,      |
 |                | &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note     |
 |                | that :disabled does *not* apply when an input       |
 |                | element has simply been removed from the viewport   |
 |                | with properties like position or display.           |
-| **Example**  | input:disabled {opacity: 0.5;}                      |
-| **:enabled** |                                                     |
-| **Applies to**    | Any interaction element                             |
-| **Description** | Matches user interface elements that are able to    |
+| <b>Example</b>  | input:disabled {opacity: 0.5;}                      |
+| <b>:enabled</b> |                                                     |
+| <b>Applies to</b>    | Any interaction element                             |
+| <b>Description</b> | Matches user interface elements that are able to    |
 |                 | accept user input and that can be set to "enabled"  |
 |                | and "disabled" states through the markup language   |
 |                | itself. This includes any form input element in     |
 |                | (X)HTML, but does not include hyperlinks.           |
-| **Example**  | input:enabled {background: #FCC;}                   |
-| **:focus**   |                                                     |
-| **Applies to**   | Any interaction element                             |
-| **Description** | Matches an element during the period in which it    |
+| <b>Example</b>  | input:enabled {background: #FCC;}                   |
+| <b>:focus</b>   |                                                     |
+| <b>Applies to</b>   | Any interaction element                             |
+| <b>Description</b> | Matches an element during the period in which it    |
 |                 | has focus. One example from HTML is an input box    |
 |                | that has the text-input cursor within it such that  |
 |                | when the user starts typing, text will be entered   |
 |                | into that box. Other elements, such as hyperlinks,  |
 |                | can also have focus; however, CSS does not define   |
 |                | which elements may or may not have focus.           |
-| **Examples** |                                                     |
+| <b>Examples</b> |                                                     |
 | a:focus      |                                                     |
 | {outline:    |                                                     |
 | 1px dotted   |                                                     |
@@ -2331,51 +2301,51 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { box-shadow: red 0 0 5px
 | {background: |                                                     |
 | yellow;}     |                                                     |
 
-**Interaction Pseudo-Classes**
+<b>Interaction Pseudo-Classes</b>
 
 | --------------- | ---------------------------------------------------- |
-| **:hover**      |                                                     |
-| **Applies to**  | Any interaction element                             |
-| **Description** | Matches an element during the period in which it is |
+| <b>:hover</b>      |                                                     |
+| <b>Applies to</b>  | Any interaction element                             |
+| <b>Description</b> | Matches an element during the period in which it is |
 |                 | being *hovered* over (when the user is designating  |
 |                 | an element without activating it). The most common  |
 |                 | example of this is moving the mouse pointer inside  |
 |                 | the boundaries of a hyperlink in an HTML document.  |
 |                 | Other elements can in theory be hovered over,       |
 |                 | although CSS doesn't define which ones.             |
-| **Examples**    | a&lbrack;href&rbrack;:hover {text-decoration: underline;} |
+| <b>Examples</b>    | a&lbrack;href&rbrack;:hover {text-decoration: underline;} |
 |                 |                                                     |
 |                 | p:hover {background: yellow;}                       |
-| **:link**       |                                                     |
-| **Applies to**  | A hyperlink to a resource that has not been visited |
-| **Description** | Matches a link to a URI that has not been visited;  |
+| <b>:link</b>       |                                                     |
+| <b>Applies to</b>  | A hyperlink to a resource that has not been visited |
+| <b>Description</b> | Matches a link to a URI that has not been visited;  |
 |                 | that is, the URI to which the link points does not  |
 |                 | appear in the user agent's history. This state is   |
 |                 | mutually exclusive with the :visited state.         |
-| **Examples**    | a:link {color: blue;} &ast;:link {text-decoration:  |
+| <b>Examples</b>    | a:link {color: blue;} &ast;:link {text-decoration:  |
 |                 | underline;}                                         |
-| **:target**     |                                                     |
+| <b>:target</b>     |                                                     |
 
-**Applies to** Any element
+<b>Applies to</b> Any element
 
-**Description** Matches an element which is itself matched by the
+<b>Description</b> Matches an element which is itself matched by the
 fragment identifier portion of the URI used to access the page. Thus,
 http://www.w3.org/TR/ css3-selectors/#target-pseudo would be matched by
 :target and would apply the declared styles to any element with the id
 of target-pseudo. If that element was a paragraph, it would also be
 matched by p:target.
 
-**Example** :target {background: #EE0;}
+<b>Example</b> :target {background: #EE0;}
 
 ### :visited
 
-**Applies to** A hyperlink to a resource that has already been visited
+<b>Applies to</b> A hyperlink to a resource that has already been visited
 
-**Description** Matches a link to a URI that has been visited; that is,
+<b>Description</b> Matches a link to a URI that has been visited; that is,
 the URI to which the link points appears in the user agent's history.
 This state is mutually exclusive with the :link state.
 
-**Examples** a:visited {color: purple;}
+<b>Examples</b> a:visited {color: purple;}
 <pre>
 &ast;:visited {color: gray;}
 </pre>
@@ -2391,35 +2361,35 @@ browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
 
 | --------------- | -------------------------------------------------- |
-| **::after**     |                                                     |
+| <b>::after</b>     |                                                     |
 |                 | A pseudo-element containing generated content       |
-| **Generates**   | placed after the content in the element             |
-| **Description** | Inserts generated content at the end of an          |
+| <b>Generates</b>   | placed after the content in the element             |
+| <b>Description</b> | Inserts generated content at the end of an          |
 |                 | element's content. By default, the pseudo-element   |
 |                 | is inline, but this can be changed using the        |
 |                 | property display.                                   |
-| **Examples**    | a.external:after {                                  |
+| <b>Examples</b>    | a.external:after {                                  |
 |                 | content: &quot; &quot; url(/icons/globe.gif);}              |
 |                 | p:after {content: &quot; &vert;; &quot;;}                       |
-| **::before**    |                                                     |
+| <b>::before</b>    |                                                     |
 |                 | A pseudo-element containing generated content       |
-|  **Generates**  | placed before the content in the element            |
-| **Description** | Inserts generated content at the beginning of an    |
+|  <b>Generates</b>  | placed before the content in the element            |
+| <b>Description</b> | Inserts generated content at the beginning of an    |
 |                 | element's content. By default, the pseudo-element   |
 |                 | is inline, but this can be changed using the property display. |
 
-**Pseudo-Elements**
+<b>Pseudo-Elements</b>
 
 inline, but this can be changed using the property display.
 
-**Examples** a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} p:before
+<b>Examples</b> a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} p:before
 {content: attr(class);} a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
 
 ### ::first-letter
 
-|  **Generates**   | A pseudo-element that contains the first letter of an element.  |
+|  <b>Generates</b>   | A pseudo-element that contains the first letter of an element.  |
 | ---------------- | -------------------------------------------------- |
-| **Description** | Styles the first letter of an element. Any leading  |
+| <b>Description</b> | Styles the first letter of an element. Any leading  |
 |                 | punctuation should be styled along with the first   |
 |                 | letter. Some languages have letter combinations     |
 |                 | that should be treated as a single character, and a |
@@ -2430,19 +2400,19 @@ inline, but this can be changed using the property display.
 |                 | display value of block, list-item, table-cell,      |
 |                 | table-caption, or inlineblock. There is a limited   |
 |                  | set of properties that can apply to a first letter. |
-| **Examples**     | h1:first-letter {font-size: 166%;} p:first-letter   |
+| <b>Examples</b>     | h1:first-letter {font-size: 166%;} p:first-letter   |
 |                  | {text-decoration: underline;}                       |
-| **::first-line** |                                                     |
+| <b>::first-line</b> |                                                     |
 
-**Generates** A pseudo-element that contains the first formatted line of
+<b>Generates</b> A pseudo-element that contains the first formatted line of
 an element
 
-**Description** Styles the first line of text in an element, regardless
+<b>Description</b> Styles the first line of text in an element, regardless
 of how many or how few words may appear in that line. ::first-line can
 be attached only to blocklevel elements. There is a limited set of
 properties that can apply to a first line.
 
-**Example** p.lead:first-line {font-weight: bold;}
+<b>Example</b> p.lead:first-line {font-weight: bold;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-1">3.6. Media Queries</h3>
@@ -2454,7 +2424,7 @@ In the past, this was handled by setting media types with the media
 attribute on link elements, or with the media descriptor on &#64;import
 declarations. Media queries take this concept several steps further by
 allowing authors to choose stylesheets based on the features of a given
-media type. **Basic Concepts**
+media type. <b>Basic Concepts</b>
 
 The placement of media queries will be very familiar to any author who
 has ever set a media type. Here are two ways of applying an external
@@ -2688,8 +2658,8 @@ Otherwise, they are ignored.
 A basic example is to ask the browser if it supports backgroundcolor:
 red:
 
-**&#64;supports** (**background-color**: red) { **html**
-{**background-color**: yellow;} **body** {**background-color**:
+<b>&#64;supports</b> (<b>background-color</b>: red) { <b>html</b>
+{<b>background-color</b>: yellow;} <b>body</b> {<b>background-color</b>:
 white;} }
 
 There is no obligation to use the property-value combination in the
@@ -2702,27 +2672,27 @@ Feature queries are useful when applying advanced CSS features. For
 example, converting a float-based layout to grid might look something
 like this:
 
-&lbrack;..**.float** **layout** **rules** **here**...&rbrack;
+&lbrack;..<b>.float</b> <b>layout</b> <b>rules</b> <b>here</b>...&rbrack;
 
-**&#64;supports** (**display**: grid) {
+<b>&#64;supports</b> (<b>display</b>: grid) {
 
-&lbrack;..**.grid** **layout** **rules** **here**...&rbrack;
+&lbrack;..<b>.grid</b> <b>layout</b> <b>rules</b> <b>here</b>...&rbrack;
 
-&lbrack;..**.rules** **that** **turn** **off** **margins**, **clearing**,
-**and** **other** **rules** **needed** **for** **float** **layout**
+&lbrack;..<b>.rules</b> <b>that</b> <b>turn</b> <b>off</b> <b>margins</b>, <b>clearing</b>,
+<b>and</b> <b>other</b> <b>rules</b> <b>needed</b> <b>for</b> <b>float</b> <b>layout</b>
 
-**but** **not** **in** **grid** **layout**...&rbrack; }
+<b>but</b> <b>not</b> <b>in</b> <b>grid</b> <b>layout</b>...&rbrack; }
 
 It's also possible to do a negated feature query using the keyword not:
 
-**&#64;supports** **not** (**shape-outside**: circle()) {
+<b>&#64;supports</b> <b>not</b> (<b>shape-outside</b>: circle()) {
 
-&lbrack;..**.rules** **for** **use** **in** **browsers** **that**
-**don**&apos;**t** **understand**
+&lbrack;..<b>.rules</b> <b>for</b> <b>use</b> <b>in</b> <b>browsers</b> <b>that</b>
+<b>don</b>&apos;<b>t</b> <b>understand</b>
 
-**circle** **float** **shapes**...&rbrack; }
+<b>circle</b> <b>float</b> <b>shapes</b>...&rbrack; }
 
-**Feature Queries**
+<b>Feature Queries</b>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4">4. CHAPTER 4 Property Reference</h2>
@@ -2815,19 +2785,19 @@ these keywords' meaning, see Chapter 2.
 
 | <b>align-content</b> | <b>Inh. N Anim. N</b> |
 |:-----------:|----------------------------------------------------------------:|
-| **Values**  | flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
+| <b>Values</b>  | flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
                 space-around &vert; space-evenly &vert; stretch |
-| **Initial value**   | stretch  |
-| **Computed value** | As declared |
-| **Applies to**  | Flex containers |
-| ** Description** | Defines the distribution of flex lines along the cross<br>
+| <b>Initial value</b>   | stretch  |
+| <b>Computed value</b> | As declared |
+| <b>Applies to</b>  | Flex containers |
+| <b> Description</b> | Defines the distribution of flex lines along the cross<br>
                      axis of a flex container, given that the container's<br>
                      cross-axis length does not equal the sum of the flex<br>
                      lines' size along the same axis. |
-|  **Examples** | aside {display: flex; align-content: center;}<br>
+|  <b>Examples</b> | aside {display: flex; align-content: center;}<br>
                   section {display: flex; height: 90vh;<br>
                     align-content: flex-end;} |
-| **Note**      | As of early 2018, there are plans to have this prop-<br>
+| <b>Note</b>      | As of early 2018, there are plans to have this prop-<br>
                   erty apply to many (or all) elements, not just flex<br>
                   flex containers, and be given the values start and end to replicate <br>
                   replicate flex-start and flex-end behavior for <br>
@@ -2835,107 +2805,86 @@ these keywords' meaning, see Chapter 2.
                   this change would make vertical centering of con-<br>
                   tent trivial in nearly all cases. |
 
-| **align-items** | **Inh. N Anim. N** |
+| <b>align-items</b> | <b>Inh. N Anim. N</b> |
 |:--------------:|----------------------------------------------------:|
-| **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch |
-| **Initial value** | stretch |
-| **Computed value**  | As declared                                         |
-| **Applies to**    | Flex containers, grid containers, and multicolumn containers  |
-| **Description** | Sets a flex-container-wide default for items' 
+| <b>Values</b>   | flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch |
+| <b>Initial value</b> | stretch |
+| <b>Computed value</b>  | As declared                                         |
+| <b>Applies to</b>    | Flex containers, grid containers, and multicolumn containers  |
+| <b>Description</b> | Sets a flex-container-wide default for items' 
                     alignment with respect to the cross axis of the
                     flex line they occupy. baseline alignment means the
                     items in a line are all placed such that the
                     baselines of their first lines of text line up. |
-| **Examples** | div.flexy {align-items: flex-start;} 
+| <b>Examples</b> | div.flexy {align-items: flex-start;} 
                  section.gallery {align-items: baseline;} |
-| **Note**      | As of early 2018, there are plans to have this
+| <b>Note</b>      | As of early 2018, there are plans to have this
                   property apply to many (or all) elements and be 
                   given the values start and end to replicate 
                   flex-start and flex-end behavior for non-flex 
                   environments. |
 
-|              | **Inh. N Anim. N**                                  |
-| **align-self** |                                                     |
-+----------------+-----------------------------------------------------+
-| **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert;     |
-|                | stretch                                             |
-+----------------+-----------------------------------------------------+
-| **Initial    | stretch                                             |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | Flex and grid items                                 |
-| to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| *            | Sets the alignment for a single item with respect   |
-| *Description** | to the cross axis of the flex line it occupies.     |
-|                | baseline                                            |
-+----------------+-----------------------------------------------------+
+| <b>align-self</b> | <b>Inh. N Anim. N</b> |
+|:--------------:|----------------------------------------------------:|
+| <b>Values</b>   | flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch |
+| <b>Initial value</b>    | stretch                                             |
+| <b>Computed value</b>  | As declared                                         |
+| <b>Applies to</b>   | Flex and grid items                                 |
+|             | 
+| <b>Description</b> | Sets the alignment for a single item with respect 
+                       to the cross axis of the flex line it occupies.
+ baseline                                            |
 
 alignment means the baseline of the item's first line of text is
 aligned with the lowest first-line baseline in the flex line.
 
-**Examples** div.flexy .midpointed {align-self: center;}
+<b>Examples</b> div.flexy .midpointed {align-self: center;}
 
 section.gallery h1 {align-self: stretch;}
 
-**Note** As of early 2018, there are plans to have this property apply
+<b>Note</b> As of early 2018, there are plans to have this property apply
 to many (or all) elements, and be given the values start and end to
 replicate flex-start and flex-end behavior for non-flex environments.
 
-+----------------+-----------------------------------------------------+
-| **all**      | **Inh. N Anim. N**                                  |
-+================+=====================================================+
-| **Values**   | inherit &vert; initial &vert; unset                         |
-+----------------+-----------------------------------------------------+
-| **Initial    | See individual properties                           |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | All elements                                        |
-| to**         |                                                     |
-+----------------+-----------------------------------------------------+
-| *            | Applies the declared value to all properties        |
-| *Description** | *except* direction and unicode-bidi, which are      |
-|                | exempted for accessibility and historical reasons.  |
-|                | This allows an author to, for example, force an     |
-|                | element to reset all of its style properties to     |
-|                | their default values, thus blocking the inheritance |
-|                | of values for all properties (except the exempted   |
-|                | two).                                               |
-+----------------+-----------------------------------------------------+
-| **Examples** | &ast;.blendin {all: inherit;}                          |
-|                |                                                     |
-|                | &ast;.embedded {all: unset;}                           |
-+----------------+-----------------------------------------------------+
-|              | **Inh. N Anim. N**                                  |
-|  **animation** |                                                     |
-+----------------+-----------------------------------------------------+
+| <b>all</b>      | <b>Inh. N Anim. N</b>                                  |
+|:--------------:|----------------------------------------------------:|
+| <b>Values</b>   | inherit &vert; initial &vert; unset                         |
+| <b>Initial value</b>   | See individual properties                           |
+| <b>Computed value</b>  | As declared                                         |
+| <b>Applies to</b>    | All elements                                        |
+| <b>Description</b> | Applies the declared value to all properties
+                    *except* direction and unicode-bidi, which are      
+                 exempted for accessibility and historical reasons.  
+                 This allows an author to, for example, force an     
+                 element to reset all of its style properties to     
+                 their default values, thus blocking the inheritance 
+                 of values for all properties (except the exempted   
+                 two).                                               |
+| <b>Examples</b> | &ast;.blendin {all: inherit;}<br>
+                 &ast;.embedded {all: unset;}                           |
 
-**Values** &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
+|  <b>animation</b> | <b>Inh. N Anim. N</b>                        |
++----------------+-----------------------------------------------------+
+<b>Values</b> &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
 
 *&lt;animation-timing-function&gt;* ‖ *&lt;animation-delay&gt;* ‖
 *&lt;animation-iteration-count&gt;* ‖ *&lt;animationdirection&gt;* ‖
 *&lt;animation-fill-mode&gt;* ‖ *&lt;animationplay-state&gt;* &rbrack;#
 
-**Initial value** 0s ease 0s 1 normal none running none
+<b>Initial value</b> 0s ease 0s 1 normal none running none
 
-**Computed value** As declared
+<b>Computed value</b> As declared
 
-**Applies to** All elements, ::before and ::after pseudoelements
+<b>Applies to</b> All elements, ::before and ::after pseudoelements
 
-**Description** A shorthand property encompassing all the aspects of one
+<b>Description</b> A shorthand property encompassing all the aspects of one
 or more comma-separated CSS animations. The parts of the value can occur
 in any order. Therefore, beware possible ambiguity in the delay and
 duration values. As of this writing, it is most likely that the first
 time value will be taken to define the duration and the second to define
 the delay, but this cannot be guaranteed.
 
-**Examples** div#slide {animation: &apos;slide&apos; 2.5s linear
+<b>Examples</b> div#slide {animation: &apos;slide&apos; 2.5s linear
 
 0 1 normal;}
 >
@@ -2943,38 +2892,34 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
 
 ### animation-delay Inh. N Anim. N
 
-  ------------------------------------------------------------------------
-  **Values**        *&lt;time&gt;*&#35;
-  ----------------- ------------------------------------------------------
-  **Initial value** 0s
+  <b>Values</b>        *&lt;time&gt;*&#35;
+|--------------|-----------------------------------------------------------|
+  <b>Initial value</b> 0s
 
-  **Computed        As declared
-  value**           
+  <b>Computed value</b>       As declared
+  <b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  **Applies to**    All elements, ::before and ::after pseudoelements
-
-  **Description**   Defines the amount of time that the user agent waits
+  <b>Description</b>   Defines the amount of time that the user agent waits
                     before starting the CSS animation(s). The timer starts
                     when the user agent applies the animation CSS. For a
                     noninteractive element, this is likely (but not
                     guaranteed) to be at the end of page load.
 
-  **Examples**      body {animation-delay: 1s, 2000ms, 4s;}
-  ------------------------------------------------------------------------
+  <b>Examples</b>      body {animation-delay: 1s, 2000ms, 4s;}
 
 a:hover {animation-delay: 400ms;}
 
 ### animation-direction Inh. N Anim. N
 
-**Values** &lbrack; normal &vert; reverse &vert; alternate &vert; alternatereverse &rbrack;#
+<b>Values</b> &lbrack; normal &vert; reverse &vert; alternate &vert; alternatereverse &rbrack;#
 
-**Initial value** normal
+<b>Initial value</b> normal
 
-**Computed value** As declared
+<b>Computed value</b> As declared
 
-**Applies to** All elements, ::before and ::after pseudoelements
+<b>Applies to</b> All elements, ::before and ::after pseudoelements
 
-**Description** Specifies whether a CSS animation with more than one
+<b>Description</b> Specifies whether a CSS animation with more than one
 cycle (see animation-iteration-count) should always go the same
 direction or should reverse direction on every other cycle. For example,
 an alternate animation that moves an element 300 pixels to the right
@@ -2982,24 +2927,22 @@ would move it 300 pixels to the left on every other cycle, thus
 returning it to its starting position. Setting that same animation to
 normal would cause the element to move 300 pixels right, then jump back
 to its starting place and move 300 pixels right again, over and over
-until the animation stops (assuming it ever does). **Examples** body
+until the animation stops (assuming it ever does). <b>Examples</b> body
 {animation-direction:
 
 alternate, normal, normal;} #scanner {animation-direction: normal;}
 
 ### animation-duration Inh. N Anim. N
 
-  ------------------------------------------------------------------------
-  **Values**        *&lt;time&gt;*&#35;
-  ----------------- ------------------------------------------------------
-  **Initial value** 0s
+  <b>Values</b>        *&lt;time&gt;*&#35;
 
-  **Computed        As declared
-  value**           
+  <b>Initial value</b> 0s
 
-  **Applies to**    All elements, ::before and ::after pseudoelements
+  <b>Computed value</b>       As declared
 
-  **Description**   Defines the length of time it should take for each
+  <b>Applies to</b>    All elements, ::before and ::after pseudoelements
+
+  <b>Description</b>   Defines the length of time it should take for each
                     cycle of a CSS animation to run from start to finish.
                     Therefore, in animations with only one cycle, it
                     defines the total time of the animation. The default
@@ -3007,24 +2950,21 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
                     besides moving the element from its start state to its
                     end state. Negative values are converted to 0s.
 
-  **Examples**      h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
-  ------------------------------------------------------------------------
+  <b>Examples</b>      h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
 
 .zip {animation-duration: 90ms;}
 
 ### animation-iteration-count Inh. N Anim. N
 
-  ------------------------------------------------------------------------
-  **Values**        &lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
-  ----------------- ------------------------------------------------------
-  **Initial value** 1
+  <b>Values</b>        &lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
 
-  **Computed        As declared
-  value**           
+  <b>Initial value</b> 1
 
-  **Applies to**    All elements, ::before and ::after pseudoelements
+  <b>Computed value</b>       As declared
 
-  **Description**   Defines the number of cycles in the animation(s). The
+  <b>Applies to</b>    All elements, ::before and ::after pseudoelements
+
+  <b>Description</b>   Defines the number of cycles in the animation(s). The
                     default value, 1, means that the animation will run
                     exactly once, going from the start state to the end
                     state. A fractional value (e.g., 2.75) means the
@@ -3034,24 +2974,17 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
                     name implies, infinite means the animation will never
                     end. Use with caution.
 
-  **Examples**      body {animation-iteration-count: 2, 1, 7.5875;}
-  ------------------------------------------------------------------------
+  <b>Examples</b>      body {animation-iteration-count: 2, 1, 7.5875;}
 
 ol.dance {animation-iteration-count: infinite;}
 
-#### animation-name Inh. N Anim. N
-
-  ------------------------------------------------------------------------
-  **Values**        &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;#
-  ----------------- ------------------------------------------------------
-  **Initial value** none
-
-  **Computed        As declared
-  value**           
-
-  **Applies to**    All elements, ::before and ::after pseudoelements
-
-  **Description**   Defines the declared name(s) of CSS animation(s). Each
+| <b>animation-name</b> | <b>Inh. N Anim. N</b> |
+|--------------------|--------------------------------------------------:|
+|  <b>Values</b>        | &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;# |
+|  <b>Initial value</b> | none |
+|  <b>Computed value</b> |      As declared |
+|  <b>Applies to</b>    | All elements, ::before and ::after pseudoelements |
+|  <b>Description</b>   Defines the declared name(s) of CSS animation(s). Each
                     name refers to a CSS animation keyframe atrule. If no
                     animation name is declared or the keyword none is
                     supplied, the animation is not run regardless of the
@@ -3059,115 +2992,83 @@ ol.dance {animation-iteration-count: infinite;}
                     given animation-name: bounce, none, jumper and that
                     the animation name jumper has not been defined, the
                     first animation will run but the second and third will
-                    not.
-  ------------------------------------------------------------------------
+                    not. |
 
-**Examples** html {animation-name: turn, slide, none;}
+<b>Examples</b> html {animation-name: turn, slide, none;}
 
 h2 {animation-name: flip;}
 
-### animation-play-state Inh. N Anim. N
-
-  ------------------------------------------------------------------------
-  **Values**        &lbrack; running &vert; paused &rbrack;#
-  ----------------- ------------------------------------------------------
-  **Initial value** running
-
-  **Computed        As declared
-  value**           
-
-  **Applies to**    All elements, ::before and ::after pseudoelements
-
-  **Description**   Defines the run state of one or more CSS animations.
+| <b>animation-play-state</b> | <b>Inh. N Anim. N</b> |
+|--------------------------|--------------------:|
+|  <b>Values</b>       | &lbrack; running &vert; paused &rbrack;# |
+|  <b>Initial value</b> | running |
+|  <b>Computed value</b> |      As declared |
+|  <b>Applies to</b>   | All elements, ::before and ::after pseudoelements |
+|  <b>Description</b> |   Defines the run state of one or more CSS animations.
                     The default state of running is the most useful in
                     static CSS environments, but it can be used to easily
                     stop or start animations via DOM scripting or
-                    interactive CSS (e.g., :hover).
-
-  **Examples**      pre {animation-play-state:
-  ------------------------------------------------------------------------
+                    interactive CSS (e.g., :hover). |
+|  <b>Examples</b>  |    pre {animation-play-state: |
 
 running, paused, running;} table {animation-play-state: running;}
 
-### animation-timing-function Inh. N Anim. N
-
-+---------------+------------------------------------------------------+
-| **Values**  | &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;          |
-|               | ease-in-out &vert; step-start &vert; step-end &vert;             |
-|               | steps(*&lt;integer&gt;*, start) &vert; steps(*&lt;integer&gt;*,  |
-|               | end) &vert; cubic-bezier(*&lt;number&gt;*,                   |
-|               | *&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*) &rbrack;#          |
-+===============+======================================================+
-| **Initial   | ease                                                 |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Computed  | As declared                                          |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Applies   | All elements, ::before and ::after pseudoelements    |
-| to**        |                                                      |
-+---------------+------------------------------------------------------+
-| **          | Defines how an animation is run over the course of   |
-| Description** | the animation's full cycle or within an individual   |
-|               | keyframe, depending on where the property is used.   |
-|               | The keywords are all defined to have cubicbezier()   |
-|               | equivalents; for example, linear is equivalent to    |
-|               | cubic-bezier(0,0,1,1). They should therefore have    |
-|               | consistent effects across user agents                |
-+---------------+------------------------------------------------------+
+| <b>animation-timing-function</b> | <b>Inh. N Anim. N</b> |
+|-------------------------------|------------------------------------------:|
+| <b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
+                ease-in-out &vert; step-start &vert; step-end &vert;             
+                steps(*&lt;integer&gt;*, start) &vert; steps(*&lt;integer&gt;*,  
+                end) &vert; cubic-bezier(*&lt;number&gt;*,                   
+                *&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*) &rbrack;#          |
+| <b>Initial value</b>  | ease                                                 |
+| <b>Computed value</b> | As declared                                          |
+| <b>Applies to</b>   | All elements, ::before and ::after pseudoelements    |
+| <b>Description</b> | Defines how an animation is run over the course of
+                    the animation's full cycle or within an individual  
+                keyframe, depending on where the property is used.   
+                The keywords are all defined to have cubicbezier()   
+                equivalents; for example, linear is equivalent to    
+                cubic-bezier(0,0,1,1). They should therefore have    
+                consistent effects across user agents                |
 
 ---but, as always, authors are cautioned not to count on that.
 
-**Examples** h1 {animation-timing-function: ease, ease-in,
+<b>Examples</b> h1 {animation-timing-function: ease, ease-in,
 cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
 linear;}
 
-### backface-visibility Inh. N Anim. N
+| <b>backface-visibility</b> | <b>Inh. N Anim. N</b> |
+|-----------------|-----------------------------------------------------:|
+| <b>Values</b>      | visible &vert; hidden                                |
+| <b>Initial value</b>      | visible                          |
+| <b>Computed value</b>     | As declared                               |
+| <b>Applies to</b>  | Any transformable element                        |
+| <b>Description</b> | Defines whether the back side of an element is   
+                    visible once the element has been rotated in a   
+                    simulated 3D space and is "facing away" from the 
+                    viewer. If the value is hidden, the element will 
+                    be effectively invisible until it is rotated     
+                    such that the front side of the element is once  
+                    more "facing toward" the viewer.                 |
 
-+-------------------+--------------------------------------------------+
-| **Values**      | visible &vert; hidden                                |
-+===================+==================================================+
-| **Initial       | visible                                          |
-| value**         |                                                  |
-+-------------------+--------------------------------------------------+
-| **Computed      | As declared                                      |
-| value**         |                                                  |
-+-------------------+--------------------------------------------------+
-| **Applies to**  | Any transformable element                        |
-+-------------------+--------------------------------------------------+
-| **Description** | Defines whether the back side of an element is   |
-|                   | visible once the element has been rotated in a   |
-|                   | simulated 3D space and is "facing away" from the |
-|                   | viewer. If the value is hidden, the element will |
-|                   | be effectively invisible until it is rotated     |
-|                   | such that the front side of the element is once  |
-|                   | more "facing toward" the viewer.                 |
-+-------------------+--------------------------------------------------+
-| **Examples**    | div.card {backface-visibility: hidden;}          |
+| <b>Examples</b>    | div.card {backface-visibility: hidden;}          |
 |                   | span.cubeside {backface-visibility: visible;}    |
-+-------------------+--------------------------------------------------+
-| **background**  | **Inh. N Anim. P**                               |
-+-------------------+--------------------------------------------------+
-| **Values**        | &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    |
-+-------------------+--------------------------------------------------+
-| **Initial value** | Refer to individual properties                   |
-+-------------------+--------------------------------------------------+
-| **Computed        | Refer to individual properties                   |
-| value**           |                                                  |
-+-------------------+--------------------------------------------------+
-| **Applies to**    | All elements                                     |
-+-------------------+--------------------------------------------------+
-| **Animatable**    | Refer to individual background properties to see |
-|                   | which are animatable                             |
-+-------------------+--------------------------------------------------+
-| **Description**   | A shorthand way of expressing the various        |
-|                   | background properties of one or more element     |
-|                   | backgrounds using a single declaration. As with  |
-|                   | all shorthands, this property will set all of    |
-|                   | the allowed values (e.g., the repeat, position,  |
-|                   | and so on) to their defaults if the values are   |
-|                   | not explicitly supplied.                         |
-+-------------------+--------------------------------------------------+
+
+| <b>background</b>  | <b>Inh. N Anim. P</b>                               |
+|-----------------|--------------------------------------------------|
+| <b>Values</b>        | &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    |
+| <b>Initial value</b> | Refer to individual properties                   |
+| <b>Computed value</b>        | Refer to individual properties |
+| <b>Applies to</b>    | All elements                                     |
+| <b>Animatable</b>    | Refer to individual background properties to see 
+                    which are animatable                             |
+| <b>Description</b>   | A shorthand way of expressing the various      
+                    background properties of one or more element     
+                    backgrounds using a single declaration. As with  
+                    all shorthands, this property will set all of    
+                    the allowed values (e.g., the repeat, position,  
+                    and so on) to their defaults if the values are   
+                    not explicitly supplied.                         |
 
 Thus, the following two rules will have the same appearance:
 
@@ -3188,55 +3089,38 @@ the images are stacked with the first highest and the last lowest.
 This is the exact reverse of how overlapping is handled in CSS
 positioning, and so may seem counterintuitive.
 
-**Examples** body {background: white url(bg41.gif) fixed center
+<b>Examples</b> body {background: white url(bg41.gif) fixed center
 repeat-x;} p {background:
 
 url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 #555;} pre {background: yellow;}
 
-### background-attachment Inh. N Anim. N
+| <b>background-attachment</b> | <b>Inh. N Anim. N</b> |
+|---------------------------|------------------------------:|
+| <b>Values</b>  | &lbrack; scroll &vert; fixed &vert; local &rbrack;#       |
+| <b>Initial value</b>  | scroll                                               |
+| <b>Computed value</b> | As declared                                          |
+| <b>Applies to</b>  | All elements                                         |
+| <b>Description</b> | Defines whether background images scroll along with
+                    the element when the document is scrolled. This 
+                property can be used to create "aligned" 
+                backgrounds; for more details, see Chapter 9 of 
+                *CSS: The Definitive Guide*, 4th Edition. |
 
-+---------------+------------------------------------------------------+
-| **Values**  | &lbrack; scroll &vert; fixed &vert; local &rbrack;#                      |
-+===============+======================================================+
-| **Initial   | scroll                                               |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Computed  | As declared                                          |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Applies   | All elements                                         |
-| to**        |                                                      |
-+---------------+------------------------------------------------------+
-| **          | Defines whether background images scroll along with  |
-| Description** | the element when the document is scrolled. This      |
-|               | property can be used to create "aligned"             |
-|               | backgrounds; for more details, see Chapter 9 of      |
-|               | *CSS: The Definitive Guide*, 4th Edition.            |
-+---------------+------------------------------------------------------+
-
-**Examples** body {background-attachment: scroll, scroll, fixed;}
+<b>Examples</b> body {background-attachment: scroll, scroll, fixed;}
 
 div.fixbg {background-attachment: fixed;}
 
-### background-blend-mode Inh. N Anim. N
-
-  ------------------------------------------------------------------------
-  **Values**        &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
+| <b>background-blend-mode</b> | <b>Inh. N Anim. N</b>
+|---------------------------|---------------------:|
+|  <b>Values</b>     |   &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
                     &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
                     &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
-                    saturation &vert; color &vert; luminosity &rbrack;#
-  ----------------- ------------------------------------------------------
-  **Initial value** normal
-
-  **Computed        As declared
-  value**           
-
-  **Applies to**    All elements
-
-  **Description**   Changes how overlapping background images are
-  ------------------------------------------------------------------------
-
+                    saturation &vert; color &vert; luminosity &rbrack;# |
+|  <b>Initial value</b> | normal |
+|  <b>Computed value</b> |      As declared |
+|  <b>Applies to</b> |   All elements |
+|  <b>Description</b>  | Changes how overlapping background images are
 composited against an "empty" backdrop. The "backdrop" here is a
 transparent layer underneath the background color. The default of
 normal imposes simple alpha blending, as CSS has permitted since its
@@ -3246,186 +3130,140 @@ result will show, at each pixel, either the image or its backdrop,
 whichever is lighter. darken is the same, except the darker of the two
 pixels will be shown. The results of these are likely to be familiar
 to users of Photoshop or any other graphic-editing tool. Compositing
-of multiple background layers is done back to front.
-
-**Examples** li.shadowed {background-blend-mode: darken;} aside
-{background-blend-mode: color-burn, luminosity, darken;}
+of multiple background layers is done back to front. |
+| <b>Examples</b> | li.shadowed {background-blend-mode: darken;} aside
+                 {background-blend-mode: color-burn, luminosity, darken;} |
 
 ### background-clip Inh. N Anim. N
 
-**Values** &lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#
-**Initial value** border-box **Computed value** As declared
+<b>Values</b> &lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#
+<b>Initial value</b> border-box <b>Computed value</b> As declared
 
-**Applies to** All elements
+<b>Applies to</b> All elements
 
-**Description** Defines the boundary within the element box at which the
+<b>Description</b> Defines the boundary within the element box at which the
 background is clipped (that is, no longer drawn). Historically, this has
 been equivalent to the default value of border-box, where the background
 goes to the outer edge of the border area. This property allows more
 constrained clipping boxes at the outer edge of the padding area and at
 the content edge itself.
 
-**Examples** body {background-clip: content-box;}
+<b>Examples</b> body {background-clip: content-box;}
 
 .callout {background-clip: content-box, border-box, padding-box;}
 
-+----------------+-------------------------------------+---------------+
-| **back       |                                     | **Inh. N      |
-| ground-color** |                                     | Anim. Y**     |
-+================+=====================================+===============+
-| **Values**   | *&lt;color&gt;*                         |               |
-+----------------+-------------------------------------+---------------+
-| **Initial    | transparent                         |               |
-| value**      |                                     |               |
-+----------------+-------------------------------------+---------------+
-| **Computed   | As declared                         |               |
-| value**      |                                     |               |
-+----------------+-------------------------------------+---------------+
-| **Applies    | All elements                        |               |
-| to**         |                                     |               |
-+----------------+-------------------------------------+---------------+
-| *            | Defines a solid color for the       |               |
-| *Description** | background of the element. This     |               |
-|                | color fills the box defined by the  |               |
-|                | value of background-clip---by       |               |
-|                | default, the content, padding, and  |               |
-|                | border areas of the element,        |               |
-|                | extending to the outer edge of the  |               |
-|                | element's border. Borders that have |               |
-|                | transparent sections (such as       |               |
-|                | dashed borders) will show the       |               |
-|                | background color through the        |               |
-|                | transparent sections in cases where |               |
-|                | the background color extends into   |               |
-|                | the border area.                    |               |
-+----------------+-------------------------------------+---------------+
-| **Examples** | h4 {background-color: white;}       |               |
-|                |                                     |               |
-|                | p {background-color:                |               |
-|                | rgba(50%,50%,50%,0.33);}            |               |
-|                |                                     |               |
-|                | pre {background-color: #FF9;}       |               |
-+----------------+-------------------------------------+---------------+
+| **background-color** | **Inh. N Anim. Y**     |
+| **Values**   | *&lt;color&gt;*                         |
+| **Initial value** | transparent                         |
+| **Computed value**  | As declared                       |
+| **Applies to**   | All elements                        |
+| **Description** | Defines a solid color for the 
+                    background of the element. This 
+                 color fills the box defined by the  
+                 value of background-clip---by       
+                 default, the content, padding, and  
+                 border areas of the element,        
+                 extending to the outer edge of the  
+                 element's border. Borders that have 
+                 transparent sections (such as       
+                 dashed borders) will show the       
+                 background color through the        
+                 transparent sections in cases where 
+                 the background color extends into 
+                 the border area. |
+| <b>Examples</b> | h4 {background-color: white;}
+                 p {background-color: 
+                 rgba(50%,50%,50%,0.33);} 
+                 pre {background-color: #FF9;} |
 
-### background-image Inh. N Anim. N
-
-**Values** &lbrack; *&lt;image&gt;* &vert; none &rbrack;#
-
-**Initial value** none
-
-**Computed value** As declared, but with all URIs made absolute
-
-**Applies to** All elements
-
-**Description** Places one or more images in the background of the
+| <b>background-image</b> | <b>Inh. N Anim. N</b> |
+|-------------------------|------------------------:|
+| <b>Values</b> | &lbrack; *&lt;image&gt;* &vert; none &rbrack;# |
+| <b>Initial value</b> | none |
+| **Computed value</b> | As declared, but with all URIs made absolute |
+| **Applies to</b> | All elements |
+| **Description</b> | Places one or more images in the background of the
 element. Depending on the value of backgroundrepeat, the image may tile
 infinitely, along one axis, or not at all. The initial background image
 (the origin image) is placed according to the value of
-background-position. **Examples** body {background-image:
+background-position. |
+| **Examples</b> | body {background-image:
+                 url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
+                 url(http://www.pix.org/dots.png);}  |
 
-url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
-url(http://www.pix.org/dots.png);}
-
-### background-origin Inh. N Anim. N
-
-+---------------+------------------------------------------------------+
-| **Values**    | &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;#      |
-+===============+======================================================+
-| **Initial     | padding-box                                          |
-| value**       |                                                      |
-+---------------+------------------------------------------------------+
-| **Computed    | As declared                                          |
-| value**       |                                                      |
-+---------------+------------------------------------------------------+
-| **Applies     | All elements                                         |
-| to**          |                                                      |
-+---------------+------------------------------------------------------+
-| **            | Defines the boundary within the element box against  |
-| Description** | which background image positioning is calculated.    |
-|               | Historically, this has been equivalent to the        |
-|               | default value of padding-box. This property allows   |
-|               | for different positioning contexts. Note that if the |
-|               | value of background-origin is "further out" than the |
-|               | value for background-clip, and the image is          |
-|               | positioned to an edge, part of it may be clipped.    |
-|               | For example:                                         |
-|               |                                                      |
-|               | div#example {background-origin: border-box;          |
-|               |                                                      |
-|               | background-clip: content-box; background-position:   |
-|               | 100% 100%;}                                          |
-|               |                                                      |
-|               | In this case the image will be placed so that its    |
-|               | bottom-right corner aligns with the bottom-right     |
-|               | corner of the outer border edge, but the only parts  |
-|               | of it that will be visible are those that fall       |
-|               | within the content area.                             |
-+---------------+------------------------------------------------------+
-| **Examples**  | html, body {background-origin: border-box;}          |
-+---------------+------------------------------------------------------+
+| <b>background-origin</b> | <b>Inh. N Anim. N</b> |
+|--------------------------|-----------------------:|
+| **Values</b>    | &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;#      |
+| **Initial value</b>     | padding-box                                      |
+| **Computed value</b>   | As declared                                     |
+| **Applies to</b>    | All elements                                       |
+| **Description</b> | Defines the boundary within the element box against
+                    which background image positioning is calculated.    
+                Historically, this has been equivalent to the        
+                default value of padding-box. This property allows   
+                for different positioning contexts. Note that if the 
+                value of background-origin is "further out" than the 
+                value for background-clip, and the image is          
+                positioned to an edge, part of it may be clipped.    
+                For example: 
+                div#example {background-origin: border-box; 
+                background-clip: content-box; background-position: 
+                100% 100%;} 
+                In this case the image will be placed so that its 
+                bottom-right corner aligns with the bottom-right 
+               corner of the outer border edge, but the only parts 
+                of it that will be visible are those that fall 
+                within the content area. |
+| **Examples**  | html, body {background-origin: border-box;} |
 
 h1 {background-origin: content-box, padding-box;}
 
-+----------------+-------------------------------------+---------------+
-| **backgro    |                                     | **Inh. N      |
-| und-position** |                                     | Anim. Y**     |
-+================+=====================================+===============+
-| **Values**   | *&lt;position&gt;*&#35;                    |               |
-+----------------+-------------------------------------+---------------+
-| **Initial    | 0% 0%                               |               |
-| value**      |                                     |               |
-+----------------+-------------------------------------+---------------+
-| **Computed   | The absolute length offsets, if     |               |
-| value**      | *&lt;length&gt;* is specified;          |               |
-|                | otherwise, percentage values        |               |
-+----------------+-------------------------------------+---------------+
-| *            | Refer to the corresponding point on |               |
-| *Percentages** | both the element and the origin     |               |
-|                | image                               |               |
-+----------------+-------------------------------------+---------------+
-| **Applies    | Block-level and replaced elements   |               |
-| to**         |                                     |               |
-+----------------+-------------------------------------+---------------+
-| *            | Defines the position(s) of one or   |               |
-| *Description** | more backgrounds' origin images (as |               |
-|                | defined by background-image); this  |               |
-|                | is the point from which any         |               |
-|                | background repetition or tiling     |               |
-|                | will occur. Percentage values       |               |
-|                | define not only a point within the  |               |
-|                | element, but also the same point in |               |
-|                | the origin image itself. That means |               |
-|                | (for example) an image can be       |               |
-|                | centered by declaring its position  |               |
-|                | to be 50% 50%. When percentage or   |               |
-|                | length values are used, the first   |               |
-|                | is always the horizontal position   |               |
-|                | and the second is the vertical      |               |
-|                | position. If only one value is      |               |
-|                | given, it sets the horizontal       |               |
-|                | position, while the missing value   |               |
-|                | is assumed to be either center or   |               |
-|                | 50%. Negative values are permitted  |               |
-|                | and may place the origin image      |               |
-|                | outside the element's content area  |               |
-|                | without actually rendering it. The  |               |
-|                | context within which an origin      |               |
-|                | image is placed can be affected by  |               |
-|                | the value of background-origin.     |               |
-+----------------+-------------------------------------+---------------+
-| **Examples** | body {background-position: top      |               |
-|                | center;} div#navbar                 |               |
-|                | {background-position:               |               |
-|                |                                     |               |
-|                | right, 50% 75%, 0 40px;} pre        |               |
-|                | {background-position: 10px 50%;}    |               |
-+----------------+-------------------------------------+---------------+
+| **background-position**    |   **Inh. N Anim. Y**     |
+|----------------------------|-------------------------:|
+| **Values**   | *&lt;position&gt;*&#35;                |
+| **Initial value**   | 0% 0%                  |
+| **Computed values**  | The absolute length offsets, if 
+                         *&lt;length&gt;* is specified;  
+                         otherwise, percentage values |
+| **Percentages** | Refer to the corresponding point on
+                    both the element and the origin image |
+| **Applies to**   | Block-level and replaced elements   |
+| **Description** | Defines the position(s) of one or
+                    more backgrounds' origin images (as
+                 defined by background-image); this                 
+                 is the point from which any                        
+                 background repetition or tiling                    
+                 will occur. Percentage values                      
+                 define not only a point within the                 
+                element, but also the same point in                
+                 the origin image itself. That means                
+                 (for example) an image can be                      
+                 centered by declaring its position                 
+                 to be 50% 50%. When percentage or                  
+                 length values are used, the first                  
+                 is always the horizontal position                  
+                 and the second is the vertical                     
+                 position. If only one value is                     
+                 given, it sets the horizontal                      
+                 position, while the missing value                  
+                 is assumed to be either center or                  
+                 50%. Negative values are permitted                 
+                 and may place the origin image                     
+                 outside the element's content area                 
+                 without actually rendering it. The                 
+                 context within which an origin                     
+                 image is placed can be affected by                 
+                 the value of background-origin. |
+| **Examples</b> | body {background-position: top 
+                 center;} div#navbar
+                 {background-position:
+                 right, 50% 75%, 0 40px;} pre
+                 {background-position: 10px 50%;} |
 
-### background-repeat Inh. N Anim. N
-
-**Values** *&lt;repeat-style&gt;*&#35;
-
-**Definition**
+| <b>background-repeat</b> | <b>Inh. N Anim. N</b> |
+|--------------------------|-----------------------:|
+| **Values** | *&lt;repeat-style&gt;*&#35; |
+| **Definition** |
 
 ***&lt;repeat-style&gt;*** repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;
 round &vert; no-repeat &rbrack;{1,2}
@@ -3453,67 +3291,48 @@ equivalent to no-repeat repeat.
 h2 {background-repeat: repeat-x, repeat-y;} ul {background-repeat:
 repeat-y, round space, repeat;}
 
-### background-size Inh. N Anim. Y
-
-+---------------+------------------------------------------------------+
-| **Values**  | &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto       |
-|               | &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#                      |
-+===============+======================================================+
-| **Initial   | auto                                                 |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Computed  | As declared, but with all lengths made absolute and  |
-| value**     | any missing auto keywords added                      |
-+---------------+------------------------------------------------------+
-| **Applies   | All elements                                         |
-| to**        |                                                      |
-+---------------+------------------------------------------------------+
-| **          | Defines the size of one or more background origin    |
-| Description** | images. If two keywords are used (e.g., 50px 25%),   |
-|               | the first defines the horizontal size of the image   |
-|               | and the second defines the vertical size. The origin |
-|               | image can be deformed to exactly cover the           |
-|               | background with 100% 100%. By contrast, cover scales |
-+---------------+------------------------------------------------------+
-
+| <b>background-size</b> | <b>Inh. N Anim. Y</b> |
+|------------------------|-----------------------:|
+| **Values**  | &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
+                &rbrack;{1,2} &vert; cover &vert; contain &rbrack;# |
+| **Initial value**  | auto                                         |
+| **Computed value** | As declared, but with all lengths made absolute and  
+                       any missing auto keywords added                      |
+| **Applies to**  | All elements                                         |
+| **Description** | Defines the size of one or more background origin
+                    images. If two keywords are used (e.g., 50px 25%),   
+                the first defines the horizontal size of the image   
+                and the second defines the vertical size. The origin 
+                image can be deformed to exactly cover the           
+                background with 100% 100%. By contrast, cover scales 
 up the image to cover the entire background even if some of it exceeds
 the background area and is thus clipped, and contain scales up the
 origin image so that at least one of its dimensions exactly fills the
-corresponding axis of the background area.
+corresponding axis of the background area. |
 
 **Examples** body {background-size: 100% 90%;}
 
 div.photo {background-size: cover;}
 
-+----------------+-----------------------------------------------------+
 | **border**   | **Inh. N Anim. P**                                  |
-+================+=====================================================+
+|--------------|------------------------------:|
 | **Values**   | &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖        |
 |                | *&lt;bordercolor&gt;* &rbrack;                                |
-+----------------+-----------------------------------------------------+
-| **Initial    | Refer to individual properties                      |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | All elements                                        |
-| to**         |                                                     |
-+----------------+-----------------------------------------------------+
-|              | Border width and color; not border style            |
+| **Initial value**   | Refer to individual properties                      |
+| **Computed value**  | As declared                                         |
+| **Applies to**   | All elements                                    
+|               Border width and color; not border style            |
 | **Animatable** |                                                     |
-+----------------+-----------------------------------------------------+
-| *            | A shorthand property that defines the width, color, |
-| *Description** | and style of an element's border. Note that while   |
-|                | none of the values are actually required, omitting  |
-|                | a border style will result in no border being       |
-|                | applied because the default border style is none.   |
-+----------------+-----------------------------------------------------+
+| **Description** | A shorthand property that defines the width, color,
+                    and style of an element's border. Note that while 
+                 none of the values are actually required, omitting  
+                 a border style will result in no border being       
+                 applied because the default border style is none.   |
+
 | **Examples** | h1 {border: 2px dashed olive;} a:link {border: blue |
 |                | solid 1px;}                                         |
 |                |                                                     |
 |                | p.warning {border: double 5px red;}                 |
-+----------------+-----------------------------------------------------+
 
 #### border-bottom Inh. N Anim. P
 
@@ -8410,7 +8229,7 @@ visibility property, 182 :visited pseudo-class, 63 visual layout basics,
 
 ## About the Author
 
-**Eric A. Meyer** has been working with the web since late 1993 and is an internationally 
+**Eric A. Meyer</b> has been working with the web since late 1993 and is an internationally 
 recognized expert on the subjects of HTML, CSS, and web standards. A widely read author, 
 he is CTO at <a href="http://rebeccasgift.org/">Rebecca's Gift</a>, a 501(c)(3) nonprofit 
 organization dedicated to providing healing family vacations after the death of a child; 
