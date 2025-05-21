@@ -388,28 +388,12 @@ specificity of that selector.</p>
   src="/images/image002.png?raw=true"
   title="Selector type specificity"
   alt="Selector type specificity."
-  style="width:20%;" />
+  style="width:40%;" />
 </p>
 
 <!-- image002 -->
 
-<i>Table 1-1. Selector type specificity</i>
-!--
-Selector type Example        Specificity 
-Universal selector    &ast;     0,0,0,0     
-Combinator               
-&plus;         
-Element identifier    div ::first-line       0,0,0,1     
-Pseudo-element                   
-identifier               
-Class identifier      .warning       0,0,1,0     
-Pseudo-class  :hover     
-identifier Attribute             
-identifier    &lbrack;type=&quot;checkbox&quot;&rbrack;      
-ID identifier #content       0,1,0,0     
-Inline style  style=&quot;color: red;&quot;  1,0,0,0     
-attribute                
--->
+<p style="align:center;"><i>Table 1-1. Selector type specificity</i></p>
 
 <p>Specificity values are cumulative; thus, a selector containing two element identifiers 
 and a class identifier (e.g., div.aside p) has a specificity of 0,0,1,2. Specificity values 
@@ -569,7 +553,7 @@ box</i>, which describes the amount of space occupied by an element. Figure
   src="/images/image003.png?raw=true"
   title=""
   alt="."
-  style="width:20%;" />
+  style="width:40%;" />
 </p>
 
 <!-- image003 -->
@@ -603,8 +587,8 @@ box</i>, which describes the amount of space occupied by an element. Figure
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-An inline-level box in CSS generates one or more rectangular boxes
-called <i>inline boxes</i>. The following rules apply to inline boxes:
+<p>An inline-level box in CSS generates one or more rectangular boxes
+called <i>inline boxes</i>. The following rules apply to inline boxes:</p>
 
 -   width and height do not apply to nonreplaced inline boxes.
 
@@ -624,59 +608,49 @@ called <i>inline boxes</i>. The following rules apply to inline boxes:
 	  intrinsic height but does have an intrinsic width and layout ratio,
 	  then height is set to be the intrinsic width divided by the ratio.
 
-There are a few rules even more obscure than those last two; see [the
-CSS box model documentation](http://w3.org/TR/css3-box/#inline-replaced)
-for details.
+<p>There are a few rules even more obscure than those last two; see 
+<a href="http://w3.org/TR/css3-box/#inline-replaced">the CSS box model documentation</a>
+for details.</p>
 
-All inline elements have a line-height, which has a great deal to do
+<p>All inline elements have a line-height, which has a great deal to do
 with how the elements are displayed. The height of a line of text is
-determined by taking the following factors into account:
+determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Anonymous text</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Any string of characters not contained within an inline element. Thus, in the markup:</p>
 
-  Any string of characters not contained within an inline element. Thus,
-  in the markup:
-
-  <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b>
-  the sequences "I'm " and " happy!" are anonymous text. 
-  Note that the spaces are part  of the anonymous text, as a space is a character 
-  like any other.
-
+<p><b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b>
+the sequences "I'm " and " happy!" are anonymous text. 
+Note that the spaces are part  of the anonymous text, as a space is a character 
+like any other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Em-box</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  The space taken up by a capital letter M in the given font; otherwise
-  known as the character box. Actual glyphs can be taller or shorter
-  than their em-boxes, as discussed in Chapter 5 of [<i>CSS: The</i>
-  <i>Definitive Guide</i>, 4th
-  Edition](http://shop.oreilly.com/product/0636920012726.do). In
-  CSS, the value of font-size determines the height of each em-box.
-
+<p>The space taken up by a capital letter M in the given font; otherwise
+known as the character box. Actual glyphs can be taller or shorter 
+than their em-boxes, as discussed in Chapter 5 of 
+<a href="http://shop.oreilly.com/product/0636920012726.do"><i>CSS: The Definitive Guide</i></a>, 
+the value of font-size determines the height of each em-box.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Content area</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  In nonreplaced elements, this can be the box described by the em-boxes
-  of every character in the element, strung together, or else the box
-  described by the character glyphs in the element. In CSS2.1 and later,
-  user agents can choose either. This text uses the em-box definition
-  for simplicity's sake. In replaced elements, the content area is the
-  intrinsic height of the element plus any margins, borders, or padding.
+In nonreplaced elements, this can be the box described by the em-boxes
+of every character in the element, strung together, or else the box
+described by the character glyphs in the element. In CSS2.1 and later,
+user agents can choose either. This text uses the em-box definition
+for simplicity's sake. In replaced elements, the content area is the
+intrinsic height of the element plus any margins, borders, or padding.
 
 <h5><i>Leading</i></h5>
-
-  The difference between the values of font-size and lineheight. Half
-  this difference is applied to the top and half to the bottom of the
-  content area. These additions to the content area are called, not
-  surprisingly, <i>half-leading</i>. Leading is applied only to nonreplaced
-  elements.
-
+<p>&nbsp;&nbsp;The difference between the values of font-size and lineheight. Half<br>
+&nbsp;&nbsp;this difference is applied to the top and half to the bottom of the<br>
+&nbsp;&nbsp;content area. These additions to the content area are called, not<br>
+&nbsp;&nbsp;surprisingly, <i>half-leading</i>. Leading is applied only to nonreplaced<br>
+&nbsp;&nbsp;elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Inline box</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
   The box described by the addition of the leading to the content area.
   For nonreplaced elements, the height of the inline box of an element
   will be equal to the value for line-height. For replaced elements, the
@@ -699,7 +673,7 @@ determined by taking the following factors into account:
   src="/images/image004.png?raw=true"
   title="Inline layout details"
   alt="Inline layout details."
-  style="width:20%;" />
+  style="width:40%;" />
 </p>
 <!-- image004 -->
 <i>Figure 1-3. Inline layout details</i>
