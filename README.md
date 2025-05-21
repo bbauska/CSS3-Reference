@@ -95,9 +95,9 @@ encourages poor authoring practices---authors are discouraged from using
 the style attribute, and thus inline styles.
 
 <!-- page 2 -->
-### Embedded Stylesheets
-A stylesheet can be embedded within an HTML document using the style
-element:
+<h4>Embedded Stylesheets</h4>
+<p>A stylesheet can be embedded within an HTML document using the style
+element:</p>
 <pre>
 <b>&lt;html&gt;&lt;head&gt;&lt;title&gt;</b>Stylin&apos;!<b>&lt;/title&gt;</b>
 <b>&lt;style</b> type=&quot;text/css&quot;<b>&gt; h1</b> {<b>color</b>: purple;}
@@ -106,27 +106,26 @@ element:
 <b>&lt;/head&gt;</b> &hellip;
 <b>&lt;/html&gt;</b>
 </pre>
-
-XML-based languages may or may not provide an equivalent capability;
+<p>XML-based languages may or may not provide an equivalent capability;
 always check the document type definition (DTD) to be certain.
 While style elements are often found inside the head element, as shown
 in the preceding example, this is not required. Sometimes stylesheets
-are embedded near the end of a document for performance reasons.
+are embedded near the end of a document for performance reasons.</p>
 
-### External Stylesheets
-Styles can be stored in a separate file. The primary advantage to using
+<h4>External Stylesheets</h4>
+<p>Styles can be stored in a separate file. The primary advantage to using
 a separate file is that when commonly used styles are collected in a
 single file, all pages using those styles can be updated by editing a
 single stylesheet. A downside is that it's generally more efficient to
 embed all styles (and scripts) into an HTML document in order to reduce
 network calls, although this downside will disappear as HTTP/2 usage
-increases.
-An external stylesheet can be referenced in one of three ways.
+increases.<p>
+<h5>An external stylesheet can be referenced in one of three ways.</h5>
 
-<b>&#64;import directive</b>
-One or more &#64;import directives can be placed at the beginning of any
+<h5>1. <b>&#64;import directive</b></h5>
+<p>One or more &#64;import directives can be placed at the beginning of any
 stylesheet. For HTML documents, this is done within an embedded
-stylesheet:
+stylesheet:</p>
 <!-- page 3 -->
 
 <pre>
@@ -141,14 +140,15 @@ stylesheet:
 <b>&lt;/head&gt;</b>
 </pre>
 
-Note that &#64;import directives can appear at the top (and, according to
+<p>Note that &#64;import directives can appear at the top (and, according to
 the specification, *only* at the top) of any stylesheet. Thus, one
-stylesheet could import another, which in turn would import a third.
-<b>link element</b>
-In HTML documents, the link element can be used to associate a
+stylesheet could import another, which in turn would import a third.</p>
+
+<h5>2. link element</h5>
+<p>In HTML documents, the link element can be used to associate a
 stylesheet with a document. Multiple link elements are permitted. The
 media attribute can be used to restrict a stylesheet to one or more
-media environments:
+media environments:</p>
 
 <pre>
 <b>&lt;head&gt;</b>
@@ -166,95 +166,87 @@ provide a way for users to make use of them. As of this writing, most or
 all known user agents load all linked stylesheets, including the
 alternate stylesheets, regardless of whether the user ever needs them.
 
-<b>xml-stylesheet processing instruction</b>
+<h5>xml-stylesheet processing instruction</h5>
 
-In XML documents (such as XHTML documents sent with a MIME type of
+<p>In XML documents (such as XHTML documents sent with a MIME type of
 text/xml, application/xml, or application/ xhtml+xml), an xml-stylesheet
 processing instruction can be used to associate a stylesheet with a
 document. Any xmlstylesheet processing instructions must be placed in
 the prolog of an XML document. Multiple xml-stylesheet processing
-
-<b>Adding Styles to HTML</b>
-<!-- page 4 -->
 instructions are permitted. The media pseudo-attribute can be used to
-restrict a stylesheet to one or more forms of media:
+restrict a stylesheet to one or more forms of media:</p>
+<!-- page 4 -->
 
 <pre>
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;basic.css&quot;
-media=&quot;all&quot;?&gt;
+  media=&quot;all&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;web.css&quot;
-media=&quot;screen&quot;?&gt;
+  media=&quot;screen&quot;?&gt;
 &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;paper.css&quot;
-media=&quot;print&quot;?&gt;
+  media=&quot;print&quot;?&gt;
 </pre>
 
-<b>HTTP Link headers</b>
-The last (and least common by far) way of associating an external
+<h5>3. <b>HTTP Link headers</b></h5>
+<p>The last (and least common by far) way of associating an external
 stylesheet with your pages is to use an HTTP Link header. This approach
 uses HTTP headers to replicate the effects of a link element or &#64;import
-directive.
+directive.</p>
 
-Adding a line such as this to the *.htaccess* file at the root level of
+<p>Adding a line such as this to the *.htaccess* file at the root level of
 your server will make this happen for all pages on the site, where
-/style.css is the server path of the stylesheet to be loaded:
-Header add Link
+/style.css is the server path of the stylesheet to be loaded:</p>
 
 <pre>
-&quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
+  &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 </pre>
 
-As an alternative to using *.htaccess*, which has been known to cause
+<p>As an alternative to using *.htaccess*, which has been known to cause
 performance problems, you can edit your *httpd.conf* file to do the same
-thing:
+thing:</p>
 
 <pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
-</pre>
-
-Header add Link
-
-<pre>
-&quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
+  &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 &lt;/Directory&gt; 
 </pre>
 
-where /usr/local/username/httpdocs is replaced with the
+<p>where /usr/local/username/httpdocs is replaced with the
 Unix pathname of your website's actual home directory, and /style.css is
-replaced with the location of the stylesheet within that home directory.
-As of this writing, HTTP headers were not supported by all user agents,
+replaced with the location of the stylesheet within that home directory.</p>
+<p>As of this writing, HTTP headers were not supported by all user agents,
 most notably Internet Explorer and Safari. Thus, this technique is
 usually limited to production environments based on other user agents,
-and the occasional Easter egg for Firefox and Opera users.
+and the occasional Easter egg for Firefox and Opera users.</p>
 
 <!-- page 5 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2-1">Rule Structure</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A stylesheet consists of one or more *rules* that describe how page
+<p>A stylesheet consists of one or more *rules* that describe how page
 elements should be presented. Every rule has two fundamental parts: the
 *selector* and the *declaration block*. Figure 1-1 illustrates the
-structure of a rule.
-*Figure 1-1. Rule structure*
-On the left side of the rule, we find the selector, which selects the
+structure of a rule.</p>
+<!-- image001 rule structure -->
+<i>Figure 1-1. Rule structure</i>
+<p>On the left side of the rule, we find the selector, which selects the
 parts of the document to which the rule should be applied. Selectors can
 stand singly or be grouped as a comma-separated list; e.g., to select
 the top three heading levels at once, the selector group would be h1,
 h2, h3. On the right side of the rule, we have the declaration block. A
 declaration block is made up of one or more *declarations*; each
 declaration is a combination of a CSS *property* and a *value* of that
-property.
-The declaration block is always enclosed in curly braces. A declaration
+property.</p>
+<p>The declaration block is always enclosed in curly braces. A declaration
 block can contain several declarations; each declaration must be
 terminated with a semicolon (;). The exception is the final declaration
 in a declaration block, for which the semicolon is optional (though
-recommended).
-Each property, which represents a particular stylistic parameter, is
+recommended).</p>
+<p>Each property, which represents a particular stylistic parameter, is
 separated from its value by a colon (:). Property names in CSS are not
 case-sensitive. Legal values for a property are defined by the property
 description. Chapter 4 provides details on acceptable values for CSS
-properties.
+properties.</p>
 
-<b>Rule Structure</b>
 <!-- page 6 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3-1">1.3. At-rules</h3>
