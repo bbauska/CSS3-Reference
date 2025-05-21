@@ -1675,7 +1675,6 @@ That might seem a little convoluted and repetitive, but it's all down to
 the subtly complex patterns that this value type has to allow, such as
 center, bottom right, 50% center, left 77px, and so on. The notation
 used here is described in "Value Syntax Conventions" on page 73.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-12-1">2.12. Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1784,17 +1783,16 @@ recognized, meaning the variable definition will fail.</p>
 <b>h1</b> {<b>color</b>: var(&dash;-mainColor);}
 </pre>
 
-Note that these names are case-sensitive, so &dash;-maincolor and
+<p>Note that these names are case-sensitive, so &dash;-maincolor and
 &dash;-MainColor are completely separate identifiers. Custom properties are
-scoped to the element to which they are applied.
-
-<b>Variable Values</b>
+scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3">3. CHAPTER 3 Selectors and Queries</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1. Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Universal Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> &ast;
 <b>Description</b> Matches any element name in the document's language. If
@@ -1832,6 +1830,7 @@ purple;} element1 &gt; element2
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Child Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b>
 <b>Description</b> Matches an element based on its status as a child of
@@ -1860,6 +1859,7 @@ h1 + &ast; {margin-top: 0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>General Sibling Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1 &#126; element2
 <b>Description</b> Matches an element that is a sibling of another element
@@ -1875,19 +1875,20 @@ nav a &#126; a {border-left: 1px solid border;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Class Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- <b>Pattern</b>      element1.classname  
-  element1.classname1.classname2      
- <b>Description</b>  In languages that permit it, such as HTML, SVG, and 
- MathML, a class selector using "dot notation"       
- matches elements that have a class attribute
- containing a specific value or values. The name of  
- the class value must immediately follow the dot.    
- Multiple class values can be chained together. If   
- no element name precedes the dot, the selector      
- matches all elements bearing that class value or    
- values.     
+<b>Pattern</b>      element1.classname  
+element1.classname1.classname2      
+<b>Description</b>  In languages that permit it, such as HTML, SVG, and 
+MathML, a class selector using "dot notation"       
+matches elements that have a class attribute
+containing a specific value or values. The name of  
+the class value must immediately follow the dot.    
+Multiple class values can be chained together. If   
+no element name precedes the dot, the selector      
+matches all elements bearing that class value or    
+values.     
 <b>Examples</b>
 <pre>
 p.urgent {color: red;}      
@@ -1897,6 +1898,7 @@ a.external {font-style: italic;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>ID Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  <b>Pattern</b>   element1#idname     
  <b>Description</b>  In languages that permit it, such as HTML or SVG, 
@@ -1922,6 +1924,7 @@ a.external {font-style: italic;}
 <h3>Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Simple Attribute Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr&rbrack;
 <b>Description</b> Matches elements based on the presence of an
@@ -1934,6 +1937,7 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Exact Attribute Value Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
 <b>Description</b> Matches elements based on the precise and complete value
@@ -1957,6 +1961,7 @@ p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Beginning Substring Attribute Value Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
 <b>Description</b> Matches elements based on a substring at the very
@@ -1968,6 +1973,7 @@ p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Ending Substring Attribute Value Selector</h4>
+<hr width="60%" color="green" size="5px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
 <b>Description</b> Matches elements based on a substring at the very end of
