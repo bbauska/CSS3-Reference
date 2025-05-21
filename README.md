@@ -249,13 +249,13 @@ properties.</p>
 
 <!-- page 6 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3-1">1.3. At-rules</h3>
+<h3 id="ch1-3-1">1.3. <b><mark>&#64; At-rules</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A CSS *at-rule* is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:</p>
 
 <ul>
-  <li>&#64;charset<br>
+  <li><b><mark>&#64;charset</mark></b><br>
     Allows an author to define the encoding of the styles within the
 	stylesheet (e.g., &#64;charset &quot;utf-8&quot;;). This enables authors to
 	define the encoding of their styles even when they do not control the
@@ -264,12 +264,12 @@ specific identifier preceded by an @ sign. These are:</p>
 	This *must* be the first line of a stylesheet in which it appears, and
 	*cannot* be preceded by any character. &#64;charset cannot be used in a
 	stylesheet embedded in a document.</li>
-  <li>&#64;import<br>
+  <li><b><mark>&#64;import</mark></b><br>
     Allows an author to include the styles of another stylesheet (see
 	"@import directive" on page 2). Multiple &#64;import rules are permitted. 
 	Any &#64;import rules *must* appear before all other parts of the stylesheet 
 	except for &#64;charset.</li>
-  <li>&#64;namespace<br>
+  <li><b><mark>&#64;namespace</mark></b><br>
     Allows an author to define an XML namespace to be used in selectors
 	(e.g., &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting
 	the use of svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG
@@ -281,22 +281,22 @@ specific identifier preceded by an @ sign. These are:</p>
 These include:</p>
 
 <ul>
-  <li>&#64;counter-style<br>
+  <li><b><mark>&#64;counter-style</mark></b><br>
     Defines symbol and counting patterns used in CSS counters (e.g., the
 	numbering of list items in an ordered list).</li>
-  <li>&#64;font-face<br>
+  <li><b><mark>&#64;font-face</mark></b><br>
     Defines an external font to be downloaded and used, including
 	definitions of the identifiers to be used in other style rules. This
 	is part of what is often called "web fonts" or "custom fonts."</li>
-  <li>&#64;keyframes<br>
+  <li><b><mark>&#64;keyframes</mark></b><br>
     Defines the states of various steps in an animation sequence, grouped
 	together under a unique identifier.</li>
-  <li>&#64;media<br>
+  <li><b><mark>&#64;media</mark></b><br>
     Defines the media types and parameters in which a block of styles are
 	to be applied: e.g., writing &#64;media (maxwidth: 600px) and then the
 	styles to be used for smaller screens. This is the key to Responsive
 	Web Design.</li>
-  <li>&#64;supports<br>
+  <li><b><mark>&#64;supports</mark></b><br>
     Defines the browser-support conditions under which a block of styles
 	should be used: e.g., writing &#64;supports (display: grid) and then 
 	the styles that should be used in a CSS Grid--supporting browser.</li>
@@ -311,13 +311,13 @@ various stages of development. These include &#64;document,
 like this:</p>
 <pre>/&ast; This is a comment! &ast;/</pre>
 <p>Comments can be multiple lines long:</p>
-<pre>/&ast; This is a comment!<br>
-This is a continuation of the comment.<br>
+<pre>/&ast; This is a comment!
+This is a continuation of the comment.
 And so is this. &ast;/</pre>
 <p>They can also occur anywhere within a stylesheet except in the middle of
 a property name or value:</p>
-<b>Comments</b>
 
+<h4>Comments</h4>
 <pre>
 <b>h1</b>/&ast; heading-level-1 &ast;/ {color /&ast; foreground color &ast;/:
   rgba(23,58,89,0.42) /&ast; RGB + opacity &ast;/;}
@@ -344,25 +344,26 @@ cascade are specificity and inheritance.
 associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
 
+<!-- image002 -->
+
 *Table 1-1. Selector type specificity*
 
- Selector type Example        Specificity 
-------------------------------------------------------------------
- Universal selector    &ast;     0,0,0,0     
- Combinator               
- &plus;         
- Element identifier    div ::first-line       0,0,0,1     
+Selector type Example        Specificity 
+Universal selector    &ast;     0,0,0,0     
+Combinator               
+&plus;         
+Element identifier    div ::first-line       0,0,0,1     
                    
- Pseudo-element                   
- identifier               
- Class identifier      .warning       0,0,1,0     
+Pseudo-element                   
+identifier               
+Class identifier      .warning       0,0,1,0     
                    
- Pseudo-class  :hover     
- identifier Attribute             
- identifier    &lbrack;type=&quot;checkbox&quot;&rbrack;      
- ID identifier #content       0,1,0,0     
- Inline style  style=&quot;color: red;&quot;  1,0,0,0     
- attribute                
+Pseudo-class  :hover     
+identifier Attribute             
+identifier    &lbrack;type=&quot;checkbox&quot;&rbrack;      
+ID identifier #content       0,1,0,0     
+Inline style  style=&quot;color: red;&quot;  1,0,0,0     
+attribute                
 
 Specificity values are cumulative; thus, a selector containing two
 element identifiers and a class identifier (e.g., div.aside p) has a
@@ -374,7 +375,9 @@ identifier (0,0,1,0).
 The !important directive gives a declaration more weight than
 nonimportant declarations. The declaration retains the specificity of
 its selectors and is used only in comparison with other important
-declarations. <b>Inheritance</b>
+declarations. 
+
+<h4>Inheritance</h4>
 
 The elements in a document form a treelike hierarchy, with the root
 element at the top and the rest of the document structure spreading out
@@ -397,9 +400,7 @@ Note that some properties are not inherited. A property will always
 define whether it is inherited. Some examples of noninherited properties
 are padding, border, margin, and background.
 
-<b>Style Precedence</b>
-
-### The Cascade
+<h5>The Cascade</h5>
 The cascade is how CSS resolves conflicts between styles; in other
 words, it is the mechanism by which a user agent decides, for example,
 what color to make an element when two different rules apply to it and
@@ -456,9 +457,9 @@ something not directly represented by document content. The most
 familiar HTML example is the img element, which is replaced by an image
 file external to the document itself. In fact, img itself has no actual
 content, as we can see by considering a simple example:
-
-<b>&lt;img</b> src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;<b>&gt;</b>
-
+<pre>
+  <b>&lt;img</b> src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;<b>&gt;</b>
+</pre>
 There is no content contained in the element---only an element name and
 attributes. Only by replacing the element's lack of content with content
 found through other means (in this case, loading an external image
@@ -475,7 +476,9 @@ element display roles in CSS: *block-level* and *inline-level*. All
 
 CSS display values fall into one of these two categories. It can be
 important to know which general role a box falls into, since some
-properties only apply to one type or the other. <b>Block-Level</b>
+properties only apply to one type or the other. 
+
+<h4>Block-Level</h4>
 
 *Block-level boxes* are those where the element box (by default) fills
 its parent element's content area width and cannot have other elements
@@ -492,7 +495,9 @@ other block elements.
 As of early 2018, the display values that create block boxes are block,
 list-item, table, table-row-group, table-headergroup,
 table-footer-group, table-column-group, table-row, table-column,
-table-cell, table-caption, flex, and grid. <b>Inline-Level</b>
+table-cell, table-caption, flex, and grid.
+
+<h4>Inline-Level</h4>
 
 *Inline-level* boxes are those where an element box is generated within
 a line of text and does not break up the flow of that line. Perhaps the
@@ -520,14 +525,14 @@ algorithms form the underpinnings of visual presentation in CSS. There
 are two primary kinds of layout, each with very different behaviors:
 *block-level* and *inline-level* layout.
 
-### Block-Level Layout
+<h4>Block-Level Layout</h4>
 A block-level box in CSS generates a rectangular box called the *element
 box*, which describes the amount of space occupied by an element. Figure
 1-2 shows the components of an element box.
 
+<!-- image003 -->
 *Figure 1-2. The complete box model*
 
-<b>Basic Visual Layout</b>
 The following rules apply to an element box:
 
 -   By default, the background of the element box extends to the outer
@@ -559,7 +564,7 @@ The following rules apply to an element box:
     width of the content, padding, and borders; any margins are added to
     it. The same is true for height with respect to the height.
 
-### Inline Layout
+<h4>Inline Layout</h4>
 An inline-level box in CSS generates one or more rectangular boxes
 called *inline boxes*. The following rules apply to inline boxes:
 
@@ -571,17 +576,15 @@ called *inline boxes*. The following rules apply to inline boxes:
 
 -   For replaced inline boxes, the following rules apply:
 
- --- If height and width are both auto and the element has an intrinsic
- width (e.g., an image), the value of width is equal to the element's
- intrinsic width. The same holds true for height.
-
- --- If height and width are both auto and the element does not have an
- intrinsic width but does have an intrinsic height and layout ratio,
- then width is set to be the intrinsic height times the ratio.
-
- --- If height and width are both auto and the element does not have an
- intrinsic height but does have an intrinsic width and layout ratio,
- then height is set to be the intrinsic width divided by the ratio.
+    -- If height and width are both auto and the element has an intrinsic
+	  width (e.g., an image), the value of width is equal to the element's
+	  intrinsic width. The same holds true for height.
+    -- If height and width are both auto and the element does not have an
+	  intrinsic width but does have an intrinsic height and layout ratio,
+	  then width is set to be the intrinsic height times the ratio.
+    -- If height and width are both auto and the element does not have an
+	  intrinsic height but does have an intrinsic width and layout ratio,
+	  then height is set to be the intrinsic width divided by the ratio.
 
 There are a few rules even more obscure than those last two; see [the
 CSS box model documentation](http://w3.org/TR/css3-box/#inline-replaced)
@@ -591,60 +594,61 @@ All inline elements have a line-height, which has a great deal to do
 with how the elements are displayed. The height of a line of text is
 determined by taking the following factors into account:
 
-*Anonymous text*
+<h5>*Anonymous text*</h5>
 
- Any string of characters not contained within an inline element. Thus,
- in the markup:
+| Any string of characters not contained within an inline element. Thus,
+| in the markup:
 
- <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b> the sequences
- "I'm " and " happy!" are anonymous text. Note that the spaces are part
- of the anonymous text, as a space is a character like any other.
+| <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b>
+| the sequences "I'm " and " happy!" are anonymous text. 
+| Note that the spaces are part  of the anonymous text, as a space is a character 
+| like any other.
 
-<b>Basic Visual Layout</b>
-*Em-box*
+<h5>*Em-box*</h5>
 
- The space taken up by a capital letter M in the given font; otherwise
- known as the character box. Actual glyphs can be taller or shorter
- than their em-boxes, as discussed in Chapter 5 of [*CSS: The*
- *Definitive Guide*, 4th
- Edition](http://shop.oreilly.com/product/0636920012726.do). In
+| The space taken up by a capital letter M in the given font; otherwise
+| known as the character box. Actual glyphs can be taller or shorter
+| than their em-boxes, as discussed in Chapter 5 of [*CSS: The*
+| *Definitive Guide*, 4th
+| Edition](http://shop.oreilly.com/product/0636920012726.do). In
+| CSS, the value of font-size determines the height of each em-box.
 
- CSS, the value of font-size determines the height of each em-box.
+<h5>*Content area*</h5>
 
-*Content area*
+| In nonreplaced elements, this can be the box described by the em-boxes
+| of every character in the element, strung together, or else the box
+| described by the character glyphs in the element. In CSS2.1 and later,
+| user agents can choose either. This text uses the em-box definition
+| for simplicity's sake. In replaced elements, the content area is the
+| intrinsic height of the element plus any margins, borders, or padding.
 
- In nonreplaced elements, this can be the box described by the em-boxes
- of every character in the element, strung together, or else the box
- described by the character glyphs in the element. In CSS2.1 and later,
- user agents can choose either. This text uses the em-box definition
- for simplicity's sake. In replaced elements, the content area is the
- intrinsic height of the element plus any margins, borders, or padding.
+<h5>*Leading*</h5>
 
-*Leading*
+| The difference between the values of font-size and lineheight. Half
+| this difference is applied to the top and half to the bottom of the
+| content area. These additions to the content area are called, not
+| surprisingly, *half-leading*. Leading is applied only to nonreplaced
+| elements.
 
- The difference between the values of font-size and lineheight. Half
- this difference is applied to the top and half to the bottom of the
- content area. These additions to the content area are called, not
- surprisingly, *half-leading*. Leading is applied only to nonreplaced
- elements.
+<h5>*Inline box*</h5>
 
-*Inline box*
+| The box described by the addition of the leading to the content area.
+| For nonreplaced elements, the height of the inline box of an element
+| will be equal to the value for line-height. For replaced elements, the
+| height of the inline box of an element will be equal to the content
+| area, as leading is not applied to replaced elements.
 
-The box described by the addition of the leading to the content area.
-For nonreplaced elements, the height of the inline box of an element
-will be equal to the value for line-height. For replaced elements, the
-height of the inline box of an element will be equal to the content
-area, as leading is not applied to replaced elements.
+<h5>*Line box*</h5>
 
-*Line box*
+| The shortest box that bounds the highest and lowest points of the
+| inline boxes that are found in the line. In other words, the top edge
+| of the line box will be placed along the top of the highest inline box
+| top, and the bottom of the line box is placed along the bottom of the
+| lowest inline box bottom. (See Figure 1-3).
 
-The shortest box that bounds the highest and lowest points of the
-inline boxes that are found in the line. In other words, the top edge
-of the line box will be placed along the top of the highest inline box
-top, and the bottom of the line box is placed along the bottom of the
-lowest inline box bottom. (See Figure 1-3.
-
+<!-- image004 -->
 *Figure 1-3. Inline layout details*
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-9-1">1.9. Floating</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
