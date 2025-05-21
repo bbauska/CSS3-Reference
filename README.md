@@ -2,24 +2,7 @@
 title: "CSS3 Reference"
 ---
 
-<!-- page i -->
-<!-- ![](images/image005.jpg){width="4.25in" height="7.0in"} -->
-<!-- page ii -->
-
 ## CSS3 Reference
-
-***Eric A. Meyer***
-
-<!-- ![](images/image006.jpg){width="2.850301837270341in" height="0.18005686789151357in"} -->
-
-### CSS3 Pocket Reference
-#### by Eric A. Meyer
-
-##### Copyright © 2018 O'Reilly Media, Inc. All rights reserved.
-
-##### Printed in the United States of America.
-
-##### Published by O'Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol, CA 95472.
 
 ### [Table of Contents](#table-of-contents)
 
@@ -58,7 +41,7 @@ title: "CSS3 Reference"
 >### 2.15 [**Calculation Values**](#ch2-15-1)
 >### 2.16 [**Variable Values**](#ch2-16-1)
 
-## Chapter 3: Selector and Queries
+## Chapter 3: Selectors and Queries
 >### 3.1 [**Selectors**](#ch3-1-1)
 >### 3.2 [**Structural Pseudo-Classes**](#ch3-2-1)
 >### 3.3 [**The Negation Pseudo-Classes**](#ch3-3-1)
@@ -113,9 +96,11 @@ amount of example code from this book into your product's documentation
 does require permission.
 
 <!-- page 1 -->
-## CHAPTER 1 Basic Concepts
-
-### Adding Styles to HTML
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch1">1. CHAPTER 1 Basic Concepts</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-1-1">1.1. Adding Styles to HTML</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Styles can be applied to documents in three distinct ways, as discussed
 in the following sections.
 
@@ -272,7 +257,9 @@ usually limited to production environments based on other user agents,
 and the occasional Easter egg for Firefox and Opera users.
 
 <!-- page 5 -->
-## Rule Structure
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-2-1">Rule Structure</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A stylesheet consists of one or more *rules* that describe how page
 elements should be presented. Every rule has two fundamental parts: the
 *selector* and the *declaration block*. Figure 1-1 illustrates the
@@ -299,8 +286,9 @@ properties.
 
 <b>Rule Structure</b>
 <!-- page 6 -->
-
-## At-rules
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-3-1">1.3. At-rules</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A CSS *at-rule* is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:
 
@@ -359,7 +347,9 @@ There are other proposed at-rules which are, as of early 2018, at
 various stages of development. These include &#64;document,
 &#64;font-feature-values, &#64;page, and &#64;viewport.
 
-## Comments
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-4-1">1.4. Comments</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Including comments in CSS is simple. You open with /&ast; and end with &ast;/,
 like this:
 /&ast; This is a comment! &ast;/ Comments can be multiple lines long:
@@ -381,7 +371,9 @@ don't understand HTML 3.2. They do *not* act as CSS comments; that is,
 anything contained in an HTML comment will be seen and interpreted by
 the CSS parser.
 
-## Style Precedence
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5-1">1.5 Style Precedence</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A single HTML document can import and link to multiple external
 stylesheets, contain one or more embedded stylesheets, and make use of
 inline styles. In the process, it is quite possible that some rules will
@@ -483,7 +475,9 @@ Any presentational hints that come from non-CSS sources (e.g., the
 preference dialog within a browser) are given the same weight as the
 user agent's default styles (see step 2 above).
 
-## Element Classification
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-6-1">1.6 Element Classification</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Broadly speaking, CSS groups elements into two types: *nonreplaced* and
 *replaced*. Although the types may seem rather abstract, there actually
 are some profound differences in how the two types of elements are
@@ -516,11 +510,12 @@ all. Another example is the input element, which may be replaced with a
 radio button, checkbox, or text input box, depending on its type.
 Replaced elements also generate boxes in their display.
 
-## Element Display Roles
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-7-1">1.7. Element Display Roles</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In addition to being replaced or not, there are two basic types of
 element display roles in CSS: *block-level* and *inline-level*. All
 
-**Element Display Roles**
 CSS display values fall into one of these two categories. It can be
 important to know which general role a box falls into, since some
 properties only apply to one type or the other. **Block-Level**
@@ -560,7 +555,9 @@ inline-table, and ruby. As of this writing, it was not explicitly
 defined that the various Ruby-related values (e.g., ruby-text) also
 generate inline boxes, but this seems the most likely outcome.
 
-## Basic Visual Layout
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-8-1">1.8. Basic Visual Layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 CSS defines algorithms for laying out any element in a document. These
 algorithms form the underpinnings of visual presentation in CSS. There
 are two primary kinds of layout, each with very different behaviors:
@@ -691,8 +688,9 @@ top, and the bottom of the line box is placed along the bottom of the
 lowest inline box bottom. (See Figure 1-3.
 
 *Figure 1-3. Inline layout details*
-
-**Floating**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-9-1">1.9. Floating</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Floating allows an element to be placed to the left or right of its
 containing block (which is the nearest block-level ancestor element),
@@ -738,7 +736,9 @@ the following rules:
     higher position is preferred to one that is farther to the right or
     left.
 
-## Positioning
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-10-1">1.10. Positioning</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 When elements are positioned, a number of special rules come into play.
 These rules govern not only the containing block of the element, but
@@ -827,7 +827,9 @@ not move from their place in the normal flow.
         absolutely positioned element's containing block is defined to
         be the initial containing block.
 
-## Flexible Box Layout
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-11-1">1.11. Flexible Box Layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Flexible box layout (also known as *flexbox* or *flex layout*) is ideal
 for almost any one-dimensional layout; that is, situations where a
@@ -887,7 +889,9 @@ documentation](https://www.w3.org/TR/css-flexbox-1/#resolve-flexible-lengths).
 Consult section 9.7 of the CSS Flexible Box Layout Module Level 1 for
 full details if you want to know more.
 
-## Grid Layout
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-12-1">1.12. Grid Layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Grid layout is ideal for almost any two-dimensional layout. There are
 two kinds of grid elements: the *grid container* and the *grid items*
@@ -1055,7 +1059,10 @@ The details of each step are quite lengthy, and can be found in section
 11 of the [CSS Grid Layout Module Level 1
 documentation](https://www.w3.org/TR/css-grid-1/#layout-algorithm).
 
-## Table Layout
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-13-1">1.13. Table Layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 The layout of tables can get quite complicated, especially because CSS
 defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
@@ -1276,13 +1283,17 @@ within a row:
     contents shorter than the row height, the cell's padding is
     increased in order to match the height of the row.
 
-**CHAPTER 2 Values**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch2">2. CHAPTER 2 Values</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are a variety of value types in CSS, most of which use units.
 Combining basic value types (such as numbers) with units (such as
 pixels) makes it possible to do any number of interesting things with
 CSS.
 
-## Keywords
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1-1">2.1. Keywords</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Keywords are defined on a per-property basis and have a meaning specific
 only to a given property. For example, normal has totally unique
 meanings for the properties font-variant and letter-spacing. Keywords,
@@ -1318,7 +1329,9 @@ If you have a situation where you want to set all of the properties on
 an element to their default values, thus breaking any chains of
 inheritance, see the all property in Chapter 4.
 
-## Color Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-2-1">2.2. Color Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Color values can be expressed in a variety of ways:
 
 *#RRGGBB*
@@ -1423,7 +1436,9 @@ transparent
 A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
 which is the computed value any time transparent is used.
 
-## Number Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3-1">2.3. Number Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A number value is expressed as a positive or negative number
 
 (when permitted). Numbers can be either real (represented as
@@ -1433,7 +1448,9 @@ integers in the range 0--255. A more common range restriction is to
 limit a number to be non-negative. These are sometimes represented as
 *&lt;non-negative number&gt;* or *&lt;non-negative integer&gt;*.
 
-## Percentage Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4-1">2.4. Percentage Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A percentage value is expressed as a *&lt;number&gt;* followed immediately
 by a percent sign (%). There should never be any space between the
 number and the percent sign. A percentage value will always be computed
@@ -1442,7 +1459,9 @@ an element sets its font size to 120% of the computed font-size of its
 parent element. Fractional values, such as 543.21%, are valid. Some
 properties may restrict percentage values to be non-negative.
 
-## Length Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-5-1">2.5. Length Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A length value is expressed as a positive or negative number (when
 permitted), followed immediately by a unit identifier. There should
 never be any space between the number and the unit identifier. A length
@@ -1574,8 +1593,9 @@ This unit is 1/100 of the viewport's width or height, whichever is
 *greater*. Thus, given a viewport that is 937 pixels wide by 650
 pixels tall, 1vmax is equal to 9.37px.
 
-## Fraction Values
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-6-1">2.6. Fraction Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A *fraction value* is a *&lt;number&gt;* followed by the label fr. Thus, one
 fraction unit is 1fr, four fraction units are 4fr, and so on. This is a
 concept introduced by Grid Layout, and is used to divide up fractions of
@@ -1756,7 +1776,9 @@ Note that these names are case-sensitive, so &dash;-maincolor and
 scoped to the element to which they are applied.
 
 **Variable Values**
-**CHAPTER 3 Selectors and Queries**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch3">3. CHAPTER 3 Selectors and Queries</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ## Selectors
 ### Universal Selector
@@ -2617,9 +2639,11 @@ It's also possible to do a negated feature query using the keyword not:
 
 **Feature Queries**
 
-**CHAPTER 4 Property Reference**
-
-## Inheritance and Animation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch4">4. CHAPTER 4 Property Reference</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-1-1">4.1. Inheritance and Animation</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Each property listed in this chapter has "Inh." and "Anim." values. The
 values "N" (for no) and "Y" (for yes) indicate whether a property is
@@ -2629,7 +2653,9 @@ transition properties. In cases where only some of a property's values
 are animatable, the value given will be "P" (for partial) and more
 details will be given in the property's definition.
 
-## Value Syntax Conventions
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-2-1">4.2. Value Syntax Conventions</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Any words presented in constant width are keywords that must appear
 literally, without quotes. The forward slash (/) and the comma (,) must
@@ -2683,7 +2709,9 @@ of these modifiers:
     preceding value or bracketed group is repeated at least M and at
     most N times.
 
-## Universal Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-3-1">4.3. Universal Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Any user agent that has fully implemented the Cascading and Inheritance
 module will honor the following values for all properties. Think of it
@@ -2696,77 +2724,51 @@ definitions, for purposes of clarity. The exception is the property all,
 which accepts *only* these three keywords as values. For definitions of
 these keywords' meaning, see Chapter 2.
 
-## Properties
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-4-1">4.4. Properties</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-### align-content Inh. N Anim. N
+| <b>align-content</b> | <b>Inh. N Anim. N</b> |
+|:-----------:|----------------------------------------------------------------:|
+| **Values**  | flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
+                space-around &vert; space-evenly &vert; stretch |
+| **Initial value**   | stretch  |
+| **Computed value** | As declared |
+| **Applies to**  | Flex containers |
+| ** Description** | Defines the distribution of flex lines along the cross<br>
+                     axis of a flex container, given that the container's<br>
+                     cross-axis length does not equal the sum of the flex<br>
+                     lines' size along the same axis. |
+|  **Examples** | aside {display: flex; align-content: center;}<br>
+                  section {display: flex; height: 90vh;<br>
+                    align-content: flex-end;} |
+| **Note**      | As of early 2018, there are plans to have this prop-<br>
+                  erty apply to many (or all) elements, not just flex<br>
+                  flex containers, and be given the values start and end to replicate <br>
+                  replicate flex-start and flex-end behavior for <br>
+                  non-flex environments. Thanks to the center value,<br>
+                  this change would make vertical centering of con-<br>
+                  tent trivial in nearly all cases. |
 
-+---------------+------------------------------------------------------+
-| **Values**  | flex-start &vert; flex-end &vert; center &vert; space-between &vert; |
-|               | space-around &vert; space-evenly &vert; stretch              |
-+===============+======================================================+
-| **Initial   | stretch                                              |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Computed  | As declared                                          |
-| value**     |                                                      |
-+---------------+------------------------------------------------------+
-| **Applies   | Flex containers                                      |
-| to**        |                                                      |
-+---------------+------------------------------------------------------+
-| **          | Defines the distribution of flex lines along the     |
-| Description** | cross axis of a flex container, given that the       |
-|               | container's cross-axis length does not equal the sum |
-|               | of the flex lines' size along the same axis.         |
-+---------------+------------------------------------------------------+
-|             | aside {display: flex; align-content: center;}        |
-|  **Examples** |                                                      |
-|               | section {display: flex; height: 90vh;                |
-|               |                                                      |
-|               | align-content: flex-end;}                            |
-+---------------+------------------------------------------------------+
-| **Note**    | As of early 2018, there are plans to have this       |
-|               | property apply to many (or all) elements, not just   |
-|               | flex                                                 |
-+---------------+------------------------------------------------------+
+| **align-items** | **Inh. N Anim. N** |
+|:--------------:|----------------------------------------------------:|
+| **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch |
+| **Initial value** | stretch |
+| **Computed value**  | As declared                                         |
+| **Applies to**    | Flex containers, grid containers, and multicolumn containers  |
+| **Description** | Sets a flex-container-wide default for items' 
+                    alignment with respect to the cross axis of the
+                    flex line they occupy. baseline alignment means the
+                    items in a line are all placed such that the
+                    baselines of their first lines of text line up. |
+| **Examples** | div.flexy {align-items: flex-start;} 
+                 section.gallery {align-items: baseline;} |
+| **Note**      | As of early 2018, there are plans to have this
+                  property apply to many (or all) elements and be 
+                  given the values start and end to replicate 
+                  flex-start and flex-end behavior for non-flex 
+                  environments. |
 
-**Universal Values**
-
-containers, and be given the values start and end to replicate
-flex-start and flex-end behavior for non-flex environments. Thanks to
-the center value, this change would make vertical centering of content
-trivial in nearly all cases.
-
-+----------------+-----------------------------------------------------+
-| *            | **Inh. N Anim. N**                                  |
-| *align-items** |                                                     |
-+================+=====================================================+
-| **Values**   | flex-start &vert; flex-end &vert; center &vert; baseline &vert;     |
-|                | stretch                                             |
-+----------------+-----------------------------------------------------+
-| **Initial    | stretch                                             |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Computed   | As declared                                         |
-| value**      |                                                     |
-+----------------+-----------------------------------------------------+
-| **Applies    | Flex containers, grid containers, and multicolumn   |
-| to**         | containers                                          |
-+----------------+-----------------------------------------------------+
-| *            | Sets a flex-container-wide default for items'       |
-| *Description** | alignment with respect to the cross axis of the     |
-|                | flex line they occupy. baseline alignment means the |
-|                | items in a line are all placed such that the        |
-|                | baselines of their first lines of text line up.     |
-+----------------+-----------------------------------------------------+
-| **Examples** | div.flexy {align-items: flex-start;}                |
-|                | section.gallery {align-items: baseline;}            |
-+----------------+-----------------------------------------------------+
-| **Note**     | As of early 2018, there are plans to have this      |
-|                | property apply to many (or all) elements and be     |
-|                | given the values start and end to replicate         |
-|                | flex-start and flex-end behavior for non-flex       |
-|                | environments.                                       |
-+----------------+-----------------------------------------------------+
 |              | **Inh. N Anim. N**                                  |
 | **align-self** |                                                     |
 +----------------+-----------------------------------------------------+
@@ -8323,27 +8325,27 @@ visibility property, 182 :visited pseudo-class, 63 visual layout basics,
 
 ## About the Author
 
-**Eric A. Meyer** has been working with the web since late 1993 and is
-an internationally recognized expert on the subjects of HTML, CSS, and
-web standards. A widely read author, he is CTO at [Rebecca's
-Gift,](http://rebeccasgift.org/) a 501(c)(3) nonprofit organization
-dedicated to providing healing family vacations after the death of a
-child; and is, along with [Jeffrey Zeldman](http://www.zeldman.com/),
-cofounder of [An Event Apart.](https://aneventapart.com/)
+**Eric A. Meyer** has been working with the web since late 1993 and is an internationally 
+recognized expert on the subjects of HTML, CSS, and web standards. A widely read author, 
+he is CTO at <a href="http://rebeccasgift.org/">Rebecca's Gift</a>, a 501(c)(3) nonprofit 
+organization dedicated to providing healing family vacations after the death of a child; 
+and is, along with <a href="http://www.zeldman.com/">Jeffrey Zeldman</a>, cofounder of 
+<a href="https://aneventapart.com/">An Event Apart</a>.
 
 Beginning in early 1994, Eric was the visual designer and campus web
-coordinator for the [Case Western Reserve University
-website](https://case.edu/), where he authored a widely acclaimed series
+coordinator for the <a href="https://case.edu/">Case Western Reserve University
+website</a>, where he authored a widely acclaimed series
 of HTML tutorials and was project coordinator for the online version of
-the [*Encyclopedia of Cleveland History*](http://case.edu/ech/) combined
+the <a href="http://case.edu/ech/"><b>Encyclopedia of Cleveland History</b> combined 
 with the *Dictionary of Cleveland Biography*, the first example of an
 encyclopedia of urban history being fully and freely published on the
 web. He has written several books on CSS and design, and shares what he
 has learned at conferences the world over and at his personal site
-[*meyerweb.com*.](https://meyerweb.com/) In 2006, he was inducted into
-the [International Academy of Digital Arts and
-Sciences](https://www.iadas.net/) for "international recognition on the
-topics of HTML and CSS" and helping to "inform excellence and efficiency
-on the Web." Eric lives with his family in Cleveland, Ohio, which is a
+<a href="https://meyerweb.com/"><b>meyerweb.com</b></a>. In 2006, he was inducted into
+the <a href="https://www.iadas.net/">International Academy of Digital Arts and Sciences</a> 
+for "international recognition on the topics of HTML and CSS" and helping to "inform 
+excellence and efficiency on the Web." Eric lives with his family in Cleveland, Ohio, which is a
 much nicer city than you've heard. He enjoys a good meal whenever he can
 and considers almost every form of music to be worthwhile.
+
+<!-- 5/20/2025 10:33pm -->
