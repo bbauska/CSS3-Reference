@@ -1793,46 +1793,41 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Universal Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> &ast;
-<b>Description</b> Matches any element name in the document's language. If
+<h5>Pattern</h5> <h5>&ast;</h5>
+<h5>Description</h5>  <h5>Matches any element name in the document's language. If
 a rule does not have an explicit selector, the universal selector is
-inferred.
+inferred.</h5>
 
-<h5>Examples</h5>
-<pre>
+<h5>Examples</h5><pre>
 &ast; {color: red;}
-div &ast; p {color: blue;}
-</pre>
+div &ast; p {color: blue;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Type Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b>
-<b>Description</b> Matches the name of an element in the document's
+<h5>Pattern</h5>
+<h5>Description  Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
-to these as "element selectors.")
+to these as "element selectors.")</h5>
 <h5>Examples</h5>
-<pre>
-body {background: #FFF;} 
-p {font-size: 1em;}
-</pre>
+<pre>body {background: #FFF;} 
+p {font-size: 1em;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Descendant Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1 element2 ...
-<b>Description</b> Matches elements based on their status as a descendant
+<h5>Pattern  element1 element2 ...</h5>
+<h5>Description  Matches elements based on their status as a descendant
 of another element. The matched element can be a child, grandchild,
 great-grandchild, etc. of the ancestor element. (CSS1 referred to these
-as "contextual selectors.")
+as "contextual selectors.")</h5>
 <h5>Examples</h5>
-<pre>
-body h1 {font-size: 200%;} 
-table tr td div ul li {color:purple;} element1 &gt; element2
-</pre>
+<pre>body h1 {font-size: 200%;} 
+table tr td div ul li {color:purple;} element1 &gt; element2</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Child Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b>
-<b>Description</b> Matches an element based on its status as a child of
+<h5>Pattern</h5>
+<h5>Description</h5>
+Matches an element based on its status as a child of
 another element. It is more restrictive than a descendant selector, as
 only a child will be matched.
 <h5>Examples</h5>
@@ -1843,8 +1838,9 @@ ul &gt; li {font-weight: bold;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adjacent Sibling Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1 + element2
-<b>Description</b> Matches an element that is the following adjacent
+<h5>Pattern</h5> element1 + element2
+<h5>Description</h5>
+Matches an element that is the following adjacent
 sibling of another element. (Sibling elements, as the name implies,
 share the same parent element.) Any anonymous text nodes between the two
 elements are ignored; only elements and their positions in the document
@@ -1858,8 +1854,9 @@ h1 + &ast; {margin-top: 0;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>General Sibling Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1 &#126; element2
-<b>Description</b> Matches an element that is a sibling of another element
+<h5>Pattern</h5> element1 &#126; element2
+<h5>Description</h5>
+Matches an element that is a sibling of another element
 which it follows in the document tree. Any
 text or other elements between the two elements are ignored; only the
 elements and their positions in the document tree are considered.
@@ -1873,9 +1870,9 @@ nav a &#126; a {border-left: 1px solid border;}
 <h4>Class Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<b>Pattern</b>      element1.classname  
+<h5>Pattern</h5>      element1.classname  
 element1.classname1.classname2      
-<b>Description</b>  In languages that permit it, such as HTML, SVG, and 
+<h5>Description</h5>  In languages that permit it, such as HTML, SVG, and 
 MathML, a class selector using "dot notation"       
 matches elements that have a class attribute
 containing a specific value or values. The name of  
@@ -1894,8 +1891,8 @@ a.external {font-style: italic;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>ID Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <b>Pattern</b>   element1#idname     
- <b>Description</b>  In languages that permit it, such as HTML or SVG, 
+ <h5>Pattern</h5>   element1#idname     
+ <h5>Description</h5>  In languages that permit it, such as HTML or SVG, 
  an ID selector selects elements that have an id     
  attribute containing a specific value. The name of  
  the ID value must immediately follow the octothorpe 
@@ -1914,8 +1911,8 @@ a.external {font-style: italic;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Simple Attribute Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;attr&rbrack;
-<b>Description</b> Matches elements based on the presence of an
+<h5>Pattern</h5> element1&lbrack;attr&rbrack;
+<h5>Description</h5> Matches elements based on the presence of an
 attribute, regardless of the attribute's value.
 
 <h5>Examples</h5>
@@ -1926,8 +1923,8 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Exact Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
-<b>Description</b> Matches elements based on the precise and complete value
+<h5>Pattern</h5> element1&lbrack;attr=&quot;value&quot;&rbrack;
+<h5>Description</h5> Matches elements based on the precise and complete value
 of an attribute.
 <h5>Examples</h5>
 <pre>
@@ -1937,8 +1934,8 @@ p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Partial Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
-<b>Description</b> Matches elements based on a portion of the
+<h5>Pattern</h5> element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
+<h5>Description</h5> Matches elements based on a portion of the
 spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;*value*&quot;&rbrack;
 is equivalent to *.value* (see above).
 <h5>Examples</h5>
@@ -1949,8 +1946,8 @@ p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Beginning Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
-<b>Description</b> Matches elements based on a substring at the very
+<h5>Pattern</h5> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
+<h5>Description</h5> Matches elements based on a substring at the very
 beginning of an attribute's value.
 <h5>Examples</h5>
 <pre>
@@ -1960,8 +1957,8 @@ p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Ending Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
-<b>Description</b> Matches elements based on a substring at the very end of
+<h5>Pattern</h5> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
+<h5>Description</h5> Matches elements based on a substring at the very end of
 an attribute's value.
 <b>Example</b>
 <pre>
@@ -1970,8 +1967,8 @@ a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Arbitrary Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
-<b>Description</b> Matches elements based on a substring found anywhere
+<h5>Pattern</h5> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
+<h5>Description</h5> Matches elements based on a substring found anywhere
 within an attribute's value.
 <h5>Examples</h5>
 <pre>
@@ -1981,8 +1978,8 @@ a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Language Attribute Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Pattern</b> element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
-<b>Description</b> Matches elements with a lang attribute whose value is
+<h5>Pattern</h5> element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
+<h5>Description</h5> Matches elements with a lang attribute whose value is
 one of a hyphen-separated list of values, starting with the value
 provided in the selector.
 
@@ -2010,7 +2007,7 @@ children of their parent element.
 <h4>:empty</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element 
-<b>Description</b>  Matches elements that have no child nodes---that  
+<h5>Description</h5>  Matches elements that have no child nodes---that  
 is, no child elements *or* content nodes. Content   
 nodes are defined as any text, whitespace, entity   
 reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
@@ -2029,7 +2026,7 @@ padding: 1ch;} li:empty {display: none;}
 <h4>:first-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  <b>Applies to</b>     Any element 
- <b>Description</b>  Matches an element when it is the first child of  
+ <h5>Description</h5>  Matches an element when it is the first child of  
  another element. Thus, div:first-child will select  
  any div that is the first child of another element, 
  *not* the first child element of any div.   
@@ -2042,7 +2039,7 @@ p:first-child {text-indent: 0; margin-top: 2em;}
 <h4>:first-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<b>Description</b> Matches an element when it is the first child of its
+<h5>Description</h5> Matches an element when it is the first child of its
 type, as compared to all its sibling elements. Thus, div:first-of-type
 will select any div that is the first child div of another element.
 <h5>Examples</h5>
@@ -2055,7 +2052,7 @@ h2:first-of-type {color: fuchsia;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any element with associated language-encoding       
     information.
-<b>Description</b>  Matches elements based on their human-language      
+<h5>Description</h5>  Matches elements based on their human-language      
   encoding. Such language information must be 
  contained within, or otherwise associated with, the 
  document---it cannot be assigned from CSS. The      
@@ -2070,7 +2067,7 @@ html:lang(en) {background: silver;} <br>
 <h4>:last-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any element 
-<b>Description</b>  Matches an element when it is the last child of  
+<h5>Description</h5>  Matches an element when it is the last child of  
  another element. Thus, div:last-child will select  
  any div that is the last child of another element, 
  *not* the last child element of any div. 
@@ -2083,7 +2080,7 @@ p:last-child {margin-bottom: 2em;}
 <h4>:last-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<b>Description</b> Matches an element when it is the last child of its
+<h5>Description</h5> Matches an element when it is the last child of its
 type, as compared to all its sibling elements. Thus, div:last-of-type
 will select any div that is the last child div of another element.
 <h5>Examples</h5> 
@@ -2101,7 +2098,7 @@ Any element
 </pre>
 <b>Applies to</b>
 
-<b>Description</b> Matches every *n*th child with the pattern of selection
+<h5>Description</h5> Matches every *n*th child with the pattern of selection
 defined by the formula *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s
 and n represents an infinite series of integers, counting forward from
 the first child. Thus, to select every fourth child of the body element,
@@ -2130,7 +2127,7 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
 
 <b>Applies to</b> Any element
 
-<b>Description</b> Matches every *n*th child with the pattern of selection
+<h5>Description</h5> Matches every *n*th child with the pattern of selection
 defined by the formula *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s
 and n represents an infinite series of integers, *counting backward from
 the last child*. Thus, to select every fourth-to-last child of the body
@@ -2148,7 +2145,7 @@ tr:nth-last-child(odd) { background-color: #EEF;}
 <h4>:nth-last-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<b>Description</b> Matches every *n*th child that is of the same type as
+<h5>Description</h5> Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
 *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
 infinite series of integers, *counting backward from the last such
@@ -2171,7 +2168,7 @@ border: 2px solid;}
 <h4>:nth-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<b>Description</b> Matches every *n*th child that is of the same type as
+<h5>Description</h5> Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
 *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
 infinite series of integers, counting forward from the first such
@@ -2192,7 +2189,7 @@ img:nth-of-type(3n) {float: right;}
 <h4>:only-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<b>Description</b> Matches an element that is the only child element of its
+<h5>Description</h5> Matches an element that is the only child element of its
 parent element. A common use case for this selector is to remove the
 border from any linked image, assuming that image is the only element in
 the link. Note that an element can be selected by :only-child even if it
@@ -2213,7 +2210,7 @@ Any element
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>
 
-<b>Description</b> Matches an element that is the only child element of its
+<h5>Description</h5> Matches an element that is the only child element of its
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
 (such as divs within a div).
@@ -2227,7 +2224,7 @@ article:only-of-type {margin: 2em 0 3em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> The root element
 
-<b>Description</b> This matches the document's root element, which in <br>
+<h5>Description</h5> This matches the document's root element, which in <br>
 HTML is always the html element. In SVG, it is the <br>
 svg element. In XML formats, the root element can <br>
 have any name; thus, a generic root-element selector <br>
@@ -2246,7 +2243,7 @@ that it deserves its own subsection.
 
 <b>:not(*e*)</b>      
 <b>Applies to</b>  Any element 
-<b>Description</b>  Matches every element that is *not* described by    
+<h5>Description</h5>  Matches every element that is *not* described by    
 the simple selector *e*. For example, you can       
 select every element that is not a paragraph by     
 stating &ast;:not(p).  
@@ -2298,7 +2295,7 @@ elements based on their being enabled or disabled.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   <b>Applies to</b>     Any interaction element     
-  <b>Description</b>  Matches an element during the period in which it is 
+  <h5>Description</h5>  Matches an element during the period in which it is 
       being activated. The most common example is 
  clicking on a hyperlink in an HTML document: while  
  the mouse button is being held down, the link is    
@@ -2314,7 +2311,7 @@ a:active {color: red;}
 <h4>:checked</h4>      
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>    Any interaction element that has an on/off state    
-<b>Description</b>  Matches any user interface element that has been
+<h5>Description</h5>  Matches any user interface element that has been
 "toggled on," such as a checked checkbox or a
 filled radio button. 
 <h5>Examples</h5>
@@ -2328,7 +2325,7 @@ input:checked { <br>
 <h4>:disabled</h4>      
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any interaction element     
-<b>Description</b>  Matches user interface elements that are not able 
+<h5>Description</h5>  Matches user interface elements that are not able 
 to accept user input because of language attributes 
 or other nonpresentational means; for example,      
 &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note 
@@ -2343,7 +2340,7 @@ input:disabled {opacity: 0.5;}
 <h4>:enabled</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any interaction element     
-<b>Description</b>  Matches user interface elements that are able to    
+<h5>Description</h5>  Matches user interface elements that are able to    
 accept user input and that can be set to "enabled"  
 and "disabled" states through the markup language   
 itself. This includes any form input element in     
@@ -2356,7 +2353,7 @@ input:enabled {background: #FCC;}
 <h4>:focus</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>    Any interaction element     
-<b>Description</b>  Matches an element during the period in which it 
+<h5>Description</h5>  Matches an element during the period in which it 
  has focus. One example from HTML is an input box    
 that has the text-input cursor within it such that  
 when the user starts typing, text will be entered   
@@ -2373,7 +2370,7 @@ a:focus {outline: 1px dotted red;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Applies to</b>   Any interaction element     
-<b>Description</b>  Matches an element during the period in which it is 
+<h5>Description</h5>  Matches an element during the period in which it is 
   being *hovered* over (when the user is designating  
   an element without activating it). The most common  
   example of this is moving the mouse pointer inside  
@@ -2389,7 +2386,7 @@ p:hover {background: yellow;}
 <h4>:link</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>   A hyperlink to a resource that has not been visited 
-<b>Description</b>  Matches a link to a URI that has not been visited;  
+<h5>Description</h5>  Matches a link to a URI that has not been visited;  
   that is, the URI to which the link points does not  
   appear in the user agent's history. This state is   
   mutually exclusive with the :visited state.   
@@ -2402,7 +2399,7 @@ a:link {color: blue;}
 <h4>:target</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element 
-<b>Description</b>  Matches an element which is itself matched by the
+<h5>Description</h5>  Matches an element which is itself matched by the
        fragment identifier portion of the URI used to 
 					   access the page. Thus, http://www.w3.org/TR/ 
 					   css3-selectors/#target-pseudo would be 
@@ -2418,7 +2415,7 @@ a:link {color: blue;}
 <h4>:visited</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  A hyperlink to a resource that has already been visited 
-<b>Description</b>  Matches a link to a URI that has been visited; that is,
+<h5>Description</h5>  Matches a link to a URI that has been visited; that is,
        the URI to which the link points appears in the user 
 					   agent's history. This state is mutually exclusive with 
 					   the :link state. 
@@ -2442,7 +2439,7 @@ but the doublecolon syntax is recommended.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>    A pseudo-element containing generated content
        placed after the content in the element 
-<b>Description</b>  Inserts generated content at the end of an element's
+<h5>Description</h5>  Inserts generated content at the end of an element's
        content. By default, the pseudo-element is inline, 
 					   but this can be changed using the property display. 
 <h5>Examples</h5>
@@ -2456,7 +2453,7 @@ p:after {content: &quot; &vert;; &quot;;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>   A pseudo-element containing generated content 
 placed before the content in the element
-<b>Description</b>  Inserts generated content at the beginning of an 
+<h5>Description</h5>  Inserts generated content at the beginning of an 
   element's content. By default, the pseudo-element is 
   inline, but this can be changed using the property display. 
 <h5>Examples</h5>
@@ -2469,7 +2466,7 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
 <h4>::first-letter<.h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>    A pseudo-element that contains the first letter of an element.  
-<b>Description</b>  Styles the first letter of an element. Any leading  
+<h5>Description</h5>  Styles the first letter of an element. Any leading  
   punctuation should be styled along with the first   
   letter. Some languages have letter combinations     
   that should be treated as a single character, and a 
@@ -2491,7 +2488,7 @@ p:first-letter {text-decoration: underline;}
 
  <b>Generates</b>   A pseudo-element that contains the first formatted 
       line of an element 
- <b>Description</b>  Styles the first line of text in an element, regardless
+ <h5>Description</h5>  Styles the first line of text in an element, regardless
        of how many or how few words may appear in that 
 					   line. ::first-line can be attached only to blocklevel 
 					   elements. There is a limited set of properties that can 
@@ -2909,7 +2906,7 @@ space-around &vert; space-evenly &vert; stretch
 <b>Initial value</b>  stretch 
 <b>Computed value</b>   As declared 
 <b>Applies to</b>     Flex containers, grid containers, and multicolumn containers  
-<b>Description</b>  Sets a flex-container-wide default for items' 
+<h5>Description</h5>  Sets a flex-container-wide default for items' 
 alignment with respect to the cross axis of the
 flex line they occupy. baseline alignment means the
 items in a line are all placed such that the
@@ -2929,7 +2926,7 @@ environments.
 <b>Initial value</b>     stretch     
 <b>Computed value</b>   As declared 
 <b>Applies to</b>    Flex and grid items 
-<b>Description</b>  Sets the alignment for a single item with respect 
+<h5>Description</h5>  Sets the alignment for a single item with respect 
        to the cross axis of the flex line it occupies.
 baseline    
 
@@ -2953,7 +2950,7 @@ replicate flex-start and flex-end behavior for non-flex environments.
  <b>Initial value</b>    See individual properties   
  <b>Computed value</b>   As declared 
  <b>Applies to</b>     All elements
- <b>Description</b>  Applies the declared value to all properties
+ <h5>Description</h5>  Applies the declared value to all properties
     *except* direction and unicode-bidi, which are      
  exempted for accessibility and historical reasons.  
  This allows an author to, for example, force an     
@@ -2980,7 +2977,7 @@ replicate flex-start and flex-end behavior for non-flex environments.
 
 <b>Applies to</b> All elements, ::before and ::after pseudoelements
 
-<b>Description</b> A shorthand property encompassing all the aspects of one
+<h5>Description</h5> A shorthand property encompassing all the aspects of one
 or more comma-separated CSS animations. The parts of the value can occur
 in any order. Therefore, beware possible ambiguity in the delay and
 duration values. As of this writing, it is most likely that the first
@@ -3004,7 +3001,7 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
   <b>Computed value</b>       As declared
   <b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  <b>Description</b>   Defines the amount of time that the user agent waits
+  <h5>Description</h5>   Defines the amount of time that the user agent waits
     before starting the CSS animation(s). The timer starts
     when the user agent applies the animation CSS. For a
     noninteractive element, this is likely (but not
@@ -3026,7 +3023,7 @@ a:hover {animation-delay: 400ms;}
 
 <b>Applies to</b> All elements, ::before and ::after pseudoelements
 
-<b>Description</b> Specifies whether a CSS animation with more than one
+<h5>Description</h5> Specifies whether a CSS animation with more than one
 cycle (see animation-iteration-count) should always go the same
 direction or should reverse direction on every other cycle. For example,
 an alternate animation that moves an element 300 pixels to the right
@@ -3051,7 +3048,7 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
 
   <b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  <b>Description</b>   Defines the length of time it should take for each
+  <h5>Description</h5>   Defines the length of time it should take for each
     cycle of a CSS animation to run from start to finish.
     Therefore, in animations with only one cycle, it
     defines the total time of the animation. The default
@@ -3075,7 +3072,7 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
 
   <b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  <b>Description</b>   Defines the number of cycles in the animation(s). The
+  <h5>Description</h5>   Defines the number of cycles in the animation(s). The
     default value, 1, means that the animation will run
     exactly once, going from the start state to the end
     state. A fractional value (e.g., 2.75) means the
@@ -3097,7 +3094,7 @@ ol.dance {animation-iteration-count: infinite;}
   <b>Initial value</b>  none 
   <b>Computed value</b>       As declared 
   <b>Applies to</b>     All elements, ::before and ::after pseudoelements 
-  <b>Description</b>   Defines the declared name(s) of CSS animation(s). Each
+  <h5>Description</h5>   Defines the declared name(s) of CSS animation(s). Each
     name refers to a CSS animation keyframe atrule. If no
     animation name is declared or the keyword none is
     supplied, the animation is not run regardless of the
@@ -3119,7 +3116,7 @@ h2 {animation-name: flip;}
   <b>Initial value</b>  running 
   <b>Computed value</b>       As declared 
   <b>Applies to</b>    All elements, ::before and ::after pseudoelements 
-  <b>Description</b>    Defines the run state of one or more CSS animations.
+  <h5>Description</h5>    Defines the run state of one or more CSS animations.
     The default state of running is the most useful in
     static CSS environments, but it can be used to easily
     stop or start animations via DOM scripting or
@@ -3140,7 +3137,7 @@ end) &vert; cubic-bezier(*&lt;number&gt;*,
  <b>Initial value</b>   ease 
  <b>Computed value</b>  As declared  
  <b>Applies to</b>    All elements, ::before and ::after pseudoelements    
- <b>Description</b>  Defines how an animation is run over the course of
+ <h5>Description</h5>  Defines how an animation is run over the course of
     the animation's full cycle or within an individual  
 keyframe, depending on where the property is used.   
 The keywords are all defined to have cubicbezier()   
@@ -3162,7 +3159,7 @@ linear;}
  <b>Initial value</b>       visible  
  <b>Computed value</b>      As declared       
  <b>Applies to</b>   Any transformable element
- <b>Description</b>  Defines whether the back side of an element is   
+ <h5>Description</h5>  Defines whether the back side of an element is   
     visible once the element has been rotated in a   
     simulated 3D space and is "facing away" from the 
     viewer. If the value is hidden, the element will 
@@ -3183,7 +3180,7 @@ linear;}
  <b>Applies to</b>     All elements     
  <b>Animatable</b>     Refer to individual background properties to see 
     which are animatable     
- <b>Description</b>    A shorthand way of expressing the various      
+ <h5>Description</h5>    A shorthand way of expressing the various      
     background properties of one or more element     
     backgrounds using a single declaration. As with  
     all shorthands, this property will set all of    
@@ -3224,7 +3221,7 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
  <b>Initial value</b>   scroll       
  <b>Computed value</b>  As declared  
  <b>Applies to</b>   All elements 
- <b>Description</b>  Defines whether background images scroll along with
+ <h5>Description</h5>  Defines whether background images scroll along with
     the element when the document is scrolled. This 
 property can be used to create "aligned" 
 backgrounds; for more details, see Chapter 9 of 
@@ -3245,7 +3242,7 @@ div.fixbg {background-attachment: fixed;}
   <b>Initial value</b>  normal 
   <b>Computed value</b>       As declared 
   <b>Applies to</b>    All elements 
-  <b>Description</b>   Changes how overlapping background images are
+  <h5>Description</h5>   Changes how overlapping background images are
 composited against an "empty" backdrop. The "backdrop" here is a
 transparent layer underneath the background color. The default of
 normal imposes simple alpha blending, as CSS has permitted since its
@@ -3268,7 +3265,7 @@ of multiple background layers is done back to front.
 
 <b>Applies to</b> All elements
 
-<b>Description</b> Defines the boundary within the element box at which the
+<h5>Description</h5> Defines the boundary within the element box at which the
 background is clipped (that is, no longer drawn). Historically, this has
 been equivalent to the default value of border-box, where the background
 goes to the outer edge of the border area. This property allows more
@@ -3316,7 +3313,7 @@ pre {background-color: #FF9;}
  <b>Initial value</b>  none 
  <b>Computed value</b>  As declared, but with all URIs made absolute 
  <b>Applies to</b>  All elements 
- <b>Description</b>  Places one or more images in the background of the
+ <h5>Description</h5>  Places one or more images in the background of the
 element. Depending on the value of backgroundrepeat, the image may tile
 infinitely, along one axis, or not at all. The initial background image
 (the origin image) is placed according to the value of
@@ -3330,12 +3327,11 @@ background-position.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>background-origin</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- 
 <b>Values</b>     &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;#      
 <b>Initial value</b>      padding-box      
 <b>Computed value</b>    As declared     
 <b>Applies to</b>     All elements       
-<b>Description</b>  Defines the boundary within the element box against
+<h5>Description</h5>  Defines the boundary within the element box against
     which background image positioning is calculated.    
 Historically, this has been equivalent to the
 default value of padding-box. This property allows   
