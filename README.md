@@ -89,7 +89,7 @@ possible to place hover styles (using :hover) in a style attribute, nor
 can &#64;import be used in this context.
 
 Although typical XML document languages (such as SVG) support the style
-attribute, it is unlikely that *all* XML languages will support a
+attribute, it is unlikely that <i>all</i> XML languages will support a
 similar capability. Because of this---and especially because it
 encourages poor authoring practices---authors are discouraged from using
 the style attribute, and thus inline styles.
@@ -141,7 +141,7 @@ stylesheet:</p>
 </pre>
 
 <p>Note that &#64;import directives can appear at the top (and, according to
-the specification, *only* at the top) of any stylesheet. Thus, one
+the specification, <i>only</i> at the top) of any stylesheet. Thus, one
 stylesheet could import another, which in turn would import a third.</p>
 
 <h5>2. link element</h5>
@@ -192,7 +192,7 @@ stylesheet with your pages is to use an HTTP Link header. This approach
 uses HTTP headers to replicate the effects of a link element or &#64;import
 directive.</p>
 
-<p>Adding a line such as this to the *.htaccess* file at the root level of
+<p>Adding a line such as this to the <i>.htaccess</i> file at the root level of
 your server will make this happen for all pages on the site, where
 /style.css is the server path of the stylesheet to be loaded:</p>
 
@@ -200,8 +200,8 @@ your server will make this happen for all pages on the site, where
   &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 </pre>
 
-<p>As an alternative to using *.htaccess*, which has been known to cause
-performance problems, you can edit your *httpd.conf* file to do the same
+<p>As an alternative to using <i>.htaccess</i>, which has been known to cause
+performance problems, you can edit your <i>httpd.conf</i> file to do the same
 thing:</p>
 
 <pre>
@@ -222,9 +222,9 @@ and the occasional Easter egg for Firefox and Opera users.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2-1">Rule Structure</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A stylesheet consists of one or more *rules* that describe how page
+<p>A stylesheet consists of one or more <i>rules</i> that describe how page
 elements should be presented. Every rule has two fundamental parts: the
-*selector* and the *declaration block*. Figure 1-1 illustrates the
+<i>selector</i> and the <i>declaration block</i>. Figure 1-1 illustrates the
 structure of a rule.</p>
 <!-- image001 rule structure -->
 <i>Figure 1-1. Rule structure</i>
@@ -233,8 +233,8 @@ parts of the document to which the rule should be applied. Selectors can
 stand singly or be grouped as a comma-separated list; e.g., to select
 the top three heading levels at once, the selector group would be h1,
 h2, h3. On the right side of the rule, we have the declaration block. A
-declaration block is made up of one or more *declarations*; each
-declaration is a combination of a CSS *property* and a *value* of that
+declaration block is made up of one or more <i>declarations</i>; each
+declaration is a combination of a CSS <i>property</i> and a <i>value</i> of that
 property.</p>
 <p>The declaration block is always enclosed in curly braces. A declaration
 block can contain several declarations; each declaration must be
@@ -251,7 +251,7 @@ properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3-1">1.3. <b><mark>&#64; At-rules</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A CSS *at-rule* is a statement or block of rules that begins with a
+<p>A CSS <i>at-rule</i> is a statement or block of rules that begins with a
 specific identifier preceded by an @ sign. These are:</p>
 
 <ul>
@@ -261,20 +261,20 @@ specific identifier preceded by an @ sign. These are:</p>
 	define the encoding of their styles even when they do not control the
 	encoding of the file or system in which the styles are written. If
 	multiple &#64;charset rules are declared, only the first will be used.
-	This *must* be the first line of a stylesheet in which it appears, and
-	*cannot* be preceded by any character. &#64;charset cannot be used in a
+	This <i>must</i> be the first line of a stylesheet in which it appears, and
+	<i>cannot</i> be preceded by any character. &#64;charset cannot be used in a
 	stylesheet embedded in a document.</li>
   <li><b><mark>&#64;import</mark></b><br>
     Allows an author to include the styles of another stylesheet (see
 	"@import directive" on page 2). Multiple &#64;import rules are permitted. 
-	Any &#64;import rules *must* appear before all other parts of the stylesheet 
+	Any &#64;import rules <i>must</i> appear before all other parts of the stylesheet 
 	except for &#64;charset.</li>
   <li><b><mark>&#64;namespace</mark></b><br>
     Allows an author to define an XML namespace to be used in selectors
 	(e.g., &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting
 	the use of svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG
 	files differently than &lt;a&gt; elements in HTML). Multiple &#64;namespace 
-	rules are permitted. Any &#64;namespace *must* appear before all other parts 
+	rules are permitted. Any &#64;namespace <i>must</i> appear before all other parts 
 	of the stylesheet except for &#64;charset and &#64;import rules.</li>
 </ul>
 <p>Besides these statements, there are a number of conditional at-rules.
@@ -325,7 +325,7 @@ a property name or value:</p>
 
 <p>HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
 stylesheets so as to hide the styles from browsers so old that they
-don't understand HTML 3.2. They do *not* act as CSS comments; that is,
+don't understand HTML 3.2. They do <i>not</i> act as CSS comments; that is,
 anything contained in an HTML comment will be seen and interpreted by
 the CSS parser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -335,18 +335,18 @@ A single HTML document can import and link to multiple external
 stylesheets, contain one or more embedded stylesheets, and make use of
 inline styles. In the process, it is quite possible that some rules will
 conflict with one another. Cascading Style Sheets uses a mechanism
-called the *cascade* to resolve any such conflicts and arrive at a final
+called the <i>cascade</i> to resolve any such conflicts and arrive at a final
 set of styles to be applied to the document. Two key components of the
 cascade are specificity and inheritance.
 
 <h4>Specificity Calculations</h4>
-*Specificity* describes the weight of a selector and any declarations
+<i>Specificity</i> describes the weight of a selector and any declarations
 associated with it. Table 1-1 shows how much each part of a selector
 contributes to the total specificity of that selector.
 
 <!-- image002 -->
 
-*Table 1-1. Selector type specificity*
+<i>Table 1-1. Selector type specificity</i>
 
 Selector type Example        Specificity 
 Universal selector    &ast;     0,0,0,0     
@@ -388,13 +388,13 @@ structure descends from those elements. In such a structure, elements
 lower down in the tree are descendants of the ancestors, which are
 higher in the tree.
 
-CSS uses the document tree for the mechanism of *inheritance*, in which
+CSS uses the document tree for the mechanism of <i>inheritance</i>, in which
 a style applied to an element is inherited by its descendants. For
 example, if the body element is set to have a color of red, that value
 propagates down the document tree to the elements that descend from the
 body element. Inheritance is interrupted only by a conflicting style
 rule that applies directly to an element. Inherited values have no
-specificity at all (which is *not* the same as having zero specificity).
+specificity at all (which is <i>not</i> the same as having zero specificity).
 
 Note that some properties are not inherited. A property will always
 define whether it is inherited. Some examples of noninherited properties
@@ -408,11 +408,11 @@ each one tries to set a different color. Here's how the cascade works:
 
 1.  Find all rules with a selector that matches a given element.
 
-2.  Sort all declarations applying to the given element by *explicit
-    weight*. Those rules that are marked !important have a higher
+2.  Sort all declarations applying to the given element by <i>explicit
+    weight</i>. Those rules that are marked !important have a higher
     explicit weight than those that are not.
 
-3.  Sort all declarations applying to the given element by *origin*.
+3.  Sort all declarations applying to the given element by <i>origin</i>.
     There are three basic origins: author, reader, and user agent. Under
     normal circumstances, the author's styles win out over the reader's
     styles. Howerver, !important reader styles are stronger than any
@@ -420,10 +420,10 @@ each one tries to set a different color. Here's how the cascade works:
     reader styles override the user agent's default styles.
 
 4.  Sort all declarations applying to the given element by
-    *specificity*. Those elements with a higher specificity have more
+    <i>specificity</i>. Those elements with a higher specificity have more
     weight than those with lower specificity.
 
-5.  Sort all declarations applying to the given element by *order*. The
+5.  Sort all declarations applying to the given element by <i>order</i>. The
     later a declaration appears in the stylesheet or document, the more
     weight it is given. Declarations that appear in an imported
     stylesheet are considered to come before all declarations within the
@@ -436,15 +436,15 @@ user agent's default styles (see step 2 above).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-6-1">1.6 Element Classification</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Broadly speaking, CSS groups elements into two types: *nonreplaced* and
-*replaced*. Although the types may seem rather abstract, there actually
+Broadly speaking, CSS groups elements into two types: <i>nonreplaced</i> and
+<i>replaced</i>. Although the types may seem rather abstract, there actually
 are some profound differences in how the two types of elements are
 presented. These differences are explored in detail in Chapter 7 of
-[*CSS: The* *Definitive Guide*, 4th
+[<i>CSS: The</i> <i>Definitive Guide</i>, 4th
 Edition](http://shop.oreilly.com/product/0636920012726.do) (O'Reilly).
 
 ### Nonreplaced Elements
-The majority of HTML elements are *nonreplaced elements*, which means
+The majority of HTML elements are <i>nonreplaced elements</i>, which means
 their content is presented by the user agent inside a box generated by
 the element itself. For example, &lt;span&gt;hi there&lt;/span&gt; is a
 nonreplaced element, and the text hi there will be displayed by the user
@@ -452,7 +452,7 @@ agent. Paragraphs, headings, table cells, lists, and almost everything
 else in HTML are nonreplaced elements.
 
 ### Replaced Elements
-In contrast, *replaced elements* are those whose content is replaced by
+In contrast, <i>replaced elements</i> are those whose content is replaced by
 something not directly represented by document content. The most
 familiar HTML example is the img element, which is replaced by an image
 file external to the document itself. In fact, img itself has no actual
@@ -472,7 +472,7 @@ Replaced elements also generate boxes in their display.
 <h3 id="ch1-7-1">1.7. Element Display Roles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In addition to being replaced or not, there are two basic types of
-element display roles in CSS: *block-level* and *inline-level*. All
+element display roles in CSS: <i>block-level</i> and <i>inline-level</i>. All
 
 CSS display values fall into one of these two categories. It can be
 important to know which general role a box falls into, since some
@@ -480,7 +480,7 @@ properties only apply to one type or the other.
 
 <h4>Block-Level</h4>
 
-*Block-level boxes* are those where the element box (by default) fills
+<i>Block-level boxes</i> are those where the element box (by default) fills
 its parent element's content area width and cannot have other elements
 to its sides. In other words, block-level elements generate "breaks"
 before and after the element box. The most familiar block elements from
@@ -499,7 +499,7 @@ table-cell, table-caption, flex, and grid.
 
 <h4>Inline-Level</h4>
 
-*Inline-level* boxes are those where an element box is generated within
+<i>Inline-level</i> boxes are those where an element box is generated within
 a line of text and does not break up the flow of that line. Perhaps the
 best-known inline element is the a element in HTML. Other examples are
 span and em. These elements do not generate a break before or after
@@ -523,15 +523,15 @@ generate inline boxes, but this seems the most likely outcome.
 CSS defines algorithms for laying out any element in a document. These
 algorithms form the underpinnings of visual presentation in CSS. There
 are two primary kinds of layout, each with very different behaviors:
-*block-level* and *inline-level* layout.
+<i>block-level</i> and <i>inline-level</i> layout.
 
 <h4>Block-Level Layout</h4>
-A block-level box in CSS generates a rectangular box called the *element
-box*, which describes the amount of space occupied by an element. Figure
+A block-level box in CSS generates a rectangular box called the <i>element
+box</i>, which describes the amount of space occupied by an element. Figure
 1-2 shows the components of an element box.
 
 <!-- image003 -->
-*Figure 1-2. The complete box model*
+<i>Figure 1-2. The complete box model</i>
 
 The following rules apply to an element box:
 
@@ -566,7 +566,7 @@ The following rules apply to an element box:
 
 <h4>Inline Layout</h4>
 An inline-level box in CSS generates one or more rectangular boxes
-called *inline boxes*. The following rules apply to inline boxes:
+called <i>inline boxes</i>. The following rules apply to inline boxes:
 
 -   width and height do not apply to nonreplaced inline boxes.
 
@@ -576,13 +576,13 @@ called *inline boxes*. The following rules apply to inline boxes:
 
 -   For replaced inline boxes, the following rules apply:
 
-    -- If height and width are both auto and the element has an intrinsic
+    - If height and width are both auto and the element has an intrinsic
 	  width (e.g., an image), the value of width is equal to the element's
 	  intrinsic width. The same holds true for height.
-    -- If height and width are both auto and the element does not have an
+	- If height and width are both auto and the element does not have an
 	  intrinsic width but does have an intrinsic height and layout ratio,
 	  then width is set to be the intrinsic height times the ratio.
-    -- If height and width are both auto and the element does not have an
+	- If height and width are both auto and the element does not have an
 	  intrinsic height but does have an intrinsic width and layout ratio,
 	  then height is set to be the intrinsic width divided by the ratio.
 
@@ -594,61 +594,60 @@ All inline elements have a line-height, which has a great deal to do
 with how the elements are displayed. The height of a line of text is
 determined by taking the following factors into account:
 
-<h5>*Anonymous text*</h5>
+<h5><i>Anonymous text</i></h5>
 
-| Any string of characters not contained within an inline element. Thus,
-| in the markup:
+  Any string of characters not contained within an inline element. Thus,
+  in the markup:
 
-| <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b>
-| the sequences "I'm " and " happy!" are anonymous text. 
-| Note that the spaces are part  of the anonymous text, as a space is a character 
-| like any other.
+  <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b>
+  the sequences "I'm " and " happy!" are anonymous text. 
+  Note that the spaces are part  of the anonymous text, as a space is a character 
+  like any other.
 
-<h5>*Em-box*</h5>
+<h5><i>Em-box</i></h5>
 
-| The space taken up by a capital letter M in the given font; otherwise
-| known as the character box. Actual glyphs can be taller or shorter
-| than their em-boxes, as discussed in Chapter 5 of [*CSS: The*
-| *Definitive Guide*, 4th
-| Edition](http://shop.oreilly.com/product/0636920012726.do). In
-| CSS, the value of font-size determines the height of each em-box.
+  The space taken up by a capital letter M in the given font; otherwise
+  known as the character box. Actual glyphs can be taller or shorter
+  than their em-boxes, as discussed in Chapter 5 of [<i>CSS: The</i>
+  <i>Definitive Guide</i>, 4th
+  Edition](http://shop.oreilly.com/product/0636920012726.do). In
+  CSS, the value of font-size determines the height of each em-box.
 
-<h5>*Content area*</h5>
+<h5><i>Content area</i></h5>
 
-| In nonreplaced elements, this can be the box described by the em-boxes
-| of every character in the element, strung together, or else the box
-| described by the character glyphs in the element. In CSS2.1 and later,
-| user agents can choose either. This text uses the em-box definition
-| for simplicity's sake. In replaced elements, the content area is the
-| intrinsic height of the element plus any margins, borders, or padding.
+  In nonreplaced elements, this can be the box described by the em-boxes
+  of every character in the element, strung together, or else the box
+  described by the character glyphs in the element. In CSS2.1 and later,
+  user agents can choose either. This text uses the em-box definition
+  for simplicity's sake. In replaced elements, the content area is the
+  intrinsic height of the element plus any margins, borders, or padding.
 
-<h5>*Leading*</h5>
+<h5><i>Leading</i></h5>
 
-| The difference between the values of font-size and lineheight. Half
-| this difference is applied to the top and half to the bottom of the
-| content area. These additions to the content area are called, not
-| surprisingly, *half-leading*. Leading is applied only to nonreplaced
-| elements.
+  The difference between the values of font-size and lineheight. Half
+  this difference is applied to the top and half to the bottom of the
+  content area. These additions to the content area are called, not
+  surprisingly, <i>half-leading</i>. Leading is applied only to nonreplaced
+  elements.
 
-<h5>*Inline box*</h5>
+<h5><i>Inline box</i></h5>
 
-| The box described by the addition of the leading to the content area.
-| For nonreplaced elements, the height of the inline box of an element
-| will be equal to the value for line-height. For replaced elements, the
-| height of the inline box of an element will be equal to the content
-| area, as leading is not applied to replaced elements.
+  The box described by the addition of the leading to the content area.
+  For nonreplaced elements, the height of the inline box of an element
+  will be equal to the value for line-height. For replaced elements, the
+  height of the inline box of an element will be equal to the content
+  area, as leading is not applied to replaced elements.
 
-<h5>*Line box*</h5>
+<h5><i>Line box</i></h5>
 
-| The shortest box that bounds the highest and lowest points of the
-| inline boxes that are found in the line. In other words, the top edge
-| of the line box will be placed along the top of the highest inline box
-| top, and the bottom of the line box is placed along the bottom of the
-| lowest inline box bottom. (See Figure 1-3).
+  The shortest box that bounds the highest and lowest points of the
+  inline boxes that are found in the line. In other words, the top edge
+  of the line box will be placed along the top of the highest inline box
+  top, and the bottom of the line box is placed along the bottom of the
+  lowest inline box bottom. (See Figure 1-3).
 
 <!-- image004 -->
-*Figure 1-3. Inline layout details*
-
+<i>Figure 1-3. Inline layout details</i>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-9-1">1.9. Floating</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -707,14 +706,14 @@ also how it is laid out within that element. <b>Types of Positioning</b>
 
 There are five types of positioning:
 
-*Static*
+<i>Static</i>
 
 The element's box is generated as normal. Block-level elements
 generate a rectangular box that is part of the document's flow, and
 inline-level boxes generate one or more line boxes that flow within
 their parent element.
 
-*Relative*
+<i>Relative</i>
 
 The element's box is offset by some distance. Its containing block can
 be considered to be the area that the element would occupy if it were
@@ -722,7 +721,7 @@ not positioned. The element retains the shape it would have had were
 it not positioned, and the space that the element would otherwise have
 occupied in the normal flow is preserved.
 
-*Absolute*
+<i>Absolute</i>
 
 The element's box is completely removed from the flow of the document
 and positioned with respect to its containing block, which may be
@@ -733,14 +732,14 @@ element did not exist. The positioned element generates a block box,
 regardless of the type of box it would generate if it were in the
 normal flow.
 
-*Sticky*
+<i>Sticky</i>
 
 The element's box stays in the normal flow until it reaches a sticky
 edge of the containing box, at which time it "sticks" there as if
 absolutely positioned. The space that the element would otherwise have
 occupied in the normal flow is preserved.
 
-*Fixed*
+<i>Fixed</i>
 
 The element's box behaves as though set to absolute, but its
 containing block is the viewport itself.
@@ -749,8 +748,8 @@ containing block is the viewport itself.
 
 The containing block of a positioned element is determined as follows:
 
-1.  The containing block of the *root element* (also called the *initial
-    containing block*) is established by the user agent. In HTML, the
+1.  The containing block of the <i>root element</i> (also called the <i>initial
+    containing block</i>) is established by the user agent. In HTML, the
     root element is the html element, although some browsers may use
     body.
 
@@ -792,11 +791,11 @@ be the initial containing block.
 <h3 id="ch1-11-1">1.11. Flexible Box Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Flexible box layout (also known as *flexbox* or *flex layout*) is ideal
+Flexible box layout (also known as <i>flexbox</i> or <i>flex layout</i>) is ideal
 for almost any one-dimensional layout; that is, situations where a
 number of elements need to be placed and distributed along a line. There
-are two kinds of flex elements: the *flex container* and the *flex
-items* that are placed within the container.
+are two kinds of flex elements: the <i>flex container</i> and the <i>flex
+items</i> that are placed within the container.
 
 All the direct children of the flex container element are flex items.
 
@@ -811,14 +810,14 @@ property.
 Figure 1-4 shows the values (and their effects) of the justifycontent
 and align-items properties.
 
-*Figure 1-4. Justify and align values*
+<i>Figure 1-4. Justify and align values</i>
 
 The process of calculating flex sizes is fairly complex. Here's a
 simplified version of the algorithm:
 
 1.  Add together all the hypothetical outer main sizes of the flex items
     in a flex container. If the sum is smaller than the container size,
-    the *flex factor* is to grow; otherwise, the flex factor is to
+    the <i>flex factor</i> is to grow; otherwise, the flex factor is to
     shrink.
 
 2.  Any items that are inflexible are frozen in size. These are:
@@ -827,13 +826,13 @@ simplified version of the algorithm:
 
 -   Any item with a flex factor of zero
 
--   Any item whose *hypothetical main size* is greater (if growing) or
-    smaller (if shrinking) than its *base size*
+-   Any item whose <i>hypothetical main size</i> is greater (if growing) or
+    smaller (if shrinking) than its <i>base size</i>
 
 -   Any item with a growth factor (if growing) or shrink factor (if
     shrinking) of zero
 
-3.  Calculate the *initial free space* by finding the difference between
+3.  Calculate the <i>initial free space</i> by finding the difference between
     the outer sizes of all flex items and the size of the flex
     container.
 
@@ -855,7 +854,7 @@ full details if you want to know more.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Grid layout is ideal for almost any two-dimensional layout. There are
-two kinds of grid elements: the *grid container* and the *grid items*
+two kinds of grid elements: the <i>grid container</i> and the <i>grid items</i>
 that are placed within the container. All the direct children of the
 grid container element are grid items.
 
