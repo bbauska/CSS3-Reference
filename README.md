@@ -258,6 +258,15 @@ and the occasional Easter egg for Firefox and Opera users.</p>
 elements should be presented. Every rule has two fundamental parts: the
 <i>selector</i> and the <i>declaration block</i>. Figure 1-1 illustrates the
 structure of a rule.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. rule structure ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image001.png?raw=true"
+  title="Rule structure"
+  alt="Rule structure."
+  style="width:40%;" />
+</p>
 <!-- image001 rule structure -->
 <i>Figure 1-1. Rule structure</i>
 <p>On the left side of the rule, we find the selector, which selects the
@@ -372,6 +381,15 @@ specificity and inheritance.</p>
 <p><i>Specificity</i> describes the weight of a selector and any declarations associated 
 with it. Table 1-1 shows how much each part of a selector contributes to the total 
 specificity of that selector.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. selector type specificity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image002.png?raw=true"
+  title="Selector type specificity"
+  alt="Selector type specificity."
+  style="width:20%;" />
+</p>
 
 <!-- image002 -->
 
@@ -544,6 +562,15 @@ are two primary kinds of layout, each with very different behaviors:
 <p>A block-level box in CSS generates a rectangular box called the <i>element
 box</i>, which describes the amount of space occupied by an element. Figure
 1-2 shows the components of an element box.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. the complete box model ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image003.png?raw=true"
+  title=""
+  alt="."
+  style="width:20%;" />
+</p>
 
 <!-- image003 -->
 <i>Figure 1-2. The complete box model</i>
@@ -665,7 +692,15 @@ determined by taking the following factors into account:
   of the line box will be placed along the top of the highest inline box
   top, and the bottom of the line box is placed along the bottom of the
   lowest inline box bottom. (See Figure 1-3).
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. inline layout details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image004.png?raw=true"
+  title="Inline layout details"
+  alt="Inline layout details."
+  style="width:20%;" />
+</p>
 <!-- image004 -->
 <i>Figure 1-3. Inline layout details</i>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2135,7 +2170,6 @@ border: 2px solid;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <b>Applies to</b> Any element
 <b>Description</b> Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
@@ -2204,25 +2238,25 @@ is needed.
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
 
-  <b>:not(*e*)</b>      
- <b>Applies to</b>  Any element 
- <b>Description</b>  Matches every element that is *not* described by    
- the simple selector *e*. For example, you can       
- select every element that is not a paragraph by     
- stating &ast;:not(p).  
- More usefully, negation can be used within the      
- context of descendant selectors. An example of this 
- would be selecting every element within a table     
- that is not a data cell using table &ast;:not(td).     
- Another example would be selecting every element    
- with an ID that is not search by using      
+<b>:not(*e*)</b>      
+<b>Applies to</b>  Any element 
+<b>Description</b>  Matches every element that is *not* described by    
+the simple selector *e*. For example, you can       
+select every element that is not a paragraph by     
+stating &ast;:not(p).  
+More usefully, negation can be used within the      
+context of descendant selectors. An example of this 
+would be selecting every element within a table     
+that is not a data cell using table &ast;:not(td).     
+Another example would be selecting every element    
+with an ID that is not search by using      
      
- &lbrack;id&rbrack;:not(&lbrack;id=&quot;search&quot;&rbrack;).      
+&lbrack;id&rbrack;:not(&lbrack;id=&quot;search&quot;&rbrack;).      
      
- Note that there is one exception to the "simple     
- selector" definition of *e*: it cannot be a 
- negation pseudoclass itself. That is, it is 
- impermissible to write :not(:not(div)).     
+Note that there is one exception to the "simple     
+selector" definition of *e*: it cannot be a 
+negation pseudoclass itself. That is, it is 
+impermissible to write :not(:not(div)).     
      
  Because :not() is a pseudo-class, it can be chained 
  with other pseudo-classes as well as with instances 
@@ -2231,8 +2265,9 @@ that it deserves its own subsection.
  &ast;:focus:not(a). To select any element that isn't   
  either a paragraph or a section, use
  &ast;:not(p):not(section).     
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Negation Pseudo-Class</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As of early 2018, the "simple selector" restriction means that
 grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
@@ -2242,8 +2277,7 @@ Selectors Level 4.
 
 <pre>
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
-<pre>
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-1">3.4. Interaction Pseudo-Classes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2252,7 +2286,9 @@ with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.
 
- <h4>:active</h4>       
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>:active</h4>       
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   <b>Applies to</b>     Any interaction element     
   <b>Description</b>  Matches an element during the period in which it is 
@@ -2264,56 +2300,56 @@ elements based on their being enabled or disabled.
  although CSS doesn't define them.   
   <b>Examples</b>  a:active {color: red;} 
      &ast;:active {background: blue;} 
-
- <h4>:checked</h4>      
-
-  <b>Applies to</b>    Any interaction element that has an on/off state    
- <b>Description</b>  Matches any user interface element that has been
-  "toggled on," such as a checked checkbox or a
- filled radio button. 
- <b>Examples</b>  input:checked { <br>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>:checked</h4>      
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Applies to</b>    Any interaction element that has an on/off state    
+<b>Description</b>  Matches any user interface element that has been
+"toggled on," such as a checked checkbox or a
+filled radio button. 
+<b>Examples</b>  input:checked { <br>
       outline: 3px solid rgba(127,127,127,0.5);}<br>
     input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { <br>
 					  box-shadow: red 0 0 5px;} 
-
-  <h4>:disabled</h4>      
-
- <b>Applies to</b>  Any interaction element     
- <b>Description</b>  Matches user interface elements that are not able 
-  to accept user input because of language attributes 
- or other nonpresentational means; for example,      
- &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note 
- that :disabled does *not* apply when an input     
- element has simply been removed from the viewport 
- with properties like position or display. 
- <b>Example</b>   input:disabled {opacity: 0.5;} 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>:disabled</h4>      
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Applies to</b>  Any interaction element     
+<b>Description</b>  Matches user interface elements that are not able 
+to accept user input because of language attributes 
+or other nonpresentational means; for example,      
+&lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note 
+that :disabled does *not* apply when an input     
+element has simply been removed from the viewport 
+with properties like position or display. 
+<b>Example</b>   input:disabled {opacity: 0.5;} 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:enabled</h4>
-
- <b>Applies to</b>     Any interaction element     
- <b>Description</b>  Matches user interface elements that are able to    
-  accept user input and that can be set to "enabled"  
- and "disabled" states through the markup language   
- itself. This includes any form input element in     
- (X)HTML, but does not include hyperlinks.   
- <b>Example</b>   input:enabled {background: #FCC;}   
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Applies to</b>     Any interaction element     
+<b>Description</b>  Matches user interface elements that are able to    
+accept user input and that can be set to "enabled"  
+and "disabled" states through the markup language   
+itself. This includes any form input element in     
+(X)HTML, but does not include hyperlinks.   
+<b>Example</b>   input:enabled {background: #FCC;}   
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:focus</h4>
-
- <b>Applies to</b>    Any interaction element     
- <b>Description</b>  Matches an element during the period in which it 
-  has focus. One example from HTML is an input box    
- that has the text-input cursor within it such that  
- when the user starts typing, text will be entered   
- into that box. Other elements, such as hyperlinks,  
- can also have focus; however, CSS does not define   
- which elements may or may not have focus.   
- <b>Examples</b>  a:focus {outline: 1px dotted red;}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Applies to</b>    Any interaction element     
+<b>Description</b>  Matches an element during the period in which it 
+ has focus. One example from HTML is an input box    
+that has the text-input cursor within it such that  
+when the user starts typing, text will be entered   
+into that box. Other elements, such as hyperlinks,  
+can also have focus; however, CSS does not define   
+which elements may or may not have focus.   
+<b>Examples</b>  a:focus {outline: 1px dotted red;}
     input:focus {background: yellow;} 
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:hover</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Applies to</b>   Any interaction element     
  <b>Description</b>  Matches an element during the period in which it is 
@@ -2326,7 +2362,9 @@ elements based on their being enabled or disabled.
  <b>Examples</b>     a&lbrack;href&rbrack;:hover {text-decoration: underline;}
       p:hover {background: yellow;} 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:link</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Applies to</b>   A hyperlink to a resource that has not been visited 
  <b>Description</b>  Matches a link to a URI that has not been visited;  
@@ -2336,8 +2374,9 @@ elements based on their being enabled or disabled.
  <b>Examples</b>     a:link {color: blue;} 
        &ast;:link {text-decoration: underline;} 
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:target</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Applies to</b>  Any element 
  <b>Description</b>  Matches an element which is itself matched by the
@@ -2350,14 +2389,15 @@ elements based on their being enabled or disabled.
        matched by p:target. 
  <b>Example</b>     :target {background: #EE0;}  
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:visited</h4>
-
- <b>Applies to</b>  A hyperlink to a resource that has already been visited 
- <b>Description</b>  Matches a link to a URI that has been visited; that is,
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Applies to</b>  A hyperlink to a resource that has already been visited 
+<b>Description</b>  Matches a link to a URI that has been visited; that is,
        the URI to which the link points appears in the user 
 					   agent's history. This state is mutually exclusive with 
 					   the :link state. 
- <b>Examples</b>  a:visited {color: purple;} <br>
+<b>Examples</b>  a:visited {color: purple;} <br>
     &ast;:visited {color: gray;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2370,7 +2410,9 @@ colons to distinguish them from pseudoclasses. For historical reasons,
 browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::after</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Generates</b>    A pseudo-element containing generated content
        placed after the content in the element 
@@ -2381,7 +2423,9 @@ but the doublecolon syntax is recommended.
  content: &quot; &quot; url(/icons/globe.gif);} 
        p:after {content: &quot; &vert;; &quot;;} 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::before</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Generates</b>   A pseudo-element containing generated content
       placed before the content in the element    
@@ -2392,7 +2436,9 @@ but the doublecolon syntax is recommended.
     p:before {content: attr(class);} 
 					a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::first-letter<.h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Generates</b>    A pseudo-element that contains the first letter of an element.  
  <b>Description</b>  Styles the first letter of an element. Any leading  
@@ -2409,7 +2455,9 @@ but the doublecolon syntax is recommended.
  <b>Examples</b>      h1:first-letter {font-size: 166%;} 
 p:first-letter {text-decoration: underline;} 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::first-line</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Generates</b>   A pseudo-element that contains the first formatted 
       line of an element 
@@ -2423,27 +2471,27 @@ p:first-letter {text-decoration: underline;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-1">3.6. Media Queries</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-With media queries, an author can define the media environment in which
+<p>With media queries, an author can define the media environment in which
 a given stylesheet, or portion of a stylesheet, is used by the browser.
 In the past, this was handled by setting media types with the media
 attribute on link elements, or with the media descriptor on &#64;import
 declarations. Media queries take this concept several steps further by
 allowing authors to choose stylesheets based on the features of a given
-media type. <b>Basic Concepts</b>
-
-The placement of media queries will be very familiar to any author who
+media type.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Basic Concepts</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The placement of media queries will be very familiar to any author who
 has ever set a media type. Here are two ways of applying an external
-stylesheet when rendering the document on a color printer:
+stylesheet when rendering the document on a color printer:</p>
 <pre>
 &lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
 (color)&quot; rel=&quot;stylesheet&quot;&gt;
 <br>
 &#64;import url(print-color.css) print and (color);
 </pre>
-Anywhere a media type can be used, a media query can be used. This means
-that it is possible to list more than one query in a comma-separated
-list:
+<p>Anywhere a media type can be used, a media query can be used. This means
+that it is possible to list more than one query in a comma-separated list:</p>
 <pre>
 &lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
 (color), projection and (color)&quot; rel=&quot;stylesheet&quot;&gt;
@@ -2473,7 +2521,9 @@ three conditions must be satisfied: if the media environment has
 color, and is in landscape orientation, and the device's display is at
 least 800 pixels wide, the stylesheet is used.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>not</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Negates the entire query so that if all of the conditions are true,
 the stylesheet is *not* applied. For example, not
@@ -2499,7 +2549,9 @@ ignored, you should write screen and (max-color: 2), screen and
 There is one more keyword, only, which is designed to create deliberate
 backward incompatibility.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>only</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Used to hide a stylesheet from browsers too old to understand media
 queries. For example, to apply a stylesheet in all media, but only in
@@ -2508,7 +2560,9 @@ something like &#64;import url(new.css) only all. In browsers that do
 understand media queries, the only keyword is ignored. Note that the
 only keyword can be used only at the beginning of a media query.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Media Query Values</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 There are two new value types introduced by media queries, which (as of
 early 2018) are not used in any other context:
@@ -2526,7 +2580,9 @@ A resolution value is a positive *&lt;integer&gt;* followed by either of
 the unit identifiers dpi or dpcm. As usual, whitespace is not
 permitted between the *&lt;integer&gt;* and the identifier.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Media Features</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 As of early 2018, the available media features are as follows. Note that
 their values cannot be negative: width*,* min-width*,* max-width
