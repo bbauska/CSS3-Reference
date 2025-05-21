@@ -372,7 +372,7 @@ anything contained in an HTML comment will be seen and interpreted by
 the CSS parser.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5-1">1.5 Style Precedence</h3>
+<h3 id="ch1-5-1">1.5. Style Precedence</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A single HTML document can import and link to multiple external
 stylesheets, contain one or more embedded stylesheets, and make use of
@@ -390,7 +390,7 @@ contributes to the total specificity of that selector.
 *Table 1-1. Selector type specificity*
 
 | Selector type        | Example                       | Specificity |
-| --------------- | ------------------------------------ | --------------- |
+|---------------|------------------------------------|---------------|
 | Universal selector   | &ast;                            | 0,0,0,0     |
 | Combinator           |                               |             |
 |                        | &plus;                            |             |
@@ -1604,7 +1604,9 @@ the unconstrained space in a layout. Note that fr is *not* a
 are permitted (e.g., calc() expressions, see "Calculation Values" on
 page 45).
 
-## URIs
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-7-1">2.7. URIs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A URI value (*&lt;uri&gt;*) is a reference to a file such as a graphic or
 another stylesheet. CSS defines a URI as relative to the stylesheet that
 contains it. URI stands for Uniform Resource Identifier, which is the
@@ -1613,7 +1615,9 @@ CSS, which was first defined when URIs were still called URLs, this
 means that references to URIs will often appear in the form
 url(*&lt;uri&gt;*). Fun!
 
-## Angles
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-8-1">2.8. Angles</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The format of an *&lt;angle&gt;* is expressed as a *&lt;number&gt;* followed
 immediately by an angle unit. There are four types of angle units:
 degrees (deg), grads (grad), radians (rad), and turns (turn). For
@@ -1622,16 +1626,18 @@ example, a right angle could be declared as 90deg, 100grad, 1.571rad, or
 range 0 through 360. This is also true of negative values: −90deg is
 equivalent to 270deg.
 
-## Times
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-9-1">2.9. Times</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A time value (*&lt;time&gt;*) is expressed as a *&lt;number&gt;* followed
 immediately by a time unit. There are two types of time units: seconds
 (s) and milliseconds (ms). Time values appear in aural styles, which are
 not widely supported, and in the much bettersupported transitions and
 animations.
 
-**Fraction Values**
-
-## Frequencies
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-10-1">2.10. Frequencies</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A frequency value (*&lt;frequency&gt;*) is expressed as a non-negative
 *&lt;number&gt;* followed immediately by a frequency unit. There are two
 types of frequency units: hertz (Hz) and kilohertz (kHz).
@@ -1640,7 +1646,10 @@ The unit identifiers are case-insensitive, so 6kHz and 6khz are
 equivalent. As of this writing, frequency values are only used with
 aural styles, which are not well supported.
 
-## Position
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-11-1">2.11. Position</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 A position value (*&lt;position&gt;*) is how you specify the placement of an
 origin image in backgrounds, object fitting, masking placement, and a
 few other circumstances. Its syntactical structure is rather
@@ -1668,7 +1677,9 @@ the subtly complex patterns that this value type has to allow, such as
 center, bottom right, 50% center, left 77px, and so on. The notation
 used here is described in "Value Syntax Conventions" on page 73.
 
-## Strings
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-12-1">2.12. Strings</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 A string (*&lt;string&gt;*) is a series of characters enclosed by either
 single or double quotes. If a string needs to include the same quote
 that encloses it, it must be escaped. For example,
@@ -1680,8 +1691,9 @@ character can be represented using an escaped codepoint reference; thus,
 a left curly double quotation mark can be represented with \\201C. If a
 string does contain a line feed for legibility reasons, it must be
 escaped and will be removed when processing the string.
-
-## Identifiers
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-13-1">2.13. Identifiers</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are some properties that accept an *identifier value*, which is a
 user-defined label of some kind; the most common examples are grid lines
 and areas in grid layout and keyframe names in animations. Identifiers
@@ -1692,8 +1704,9 @@ where a property accepts both an identifier and one or more keywords,
 the author should take care to never define an identifier identical to a
 valid keyword.
 
-## Attribute Values
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-14-1">2.14. Attribute Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In a few CSS properties, it's possible to pull in the value of an HTML
 attribute defined for the element being styled. This is done with the
 attr() value. As of early 2018, this is almost exclusively done with
@@ -1704,7 +1717,9 @@ an opening square bracket, the ID of the h2 element, and then a closing
 square bracket and trailing space. Any attribute, including HTML data-&ast;
 attributes, can be addressed in this manner.
 
-## Calculation Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-15-1">2.15. Calculation Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Calculation values take the form calc(), with an equation inside the
 parentheses. calc() can be used wherever *&lt;length&gt;*, *&lt;frequency&gt;*,
 *&lt;angle&gt;*, *&lt;time&gt;*, *&lt;percentage&gt;*, *&lt;number&gt;*, or
@@ -1744,7 +1759,9 @@ There's one more notable limitation: whitespace is *required* to either
 side of the + and - operators, while it is not for &ast; and /. This avoids
 ambiguity with respect to numeric values, which can be negative.
 
-## Variable Values
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-16-1">2.16. Variable Values</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As this book was being finished in early 2018, a new capability was
 being added to CSS. The technical term for this is *custom properties*,
 even though what these really do is create (sort of) variables in your
@@ -1768,7 +1785,7 @@ The defined value can then be invoked later on using a var() value type,
 like this:
 
 <pre>
-**h1** {**color**: var(&dash;-mainColor);}
+<b>h1</b> {<b>color</b>: var(&dash;-mainColor);}
 </pre>
 
 Note that these names are case-sensitive, so &dash;-maincolor and
@@ -1779,8 +1796,8 @@ scoped to the element to which they are applied.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3">3. CHAPTER 3 Selectors and Queries</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-## Selectors
+<h3 id="ch3-1-1">3.1. Selectors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### Universal Selector
 **Pattern** &ast;
 **Description** Matches any element name in the document's language. If
@@ -1940,8 +1957,9 @@ response field (or the respective meta http-equiv) for the document.
 
 **Example** html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
 
-## Structural Pseudo-Classes
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-2-1">3.2. Structural Pseudo-Classes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Strictly speaking, all pseudo-classes (like all selectors) are
 structural: they are, after all, dependent on document structure in some
 fashion. What sets the pseudo-classes listed here apart is that they are
@@ -1949,8 +1967,9 @@ intrinsically about patterns found in the structure of the document: for
 example, selecting every other paragraph or elements that are the last
 children of their parent element.
 
-| -------------- | ---------------------------------------------------- |
-| **:empty**   |                                                     |
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+### **:empty**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 | **Applies to** | Any element                                         |
 | **Description** | Matches elements that have no child nodes---that    |
 |                | is, no child elements *or* content nodes. Content   |
@@ -1966,7 +1985,9 @@ children of their parent element.
 |                | div:not(:empty) {border: 1px solid;                 |
 |                |                                                     |
 |                | padding: 1ch;} li:empty {display: none;}            |
-| ** :first-child** |                                                     |
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+### **:first-child**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 | **Applies to**    | Any element                                         |
 | **Description** | Matches an element when it is the first child of    |
 |                | another element. Thus, div:first-child will select  |
@@ -1975,7 +1996,9 @@ children of their parent element.
 | **Examples** | td:first-child {border-left: 1px solid;}            |
 |                | p:first-child {text-indent: 0; margin-top: 2em;}    |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### :first-of-type
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches an element when it is the first child of its
 type, as compared to all its sibling elements. Thus, div:first-of-type
@@ -1986,8 +2009,9 @@ will select any div that is the first child div of another element.
 h2:first-of-type {color: fuchsia;}
 </pre>
 
-| --------------- | ---------------------------------------------------- |
-| **:lang**    |                                                     |
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+### **:lang**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 | **Applies to**    | Any element with associated language-encoding       |
 |                   | information.                                        |
 | **Description** | Matches elements based on their human-language      |
@@ -1996,18 +2020,23 @@ h2:first-of-type {color: fuchsia;}
 |                | document---it cannot be assigned from CSS. The      |
 |                | handling of :lang is the same as for &vert;= attribute  |
 |                | selectors.                                          |
-| **Examples** | html:lang(en) {background: silver;} &ast;:lang(fr)     |
-|                | {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}                    |
-| **:last-child** |                                                     |
-| **Applies to**    | Any element                                         |
-| **Description** | Matches an element when it is the last child of     |
-|                | another element. Thus, div:last-child will select   |
-|                | any div that is the last child of another element,  |
-|                | *not* the last child element of any div.            |
-| **Examples** | td:last-child {border-right: 1px solid;}            |
-|                | p:last-child {margin-bottom: 2em;}                  |
+| **Examples** | html:lang(en) {background: silver;} <br>
+                &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;} |                    |
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+### **:last-child**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+ **Applies to**    | Any element |
+ **Description** | Matches an element when it is the last child of  
+                 another element. Thus, div:last-child will select  
+                 any div that is the last child of another element, 
+                 *not* the last child element of any div. |
+ **Examples** | td:last-child {border-right: 1px solid;}<br>
+                p:last-child {margin-bottom: 2em;}      |
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### :last-of-type
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches an element when it is the last child of its
 type, as compared to all its sibling elements. Thus, div:last-of-type
@@ -2021,7 +2050,9 @@ td:last-of-type {border-right: 1px dotted;} h2:last-of-type {color: fuchsia;}
 Any element
 
 <pre>
-:nth-child (a n± b)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+### :nth-child(*a*n±*b*)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </pre>
 **Applies to**
 
@@ -2048,7 +2079,9 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 tbody tr:nth-child(odd) {background-color: #EEF;}
 </pre>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### :nth-last-child(*a*n±*b*)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Applies to** Any element
 
@@ -2064,7 +2097,9 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 **Examples** &ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
 tr:nth-last-child(odd) { background-color: #EEF;}
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### :nth-last-of-type(*a*n±*b*)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches every *n*th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
@@ -2083,7 +2118,9 @@ background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
 border: 2px solid;}
 </pre>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### :nth-of-type(*a*n±*b*)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Applies to** Any element
 **Description** Matches every *n*th child that is of the same type as
@@ -2104,7 +2141,9 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 img:nth-of-type(3n) {float: right;}
 </pre>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### :only-child
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** Any element
 **Description** Matches an element that is the only child element of its
 parent element. A common use case for this selector is to remove the
@@ -2113,46 +2152,57 @@ the link. Note that an element can be selected by :only-child even if it
 has its own child or children. It must simply be the only child of its
 parent.
 
-**Examples** a img:only-child {border: 0;} table div:only-child {margin:
-5px;}
+**Examples** a img:only-child {border: 0;}<br>
+             table div:only-child {margin: 5px;}
 
 Any element
 
 **:**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **only-of-type**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to**
+
 **Description** Matches an element that is the only child element of its
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
 (such as divs within a div).
 **Examples** p em:only-of-type {font-weight: bold;} section
-article:only-of-type {margin: 2em 0 3em;} **:root**
+article:only-of-type {margin: 2em 0 3em;} 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**:root**
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Applies to** The root element
-**Description** This matches the document's root element, which in HTML
-is always the html element. In SVG, it is the svg element. In XML
-formats, the root element can have any name; thus, a generic
-root-element selector is needed.
-**Examples** :root {font: medium serif;} :root &gt; &ast; {margin: 1.5em 0;}
 
-## The Negation Pseudo-Class
+**Description** This matches the document's root element, which in <br>
+HTML is always the html element. In SVG, it is the <br>
+svg element. In XML formats, the root element can <br>
+have any name; thus, a generic root-element selector <br>
+is needed.
 
+**Examples** :root {font: medium serif;}<br>
+             :root &gt; &ast; {margin: 1.5em 0;}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-3-1">3.3. The Negation Pseudo-Class</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
 
-| -------------- | --------------------------------------------------- |
 |  **:not(*e*)** |                                                     |
 | **Applies to** | Any element                                         |
 | **Description** | Matches every element that is *not* described by    |
-|                | the simple selector *e*. For example, you can       |
-|                | select every element that is not a paragraph by     |
-|                | stating &ast;:not(p).                                  |
-|                | More usefully, negation can be used within the      |
-|                | context of descendant selectors. An example of this |
-|                | would be selecting every element within a table     |
-|                | that is not a data cell using table &ast;:not(td).     |
-|                | Another example would be selecting every element    |
-|                | with an ID that is not search by using              |
-|                |                                                     |
+                | the simple selector *e*. For example, you can       |
+                | select every element that is not a paragraph by     |
+                | stating &ast;:not(p).                                  |
+                | More usefully, negation can be used within the      |
+                | context of descendant selectors. An example of this |
+                | would be selecting every element within a table     |
+                | that is not a data cell using table &ast;:not(td).     |
+                | Another example would be selecting every element    |
+                | with an ID that is not search by using              |
+                |                                                     |
 |                | &lbrack;id&rbrack;:not(&lbrack;id=&quot;search&quot;&rbrack;).                      |
 |                |                                                     |
 |                | Note that there is one exception to the "simple     |
@@ -2180,7 +2230,9 @@ Selectors Level 4.
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
 <pre>
 
-## Interaction Pseudo-Classes
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-4-1">3.4. Interaction Pseudo-Classes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The pseudo-classes listed here are all related to the user's interaction
 with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
@@ -2301,7 +2353,9 @@ This state is mutually exclusive with the :link state.
 &ast;:visited {color: gray;}
 </pre>
 
-## Pseudo-Elements
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-5-1">3.5. Pseudo-Elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In CSS1 and CSS2, pseudo-elements were preceded by single colons, just
 as pseudo-classes were. In CSS3 and later, pseudoelements use double
@@ -2363,7 +2417,9 @@ properties that can apply to a first line.
 
 **Example** p.lead:first-line {font-weight: bold;}
 
-## Media Queries
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-6-1">3.6. Media Queries</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 With media queries, an author can define the media environment in which
 a given stylesheet, or portion of a stylesheet, is used by the browser.
@@ -2591,7 +2647,9 @@ Refers to the presence (or absence) of a grid-based output device,
 such as a tty terminal. A grid-based device will return 1; otherwise,
 0 is returned.
 
-## Feature Queries
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-7-1">3.7. Feature Queries</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 A *feature query* is an at-rule block similar to a media query. The
 difference is that it queries a user agent about its support for a given
