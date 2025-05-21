@@ -1804,7 +1804,7 @@ div &ast; p {color: blue;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Type Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>Pattern</h5>
+<h5>Pattern  element1</h5>
 <h5>Description  Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")</h5>
