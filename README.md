@@ -265,10 +265,10 @@ structure of a rule.</p>
   src="/images/image001.png?raw=true"
   title="Rule structure"
   alt="Rule structure."
-  style="width:40%;" />
+  style="width:50%;" />
 </p>
 <!-- image001 rule structure -->
-<i>Figure 1-1. Rule structure</i>
+<p align="center"><i>Figure 1-1. Rule structure</i></p>
 <p>On the left side of the rule, we find the selector, which selects the
 parts of the document to which the rule should be applied. Selectors can
 stand singly or be grouped as a comma-separated list; e.g., to select
@@ -356,7 +356,9 @@ And so is this. &ast;/</pre>
 <p>They can also occur anywhere within a stylesheet except in the middle of
 a property name or value:</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Comments</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 <b>h1</b>/&ast; heading-level-1 &ast;/ {color /&ast; foreground color &ast;/:
   rgba(23,58,89,0.42) /&ast; RGB + opacity &ast;/;}
@@ -392,8 +394,7 @@ specificity of that selector.</p>
 </p>
 
 <!-- image002 -->
-
-<p style="align:center;"><i>Table 1-1. Selector type specificity</i></p>
+<p align="center"><i>Table 1-1. Selector type specificity</i></p>
 
 <p>Specificity values are cumulative; thus, a selector containing two element identifiers 
 and a class identifier (e.g., div.aside p) has a specificity of 0,0,1,2. Specificity values 
@@ -553,12 +554,11 @@ box</i>, which describes the amount of space occupied by an element. Figure
   src="/images/image003.png?raw=true"
   title=""
   alt="."
-  style="width:40%;" />
+  style="width:60%;" />
 </p>
 
 <!-- image003 -->
-<i>Figure 1-2. The complete box model</i>
-
+<p align="center"><i>Figure 1-2. The complete box model</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The following rules apply to an element box:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -673,10 +673,10 @@ intrinsic height of the element plus any margins, borders, or padding.
   src="/images/image004.png?raw=true"
   title="Inline layout details"
   alt="Inline layout details."
-  style="width:40%;" />
+  style="width:50%;" />
 </p>
 <!-- image004 -->
-<i>Figure 1-3. Inline layout details</i>
+<p align="center"><i>Figure 1-3. Inline layout details</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-9-1">1.9. Floating</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1801,9 +1801,11 @@ scoped to the element to which they are applied.
 a rule does not have an explicit selector, the universal selector is
 inferred.
 
-<b>Examples</b> &ast; {color: red;}<br>
+<b>Examples</b>
+<pre>
+&ast; {color: red;}<br>
      div &ast; p {color: blue;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Type Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1811,8 +1813,10 @@ inferred.
 <b>Description</b> Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")
-<b>Examples</b> body {background: #FFF;} p {font-size: 1em;}
-
+<b>Examples</b> 
+<pre>
+body {background: #FFF;} p {font-size: 1em;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Descendant Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1821,9 +1825,11 @@ to these as "element selectors.")
 of another element. The matched element can be a child, grandchild,
 great-grandchild, etc. of the ancestor element. (CSS1 referred to these
 as "contextual selectors.")
-<b>Examples</b> body h1 {font-size: 200%;} table tr td div ul li {color:
+<b>Examples</b>
+<pre>
+body h1 {font-size: 200%;} table tr td div ul li {color:
 purple;} element1 &gt; element2
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Child Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1831,9 +1837,11 @@ purple;} element1 &gt; element2
 <b>Description</b> Matches an element based on its status as a child of
 another element. It is more restrictive than a descendant selector, as
 only a child will be matched.
-<b>Examples</b> div &gt; p {color: cyan;}
+<b>Examples</b>
+<pre>
+div &gt; p {color: cyan;}
 ul &gt; li {font-weight: bold;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Adjacent Sibling Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1844,12 +1852,12 @@ share the same parent element.) Any anonymous text nodes between the two
 elements are ignored; only elements and their positions in the document
 tree are considered.
 
-<b>Examples</b> table + p {margin-top: 2.5em;}
-
+<b>Examples</b>
 <pre>
+table + p {margin-top: 2.5em;}
+
 h1 + &ast; {margin-top: 0;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>General Sibling Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1859,12 +1867,12 @@ which it follows in the document tree. Any
 text or other elements between the two elements are ignored; only the
 elements and their positions in the document tree are considered.
 
-<b>Examples</b> h1 &#126; h2 {margin-top: 2.5em;}
-
+<b>Examples</b>
 <pre>
+h1 &#126; h2 {margin-top: 2.5em;}
+
 nav a &#126; a {border-left: 1px solid border;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Class Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1880,14 +1888,13 @@ nav a &#126; a {border-left: 1px solid border;}
  no element name precedes the dot, the selector      
  matches all elements bearing that class value or    
  values.     
-<b>Examples</b>    p.urgent {color: red;}      
-     
- a.external {font-style: italic;}    
-     
- .example {background: olive;}       
-     
- .note.caution {background: yellow;} 
-
+<b>Examples</b>
+<pre>
+p.urgent {color: red;}      
+a.external {font-style: italic;}    
+.example {background: olive;}       
+.note.caution {background: yellow;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>ID Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1900,6 +1907,7 @@ nav a &#126; a {border-left: 1px solid border;}
  the selector matches all elements containing that   
  ID value.   
  <b>Examples</b>
+<pre>
  h1#page-title       
  {font-size: 
  250%;}      
@@ -1909,7 +1917,8 @@ nav a &#126; a {border-left: 1px solid border;}
  #example  
  {background:      
  lime;}    
-
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Simple Attribute Selector</h4>
@@ -1918,18 +1927,22 @@ nav a &#126; a {border-left: 1px solid border;}
 <b>Description</b> Matches elements based on the presence of an
 attribute, regardless of the attribute's value.
 
-<b>Examples</b> a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
+<b>Examples</b>
+<pre>
+a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
 p&lbrack;class&rbrack; {border: 1px dotted silver;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Exact Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
 <b>Description</b> Matches elements based on the precise and complete value
 of an attribute.
-<b>Examples</b> a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
+<b>Examples</b>
+<pre>
+a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
 p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Partial Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1937,35 +1950,43 @@ p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;}
 <b>Description</b> Matches elements based on a portion of the
 spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;*value*&quot;&rbrack;
 is equivalent to *.value* (see above).
-<b>Examples</b> a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
+<b>Examples</b>
+<pre>
+a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Beginning Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
 <b>Description</b> Matches elements based on a substring at the very
 beginning of an attribute's value.
-<b>Examples</b> a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
+<b>Examples</b>
+<pre>
+a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Ending Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
 <b>Description</b> Matches elements based on a substring at the very end of
 an attribute's value.
-<b>Example</b> a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
-
+<b>Example</b>
+<pre>
+a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Arbitrary Substring Attribute Value Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
 <b>Description</b> Matches elements based on a substring found anywhere
 within an attribute's value.
-<b>Examples</b> a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
+<b>Examples</b>
+<pre>
+a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
  div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Language Attribute Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1980,8 +2001,10 @@ determined by the lang attribute of its nearest ancestor that does
 have one, or, lacking that, by the Content-Language HTTP header
 response field (or the respective meta http-equiv) for the document.
 
-<b>Example</b> html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
-
+<b>Example</b>
+<pre>
+html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-1">3.2. Structural Pseudo-Classes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1995,19 +2018,22 @@ children of their parent element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:empty</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <b>Applies to</b>  Any element 
- <b>Description</b>  Matches elements that have no child nodes---that  
+<b>Applies to</b>  Any element 
+<b>Description</b>  Matches elements that have no child nodes---that  
 is, no child elements *or* content nodes. Content   
- nodes are defined as any text, whitespace, entity   
- reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
- *not* empty because it has a single whitespace      
- character inside it; nor is the element empty if    
- that space is replaced with a newline. Note that    
- this pseudo-class does *not* apply to empty 
- elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.
- <b>Examples</b>  p:empty {padding: 1em; background: red;}<br>
- div:not(:empty) {border: 1px solid;<br>
- padding: 1ch;} li:empty {display: none;} 
+nodes are defined as any text, whitespace, entity   
+reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
+*not* empty because it has a single whitespace      
+character inside it; nor is the element empty if    
+that space is replaced with a newline. Note that    
+this pseudo-class does *not* apply to empty 
+elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.
+<b>Examples</b>
+<pre>
+p:empty {padding: 1em; background: red;}
+div:not(:empty) {border: 1px solid;<br>
+padding: 1ch;} li:empty {display: none;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:first-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2016,9 +2042,11 @@ is, no child elements *or* content nodes. Content
  another element. Thus, div:first-child will select  
  any div that is the first child of another element, 
  *not* the first child element of any div.   
- <b>Examples</b>   td:first-child {border-left: 1px solid;}<br>
- p:first-child {text-indent: 0; margin-top: 2em;}    
-
+<b>Examples</b>
+<pre>
+td:first-child {border-left: 1px solid;}
+p:first-child {text-indent: 0; margin-top: 2em;}    
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:first-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2031,32 +2059,35 @@ will select any div that is the first child div of another element.
 <pre>
 h2:first-of-type {color: fuchsia;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:lang</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <b>Applies to</b>     Any element with associated language-encoding       
+<b>Applies to</b>     Any element with associated language-encoding       
     information.
- <b>Description</b>  Matches elements based on their human-language      
+<b>Description</b>  Matches elements based on their human-language      
   encoding. Such language information must be 
  contained within, or otherwise associated with, the 
  document---it cannot be assigned from CSS. The      
  handling of :lang is the same as for &vert;= attribute  
  selectors.  
- <b>Examples</b>  html:lang(en) {background: silver;} <br>
+<b>Examples</b>
+<pre>
+html:lang(en) {background: silver;} <br>
 &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}     
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:last-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <b>Applies to</b>     Any element 
- <b>Description</b>  Matches an element when it is the last child of  
+<b>Applies to</b>     Any element 
+<b>Description</b>  Matches an element when it is the last child of  
  another element. Thus, div:last-child will select  
  any div that is the last child of another element, 
  *not* the last child element of any div. 
- <b>Examples</b>  td:last-child {border-right: 1px solid;}<br>
-p:last-child {margin-bottom: 2em;}      
-
+<b>Examples</b>
+<pre>
+td:last-child {border-right: 1px solid;}
+p:last-child {margin-bottom: 2em;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:last-of-type</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2097,11 +2128,11 @@ the body.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 
-<b>Examples</b> &ast;:nth-child(4n+1) {font-weight: bold;}
+<b>Examples</b>
 <pre>
+&ast;:nth-child(4n+1) {font-weight: bold;}
 tbody tr:nth-child(odd) {background-color: #EEF;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-last-child(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2117,9 +2148,11 @@ element, starting with the last child, you would write body &gt;
 &ast;:nth-last-child(4n+1). This is, in effect, the mirror image of :nth-child.
 In place of the *a*n±*b* formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
-<b>Examples</b> &ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
+<b>Examples</b>
+<pre>
+&ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
 tr:nth-last-child(odd) { background-color: #EEF;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-last-of-type(*a*n±*b*)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2135,8 +2168,10 @@ other elements (e.g., lists, tables, or other elements) are interspersed
 between the various paragraphs. In place of the *a*n±*b* formula, there
 are two keywords permitted: even and odd. These are equivalent to 2n and
 2n+1, respectively.
-<b>Examples</b> td:nth-last-of-type(even) {
+<b>Examples</b>
 <pre>
+td:nth-last-of-type(even) {
+
 background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
 border: 2px solid;}
 </pre>
@@ -2162,7 +2197,6 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 <pre>
 img:nth-of-type(3n) {float: right;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:only-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2174,8 +2208,11 @@ the link. Note that an element can be selected by :only-child even if it
 has its own child or children. It must simply be the only child of its
 parent.
 
-<b>Examples</b> a img:only-child {border: 0;}<br>
+<b>Examples</b>
+<pre>
+ a img:only-child {border: 0;}<br>
      table div:only-child {margin: 5px;}
+</pre>
 
 Any element
 
@@ -2189,9 +2226,11 @@ Any element
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
 (such as divs within a div).
-<b>Examples</b> p em:only-of-type {font-weight: bold;} section
+<b>Examples</b> 
+<pre>
+p em:only-of-type {font-weight: bold;} section
 article:only-of-type {margin: 2em 0 3em;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:root</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2203,9 +2242,11 @@ svg element. In XML formats, the root element can <br>
 have any name; thus, a generic root-element selector <br>
 is needed.
 
-<b>Examples</b> :root {font: medium serif;}<br>
-     :root &gt; &ast; {margin: 1.5em 0;}
-
+<b>Examples</b>
+<pre>
+:root {font: medium serif;}<br>
+:root &gt; &ast; {margin: 1.5em 0;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3. The Negation Pseudo-Class</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2231,14 +2272,14 @@ Note that there is one exception to the "simple
 selector" definition of *e*: it cannot be a 
 negation pseudoclass itself. That is, it is 
 impermissible to write :not(:not(div)).     
-     
- Because :not() is a pseudo-class, it can be chained 
- with other pseudo-classes as well as with instances 
- of itself. For example, to select any focused       
- element that isn't an a element, use
- &ast;:focus:not(a). To select any element that isn't   
- either a paragraph or a section, use
- &ast;:not(p):not(section).     
+
+Because :not() is a pseudo-class, it can be chained 
+with other pseudo-classes as well as with instances 
+of itself. For example, to select any focused       
+element that isn't an a element, use
+&ast;:focus:not(a). To select any element that isn't   
+either a paragraph or a section, use
+&ast;:not(p):not(section).     
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Negation Pseudo-Class</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2247,9 +2288,10 @@ grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
 Selectors Level 4.
 
-<b>Examples</b> ul &ast;:not(li) {text-indent: 2em;}
-
+<b>Examples</b>
 <pre>
+ul &ast;:not(li) {text-indent: 2em;}
+
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2272,8 +2314,11 @@ elements based on their being enabled or disabled.
  active. There are other ways to activate elements,  
  and other elements can in theory be activated,      
  although CSS doesn't define them.   
-  <b>Examples</b>  a:active {color: red;} 
+  <b>Examples</b>
+<pre>
+a:active {color: red;} 
      &ast;:active {background: blue;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:checked</h4>      
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2281,10 +2326,13 @@ elements based on their being enabled or disabled.
 <b>Description</b>  Matches any user interface element that has been
 "toggled on," such as a checked checkbox or a
 filled radio button. 
-<b>Examples</b>  input:checked { <br>
+<b>Examples</b>
+<pre>
+input:checked { <br>
       outline: 3px solid rgba(127,127,127,0.5);}<br>
     input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { <br>
 					  box-shadow: red 0 0 5px;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:disabled</h4>      
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2296,7 +2344,10 @@ or other nonpresentational means; for example,
 that :disabled does *not* apply when an input     
 element has simply been removed from the viewport 
 with properties like position or display. 
-<b>Example</b>   input:disabled {opacity: 0.5;} 
+<b>Example</b>
+<pre>
+input:disabled {opacity: 0.5;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:enabled</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2306,7 +2357,10 @@ accept user input and that can be set to "enabled"
 and "disabled" states through the markup language   
 itself. This includes any form input element in     
 (X)HTML, but does not include hyperlinks.   
-<b>Example</b>   input:enabled {background: #FCC;}   
+<b>Example</b>
+<pre>
+input:enabled {background: #FCC;}   
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:focus</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2318,42 +2372,46 @@ when the user starts typing, text will be entered
 into that box. Other elements, such as hyperlinks,  
 can also have focus; however, CSS does not define   
 which elements may or may not have focus.   
-<b>Examples</b>  a:focus {outline: 1px dotted red;}
+<b>Examples</b>
+<pre>
+a:focus {outline: 1px dotted red;}
     input:focus {background: yellow;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:hover</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- <b>Applies to</b>   Any interaction element     
- <b>Description</b>  Matches an element during the period in which it is 
+<b>Applies to</b>   Any interaction element     
+<b>Description</b>  Matches an element during the period in which it is 
   being *hovered* over (when the user is designating  
   an element without activating it). The most common  
   example of this is moving the mouse pointer inside  
   the boundaries of a hyperlink in an HTML document.  
   Other elements can in theory be hovered over,       
   although CSS doesn't define which ones.     
- <b>Examples</b>     a&lbrack;href&rbrack;:hover {text-decoration: underline;}
-      p:hover {background: yellow;} 
-
+<b>Examples</b>
+<pre>
+a&lbrack;href&rbrack;:hover {text-decoration: underline;}
+p:hover {background: yellow;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:link</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Applies to</b>   A hyperlink to a resource that has not been visited 
- <b>Description</b>  Matches a link to a URI that has not been visited;  
+<b>Applies to</b>   A hyperlink to a resource that has not been visited 
+<b>Description</b>  Matches a link to a URI that has not been visited;  
   that is, the URI to which the link points does not  
   appear in the user agent's history. This state is   
   mutually exclusive with the :visited state.   
- <b>Examples</b>     a:link {color: blue;} 
-       &ast;:link {text-decoration: underline;} 
-
+<b>Examples</b>
+<pre>
+a:link {color: blue;} 
+&ast;:link {text-decoration: underline;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:target</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Applies to</b>  Any element 
- <b>Description</b>  Matches an element which is itself matched by the
+<b>Applies to</b>  Any element 
+<b>Description</b>  Matches an element which is itself matched by the
        fragment identifier portion of the URI used to 
 					   access the page. Thus, http://www.w3.org/TR/ 
 					   css3-selectors/#target-pseudo would be 
@@ -2361,8 +2419,10 @@ which elements may or may not have focus.
 					   styles to any element with the id of target-pseudo. 
 					   If that element was a paragraph, it would also be
        matched by p:target. 
- <b>Example</b>     :target {background: #EE0;}  
-
+<b>Example</b>
+<pre>
+:target {background: #EE0;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:visited</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2387,35 +2447,36 @@ but the doublecolon syntax is recommended.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::after</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Generates</b>    A pseudo-element containing generated content
+<b>Generates</b>    A pseudo-element containing generated content
        placed after the content in the element 
- <b>Description</b>  Inserts generated content at the end of an element's
+<b>Description</b>  Inserts generated content at the end of an element's
        content. By default, the pseudo-element is inline, 
 					   but this can be changed using the property display. 
- <b>Examples</b>     a.external:after { 
- content: &quot; &quot; url(/icons/globe.gif);} 
-       p:after {content: &quot; &vert;; &quot;;} 
-
+<b>Examples</b>
+<pre>
+a.external:after { 
+content: &quot; &quot; url(/icons/globe.gif);} 
+p:after {content: &quot; &vert;; &quot;;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::before</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Generates</b>   A pseudo-element containing generated content
-      placed before the content in the element    
- <b>Description</b>  Inserts generated content at the beginning of an  
+<b>Generates</b>   A pseudo-element containing generated content 
+placed before the content in the element
+<b>Description</b>  Inserts generated content at the beginning of an 
   element's content. By default, the pseudo-element is 
   inline, but this can be changed using the property display. 
- <b>Examples</b>  a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
-    p:before {content: attr(class);} 
-					a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
-
+<b>Examples</b>
+<pre>
+a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
+p:before {content: attr(class);} 
+a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::first-letter<.h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Generates</b>    A pseudo-element that contains the first letter of an element.  
- <b>Description</b>  Styles the first letter of an element. Any leading  
+<b>Generates</b>    A pseudo-element that contains the first letter of an element.  
+<b>Description</b>  Styles the first letter of an element. Any leading  
   punctuation should be styled along with the first   
   letter. Some languages have letter combinations     
   that should be treated as a single character, and a 
@@ -2426,9 +2487,11 @@ but the doublecolon syntax is recommended.
   display value of block, list-item, table-cell,      
   table-caption, or inlineblock. There is a limited   
    set of properties that can apply to a first letter. 
- <b>Examples</b>      h1:first-letter {font-size: 166%;} 
+<b>Examples</b>
+<pre>
+h1:first-letter {font-size: 166%;} 
 p:first-letter {text-decoration: underline;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::first-line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2823,20 +2886,19 @@ these keywords' meaning, see Chapter 2.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>align-content</b>  <b>Inh. N Anim. N</b> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>   flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
+<b>Values</b>   flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
 space-around &vert; space-evenly &vert; stretch 
- <b>Initial value</b>    stretch  
- <b>Computed value</b>  As declared 
- <b>Applies to</b>   Flex containers 
- <b> Description</b>  Defines the distribution of flex lines along the cross<br>
+<b>Initial value</b>    stretch  
+<b>Computed value</b>  As declared 
+<b>Applies to</b>   Flex containers 
+<b> Description</b>  Defines the distribution of flex lines along the cross<br>
      axis of a flex container, given that the container's<br>
      cross-axis length does not equal the sum of the flex<br>
      lines' size along the same axis. 
-  <b>Examples</b>  aside {display: flex; align-content: center;}<br>
+<b>Examples</b>  aside {display: flex; align-content: center;}<br>
   section {display: flex; height: 90vh;<br>
     align-content: flex-end;} 
- <b>Note</b>       As of early 2018, there are plans to have this prop-<br>
+<b>Note</b>       As of early 2018, there are plans to have this prop-<br>
   erty apply to many (or all) elements, not just flex<br>
   flex containers, and be given the values start and end to replicate <br>
   replicate flex-start and flex-end behavior for <br>
@@ -2847,36 +2909,33 @@ space-around &vert; space-evenly &vert; stretch
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>align-items</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
- <b>Initial value</b>  stretch 
- <b>Computed value</b>   As declared 
- <b>Applies to</b>     Flex containers, grid containers, and multicolumn containers  
- <b>Description</b>  Sets a flex-container-wide default for items' 
-    alignment with respect to the cross axis of the
-    flex line they occupy. baseline alignment means the
-    items in a line are all placed such that the
-    baselines of their first lines of text line up. 
- <b>Examples</b>  div.flexy {align-items: flex-start;} 
- section.gallery {align-items: baseline;} 
- <b>Note</b>       As of early 2018, there are plans to have this
-  property apply to many (or all) elements and be 
-  given the values start and end to replicate 
-  flex-start and flex-end behavior for non-flex 
-  environments. 
+<b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
+<b>Initial value</b>  stretch 
+<b>Computed value</b>   As declared 
+<b>Applies to</b>     Flex containers, grid containers, and multicolumn containers  
+<b>Description</b>  Sets a flex-container-wide default for items' 
+alignment with respect to the cross axis of the
+flex line they occupy. baseline alignment means the
+items in a line are all placed such that the
+baselines of their first lines of text line up. 
+<b>Examples</b>  div.flexy {align-items: flex-start;} 
+section.gallery {align-items: baseline;} 
+<b>Note</b>       As of early 2018, there are plans to have this
+property apply to many (or all) elements and be 
+given the values start and end to replicate 
+flex-start and flex-end behavior for non-flex 
+environments. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>align-self</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
- <b>Initial value</b>     stretch     
- <b>Computed value</b>   As declared 
- <b>Applies to</b>    Flex and grid items 
-      
- <b>Description</b>  Sets the alignment for a single item with respect 
+<b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
+<b>Initial value</b>     stretch     
+<b>Computed value</b>   As declared 
+<b>Applies to</b>    Flex and grid items 
+<b>Description</b>  Sets the alignment for a single item with respect 
        to the cross axis of the flex line it occupies.
- baseline    
+baseline    
 
 alignment means the baseline of the item's first line of text is
 aligned with the lowest first-line baseline in the flex line.
