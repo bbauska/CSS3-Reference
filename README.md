@@ -1791,8 +1791,9 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1. Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<hr width="75%" color="black" size="2px" align="center" />
 <h4>Universal Selector</h4>
-<hr width="60%" color="green" size="5px" align="center" />
+<hr width="100%" color="red" size="1px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b> &ast;
 <b>Description</b> Matches any element name in the document's language. If
@@ -1829,8 +1830,9 @@ body h1 {font-size: 200%;} table tr td div ul li {color:
 purple;} element1 &gt; element2
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<hr width="75%" color="black" size="1px" align="center" />
 <h4>Child Selector</h4>
-<hr width="60%" color="green" size="5px" align="center" />
+<hr width="75%" color="blue" size="1px" align="center" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Pattern</b>
 <b>Description</b> Matches an element based on its status as a child of
