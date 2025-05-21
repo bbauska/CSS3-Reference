@@ -1800,8 +1800,8 @@ inferred.
 
 <h5>Examples</h5>
 <pre>
-&ast; {color: red;}<br>
-     div &ast; p {color: blue;}
+&ast; {color: red;}
+div &ast; p {color: blue;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Type Selector</h4>
@@ -1812,7 +1812,8 @@ language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")
 <h5>Examples</h5>
 <pre>
-body {background: #FFF;} p {font-size: 1em;}
+body {background: #FFF;} 
+p {font-size: 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Descendant Selector</h4>
@@ -1824,8 +1825,8 @@ great-grandchild, etc. of the ancestor element. (CSS1 referred to these
 as "contextual selectors.")
 <h5>Examples</h5>
 <pre>
-body h1 {font-size: 200%;} table tr td div ul li {color:
-purple;} element1 &gt; element2
+body h1 {font-size: 200%;} 
+table tr td div ul li {color:purple;} element1 &gt; element2
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Child Selector</h4>
@@ -1852,7 +1853,6 @@ tree are considered.
 <h5>Examples</h5>
 <pre>
 table + p {margin-top: 2.5em;}
-
 h1 + &ast; {margin-top: 0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1867,7 +1867,6 @@ elements and their positions in the document tree are considered.
 <h5>Examples</h5>
 <pre>
 h1 &#126; h2 {margin-top: 2.5em;}
-
 nav a &#126; a {border-left: 1px solid border;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1906,15 +1905,9 @@ a.external {font-style: italic;}
 
 <h5>Examples</h5>
 <pre>
- h1#page-title       
- {font-size: 
- 250%;}      
- body#home 
- {background:      
- silver;}  
- #example  
- {background:      
- lime;}    
+ h1#page-title {font-size: 250%;}
+ body#home {background: silver;}
+ #example {background: lime;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Selectors</h3>
