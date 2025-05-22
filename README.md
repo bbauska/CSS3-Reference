@@ -1710,10 +1710,10 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1. Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Universal Selector</h4>
+<h3>Universal Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b>  &ast;</p>
-<p><b>Description</b>  Matches any element name in the document's language. If
+<p><b>Pattern</b>nbsp;&nbsp;  &ast;</p>
+<p><b>Description</b>&nbsp;&nbsp;  Matches any element name in the document's language. If
 a rule does not have an explicit selector, the universal selector is
 inferred.</p>
 
@@ -1721,6 +1721,11 @@ inferred.</p>
 <pre>
 &ast; {color: red;}
 div &ast; p {color: blue;}</pre>
+
+| Pattern | &ast; |
+| Description | Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred. |
+| Examples | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Type Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
