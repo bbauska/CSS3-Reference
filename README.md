@@ -1722,7 +1722,7 @@ inferred.</p>
 &ast; {color: red;}
 div &ast; p {color: blue;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Type Selector</h4>
+<h3>Type Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b>  element1</p>
 <p><b>Description</b>  Matches the name of an element in the document's
@@ -1732,7 +1732,7 @@ to these as "element selectors.")</p>
 <pre>body {background: #FFF;} 
 p {font-size: 1em;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Descendant Selector</h4>
+<h3>Descendant Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b>  element1 element2 ...</p>
 <p><b>Description</b>  Matches elements based on their status as a descendant
@@ -1743,7 +1743,7 @@ as "contextual selectors.")</p>
 <pre>body h1 {font-size: 200%;} 
 table tr td div ul li {color:purple;} element1 &gt; element2</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Child Selector</h4>
+<h3>Child Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b>>
 <p><b>Description</b>
@@ -1756,7 +1756,7 @@ div &gt; p {color: cyan;}
 ul &gt; li {font-weight: bold;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Adjacent Sibling Selector</h4>
+<h3>Adjacent Sibling Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1 + element2
 <p><b>Description</b>
@@ -1772,7 +1772,7 @@ table + p {margin-top: 2.5em;}
 h1 + &ast; {margin-top: 0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>General Sibling Selector</h4>
+<h3>General Sibling Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1 &#126; element2
 <p><b>Description</b>
@@ -1787,7 +1787,7 @@ h1 &#126; h2 {margin-top: 2.5em;}
 nav a &#126; a {border-left: 1px solid border;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Class Selector</h4>
+<h3>Class Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p><b>Pattern</b> element1.classname  
@@ -1809,7 +1809,7 @@ a.external {font-style: italic;}
 .note.caution {background: yellow;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>ID Selector</h4>
+<h3>ID Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b>  element1#idname
 <p><b>Description</b>  In languages that permit it, such as HTML or SVG, an ID selector selects 
@@ -1826,7 +1826,7 @@ selector matches all elements containing that ID value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Simple Attribute Selector</h4>
+<h3>Simple Attribute Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;attr&rbrack;
 <p><b>Description</b> Matches elements based on the presence of an
@@ -1838,7 +1838,7 @@ a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
 p&lbrack;class&rbrack; {border: 1px dotted silver;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Exact Attribute Value Selector</h4>
+<h3>Exact Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
 <p><b>Description</b> Matches elements based on the precise and complete value
@@ -1849,7 +1849,7 @@ a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
 p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Partial Attribute Value Selector</h4>
+<h3>Partial Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
 <p><b>Description</b> Matches elements based on a portion of the
@@ -1861,7 +1861,7 @@ a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Beginning Substring Attribute Value Selector</h4>
+<h3>Beginning Substring Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
 <p><b>Description</b> Matches elements based on a substring at the very
@@ -1872,7 +1872,7 @@ a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Ending Substring Attribute Value Selector</h4>
+<h3>Ending Substring Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
 <p><b>Description</b> Matches elements based on a substring at the very end of
@@ -1882,7 +1882,7 @@ an attribute's value.
 a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Arbitrary Substring Attribute Value Selector</h4>
+<h3>Arbitrary Substring Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
 <p><b>Description</b> Matches elements based on a substring found anywhere
@@ -1893,7 +1893,7 @@ a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
  div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Language Attribute Selector</h4>
+<h3>Language Attribute Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Pattern</b> element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
 <p><b>Description</b> Matches elements with a lang attribute whose value is
@@ -1921,7 +1921,7 @@ example, selecting every other paragraph or elements that are the last
 children of their parent element.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:empty</h4>
+<h3>:empty</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element 
 <p><b>Description</b>  Matches elements that have no child nodes---that  
@@ -1941,7 +1941,7 @@ div:not(:empty) {border: 1px solid;<br>
 li:empty {display: none;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:first-child</h4>
+<h3>:first-child</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any element
 <p><b>Description</b>  Matches an element when it is the first child of  
@@ -1954,7 +1954,7 @@ td:first-child {border-left: 1px solid;}
 p:first-child {text-indent: 0; margin-top: 2em;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:first-of-type</h4>
+<h3>:first-of-type</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
 <p><b>Description</b> Matches an element when it is the first child of its
@@ -1966,7 +1966,7 @@ td:first-of-type {border-left: 1px dotted;}
 h2:first-of-type {color: fuchsia;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:lang</h4>
+<h3>:lang</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any element with associated language-encoding  
     information.
@@ -1982,7 +1982,7 @@ html:lang(en) {background: silver;} <br>
 &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:last-child</h4>
+<h3>:last-child</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any element 
 <p><b>Description</b>  Matches an element when it is the last child of  
@@ -1995,7 +1995,7 @@ td:last-child {border-right: 1px solid;}
 p:last-child {margin-bottom: 2em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:last-of-type</h4>
+<h3>:last-of-type</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
 <p><b>Description</b> Matches an element when it is the last child of its
@@ -2008,7 +2008,7 @@ td:last-of-type {border-right: 1px dotted;}
 h2:last-of-type {color: fuchsia;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-child(<i>a</i>n±<i>b</i>)</h4>
+<h3>:nth-child(<i>a</i>n±<i>b</i>)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element
 
@@ -2036,7 +2036,7 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 tbody tr:nth-child(odd) {background-color: #EEF;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-last-child(<i>a</i>n±<i>b</i>)</h4>
+<h3>:nth-last-child(<i>a</i>n±<i>b</i>)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
 
@@ -2056,7 +2056,7 @@ tbody tr:nth-last-child(odd) {
   background-color: #EEF;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h4>
+<h3>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
 <p><b>Description</b> Matches every <i>n</i>th child that is of the same type as
@@ -2078,7 +2078,7 @@ img:nth-last-of-type(3n) {float: left;
   border: 2px solid;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-of-type(<i>a</i>n±<i>b</i>)</h4>
+<h3>:nth-of-type(<i>a</i>n±<i>b</i>)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
 <p><b>Description</b> Matches every <i>n</i>th child that is of the same type as
@@ -2099,7 +2099,7 @@ td:nth-of-type(even) {background-color: #FCC;}
 img:nth-of-type(3n) {float: right;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:only-child</h4>
+<h3>:only-child</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
 <p><b>Description</b> Matches an element that is the only child element of its
@@ -2119,7 +2119,7 @@ Any element
 
 <b>:</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>only-of-type</h4>
+<h3>only-of-type</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>
 
@@ -2133,7 +2133,7 @@ p em:only-of-type {font-weight: bold;}
 section article:only-of-type {margin: 2em 0 3em;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:root</h4>
+<h3>:root</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> The root element
 
@@ -2182,7 +2182,7 @@ element that isn't an a element, use
 either a paragraph or a section, use
 &ast;:not(p):not(section).     
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>The Negation Pseudo-Class</h4>
+<h3>The Negation Pseudo-Class</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As of early 2018, the "simple selector" restriction means that
 grouped, descendant, and combined selectors are not permitted within
@@ -2203,7 +2203,7 @@ with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:active</h4>  
+<h3>:active</h3>  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any interaction element     
  <p><b>Description</b>  Matches an element during the period in which it is 
@@ -2219,7 +2219,7 @@ a:active {color: red;}
 &ast;:active {background: blue;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:checked</h4> 
+<h3>:checked</h3> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>    Any interaction element that has an on/off state    
 <p><b>Description</b>  Matches any user interface element that has been
@@ -2233,7 +2233,7 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
   box-shadow: red 0 0 5px;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:disabled</h4> 
+<h3>:disabled</h3> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any interaction element     
 <p><b>Description</b>  Matches user interface elements that are not able 
@@ -2248,7 +2248,7 @@ with properties like position or display.
 input:disabled {opacity: 0.5;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:enabled</h4>
+<h3>:enabled</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>     Any interaction element     
 <p><b>Description</b>  Matches user interface elements that are able to    
@@ -2261,7 +2261,7 @@ itself. This includes any form input element in
 input:enabled {background: #FCC;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:focus</h4>
+<h3>:focus</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>    Any interaction element     
 <p><b>Description</b>  Matches an element during the period in which it 
@@ -2277,7 +2277,7 @@ a:focus {outline: 1px dotted red;}
 input:focus {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:hover</h4>
+<h3>:hover</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>   Any interaction element     
 <p><b>Description</b>  Matches an element during the period in which it is 
@@ -2293,7 +2293,7 @@ a&lbrack;href&rbrack;:hover {text-decoration: underline;}
 p:hover {background: yellow;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:link</h4>
+<h3>:link</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>   A hyperlink to a resource that has not been visited 
 <p><b>Description</b>  Matches a link to a URI that has not been visited;  
@@ -2306,7 +2306,7 @@ a:link {color: blue;}
 &ast;:link {text-decoration: underline;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:target</h4>
+<h3>:target</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element 
 <p><b>Description</b>  Matches an element which is itself matched by the
@@ -2322,7 +2322,7 @@ a:link {color: blue;}
 :target {background: #EE0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:visited</h4>
+<h3>:visited</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  A hyperlink to a resource that has already been visited 
 <p><b>Description</b>  Matches a link to a URI that has been visited; that is,
@@ -2343,7 +2343,7 @@ colons to distinguish them from pseudoclasses. For historical reasons,
 browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>::after</h4>
+<h3>::after</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>    A pseudo-element containing generated content
   placed after the content in the element 
@@ -2357,7 +2357,7 @@ a.external:after {
 p:after {content: &quot; &vert;; &quot;;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>::before</h4>
+<h3>::before</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>   A pseudo-element containing generated content 
 placed before the content in the element
@@ -2368,10 +2368,11 @@ placed before the content in the element
 <pre>
 a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
 p:before {content: attr(class);} 
+
 a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>::first-letter<.h4>
+<h3>::first-letter<.h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>    A pseudo-element that contains the first letter of an element.  
 <p><b>Description</b>  Styles the first letter of an element. Any leading  
@@ -2391,7 +2392,7 @@ h1:first-letter {font-size: 166%;}
 p:first-letter {text-decoration: underline;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>::first-line</h4>
+<h3>::first-line</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Generates</b>   A pseudo-element that contains the first formatted 
@@ -2416,7 +2417,7 @@ declarations. Media queries take this concept several steps further by
 allowing authors to choose stylesheets based on the features of a given
 media type.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Basic Concepts</h4>
+<h3>Basic Concepts</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The placement of media queries will be very familiar to any author who
 has ever set a media type. Here are two ways of applying an external
@@ -2459,7 +2460,7 @@ color, and is in landscape orientation, and the device's display is at
 least 800 pixels wide, the stylesheet is used.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>not</h4>
+<h3>not</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Negates the entire query so that if all of the conditions are true,
@@ -2487,7 +2488,7 @@ There is one more keyword, only, which is designed to create deliberate
 backward incompatibility.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>only</h4>
+<h3>only</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Used to hide a stylesheet from browsers too old to understand media
@@ -2498,7 +2499,7 @@ understand media queries, the only keyword is ignored. Note that the
 only keyword can be used only at the beginning of a media query.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Media Query Values</h4>
+<h3>Media Query Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 There are two new value types introduced by media queries, which (as of
@@ -2518,7 +2519,7 @@ the unit identifiers dpi or dpcm. As usual, whitespace is not
 permitted between the *&lt;integer&gt;* and the identifier.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Media Features</h4>
+<h3>Media Features</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 As of early 2018, the available media features are as follows. Note that
@@ -2784,7 +2785,7 @@ these keywords' meaning, see Chapter 2.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>align-content</b>  <b>Inh. N Anim. N</b> 
+<h3><b>align-content</b>  <b>Inh. N Anim. N</b> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
 space-around &vert; space-evenly &vert; stretch 
@@ -2810,7 +2811,7 @@ space-around &vert; space-evenly &vert; stretch
   tent trivial in nearly all cases. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>align-items</b>  <b>Inh. N Anim. N</b>
+<h3><b>align-items</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
 <b>Initial value</b>  stretch 
@@ -2833,7 +2834,7 @@ flex-start and flex-end behavior for non-flex
 environments. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>align-self</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
 <b>Initial value</b>     stretch     
@@ -2855,7 +2856,7 @@ section.gallery h1 {align-self: stretch;}
 to many (or all) elements, and be given the values start and end to
 replicate flex-start and flex-end behavior for non-flex environments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>all</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>all</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    inherit &vert; initial &vert; unset 
 <b>Initial value</b>    See individual properties   
@@ -2875,7 +2876,7 @@ two).
 &ast;.embedded {all: unset;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>animation</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>animation</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b> &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
 
@@ -2904,7 +2905,7 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>animation-delay Inh. N Anim. N</h4>
+<h3>animation-delay Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>*&lt;time&gt;*&#35;
 <b>Initial value</b> 0s
@@ -2925,7 +2926,7 @@ body {animation-delay: 1s, 2000ms, 4s;}
 a:hover {animation-delay: 400ms;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>animation-direction Inh. N Anim. N</h4>
+<h3>animation-direction Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b> &lbrack; normal &vert; reverse &vert; alternate &vert; alternatereverse &rbrack;#
@@ -2953,7 +2954,7 @@ body
 alternate, normal, normal;} #scanner {animation-direction: normal;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>animation-duration Inh. N Anim. N</h4>
+<h3>animation-duration Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>*&lt;time&gt;*&#35;
 
@@ -2978,7 +2979,7 @@ h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
 .zip {animation-duration: 90ms;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>animation-iteration-count Inh. N Anim. N</h4>
+<h3>animation-iteration-count Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>&lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
 
@@ -3005,7 +3006,7 @@ body {animation-iteration-count: 2, 1, 7.5875;}
 ol.dance {animation-iteration-count: infinite;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>animation-name</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>animation-name</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b> &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;# 
 <b>Initial value</b>  none 
@@ -3028,7 +3029,7 @@ html {animation-name: turn, slide, none;}
 h2 {animation-name: flip;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>animation-play-state</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>animation-play-state</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; running &vert; paused &rbrack;# 
 <b>Initial value</b>  running 
@@ -3046,7 +3047,7 @@ pre {animation-play-state:
 running, paused, running;} table {animation-play-state: running;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
 ease-in-out &vert; step-start &vert; step-end &vert;     
@@ -3073,7 +3074,7 @@ cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
 linear;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>  visible &vert; hidden
 <b>Initial value</b>  visible  
@@ -3093,7 +3094,7 @@ div.card {backface-visibility: hidden;}
 span.cubeside {backface-visibility: visible;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background</b>   <b>Inh. N Anim. P</b></h4>
+<h3><b>background</b>   <b>Inh. N Anim. P</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b> &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    
@@ -3138,7 +3139,7 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 #555;} pre {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background-attachment</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>background-attachment</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; scroll &vert; fixed &vert; local &rbrack;#  
 <b>Initial value</b>   scroll  
@@ -3157,7 +3158,7 @@ body {background-attachment: scroll, scroll, fixed;}
 div.fixbg {background-attachment: fixed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
     &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
@@ -3183,7 +3184,7 @@ li.shadowed {background-blend-mode: darken;} aside
 {background-blend-mode: color-burn, luminosity, darken;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>background-clip Inh. N Anim. N</h4>
+<h3>background-clip Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b> &lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#
@@ -3204,7 +3205,7 @@ body {background-clip: content-box;}
 .callout {background-clip: content-box, border-box, padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**background-color**  **Inh. N Anim. Y**</h4>
+<h3>**background-color**  **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;color&gt;* 
@@ -3233,7 +3234,7 @@ rgba(50%,50%,50%,0.33);}
 pre {background-color: #FF9;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background-image</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>background-image</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b>  &lbrack; *&lt;image&gt;* &vert; none &rbrack;# 
@@ -3252,7 +3253,7 @@ background-position.
  url(http://www.pix.org/dots.png);}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background-origin</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>background-origin</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>     &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;# 
 <b>Initial value</b> padding-box 
@@ -3281,7 +3282,7 @@ html, body {background-origin: border-box;}
 h1 {background-origin: content-box, padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**background-position**  **Inh. N Anim. Y**</h4>
+<h3>**background-position**  **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;position&gt;*&#35;
 **Initial value**    0% 0%  
@@ -3326,7 +3327,7 @@ right, 50% 75%, 0 40px;} pre
 {background-position: 10px 50%;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background-repeat</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>background-repeat</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**  *&lt;repeat-style&gt;*&#35; 
 **Definition** 
@@ -3359,7 +3360,7 @@ h2 {background-repeat: repeat-x, repeat-y;} ul {background-repeat:
 repeat-y, round space, repeat;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>background-size</b>  <b>Inh. N Anim. Y</b></h4>
+<h3><b>background-size</b>  <b>Inh. N Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
@@ -3385,7 +3386,7 @@ body {background-size: 100% 90%;}
 div.photo {background-size: cover;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**border**    **Inh. N Anim. P**</h4>
+<h3>**border**    **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3409,7 +3410,7 @@ solid 1px;}
 p.warning {border: double 5px red;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-bottom Inh. N Anim. P</h4>
+<h3>border-bottom Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3436,7 +3437,7 @@ ul {border-bottom: 0.5in groove green;}
 a:active {border-bottom: purple 2px dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-bottom-color Inh. N Anim. Y</h4>
+<h3>border-bottom-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*
@@ -3456,7 +3457,7 @@ ul {border-bottom-color: green;}
 a:active {border-bottom-color: purple;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-bottom-left-radius Inh. N Anim. Y</h4>
+<h3>border-bottom-left-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 
@@ -3483,7 +3484,7 @@ h1 {border-bottom-left-radius: 10%;}
 h2 {border-bottom-left-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-bottom-right-radius Inh. N Anim. Y</h4>
+<h3>border-bottom-right-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 
@@ -3509,7 +3510,7 @@ h1 {border-bottom-right-radius: 10%;}
 h2 {border-bottom-right-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-bottom-style Inh. N Anim. N</h4>
+<h3>border-bottom-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
@@ -3533,7 +3534,7 @@ ul {border-bottom-style: groove;}
 a:active {border-bottom-style: dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-bottom-width Inh. N Anim. Y</h4>
+<h3>border-bottom-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;
@@ -3556,7 +3557,7 @@ ul {border-bottom-width: 0.5in;}
 a:active {border-bottom-width: 2px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-collapse Inh. Y Anim. Y</h4>
+<h3>border-collapse Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**collapse &vert; separate &vert; inherit
 **Initial value** separate
@@ -3578,7 +3579,7 @@ table {border-collapse: separate; border-spacing: 3px 5px;}
 
 **Note**  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-color Inh. N Anim. Y</h4>
+<h3>border-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*{1,4}
@@ -3598,7 +3599,7 @@ something other than none or hidden for any visible border to appear.
 a:visited {border-color: maroon;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-image Inh. N Anim. P</h4>
+<h3>border-image Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     *&lt;border-image-source&gt;* ‖ *&lt;border-image-slice&gt;* 
@@ -3643,7 +3644,7 @@ round;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-image-outset Inh. N Anim. Y</h4>
+<h3>border-image-outset Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;number&gt;* &rbrack;{1,4}
@@ -3670,7 +3671,7 @@ not permitted.
 div#pow {border-image-outset: 10 17 13 5;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-image-repeat Inh. N Anim. N</h4>
+<h3>border-image-repeat Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}  
@@ -3699,7 +3700,7 @@ div.starry {border-image-repeat: repeat;}
 aside {border-image-repeat: stretch round;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-image-slice Inh. N Anim. P</h4>
+<h3>border-image-slice Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**     &lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill? 
 **Initial 100% 
@@ -3738,7 +3739,7 @@ div.starry {border-image-slice: 5px;}
 aside {border-image-slice: 100 50 150;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-image-source Inh. N Anim. N</h4>
+<h3>border-image-source Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; *&lt;image&gt;*
   **Initial value** none
@@ -3761,7 +3762,7 @@ url(stargrid.png);}
 aside {border-image-source: url(asides.png);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-image-width Inh. N Anim. Y</h4>
+<h3>border-image-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  
@@ -3801,7 +3802,7 @@ aside {border-image-width: 8 3 13;}
 div#pow{border-image-width: 25px 35;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>*border-left**  **Inh. N Anim. P**</h4>
+<h3>*border-left**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3824,7 +3825,7 @@ p {border-left: 3em solid gray;} pre {border-left:
 double black 4px;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-left-color Inh. N Anim. Y</h4>
+<h3>border-left-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   *&lt;color&gt;*  
 **Initial    currentColor 
@@ -3849,7 +3850,7 @@ p
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-left-style Inh. N Anim. N</h4>
+<h3>border-left-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
@@ -3869,7 +3870,7 @@ p {border-left-style: solid;}
 pre {border-left-style: double;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-left-width Inh. N Anim. Y</h4>
+<h3>border-left-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 **Initial value** medium
@@ -3891,7 +3892,7 @@ p {border-left-width: 3em;}
 pre {border-left-width: 4px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-radius Inh. N Anim. Y</h4>
+<h3>border-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
@@ -3944,7 +3945,7 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 1em 2em 3em 4em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-right Inh. N Anim. P</h4>
+<h3>border-right Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3969,7 +3970,7 @@ img {border-right: 30px dotted blue;}
 h3 {border-right: cyan 1em inset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-right-color Inh. N Anim. Y</h4>
+<h3>border-right-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values***&lt;color&gt;*
@@ -3991,7 +3992,7 @@ img {border-right-color: blue;}
 h3 {border-right-color: cyan;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-right-style Inh. N Anim. N</h4>
+<h3>border-right-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
@@ -4015,7 +4016,7 @@ img {border-right-style: dotted;}
 h3 {border-right-style: inset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-right-width Inh. N Anim. Y</h4>
+<h3>border-right-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
@@ -4040,7 +4041,7 @@ img {border-right-width: 30px;}
 h3 {border-right-width: 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-spacing Inh. Y Anim. Y</h4>
+<h3>border-spacing Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   *&lt;length&gt;* *&lt;length&gt;*?   
@@ -4069,7 +4070,7 @@ table {border-spacing: 3px 5px;}
 separate.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-style Inh. N Anim. N</h4>
+<h3>border-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
@@ -4097,7 +4098,7 @@ h1 {border-style: solid;}
 img {border-style:inset;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **border-top**  **Inh. N Anim. P**</h4>
+ **border-top**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -4122,7 +4123,7 @@ h1 {border-top: dashed 1px gray;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-top-color Inh. N Anim. Y</h4>
+<h3>border-top-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*
@@ -4141,7 +4142,7 @@ ul {border-top-color: black;}
 h1 {border-top-color: gray;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-top-left-radius Inh. N Anim. Y</h4>
+<h3>border-top-left-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
@@ -4167,7 +4168,7 @@ h1 {border-top-left-radius: 10%;}
 h2 {border-top-left-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### border-top-right-radius Inh. N Anim. Y</h4>
+### border-top-right-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
@@ -4194,7 +4195,7 @@ h1 {border-top-right-radius: 10%;}
 h2 {border-top-right-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-top-style Inh. N Anim. N</h4>
+<h3>border-top-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
@@ -4216,7 +4217,7 @@ ul {border-top-style: solid;}
 h1 {border-top-style: dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-top-width Inh. N Anim. Y</h4>
+<h3>border-top-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 
@@ -4238,7 +4239,7 @@ ul {border-top-width: 0.5in;}
 h1 {border-top-width: 1px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>border-width Inh. N Anim. Y</h4>
+<h3>border-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  
@@ -4261,7 +4262,7 @@ h1 {border-top-width: 1px;}
  img {border-width: 5px thick thin 1em;}     
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**bottom**    **Inh. N Anim. P**</h4>
+<h3>**bottom**    **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 **Initial     auto
@@ -4293,7 +4294,7 @@ div#footer {position: fixed; bottom: 0;}
 sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>box-decoration-break Inh. N Anim. N</h4>
+<h3>box-decoration-break Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**slice &vert; clone
@@ -4327,7 +4328,7 @@ span {box-decoration-break: clone;} a
 {box-decoration-break: slice;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>box-shadow Inh. N Anim. Y</h4>
+<h3>box-shadow Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&    
 *&lt;color&gt;*?&rbrack;#     
@@ -4368,7 +4369,7 @@ h1 {box-shadow: 5px 10px gray;} table th
 rgba(255,0,0,0.5);} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**box-sizing**  **Inh. N Anim. N**</h4>
+<h3>**box-sizing**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** content-box &vert; padding-box &vert; border-box
@@ -4396,7 +4397,7 @@ final width of the content area will be 840 pixels (880--20--20).
 body {box-sizing: padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>caption-side Inh. Y Anim. N</h4>
+<h3>caption-side Inh. Y Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** top &vert; bottom
@@ -4419,7 +4420,7 @@ caption {caption-side: top;}
 dropped due to a lack of widespread support.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**clear**     **Inh. N Anim. N**</h4>
+<h3>**clear**     **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  **Values**    left &vert; right &vert; both &vert; none  
  **Initial     none
@@ -4447,7 +4448,7 @@ edge of a floated element on the declared side.
 h1 {clear: both;} p + h3 {clear: right;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4> **clip-path** **Inh. N Anim P**</h4>
+<h3> **clip-path** **Inh. N Anim P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**  none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert;
@@ -4480,7 +4481,7 @@ p.diamond {clip-path:
 polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**clip-rule** **Inh. N Anim. N**</h4>
+<h3>**clip-rule** **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    nonzero &vert; evenodd  
@@ -4501,7 +4502,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
  {clip-rule: evenodd;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**color**     **Inh. Y Anim. Y**</h4>
+<h3>**color**     **Inh. Y Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;color&gt;* 
@@ -4533,7 +4534,7 @@ p.warning {color: #ff0000;}
 pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>content</b>   <b>Inh. N Anim. N</b></h4>
+<h3><b>content</b>   <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;   
 *&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;  
@@ -4556,7 +4557,7 @@ a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;
 font-size: smaller;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>counter-increment Inh. N Anim. N</h4>
+<h3>counter-increment Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b> &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none
@@ -4577,7 +4578,7 @@ h1 {counter-increment: section;}
 &ast;.backward li {counter-increment: counter −1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>counter-reset Inh. N Anim. N</h4>
+<h3>counter-reset Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b>    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
@@ -4596,7 +4597,7 @@ h1 {counter-reset: section;} h2 {counter-reset:
 subsec 1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>cursor</b>    <b>Inh. Y Anim. N</b></h4>
+<h3><b>cursor</b>    <b>Inh. Y Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b> &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
@@ -4644,7 +4645,7 @@ a.moreinfo {cursor: help;}
 a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>direction</b>  <b>Inh. Y Anim. Y</b></h4>
+<h3><b>direction</b>  <b>Inh. Y Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b>    ltr &vert; rtl  
@@ -4676,7 +4677,7 @@ property.
 &vert;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>display</b>  <b>Inh. N Anim. N</b></h4>
+<h3><b>display</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>
 
@@ -4733,7 +4734,7 @@ li {display: list-item;} img {display: inline;} .hide {display: none;}
 tr {display: table-row;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h4>
+<h3><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b>    show &vert; hide
@@ -4755,7 +4756,7 @@ th, td {empty-cells: show;}
 
 <p><b>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>filter</b>    <b>Inh. N Anim. Y</b></h4>
+<h3><b>filter</b>    <b>Inh. N Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  
 dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; 
@@ -4783,7 +4784,7 @@ drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em
 url(/assets/filters.svg#spotlight);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>flex</b>   <b>Inh. N Anim. P</b></h4>
+<h3><b>flex</b>   <b>Inh. N Anim. P</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b>&lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*?
@@ -4827,7 +4828,7 @@ property instead of the separate properties it
 encompasses. 
    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**flex-basis**  **Inh. N Anim. P**</h4>
+<h3>**flex-basis**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
@@ -4855,7 +4856,7 @@ nav ul li {flex-basis: 50%;} ol.gallery li
    set an item's flex basis.    
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>flex-direction Inh. N Anim. N</h4>
+<h3>flex-direction Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    row &vert; row-reverse &vert; column &vert; column-reverse 
 **Initial     row 
@@ -4874,7 +4875,7 @@ section.appetizers {display: flex; flex-direction:
 column;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**flex-flow**  **Inh. N Anim. N**</h4>
+<h3>**flex-flow**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;* 
 **Initial value**    row nowrap  
@@ -6422,7 +6423,7 @@ p:nth-child(2) {mask-repeat: repeat round;}
 p:nth-child(3) {mask-repeat: space no-repeat;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**mask-size** **Inh. N Anim. P**</h4>
+<h3>**mask-size** **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto 
  &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#     
@@ -6444,7 +6445,7 @@ p:nth-child(2) {mask-size: 2em 3em, 100%;} p:nth-child(3) {mask-size:
 cover, 100%, contain;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>mask-type  Inh. N Anim. N</h4>
+<h3>mask-type  Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** luminance &vert; alpha
 **Initial value** luminance
@@ -6460,7 +6461,7 @@ mask element masks default to luminance.
 svg #mask {mask-type: alpha;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>max-height Inh. N Anim. P</h4>
+<h3>max-height Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
@@ -6486,7 +6487,7 @@ svg #mask {mask-type: alpha;}
 div#footer {max-height: 3em;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**max-width** **Inh. N Anim. P**</h4>
+<h3>**max-width** **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
  **Initial   
@@ -6511,7 +6512,7 @@ not permitted.
 #sidebar img {width: 50px; max-width: 100%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>min-height Inh. N Anim. Y</h4>
+<h3>min-height Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
 **Initial     0   
@@ -6534,7 +6535,7 @@ not permitted.
 div#footer {min-height: 1em;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**min-width** **Inh. N Anim. Y**</h4>
+<h3>**min-width** **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
@@ -6559,7 +6560,7 @@ are not permitted.
 div.aside {width: 13em; max-width: 33%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>mix-blend-mode Inh. N Anim. N</h4>
+<h3>mix-blend-mode Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; 
 lighten &vert; color-dodge &vert; color-burn &vert; hard-light   
@@ -6592,7 +6593,7 @@ li.shadowed {mix-blend-mode: darken;} aside
 color-burn, luminosity, darken;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**object-fit**  **Inh. N Anim. N**</h4>
+<h3>**object-fit**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  *object-fit**  
@@ -6625,7 +6626,7 @@ img:nth-of-type(2) {object-fit: fill;}
 img:nth-of-type(3) {object-fit: cover;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>object-position Inh. N Anim. Y</h4>
+<h3>object-position Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;position&gt;*
@@ -6648,7 +6649,7 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
 {object-position: left 142%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**opacity**  **Inh. N Anim. Y**</h4>
+<h3>**opacity**  **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;number&gt;*
 **Initial     1   
@@ -6682,7 +6683,7 @@ value**  value must be clipped)
 h2 {opacity: 0.8;} .hideme {opacity: 0;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**order**     **Inh. N Anim. Y**</h4>
+<h3>**order**     **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;integer&gt;*
@@ -6712,7 +6713,7 @@ li:nth-of-type(6) {order: 1;}
 li:nth-of-type(14) {order: -1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**orphans**   **Inh. N Anim. Y**</h4>
+<h3>**orphans**   **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;integer&gt;*  
@@ -6731,7 +6732,7 @@ li:nth-of-type(14) {order: -1;}
 p {orphans: 4;} ul {orphans: 2;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**outline**   **Inh. N Anim. P**</h4>
+<h3>**outline**   **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
 *&lt;outlinewidth&gt;* &rbrack;
@@ -6757,7 +6758,7 @@ they do not change or otherwise affect the placement of elements.
 form:focus {outline: outset cyan 0.25em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>outline-color Inh. N Anim. Y</h4>
+<h3>outline-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;* &vert; invert
@@ -6780,7 +6781,7 @@ of color for the element.
 form:focus {outline-color: cyan;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>outline-offset Inh. N Anim. N</h4>
+<h3>outline-offset Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;length&gt;*
@@ -6804,7 +6805,7 @@ Note that outline-offset cannot be set via the shorthand outline.
 form:focus {outline-offset: −1px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>outline-style Inh. N Anim. N</h4>
+<h3>outline-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**auto &vert; none &vert; solid &vert; dotted &vert; dashed &vert; double &vert;
@@ -6827,7 +6828,7 @@ appear.
 form:focus {outline-style: outset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>outline-width Inh. N Anim. Y</h4>
+<h3>outline-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values***&lt;length&gt;* &vert; thin &vert; medium &vert; thick
@@ -6851,7 +6852,7 @@ not permitted.
 form:focus {outline-width: 0.25em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**overflow**  **Inh. N Anim. N**</h4>
+<h3>**overflow**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     visible &vert; hidden &vert; scroll &vert; auto  
@@ -6877,7 +6878,7 @@ value defines both.
 object {overflow: visible scroll;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>overflow-wrap Inh. Y Anim. Y</h4>
+<h3>overflow-wrap Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** normal &vert; break-word **Initial value** normal
@@ -6906,7 +6907,7 @@ supported word-wrap in the past now use it as an alias for
 overflow-wrap.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**overflow-x**  **Inh. N Anim. N**</h4>
+<h3>**overflow-x**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    visible &vert; hidden &vert; scroll &vert; auto 
 **Initial     visible     
@@ -6924,7 +6925,7 @@ to**
 visible;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**overflow-y**  **Inh. N Anim. N**</h4>
+<h3>**overflow-y**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** visible &vert; hidden &vert; scroll &vert; auto
 **Initial value** visible
@@ -6940,7 +6941,7 @@ axis of the element; that is, the top and bottom edges of the element.
 scroll;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**padding**   **Inh. N Anim. Y**</h4>
+<h3>**padding**   **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} 
@@ -6968,7 +6969,7 @@ img {padding: 10px;} h1 {padding: 2ex 0.33em;}
 pre {padding: 0.75em 0.5em 1em 0.5em;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>padding-bottom Inh. N Anim. Y</h4>
+<h3>padding-bottom Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
 **Initial value** 0
@@ -6994,7 +6995,7 @@ ul {padding-bottom: 0.5in;}
 h1 {padding-bottom: 2%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>padding-left Inh. N Anim. Y</h4>
+<h3>padding-left Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
 **Initial value** 0
@@ -7019,7 +7020,7 @@ p {padding-left: 5%;}
 pre {padding-left: 3em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>padding-right Inh. N Anim. Y</h4>
+<h3>padding-right Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
@@ -7044,7 +7045,7 @@ img {padding-right: 30px;}
 ol {padding-right: 5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>padding-top Inh. N Anim. Y</h4>
+<h3>padding-top Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
 **Initial     0   
@@ -7067,7 +7068,7 @@ ol {padding-right: 5em;}
 ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**page**    **Inh. N Anim. N**</h4>
+<h3>**page**    **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;identifier&gt;* &vert; auto
@@ -7095,7 +7096,7 @@ page.)
 table.summary {page: wide;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**page-break-after**  **Inh. N Anim.**</h4>
+<h3>**page-break-after**  **Inh. N Anim.**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    auto &vert; always     
 **Initial     auto  
@@ -7130,7 +7131,7 @@ replaced by breakafter, but
 browser support for
 page-break-after may be stronger.  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>page-break-before Inh. N Anim. N</h4>
+<h3>page-break-before Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** auto &vert; always
 
@@ -7158,7 +7159,7 @@ avoid;}
 **Note** This property is essentially replaced by break-
 before, but browser support for page-breakbefore may be stronger.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**page-break-inside**  **Inh. Y Anim. N**</h4>
+<h3>**page-break-inside**  **Inh. Y Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**  auto &vert; avoid   
  **Initialauto    
@@ -7188,7 +7189,7 @@ table {page-break-inside:
     page-breakbefore may be 
     stronger.  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**perspective**  **Inh. N Anim. Y**</h4>
+<h3>**perspective**  **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**  none &vert; *&lt;length&gt;*  
@@ -7211,7 +7212,7 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
 #wrapper {perspective: 10;} /&ast; extreme &ast;/
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>perspective-origin Inh. N Anim. P</h4>
+<h3>perspective-origin Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;position&gt;* 
 **Initial     50% 50%     
@@ -7234,7 +7235,7 @@ body {perspective-origin: bottom right;} #wrapper
 div {perspective-origin: 0 50%;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**position** **Inh. N Anim. N**</h4>
+<h3>**position** **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** static &vert; relative &vert; sticky &vert; absolute &vert; fixed
@@ -7255,7 +7256,7 @@ offset from its default placement in the normal flow.
 &ast;.offset {position: relative; top: 0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**quotes**   **Inh. Y Anim. N**</h4>
+<h3>**quotes**   **Inh. Y Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
@@ -7276,7 +7277,7 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
  &apos;\\2019&apos;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**resize**  **Inh. N Anim. N**</h4>
+<h3>**resize**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** none &vert; both &vert; horizontal &vert; vertical
@@ -7296,7 +7297,7 @@ left to the user agent and is likely dependent on the writing direction.
 textarea {resize: vertical;} iframe {resize: both;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**right**    **Inh. N Anim. P**</h4>
+<h3>**right**    **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
@@ -7320,7 +7321,7 @@ div#footer {position: fixed; right: 0;}
 &ast;.overlapper {position: relative; right: −25px;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### shape-image-threshold Inh. N Anim. Y</h4>
+### shape-image-threshold Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   *&lt;number&gt;* 
@@ -7346,7 +7347,7 @@ aside.illustrate {shape-image-threshold: 0.667;}
 img.floated {shape-image-threshold: 0.1;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>shape-margin Inh. N Anim. Y</h4>
+<h3>shape-margin Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
 **Initial value** 0
@@ -7374,7 +7375,7 @@ img.floated {shape-image-threshold: 0.1;}
 #thr (shape-margin: 10%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>shape-outside Inh. N Anim. P</h4>
+<h3>shape-outside Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
    *&lt;image&gt;*  
@@ -7411,7 +7412,7 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 {shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**size**     **Inh. N Anim. N**</h4>
+<h3>**size**     **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     
 &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack; 
@@ -7448,7 +7449,7 @@ landscape;}
 see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
 Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**tab-size**  **Inh. Y Anim. Y**</h4>
+<h3>**tab-size**  **Inh. Y Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;length&gt;* &vert; *&lt;integer&gt;*  
  **Initial     8   
@@ -7468,7 +7469,7 @@ pre.source {tab-size: 4;}
 p.typer {tab-size: 0.25in;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>table-layout Inh. Y Anim. N</h4>
+<h3>table-layout Inh. Y Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**auto &vert; fixed
 **Initial value** auto
@@ -7492,7 +7493,7 @@ table.data {table-display: fixed;}
 table.directory {table-display: auto;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**text-align** **Inh. Y Anim. N**</h4>
+<h3>**text-align** **Inh. Y Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    start &vert; end &vert; left &vert; right &vert; center &vert; justify  
@@ -7515,7 +7516,7 @@ table.directory {table-display: auto;}
 p {text-align: justify;} h4 {text-align: center;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>text-align-last   Inh. Y Anim. N</h4>
+<h3>text-align-last   Inh. Y Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; justify
@@ -7538,7 +7539,7 @@ p {text-align-last: justify;}
 h4 {text-align-last: right;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>text-decoration Inh. N Anim. N</h4>
+<h3>text-decoration Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    
  blink &rbrack;    
@@ -7573,7 +7574,7 @@ u {text-decoration: underline;}
 u.old {text-decoration: line-through underline;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**text-indent**  **Inh. Y Anim. Y**</h4>
+<h3>**text-indent**  **Inh. Y Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
@@ -7601,7 +7602,7 @@ p {text-indent: 5em;}
 h2 {text-indent: −25px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>text-orientation Inh. Y Anim. Y</h4>
+<h3>text-orientation Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**mixed &vert; upright &vert; sideways
 **Initial value** mixed
@@ -7630,7 +7631,7 @@ h2 {text-indent: −25px;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>text-rendering Inh. Y Anim. Y</h4>
+<h3>text-rendering Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**auto &vert; optimizeSpeed &vert; optimizeLegibility &vert;
@@ -7655,7 +7656,7 @@ p {text-rendering: optimizeSpeed;}
 svg tspan {text-rendering: optimizeLegibility;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>text-shadow Inh. N Anim. Y</h4>
+<h3>text-shadow Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; &lbrack;*&lt;length&gt;* ‖ *&lt;color&gt;*? &&
     *&lt;length&gt;*{2,3}&rbrack;#
@@ -7683,7 +7684,7 @@ h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 −3px 0.5em blue;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>text-transform Inh. Y Anim. N</h4>
+<h3>text-transform Inh. Y Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values**    uppercase &vert; lowercase &vert; capitalize &vert; none
@@ -7702,7 +7703,7 @@ h1 {text-transform: uppercase;} .title
 {text-transform: capitalize;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**top** **Inh. N Anim. P**</h4>
+<h3>**top** **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 **Initial value** auto
@@ -7728,7 +7729,7 @@ relative; top: 0.5em; vertical-align: baseline;}
  the other; if neither is auto, bottom becomes the   
  negative of the value of top. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**transform**   **Inh. N Anim. P**</h4>
+<h3>**transform**   **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;transform-list&gt;* &vert; none
 **Initial value**    none
@@ -7756,7 +7757,7 @@ table th {transform: rotate(45deg);} li {transform:
 scale3d(1.2,1.7,0.85);}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>transform-origin   Inh. N Anim. P</h4>
+<h3>transform-origin   Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   *&lt;position&gt;*  
 **Initial value**   50% 50% 
@@ -7778,7 +7779,7 @@ table th {transform-origin: bottom left;}
 li {transform-origin: 10% 10px 10em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>transform-style Inh. N Anim. N</h4>
+<h3>transform-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    flat &vert; preserve-3d 
@@ -7800,7 +7801,7 @@ li {transform-origin: 10% 10px 10em;}
 li {transform-style: preserve-3d;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**transition**  **Inh. N Anim. N**</h4>
+<h3>**transition**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** &lbrack; &lbrack; none &vert; *&lt;transition-property&gt;* &rbrack; ‖
  *&lt;time&gt;* ‖ *&lt;transition-timing-function&gt;* ‖     
@@ -7824,7 +7825,7 @@ a:hover {transition: color 1s 0.25s ease-in-out;} h1
 {transition: linear all 10s;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>transition-delay Inh. N Anim. N</h4>
+<h3>transition-delay Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values***&lt;time&gt;*&#35;
 **Initial value** 0s
@@ -7850,7 +7851,7 @@ a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
 h1 {transition-delay: 0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>transition-duration Inh. N Anim. N</h4>
+<h3>transition-duration Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;time&gt;*&#35;
@@ -7872,7 +7873,7 @@ a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
 h1 {transition-duration: 10s;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>transition-property Inh. N Anim. N</h4>
+<h3>transition-property Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#    
@@ -7901,7 +7902,7 @@ a&lbrack;href&rbrack;:hover {transition-property: color;}
 h1 {transition-property: all;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**transition-timing-function Inh. N Anim. N**</h4>
+<h3>**transition-timing-function Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;timing-function&gt;*&#35;
@@ -7934,7 +7935,7 @@ ease-in-out;}
 h1 {transition-timing-function: linear;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>unicode-bidi Inh. N Anim. Y</h4>
+<h3>unicode-bidi Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** normal &vert; embed &vert; bidi-override
@@ -7954,7 +7955,7 @@ bidirectional ("bidi") text are permitted to ignore this property.
 span.name {direction: rtl; unicode-bidi: embed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>vertical-align    Inh. N Anim. P</h4>
+<h3>vertical-align    Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** baseline &vert; sub &vert; super &vert; top &vert; text-top &vert; middle &vert;
@@ -7982,7 +7983,7 @@ sup {vertical-align: super;}
 .fnote {vertical-align: 50%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**visibility** **Inh. Y Anim. N**</h4>
+<h3>**visibility** **Inh. Y Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    visible &vert; hidden &vert; collapse  
 **Initial value**    visible
@@ -8000,7 +8001,7 @@ ul.submenu {visibility: hidden;} tr.hide
 {visibility: collapse;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>white-space Inh. N Anim. N</h4>
+<h3>white-space Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** normal &vert; nowrap &vert; pre &vert; pre-wrap &vert; pre-line
@@ -8029,7 +8030,7 @@ td {white-space: nowrap;}
 tt {white-space: pre;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**widows**   **Inh. N Anim. Y**</h4>
+<h3>**widows**   **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;integer&gt;*  
 **Initial value**    2   
@@ -8044,7 +8045,7 @@ tt {white-space: pre;}
 p {widows: 4;} ul {widows: 2;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**width**    **Inh. N Anim. Y**</h4>
+<h3>**width**    **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 
@@ -8069,7 +8070,7 @@ table {width: 80%;}
 .figure img {width: 200px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>**word-break**  **Inh. Y Anim. Y**</h4>
+<h3>**word-break**  **Inh. Y Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    normal &vert; break-all &vert; keep-all     
 **Initial value**    normal 
@@ -8087,7 +8088,7 @@ find regular breakpoints within the word.
 td {word-break: break-all;} p {word-break: normal;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>word-spacing Inh. Y Anim. Y</h4>
+<h3>word-spacing Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;length&gt;* &vert; normal
@@ -8111,7 +8112,7 @@ p.spacious {word-spacing: 6px;} em {word-spacing: 0.2em;}
 p.cramped {word-spacing: −0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>writing-mode Inh. Y Anim. Y</h4>
+<h3>writing-mode Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   horizontal-tb &vert; vertical-rl &vert; vertical-lr 
 **Initial value**  horizontal-tb 
