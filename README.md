@@ -609,7 +609,7 @@ determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Any string of characters not contained within an inline element. Thus, in the markup:<br>
-      <p><b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b><br>
+      <p><b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b></p>
     the sequences "I'm " and " happy!" are anonymous text. Note that the spaces are part 
     of the anonymous text, as a space is a character like any other.</li>
 </ul>
