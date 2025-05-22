@@ -1657,22 +1657,17 @@ permitted in calc().</p>
 
 <p>The basic limitation is that calc() does simple type-checking to make
 sure that units are compatible:</p>
-
-1.  To either side of a + or -- operator, both values must have the same
+<ol>
+  <li>To either side of a + or -- operator, both values must have the same
     unit type or must both be <i>&lt;number&gt;</i> and/or <i>&lt;integer&gt;</i> values
-    (in which case, the result is a <i>&lt;number&gt;</i>).
-
-2.  Given a &ast; operator, one of the values involved must be a
-    <i>&lt;number&gt;</i> (which, remember, includes <i>&lt;integer&gt;</i> values).
-
-3.  Given a / operator, the value on the <i>right</i> side must be a
-    <i>&lt;number&gt;</i>. If the left-side value is an <i>&lt;integer&gt;</i>, the result
-    is a <i>&lt;number&gt;</i>. Otherwise, the result is of the unit used on the
-    left side.
-
-4.  Any circumstance that creates division by zero makes the value
-    invalid.
-
+    (in which case, the result is a <i>&lt;number&gt;</i>).</li>
+  <li>Given a &ast; operator, one of the values involved must be a <i>&lt;number&gt;</i> 
+    (which, remember, includes <i>&lt;integer&gt;</i> values).</li>
+  <li>Given a / operator, the value on the <i>right</i> side must be a <i>&lt;number&gt;</i>. If 
+    the left-side value is an <i>&lt;integer&gt;</i>, the result is a <i>&lt;number&gt;</i>. 
+	Otherwise, the result is of the unit used on the left side.</li>
+  <li>Any circumstance that creates division by zero makes the value invalid.</li>
+</ol>
 <p>There's one more notable limitation: whitespace is <i>required</i> to either
 side of the + and - operators, while it is not for &ast; and /. This avoids
 ambiguity with respect to numeric values, which can be negative.</p>
@@ -1711,17 +1706,23 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1. Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Universal Selector</h3>
+<!--  <h3>Universal Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Universal Selector</h3></th>
+	</tr>
+  </thead>
   <tbody>
     <tr>
 	  <td><b>Pattern</b></td>
-	  <td>&ast;</td>
+	  <td><p>&ast;</p></td>
 	</tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred.</td>
+	  <td>Matches any element name in the document's language. If a rule does not have an 
+	  explicit selector, the universal selector is inferred.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -1730,9 +1731,14 @@ scoped to the element to which they are applied.</p>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Type Selector</h3>
+<!--  <h3>Type Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Type Selector</h3></th>
+	</tr>
+  </thead>
   <tbody>
     <tr>
 	  <td><b>Pattern</b></td>
@@ -1740,7 +1746,8 @@ scoped to the element to which they are applied.</p>
 	</tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Matches the name of an element in the document's language. Every instance of the element name is matched. (CSS1 referred to these as "element selectors.").</td>
+	  <td>Matches the name of an element in the document's language. Every instance of 
+	  the element name is matched. (CSS1 referred to these as "element selectors.").</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -1751,80 +1758,158 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Descendant Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b>  element1 element2 ...</p>
-<p><b>Description</b>  Matches elements based on their status as a descendant
-of another element. The matched element can be a child, grandchild,
-great-grandchild, etc. of the ancestor element. (CSS1 referred to these
-as "contextual selectors.")</p>
-<p>Examples</p>
-<pre>body h1 {font-size: 200%;} 
-table tr td div ul li {color:purple;} element1 &gt; element2</pre>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Descendant Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1 element2 ...</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on their status as a descendant of another element. The 
+	  matched element can be a child, grandchild, great-grandchild, etc. of the ancestor 
+	  element. (CSS1 referred to these as "contextual selectors.")</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+body h1 {font-size: 200%;} 
+table tr td div ul li {color:purple;} element1 &gt; element2
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Child Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b>>
-<p><b>Description</b>
-Matches an element based on its status as a child of
-another element. It is more restrictive than a descendant selector, as
-only a child will be matched.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Child Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1 &gt; element2</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element based on its status as a child of another element. It is more 
+	  restrictive than a descendant selector, as only a child will be matched.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 div &gt; p {color: cyan;}
 ul &gt; li {font-weight: bold;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Adjacent Sibling Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1 + element2
-<p><b>Description</b>
-Matches an element that is the following adjacent
-sibling of another element. (Sibling elements, as the name implies,
-share the same parent element.) Any anonymous text nodes between the two
-elements are ignored; only elements and their positions in the document
-tree are considered.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Adjacent Sibling Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1 + element2</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element that is the following adjacent sibling of another element. (Sibling 
+	  elements, as the name implies, share the same parent element.) Any anonymous text nodes 
+	  between the two elements are ignored; only elements and their positions in the document 
+	  tree are considered.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 table + p {margin-top: 2.5em;}
 h1 + &ast; {margin-top: 0;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>General Sibling Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1 &#126; element2
-<p><b>Description</b>
-Matches an element that is a sibling of another element
-which it follows in the document tree. Any
-text or other elements between the two elements are ignored; only the
-elements and their positions in the document tree are considered.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>General Sibling Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1 &#126; element2</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element that is a sibling of another element which it follows in the document 
+	  tree. Any text or other elements between the two elements are ignored; only the elements and 
+	  their positions in the document tree are considered.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
-h1 &#126; h2 {margin-top: 2.5em;}
-nav a &#126; a {border-left: 1px solid border;}
+table + p {margin-top: 2.5em;}
+h1 + &ast; {margin-top: 0;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Class Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<p><b>Pattern</b> element1.classname  
-element1.classname1.classname2 
-<p><b>Description</b>  In languages that permit it, such as HTML, SVG, and 
-MathML, a class selector using "dot notation"  
-matches elements that have a class attribute
-containing a specific value or values. The name of  
-the class value must immediately follow the dot.    
-Multiple class values can be chained together. If   
-no element name precedes the dot, the selector 
-matches all elements bearing that class value or    
-values.     
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Class Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1.classname<br>element1.classname1.classname2</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>In languages that permit it, such as HTML, SVG, and MathML, a class 
+	  selector using "dot notation" matches elements that have a class attribute containing a 
+	  specific value or values. The name of the class value must immediately follow the dot. 
+	  Multiple class values can be chained together. If no element name precedes the dot, the 
+	  selector matches all elements bearing that class value or values.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 p.urgent {color: red;} 
 a.external {font-style: italic;}    
 .example {background: olive;}  
 .note.caution {background: yellow;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ID Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8253,11 +8338,10 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 <!-- wip
-<table>
+<table style="width:500px;">
   <thead>
     <tr>
-	  <th>border-image</th>
-	  <th>Inh. N Anim. P</th>
+	  <th width="200"><h3>Type Selector</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8297,3 +8381,27 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 -->
+<!--
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> Name here </h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td></td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
