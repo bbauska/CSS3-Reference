@@ -9,6 +9,13 @@ output:
     with some style
 ---
 
+<!--
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+-->
 <h1 align="center">CSS Reference Guide</h1>
 <h6 align="center">(by Brian Bauska)</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
