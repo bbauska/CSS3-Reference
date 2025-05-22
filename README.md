@@ -1713,54 +1713,41 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Universal Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b>nbsp;&nbsp;  &ast;</p>
-<p><b>Description</b>&nbsp;&nbsp;  Matches any element name in the document's language. If
-a rule does not have an explicit selector, the universal selector is
-inferred.</p>
-
-<p><b>Examples</b></p>
-<pre>
-&ast; {color: red;}
-div &ast; p {color: blue;}</pre>
-
-<h3>Universal Selector</h3>
 <table>
   <tbody>
     <tr>
-	  <td>Pattern</td>
+	  <td><b>Pattern</b></td>
 	  <td>&ast;</td>
 	</tr>
 	<tr>
-	  <td>Description</td>
+	  <td><b>Description</b></td>
 	  <td>Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred.</td>
     </tr>
 	<tr>
-	  <td>Examples</td>
+	  <td><b>Examples</b></td>
 	  <td><pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre></td>
 	</tr>
   </tbody>
 </table>
-	
-| <h3>Universal</h3> | <h3>Selector</h3> |
-|--------:|:-------------------|
-| <b>Pattern</b> | &ast; |
-| <b>Description</b> |  |
-| <b>Examples</b> | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Type Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b>  element1</p>
-<p><b>Description</b>  Matches the name of an element in the document's
-language. Every instance of the element name is matched. (CSS1 referred
-to these as "element selectors.")</p>
-<p><b>Examples</b></p>
-<pre>body {background: #FFF;} 
-p {font-size: 1em;}</pre>
-
-| <h3>Type</h3> | <h3>Selector</h3> |
-|---------|--------|
-
+<table>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1;</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches the name of an element in the document's language. Every instance of the element name is matched. (CSS1 referred to these as "element selectors.").</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td><pre>body {background: #FFF;} <br>p {font-size: 1em;}</pre></td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Descendant Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3392,14 +3379,13 @@ repeat-y, round space, repeat;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>background-size</b>  <b>Inh. N Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
+**Values**   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
 &rbrack;{1,2} &vert; cover &vert; contain &rbrack;# 
- **Initial value**   auto 
- **Computed value**  As declared, but with all lengths made absolute and  
+**Initial value**   auto 
+**Computed value**  As declared, but with all lengths made absolute and  
   any missing auto keywords added 
- **Applies to**   All elements 
- **Description**  Defines the size of one or more background origin
+**Applies to**   All elements 
+**Description**  Defines the size of one or more background origin
     images. If two keywords are used (e.g., 50px 25%),   
 the first defines the horizontal size of the image   
 and the second defines the vertical size. The origin 
@@ -3418,15 +3404,14 @@ div.photo {background-size: cover;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**border**    **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+**Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
- **Initial value**    Refer to individual properties 
- **Computed value**   As declared 
- **Applies to**    All elements    
+**Initial value**    Refer to individual properties 
+**Computed value**   As declared 
+**Applies to**    All elements    
   Border width and color; not border style    
- **Animatable** 
- **Description**  A shorthand property that defines the width, color,
+**Animatable** 
+**Description**  A shorthand property that defines the width, color,
     and style of an element's border. Note that while 
  none of the values are actually required, omitting  
  a border style will result in no border being  
@@ -3442,19 +3427,17 @@ p.warning {border: double 5px red;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-bottom Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+**Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
-  **Initial value** See individual properties
+**Initial value** See individual properties
 
-  **ComputedSee individual properties (border-width, etc.)
-  value**   
+**ComputedSee individual properties (border-width, etc.)
+  **value**   
+**Applies to**    All elements
 
-  **Applies to**    All elements
+**Animatable**    Border width and color; not border style
 
-  **Animatable**    Border width and color; not border style
-
-  **Description**   A shorthand property that defines the width, color,
+**Description**   A shorthand property that defines the width, color,
     and style of the bottom border of an element. As
 
 with border, omission of a border style will result in no border
@@ -3469,7 +3452,6 @@ a:active {border-bottom: purple 2px dashed;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-bottom-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** *&lt;color&gt;*
 
 **Initial value** currentColor **Computed value** A color
@@ -3631,8 +3613,51 @@ a:visited {border-color: maroon;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lt;border-image-source&gt; ‖  &lt;border-image-slice&gt; &lbrack; /<br>
+	  &lt;border-image-width&gt; | / &lt;border-image-width&gt;? /<br>
+	  &lt;border-image-outset&gt; |? ‖ &lt;border-image-repeat&gt;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>See individual properties</td>
+	</tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Refer to individual border-image properties to see which are animatable.</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td> A shorthand property that defines the source, slicing pattern, border width, degree of extension,  
+   and repetition of an image-based border. The syntax is somewhat unusual compared to the rest of CSS, so 
+   take extra time with it. For example, three of the five values possible are slash-separated and must be 
+   listed in a specific order.<br>Note that it is effectively impossible to take a 
+   simple image (say, a star) and repeat it around the edges of an element. To create that effect, you must 
+   create a single image that contains nine copies of the image you wish to repeat in a 3×3 grid. It may   
+   also be necessary to set border-width (<i>not</i> border-imagewidth) to be large enough to show the    
+   image, depending on the value of border-image-outset.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td><pre>div.starry {border-image;<br>   url(stargrid.png) 5px repeat;}<br>
+        aside {border-image: url(asides.png)<br>
+          100 50 150 / 8 3 13 / 2 stretch round;}</td>
+	</tr>
+  </tbody>
+</table>
 
- **Values**     *&lt;border-image-source&gt;* ‖ *&lt;border-image-slice&gt;* 
+
+**Values**     *&lt;border-image-source&gt;* ‖ *&lt;border-image-slice&gt;* 
    &lbrack; / 
    
    *&lt;border-image-width&gt;* &vert; /
@@ -3640,12 +3665,12 @@ a:visited {border-color: maroon;}
    
    *&lt;border-image-outset&gt;* &rbrack;? ‖ 
    *&lt;border-image-repeat&gt;*    
- **Initial See individual properties    
- value**   
- **Computed     See individual properties    
- value**   
- **Applies See individual properties    
- to**   
+**Initial See individual properties    
+**value**   
+**Computed     See individual properties    
+**value**
+**Applies See individual properties    
+**to**
  * Refer to individual border-image properties to see   
  *Animatable**  which are animatable 
  **     A shorthand property that defines the source,
@@ -3656,15 +3681,6 @@ a:visited {border-color: maroon;}
    five values possible are slash-separated and must be 
    listed in a specific order.  
    
-   Note that it is effectively impossible to take a     
-   simple image (say, a star) and repeat it around the  
-   edges of an element. To create that effect, you must 
-   create a single image that contains nine copies of   
-   the image you wish to repeat in a 3×3 grid. It may   
-   also be necessary to set border-width (*not* 
-   border-imagewidth) to be large enough to show the    
-   image, depending on the value of     
-   border-image-outset. 
  <p><b>Examples</b></p> 
 <pre>
 div.starry {border-image:    
