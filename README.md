@@ -1728,7 +1728,7 @@ div &ast; p {color: blue;}</pre>
 <p><b>Description</b>  Matches the name of an element in the document's
 language. Every instance of the element name is matched. (CSS1 referred
 to these as "element selectors.")</p>
-<p>Examples</b></p>
+<p><b>Examples</b></p>
 <pre>body {background: #FFF;} 
 p {font-size: 1em;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1750,7 +1750,7 @@ table tr td div ul li {color:purple;} element1 &gt; element2</pre>
 Matches an element based on its status as a child of
 another element. It is more restrictive than a descendant selector, as
 only a child will be matched.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div &gt; p {color: cyan;}
 ul &gt; li {font-weight: bold;}
@@ -1766,7 +1766,7 @@ share the same parent element.) Any anonymous text nodes between the two
 elements are ignored; only elements and their positions in the document
 tree are considered.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 table + p {margin-top: 2.5em;}
 h1 + &ast; {margin-top: 0;}
@@ -1781,7 +1781,7 @@ which it follows in the document tree. Any
 text or other elements between the two elements are ignored; only the
 elements and their positions in the document tree are considered.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 &#126; h2 {margin-top: 2.5em;}
 nav a &#126; a {border-left: 1px solid border;}
@@ -1801,7 +1801,7 @@ Multiple class values can be chained together. If
 no element name precedes the dot, the selector 
 matches all elements bearing that class value or    
 values.     
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p.urgent {color: red;} 
 a.external {font-style: italic;}    
@@ -1817,7 +1817,7 @@ elements that have an id attribute containing a specific value. The name of the 
 immediately follow the octothorpe (#). If no element name precedes the octothorpe, the 
 selector matches all elements containing that ID value.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
  h1#page-title {font-size: 250%;}
  body#home {background: silver;}
@@ -1832,7 +1832,7 @@ selector matches all elements containing that ID value.
 <p><b>Description</b> Matches elements based on the presence of an
 attribute, regardless of the attribute's value.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
 p&lbrack;class&rbrack; {border: 1px dotted silver;} 
@@ -1843,7 +1843,7 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
 <p><b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
 <p><b>Description</b> Matches elements based on the precise and complete value
 of an attribute.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
 p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} 
@@ -1855,7 +1855,7 @@ p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;}
 <p><b>Description</b> Matches elements based on a portion of the
 spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;<i>value</i>&quot;&rbrack;
 is equivalent to <i>.value</i> (see above).
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} 
@@ -1866,7 +1866,7 @@ p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;}
 <p><b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
 <p><b>Description</b> Matches elements based on a substring at the very
 beginning of an attribute's value.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
@@ -1887,7 +1887,7 @@ a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 <p><b>Pattern</b> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
 <p><b>Description</b> Matches elements based on a substring found anywhere
 within an attribute's value.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
  div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
@@ -1933,7 +1933,7 @@ character inside it; nor is the element empty if
 that space is replaced with a newline. Note that    
 this pseudo-class does <i>not</i> apply to empty 
 elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p:empty {padding: 1em; background: red;}
 div:not(:empty) {border: 1px solid;<br>
@@ -1948,7 +1948,7 @@ li:empty {display: none;}
 another element. Thus, div:first-child will select  
 any div that is the first child of another element, 
 <i>not</i> the first child element of any div.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td:first-child {border-left: 1px solid;}
 p:first-child {text-indent: 0; margin-top: 2em;}    
@@ -1960,7 +1960,7 @@ p:first-child {text-indent: 0; margin-top: 2em;}
 <p><b>Description</b> Matches an element when it is the first child of its
 type, as compared to all its sibling elements. Thus, div:first-of-type
 will select any div that is the first child div of another element.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td:first-of-type {border-left: 1px dotted;}
 h2:first-of-type {color: fuchsia;}
@@ -1976,7 +1976,7 @@ h2:first-of-type {color: fuchsia;}
  document---it cannot be assigned from CSS. The 
  handling of :lang is the same as for &vert;= attribute  
  selectors.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 html:lang(en) {background: silver;} <br>
 &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}     
@@ -1989,7 +1989,7 @@ html:lang(en) {background: silver;} <br>
  another element. Thus, div:last-child will select  
  any div that is the last child of another element, 
  <i>not</i> the last child element of any div. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td:last-child {border-right: 1px solid;}
 p:last-child {margin-bottom: 2em;}
@@ -2001,7 +2001,7 @@ p:last-child {margin-bottom: 2em;}
 <p><b>Description</b> Matches an element when it is the last child of its
 type, as compared to all its sibling elements. Thus, div:last-of-type
 will select any div that is the last child div of another element.
-<h5>Examples</h5> 
+<p><b>Examples</b></p> 
 
 <pre>
 td:last-of-type {border-right: 1px dotted;}
@@ -2030,7 +2030,7 @@ the body.
 In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;:nth-child(4n+1) {font-weight: bold;}
 tbody tr:nth-child(odd) {background-color: #EEF;}
@@ -2049,7 +2049,7 @@ element, starting with the last child, you would write body &gt;
 &ast;:nth-last-child(4n+1). This is, in effect, the mirror image of :nth-child.
 In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;:nth-last-child(4n+1) {font-weight: bold;} 
 tbody tr:nth-last-child(odd) { 
@@ -2070,7 +2070,7 @@ other elements (e.g., lists, tables, or other elements) are interspersed
 between the various paragraphs. In place of the <i>a</i>n±<i>b</i> formula, there
 are two keywords permitted: even and odd. These are equivalent to 2n and
 2n+1, respectively.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td:nth-last-of-type(even) {
   background-color: #FCC;} 
@@ -2093,7 +2093,7 @@ true even if other elements (e.g., lists, tables, or other elements)
 are interspersed between the various paragraphs.
 In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td:nth-of-type(even) {background-color: #FCC;}
 img:nth-of-type(3n) {float: right;}
@@ -2109,7 +2109,7 @@ the link. Note that an element can be selected by :only-child even if it
 has its own child or children. It must simply be the only child of its
 parent.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a img:only-child {border: 0;}
 table div:only-child {margin: 5px;}
@@ -2127,7 +2127,7 @@ Any element
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
 (such as divs within a div).
-<h5>Examples</h5> 
+<p><b>Examples</b></p> 
 <pre>
 p em:only-of-type {font-weight: bold;} 
 section article:only-of-type {margin: 2em 0 3em;} 
@@ -2143,7 +2143,7 @@ svg element. In XML formats, the root element can <br>
 have any name; thus, a generic root-element selector <br>
 is needed.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 :root {font: medium serif;}<br>
 :root &gt; &ast; {margin: 1.5em 0;}
@@ -2189,7 +2189,7 @@ grouped, descendant, and combined selectors are not permitted within
 :not() expressions. This restriction is being loosened in CSS
 Selectors Level 4.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul &ast;:not(li) {text-indent: 2em;}
 &ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { 
@@ -2213,7 +2213,7 @@ elements based on their being enabled or disabled.</p>
  active. There are other ways to activate elements,  
  and other elements can in theory be activated, 
  although CSS doesn't define them.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a:active {color: red;}
 &ast;:active {background: blue;}
@@ -2225,7 +2225,7 @@ a:active {color: red;}
 <p><b>Description</b>  Matches any user interface element that has been
 "toggled on," such as a checked checkbox or a
 filled radio button. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 input:checked {
  outline: 3px solid rgba(127,127,127,0.5);}
@@ -2243,7 +2243,7 @@ or other nonpresentational means; for example,
 that :disabled does *not* apply when an input     
 element has simply been removed from the viewport 
 with properties like position or display. 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 input:disabled {opacity: 0.5;} 
 </pre>
@@ -2256,7 +2256,7 @@ accept user input and that can be set to "enabled"
 and "disabled" states through the markup language   
 itself. This includes any form input element in     
 (X)HTML, but does not include hyperlinks.   
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 input:enabled {background: #FCC;}   
 </pre>
@@ -2271,7 +2271,7 @@ when the user starts typing, text will be entered
 into that box. Other elements, such as hyperlinks,  
 can also have focus; however, CSS does not define   
 which elements may or may not have focus.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a:focus {outline: 1px dotted red;}
 input:focus {background: yellow;}
@@ -2287,7 +2287,7 @@ input:focus {background: yellow;}
   the boundaries of a hyperlink in an HTML document.  
   Other elements can in theory be hovered over,  
   although CSS doesn't define which ones.     
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack;:hover {text-decoration: underline;}
 p:hover {background: yellow;} 
@@ -2300,7 +2300,7 @@ p:hover {background: yellow;}
   that is, the URI to which the link points does not  
   appear in the user agent's history. This state is   
   mutually exclusive with the :visited state.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a:link {color: blue;} 
 &ast;:link {text-decoration: underline;} 
@@ -2317,7 +2317,7 @@ a:link {color: blue;}
 					   styles to any element with the id of target-pseudo. 
 					   If that element was a paragraph, it would also be
   matched by p:target. 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 :target {background: #EE0;}
 </pre>
@@ -2329,7 +2329,7 @@ a:link {color: blue;}
   the URI to which the link points appears in the user 
 					   agent's history. This state is mutually exclusive with 
 					   the :link state. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a:visited {color: purple;}
 &ast;:visited {color: gray;}  
@@ -2350,7 +2350,7 @@ but the doublecolon syntax is recommended.
 <p><b>Description</b>  Inserts generated content at the end of an element's
   content. By default, the pseudo-element is inline, 
 					   but this can be changed using the property display. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a.external:after {
   content: &quot; &quot; url(/icons/globe.gif);} 
@@ -2364,7 +2364,7 @@ placed before the content in the element
 <p><b>Description</b>  Inserts generated content at the beginning of an 
   element's content. By default, the pseudo-element is 
   inline, but this can be changed using the property display. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
 p:before {content: attr(class);} 
@@ -2385,7 +2385,7 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
   display value of block, list-item, table-cell, 
   table-caption, or inlineblock. There is a limited   
    set of properties that can apply to a first letter. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1:first-letter {font-size: 166%;} 
 p:first-letter {text-decoration: underline;} 
@@ -2401,7 +2401,7 @@ p:first-letter {text-decoration: underline;}
 					   line. ::first-line can be attached only to blocklevel 
 					   elements. There is a limited set of properties that can 
 					   apply to a first line. 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 p.lead:first-line {font-weight: bold;} 
 </pre>
@@ -2795,7 +2795,7 @@ space-around &vert; space-evenly &vert; stretch
      axis of a flex container, given that the container's<br>
      cross-axis length does not equal the sum of the flex<br>
      lines' size along the same axis. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
   aside {display: flex; align-content: center;}<br>
   section {display: flex; height: 90vh;<br>
@@ -2821,7 +2821,7 @@ alignment with respect to the cross axis of the
 flex line they occupy. baseline alignment means the
 items in a line are all placed such that the
 baselines of their first lines of text line up. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.flexy {align-items: flex-start;} 
 section.gallery {align-items: baseline;} 
@@ -2846,7 +2846,7 @@ baseline
 alignment means the baseline of the item's first line of text is
 aligned with the lowest first-line baseline in the flex line.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.flexy .midpointed {align-self: center;}
 section.gallery h1 {align-self: stretch;}
@@ -2869,7 +2869,7 @@ element to reset all of its style properties to
 their default values, thus blocking the inheritance 
 of values for all properties (except the exempted   
 two).  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;.blendin {all: inherit;}<br>
 &ast;.embedded {all: unset;}   
@@ -2896,7 +2896,7 @@ duration values. As of this writing, it is most likely that the first
 time value will be taken to define the duration and the second to define
 the delay, but this cannot be guaranteed.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div#slide {animation: &apos;slide&apos; 2.5s linear
 0 1 normal;}
@@ -2918,7 +2918,7 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
     noninteractive element, this is likely (but not
     guaranteed) to be at the end of page load.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {animation-delay: 1s, 2000ms, 4s;}
 
@@ -2945,7 +2945,7 @@ returning it to its starting position. Setting that same animation to
 normal would cause the element to move 300 pixels right, then jump back
 to its starting place and move 300 pixels right again, over and over
 until the animation stops (assuming it ever does). 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body
 {animation-direction:
@@ -2971,7 +2971,7 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
     besides moving the element from its start state to its
     end state. Negative values are converted to 0s.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
 
@@ -2998,7 +2998,7 @@ h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
     name implies, infinite means the animation will never
     end. Use with caution.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {animation-iteration-count: 2, 1, 7.5875;}
 
@@ -3021,7 +3021,7 @@ ol.dance {animation-iteration-count: infinite;}
     first animation will run but the second and third will
     not. 
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 html {animation-name: turn, slide, none;}
 
@@ -3039,7 +3039,7 @@ h2 {animation-name: flip;}
     static CSS environments, but it can be used to easily
     stop or start animations via DOM scripting or
     interactive CSS (e.g., :hover). 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 pre {animation-play-state: 
 
@@ -3066,7 +3066,7 @@ consistent effects across user agents
 
 ---but, as always, authors are cautioned not to count on that.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {animation-timing-function: ease, ease-in,
 cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
@@ -3087,7 +3087,7 @@ linear;}
     such that the front side of the element is once  
     more "facing toward" the viewer. 
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.card {backface-visibility: hidden;}  
 span.cubeside {backface-visibility: visible;}    
@@ -3129,7 +3129,7 @@ the images are stacked with the first highest and the last lowest.
 This is the exact reverse of how overlapping is handled in CSS
 positioning, and so may seem counterintuitive.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {background: white url(bg41.gif) fixed center
 repeat-x;} p {background:
@@ -3150,7 +3150,7 @@ property can be used to create "aligned"
 backgrounds; for more details, see Chapter 9 of 
 *CSS: The Definitive Guide*, 4th Edition. 
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {background-attachment: scroll, scroll, fixed;}
 
@@ -3177,7 +3177,7 @@ whichever is lighter. darken is the same, except the darker of the two
 pixels will be shown. The results of these are likely to be familiar
 to users of Photoshop or any other graphic-editing tool. Compositing
 of multiple background layers is done back to front. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 li.shadowed {background-blend-mode: darken;} aside
 {background-blend-mode: color-burn, luminosity, darken;} 
@@ -3198,7 +3198,7 @@ goes to the outer edge of the border area. This property allows more
 constrained clipping boxes at the outer edge of the padding area and at
 the content edge itself.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {background-clip: content-box;}
 .callout {background-clip: content-box, border-box, padding-box;}
@@ -3225,7 +3225,7 @@ body {background-clip: content-box;}
  transparent sections in cases where 
  the background color extends into 
  the border area. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h4 {background-color: white;}
 p {background-color: 
@@ -3245,7 +3245,7 @@ element. Depending on the value of backgroundrepeat, the image may tile
 infinitely, along one axis, or not at all. The initial background image
 (the origin image) is placed according to the value of
 background-position. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
  body {background-image:
  url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
@@ -3275,7 +3275,7 @@ bottom-right corner aligns with the bottom-right
   corner of the outer border edge, but the only parts 
 of it that will be visible are those that fall 
 within the content area. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 html, body {background-origin: border-box;} 
 h1 {background-origin: content-box, padding-box;}
@@ -3317,7 +3317,7 @@ element, but also the same point in
  context within which an origin     
  image is placed can be affected by 
  the value of background-origin. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {background-position: top 
 center;} div#navbar
@@ -3352,7 +3352,7 @@ spaced, and round causes them to be stretched to touch each other. Note
 that repeat-x is equivalent to repeat no-repeat, and repeat-y is
 equivalent to no-repeat repeat.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {background-repeat: no-repeat;}
 h2 {background-repeat: repeat-x, repeat-y;} ul {background-repeat:
@@ -3379,7 +3379,7 @@ the background area and is thus clipped, and contain scales up the
 origin image so that at least one of its dimensions exactly fills the
 corresponding axis of the background area. 
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {background-size: 100% 90%;}
 div.photo {background-size: cover;}
@@ -3401,7 +3401,7 @@ div.photo {background-size: cover;}
  a border style will result in no border being  
  applied because the default border style is none.   
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {border: 2px dashed olive;} a:link {border: blue 
 solid 1px;} 
@@ -3429,7 +3429,7 @@ p.warning {border: double 5px red;}
 with border, omission of a border style will result in no border
 appearing.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-bottom: 0.5in groove green;}
 
@@ -3449,7 +3449,7 @@ a:active {border-bottom: purple 2px dashed;}
 border of an element. The border's style must be something other than
 none or hidden for any visible border to appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-bottom-color: green;}
 
@@ -3477,7 +3477,7 @@ a:active {border-bottom-color: purple;}
     description of how the values create the rounding
     shape.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {border-bottom-left-radius: 10%;}
 h2 {border-bottom-left-radius: 1em 10px;}
@@ -3503,7 +3503,7 @@ h2 {border-bottom-left-radius: 1em 10px;}
     second is the vertical radius. See border-radius for a description of how
 	the values create the rounding shape.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {border-bottom-right-radius: 10%;}
 h2 {border-bottom-right-radius: 1em 10px;}
@@ -3526,7 +3526,7 @@ h2 {border-bottom-right-radius: 1em 10px;}
 ment. The value must be something other than none or hidden for any
 border to appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-bottom-style: groove;}
 
@@ -3549,7 +3549,7 @@ which will take effect only if the border's style is something other
 than none or hidden. If the border style is none, the border width is
 effectively reset to 0. Negative length values are not permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-bottom-width: 0.5in;}
 
@@ -3571,7 +3571,7 @@ a:active {border-bottom-width: 2px;}
     to tables, it is inherited by all the elements within
     the table and actually used by them.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 table {border-collapse: separate; border-spacing: 3px 5px;}
 </pre>
@@ -3593,7 +3593,7 @@ portions of the overall border of an element or sets a different color
 for each of the four sides. Remember that a border's style must be
 something other than none or hidden for any visible border to appear.
 
-<h5>Examples</h5> h1 {border-color: purple;}
+<p><b>Examples</b></p> h1 {border-color: purple;}
 
 a:visited {border-color: maroon;}
 
@@ -3634,7 +3634,7 @@ a:visited {border-color: maroon;}
    border-imagewidth) to be large enough to show the    
    image, depending on the value of     
    border-image-outset. 
- <h5>Examples</h5> 
+ <p><b>Examples</b></p> 
 <pre>
 div.starry {border-image:    
 url(stargrid.png) 5px repeat;}
@@ -3665,7 +3665,7 @@ image, the number 7 is taken to mean seven pixels. Images in formats
 such as SVG may have different coordinate systems. Negative values are
 not permitted.
 
-<h5>Examples</h5> aside {border-image-outset: 2;}
+<p><b>Examples</b></p> aside {border-image-outset: 2;}
 
 div#pow {border-image-outset: 10 17 13 5;}
 
@@ -3692,7 +3692,7 @@ along one axis. round "tiles" the border image as many times as it
 will fit without clipping, then (if necessary) scales the entire set
 of tiled images to exactly fit the border segment.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.starry {border-image-repeat: repeat;}
 
@@ -3731,7 +3731,7 @@ aside {border-image-repeat: stretch round;}
    forcibly made transparent, even in cases where their 
    slices may overlap in the source image. 
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.starry {border-image-slice: 5px;}
 
@@ -3752,7 +3752,7 @@ aside {border-image-slice: 100 50 150;}
 **Description**   Supplies the location of the image to be used as an
     element's border image.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.starry {border-image-source:
 
@@ -3795,7 +3795,7 @@ will be clipped by default (but border-imageoutset may prevent this).
 If it is narrower or shorter than the border area, it will not be
 scaled up. Negative values are not permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 </pre>
 aside {border-image-width: 8 3 13;}
 div#pow{border-image-width: 25px 35;}
@@ -3818,7 +3818,7 @@ div#pow{border-image-width: 25px 35;}
  *Description**  and style of the left border of an element. As with 
  border, omission of a border style will result in   
  no border appearing.
- <h5>Examples</h5>  
+ <p><b>Examples</b></p>  
 <pre>
 p {border-left: 3em solid gray;} pre {border-left:  
 double black 4px;}  
@@ -3837,7 +3837,7 @@ double black 4px;}
    be something other than none or hidden for any  
    visible border to appear.    
       
-<h5>Examples</h5>  
+<p><b>Examples</b></p>  
 <pre>
 p    
  {borde  
@@ -3863,7 +3863,7 @@ p
     The value must be something other than none or hidden
     for any border to appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {border-left-style: solid;}
 pre {border-left-style: double;}
@@ -3885,7 +3885,7 @@ pre {border-left-style: double;}
     style is none, the border width is effectively reset
     to 0. Negative length values are not permitted.
 
-<h5>Examples</h5> 
+<p><b>Examples</b></p> 
 <pre>
 p {border-left-width: 3em;}
 pre {border-left-width: 4px;}
@@ -3936,7 +3936,7 @@ pre {border-left-width: 4px;}
    to the size of the element's border box (the box     
    defined by the outer edges of the element's border   
    area) dimension on the related axis. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 .callout {border-radius:
@@ -3963,7 +3963,7 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 and style of the right border of an element. As with border, omission
 of a border style will result in no border appearing.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img {border-right: 30px dotted blue;}
 h3 {border-right: cyan 1em inset;}
@@ -3985,7 +3985,7 @@ h3 {border-right: cyan 1em inset;}
     something other than none or hidden for any visible
     border to appear.
 
-  <h5>Examples</h5>
+  <p><b>Examples</b></p>
 <pre>
 img {border-right-color: blue;}
 h3 {border-right-color: cyan;}
@@ -4008,7 +4008,7 @@ h3 {border-right-color: cyan;}
 The value must be something other than none or hidden for any border to
 appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img {border-right-style: dotted;}
 
@@ -4033,7 +4033,7 @@ something other than none or hidden. If the border style is none, the
 border width is effectively reset to 0. Negative length values are not
 permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img {border-right-width: 30px;}
 
@@ -4058,7 +4058,7 @@ h3 {border-right-width: 1em;}
    tables, it is inherited by all of the elements  
    within the table.    
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 table {border-spacing: 0;}
 
@@ -4091,7 +4091,7 @@ separate.
  be ignored and the width of the border will be set  
  to 0. Any unrecognized value from the list of  
  values should be reinterpreted as solid.    
- <h5>Examples</h5>
+ <p><b>Examples</b></p>
 <pre>
 h1 {border-style: solid;} 
 img {border-style:inset;}     
@@ -4115,7 +4115,7 @@ img {border-style:inset;}
 
 border, omission of a border style will result in no border appearing.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-top: 0.5in solid black;}
 h1 {border-top: dashed 1px gray;}
@@ -4135,7 +4135,7 @@ h1 {border-top: dashed 1px gray;}
 border of an element. The border's style must be something other than
 none or hidden for any visible border to appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-top-color: black;}
 h1 {border-top-color: gray;}
@@ -4161,7 +4161,7 @@ h1 {border-top-color: gray;}
     vertical radius. See border-radius for a description
     of how the values create the rounding shape.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {border-top-left-radius: 10%;}
 h2 {border-top-left-radius: 1em 10px;}
@@ -4188,7 +4188,7 @@ h2 {border-top-left-radius: 1em 10px;}
     description of how the values create the rounding
     shape.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {border-top-right-radius: 10%;}
 h2 {border-top-right-radius: 1em 10px;}
@@ -4210,7 +4210,7 @@ h2 {border-top-right-radius: 1em 10px;}
     The value must be something other than none or hidden
     for any border to appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-top-style: solid;}
 h1 {border-top-style: dashed;}
@@ -4232,7 +4232,7 @@ h1 {border-top-style: dashed;}
     none, the width is effectively reset to 0. Negative
     length values are not permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {border-top-width: 0.5in;}
 h1 {border-top-width: 1px;}
@@ -4256,7 +4256,7 @@ h1 {border-top-width: 1px;}
  style is none, the border width is effectively 
  reset to 0. Negative length values are not  
  permitted.  
- <h5>Examples</h5>  h1 {border-width: 2ex;}     
+ <p><b>Examples</b></p>  h1 {border-width: 2ex;}     
      
  img {border-width: 5px thick thin 1em;}     
 
@@ -4287,7 +4287,7 @@ computed values are both 0; if one of them is auto, it becomes the
 negative of the other; if neither is auto, bottom will become the
 negative of the value of top.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div#footer {position: fixed; bottom: 0;}
 sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
@@ -4321,7 +4321,7 @@ styles.
 box-decoration-break also applies to block boxes that are split across
 columns or pages.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 span {box-decoration-break: clone;} a
 {box-decoration-break: slice;}
@@ -4360,7 +4360,7 @@ transparent element background will *not* reveal an
 outset shadow "behind" the element. Similarly, 
 inset shadows are only visible inside the border    
 edge and are never drawn beyond it. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {box-shadow: 5px 10px gray;} table th    
 {box-shadow: inset 0.5em 0.75em 5px −2px    
@@ -4391,7 +4391,7 @@ behavior. Thus, given:
 body {box-sizing: border-box; width: 880px; padding: 0 20px;} the
 final width of the content area will be 840 pixels (880--20--20).
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 body {box-sizing: padding-box;}
 </pre>
@@ -4411,7 +4411,7 @@ body {box-sizing: padding-box;}
 the table box. The caption is rendered as though it were a block-level
 element placed just before (or after) the table.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre
 caption {caption-side: top;}
 </pre>
@@ -4442,7 +4442,7 @@ dropped due to a lack of widespread support.
  the end result is that the element's top outer 
  border edge is just below the bottom outer margin   
 edge of a floated element on the declared side.     
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {clear: both;} p + h3 {clear: right;}    
 </pre>
@@ -4471,7 +4471,7 @@ visible, and outside of which it is invisible. url() values can be used
 to refer to an SVG file or an SVG clipPath element to be used as the
 clipping shape.
 
-<h5>Examples</h5> p.clipped {clip-path: url(shapes.svg#cloud02);}
+<p><b>Examples</b></p> p.clipped {clip-path: url(shapes.svg#cloud02);}
 
 p.rounded {clip-path: ellipse(100px 50px at 75% 25%);}
 
@@ -4497,7 +4497,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
  filled. A nonzero rule causes the entire shape to   
  be filled. evenodd can result in portions of the    
  shape's interior being fully transparent.   
- <h5>Examples</h5>  span.fullshape {clip-rule: nonzero;} span.knockouts 
+ <p><b>Examples</b></p>  span.fullshape {clip-rule: nonzero;} span.knockouts 
  {clip-rule: evenodd;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4526,7 +4526,7 @@ the computed value is rgba(0,0,0,0); for currentColor, the computed
 value is inherit. For all other values, the computed value is the same
 as the declared value.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 strong {color: rgb(255,128,128);} h3 {color: navy;}
 p.warning {color: #ff0000;}
@@ -4549,7 +4549,7 @@ otherwise, as declared
 <b>Description</b>  after an element. By default, this is likely to be  
 inline content, but the type of box the content     
 creates can be defined using the property display.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p::before {content: &quot;Paragraph&hellip;&quot;;}     
 a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;  
@@ -4571,7 +4571,7 @@ font-size: smaller;}
 decremented) by any value, positive or negative or 0. If no
 *&lt;integer&gt;* is supplied, it defaults to 1.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {counter-increment: section;}
 &ast;.backward li {counter-increment: counter −1;}
@@ -4590,7 +4590,7 @@ h1 {counter-increment: section;}
  <b>Description</b>  for the first time) to any value, positive or  
  negative. If no *&lt;integer&gt;* is supplied, it  
 defaults to 0. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {counter-reset: section;} h2 {counter-reset:     
 subsec 1;}
@@ -4638,7 +4638,7 @@ the top-left corner of the image is used (equivalent to 0 0). Note
 that the numbers are unitless and are interpreted relative to the
 "cursor's coordinate system" (to quote again).
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a.moreinfo {cursor: help;}
 a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
@@ -4667,7 +4667,7 @@ HTML attribute dir rather than the CSS property direction. User agents
 that do not support bidirectional text are permitted to ignore this
 property.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;:lang(en) {direction: ltr;}
 &ast;:lang(ar) {direction: rtl;}
@@ -4726,7 +4726,7 @@ The value run-in was long a part of CSS2.1 but was dropped in early
 2011 because of inconsistencies among browsers. Despite this, it is
 still listed as part of CSS3.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {display: block;}
 li {display: list-item;} img {display: inline;} .hide {display: none;}
@@ -4748,12 +4748,12 @@ tr {display: table-row;}
 and background are drawn. This property is only     
 honored if border-collapse is set to separate; 
 otherwise, it is ignored.   
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 th, td {empty-cells: show;} 
 </pre>
 
-<h5>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
+<p><b>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><b>filter</b>    <b>Inh. N Anim. Y</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4774,7 +4774,7 @@ values point to filter elements in SVG files,
 either externally or embedded within the HTML  
 document. SVG filters can be quite complex and 
 powerful.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img.oldschool {filter: sepia(0.9);} h2.glowshadow   
 {filter:    
@@ -4805,7 +4805,7 @@ url(/assets/filters.svg#spotlight);}
     flex-shrink, and flex-basis properties, used to set
     the proportion and types of flexibility permitted
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 for a flex item. The minimum valid value is a flex   
 basis on its own, in which case the growth and  
 <b>Note</b> shrink factors are set to their defaults of 0 and 1, 
@@ -4844,7 +4844,7 @@ encompasses.
    basis for all subsequent flex sizing calculations.   
    This can override an explicitly assigned width value 
    for the element.     
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 nav ul li {flex-basis: 50%;} ol.gallery li   
    {flex-basis: 300px;} div span.whatevs {flex-basis:   
@@ -4866,7 +4866,7 @@ value**
 **Description**  flowed into the flex container, which in turn  
 defines how the flex lines will fill the flex  
 container.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.gallery {display: flex; flex-direction: row;}   
      
@@ -4883,7 +4883,7 @@ column;}
 **Description**  A shorthand property encompassing the flexdirection 
   and flex-wrap properties. Note that the default     
  wrapping value is nowrap (see flex-wrap).   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.gallery {display: flex; flex-flow: row wrap;}   
      
@@ -4903,7 +4903,7 @@ nowrap;}
   supplied is summed up with all the growth factors of the flex items in the same flex line, 
  and the amount they grow is scaled in proportion to their growth factors as a percentage of the whole. 
 
-<h5>Examples</h5> nav ul li {flex-grow: 1;}
+<p><b>Examples</b></p> nav ul li {flex-grow: 1;}
 
 ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 {flex-grow: 0.5;}
@@ -4928,7 +4928,7 @@ to**
 of the other flex items in the same flex line, and  
 the amount they shrink is scaled proportional to    
 their shrink factors as a percentage of the whole.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/    
 ol.gallery li {flex-shrink: 0.5;} div span.whatevs  
@@ -4956,7 +4956,7 @@ or a column) even if that means they continue outside the flex
 container. If you want your flex items to wrap to a new flex line when
 they run out of room (as in an image gallery), make sure to wrap them.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
  div.gallery {display: flex; flex-wrap: wrap;} nav.sidenav
 {display: flex; flex-wrap: nowrap;}
@@ -4984,7 +4984,7 @@ lead to unexpected results when they are used as a page layout
 mechanism. This is largely due to subtle differences in the
 interpretation of statements like "as narrow as possible."
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img.figure {float: left;}
 
@@ -5020,7 +5020,7 @@ p.sidebar {float: right; width: 15em;}
  that order*, and any font value that is not a  
  keyword must end with the font family. Otherwise,   
  the font declaration will be ignored.  
-<h5>Examples</h5>  
+<p><b>Examples</b></p>  
 <pre>
 p {font: small-caps italic bold small/ 
 1.25em Helvetica,sans-serif;}  
@@ -5051,7 +5051,7 @@ that contain spaces or nonalphabetic characters should be quoted to
 minimize potential confusion. In contrast, generic fallback family names
 should *never* be quoted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {font-family: Helvetica, Arial, sans-serif;} li
 {font-family: Georgia, Times, TimesNR,
@@ -5072,7 +5072,7 @@ p {font-family: Helvetica, Arial, sans-serif;} li
    depends entirely on the font face being used:
    turning ligatures on or off can only work if the
    face has defined ligatures in the first place.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {font-feature-settings: &quot;liga&quot;;}
    
@@ -5080,7 +5080,7 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
    
 &quot;zero&quot; on;}
 </pre>
-<h5>Note</h5>  Has a corresponding &#64;font-face descriptor.
+<p><b>Note</h5>  Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-kerning Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5101,7 +5101,7 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
  and the user agent would make use of it. Note that  
  kerning is done *before* any letter spacing is 
  altered (see letterspacing).
- <h5>Examples</h5>
+ <p><b>Examples</b></p>
 <pre>
 body {kerning: normal;} div.typewriter {kerning:    
 none;} 
@@ -5136,7 +5136,7 @@ It's a matter of historical interest that because of early
 misunderstandings, setting the font-size to medium led to different
 results in early versions of Internet Explorer and Navigator 4.x.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h2 {font-size: 200%;}
 
@@ -5159,7 +5159,7 @@ p.caption {font-size: 9px;}
     proper aspect value for a font is its true xheight
     divided by its font size.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {font-family: Helvetica, sans-serif;
 
@@ -5181,7 +5181,7 @@ variant, but *only* if the face has narrower or wider variants defined.
 User agents will not programmatically stretch or squeeze a face, but
 only swap in a variant face (if it exists).
 
-<h5>Examples</h5> h1.bigtext {font-stretch: ultra-expanded;} caption.meme
+<p><b>Examples</b></p> h1.bigtext {font-stretch: ultra-expanded;} caption.meme
 {font-stretch: condensed;} **Note** Has a corresponding &#64;font-face
 descriptor.
 
@@ -5205,7 +5205,7 @@ In reality, user agents rarely (if at all)
 recognize the difference between italic and oblique 
 text and almost always render both in exactly the   
 same way.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 em {font-style: oblique;} i {font-style: italic;}
 </pre>
@@ -5229,7 +5229,7 @@ it does permit visual emphasis of text in font families that lack the
 necessary faces. If you don't want to risk it, use none to suppress
 this behavior.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {font-synthesis: none;}
 pre code {font-synthesis: style;}
@@ -5272,7 +5272,7 @@ pre code {font-synthesis: style;}
 is theoretically possible for a user agent to compute a small-caps
 font face from the normal face.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h3 {font-variant: small-caps;} p {font-variant: normal;}
 </pre>
@@ -5300,7 +5300,7 @@ and 600 through 900 will be bold. In general terms,
 the visual result of each numeric value must be at  
 least as light as the next lowest number and at     
 least as heavy as the next highest number.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 b {font-weight: 700;} strong {font-weight: bold;}   
 
@@ -5332,7 +5332,7 @@ grid gaps. The value syntax can become quite complex and, for
 clarity's sake, most authors rely on the individual properties instead
 of grid, but there are no technical reasons to avoid grid.
 
-<h5>Example</h5> 
+<p><b>Example</b></p> 
 <pre>
 body {display: grid; grid:
 &quot;header header header header&quot; 3em
@@ -5359,7 +5359,7 @@ column-start (left) / row-end (bottom) / column-end
 (right), which is the reverse of the usual  
 top-right-bottom-left order for margins, padding,   
 and so on.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #masthead {grid-area: header;} 
      
@@ -5381,7 +5381,7 @@ Grid containers
 automatically generated; that is, columns that are created because a
 grid item needs to be placed outside the explicitly defined grid
 columns.
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 div.grid {display: grid;
 
@@ -5404,7 +5404,7 @@ been explicitly assigned to a grid area using grid-area or the
 grid-column and grid-row properties will be automatically flowed into
 the grid container.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 section.menu {grid-auto-flow: column;}
 
@@ -5432,7 +5432,7 @@ div.gallery {grid-auto-flow: row dense;}
 automatically generated; that is, rows that are created because a grid
 item needs to be placed outside the explicitly defined grid rows.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 div.grid {display: grid;
 
@@ -5463,7 +5463,7 @@ Description**  grid-column-start and grid-column-end properties.
    the same identifier. Negative numeric grid lines     
    count backward from the end of the explicit grid     
    (generally the right side).  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 header {grid-column: 1 / -1;}
 &pound;sidebar {grid-column: 1 / span 2;} 
@@ -5487,7 +5487,7 @@ block is a grid container
 layout ends, or (when using the span keyword) the number of column
 tracks, or identified column tracks, the element spans.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 header {grid-column-end: main-content;}
 
@@ -5510,7 +5510,7 @@ an author to force open gaps between column tracks, even when the grid
 items have no margins to push them away from each other. The gap size is
 the same for all column gaps.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 #grid {display: grid; grid-column-gap: 1em;}
 </pre>
@@ -5540,7 +5540,7 @@ layout starts, by means of either a grid line number or an identifier.
 If the span keyword is used, the grid item spans back from the grid line
 defined by gridcolumn-end.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 header {grid-column-start: masthead;}
 
@@ -5560,7 +5560,7 @@ to**
 *Description**  and grid-column-gap properties, in that order. If   
 only one value is supplied, the value is assumed to 
 be the same for both row and column gaps.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #grid {display: grid; grid-gap: 12px 1em;}
 div.gallery {display: grid; grid-gap: 2.5vw;}
@@ -5593,7 +5593,7 @@ grid-row-start and grid-row-end properties. When a single number or
 identifier is declared, the second is assumed to be the span 1 (for a
 number) or the same identifier.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #sidebar {grid-row: 1 / -1;}
 footer {grid-row: footer-start / footer-end;}f
@@ -5617,7 +5617,7 @@ header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
     row tracks, or identified row tracks, the element
     spans across.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 header {grid-row-end: span 1;}
 
@@ -5641,7 +5641,7 @@ author to force open gaps between row tracks, even when the grid items
 have no margins to push them away from each other. The gap size is the
 same for all row gaps.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>#grid {display: grid; grid-row-gap: 12px;}</pre>
 
 **Note** As of early 2018, the CSS Working Group intends to change this
@@ -5669,7 +5669,7 @@ containers as well as grid containers.
     the grid item spans back from the grid line defined by
     grid-row-end.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 header {grid-row-start: masthead;}
 &pound;sidebar {grid-row-start: span 1;}
@@ -5694,7 +5694,7 @@ grid areas in a grid container, and automatically creating named grid
 lines to make the grid areas work. Because the areas are defined using
 patterns of text, no areas defined with this property can overlap.
 
-<h5>Examples</h5> 
+<p><b>Examples</b></p> 
 <pre>
 #grid {display: grid;
 grid-template-areas:
@@ -5724,7 +5724,7 @@ grid-template-areas:
   **Description**   Provides authors a way to define grid line names and
     track sizes for columns in the explicit grid.
 
-  <h5>Examples</h5> aside {grid-template-columns:
+  <p><b>Examples</b></p> aside {grid-template-columns:
 
 max-content min-content max-content;} article {grid-template-columns:
 15em 4.5fr 3fr 10%;} section {grid-template-columns:
@@ -5748,7 +5748,7 @@ value**
 to** 
 *     Provides authors a way to define grid line names    
 *Description**  and track sizes for rows in the explicit grid. 
-<h5>Examples</h5>  aside {grid-template-rows: 200px 50% 100px;}
+<p><b>Examples</b></p>  aside {grid-template-rows: 200px 50% 100px;}
 article {grid-template-rows: 3em minmax(5em,1fr)    
 2em;} section {grid-template-rows:  
      
@@ -5773,7 +5773,7 @@ article {grid-template-rows: 3em minmax(5em,1fr)
  *Description**  the exact portions depend on the value of   
  boxsizing. Negative length and percentage values    
  are not permitted.  
- <h5>Examples</h5>
+ <p><b>Examples</b></p>
 <pre>
 img.icon {height: 50px;}    
 h1 {height: 1.75em;}
@@ -5797,7 +5797,7 @@ h1 {height: 1.75em;}
  document. Automatic hyphenation is heavily  
  languagedependent, and may vary greatly between     
  user agents.
-<h5>Examples</h5>  h1, h2 {hyphens: none;} aside.poem {hyphens:
+<p><b>Examples</b></p>  h1, h2 {hyphens: none;} aside.poem {hyphens:
  manual;}    
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5822,7 +5822,7 @@ be similar to that of a document loaded into an iframe element, though
 this analogy is not exact: the isolated element still inherits styles
 from its ancestors.
 
-<h5>Example</h5> p.alone {isolation: isolate;}
+<p><b>Example</b></p> p.alone {isolation: isolate;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### justify-content Inh. N Anim. N
@@ -5835,7 +5835,7 @@ from its ancestors.
 **Applies to**    Flex containers     
  Defines the distribution of flex items along the    
 **Description**  main axis of a flex container. 
-<h5>Examples</h5>  nav {justify-content: space-evenly;} div.gallery    
+<p><b>Examples</b></p>  nav {justify-content: space-evenly;} div.gallery    
  {justify-content: space-between;}   
 **Note** As of early 2018, there are plans to have this 
  property apply to many (or all) elements, not just  
@@ -5864,7 +5864,7 @@ an absolutely positioned element and the left edge of its containing
 block; or, for relatively positioned elements, the distance by which the
 element is offset to the right of its starting position.
 
-<h5>Examples</h5> div#footer {position: fixed; left: 0;}
+<p><b>Examples</b></p> div#footer {position: fixed; left: 0;}
 
 &ast;.hanger {position: relative; left: −25px;}
 
@@ -5888,7 +5888,7 @@ to**
  (most likely) synonymous with 0. Negative length    
  and percentage values are permitted and will cause  
  letters to bunch closer together.   
-<h5>Examples</h5>  
+<p><b>Examples</b></p>  
 <pre>
 p.spacious {letter-spacing: 6px;}
 em {letter-spacing: 0.2em;}
@@ -5934,7 +5934,7 @@ stringent"
       
 line-breaking. 
      
-<h5>Example</h5>    
+<p><b>Example</b></p>    
 div.cjk     
 {line-break:   
 strict;}  
@@ -5969,7 +5969,7 @@ content is the line box.
 A raw number value assigns a scaling factor, which  
 is inherited instead of a computed value. Negative  
 values are not permitted.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 
 <pre>
  p {line-height: 1.5em;}     
@@ -5992,7 +5992,7 @@ has a display value of list-item, it will apply
 only to li elements in ordinary HTML, although it   
 can be applied to any element and subsequently 
 inherited by list-item elements.    
-<h5>Examples</h5>  ul {list-style: square url(bullet3.gif) outer;} /&ast; 
+<p><b>Examples</b></p>  ul {list-style: square url(bullet3.gif) outer;} /&ast; 
 values are inherited by &apos;li&apos; elements &ast;/ 
      
 ol {list-style: upper-roman;}  
@@ -6014,7 +6014,7 @@ value**   none
     image with respect to the content of the list item can
     be crudely controlled using list-styleposition.
 
-  <h5>Examples</h5> 
+  <p><b>Examples</b></p> 
 <pre>
 ul {list-style-image: url(bullet3.gif);}
 ul li {list-style-image:
@@ -6038,7 +6038,7 @@ from the border edge of the list item, but the distance is not defined
 in CSS. Inside markers are treated as though they were inline elements
 inserted at the beginning of the list item's content.
 
-<h5>Examples</h5> li {list-style-position: outside;}
+<p><b>Examples</b></p> li {list-style-position: outside;}
 
 ol li {list-style-position: inside;}
 
@@ -6079,7 +6079,7 @@ the next bullet should be. (Two possible answers are "AA" and "ZA.")
 This is the case regardless of the alphabet in use. Thus, there is no
 guarantee that different user agents will act consistently.
 
-<h5>Examples</h5> ul {list-style-type: square;}
+<p><b>Examples</b></p> ul {list-style-type: square;}
 
 ol {list-style-type: lower-roman;}
 
@@ -6107,7 +6107,7 @@ ol {list-style-type: lower-roman;}
 can cause elements to overlap other elements or to appear to be wider
 than their parent elements.
 
-<h5>Examples</h5> h1 {margin: 2ex;}
+<p><b>Examples</b></p> h1 {margin: 2ex;}
 
 p {margin: auto;} img {margin: 10px;}
 
@@ -6129,7 +6129,7 @@ p {margin: auto;} img {margin: 10px;}
     Negative values are permitted, but caution is
     warranted (see margin).
 
-  <h5>Examples</h5> ul {margin-bottom: 0.5in;}
+  <p><b>Examples</b></p> ul {margin-bottom: 0.5in;}
 
 h1 {margin-bottom: 2%;}
 
@@ -6151,7 +6151,7 @@ h1 {margin-bottom: 2%;}
     Negative values are permitted, but caution is
     warranted (see margin).
 
-  <h5>Examples</h5> p {margin-left: 5%;}
+  <p><b>Examples</b></p> p {margin-left: 5%;}
 
 pre {margin-left: 3em;}
 
@@ -6173,7 +6173,7 @@ pre {margin-left: 3em;}
     Negative values are permitted, but caution is
     warranted (see margin).
 
-  <h5>Examples</h5> img {margin-right: 30px;}
+  <p><b>Examples</b></p> img {margin-right: 30px;}
 
 ol {margin-right: 5em;}
 
@@ -6193,7 +6193,7 @@ ol {margin-right: 5em;}
  *     Defines the width of the top margin for an element. 
  *Description**  Negative values are permitted, but caution is  
  warranted (see margin).     
- <h5>Examples</h5>  ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     
+ <p><b>Examples</b></p>  ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **mask** **Inh. N Anim. P**
@@ -6219,7 +6219,7 @@ ol {margin-right: 5em;}
  background as compared to the various background    
  properties, and many of the masking and background  
  properties share values and behaviors. 
- <h5>Examples</h5>    img.masked {mask:   
+ <p><b>Examples</b></p>    img.masked {mask:   
 
 url(#mask) no-repeat center/cover luminance;}
 
@@ -6248,7 +6248,7 @@ add;
  shape to an element but then further reduce the     
  visible parts of the element without having to 
  directly alter the mask shape. 
- <h5>Examples</h5>  p:nth-child(1) {mask-clip: border-box;}     
+ <p><b>Examples</b></p>  p:nth-child(1) {mask-clip: border-box;}     
  p:nth-child(2) {mask-clip: padding-box;}    
  p:nth-child(3) {mask-clip: content-box;}    
 
@@ -6275,7 +6275,7 @@ is reversed so the circle is atop the square, then the square is
 subtracted from the circle. For the other values, the result should
 not depend on the masks' stacking order.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img.masked {mask-composite: add;}
 span.mask3 {mask-composite: subtract, add, add;}
@@ -6308,7 +6308,7 @@ wholly or partially visible. The exact visual result will depend on
 the value of maskmode; by default, the alpha channel of the maskimage
 will be used to determine the masking of the element.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;.masked.compass {mask-image: url(Compass.png);}
 
@@ -6344,7 +6344,7 @@ will be used to determine the masking of the element.
     mask element, in which case it's the same as
     luminance.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {mask-mode: alpha;}
 
@@ -6369,7 +6369,7 @@ img.lum {mask-mode: luminance, alpha;}
     to vary the initial placement of the mask before
     sizing, repeating, or positioning it.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div.inset {mask-origin: content-box;}
 svg#radio {mask-origin: stroke-box, fill-box;}
@@ -6393,7 +6393,7 @@ svg#radio {mask-origin: stroke-box, fill-box;}
     default will place the masking image in the top-left
     corner of the box defined by maskorigin.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p:nth-child(1) {mask-position: top right;}
 p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
@@ -6415,7 +6415,7 @@ p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 **Description**  manner identical to the repetition of background    
  images. Note that the default is to repeat a mask   
  in all directions.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p:nth-child(1) {mask-repeat: repeat;}  
 p:nth-child(2) {mask-repeat: repeat round;} 
@@ -6437,7 +6437,7 @@ p:nth-child(3) {mask-repeat: space no-repeat;}
  *  Sets the size of the initial masking image in a     
  *Description**  manner identical to the sizing of background
  images.     
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p:nth-child(1) {mask-size: 80%;}    
 p:nth-child(2) {mask-size: 2em 3em, 100%;} p:nth-child(3) {mask-size:
@@ -6455,7 +6455,7 @@ by an SVG mask element as opposed to, say, a PNG file or an entire SVG.
 Of interest because most masking images use the alpha blending mode, but
 mask element masks default to luminance.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 svg #mask {mask-type: alpha;}
 </pre>
@@ -6481,7 +6481,7 @@ svg #mask {mask-type: alpha;}
  not taller. 
      
  Negative values are not permitted.  
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 div#footer {max-height: 3em;}  
 </pre>
@@ -6506,7 +6506,7 @@ div#footer {max-height: 3em;}
 be narrower than the declared value but not wider. Negative values are
 not permitted.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 #sidebar img {width: 50px; max-width: 100%;}
 </pre>
@@ -6529,7 +6529,7 @@ not permitted.
  not shorter.
      
  Negative values are not permitted.  
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 div#footer {min-height: 1em;}  
 </pre>
@@ -6554,7 +6554,7 @@ div#footer {min-height: 1em;}
 be wider than the declared value, but not narrower. Negative values
 are not permitted.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 div.aside {width: 13em; max-width: 33%;}
 </pre>
@@ -6585,7 +6585,7 @@ except the darker of the two pixels will be shown.
 The results of these are likely to be familiar to    
 users of Photoshop or any other graphic-editing 
 tool.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 li.shadowed {mix-blend-mode: darken;} aside  
 {mix-blend-mode:     
@@ -6618,7 +6618,7 @@ maintaining its intrinsic aspect ratio. scale-down
 means the image will stay its intrinsic size unless  
 it's too big to fit into the element box, in which   
 case it will be scaled down to fit.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img:nth-of-type(1) {object-fit: none;}  
 img:nth-of-type(2) {object-fit: fill;}  
@@ -6640,7 +6640,7 @@ img:nth-of-type(3) {object-fit: cover;}
 (see object-fit) within its element box, in a manner identical to how
 background origin images can be positioned.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img:nth-of-type(1) {object-position: center;}
 
@@ -6677,7 +6677,7 @@ value**  value must be clipped)
  absolutely positioned element with opacity less     
  than 1 and a z-index of auto force-alters the  
  z-index value to 0. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h2 {opacity: 0.8;} .hideme {opacity: 0;}    
 </pre>
@@ -6705,7 +6705,7 @@ conceived as a way to change the visual layout order of flex items, this
 property now also allows authors to rearrange the order of auto-flowed
 grid items.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 li:nth-of-type(6) {order: 1;}
 
@@ -6726,7 +6726,7 @@ li:nth-of-type(14) {order: -1;}
  *Description**  element that can be left at the bottom of a page.   
  This can affect the placement of page breaks within 
  the element.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {orphans: 4;} ul {orphans: 2;}
 </pre>
@@ -6750,7 +6750,7 @@ which form element or hyperlink currently has focus (accepts keyboard
 input). Outlines can be of irregular shape, and no matter how thick,
 they do not change or otherwise affect the placement of elements.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline: 2px dashed invert;}
 
@@ -6773,7 +6773,7 @@ agents are permitted to ignore invert on platforms that don't support
 color inversion. In that case, the outline's color defaults to the value
 of color for the element.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-color: invert;}
 
@@ -6797,7 +6797,7 @@ it applies equally to all sides of the outline. Values can be negative,
 which causes the outline to "shrink" inward toward the element's center.
 Note that outline-offset cannot be set via the shorthand outline.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-offset: 0.33em;}
 
@@ -6821,7 +6821,7 @@ form:focus {outline-offset: −1px;}
 ment. The style must be something other than none for any outline to
 appear.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-style: dashed;}
 form:focus {outline-style: outset;}
@@ -6845,7 +6845,7 @@ only if the value of outline-style is something other than none. If
 the style *is* none, the width is
 effectively reset to 0. Negative length values are   
 not permitted.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-width: 2px;} 
 form:focus {outline-width: 0.25em;}
@@ -6871,7 +6871,7 @@ box. If two values are supplied, the first defines the value of
 overflow-x and the second defines overflow-y. Otherwise, a single
 value defines both.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #masthead {overflow: hidden;}
 object {overflow: visible scroll;}
@@ -6896,7 +6896,7 @@ fit inside its element's
 containing block. (This behavior is in contrast to word-break, which
 does not force a pre-word line break.)
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 pre {overflow-wrap: break-word;}
 </pre>
@@ -6918,7 +6918,7 @@ to**
  *     Defines the overflow behavior along the horizontal  
  *Description**  (x) axis of the element; that is, the left and 
  right edges of the element. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #masthead {overflow-x: hidden;} object {overflow-x: 
 visible;}   
@@ -6934,7 +6934,7 @@ visible;}
 **Description** Defines the overflow behavior along the vertical (y)
 axis of the element; that is, the top and bottom edges of the element.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #masthead {overflow-y: hidden;} object {overflow-y:
 scroll;}
@@ -6962,7 +6962,7 @@ scroll;}
  overlap other content. The background of the
  element will extend throughout the padding. 
  Negative padding values are not permitted.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img {padding: 10px;} h1 {padding: 2ex 0.33em;} 
 pre {padding: 0.75em 0.5em 1em 0.5em;} 
@@ -6988,7 +6988,7 @@ pre {padding: 0.75em 0.5em 1em 0.5em;}
 					and potentially overlap other content. Negative padding
 					values are not permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {padding-bottom: 0.5in;}
 h1 {padding-bottom: 2%;}
@@ -7013,7 +7013,7 @@ h1 {padding-bottom: 2%;}
 box generated by the element. Negative padding values are not
 permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {padding-left: 5%;}
 pre {padding-left: 3em;}
@@ -7038,7 +7038,7 @@ pre {padding-left: 3em;}
     box generated by the element. Negative padding values
     are not permitted.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img {padding-right: 30px;}
 ol {padding-right: 5em;}
@@ -7062,7 +7062,7 @@ ol {padding-right: 5em;}
  and a background may visibly extend into other 
  lines and potentially overlap other content.
  Negative padding values are not permitted.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
 </pre>
@@ -7089,7 +7089,7 @@ type declared by page. (Multiple page breaks may be used if other
 styles call for using a right- or lefthand page when starting the new
 page.)
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &#64;page wide {size: landscape;}
 table.summary {page: wide;}
@@ -7118,7 +7118,7 @@ table.summary {page: wide;}
  element to make the next page be a 
  lefthand page; similarly, right is 
  used for a righthand page. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 section {page-break-after: 
 always;}
@@ -7149,7 +7149,7 @@ The keyword left is used to insert enough breaks before the element to
 make the page be a lefthand page; similarly, right is used for a
 righthand page.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 section {page-break-before: always;} h2 {page-break-before:
 avoid;}
@@ -7177,7 +7177,7 @@ before, but browser support for page-breakbefore may be stronger.
     lengthy document will not  
     prevent the insertion of page   
     breaks by the user agent.  
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 table {page-break-inside:  
   avoid;} 
@@ -7205,7 +7205,7 @@ define a foreshortening depth in pixels; smaller numbers define more
 extreme perspective effects. Negative values are treated the same as
 none.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {perspective: 250;} /&ast; middlin&apos; &ast;/
 #wrapper {perspective: 10;} /&ast; extreme &ast;/
@@ -7228,7 +7228,7 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
 **Description**  perspective within the element. In effect, it  
 defines the point in the element that appears to be 
 directly in front of the viewer.    
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 body {perspective-origin: bottom right;} #wrapper   
 div {perspective-origin: 0 50%;}    
@@ -7249,7 +7249,7 @@ with absolute or fixed will generate a block-level box regardless of
 what kind of element it is. An element that is relatively positioned is
 offset from its default placement in the normal flow.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #footer {position: fixed; bottom: 0;}
 &ast;.offset {position: relative; top: 0.5em;}
@@ -7269,7 +7269,7 @@ offset from its default placement in the normal flow.
  *Description**  nested quotes. The actual quote marks are inserted  
  via the content property's open-quote and   
  closequote values.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot;;} q     
  {quotes: &apos;\\201C&apos; &apos;\\201D&apos; &apos;\\2018&apos;   
@@ -7291,7 +7291,7 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
 the user. The actual appearance and operation of any resize mechanism is
 left to the user agent and is likely dependent on the writing direction.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 textarea {resize: vertical;} iframe {resize: both;}
 </pre>
@@ -7314,7 +7314,7 @@ textarea {resize: vertical;} iframe {resize: both;}
  *     Defines the offset between the right outer margin   
  *Description**  edge of a positioned element and the right edge of  
  its containing block.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 div#footer {position: fixed; right: 0;}     
 &ast;.overlapper {position: relative; right: −25px;}   
@@ -7334,7 +7334,7 @@ div#footer {position: fixed; right: 0;}
  Description**  threshold for float shape creation via an image. By  
  default, only fully transparent areas in the shape's 
  source image are used to define the float shape. If  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 the value is changed to 0.7, then all areas of the   
 source image that are 70% or more transparent are    
 used to define the float shape. This allows for the  
@@ -7367,7 +7367,7 @@ img.floated {shape-image-threshold: 0.1;}
     large shape margins are most likely to result in a
     traditional rectangular float box.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #one {shape-margin: 0;}
 #two {shape-margin: 1.5em;}
@@ -7404,7 +7404,7 @@ define the float shape. Shapes are clipped at the edges of the shape's
 outer margin edge, so a float shape can never be larger than the
 unshaped version of that float.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 img.web20 {shape-outside: inset(7% round 0.5em/5px);}
 img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
@@ -7438,7 +7438,7 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
  a square page box. Length values that use em or ex  
  units are calculated with respect to the computed   
  font size of the page context. 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 body   
 {page-size:    
@@ -7462,7 +7462,7 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
  honored for display due to the value of whitespace. 
  An *&lt;integer&gt;* value sets the number of   
  "spaces" a tab character will generate.     
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 pre.source {tab-size: 4;}   
 p.typer {tab-size: 0.25in;} 
@@ -7486,7 +7486,7 @@ p.typer {tab-size: 0.25in;}
     the fixed-layout algorithm is theoretically faster and
     more predictable.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 table.data {table-display: fixed;}
 table.directory {table-display: auto;}
@@ -7510,7 +7510,7 @@ table.directory {table-display: auto;}
  programmatically adjust the word (but not letter)   
  spacing of the line's content; results may vary by  
  user agent. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {text-align: justify;} h4 {text-align: center;}   
 </pre>
@@ -7532,7 +7532,7 @@ boxes are aligned. The value justify is supported by allowing user
 agents to programmatically adjust the word (but not letter) spacing of
 the line's content; results may vary by user agent.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {text-align-last: justify;}
 h4 {text-align-last: right;}
@@ -7566,7 +7566,7 @@ move it after the h1, h2 rule or extend its
 selector to raise its specificity.  
      
 User agents are not required to support blink. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 u {text-decoration: underline;}     
 .old {text-decoration: line-through;}  
@@ -7595,7 +7595,7 @@ element) within the element, not just the first line. The value hang ing
 inverts the defined pattern of indentation, allowing for the creation of
 an outdent effect without using a negative length value.
 
-<h5>Examples</h5> 
+<p><b>Examples</b></p> 
 <pre>
 p {text-indent: 5em;}
 h2 {text-indent: −25px;}
@@ -7622,7 +7622,7 @@ h2 {text-indent: −25px;}
     be upright regardless of their language, and sideways
     forces all characters to be shown sideways.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 #one {text-orientation: mixed;}
 ### two {text-orientation: upright;}
@@ -7649,7 +7649,7 @@ important. Note that some user agents always optimize for legibility
 when rendering HTML text, so this property may have minimal or no
 effect outside of SVG (which is where it started out).
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {text-rendering: optimizeSpeed;}
 svg tspan {text-rendering: optimizeLegibility;}
@@ -7677,7 +7677,7 @@ order: horizontal offset, vertical offset, and blur distance. When
 positive, the offset values go down and to the right; when negative,
 they go back and to the left. Blur values cannot be negative.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 −3px 0.5em blue;}
@@ -7696,7 +7696,7 @@ h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
  of which letters are to be capitalized by the value 
  capitalize is not precisely defined, as it depends  
  on user agents knowing how to recognize a "word."   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 h1 {text-transform: uppercase;} .title
 {text-transform: capitalize;}
@@ -7716,7 +7716,7 @@ h1 {text-transform: uppercase;} .title
    Defines the offset between the top outer margin     
 **Description**  edge of a positioned element and the top edge of    
  its containing block.  
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 
 <pre>
 #masthead {position: fixed; top: 0;} sub {position: 
@@ -7750,7 +7750,7 @@ minimalist descriptions, please consult the W3C's
 documentation on [transform 
 functions](http://  
 w3.org/TR/css3-3d-transforms/#transform-functions). 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 table th {transform: rotate(45deg);} li {transform: 
 scale3d(1.2,1.7,0.85);}     
@@ -7772,7 +7772,7 @@ Description**  in either 2D or simulated 3D space. The marked-as-
 optional *&lt;length&gt;* values are what define a 3D origin point;
 without them, the value is necessarily in 2D space.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 table th {transform-origin: bottom left;}
 li {transform-origin: 10% 10px 10em;}
@@ -7795,7 +7795,7 @@ li {transform-origin: 10% 10px 10em;}
  overflow value is hidden cannot preserve 3D effects 
  and are treated as though the value of 
  transform-style is flat.    
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 li {transform-style: preserve-3d;}  
 </pre>
@@ -7818,7 +7818,7 @@ two *&lt;time&gt;* values are declared, the first is the duration and the
 second is the delay. If only one is declared, it defines only the
 duration.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a:hover {transition: color 1s 0.25s ease-in-out;} h1
 {transition: linear all 10s;}
@@ -7844,7 +7844,7 @@ reached had it been started at the defined time offset in the past. In
 other words, it will be started partway through the transition and run
 to its conclusion.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
 h1 {transition-delay: 0;}
@@ -7866,7 +7866,7 @@ to run from start to finish. The default 0s means the transition is
 instantaneous and no animation occurs. Negative time values are treated
 as 0s.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
 h1 {transition-duration: 10s;}
@@ -7895,7 +7895,7 @@ h1 {transition-duration: 10s;}
    transitioned. The keyword none prevents any  
    properties from being transitioned, effectively 
    shutting down the transition.
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-property: color;}
 h1 {transition-property: all;} 
@@ -7927,7 +7927,7 @@ cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
     in effect all values of this property are
     cubic-bezier() values.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-timing-function:
 ease-in-out;}
@@ -7949,7 +7949,7 @@ h1 {transition-timing-function: linear;}
 the Unicode Bidirectional Algorithm. User agents that do not support
 bidirectional ("bidi") text are permitted to ignore this property.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 span.name {direction: rtl; unicode-bidi: embed;}
 </pre>
@@ -7976,7 +7976,7 @@ In table cells, this property sets the alignment of the content of the
 cell within the cell box. When applied to table cells, only the values
 baseline, top, middle, and bottom are recognized.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 sup {vertical-align: super;}
 .fnote {vertical-align: 50%;}
@@ -7994,7 +7994,7 @@ the element take up the space it would ordinarily
 take up, while remaining completely invisible. The  
 value collapse is used in tables to remove columns  
 or rows from the table's layout.    
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 ul.submenu {visibility: hidden;} tr.hide    
 {visibility: collapse;}     
@@ -8023,7 +8023,7 @@ automatically wrapping lines of text, and the latter honors newline
 characters within the text while collapsing all other whitespace as per
 normal.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td {white-space: nowrap;}
 tt {white-space: pre;}
@@ -8039,7 +8039,7 @@ tt {white-space: pre;}
 **Description**  element that can be left at the top of a page. This 
  can affect the placement of page breaks within the  
  element.    
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p {widows: 4;} ul {widows: 2;} 
 </pre>
@@ -8062,7 +8062,7 @@ auto
     elements. Negative length and percentage values are 
     not permitted. 
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 table {width: 80%;}
 #sidebar {width: 20%;}
@@ -8082,7 +8082,7 @@ no spaces, such as the first thousand digits of pi.
 The value break-all permits user agents to break a  
 word (text string) at arbitrary points if it cannot 
 find regular breakpoints within the word.   
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 td {word-break: break-all;} p {word-break: normal;} 
 </pre>
@@ -8105,7 +8105,7 @@ collapsed whitespace between strings of nonwhitespace characters.
 Negative length values are permitted and will cause words to bunch
 closer together.
 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 p.spacious {word-spacing: 6px;} em {word-spacing: 0.2em;}
 p.cramped {word-spacing: −0.5em;}
@@ -8130,7 +8130,7 @@ p.cramped {word-spacing: −0.5em;}
     text-orientation). Similarly, it's possible to take a 
     normally vertical language and flow it horizontally 
     with horizontal-tb. 
-<h5>Examples</h5>
+<p><b>Examples</b></p>
 <pre>
 &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} 
 &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;} 
@@ -8153,7 +8153,7 @@ z-axis, which is defined to be the axis that extends perpendicular to
 the display area. Positive numbers are closer to the user, and negative
 numbers are farther away.
 
-<h5>Example</h5>
+<p><b>Example</b></p>
 <pre>
 #masthead {position: relative; z-index: 10000;}
 </pre>
