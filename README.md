@@ -773,40 +773,31 @@ that element.</p>
     containing block</i>) is established by the user agent. In HTML, the
     root element is the html element, although some browsers may use
     body.</li>
-  <li>For nonroot elements, if an element's position value is relative or
-    static, its containing block is formed by the content edge of the
-    nearest block-level, table-, cell-, or</li>
+  <li>For nonroot elements, if an element's position value is relative or static, its 
+    containing block is formed by the content edge of the nearest block-level, table-, 
+	cell-, or inline-block ancestor box. Despite this rule, relatively positioned
+	elements are still simply offset (not positioned with respect to the containing 
+	block described here) and statically positioned elements do not move from their 
+	place in the normal flow.</li>
+  <li>For nonroot elements that have a position value of absolute, the containing block 
+    is set to the nearest ancestor (of any kind) that has a position value other than 
+	static, a filter value other than none, or a transform value other than none. This 
+	happens as follows:
+    <ol>
+	  <li>If the ancestor is block-level, the containing block is that element's outer 
+	    padding edge; in other words, it is the area bounded by the element's border.</li>
+      <li>If the ancestor is inline-level, the containing block is set to the content 
+	    edge of the ancestor. In left-to-right languages, the top and left of the 
+		containing block are the top and left content edges of the first box in the 
+		ancestor, and the bottom and right edges are the bottom and right content edges 
+		of the last box. In rightto-left languages, the right edge of the containing 
+		block corresponds to the right content edge of the first box, and the left is 
+		taken from the last box. The top and bottom are the same.</li>
+      <li>If there are no ancestors as described in 3a and 3b, the absolutely positioned 
+	    element's containing block is defined to be the initial containing block.</li>
+    </ol>
+  </li>
 </ol>
-<h5>Positioning</h5>
-
-inline-block ancestor box. Despite this rule, relatively positioned
-elements are still simply offset (not positioned with respect to the
-containing block described here) and statically positioned elements do
-not move from their place in the normal flow.
-
-3.  For nonroot elements that have a position value of absolute, the
-    containing block is set to the nearest ancestor (of any kind) that
-    has a position value other than static, a filter value other than
-    none, or a transform value other than none. This happens as follows:
-
-    a.  If the ancestor is block-level, the containing block is that
-element's outer padding edge; in other words, it is the area
-bounded by the element's border.
-
-    b.  If the ancestor is inline-level, the containing block is set to
-the content edge of the ancestor. In left-to-right languages,
-the top and left of the containing block are the top and left
-content edges of the first box in the ancestor, and the bottom
-and right edges are the bottom and right content edges of the
-last box. In rightto-left languages, the right edge of the
-containing block corresponds to the right content edge of the
-first box, and the left is taken from the last box. The top and
-bottom are the same.
-
-    c.  If there are no ancestors as described in 3a and 3b, the
-absolutely positioned element's containing block is defined to
-be the initial containing block.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-11-1">1.11. Flexible Box Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
