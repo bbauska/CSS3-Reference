@@ -2827,7 +2827,7 @@ these keywords' meaning, see Chapter 2.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>align-content</b>  <b>Inh. N Anim. N</b> 
+<h4><b>align-content</b>  <b>Inh. N Anim. N</b> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
 space-around &vert; space-evenly &vert; stretch 
@@ -2853,7 +2853,7 @@ space-around &vert; space-evenly &vert; stretch
   tent trivial in nearly all cases. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>align-items</b>  <b>Inh. N Anim. N</b>
+<h4><b>align-items</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
 <b>Initial value</b>  stretch 
@@ -2876,7 +2876,7 @@ flex-start and flex-end behavior for non-flex
 environments. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>align-self</b>  <b>Inh. N Anim. N</b>
+<h4><b>align-self</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
 <b>Initial value</b>     stretch     
@@ -2898,7 +2898,7 @@ section.gallery h1 {align-self: stretch;}
 to many (or all) elements, and be given the values start and end to
 replicate flex-start and flex-end behavior for non-flex environments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>all</b>  <b>Inh. N Anim. N</b>
+<h4><b>all</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>    inherit &vert; initial &vert; unset 
 <b>Initial value</b>    See individual properties   
@@ -2918,7 +2918,7 @@ two).
 &ast;.embedded {all: unset;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>animation</b>  <b>Inh. N Anim. N</b>
+<h4><b>animation</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b> &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
 
@@ -2947,7 +2947,7 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### animation-delay Inh. N Anim. N
+<h4>animation-delay Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>*&lt;time&gt;*&#35;
 <b>Initial value</b> 0s
@@ -2968,7 +2968,7 @@ body {animation-delay: 1s, 2000ms, 4s;}
 a:hover {animation-delay: 400ms;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### animation-direction Inh. N Anim. N
+<h4>animation-direction Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b> &lbrack; normal &vert; reverse &vert; alternate &vert; alternatereverse &rbrack;#
@@ -2996,7 +2996,7 @@ body
 alternate, normal, normal;} #scanner {animation-direction: normal;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### animation-duration Inh. N Anim. N
+<h4>animation-duration Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>*&lt;time&gt;*&#35;
 
@@ -3021,7 +3021,7 @@ h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
 .zip {animation-duration: 90ms;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### animation-iteration-count Inh. N Anim. N
+<h4>animation-iteration-count Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>&lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
 
@@ -3048,7 +3048,7 @@ body {animation-iteration-count: 2, 1, 7.5875;}
 ol.dance {animation-iteration-count: infinite;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>animation-name</b>  <b>Inh. N Anim. N</b>
+<h4><b>animation-name</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b> &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;# 
 <b>Initial value</b>  none 
@@ -3071,7 +3071,7 @@ html {animation-name: turn, slide, none;}
 h2 {animation-name: flip;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>animation-play-state</b>  <b>Inh. N Anim. N</b>
+<h4><b>animation-play-state</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; running &vert; paused &rbrack;# 
 <b>Initial value</b>  running 
@@ -3089,7 +3089,7 @@ pre {animation-play-state:
 running, paused, running;} table {animation-play-state: running;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>animation-timing-function</b>  <b>Inh. N Anim. N</b> 
+<h4><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
 ease-in-out &vert; step-start &vert; step-end &vert;     
@@ -3116,7 +3116,7 @@ cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
 linear;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <b>backface-visibility</b>  <b>Inh. N Anim. N</b>
+<h4><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>  visible &vert; hidden
 <b>Initial value</b>  visible  
@@ -3136,7 +3136,7 @@ div.card {backface-visibility: hidden;}
 span.cubeside {backface-visibility: visible;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background</b>   <b>Inh. N Anim. P</b>  
+<h4><b>background</b>   <b>Inh. N Anim. P</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b> &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    
@@ -3181,7 +3181,7 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 #555;} pre {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background-attachment</b>  <b>Inh. N Anim. N</b>
+<h4><b>background-attachment</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; scroll &vert; fixed &vert; local &rbrack;#  
 <b>Initial value</b>   scroll  
@@ -3200,7 +3200,7 @@ body {background-attachment: scroll, scroll, fixed;}
 div.fixbg {background-attachment: fixed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background-blend-mode</b>  <b>Inh. N Anim. N</b>
+<h4><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>   &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
     &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
@@ -3226,7 +3226,7 @@ li.shadowed {background-blend-mode: darken;} aside
 {background-blend-mode: color-burn, luminosity, darken;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### background-clip Inh. N Anim. N
+<h4>background-clip Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Values</b> &lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#
@@ -3247,7 +3247,7 @@ body {background-clip: content-box;}
 .callout {background-clip: content-box, border-box, padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **background-color**  **Inh. N Anim. Y**
+<h4>**background-color**  **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;color&gt;* 
@@ -3276,7 +3276,7 @@ rgba(50%,50%,50%,0.33);}
 pre {background-color: #FF9;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background-image</b>  <b>Inh. N Anim. N</b>
+<h4><b>background-image</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b>  &lbrack; *&lt;image&gt;* &vert; none &rbrack;# 
@@ -3295,7 +3295,7 @@ background-position.
  url(http://www.pix.org/dots.png);}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background-origin</b>  <b>Inh. N Anim. N</b>
+<h4><b>background-origin</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Values</b>     &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;# 
 <b>Initial value</b> padding-box 
@@ -3324,7 +3324,7 @@ html, body {background-origin: border-box;}
 h1 {background-origin: content-box, padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **background-position**  **Inh. N Anim. Y**
+<h4>**background-position**  **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;position&gt;*&#35;
 **Initial value**    0% 0%  
@@ -3369,7 +3369,7 @@ right, 50% 75%, 0 40px;} pre
 {background-position: 10px 50%;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background-repeat</b>  <b>Inh. N Anim. N</b>
+<h4><b>background-repeat</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**  *&lt;repeat-style&gt;*&#35; 
 **Definition** 
@@ -3402,7 +3402,7 @@ h2 {background-repeat: repeat-x, repeat-y;} ul {background-repeat:
 repeat-y, round space, repeat;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background-size</b>  <b>Inh. N Anim. Y</b> 
+<h4><b>background-size</b>  <b>Inh. N Anim. Y</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
@@ -3428,7 +3428,7 @@ body {background-size: 100% 90%;}
 div.photo {background-size: cover;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **border**    **Inh. N Anim. P**
+<h4>**border**    **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3452,7 +3452,7 @@ solid 1px;}
 p.warning {border: double 5px red;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-bottom Inh. N Anim. P
+<h4>border-bottom Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3479,7 +3479,7 @@ ul {border-bottom: 0.5in groove green;}
 a:active {border-bottom: purple 2px dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-bottom-color Inh. N Anim. Y
+<h4>border-bottom-color Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*
@@ -3499,7 +3499,7 @@ ul {border-bottom-color: green;}
 a:active {border-bottom-color: purple;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-bottom-left-radius Inh. N Anim. Y
+<h4>border-bottom-left-radius Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 
@@ -3526,7 +3526,7 @@ h1 {border-bottom-left-radius: 10%;}
 h2 {border-bottom-left-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-bottom-right-radius Inh. N Anim. Y
+<h4>border-bottom-right-radius Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 
@@ -3552,7 +3552,7 @@ h1 {border-bottom-right-radius: 10%;}
 h2 {border-bottom-right-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-bottom-style Inh. N Anim. N
+<h4>border-bottom-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
@@ -3576,7 +3576,7 @@ ul {border-bottom-style: groove;}
 a:active {border-bottom-style: dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-bottom-width Inh. N Anim. Y
+<h4>border-bottom-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;
@@ -3599,7 +3599,7 @@ ul {border-bottom-width: 0.5in;}
 a:active {border-bottom-width: 2px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-collapse Inh. Y Anim. Y
+<h4>border-collapse Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**collapse &vert; separate &vert; inherit
 **Initial value** separate
@@ -3621,7 +3621,7 @@ table {border-collapse: separate; border-spacing: 3px 5px;}
 
 **Note**  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-color Inh. N Anim. Y
+<h4>border-color Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*{1,4}
@@ -3641,7 +3641,7 @@ something other than none or hidden for any visible border to appear.
 a:visited {border-color: maroon;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-image Inh. N Anim. P
+<h4>border-image Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     *&lt;border-image-source&gt;* ‖ *&lt;border-image-slice&gt;* 
@@ -3686,7 +3686,7 @@ round;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-image-outset Inh. N Anim. Y
+<h4>border-image-outset Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;number&gt;* &rbrack;{1,4}
@@ -3713,7 +3713,7 @@ not permitted.
 div#pow {border-image-outset: 10 17 13 5;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-image-repeat Inh. N Anim. N
+<h4>border-image-repeat Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}  
@@ -3742,7 +3742,7 @@ div.starry {border-image-repeat: repeat;}
 aside {border-image-repeat: stretch round;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-image-slice Inh. N Anim. P
+<h4>border-image-slice Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**     &lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill? 
 **Initial 100% 
@@ -3781,7 +3781,7 @@ div.starry {border-image-slice: 5px;}
 aside {border-image-slice: 100 50 150;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-image-source Inh. N Anim. N
+<h4>border-image-source Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; *&lt;image&gt;*
   **Initial value** none
@@ -3804,7 +3804,7 @@ url(stargrid.png);}
 aside {border-image-source: url(asides.png);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-image-width Inh. N Anim. Y
+<h4>border-image-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  
@@ -3844,7 +3844,7 @@ aside {border-image-width: 8 3 13;}
 div#pow{border-image-width: 25px 35;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### *border-left**  **Inh. N Anim. P**  
+<h4>*border-left**  **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -3867,7 +3867,7 @@ p {border-left: 3em solid gray;} pre {border-left:
 double black 4px;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-left-color Inh. N Anim. Y
+<h4>border-left-color Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   *&lt;color&gt;*  
 **Initial    currentColor 
@@ -3892,7 +3892,7 @@ p
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-left-style Inh. N Anim. N
+<h4>border-left-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
@@ -3912,7 +3912,7 @@ p {border-left-style: solid;}
 pre {border-left-style: double;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-left-width Inh. N Anim. Y
+<h4>border-left-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 **Initial value** medium
@@ -3934,7 +3934,7 @@ p {border-left-width: 3em;}
 pre {border-left-width: 4px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-radius Inh. N Anim. Y
+<h4>border-radius Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
@@ -3986,9 +3986,8 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 10px 20px 30px 40px /
 1em 2em 3em 4em;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-right Inh. N Anim. P
+<h4>border-right Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -4013,7 +4012,7 @@ img {border-right: 30px dotted blue;}
 h3 {border-right: cyan 1em inset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-right-color Inh. N Anim. Y
+<h4>border-right-color Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values***&lt;color&gt;*
@@ -4035,7 +4034,7 @@ img {border-right-color: blue;}
 h3 {border-right-color: cyan;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-right-style Inh. N Anim. N
+<h4>border-right-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
@@ -4059,7 +4058,7 @@ img {border-right-style: dotted;}
 h3 {border-right-style: inset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-right-width Inh. N Anim. Y
+<h4>border-right-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
@@ -4084,7 +4083,7 @@ img {border-right-width: 30px;}
 h3 {border-right-width: 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-spacing Inh. Y Anim. Y
+<h4>border-spacing Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   *&lt;length&gt;* *&lt;length&gt;*?   
@@ -4113,7 +4112,7 @@ table {border-spacing: 3px 5px;}
 separate.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-style Inh. N Anim. N
+<h4>border-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
@@ -4141,7 +4140,7 @@ h1 {border-style: solid;}
 img {border-style:inset;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **border-top**  **Inh. N Anim. P**
+ **border-top**  **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
@@ -4166,7 +4165,7 @@ h1 {border-top: dashed 1px gray;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-top-color Inh. N Anim. Y
+<h4>border-top-color Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*
@@ -4185,7 +4184,7 @@ ul {border-top-color: black;}
 h1 {border-top-color: gray;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-top-left-radius Inh. N Anim. Y
+<h4>border-top-left-radius Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
@@ -4211,7 +4210,7 @@ h1 {border-top-left-radius: 10%;}
 h2 {border-top-left-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### border-top-right-radius Inh. N Anim. Y
+### border-top-right-radius Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
@@ -4238,7 +4237,7 @@ h1 {border-top-right-radius: 10%;}
 h2 {border-top-right-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-top-style Inh. N Anim. N
+<h4>border-top-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
@@ -4260,9 +4259,8 @@ ul {border-top-style: solid;}
 h1 {border-top-style: dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-top-width Inh. N Anim. Y
+<h4>border-top-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 
 **Initial value** medium
@@ -4283,7 +4281,7 @@ ul {border-top-width: 0.5in;}
 h1 {border-top-width: 1px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### border-width Inh. N Anim. Y
+<h4>border-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  
@@ -4304,19 +4302,22 @@ h1 {border-top-width: 1px;}
  <h5>Examples</h5>  h1 {border-width: 2ex;}     
      
  img {border-width: 5px thick thin 1em;}     
- **bottom**    **Inh. N Anim. P**  
- **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
- **Initial     auto
- value**      
- **Computed    For static elements, auto; for length values, the   
- value**  corresponding absolute length; for percentage  
- values, the specified value; otherwise, auto
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>**bottom**    **Inh. N Anim. P**</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+**Initial     auto
+value**      
+**Computed    For static elements, auto; for length values, the   
+value**  corresponding absolute length; for percentage  
+values, the specified value; otherwise, auto
  *      
- *Percentages** 
- Refer to the   
- height of the  
- containing     
- block  
+*Percentages** 
+Refer to the   
+height of the  
+containing     
+block  
 
 **Applies to** Positioned elements
 
@@ -4335,7 +4336,7 @@ div#footer {position: fixed; bottom: 0;}
 sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### box-decoration-break Inh. N Anim. N
+<h4>box-decoration-break Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**slice &vert; clone
@@ -4369,7 +4370,7 @@ span {box-decoration-break: clone;} a
 {box-decoration-break: slice;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### box-shadow Inh. N Anim. Y
+<h4>box-shadow Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&    
 *&lt;color&gt;*?&rbrack;#     
@@ -4410,7 +4411,7 @@ h1 {box-shadow: 5px 10px gray;} table th
 rgba(255,0,0,0.5);} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **box-sizing**  **Inh. N Anim. N**
+<h4>**box-sizing**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** content-box &vert; padding-box &vert; border-box
@@ -4438,7 +4439,7 @@ final width of the content area will be 840 pixels (880--20--20).
 body {box-sizing: padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### caption-side Inh. Y Anim. N
+<h4>caption-side Inh. Y Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** top &vert; bottom
@@ -4453,12 +4454,16 @@ body {box-sizing: padding-box;}
 the table box. The caption is rendered as though it were a block-level
 element placed just before (or after) the table.
 
-<h5>Example</h5> caption {caption-side: top;}
-
+<h5>Example</h5>
+<pre
+caption {caption-side: top;}
+</pre>
 **Note** The values left and right appeared in CSS2 but were later
 dropped due to a lack of widespread support.
 
- **clear**     **Inh. N Anim. N**  
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>**clear**     **Inh. N Anim. N**</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  **Values**    left &vert; right &vert; both &vert; none  
  **Initial     none
  value**      
@@ -4479,10 +4484,14 @@ dropped due to a lack of widespread support.
  the margin itself is not altered. In either case,   
  the end result is that the element's top outer 
  border edge is just below the bottom outer margin   
- edge of a floated element on the declared side.     
- <h5>Examples</h5>  h1 {clear: both;} p + h3 {clear: right;}    
-  **Inh. N Anim. P**  
-  **clip-path** 
+edge of a floated element on the declared side.     
+<h5>Examples</h5>
+<pre>
+h1 {clear: both;} p + h3 {clear: right;}    
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4> **clip-path** **Inh. N Anim P**</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**  none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert;
    ellipse() &vert; polygon() &rbrack; ‖ &lbrack; border-box &vert;
@@ -4514,7 +4523,7 @@ p.diamond {clip-path:
 polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **clip-rule** **Inh. N Anim. N**
+<h4>**clip-rule** **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    nonzero &vert; evenodd  
@@ -4535,7 +4544,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
  {clip-rule: evenodd;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **color**     **Inh. Y Anim. Y**
+<h4>**color**     **Inh. Y Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;color&gt;* 
@@ -4546,7 +4555,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
  **Applies     All elements
  to** 
  *     Defines the foreground color of an element, which   
- *Description**  in HTML rendering means the text of an element;     
+ *Description</b>  in HTML rendering means the text of an element;     
  raster images are not affected by color. This is    
  also the color applied to any borders of the
  element,    
@@ -4560,81 +4569,80 @@ the computed value is rgba(0,0,0,0); for currentColor, the computed
 value is inherit. For all other values, the computed value is the same
 as the declared value.
 
-<h5>Examples</h5> strong {color: rgb(255,128,128);} h3 {color: navy;}
-
+<h5>Examples</h5>
+<pre>
+strong {color: rgb(255,128,128);} h3 {color: navy;}
 p.warning {color: #ff0000;}
-
 pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
-
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **content**   **Inh. N Anim. N**  
+<h4><b>content</b>   <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Values</b>    normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;   
+*&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;  
+open-quote &vert; close-quote &vert; no-open-quote &vert;  
+no-close-quote &rbrack;+  
+<b>Initial value</b>    normal 
+<b>Computed value</b>   For *&lt;uri&gt;* values, an absolute URI; for  
+  attribute references, the resulting string; 
+otherwise, as declared 
+<b>Applies to</b>    ::before and ::after pseudo-elements
 
- **Values**    normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;   
- *&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;  
- open-quote &vert; close-quote &vert; no-open-quote &vert;  
- no-close-quote &rbrack;+  
- **Initial     normal 
- value**      
- **Computed    For *&lt;uri&gt;* values, an absolute URI; for  
- value**  attribute references, the resulting string; 
- otherwise, as declared 
- **Applies     ::before and ::after pseudo-elements
- to** 
- *     Defines the generated content placed before or 
- *Description**  after an element. By default, this is likely to be  
- inline content, but the type of box the content     
- creates can be defined using the property display.  
- <h5>Examples</h5>  p::before {content: &quot;Paragraph&hellip;&quot;;}     
- a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;  
-     
- font-size: smaller;}
-
+     Defines the generated content placed before or 
+<b>Description</b>  after an element. By default, this is likely to be  
+inline content, but the type of box the content     
+creates can be defined using the property display.  
+<h5>Examples</h5>
+<pre>
+p::before {content: &quot;Paragraph&hellip;&quot;;}     
+a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;  
+font-size: smaller;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### counter-increment Inh. N Anim. N
+<h4>counter-increment Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values** &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none
+<b>Values</b> &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none
 
-**Initial value** User agent--dependent
+<b>Initial value</b> User agent--dependent
 
-**Computed value** As declared
+<b>Computed value</b> As declared
 
-**Applies to** All elements
+<b>Applies to</b> All elements
 
-**Description** With this property, counters can be incremented (or
+<b>Description</b> With this property, counters can be incremented (or
 decremented) by any value, positive or negative or 0. If no
 *&lt;integer&gt;* is supplied, it defaults to 1.
 
-<h5>Examples</h5> h1 {counter-increment: section;}
-
+<h5>Examples</h5>
+<pre>
+h1 {counter-increment: section;}
 &ast;.backward li {counter-increment: counter −1;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### counter-reset Inh. N Anim. N
+<h4>counter-reset Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
- **Initial**     User agent--dependent  
- **value**      
-+----------------+-----------------------------------------------------+
- **Computed    As declared 
- **value**      
- **Applies**     All elements
- **to** 
+ <b>Values</b>    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
+ <b>Initial</b>     User agent--dependent  
+ <b>value</b>      
+ <b>Computed Value</b>   As declared 
+ <b>Applies</b>     All elements
+ <b>to</b> 
  With this property, counters can be reset (or set   
- **Description**  for the first time) to any value, positive or  
+ <b>Description</b>  for the first time) to any value, positive or  
  negative. If no *&lt;integer&gt;* is supplied, it  
- defaults to 0. 
- <h5>Examples</h5>  h1 {counter-reset: section;} h2 {counter-reset:     
- subsec 1;}
-
+defaults to 0. 
+<h5>Examples</h5>
+<pre>
+h1 {counter-reset: section;} h2 {counter-reset:     
+subsec 1;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **cursor**    **Inh. Y Anim. N**
+<h4><b>cursor</b>    <b>Inh. Y Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values** &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
+<b>Values</b> &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
  &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help  
  &vert; pointer &vert; progress &vert; wait &vert; cell &vert; crosshair 
  &vert; text &vert; vertical-text &vert; alias &vert; copy &vert; move   
@@ -4643,15 +4651,15 @@ decremented) by any value, positive or negative or 0. If no
  &vert; sw-resize &vert; w-resize &vert; ew-resize &vert; ns-resize  
  &vert; nesw-resize &vert; nwse-resize &vert; col-resize &vert; 
  row-resize &vert; allscroll &rbrack;  
-**Initial**  auto
-**value**     
-**Computed** For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*
-**value** resolves to a  
+<b>Initial</b>  auto
+<b>value</b>     
+<b>Computed</b> For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*
+<b>value</b> resolves to a  
 
 supported file type, a single absolute URI with optional *x*,*y*
-coordinates; otherwise, as declared **Applies to** All elements
+coordinates; otherwise, as declared <b>Applies to</b> All elements
 
-**Description** Defines the cursor shape to be used when a mouse pointer
+<b>Description</b> Defines the cursor shape to be used when a mouse pointer
 is placed within the boundary of an element. Authors are cautioned to
 remember that users are typically very aware of cursor changes and can
 be easily confused by changes that seem counterintuitive. For example,
@@ -4673,23 +4681,23 @@ the top-left corner of the image is used (equivalent to 0 0). Note
 that the numbers are unitless and are interpreted relative to the
 "cursor's coordinate system" (to quote again).
 
-<h5>Examples</h5> a.moreinfo {cursor: help;}
-
+<h5>Examples</h5>
+<pre>
+a.moreinfo {cursor: help;}
 a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **direction**  **Inh. Y Anim. Y**
+<h4><b>direction</b>  <b>Inh. Y Anim. Y</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    ltr &vert; rtl  
- **Initial**     ltr 
- **value**      
- **Computed    As declared 
- **value**      
- **Applies**     All elements
- **to** 
+ <b>Values</b>    ltr &vert; rtl  
+ <b>Initial</b>     ltr 
+ <b>value</b>
+ <b>Computed value</b>   As declared 
+ <b>Applies</b>     All elements
+ <b>to</b> 
  Defines the base writing direction of blocks and    
- **Description**  the direction of embeddings and overrides for the   
+ <b>Description</b>  the direction of embeddings and overrides for the   
  Unicode Bidirectional Algorithm (sometimes called   
 
 *bidi*). Furthermore, it changes the way a number of properties and
@@ -4702,51 +4710,50 @@ HTML attribute dir rather than the CSS property direction. User agents
 that do not support bidirectional text are permitted to ignore this
 property.
 
-<h5>Examples</h5> &ast;:lang(en) {direction: ltr;}
-
+<h5>Examples</h5>
+<pre>
+&ast;:lang(en) {direction: ltr;}
 &ast;:lang(ar) {direction: rtl;}
-
 &lbrack; *&lt;display-outside&gt;* ‖ *&lt;display-inside&gt;* &rbrack; &vert;
 *&lt;displaylistitem&gt;* &vert; *&lt;display-internal&gt;* &vert; *&lt;display-box&gt;*
 &vert;
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **display**  **Inh. N Anim. N**
+<h4><b>display</b>  <b>Inh. N Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**Values**
+<b>Values</b>
 
 *&lt;display-legacy&gt;*
 
-**Definitions**
+<b>Definitions</b>
 
-***&lt;display-outside&gt;***block &vert; inline &vert; run-in
+<i><b>&lt;display-outside&gt;</b></i>block &vert; inline &vert; run-in
 
-***&lt;display-inside&gt;*** flow &vert; flow-root &vert; table &vert; flex &vert; grid &vert;
+<i><b>&lt;display-inside&gt;</b></i> flow &vert; flow-root &vert; table &vert; flex &vert; grid &vert;
 ruby
 
-***&lt;display-listitem&gt;***list-item && *&lt;display-outside&gt;*? && &lbrack; flow
+<i><b>&lt;display-listitem&gt;</b></i>list-item && *&lt;display-outside&gt;*? && &lbrack; flow
 &vert; flowroot &rbrack;?
 
-***&lt;display-internal&gt;***table-row-group &vert; table-header-group &vert;
+<i><b>&lt;display-internal&gt;</b></i>table-row-group &vert; table-header-group &vert;
 table-
 
      footer-group &vert; table-row &vert; table-cell &vert;
      tablecolumn-group &vert; table-column &vert; table-caption &vert;
      ruby-base &vert; ruby-text &vert; ruby-base-container &vert;
      ruby-text-container
-  ***&lt;display-box&gt;*** contents &vert; none
+  </b>*&lt;display-box&gt;</b>* contents &vert; none
 
-  ***&lt;display-legacy&gt;***   inline-block &vert; inline-list-item &vert; inline-table &vert;
+  </b>*&lt;display-legacy&gt;*</b>   inline-block &vert; inline-list-item &vert; inline-table &vert;
      inline-flex &vert; inline-grid
 
-  **Initial value**  inline
+  <b>Initial value</b>  inline
 
-  **Computed value** As declared
+  <b>Computed value</b> As declared
 
-  **Applies to**     All elements
+  <b>Applies to</b>     All elements
 
-**Description** Defines the kind of display box an element generates
+<b>Description</b> Defines the kind of display box an element generates
 during layout. Gratuitous use of display with a document type such as
 HTML can be tricky, as it upsets the display hierarchy already defined
 in HTML, but it can also be very useful. In the case of XML, which has
@@ -4757,29 +4764,30 @@ removes the element and all of its descendant elements from the
 presentation. This is true not just in visual media, but in all media;
 thus, setting an element to display: none will prevent it from being
 spoken by a speaking browser.
->
+
 The value run-in was long a part of CSS2.1 but was dropped in early
 2011 because of inconsistencies among browsers. Despite this, it is
 still listed as part of CSS3.
 
-<h5>Examples</h5> h1 {display: block;}
-
+<h5>Examples</h5>
+<pre>
+h1 {display: block;}
 li {display: list-item;} img {display: inline;} .hide {display: none;}
 tr {display: table-row;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **empty-cells**  **Inh. Y Anim. N**
+<h4><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**    show &vert; hide
-**Initial**     show
-**value**      
-**Computed**    As declared 
-**value**      
-**Applies**     Elements with the display value table-cell  
-**to** 
+<b>Values</b>    show &vert; hide
+<b>Initial</b>     show
+<b>value</b>      
+<b>Computed</b>    As declared 
+<b>value</b>      
+<b>Applies</b>     Elements with the display value table-cell  
+<b>to</b> 
  Defines the presentation of table cells that
-**Description**  contain no content. If shown, the cell's borders    
+<b>Description</b>  contain no content. If shown, the cell's borders    
 and background are drawn. This property is only     
 honored if border-collapse is set to separate; 
 otherwise, it is ignored.   
@@ -4790,21 +4798,21 @@ th, td {empty-cells: show;}
 
 <h5>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **filter**    **Inh. N Anim. Y**
+<h4><b>filter</b>    <b>Inh. N Anim. Y</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  
+<b>Values</b>    &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  
 dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; 
 invert() &vert; opacity() &vert; sepia() &vert; saturate() &vert;   
 url() &rbrack;#   
-**Initial**     none
-**value**      
-**Computed**    As declared 
-**value**      
-**Applies**     All elements (in SVG, applies to all graphics  
-**to**  elements and all container elements except the defs 
+<b>Initial</b>     none
+<b>value</b>      
+<b>Computed</b>    As declared 
+<b>value</b>      
+<b>Applies</b>     All elements (in SVG, applies to all graphics  
+<b>to</b>  elements and all container elements except the defs 
 element)    
 Applies a visual filter to the element, resulting   
-**Description**  in an alteration of its final appearance. url()     
+<b>Description</b>  in an alteration of its final appearance. url()     
 values point to filter elements in SVG files,  
 either externally or embedded within the HTML  
 document. SVG filters can be quite complex and 
@@ -4818,50 +4826,51 @@ drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em
 url(/assets/filters.svg#spotlight);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **flex**   **Inh. N Anim. P**
+<h4><b>flex</b>   <b>Inh. N Anim. P</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**&lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*?
+<b>Values</b>&lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*?
     *&lt;flex-basis&gt;* &rbrack; &vert; none
-**Initial value** 0 1 auto
+<b>Initial value</b> 0 1 auto
 
-**ComputedRefer to individual properties
-  value**   
+<b>ComputedRefer to individual properties
+  value</b>   
 
-**Percentages**   Valid for the flex-basis value only, relative to the
+<b>Percentages</b>   Valid for the flex-basis value only, relative to the
     element's parent's inner main axis size
 
-**Applies to**    Flex items (children of flex containers)
+<b>Applies to</b>    Flex items (children of flex containers)
 
-**Animatable**    Refer to individual flex properties to see which are
+<b>Animatable</b>    Refer to individual flex properties to see which are
     animatable
 
-**Description**   A shorthand property encompassing the flex-grow,
+<b>Description</b>   A shorthand property encompassing the flex-grow,
     flex-shrink, and flex-basis properties, used to set
     the proportion and types of flexibility permitted
 
-<h5>Examples</h5>   for a flex item. The minimum valid value is a flex   
-   basis on its own, in which case the growth and  
-**Note** shrink factors are set to their defaults of 0 and 1, 
-**flex-basis**   respectively. Including the growth and shrink
+<h5>Examples</h5>
+for a flex item. The minimum valid value is a flex   
+basis on its own, in which case the growth and  
+<b>Note</b> shrink factors are set to their defaults of 0 and 1, 
+<b>flex-basis</b>   respectively. Including the growth and shrink
    factors is optional, but if one is included, the     
    other *must* also be present.
    
    /&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
    
-   nav ul li {flex: 1 0 auto;}  
+</pre>
+nav ul li {flex: 1 0 auto;}  
+/&ast; sets grow at 0, shrink at 1, basis at 50% &ast;/    
+ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
+/&ast; INVALID &ast;/ 
+</pre>
    
-   /&ast; sets grow at 0, shrink at 1, basis at 50% &ast;/    
-   
-   ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
-   /&ast; INVALID &ast;/ 
-   
-   It is *strongly* recommended that authors use this   
-   property instead of the separate properties it  
-   encompasses. 
+It is *strongly* recommended that authors use this   
+property instead of the separate properties it  
+encompasses. 
    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **flex-basis**  **Inh. N Anim. P**
+<h4>**flex-basis**  **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
@@ -4889,7 +4898,7 @@ nav ul li {flex-basis: 50%;} ol.gallery li
    set an item's flex basis.    
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### flex-direction Inh. N Anim. N
+<h4>flex-direction Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    row &vert; row-reverse &vert; column &vert; column-reverse 
 **Initial     row 
@@ -4908,7 +4917,7 @@ section.appetizers {display: flex; flex-direction:
 column;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **flex-flow**  **Inh. N Anim. N**
+<h4>**flex-flow**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;* 
 **Initial value**    row nowrap  
@@ -6309,10 +6318,11 @@ is reversed so the circle is atop the square, then the square is
 subtracted from the circle. For the other values, the result should
 not depend on the masks' stacking order.
 
-<h5>Examples</h5> img.masked {mask-composite: add;}
-
+<h5>Examples</h5>
+<pre>
+img.masked {mask-composite: add;}
 span.mask3 {mask-composite: subtract, add, add;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-image Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6341,10 +6351,12 @@ wholly or partially visible. The exact visual result will depend on
 the value of maskmode; by default, the alpha channel of the maskimage
 will be used to determine the masking of the element.
 
-<h5>Examples</h5> &ast;.masked.compass {mask-image: url(Compass.png);}
+<h5>Examples</h5>
+<pre>
+&ast;.masked.compass {mask-image: url(Compass.png);}
 
 &ast;.masked.theatre {mask-image: url(theatre-masks.svg);}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-mode Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6375,10 +6387,12 @@ will be used to determine the masking of the element.
     mask element, in which case it's the same as
     luminance.
 
-  <h5>Examples</h5> p {mask-mode: alpha;}
+<h5>Examples</h5>
+<pre>
+p {mask-mode: alpha;}
 
 img.lum {mask-mode: luminance, alpha;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-origin
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6398,60 +6412,61 @@ img.lum {mask-mode: luminance, alpha;}
     to vary the initial placement of the mask before
     sizing, repeating, or positioning it.
 
-  <h5>Examples</h5> div.inset {mask-origin: content-box;}
-
+<h5>Examples</h5>
+<pre>
+div.inset {mask-origin: content-box;}
 svg#radio {mask-origin: stroke-box, fill-box;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-position Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values***&lt;position&gt;*&#35;
+**Initial value** 0% 0%
 
-  **Values***&lt;position&gt;*&#35;
-  **Initial value** 0% 0%
-
-  **ComputedAs declared
+**ComputedAs declared
   value**   
 
-  **Applies to**    All elements (in SVG, applies to all graphics elements
+**Applies to**    All elements (in SVG, applies to all graphics elements
     and all container elements except the defs element)
 
-  **Animatable**    *&lt;length&gt;* and *&lt;percentage&gt;* values only
+**Animatable**    *&lt;length&gt;* and *&lt;percentage&gt;* values only
 
-  **Description**   Allows authors to position a masking image in a manner
+**Description**   Allows authors to position a masking image in a manner
     identical to the positioning of background images. The
     default will place the masking image in the top-left
     corner of the box defined by maskorigin.
 
-  <h5>Examples</h5> p:nth-child(1) {mask-position: top right;}
-
+<h5>Examples</h5>
+<pre>
+p:nth-child(1) {mask-position: top right;}
 p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 {mask-position: 5em 120%;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-repeat Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    
+**Values**    &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    
  round &vert; no-repeat &rbrack;{1,2} &rbrack;# 
- **Initial     repeat 
- value**      
- **Computed    As declared 
- value**      
- **Applies     All elements (in SVG, applies to all graphics  
- to**  elements and all container elements except the defs 
- element)    
- *     Allows authors to repeat a masking image in a  
- *Description**  manner identical to the repetition of background    
+**Initial     repeat 
+**value**      
+**Computed    As declared 
+**value**
+**Applies     All elements (in SVG, applies to all graphics  
+**to**  elements and all container elements except the defs 
+        element)    
+      Allows authors to repeat a masking image in a  
+**Description**  manner identical to the repetition of background    
  images. Note that the default is to repeat a mask   
  in all directions.  
- <h5>Examples</h5>  p:nth-child(1) {mask-repeat: repeat;}  
- p:nth-child(2) {mask-repeat: repeat round;} 
- p:nth-child(3) {mask-repeat: space no-repeat;} 
-
+<h5>Examples</h5>
+<pre>
+p:nth-child(1) {mask-repeat: repeat;}  
+p:nth-child(2) {mask-repeat: repeat round;} 
+p:nth-child(3) {mask-repeat: space no-repeat;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **mask-size** **Inh. N Anim. P**
+<h4>**mask-size** **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto 
  &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#     
  **Initial  auto
@@ -6465,32 +6480,30 @@ p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
  *  Sets the size of the initial masking image in a     
  *Description**  manner identical to the sizing of background
  images.     
- <h5>Examples</h5>    p:nth-child(1) {mask-size: 80%;}    
-
+<h5>Examples</h5>
+<pre>
+p:nth-child(1) {mask-size: 80%;}    
 p:nth-child(2) {mask-size: 2em 3em, 100%;} p:nth-child(3) {mask-size:
 cover, 100%, contain;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-type  Inh. N Anim. N
+<h4>mask-type  Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** luminance &vert; alpha
-
 **Initial value** luminance
-
 **Computed value** As declared
-
 **Applies to** SVG mask elements
-
 **Description** Sets the blending mode when the masking image is defined
 by an SVG mask element as opposed to, say, a PNG file or an entire SVG.
 Of interest because most masking images use the alpha blending mode, but
 mask element masks default to luminance.
 
-<h5>Example</h5> svg #mask {mask-type: alpha;}
-
+<h5>Example</h5>
+<pre>
+svg #mask {mask-type: alpha;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### max-height Inh. N Anim. P
+<h4>max-height Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
@@ -6511,12 +6524,13 @@ mask element masks default to luminance.
  not taller. 
      
  Negative values are not permitted.  
- <h5>Example</h5>   div#footer {max-height: 3em;}  
-
+<h5>Example</h5>
+<pre>
+div#footer {max-height: 3em;}  
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **max-width** **Inh. N Anim. P**
+<h4>**max-width** **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
  **Initial   
  value** none
@@ -6535,34 +6549,36 @@ mask element masks default to luminance.
 be narrower than the declared value but not wider. Negative values are
 not permitted.
 
-<h5>Example</h5> #sidebar img {width: 50px; max-width: 100%;}
-
+<h5>Example</h5>
+<pre>
+#sidebar img {width: 50px; max-width: 100%;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### min-height Inh. N Anim. Y
+<h4>min-height Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
- **Initial     0   
- value**   
- **Computed    For percentages, as declared; for length values,    
- value**  the absolute length 
- *     Refer to the width of the containing block  
- *Percentages** 
- **Applies     All elements except nonreplaced inline elements and 
- to**  table elements 
+**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
+**Initial     0   
+**value**   
+**Computed    For percentages, as declared; for length values,    
+**value**  the absolute length 
+     Refer to the width of the containing block  
+**Percentages** 
+**Applies     All elements except nonreplaced inline elements and 
+**to**  table elements 
  *     Defines a minimum constraint on the height of the   
- *Description**  element (the exact nature of that height is 
+**Description**  element (the exact nature of that height is 
  dependent on the value of box-sizing). Thus, the    
  element can be taller than the declared value, but  
  not shorter.
      
  Negative values are not permitted.  
- <h5>Example</h5>   div#footer {min-height: 1em;}  
-
+<h5>Example</h5>
+<pre>
+div#footer {min-height: 1em;}  
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **min-width** **Inh. N Anim. Y**
+<h4>**min-width** **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
 **Initial value** 0
@@ -6581,13 +6597,14 @@ not permitted.
 be wider than the declared value, but not narrower. Negative values
 are not permitted.
 
-<h5>Example</h5> div.aside {width: 13em; max-width: 33%;}
-
+<h5>Example</h5>
+<pre>
+div.aside {width: 13em; max-width: 33%;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mix-blend-mode Inh. N Anim. N
+<h4>mix-blend-mode Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**   normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; 
+**Values**   normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; 
 lighten &vert; color-dodge &vert; color-burn &vert; hard-light   
 &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;   
 saturation &vert; color &vert; luminosity    
@@ -6611,13 +6628,14 @@ except the darker of the two pixels will be shown.
 The results of these are likely to be familiar to    
 users of Photoshop or any other graphic-editing 
 tool.
- li.shadowed {mix-blend-mode: darken;} aside  
-  <h5>Examples</h5>  {mix-blend-mode:     
-     
+<h5>Examples</h5>
+<pre>
+li.shadowed {mix-blend-mode: darken;} aside  
+{mix-blend-mode:     
 color-burn, luminosity, darken;}     
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **object-fit**  **Inh. N Anim. N**
+<h4>**object-fit**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  *object-fit**  
@@ -6643,12 +6661,14 @@ maintaining its intrinsic aspect ratio. scale-down
 means the image will stay its intrinsic size unless  
 it's too big to fit into the element box, in which   
 case it will be scaled down to fit.  
- img:nth-of-type(1) {object-fit: none;}  
-  <h5>Examples</h5>  img:nth-of-type(2) {object-fit: fill;}  
+<h5>Examples</h5>
+<pre>
+img:nth-of-type(1) {object-fit: none;}  
+img:nth-of-type(2) {object-fit: fill;}  
 img:nth-of-type(3) {object-fit: cover;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### object-position Inh. N Anim. Y
+<h4>object-position Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;position&gt;*
@@ -6663,25 +6683,26 @@ img:nth-of-type(3) {object-fit: cover;}
 (see object-fit) within its element box, in a manner identical to how
 background origin images can be positioned.
 
-<h5>Examples</h5> img:nth-of-type(1) {object-position: center;}
+<h5>Examples</h5>
+<pre>
+img:nth-of-type(1) {object-position: center;}
 
 img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
 {object-position: left 142%;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **opacity**  **Inh. N Anim. Y**
+<h4>**opacity**  **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;number&gt;*
- **Initial     1   
- value**   
- **Computed    As declared 
- value**   
- **Applies     All elements
- to** 
- **Computed    Same as declared (or a clipped value if declared    
- value**  value must be clipped) 
- *     Defines an element's degree of opacity using a 
+**Values**    *&lt;number&gt;*
+**Initial     1   
+value**   
+**Computed    As declared 
+value**   
+**Applies     All elements
+to** 
+**Computed    Same as declared (or a clipped value if declared    
+value**  value must be clipped) 
+*     Defines an element's degree of opacity using a 
  *Description**  number in the range 0--1, inclusive. Any values     
  outside that range are clipped to the nearest edge  
  (0 or 1). This property affects every visible  
@@ -6704,7 +6725,7 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
 h2 {opacity: 0.8;} .hideme {opacity: 0;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **order**     **Inh. N Anim. Y**
+<h4>**order**     **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;integer&gt;*
@@ -6734,7 +6755,7 @@ li:nth-of-type(6) {order: 1;}
 li:nth-of-type(14) {order: -1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **orphans**   **Inh. N Anim. Y**
+<h4>**orphans**   **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;integer&gt;*  
@@ -6753,7 +6774,7 @@ li:nth-of-type(14) {order: -1;}
 p {orphans: 4;} ul {orphans: 2;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **outline**   **Inh. N Anim. P**
+<h4>**outline**   **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
 *&lt;outlinewidth&gt;* &rbrack;
@@ -6779,7 +6800,7 @@ they do not change or otherwise affect the placement of elements.
 form:focus {outline: outset cyan 0.25em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### outline-color Inh. N Anim. Y
+<h4>outline-color Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;* &vert; invert
@@ -6802,7 +6823,7 @@ of color for the element.
 form:focus {outline-color: cyan;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### outline-offset Inh. N Anim. N
+<h4>outline-offset Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;length&gt;*
@@ -6826,7 +6847,7 @@ Note that outline-offset cannot be set via the shorthand outline.
 form:focus {outline-offset: −1px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### outline-style Inh. N Anim. N
+<h4>outline-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**auto &vert; none &vert; solid &vert; dotted &vert; dashed &vert; double &vert;
@@ -6846,11 +6867,10 @@ appear.
 <h5>Examples</h5>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-style: dashed;}
-
 form:focus {outline-style: outset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### outline-width Inh. N Anim. Y
+<h4>outline-width Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values***&lt;length&gt;* &vert; thin &vert; medium &vert; thick
@@ -6874,7 +6894,7 @@ not permitted.
 form:focus {outline-width: 0.25em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **overflow**  **Inh. N Anim. N**
+<h4>**overflow**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     visible &vert; hidden &vert; scroll &vert; auto  
@@ -6897,11 +6917,10 @@ value defines both.
 <h5>Examples</h5>
 <pre>
 #masthead {overflow: hidden;}
-
 object {overflow: visible scroll;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### overflow-wrap Inh. Y Anim. Y
+<h4>overflow-wrap Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** normal &vert; break-word **Initial value** normal
@@ -6930,7 +6949,7 @@ supported word-wrap in the past now use it as an alias for
 overflow-wrap.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **overflow-x**  **Inh. N Anim. N**
+<h4>**overflow-x**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    visible &vert; hidden &vert; scroll &vert; auto 
 **Initial     visible     
@@ -6948,7 +6967,7 @@ to**
 visible;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **overflow-y**  **Inh. N Anim. N**
+<h4>**overflow-y**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** visible &vert; hidden &vert; scroll &vert; auto
 **Initial value** visible
@@ -6964,7 +6983,7 @@ axis of the element; that is, the top and bottom edges of the element.
 scroll;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **padding**   **Inh. N Anim. Y**
+<h4>**padding**   **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} 
@@ -6989,17 +7008,15 @@ scroll;}
 <h5>Examples</h5>
 <pre>
 img {padding: 10px;} h1 {padding: 2ex 0.33em;} 
-     
 pre {padding: 0.75em 0.5em 1em 0.5em;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### padding-bottom Inh. N Anim. Y
+<h4>padding-bottom Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
+**Initial value** 0
 
-  **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  **Initial value** 0
-
-  **ComputedFor percentage values, as declared; for length values,
+**ComputedFor percentage values, as declared; for length values,
   value**   the absolute length
 
   **Percentages**   Refer to the width of the containing block
@@ -7020,20 +7037,19 @@ ul {padding-bottom: 0.5in;}
 h1 {padding-bottom: 2%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### padding-left Inh. N Anim. Y
+<h4>padding-left Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
+**Initial value** 0
 
-  **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  **Initial value** 0
-
-  **ComputedFor percentage values, as declared; for length values,
+**ComputedFor percentage values, as declared; for length values,
   value**   the absolute length
 
-  **Percentages**   Refer to the width of the containing block
+**Percentages**   Refer to the width of the containing block
 
-  **Applies to**    All elements
+**Applies to**    All elements
 
-  **Description**   Defines the width of the left padding for an element.
+**Description**   Defines the width of the left padding for an element.
     Left padding set for an inline nonreplaced element
     will appear only on the left edge of the first inline
 
@@ -7043,11 +7059,10 @@ permitted.
 <h5>Examples</h5>
 <pre>
 p {padding-left: 5%;}
-
 pre {padding-left: 3em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### padding-right Inh. N Anim. Y
+<h4>padding-right Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
@@ -7069,21 +7084,19 @@ pre {padding-left: 3em;}
 <h5>Examples</h5>
 <pre>
 img {padding-right: 30px;}
-
 ol {padding-right: 5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### padding-top Inh. N Anim. Y
+<h4>padding-top Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
- **Initial     0   
+**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
+**Initial     0   
  value**   
- **Computed    For percentage values, as declared; for length 
+**Computed    For percentage values, as declared; for length 
  value**  values, the absolute length 
  *     Refer to the width of the containing block  
  *Percentages** 
- **Applies     All elements
+**Applies     All elements
  to** 
  *     Defines the width of the top padding for an 
  *Description**  element. Top padding set on inline nonreplaced 
@@ -7092,12 +7105,12 @@ ol {padding-right: 5em;}
  and a background may visibly extend into other 
  lines and potentially overlap other content.
  Negative padding values are not permitted.  
- <h5>Examples</h5>
+<h5>Examples</h5>
 <pre>
 ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **page**    **Inh. N Anim. N**
+<h4>**page**    **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;identifier&gt;* &vert; auto
@@ -7125,11 +7138,10 @@ page.)
 table.summary {page: wide;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **page-break-after**  **Inh. N Anim.**
+<h4>**page-break-after**  **Inh. N Anim.**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    auto &vert; always     
- **Initial     auto  
+**Values**    auto &vert; always     
+**Initial     auto  
  value**  
  **Computed    As declared
  value**  
@@ -7157,11 +7169,11 @@ h1 {page-break-after:
 avoid;}    
 </pre>
 **Note** This property is essentially  
- replaced by breakafter, but
- browser support for
- page-break-after may be stronger.  
+replaced by breakafter, but
+browser support for
+page-break-after may be stronger.  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### page-break-before Inh. N Anim. N
+<h4>page-break-before Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** auto &vert; always
 
@@ -7189,10 +7201,9 @@ avoid;}
 **Note** This property is essentially replaced by break-
 before, but browser support for page-breakbefore may be stronger.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **page-break-inside**  **Inh. Y Anim. N**
+<h4>**page-break-inside**  **Inh. Y Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**  auto &vert; avoid   
+**Values**  auto &vert; avoid   
  **Initialauto    
  value**  
  **Computed  As declared     
@@ -7209,16 +7220,18 @@ before, but browser support for page-breakbefore may be stronger.
     lengthy document will not  
     prevent the insertion of page   
     breaks by the user agent.  
- <h5>Example</h5> table {page-break-inside:  
-    avoid;} 
- **Note** This property is essentially    
+<h5>Example</h5>
+<pre>
+table {page-break-inside:  
+  avoid;} 
+</pre>
+**Note** This property is essentially    
     replaced by breakbefore, but    
     browser support for     
     page-breakbefore may be 
     stronger.  
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **perspective**  **Inh. N Anim. Y**
+<h4>**perspective**  **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**  none &vert; *&lt;length&gt;*  
@@ -7238,11 +7251,10 @@ none.
 <h5>Examples</h5>
 <pre>
 body {perspective: 250;} /&ast; middlin&apos; &ast;/
-
 #wrapper {perspective: 10;} /&ast; extreme &ast;/
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### perspective-origin Inh. N Anim. P
+<h4>perspective-origin Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;position&gt;* 
 **Initial     50% 50%     
@@ -7265,7 +7277,7 @@ body {perspective-origin: bottom right;} #wrapper
 div {perspective-origin: 0 50%;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **position** **Inh. N Anim. N**
+<h4>**position** **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** static &vert; relative &vert; sticky &vert; absolute &vert; fixed
@@ -7286,7 +7298,7 @@ offset from its default placement in the normal flow.
 &ast;.offset {position: relative; top: 0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **quotes**   **Inh. Y Anim. N**
+<h4>**quotes**   **Inh. Y Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
@@ -7307,7 +7319,7 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
  &apos;\\2019&apos;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **resize**  **Inh. N Anim. N**
+<h4>**resize**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** none &vert; both &vert; horizontal &vert; vertical
@@ -7327,7 +7339,7 @@ left to the user agent and is likely dependent on the writing direction.
 textarea {resize: vertical;} iframe {resize: both;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **right**    **Inh. N Anim. P**
+<h4>**right**    **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
@@ -7351,7 +7363,7 @@ div#footer {position: fixed; right: 0;}
 &ast;.overlapper {position: relative; right: −25px;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### shape-image-threshold Inh. N Anim. Y
+### shape-image-threshold Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   *&lt;number&gt;* 
@@ -7377,7 +7389,7 @@ aside.illustrate {shape-image-threshold: 0.667;}
 img.floated {shape-image-threshold: 0.1;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### shape-margin Inh. N Anim. Y
+<h4>shape-margin Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
 **Initial value** 0
@@ -7401,13 +7413,11 @@ img.floated {shape-image-threshold: 0.1;}
 <h5>Examples</h5>
 <pre>
 #one {shape-margin: 0;}
-
 #two {shape-margin: 1.5em;}
-
 #thr (shape-margin: 10%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### shape-outside Inh. N Anim. P
+<h4>shape-outside Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
    *&lt;image&gt;*  
@@ -7444,7 +7454,7 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 {shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **size**     **Inh. N Anim. N**
+<h4>**size**     **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     
 &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack; 
@@ -7480,12 +7490,10 @@ landscape;}
 **Note** *&lt;page-size&gt;* is one of a defined set of standard page sizes;
 see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
 Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **tab-size**  **Inh. Y Anim. Y**
+<h4>**tab-size**  **Inh. Y Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;length&gt;* &vert; *&lt;integer&gt;*  
+**Values**    *&lt;length&gt;* &vert; *&lt;integer&gt;*  
  **Initial     8   
  value**      
  **Computed    The absolute-length equivalent of the value 
@@ -7503,7 +7511,7 @@ pre.source {tab-size: 4;}
 p.typer {tab-size: 0.25in;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### table-layout Inh. Y Anim. N
+<h4>table-layout Inh. Y Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**auto &vert; fixed
 **Initial value** auto
@@ -7524,11 +7532,10 @@ p.typer {tab-size: 0.25in;}
 <h5>Examples</h5>
 <pre>
 table.data {table-display: fixed;}
-
 table.directory {table-display: auto;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **text-align** **Inh. Y Anim. N**
+<h4>**text-align** **Inh. Y Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    start &vert; end &vert; left &vert; right &vert; center &vert; justify  
@@ -7551,7 +7558,7 @@ table.directory {table-display: auto;}
 p {text-align: justify;} h4 {text-align: center;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### text-align-last   Inh. Y Anim. N
+<h4>text-align-last   Inh. Y Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; justify
@@ -7571,12 +7578,10 @@ the line's content; results may vary by user agent.
 <h5>Examples</h5>
 <pre>
 p {text-align-last: justify;}
-
 h4 {text-align-last: right;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### text-decoration Inh. N Anim. N
+<h4>text-decoration Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    
  blink &rbrack;    
@@ -7611,7 +7616,7 @@ u {text-decoration: underline;}
 u.old {text-decoration: line-through underline;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **text-indent**  **Inh. Y Anim. Y**
+<h4>**text-indent**  **Inh. Y Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
@@ -7635,11 +7640,11 @@ an outdent effect without using a negative length value.
 
 <h5>Examples</h5> 
 <pre>
-     p {text-indent: 5em;}
-     h2 {text-indent: −25px;}
+p {text-indent: 5em;}
+h2 {text-indent: −25px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### text-orientation Inh. Y Anim. Y
+<h4>text-orientation Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**mixed &vert; upright &vert; sideways
 **Initial value** mixed
@@ -7668,7 +7673,7 @@ an outdent effect without using a negative length value.
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### text-rendering Inh. Y Anim. Y
+<h4>text-rendering Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   **Values**auto &vert; optimizeSpeed &vert; optimizeLegibility &vert;
@@ -7693,7 +7698,7 @@ p {text-rendering: optimizeSpeed;}
 svg tspan {text-rendering: optimizeLegibility;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### text-shadow Inh. N Anim. Y
+<h4>text-shadow Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; &lbrack;*&lt;length&gt;* ‖ *&lt;color&gt;*? &&
     *&lt;length&gt;*{2,3}&rbrack;#
@@ -7721,7 +7726,7 @@ h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 −3px 0.5em blue;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### text-transform Inh. Y Anim. N
+<h4>text-transform Inh. Y Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values**    uppercase &vert; lowercase &vert; capitalize &vert; none
@@ -7740,7 +7745,7 @@ h1 {text-transform: uppercase;} .title
 {text-transform: capitalize;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **top** **Inh. N Anim. P**
+<h4>**top** **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 **Initial value** auto
@@ -7760,18 +7765,17 @@ h1 {text-transform: uppercase;} .title
 #masthead {position: fixed; top: 0;} sub {position: 
 relative; top: 0.5em; vertical-align: baseline;}    
 </pre>
- **Note**   For relatively positioned elements, if both top and 
+**Note**   For relatively positioned elements, if both top and 
  bottom are auto, their computed values are both 0.  
  If one of them is auto, it becomes the negative of  
  the other; if neither is auto, bottom becomes the   
  negative of the value of top. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **transform**   **Inh. N Anim. P**
+<h4>**transform**   **Inh. N Anim. P**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values**    *&lt;transform-list&gt;* &vert; none
- **Initial value**    none
- **Computed value**   As declared, except for relative length values,     
+**Values**    *&lt;transform-list&gt;* &vert; none
+**Initial value**    none
+**Computed value**   As declared, except for relative length values,     
    which are converted to an absolute length   
  *     Refer to the size of the bounding box  
  *Percentages**   
@@ -7794,11 +7798,9 @@ w3.org/TR/css3-3d-transforms/#transform-functions).
 table th {transform: rotate(45deg);} li {transform: 
 scale3d(1.2,1.7,0.85);}     
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### transform-origin   Inh. N Anim. P
+<h4>transform-origin   Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values**   *&lt;position&gt;*  
 **Initial value**   50% 50% 
 **Computed value**  A percentage, except for length values, which are    
@@ -7818,9 +7820,8 @@ without them, the value is necessarily in 2D space.
 table th {transform-origin: bottom left;}
 li {transform-origin: 10% 10px 10em;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### transform-style Inh. N Anim. N
+<h4>transform-style Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    flat &vert; preserve-3d 
@@ -7842,14 +7843,14 @@ li {transform-origin: 10% 10px 10em;}
 li {transform-style: preserve-3d;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **transition**  **Inh. N Anim. N**
+<h4>**transition**  **Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values** &lbrack; &lbrack; none &vert; *&lt;transition-property&gt;* &rbrack; ‖
+**Values** &lbrack; &lbrack; none &vert; *&lt;transition-property&gt;* &rbrack; ‖
  *&lt;time&gt;* ‖ *&lt;transition-timing-function&gt;* ‖     
  *&lt;time&gt;* &rbrack;# 
- **Initial value** all 0s ease 0s 
- **Computed value**     As declared 
- **Applies to**  All elements and :before and :after pseudoelements  
+**Initial value** all 0s ease 0s 
+**Computed value**     As declared 
+**Applies to**  All elements and :before and :after pseudoelements  
  *  A shorthand property that defines the aspects of    
  *Description**  one or more of an element's transitions from one    
  state to another.   
@@ -7866,7 +7867,7 @@ a:hover {transition: color 1s 0.25s ease-in-out;} h1
 {transition: linear all 10s;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### transition-delay Inh. N Anim. N
+<h4>transition-delay Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values***&lt;time&gt;*&#35;
 **Initial value** 0s
@@ -7889,11 +7890,10 @@ to its conclusion.
 <h5>Examples</h5>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
-
 h1 {transition-delay: 0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### transition-duration Inh. N Anim. N
+<h4>transition-duration Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;time&gt;*&#35;
@@ -7912,11 +7912,10 @@ as 0s.
 <h5>Examples</h5>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
-
 h1 {transition-duration: 10s;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### transition-property Inh. N Anim. N
+<h4>transition-property Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#    
@@ -7942,11 +7941,10 @@ h1 {transition-duration: 10s;}
 <h5>Examples</h5>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-property: color;}
-
 h1 {transition-property: all;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **transition-timing-function Inh. N Anim. N**
+<h4>**transition-timing-function Inh. N Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;timing-function&gt;*&#35;
@@ -7975,13 +7973,11 @@ cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
 <h5>Examples</h5>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-timing-function:
-
 ease-in-out;}
-
 h1 {transition-timing-function: linear;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### unicode-bidi Inh. N Anim. Y
+<h4>unicode-bidi Inh. N Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** normal &vert; embed &vert; bidi-override
@@ -8001,7 +7997,7 @@ bidirectional ("bidi") text are permitted to ignore this property.
 span.name {direction: rtl; unicode-bidi: embed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### vertical-align    Inh. N Anim. P
+<h4>vertical-align    Inh. N Anim. P</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** baseline &vert; sub &vert; super &vert; top &vert; text-top &vert; middle &vert;
@@ -8026,11 +8022,10 @@ baseline, top, middle, and bottom are recognized.
 <h5>Examples</h5>
 <pre>
 sup {vertical-align: super;}
-
 .fnote {vertical-align: 50%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **visibility** **Inh. Y Anim. N**
+<h4>**visibility** **Inh. Y Anim. N**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    visible &vert; hidden &vert; collapse  
 **Initial value**    visible
@@ -8048,7 +8043,7 @@ ul.submenu {visibility: hidden;} tr.hide
 {visibility: collapse;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### white-space Inh. N Anim. N
+<h4>white-space Inh. N Anim. N</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** normal &vert; nowrap &vert; pre &vert; pre-wrap &vert; pre-line
@@ -8074,11 +8069,10 @@ normal.
 <h5>Examples</h5>
 <pre>
 td {white-space: nowrap;}
-
 tt {white-space: pre;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **widows**   **Inh. N Anim. Y**
+<h4>**widows**   **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;integer&gt;*  
 **Initial value**    2   
@@ -8093,7 +8087,7 @@ tt {white-space: pre;}
 p {widows: 4;} ul {widows: 2;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **width**    **Inh. N Anim. Y**
+<h4>**width**    **Inh. N Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 
@@ -8114,13 +8108,11 @@ auto
 <h5>Examples</h5>
 <pre>
 table {width: 80%;}
-
 #sidebar {width: 20%;}
-
 .figure img {width: 200px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **word-break**  **Inh. Y Anim. Y**
+<h4>**word-break**  **Inh. Y Anim. Y**</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    normal &vert; break-all &vert; keep-all     
 **Initial value**    normal 
@@ -8138,7 +8130,7 @@ find regular breakpoints within the word.
 td {word-break: break-all;} p {word-break: normal;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### word-spacing Inh. Y Anim. Y
+<h4>word-spacing Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;length&gt;* &vert; normal
@@ -8162,7 +8154,7 @@ p.spacious {word-spacing: 6px;} em {word-spacing: 0.2em;}
 p.cramped {word-spacing: −0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### writing-mode Inh. Y Anim. Y
+<h4>writing-mode Inh. Y Anim. Y</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   horizontal-tb &vert; vertical-rl &vert; vertical-lr 
 **Initial value**  horizontal-tb 
@@ -8187,7 +8179,7 @@ p.cramped {word-spacing: −0.5em;}
 &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### z-index
+<h3>z-index</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** *&lt;integer&gt;* &vert; auto
 
