@@ -121,7 +121,8 @@ the style attribute, and thus inline styles.
 element:</p>
 <pre>
 <b>&lt;html&gt;&lt;head&gt;&lt;title&gt;</b>Stylin&apos;!<b>&lt;/title&gt;</b>
-<b>&lt;style</b> type=&quot;text/css&quot;<b>&gt; h1</b> {<b>color</b>: purple;}
+<b>&lt;style</b> type=&quot;text/css&quot;<b>&gt;</b>
+<b>h1</b> {<b>color</b>: purple;}
 <b>p</b> {<b>font-size</b>: smaller; <b>color</b>: gray;}
 <b>&lt;/style&gt;</b>
 <b>&lt;/head&gt;</b> &hellip;
@@ -157,8 +158,7 @@ stylesheet:</p>
 <b>&lt;style</b> type=&quot;text/css&quot;<b>&gt;</b>
 <b>&#64;import</b> url(site.css);
 <b>&#64;import</b> url(navbar.css);
-<b>&#64;import</b> url(footer.css) <b>screen</b> <b>and</b> (<b>min-width</b>:
-960px);
+<b>&#64;import</b> url(footer.css) <b>screen</b> <b>and</b> (<b>min-width</b>: 960px);
 <b>body</b> {<b>background</b>: yellow;}
 <b>&lt;/style&gt;</b>
 <b>&lt;/head&gt;</b>
@@ -177,11 +177,11 @@ media environments:</p>
 <b>&lt;head&gt;</b>
 <b>&lt;title&gt;</b>A Document<b>&lt;/title&gt;</b>
 <b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;basic.css&quot;
-media=&quot;all&quot;<b>&gt;</b>
+  media=&quot;all&quot;<b>&gt;</b>
 <b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;web.css&quot;
-media=&quot;screen and (max-width: 960px)&quot;<b>&gt;</b>
+  media=&quot;screen and (max-width: 960px)&quot;<b>&gt;</b>
 <b>&lt;link</b> rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;paper.css&quot;
-media=&quot;print and (color-depth: 2)&quot;<b>&gt; &lt;/head&gt;</b>
+  media=&quot;print and (color-depth: 2)&quot;<b>&gt; &lt;/head&gt;</b>
 </pre>
 <p>It is also possible to link to alternate stylesheets, but few browsers
 provide a way for users to make use of them. As of this writing, most or
