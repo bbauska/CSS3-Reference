@@ -1376,93 +1376,84 @@ which is the computed value any time transparent is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-1">2.3. Number Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A number value is expressed as a positive or negative number
-(when permitted). Numbers can be either real (represented as
-<i>&lt;number&gt;</i>) or integers (<i>&lt;integer&gt;</i>). They may also restrict the
-range of acceptable values, as with color values that accept only
-integers in the range 0--255. A more common range restriction is to
-limit a number to be non-negative. These are sometimes represented as
-<i>&lt;non-negative number&gt;</i> or <i>&lt;non-negative integer&gt;</i>.</p>
+<p>A number value is expressed as a positive or negative number (when permitted). Numbers 
+can be either real (represented as <i>&lt;number&gt;</i>) or integers (<i>&lt;integer&gt;</i>). 
+They may also restrict the range of acceptable values, as with color values that accept only 
+integers in the range 0--255. A more common range restriction is to limit a number to be 
+non-negative. These are sometimes represented as <i>&lt;non-negative number&gt;</i> or 
+<i>&lt;non-negative integer&gt;</i>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-1">2.4. Percentage Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately
-by a percent sign (%). There should never be any space between the
-number and the percent sign. A percentage value will always be computed
-relative to something else. For example, declaring font-size: 120% for
-an element sets its font size to 120% of the computed font-size of its
-parent element. Fractional values, such as 543.21%, are valid. Some
-properties may restrict percentage values to be non-negative.</p>
+<p>A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately by a percent 
+sign (%). There should never be any space between the number and the percent sign. A percentage 
+value will always be computed relative to something else. For example, declaring font-size: 120% 
+for an element sets its font size to 120% of the computed font-size of its parent element. 
+Fractional values, such as 543.21%, are valid. Some properties may restrict percentage values to 
+be non-negative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5-1">2.5. Length Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A length value is expressed as a positive or negative number (when
-permitted), followed immediately by a unit identifier. There should
-never be any space between the number and the unit identifier. A length
-value of 0 (zero) does not require a unit identifier.</p>
+<p>A length value is expressed as a positive or negative number (when permitted), followed 
+immediately by a unit identifier. There should never be any space between the number and the 
+unit identifier. A length value of 0 (zero) does not require a unit identifier.</p>
 
 <h5><b>Number Values</b></h5>
-<p>Length units are divided into two types: <i>absolute units</i>, which are (in
-theory) always measured in the same way, and <i>relative units</i>, which are
-measured in relation to other things. <b>Absolute Length Units</b></p>
+<p>Length units are divided into two types: <i>absolute units</i>, which are (in theory) always 
+measured in the same way, and <i>relative units</i>, which are measured in relation to other 
+things. <b>Absolute Length Units</b></p>
 
 <p>The available absolute units are:</p>
 
 <h5><i>Centimeters</i> (cm)</h5>
 
-<p>The centimeters found on rulers the world over. There are 2.54
-centimeters to an inch, and 1 centimeter equals 0.394 inches. The same
-mapping warnings that applied to inches also apply to centimeters.</p>
+<p>The centimeters found on rulers the world over. There are 2.54 centimeters to an inch, and 
+1 centimeter equals 0.394 inches. The same mapping warnings that applied to inches also apply 
+to centimeters.</p>
 
 <h5><i>Millimeters</i> (mm)</h5>
 
-<p>There are 10 millimeters to a centimeter, so you get 25.4 millimeters
-to an inch, and 1 millimeter equals 0.0394 inches. Bear in mind the
-previous warnings about mapping lengths to displays.</p>
+<p>There are 10 millimeters to a centimeter, so you get 25.4 millimeters to an inch, and 1 
+millimeter equals 0.0394 inches. Bear in mind the previous warnings about mapping lengths 
+to displays.</p>
 
 <h5><i>Quarter-millimeters</i> (q)</h5>
 
 <p>Exactly what they say they are: one-fourth of a millimeter.</p>
 
-<p>In other words, 4q equals one millimeter, and 400q equals one
-centimeter. Again, bear in mind the previous mapping warnings.</p>
+<p>In other words, 4q equals one millimeter, and 400q equals one centimeter. Again, bear in mind 
+the previous mapping warnings.</p>
 
 <h5><i>Inches</i> (in)</h5>
 
-<p>As you might expect, the same inches found on typical US rulers. The
-mapping from inches to a display device is usually approximate at
-best, because many systems have no concept of the relation of their
-display areas to "realworld" measurements such as inches. Thus, inches
-should be used with extreme caution in screen design.</p>
+<p>As you might expect, the same inches found on typical US rulers. The mapping from inches to a 
+display device is usually approximate at best, because many systems have no concept of the 
+relation of their display areas to "realworld" measurements such as inches. Thus, inches should 
+be used with extreme caution in screen design.</p>
 
 <h5><i>Points</i> (pt)</h5>
 
-<p>Points are standard typographical measures used by printers and
-typesetters for centuries and by word-processing programs for decades.
-By modern definition, there are 72 points to an inch. Therefore, the
-capital letters of text set to 12 points should be 1/6 of an inch
-tall. For example, p {font-size: 18pt;} is equivalent to p {font-size:
-0.25in;}, assuming proper mapping of lengths to the display
-environment (see previous comments).</p>
+<p>Points are standard typographical measures used by printers and typesetters for centuries and 
+by word-processing programs for decades. By modern definition, there are 72 points to an inch. 
+Therefore, the capital letters of text set to 12 points should be 1/6 of an inch tall. For example, 
+p {font-size: 18pt;} is equivalent to p {font-size: 0.25in;}, assuming proper mapping of lengths to 
+the display environment (see previous comments).</p>
 
 <h5><i>Picas</i> (pc)</h5>
 
-<p>Another typographical term. A pica is equivalent to 12 points, which
-means there are 6 picas to an inch. The capital letters of text set to 1
-pica should be 1/6 of an inch tall. For example, p {font-size: 1.5pc;}
-would set text to be the same size as the example declarations found in
-the definition of points. Keep in mind the previous warnings. <b>Relative
-Length Units</b></p>
+<p>Another typographical term. A pica is equivalent to 12 points, which means there are 6 picas to 
+an inch. The capital letters of text set to 1 pica should be 1/6 of an inch tall. For example, p 
+{font-size: 1.5pc;} would set text to be the same size as the example declarations found in the 
+definition of points. Keep in mind the previous warnings. <b>Relative Length Units</b></p>
 
 <p>The available relative units are:</p>
 
 <h5><i>Em-height</i> (em)</h5>
 
-<p>This refers to the em-height of a given font face. In CSS, the
-em-height is equivalent to the height of the character box for the
-font face, which is to say the computed value of font-size. Ems can be
-used to set relative sizes for fonts; for example, font-size: 1.2em is
-the same as saying fontsize: 120%.</p>
+<p>This refers to the em-height of a given font face. In CSS, the em-height is equivalent to the 
+height of the character box for the font face, which is to say the computed value of font-size. 
+Ems can be used to set relative sizes for fonts; for example, font-size: 1.2em is the same as 
+saying fontsize: 120%.</p>
 
 <h5><i>Root element em-height</i> (rem)</h5>
 
@@ -1470,109 +1461,91 @@ the same as saying fontsize: 120%.</p>
 
 <h5><i>X-height</i> (ex)</h5>
 
-<p>This refers to the x-height of the font face, which is to say the
-height of the lowercase "x" character in the given font face. However,
-the vast majority of font faces do not include their x-height, so many
-browsers approximate it (poorly) by simply setting 1ex to be equal to
-0.5em.</p>
+<p>This refers to the x-height of the font face, which is to say the height of the lowercase "x" 
+character in the given font face. However, the vast majority of font faces do not include their 
+x-height, so many browsers approximate it (poorly) by simply setting 1ex to be equal to 0.5em.</p>
 
 <h5><i>ZERO width</i> (ch)</h5>
 
-<p>This refers to the width of a single zero (Unicode U+0300, "ZERO") in
-the current font family and size. This is often, but erroneously,
-assumed to mean "one character." This will only be true in monospace
-fonts, where all characters are the same width.</p>
+<p>This refers to the width of a single zero (Unicode U+0300, "ZERO") in the current font family 
+and size. This is often, but erroneously, assumed to mean "one character." This will only be true 
+in monospace fonts, where all characters are the same width.</p>
 
 <h5><b>Length Values</b></h5>
-<p>Since most proportional fonts have zeros that are
-slimmer than the alphabetic symbols, setting something like width:
-60ch will often result in lines of text with fewer than 60 characters.</p>
+<p>Since most proportional fonts have zeros that are slimmer than the alphabetic symbols, setting 
+something like width: 60ch will often result in lines of text with fewer than 60 characters.</p>
 
 <h5><i>Pixels</i> (px)</h5>
 
-<p>A pixel is usually thought of as a small box on a display, but CSS
-defines pixels more abstractly. In CSS terms, a pixel is defined to be
-about the size required to yield 96 units per inch. Many user agents
-ignore this definition in favor of simply addressing the pixels on the
-display, but others (such as those on high-resolution mobile devices)
-go the CSS route, treating each px as being multiple physical
-on-screen pixels.</p>
+<p>A pixel is usually thought of as a small box on a display, but CSS defines pixels more 
+abstractly. In CSS terms, a pixel is defined to be about the size required to yield 96 units 
+per inch. Many user agents ignore this definition in favor of simply addressing the pixels 
+on the display, but others (such as those on high-resolution mobile devices) go the CSS 
+route, treating each px as being multiple physical on-screen pixels.</p>
 
 <h5><i>Viewport width unit</i> (vw)</h5>
 
-<p>This unit is calculated with respect to the viewport's width, which is
-divided by 100. If the viewport is 937 pixels wide, for example, 1vw
-is equal to 9.37px. If the viewport's width changes, say by dragging
-the browser window to be wider or narrower, the value of vw changes
-along with it.</p>
+<p>This unit is calculated with respect to the viewport's width, which is divided by 100. If the 
+viewport is 937 pixels wide, for example, 1vw is equal to 9.37px. If the viewport's width changes, 
+say by dragging the browser window to be wider or narrower, the value of vw changes along with it.</p>
 
 <h5><i>Viewport height unit</i> (vh)</h5>
 
-<p>This unit is calculated with respect to the viewport's height, which
-is divided by 100. If the viewport is 650 pixels tall, for example,
-1vh is equal to 6.5px. If the viewport's height changes, say by
-dragging the browser window to be taller or shorter, the value of vh
-changes along with it.</p>
+<p>This unit is calculated with respect to the viewport's height, which is divided by 100. If 
+the viewport is 650 pixels tall, for example, 1vh is equal to 6.5px. If the viewport's height 
+changes, say by dragging the browser window to be taller or shorter, the value of vh changes 
+along with it.</p>
 
 <h5><i>Viewport minimum unit</i> (vmin)</h5>
 
-<p>This unit is 1/100 of the viewport's width or height, whichever is
-<i>lesser</i>. Thus, given a viewport that is 937 pixels wide by 650 pixels
-tall, 1vmin is equal to 6.5px.</p>
+<p>This unit is 1/100 of the viewport's width or height, whichever is <i>lesser</i>. Thus, 
+given a viewport that is 937 pixels wide by 650 pixels tall, 1vmin is equal to 6.5px.</p>
 
 <h5><i>Viewport maximum unit</i> (vmax)</h5>
 
-<p>This unit is 1/100 of the viewport's width or height, whichever is
-<i>greater</i>. Thus, given a viewport that is 937 pixels wide by 650
-pixels tall, 1vmax is equal to 9.37px.</p>
+<p>This unit is 1/100 of the viewport's width or height, whichever is <i>greater</i>. Thus, 
+given a viewport that is 937 pixels wide by 650 pixels tall, 1vmax is equal to 9.37px.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6-1">2.6. Fraction Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A <i>fraction value</i> is a <i>&lt;number&gt;</i> followed by the label fr. Thus, one
-fraction unit is 1fr, four fraction units are 4fr, and so on. This is a
-concept introduced by Grid Layout, and is used to divide up fractions of
-the unconstrained space in a layout. Note that fr is <i>not</i> a
-<i>&lt;length&gt;</i> unit, and thus cannot be used in places where length values
-are permitted (e.g., calc() expressions, see "Calculation Values" on
+fraction unit is 1fr, four fraction units are 4fr, and so on. This is a concept introduced 
+by Grid Layout, and is used to divide up fractions of the unconstrained space in a layout. 
+Note that fr is <i>not</i> a <i>&lt;length&gt;</i> unit, and thus cannot be used in places 
+where length values are permitted (e.g., calc() expressions, see "Calculation Values" on
 page 45).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-1">2.7. URIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or
-another stylesheet. CSS defines a URI as relative to the stylesheet that
-contains it. URI stands for Uniform Resource Identifier, which is the
-more recent name for URLs. (Technically, URLs are a subset of URIs.) In
-CSS, which was first defined when URIs were still called URLs, this
-means that references to URIs will often appear in the form
-url(<i>&lt;uri&gt;</i>). Fun!</p>
+<p>A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or another 
+stylesheet. CSS defines a URI as relative to the stylesheet that contains it. URI stands 
+for Uniform Resource Identifier, which is the more recent name for URLs. (Technically, 
+URLs are a subset of URIs.) In CSS, which was first defined when URIs were still called 
+URLs, this means that references to URIs will often appear in the form url(<i>&lt;uri&gt;</i>). Fun!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-8-1">2.8. Angles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed
-immediately by an angle unit. There are four types of angle units:
-degrees (deg), grads (grad), radians (rad), and turns (turn). For
-example, a right angle could be declared as 90deg, 100grad, 1.571rad, or
-0.25turn. In each case, the values are translated into degrees in the
-range 0 through 360. This is also true of negative values: −90deg is
-equivalent to 270deg.</p>
+<p>The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed 
+immediately by an angle unit. There are four types of angle units: degrees (deg), grads (grad), 
+radians (rad), and turns (turn). For example, a right angle could be declared as 90deg, 100grad, 
+1.571rad, or 0.25turn. In each case, the values are translated into degrees in the range 0 
+through 360. This is also true of negative values: −90deg is equivalent to 270deg.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-9-1">2.9. Times</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A time value (<i>&lt;time&gt;</i>) is expressed as a <i>&lt;number&gt;</i> followed
-immediately by a time unit. There are two types of time units: seconds
-(s) and milliseconds (ms). Time values appear in aural styles, which are
-not widely supported, and in the much bettersupported transitions and
-animations.</p>
+immediately by a time unit. There are two types of time units: seconds (s) and milliseconds 
+(ms). Time values appear in aural styles, which are not widely supported, and in the much 
+better supported transitions and animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10-1">2.10. Frequencies</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A frequency value (<i>&lt;frequency&gt;</i>) is expressed as a non-negative
-<i>&lt;number&gt;</i> followed immediately by a frequency unit. There are two
-types of frequency units: hertz (Hz) and kilohertz (kHz).</p>
+<p>A frequency value (<i>&lt;frequency&gt;</i>) is expressed as a non-negative 
+<i>&lt;number&gt;</i> followed immediately by a frequency unit. There are two types of 
+frequency units: hertz (Hz) and kilohertz (kHz).</p>
 
-<p>The unit identifiers are case-insensitive, so 6kHz and 6khz are
-equivalent. As of this writing, frequency values are only used with
-aural styles, which are not well supported.</p>
+<p>The unit identifiers are case-insensitive, so 6kHz and 6khz are equivalent. As of this 
+writing, frequency values are only used with aural styles, which are not well supported.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-11-1">2.11. Position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1582,21 +1555,18 @@ circumstances. Its syntactical structure is rather complicated:</p>
 
 <pre>
 &lbrack;
-
-&lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert;
-<i>&lt;length&gt;</i> &rbrack; &vert;</p>
+&lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack; &vert;
 &lbrack; left &vert; center &vert; right &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack;
 &lbrack; top &vert; center &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack; &vert;
-&lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i>
-&rbrack;? &rbrack; &&
-&lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i>
-&rbrack;? &rbrack; &rbrack;
+&lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack;? &rbrack; &&
+&lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack;? &rbrack;
+&rbrack;
 </pre>
 
-<p>That might seem a little convoluted and repetitive, but it's all down to
-the subtly complex patterns that this value type has to allow, such as
-center, bottom right, 50% center, left 77px, and so on. The notation
-used here is described in "Value Syntax Conventions" on page 73.</p>
+<p>That might seem a little convoluted and repetitive, but it's all down to the subtly 
+complex patterns that this value type has to allow, such as center, bottom right, 50% 
+center, left 77px, and so on. The notation used here is described in "Value Syntax 
+Conventions" on page 73.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-12-1">2.12. Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1942,14 +1912,31 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Exact Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;attr=&quot;value&quot;&rbrack;
-<p><b>Description</b> Matches elements based on the precise and complete value
-of an attribute.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Exact Attribute Value Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;attr=&quot;value&quot;&rbrack;</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td> Matches elements based on the precise and complete value of an attribute.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;rel=&quot;start&quot;&rbrack; {font-weight: bold;}
 p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Partial Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
