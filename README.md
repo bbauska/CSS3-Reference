@@ -1980,7 +1980,8 @@ elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.
 <pre>
 p:empty {padding: 1em; background: red;}
 div:not(:empty) {border: 1px solid;<br>
-padding: 1ch;} li:empty {display: none;} 
+  padding: 1ch;}
+li:empty {display: none;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:first-child</h4>
@@ -2046,17 +2047,13 @@ will select any div that is the last child div of another element.
 <h5>Examples</h5> 
 
 <pre>
-td:last-of-type {border-right: 1px dotted;} h2:last-of-type {color: fuchsia;}
+td:last-of-type {border-right: 1px dotted;}
+h2:last-of-type {color: fuchsia;}
 </pre>
-
-Any element
-
-<pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-child(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-</pre>
-<b>Applies to</b>
+<b>Applies to</b>  Any element
 
 <h5>Description</h5> Matches every <i>n</i>th child with the pattern of selection
 defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s
@@ -2097,8 +2094,9 @@ In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 <h5>Examples</h5>
 <pre>
-&ast;:nth-last-child(4n+1) {font-weight: bold;} tbody
-tr:nth-last-child(odd) { background-color: #EEF;}
+&ast;:nth-last-child(4n+1) {font-weight: bold;} 
+tbody tr:nth-last-child(odd) { 
+  background-color: #EEF;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h4>
@@ -2118,11 +2116,10 @@ are two keywords permitted: even and odd. These are equivalent to 2n and
 <h5>Examples</h5>
 <pre>
 td:nth-last-of-type(even) {
-
-background-color: #FCC;} img:nth-last-of-type(3n) {float: left;
-border: 2px solid;}
+  background-color: #FCC;} 
+img:nth-last-of-type(3n) {float: left;
+  border: 2px solid;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-of-type(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2157,8 +2154,8 @@ parent.
 
 <h5>Examples</h5>
 <pre>
- a img:only-child {border: 0;}<br>
-     table div:only-child {margin: 5px;}
+a img:only-child {border: 0;}
+table div:only-child {margin: 5px;}
 </pre>
 
 Any element
@@ -2175,8 +2172,8 @@ type of its parent element. Note that an element can be selected by
 (such as divs within a div).
 <h5>Examples</h5> 
 <pre>
-p em:only-of-type {font-weight: bold;} section
-article:only-of-type {margin: 2em 0 3em;} 
+p em:only-of-type {font-weight: bold;} 
+section article:only-of-type {margin: 2em 0 3em;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:root</h4>
@@ -2238,23 +2235,21 @@ Selectors Level 4.
 <h5>Examples</h5>
 <pre>
 ul &ast;:not(li) {text-indent: 2em;}
-
-&ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { margin: 0 1em;}
+&ast;:not(&lbrack;type=&quot;checkbox&quot;&rbrack;):not(&lbrack;type=&quot;radio&quot;&rbrack;) { 
+  margin: 0 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-4-1">3.4. Interaction Pseudo-Classes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The pseudo-classes listed here are all related to the user's interaction
+<p>The pseudo-classes listed here are all related to the user's interaction
 with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
-elements based on their being enabled or disabled.
-
+elements based on their being enabled or disabled.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:active</h4>  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  <b>Applies to</b>     Any interaction element     
-  <h5>Description</h5>  Matches an element during the period in which it is 
+<b>Applies to</b>     Any interaction element     
+ <h5>Description</h5>  Matches an element during the period in which it is 
  being activated. The most common example is 
  clicking on a hyperlink in an HTML document: while  
  the mouse button is being held down, the link is    
@@ -2263,8 +2258,8 @@ elements based on their being enabled or disabled.
  although CSS doesn't define them.   
 <h5>Examples</h5>
 <pre>
-a:active {color: red;} 
-     &ast;:active {background: blue;} 
+a:active {color: red;}
+&ast;:active {background: blue;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:checked</h4> 
@@ -2275,10 +2270,10 @@ a:active {color: red;}
 filled radio button. 
 <h5>Examples</h5>
 <pre>
-input:checked { <br>
- outline: 3px solid rgba(127,127,127,0.5);}<br>
-    input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { <br>
-					  box-shadow: red 0 0 5px;} 
+input:checked {
+ outline: 3px solid rgba(127,127,127,0.5);}
+input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
+  box-shadow: red 0 0 5px;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:disabled</h4> 
@@ -2322,12 +2317,11 @@ which elements may or may not have focus.
 <h5>Examples</h5>
 <pre>
 a:focus {outline: 1px dotted red;}
-    input:focus {background: yellow;} 
+input:focus {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:hover</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <b>Applies to</b>   Any interaction element     
 <h5>Description</h5>  Matches an element during the period in which it is 
   being *hovered* over (when the user is designating  
@@ -2386,13 +2380,11 @@ a:visited {color: purple;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5. Pseudo-Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 In CSS1 and CSS2, pseudo-elements were preceded by single colons, just
 as pseudo-classes were. In CSS3 and later, pseudoelements use double
 colons to distinguish them from pseudoclasses. For historical reasons,
 browsers will support both single and double colons on pseudo-elements,
 but the doublecolon syntax is recommended.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>::after</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2403,8 +2395,8 @@ but the doublecolon syntax is recommended.
 					   but this can be changed using the property display. 
 <h5>Examples</h5>
 <pre>
-a.external:after { 
-content: &quot; &quot; url(/icons/globe.gif);} 
+a.external:after {
+  content: &quot; &quot; url(/icons/globe.gif);} 
 p:after {content: &quot; &vert;; &quot;;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
