@@ -768,7 +768,7 @@ that element.</p>
 <h4>The Containing Block</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The containing block of a positioned element is determined as follows:</p>
-<ol>
+<ol type="1">
   <li>The containing block of the <i>root element</i> (also called the <i>initial
     containing block</i>) is established by the user agent. In HTML, the
     root element is the html element, although some browsers may use
@@ -783,7 +783,7 @@ that element.</p>
     is set to the nearest ancestor (of any kind) that has a position value other than 
 	static, a filter value other than none, or a transform value other than none. This 
 	happens as follows:
-    <ol>
+    <ol type="a">
 	  <li>If the ancestor is block-level, the containing block is that element's outer 
 	    padding edge; in other words, it is the area bounded by the element's border.</li>
       <li>If the ancestor is inline-level, the containing block is set to the content 
@@ -865,45 +865,50 @@ the container. All the direct children of the grid container element are grid it
 (display: inline-grid). These are very much like block and inline-block boxes.</p>
 
 <p>A grid is made up of the following components, as illustrated in Figure 1-5:</p>
-
--   A *grid line* is a horizontal or vertical dividing line within the
+<ul>
+  <li>A *grid line* is a horizontal or vertical dividing line within the
     grid container. These are placed as the author directs and create
     grid *cells*, *areas*, and *tracks* by implication. Grid lines can
     be labeled with *identifier tokens*; that's the basis of grid item
-    placement.
-
--   A *grid cell* is any space bounded by four grid lines, with no other
+    placement.</li>
+  <li>A *grid cell* is any space bounded by four grid lines, with no other
     grid lines running through it, analogous to a table cell. This is
     the smallest unit of area in grid layout. Grid cells cannot be
     directly addressed with CSS grid properties; that is, no property
     allows you to say a grid item should be associated with a given
-    cell. (But see the next point for more details.)
-
--   A *grid area* is any rectangular area bounded by four grid lines and
+    cell. (But see the next point for more details.)</li>
+  <li>A *grid area* is any rectangular area bounded by four grid lines and
     made up of one or more grid cells. An area can be as small as a
     single cell or as large as all the cells in the grid. Grid areas are
     directly addressable by CSS grid properties, which allow you to
-    define the areas and then associate grid items with them.
-
--   A *grid track* is a continuous run between two adjacent grid
+    define the areas and then associate grid items with them.</li>
+  <li>A *grid track* is a continuous run between two adjacent grid
     lines---in other words, a *grid column* or a *grid row*. It goes
     from one edge of the grid container to the other. The size of a grid
     track is dependent on the placement of the grid lines that define
     it. Grid columns and rows are broadly analogous to table columns and
     rows. More generically, they can be referred to as *block axis* and
     *inline axis* tracks, where (in Western languages) column tracks are
-    on the block axis and row tracks are on the inline axis.
+    on the block axis and row tracks are on the inline axis.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06. Grid layout components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image006.png?raw=true"
+  title="Grid layout components"
+  alt="Grid layout components."
+  style="width:50%;" />
+</p>
+<p align="center"><i>Figure 1-5. Grid layout components</i></p>
 
-<b>Grid Layout</b>
-*Figure 1-5. Grid layout components*
-
-The placement of grid lines can be quite complex, and is accomplished by
+<p>The placement of grid lines can be quite complex, and is accomplished by
 defining grid track sizes. Between each grid track, a grid line is
 placed. These lines can be labeled with gridline names, or left
-unlabeled and later addressed using numbers.
+unlabeled and later addressed using numbers.</p>
 
-The formal syntax for defining grid track sizes is quite complicated,
-but the components are relatively simple to list and explain:
+<p>The formal syntax for defining grid track sizes is quite complicated,
+but the components are relatively simple to list and explain:</p>
 
 *&lt;length&gt; &vert; &lt;percentage&gt;*
 
