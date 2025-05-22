@@ -236,8 +236,6 @@ other media types like screen, print, or speech or use media queries.</p>
 <p>As an alternative to using <i>.htaccess</i>, which has been known to cause
 performance problems, you can edit your <i>httpd.conf</i> file to do the same
 thing:</p>
-<p>In essence, this code snippet links an external CSS file to an HTML page, making 
-the styles defined in that file available for styling the HTML elements.</p>
 <pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
   &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
@@ -428,34 +426,28 @@ background.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The cascade is how CSS resolves conflicts between styles; in other words, it is the 
 mechanism by which a user agent decides, for example, what color to make an element when 
-two different rules apply to it and each one tries to set a different color. Here's how 
-the cascade works:</p>
-
-1.  Find all rules with a selector that matches a given element.
-
-2.  Sort all declarations applying to the given element by <i>explicit weight</i>. Those 
-    rules that are marked !important have a higher explicit weight than those that are not.
-
-3.  Sort all declarations applying to the given element by <i>origin</i>.
-    There are three basic origins: author, reader, and user agent. Under
-    normal circumstances, the author's styles win out over the reader's
-    styles. Howerver, !important reader styles are stronger than any
-    other styles, including !important author styles. Both author and
-    reader styles override the user agent's default styles.
-
-4.  Sort all declarations applying to the given element by
-    <i>specificity</i>. Those elements with a higher specificity have more
-    weight than those with lower specificity.
-
-5.  Sort all declarations applying to the given element by <i>order</i>. The
-    later a declaration appears in the stylesheet or document, the more
-    weight it is given. Declarations that appear in an imported
-    stylesheet are considered to come before all declarations within the
-    stylesheet that imports them.
-
-<p>Any presentational hints that come from non-CSS sources (e.g., the
-preference dialog within a browser) are given the same weight as the
-user agent's default styles (see step 2 above).</p>
+two different rules apply to it and each one tries to set a different color.<br>
+Here's how the cascade works:</p>
+<ol>
+  <li>Find all rules with a selector that matches a given element.</li>
+  <li>Sort all declarations applying to the given element by <i>explicit weight</i>. 
+    Those rules that are marked !important have a higher explicit weight than those 
+	that are not.</li>
+  <li>Sort all declarations applying to the given element by <i>origin</i>. There are 
+    three basic origins: author, reader, and user agent. Under normal circumstances, 
+	the author's styles win out over the reader's styles. Howerver, !important reader 
+	styles are stronger than any other styles, including !important author styles. 
+	Both author and reader styles override the user agent's default styles.</li>
+  <li>Sort all declarations applying to the given element by <i>specificity</i>. Those 
+    elements with a higher specificity have more weight than those with lower specificity.</li>
+  <li>Sort all declarations applying to the given element by <i>order</i>. The later a 
+    declaration appears in the stylesheet or document, the more weight it is given. 
+	Declarations that appear in an imported stylesheet are considered to come before 
+	all declarations within the stylesheet that imports them.</li>
+</ol>
+<p>Any presentational hints that come from non-CSS sources (e.g., the preference dialog 
+within a browser) are given the same weight as the user agent's default styles (see 
+step 2 above).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-6-1">1.6 Element Classification</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -498,22 +490,20 @@ since some properties only apply to one type or the other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Block-Level</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><i>Block-level boxes</i> are those where the element box (by default) fills
-its parent element's content area width and cannot have other elements
-to its sides. In other words, block-level elements generate "breaks"
-before and after the element box. The most familiar block elements from
-HTML are p and div. Replaced elements can be block-level elements but
-usually are not. List items are a special case of block-level elements.
-In addition to behaving in a manner consistent with other block
-elements, they generate a marker---typically a bullet for unordered
-lists or a number for ordered lists---which is "attached" to the element
-box. Except for the presence of this marker, list items are identical to
-other block elements.</p>
+<p><i>Block-level boxes</i> are those where the element box (by default) fills its 
+parent element's content area width and cannot have other elements to its sides. In 
+other words, block-level elements generate "breaks" before and after the element box. 
+The most familiar block elements from HTML are p and div. Replaced elements can be 
+block-level elements but usually are not.</p>
+<p>List items are a special case of block-level elements. In addition to behaving in 
+a manner consistent with other block elements, they generate a marker---typically a 
+bullet for unordered lists or a number for ordered lists---which is "attached" to 
+the element box. Except for the presence of this marker, list items are identical 
+to other block elements.</p>
 
-<p>As of early 2018, the display values that create block boxes are block,
-list-item, table, table-row-group, table-headergroup,
-table-footer-group, table-column-group, table-row, table-column,
-table-cell, table-caption, flex, and grid.</p>
+<p>As of early 2018, the display values that create block boxes are block, list-item, 
+table, table-row-group, table-headergroup, table-footer-group, table-column-group, 
+table-row, table-column, table-cell, table-caption, flex, and grid.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline-Level</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -552,8 +542,8 @@ box</i>, which describes the amount of space occupied by an element. Figure
 <p align="center">
 <img class="displayed"
   src="/images/image003.png?raw=true"
-  title=""
-  alt="."
+  title="The complete box model"
+  alt="The complete box model."
   style="width:60%;" />
 </p>
 
@@ -589,25 +579,24 @@ box</i>, which describes the amount of space occupied by an element. Figure
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An inline-level box in CSS generates one or more rectangular boxes
 called <i>inline boxes</i>. The following rules apply to inline boxes:</p>
-
--   width and height do not apply to nonreplaced inline boxes.
-
--   For the properties left, right, top, bottom, margin-left,
-    margin-right, margin-top, and margin-bottom, any value of auto is
-    converted to 0 (zero).
-
--   For replaced inline boxes, the following rules apply:
-
-    - If height and width are both auto and the element has an intrinsic
+<ul>
+  <li>width and height do not apply to nonreplaced inline boxes.</li>
+  <li>For the properties left, right, top, bottom, margin-left, margin-right, 
+    margin-top, and margin-bottom, any value of auto is converted to 0 (zero).</li>
+  <li>For replaced inline boxes, the following rules apply:
+    <ul>
+	  <li>If height and width are both auto and the element has an intrinsic
 	  width (e.g., an image), the value of width is equal to the element's
-	  intrinsic width. The same holds true for height.
-	- If height and width are both auto and the element does not have an
+	  intrinsic width. The same holds true for height.</li>
+	  <li>If height and width are both auto and the element does not have an
 	  intrinsic width but does have an intrinsic height and layout ratio,
-	  then width is set to be the intrinsic height times the ratio.
-	- If height and width are both auto and the element does not have an
+	  then width is set to be the intrinsic height times the ratio.</li>
+	  <li>If height and width are both auto and the element does not have an
 	  intrinsic height but does have an intrinsic width and layout ratio,
-	  then height is set to be the intrinsic width divided by the ratio.
-
+	  then height is set to be the intrinsic width divided by the ratio.</li>
+	</ul>
+  </li>
+</ul>
 <p>There are a few rules even more obscure than those last two; see 
 <a href="http://w3.org/TR/css3-box/#inline-replaced">the CSS box model documentation</a>
 for details.</p>
@@ -618,20 +607,22 @@ determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Anonymous text</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Any string of characters not contained within an inline element. Thus, in the markup:</p>
-
-<p><b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b>
-the sequences "I'm " and " happy!" are anonymous text. 
-Note that the spaces are part  of the anonymous text, as a space is a character 
-like any other.</p>
+<ul>
+  <li>Any string of characters not contained within an inline element. Thus, in the markup:<br>
+      <p><b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b><br>
+    the sequences "I'm " and " happy!" are anonymous text. Note that the spaces are part 
+    of the anonymous text, as a space is a character like any other.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Em-box</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The space taken up by a capital letter M in the given font; otherwise
-known as the character box. Actual glyphs can be taller or shorter 
-than their em-boxes, as discussed in Chapter 5 of 
-<a href="http://shop.oreilly.com/product/0636920012726.do"><i>CSS: The Definitive Guide</i></a>, 
-the value of font-size determines the height of each em-box.</p>
+<ul>
+  <li>The space taken up by a capital letter M in the given font; otherwise known as 
+    the character box. Actual glyphs can be taller or shorter than their em-boxes, as 
+	discussed in Chapter 5 of <a href="http://shop.oreilly.com/product/0636920012726.do">
+	<i>CSS: The Definitive Guide</i></a>, the value of font-size determines the height 
+	of each em-box.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Content area</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -641,8 +632,9 @@ described by the character glyphs in the element. In CSS2.1 and later,
 user agents can choose either. This text uses the em-box definition
 for simplicity's sake. In replaced elements, the content area is the
 intrinsic height of the element plus any margins, borders, or padding.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Leading</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&nbsp;&nbsp;The difference between the values of font-size and lineheight. Half<br>
 &nbsp;&nbsp;this difference is applied to the top and half to the bottom of the<br>
 &nbsp;&nbsp;content area. These additions to the content area are called, not<br>
