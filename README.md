@@ -786,14 +786,14 @@ that element.</p>
     <ol type="a">
 	  <li>If the ancestor is block-level, the containing block is that element's outer 
 	    padding edge; in other words, it is the area bounded by the element's border.</li>
-      <li>If the ancestor is inline-level, the containing block is set to the content 
+ <li>If the ancestor is inline-level, the containing block is set to the content 
 	    edge of the ancestor. In left-to-right languages, the top and left of the 
 		containing block are the top and left content edges of the first box in the 
 		ancestor, and the bottom and right edges are the bottom and right content edges 
 		of the last box. In rightto-left languages, the right edge of the containing 
 		block corresponds to the right content edge of the first box, and the left is 
 		taken from the last box. The top and bottom are the same.</li>
-      <li>If there are no ancestors as described in 3a and 3b, the absolutely positioned 
+ <li>If there are no ancestors as described in 3a and 3b, the absolutely positioned 
 	    element's containing block is defined to be the initial containing block.</li>
     </ol>
   </li>
@@ -838,7 +838,7 @@ of the algorithm:</p>
 	  <li>Any item with a flex factor of zero</li>
 	  <li>Any item whose <i>hypothetical main size</i> is greater (if growing) or
 	    smaller (if shrinking) than its <i>base size</i></li>
-      <li>Any item with a growth factor (if growing) or shrink factor (if shrinking) 
+ <li>Any item with a growth factor (if growing) or shrink factor (if shrinking) 
 	  of zero.</li>
 	</ul>
   <li>Calculate the <i>initial free space</i> by finding the difference between the outer 
@@ -999,7 +999,6 @@ documentation](https://www.w3.org/TR/css-grid-1/#layout-algorithm).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-13-1">1.13. Table Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 The layout of tables can get quite complicated, especially because CSS
 defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
@@ -1076,8 +1075,11 @@ At that point, the width of the table is set to be either the value of
 width for the table or the sum of the column widths, whichever is
 greater. If the table turns out to be wider than the column widths, the
 difference is divided by the number of columns and added to each of
-them. <b>Automatic Table Layout</b>
+them. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Automatic Table Layout</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The automatic-layout model, although not as fast as the fixedlayout
 model, is likely to be much more familiar to authors, because it's
 substantially the same model that HTML tables have used for years. In
@@ -1177,7 +1179,7 @@ this model:
 -   Once they are collapsed, the borders between cells are centered on
     the hypothetical grid lines between the cells.
 
-<b>Collapsing borders</b>
+<h5>Collapsing borders</h5>
 When two or more borders are adjacent, they collapse into each other, as
 shown in Figure 1-7. There are strict rules governing which borders will
 win and which will not:
@@ -1221,7 +1223,7 @@ win and which will not:
 </p>
 <p align="center"><i>Figure 1-7. Collapsing cell borders model</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Vertical Alignment Within Cells</h4>
+<h3>Vertical Alignment Within Cells</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The following describes the detailed process for aligning cell contents
 within a row:
@@ -1249,7 +1251,6 @@ There are a variety of value types in CSS, most of which use units.
 Combining basic value types (such as numbers) with units (such as
 pixels) makes it possible to do any number of interesting things with
 CSS.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-1-1">2.1. Keywords</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1266,7 +1267,7 @@ parent element, even if the property in question is not inherited
 (e.g., background-image). Another way to think of this is that the
 value is copied from the parent element.
 
-initial
+<h5>initial</h5>
 
 Forces the value of the property to be the initial value defined by
 the relevant CSS module. For example, fontstyle: initial sets the
@@ -1276,7 +1277,7 @@ initial value is defined as determined by the user agent, such as for
 font-size, the value is set to the "default" defined by the user
 agent's preferences.
 
-unset
+<h5>unset</h5>
 
 Combines the effects of both inherit and initial, with a rudimentary
 logic built in for good measure. If a property is inherited (e.g.,
@@ -1291,9 +1292,9 @@ inheritance, see the all property in Chapter 4.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2-1">2.2. Color Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Color values can be expressed in a variety of ways:
+<p>Color values can be expressed in a variety of ways:</p>
 
-<i>#RRGGBB</i>
+<h5><i>#RRGGBB</i></h5>
 
 This is a hex-pair notation familiar to authors using traditional
 HTML. In this format, the first pair of digits corresponds to the red
@@ -1302,13 +1303,13 @@ Each pair is in hexadecimal notation in the range 00--FF (decimal
 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is
 written #FF0000, and so on.
 
-<i>#RGB</i>
+<h5><i>#RGB</i></h5>
 
 This is a shorter form of the six-digit notation described previously.
 In this format, each digit is replicated to arrive at an equivalent
 six-digit value; thus, #F8C becomes #FF88CC.
 
-<i>#RRGGBBAA</i>
+<h5><i>#RRGGBBAA</i></h5>
 
 An extension of the #RRGGBB notation which adds an alpha channel. As
 with the R, G, and B values, the A (alpha) value is in hexadecimal
@@ -1320,29 +1321,28 @@ derived by converting hexadecimal 99 to decimal 153, and then dividing
 equivalent to rgba(0,255,0,0.6). Note: support for this notation first
 emerged in early 2016.
 
-<i>#RGBA</i>
+<h5><i>#RGBA</i></h5>
 
 This is a shorter form of the eight-digit #RRGGBBAA notation described
 previously. In this format, each digit is replicated to arrive at an
 equivalent eight-digit value; thus,
 
-#F8C6 becomes #FF88CC66. Note: support for this notation first emerged
-in early 2016.
+&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.
 
-<i>rgb(rrr,ggg,bbb)</i>
+<h5><i>rgb(rrr,ggg,bbb)</i></h5>
 
 This format allows the author to use RGB values in the range 0--255;
 only integers are permitted. Not coincidentally, this range is the
 decimal equivalent of 00--FF in hexadecimal. In this format, "pure"
 green is rgb(0,255,0), and white is represented as rgb(255,255,255).
 
-<i>rgb(rrr.rr%,ggg.gg%,bbb.bb%)</i>
+<h5><i>rgb(rrr.rr%,ggg.gg%,bbb.bb%)</i></h5>
 
 This format allows the author to use RGB values in the range 0% to
 100%, with decimal values allowed (e.g., 75.5%). The value for black
 is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).
 
-<i>hsl(hhh.hh,sss.ss%,lll.ll%)</i>
+<h5><i>hsl(hhh.hh,sss.ss%,lll.ll%)</i></h5>
 
 This format permits authors to specify a color by its hue angle,
 saturation, and lightness (HSL). The hue angle is always a unitless
@@ -1351,7 +1351,7 @@ saturation and brightness values are always percentages. Hue angles 0
 and 360 are equivalent, and are both red. Hue angles greater than 360
 can be
 
-<b>Color Values</b>
+<h5><b>Color Values</b></h5>
 declared, but they are normalized to the 0--360 range; thus, setting a
 hue angle of 454 is equivalent to setting an angle of 94. Any HSL value,
 regardless of color angle, will be rendered as a shade of gray if the
@@ -1368,7 +1368,7 @@ inclusive; percentages are not permitted for the alpha value. Thus,
 rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
 are all equivalent half-opaque red.
 
-<i>&lt;keyword&gt;</i>
+<h5><i>&lt;keyword&gt;</i></h5>
 
 One of 16 recognized keywords based on the original Windows VGA
 colors. These keywords are aqua, black, blue, fuchsia, gray, green,
@@ -1379,7 +1379,7 @@ specification](http://www.w3.org/TR/css-color-4/), referred to for
 historical reasons as "the X11 colors" (though the list does not
 precisely replicate X11's colors).
 
-currentColor
+<h5>currentColor</h5>
 
 A special keyword that represents the current computed value of the
 element's color property. This means you can declare background-color:
@@ -1390,7 +1390,7 @@ borders; border: 1px solid is equivalent to border: 1px solid
 currentColor. This can be quite useful when (un)setting a border's
 color via DOM scripting.
 
-transparent
+<h5>transparent</h5>
 
 A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
 which is the computed value any time transparent is used.
@@ -1426,33 +1426,33 @@ permitted), followed immediately by a unit identifier. There should
 never be any space between the number and the unit identifier. A length
 value of 0 (zero) does not require a unit identifier.
 
-<b>Number Values</b>
+<h5><b>Number Values</b></h5>
 Length units are divided into two types: <i>absolute units</i>, which are (in
 theory) always measured in the same way, and <i>relative units</i>, which are
 measured in relation to other things. <b>Absolute Length Units</b>
 
 The available absolute units are:
 
-<i>Centimeters</i> (cm)
+<h5><i>Centimeters</i> (cm)</h5>
 
 The centimeters found on rulers the world over. There are 2.54
 centimeters to an inch, and 1 centimeter equals 0.394 inches. The same
 mapping warnings that applied to inches also apply to centimeters.
 
-<i>Millimeters</i> (mm)
+<h5><i>Millimeters</i> (mm)</h5>
 
 There are 10 millimeters to a centimeter, so you get 25.4 millimeters
 to an inch, and 1 millimeter equals 0.0394 inches. Bear in mind the
 previous warnings about mapping lengths to displays.
 
-<i>Quarter-millimeters</i> (q)
+<h5><i>Quarter-millimeters</i> (q)</h5>
 
 Exactly what they say they are: one-fourth of a millimeter.
 
 In other words, 4q equals one millimeter, and 400q equals one
 centimeter. Again, bear in mind the previous mapping warnings.
 
-<i>Inches</i> (in)
+<h5><i>Inches</i> (in)</h5>
 
 As you might expect, the same inches found on typical US rulers. The
 mapping from inches to a display device is usually approximate at
@@ -1460,7 +1460,7 @@ best, because many systems have no concept of the relation of their
 display areas to "realworld" measurements such as inches. Thus, inches
 should be used with extreme caution in screen design.
 
-<i>Points</i> (pt)
+<h5><i>Points</i> (pt)</h5>
 
 Points are standard typographical measures used by printers and
 typesetters for centuries and by word-processing programs for decades.
@@ -1470,7 +1470,7 @@ tall. For example, p {font-size: 18pt;} is equivalent to p {font-size:
 0.25in;}, assuming proper mapping of lengths to the display
 environment (see previous comments).
 
-<i>Picas</i> (pc)
+<h5><i>Picas</i> (pc)</h5>
 
 Another typographical term. A pica is equivalent to 12 points, which
 means there are 6 picas to an inch. The capital letters of text set to 1
@@ -1481,7 +1481,7 @@ Length Units</b>
 
 The available relative units are:
 
-<i>Em-height</i> (em)
+<h5><i>Em-height</i> (em)</h5>
 
 This refers to the em-height of a given font face. In CSS, the
 em-height is equivalent to the height of the character box for the
@@ -1489,12 +1489,12 @@ font face, which is to say the computed value of font-size. Ems can be
 used to set relative sizes for fonts; for example, font-size: 1.2em is
 the same as saying fontsize: 120%.
 
-<i>Root element em-height</i> (rem)
+<h5><i>Root element em-height</i> (rem)</h5>
 
 Equal to the em-height of the root element (in HTML, the html
 element).
 
-<i>X-height</i> (ex)
+<h5><i>X-height</i> (ex)</h5>
 
 This refers to the x-height of the font face, which is to say the
 height of the lowercase "x" character in the given font face. However,
@@ -1502,19 +1502,19 @@ the vast majority of font faces do not include their x-height, so many
 browsers approximate it (poorly) by simply setting 1ex to be equal to
 0.5em.
 
-<i>ZERO width</i> (ch)
+<h5><i>ZERO width</i> (ch)</h5>
 
 This refers to the width of a single zero (Unicode U+0300, "ZERO") in
 the current font family and size. This is often, but erroneously,
 assumed to mean "one character." This will only be true in monospace
 fonts, where all characters are the same width.
 
-<b>Length Values</b>
+<h5><b>Length Values</b></h5>
 Since most proportional fonts have zeros that are
 slimmer than the alphabetic symbols, setting something like width:
 60ch will often result in lines of text with fewer than 60 characters.
 
-<i>Pixels</i> (px)
+<h5><i>Pixels</i> (px)</h5>
 
 A pixel is usually thought of as a small box on a display, but CSS
 defines pixels more abstractly. In CSS terms, a pixel is defined to be
@@ -1524,7 +1524,7 @@ display, but others (such as those on high-resolution mobile devices)
 go the CSS route, treating each px as being multiple physical
 on-screen pixels.
 
-<i>Viewport width unit</i> (vw)
+<h5><i>Viewport width unit</i> (vw)</h5>
 
 This unit is calculated with respect to the viewport's width, which is
 divided by 100. If the viewport is 937 pixels wide, for example, 1vw
@@ -1532,7 +1532,7 @@ is equal to 9.37px. If the viewport's width changes, say by dragging
 the browser window to be wider or narrower, the value of vw changes
 along with it.
 
-<i>Viewport height unit</i> (vh)
+<h5><i>Viewport height unit</i> (vh)</h5>
 
 This unit is calculated with respect to the viewport's height, which
 is divided by 100. If the viewport is 650 pixels tall, for example,
@@ -1540,13 +1540,13 @@ is divided by 100. If the viewport is 650 pixels tall, for example,
 dragging the browser window to be taller or shorter, the value of vh
 changes along with it.
 
-<i>Viewport minimum unit</i> (vmin)
+<h5><i>Viewport minimum unit</i> (vmin)</h5>
 
 This unit is 1/100 of the viewport's width or height, whichever is
 <i>lesser</i>. Thus, given a viewport that is 937 pixels wide by 650 pixels
 tall, 1vmin is equal to 6.5px.
 
-<i>Viewport maximum unit</i> (vmax)
+<h5><i>Viewport maximum unit</i> (vmax)</h5>
 
 This unit is 1/100 of the viewport's width or height, whichever is
 <i>greater</i>. Thus, given a viewport that is 937 pixels wide by 650
@@ -1830,22 +1830,22 @@ nav a &#126; a {border-left: 1px solid border;}
 <h4>Class Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<h5>Pattern</h5>      element1.classname  
-element1.classname1.classname2      
+<h5>Pattern</h5> element1.classname  
+element1.classname1.classname2 
 <h5>Description</h5>  In languages that permit it, such as HTML, SVG, and 
-MathML, a class selector using "dot notation"       
+MathML, a class selector using "dot notation"  
 matches elements that have a class attribute
 containing a specific value or values. The name of  
 the class value must immediately follow the dot.    
 Multiple class values can be chained together. If   
-no element name precedes the dot, the selector      
+no element name precedes the dot, the selector 
 matches all elements bearing that class value or    
 values.     
 <h5>Examples</h5>
 <pre>
-p.urgent {color: red;}      
+p.urgent {color: red;} 
 a.external {font-style: italic;}    
-.example {background: olive;}       
+.example {background: olive;}  
 .note.caution {background: yellow;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1971,7 +1971,7 @@ children of their parent element.
 is, no child elements <i>or</i> content nodes. Content   
 nodes are defined as any text, whitespace, entity   
 reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
-<i>not</i> empty because it has a single whitespace      
+<i>not</i> empty because it has a single whitespace 
 character inside it; nor is the element empty if    
 that space is replaced with a newline. Note that    
 this pseudo-class does <i>not</i> apply to empty 
@@ -1985,11 +1985,11 @@ padding: 1ch;} li:empty {display: none;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:first-child</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <b>Applies to</b>     Any element 
- <h5>Description</h5>  Matches an element when it is the first child of  
- another element. Thus, div:first-child will select  
- any div that is the first child of another element, 
- <i>not</i> the first child element of any div.   
+<b>Applies to</b>     Any element
+<h5>Description</h5>  Matches an element when it is the first child of  
+another element. Thus, div:first-child will select  
+any div that is the first child of another element, 
+<i>not</i> the first child element of any div.   
 <h5>Examples</h5>
 <pre>
 td:first-child {border-left: 1px solid;}
@@ -2010,12 +2010,12 @@ h2:first-of-type {color: fuchsia;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:lang</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>     Any element with associated language-encoding       
+<b>Applies to</b>     Any element with associated language-encoding  
     information.
-<h5>Description</h5>  Matches elements based on their human-language      
+<h5>Description</h5>  Matches elements based on their human-language 
   encoding. Such language information must be 
  contained within, or otherwise associated with, the 
- document---it cannot be assigned from CSS. The      
+ document---it cannot be assigned from CSS. The 
  handling of :lang is the same as for &vert;= attribute  
  selectors.  
 <h5>Examples</h5>
@@ -2084,7 +2084,6 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>:nth-last-child(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <b>Applies to</b> Any element
 
 <h5>Description</h5> Matches every </i>n</i>th child with the pattern of selection
@@ -2201,20 +2200,20 @@ is needed.
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
 
-<b>:not(<i>e</i>)</b>      
+<b>:not(<i>e</i>)</b> 
 <b>Applies to</b>  Any element 
 <h5>Description</h5>  Matches every element that is <i>not</i> described by    
-the simple selector <i>e</i>. For example, you can       
+the simple selector <i>e</i>. For example, you can  
 select every element that is not a paragraph by     
 stating &ast;:not(p).  
-More usefully, negation can be used within the      
+More usefully, negation can be used within the 
 context of descendant selectors. An example of this 
 would be selecting every element within a table     
 that is not a data cell using table &ast;:not(td).     
 Another example would be selecting every element    
-with an ID that is not search by using      
+with an ID that is not search by using 
      
-&lbrack;id&rbrack;:not(&lbrack;id=&quot;search&quot;&rbrack;).      
+&lbrack;id&rbrack;:not(&lbrack;id=&quot;search&quot;&rbrack;). 
      
 Note that there is one exception to the "simple     
 selector" definition of *e*: it cannot be a 
@@ -2223,7 +2222,7 @@ impermissible to write :not(:not(div)).
 
 Because :not() is a pseudo-class, it can be chained 
 with other pseudo-classes as well as with instances 
-of itself. For example, to select any focused       
+of itself. For example, to select any focused  
 element that isn't an a element, use
 &ast;:focus:not(a). To select any element that isn't   
 either a paragraph or a section, use
@@ -2251,16 +2250,16 @@ an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:active</h4>       
+<h4>:active</h4>  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
   <b>Applies to</b>     Any interaction element     
   <h5>Description</h5>  Matches an element during the period in which it is 
-      being activated. The most common example is 
+ being activated. The most common example is 
  clicking on a hyperlink in an HTML document: while  
  the mouse button is being held down, the link is    
  active. There are other ways to activate elements,  
- and other elements can in theory be activated,      
+ and other elements can in theory be activated, 
  although CSS doesn't define them.   
 <h5>Examples</h5>
 <pre>
@@ -2268,7 +2267,7 @@ a:active {color: red;}
      &ast;:active {background: blue;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:checked</h4>      
+<h4>:checked</h4> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>    Any interaction element that has an on/off state    
 <h5>Description</h5>  Matches any user interface element that has been
@@ -2277,22 +2276,22 @@ filled radio button.
 <h5>Examples</h5>
 <pre>
 input:checked { <br>
-      outline: 3px solid rgba(127,127,127,0.5);}<br>
+ outline: 3px solid rgba(127,127,127,0.5);}<br>
     input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked { <br>
 					  box-shadow: red 0 0 5px;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:disabled</h4>      
+<h4>:disabled</h4> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any interaction element     
 <h5>Description</h5>  Matches user interface elements that are not able 
 to accept user input because of language attributes 
-or other nonpresentational means; for example,      
+or other nonpresentational means; for example, 
 &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note 
 that :disabled does *not* apply when an input     
 element has simply been removed from the viewport 
 with properties like position or display. 
-<b>Example</b>
+<h5>Example</h5>
 <pre>
 input:disabled {opacity: 0.5;} 
 </pre>
@@ -2305,7 +2304,7 @@ accept user input and that can be set to "enabled"
 and "disabled" states through the markup language   
 itself. This includes any form input element in     
 (X)HTML, but does not include hyperlinks.   
-<b>Example</b>
+<h5>Example</h5>
 <pre>
 input:enabled {background: #FCC;}   
 </pre>
@@ -2335,7 +2334,7 @@ a:focus {outline: 1px dotted red;}
   an element without activating it). The most common  
   example of this is moving the mouse pointer inside  
   the boundaries of a hyperlink in an HTML document.  
-  Other elements can in theory be hovered over,       
+  Other elements can in theory be hovered over,  
   although CSS doesn't define which ones.     
 <h5>Examples</h5>
 <pre>
@@ -2360,14 +2359,14 @@ a:link {color: blue;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element 
 <h5>Description</h5>  Matches an element which is itself matched by the
-       fragment identifier portion of the URI used to 
+  fragment identifier portion of the URI used to 
 					   access the page. Thus, http://www.w3.org/TR/ 
 					   css3-selectors/#target-pseudo would be 
 					   matched by :target and would apply the declared 
 					   styles to any element with the id of target-pseudo. 
 					   If that element was a paragraph, it would also be
-       matched by p:target. 
-<b>Example</b>
+  matched by p:target. 
+<h5>Example</h5>
 <pre>
 :target {background: #EE0;}
 </pre>
@@ -2376,7 +2375,7 @@ a:link {color: blue;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  A hyperlink to a resource that has already been visited 
 <h5>Description</h5>  Matches a link to a URI that has been visited; that is,
-       the URI to which the link points appears in the user 
+  the URI to which the link points appears in the user 
 					   agent's history. This state is mutually exclusive with 
 					   the :link state. 
 <h5>Examples</h5>
@@ -2398,9 +2397,9 @@ but the doublecolon syntax is recommended.
 <h4>::after</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>    A pseudo-element containing generated content
-       placed after the content in the element 
+  placed after the content in the element 
 <h5>Description</h5>  Inserts generated content at the end of an element's
-       content. By default, the pseudo-element is inline, 
+  content. By default, the pseudo-element is inline, 
 					   but this can be changed using the property display. 
 <h5>Examples</h5>
 <pre>
@@ -2430,11 +2429,11 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
   punctuation should be styled along with the first   
   letter. Some languages have letter combinations     
   that should be treated as a single character, and a 
-  user agent may apply the first letter style to      
-  both. Prior to CSS2.1, ::first-letter could be      
-  attached only to block-level elements. CSS2.1       
-  expanded its scope to include elements with a       
-  display value of block, list-item, table-cell,      
+  user agent may apply the first letter style to 
+  both. Prior to CSS2.1, ::first-letter could be 
+  attached only to block-level elements. CSS2.1  
+  expanded its scope to include elements with a  
+  display value of block, list-item, table-cell, 
   table-caption, or inlineblock. There is a limited   
    set of properties that can apply to a first letter. 
 <h5>Examples</h5>
@@ -2447,9 +2446,9 @@ p:first-letter {text-decoration: underline;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Generates</b>   A pseudo-element that contains the first formatted 
-      line of an element 
+ line of an element 
 <h5>Description</h5>  Styles the first line of text in an element, regardless
-       of how many or how few words may appear in that 
+  of how many or how few words may appear in that 
 					   line. ::first-line can be attached only to blocklevel 
 					   elements. There is a limited set of properties that can 
 					   apply to a first line. 
@@ -2853,7 +2852,7 @@ space-around &vert; space-evenly &vert; stretch
   section {display: flex; height: 90vh;<br>
     align-content: flex-end;} 
 </pre>
-<b>Note</b>       As of early 2018, there are plans to have this prop-<br>
+<b>Note</b>  As of early 2018, there are plans to have this prop-<br>
   erty apply to many (or all) elements, not just flex<br>
   flex containers, and be given the values start and end to replicate <br>
   replicate flex-start and flex-end behavior for <br>
@@ -2873,9 +2872,12 @@ alignment with respect to the cross axis of the
 flex line they occupy. baseline alignment means the
 items in a line are all placed such that the
 baselines of their first lines of text line up. 
-<h5>Examples</h5>  div.flexy {align-items: flex-start;} 
+<h5>Examples</h5>
+<pre>
+div.flexy {align-items: flex-start;} 
 section.gallery {align-items: baseline;} 
-<b>Note</b>       As of early 2018, there are plans to have this
+</pre>
+<b>Note</b>  As of early 2018, there are plans to have this
 property apply to many (or all) elements and be 
 given the values start and end to replicate 
 flex-start and flex-end behavior for non-flex 
@@ -2889,7 +2891,7 @@ environments.
 <b>Computed value</b>   As declared 
 <b>Applies to</b>    Flex and grid items 
 <h5>Description</h5>  Sets the alignment for a single item with respect 
-       to the cross axis of the flex line it occupies.
+  to the cross axis of the flex line it occupies.
 baseline    
 
 alignment means the baseline of the item's first line of text is
@@ -2903,30 +2905,29 @@ section.gallery h1 {align-self: stretch;}
 <b>Note</b> As of early 2018, there are plans to have this property apply
 to many (or all) elements, and be given the values start and end to
 replicate flex-start and flex-end behavior for non-flex environments.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>all</b>       <b>Inh. N Anim. N</b>
+#### <b>all</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>    inherit &vert; initial &vert; unset 
- <b>Initial value</b>    See individual properties   
- <b>Computed value</b>   As declared 
- <b>Applies to</b>     All elements
- <h5>Description</h5>  Applies the declared value to all properties
-    *except* direction and unicode-bidi, which are      
- exempted for accessibility and historical reasons.  
- This allows an author to, for example, force an     
- element to reset all of its style properties to     
- their default values, thus blocking the inheritance 
- of values for all properties (except the exempted   
- two).       
- <h5>Examples</h5>  &ast;.blendin {all: inherit;}<br>
- &ast;.embedded {all: unset;}   
-
+<b>Values</b>    inherit &vert; initial &vert; unset 
+<b>Initial value</b>    See individual properties   
+<b>Computed value</b>   As declared 
+<b>Applies to</b>     All elements
+<h5>Description</h5>  Applies the declared value to all properties
+    *except* direction and unicode-bidi, which are 
+exempted for accessibility and historical reasons.  
+This allows an author to, for example, force an     
+element to reset all of its style properties to     
+their default values, thus blocking the inheritance 
+of values for all properties (except the exempted   
+two).  
+<h5>Examples</h5>
+<pre>
+&ast;.blendin {all: inherit;}<br>
+&ast;.embedded {all: unset;}   
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>animation</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
 <b>Values</b> &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
 
 *&lt;animation-timing-function&gt;* ‖ *&lt;animation-delay&gt;* ‖
@@ -2956,23 +2957,24 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### animation-delay Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Values</b>*&lt;time&gt;*&#35;
+<b>Initial value</b> 0s
 
-  <b>Values</b>*&lt;time&gt;*&#35;
-  <b>Initial value</b> 0s
+<b>Computed value</b>  As declared
+<b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  <b>Computed value</b>       As declared
-  <b>Applies to</b>    All elements, ::before and ::after pseudoelements
-
-  <h5>Description</h5>   Defines the amount of time that the user agent waits
+<h5>Description</h5>   Defines the amount of time that the user agent waits
     before starting the CSS animation(s). The timer starts
     when the user agent applies the animation CSS. For a
     noninteractive element, this is likely (but not
     guaranteed) to be at the end of page load.
 
-  <h5>Examples</h5>      body {animation-delay: 1s, 2000ms, 4s;}
+<h5>Examples</h5>
+<pre>
+body {animation-delay: 1s, 2000ms, 4s;}
 
 a:hover {animation-delay: 400ms;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### animation-direction Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2993,24 +2995,26 @@ would move it 300 pixels to the left on every other cycle, thus
 returning it to its starting position. Setting that same animation to
 normal would cause the element to move 300 pixels right, then jump back
 to its starting place and move 300 pixels right again, over and over
-until the animation stops (assuming it ever does). <h5>Examples</h5> body
+until the animation stops (assuming it ever does). 
+<h5>Examples</h5>
+<pre>
+body
 {animation-direction:
 
 alternate, normal, normal;} #scanner {animation-direction: normal;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### animation-duration Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Values</b>*&lt;time&gt;*&#35;
 
-  <b>Values</b>*&lt;time&gt;*&#35;
+<b>Initial value</b> 0s
 
-  <b>Initial value</b> 0s
+<b>Computed value</b>  As declared
 
-  <b>Computed value</b>       As declared
+<b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  <b>Applies to</b>    All elements, ::before and ::after pseudoelements
-
-  <h5>Description</h5>   Defines the length of time it should take for each
+<h5>Description</h5>   Defines the length of time it should take for each
     cycle of a CSS animation to run from start to finish.
     Therefore, in animations with only one cycle, it
     defines the total time of the animation. The default
@@ -3018,23 +3022,24 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
     besides moving the element from its start state to its
     end state. Negative values are converted to 0s.
 
-  <h5>Examples</h5>      h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
+<h5>Examples</h5>
+<pre>
+h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
 
 .zip {animation-duration: 90ms;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### animation-iteration-count Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Values</b>&lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
 
-  <b>Values</b>&lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
+<b>Initial value</b> 1
 
-  <b>Initial value</b> 1
+<b>Computed value</b>  As declared
 
-  <b>Computed value</b>       As declared
+<b>Applies to</b>    All elements, ::before and ::after pseudoelements
 
-  <b>Applies to</b>    All elements, ::before and ::after pseudoelements
-
-  <h5>Description</h5>   Defines the number of cycles in the animation(s). The
+<h5>Description</h5>   Defines the number of cycles in the animation(s). The
     default value, 1, means that the animation will run
     exactly once, going from the start state to the end
     state. A fractional value (e.g., 2.75) means the
@@ -3044,19 +3049,20 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
     name implies, infinite means the animation will never
     end. Use with caution.
 
-  <h5>Examples</h5>      body {animation-iteration-count: 2, 1, 7.5875;}
+<h5>Examples</h5>
+<pre>
+body {animation-iteration-count: 2, 1, 7.5875;}
 
 ol.dance {animation-iteration-count: infinite;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>animation-name</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  <b>Values</b> &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;# 
-  <b>Initial value</b>  none 
-  <b>Computed value</b>       As declared 
-  <b>Applies to</b>     All elements, ::before and ::after pseudoelements 
-  <h5>Description</h5>   Defines the declared name(s) of CSS animation(s). Each
+<b>Values</b> &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;# 
+<b>Initial value</b>  none 
+<b>Computed value</b>  As declared 
+<b>Applies to</b>     All elements, ::before and ::after pseudoelements 
+<h5>Description</h5>   Defines the declared name(s) of CSS animation(s). Each
     name refers to a CSS animation keyframe atrule. If no
     animation name is declared or the keyword none is
     supplied, the animation is not run regardless of the
@@ -3066,32 +3072,34 @@ ol.dance {animation-iteration-count: infinite;}
     first animation will run but the second and third will
     not. 
 
-<h5>Examples</h5> html {animation-name: turn, slide, none;}
+<h5>Examples</h5>
+<pre>
+html {animation-name: turn, slide, none;}
 
 h2 {animation-name: flip;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>animation-play-state</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  <b>Values</b>        &lbrack; running &vert; paused &rbrack;# 
-  <b>Initial value</b>  running 
-  <b>Computed value</b>       As declared 
-  <b>Applies to</b>    All elements, ::before and ::after pseudoelements 
-  <h5>Description</h5>    Defines the run state of one or more CSS animations.
+<b>Values</b>   &lbrack; running &vert; paused &rbrack;# 
+<b>Initial value</b>  running 
+<b>Computed value</b>  As declared 
+<b>Applies to</b>    All elements, ::before and ::after pseudoelements 
+<h5>Description</h5>    Defines the run state of one or more CSS animations.
     The default state of running is the most useful in
     static CSS environments, but it can be used to easily
     stop or start animations via DOM scripting or
     interactive CSS (e.g., :hover). 
-  <h5>Examples</h5>      pre {animation-play-state: 
+<h5>Examples</h5>
+<pre>
+pre {animation-play-state: 
 
 running, paused, running;} table {animation-play-state: running;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>animation-timing-function</b>  <b>Inh. N Anim. N</b> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
+<b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
 ease-in-out &vert; step-start &vert; step-end &vert;     
 steps(*&lt;integer&gt;*, start) &vert; steps(*&lt;integer&gt;*,  
 end) &vert; cubic-bezier(*&lt;number&gt;*,   
@@ -3109,19 +3117,20 @@ consistent effects across user agents
 
 ---but, as always, authors are cautioned not to count on that.
 
-<h5>Examples</h5> h1 {animation-timing-function: ease, ease-in,
+<h5>Examples</h5>
+<pre>
+h1 {animation-timing-function: ease, ease-in,
 cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
 linear;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  <b>backface-visibility</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>       visible &vert; hidden
- <b>Initial value</b>       visible  
- <b>Computed value</b>      As declared       
- <b>Applies to</b>   Any transformable element
- <h5>Description</h5>  Defines whether the back side of an element is   
+<b>Values</b>  visible &vert; hidden
+<b>Initial value</b>  visible  
+<b>Computed value</b> As declared  
+<b>Applies to</b>   Any transformable element
+<h5>Description</h5>  Defines whether the back side of an element is   
     visible once the element has been rotated in a   
     simulated 3D space and is "facing away" from the 
     viewer. If the value is hidden, the element will 
@@ -3129,11 +3138,13 @@ linear;}
     such that the front side of the element is once  
     more "facing toward" the viewer. 
 
- <h5>Examples</h5>     div.card {backface-visibility: hidden;}  
-    span.cubeside {backface-visibility: visible;}    
-
+<h5>Examples</h5>
+<pre>
+div.card {backface-visibility: hidden;}  
+span.cubeside {backface-visibility: visible;}    
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### <b>background</b>   <b>Inh. N Anim. P</b>       
+#### <b>background</b>   <b>Inh. N Anim. P</b>  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  <b>Values</b> &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    
@@ -3142,7 +3153,7 @@ linear;}
  <b>Applies to</b>     All elements     
  <b>Animatable</b>     Refer to individual background properties to see 
     which are animatable     
- <h5>Description</h5>    A shorthand way of expressing the various      
+ <h5>Description</h5>    A shorthand way of expressing the various 
     background properties of one or more element     
     backgrounds using a single declaration. As with  
     all shorthands, this property will set all of    
@@ -3169,42 +3180,44 @@ the images are stacked with the first highest and the last lowest.
 This is the exact reverse of how overlapping is handled in CSS
 positioning, and so may seem counterintuitive.
 
-<h5>Examples</h5> body {background: white url(bg41.gif) fixed center
+<h5>Examples</h5>
+<pre>
+body {background: white url(bg41.gif) fixed center
 repeat-x;} p {background:
 
 url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 #555;} pre {background: yellow;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>background-attachment</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>   &lbrack; scroll &vert; fixed &vert; local &rbrack;#       
- <b>Initial value</b>   scroll       
- <b>Computed value</b>  As declared  
- <b>Applies to</b>   All elements 
- <h5>Description</h5>  Defines whether background images scroll along with
+<b>Values</b>   &lbrack; scroll &vert; fixed &vert; local &rbrack;#  
+<b>Initial value</b>   scroll  
+<b>Computed value</b>  As declared  
+<b>Applies to</b>   All elements 
+<h5>Description</h5>  Defines whether background images scroll along with
     the element when the document is scrolled. This 
 property can be used to create "aligned" 
 backgrounds; for more details, see Chapter 9 of 
 *CSS: The Definitive Guide*, 4th Edition. 
 
-<h5>Examples</h5> body {background-attachment: scroll, scroll, fixed;}
+<h5>Examples</h5>
+<pre>
+body {background-attachment: scroll, scroll, fixed;}
 
 div.fixbg {background-attachment: fixed;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>background-blend-mode</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  <b>Values</b>        &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
+<b>Values</b>   &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
     &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
     &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
     saturation &vert; color &vert; luminosity &rbrack;# 
-  <b>Initial value</b>  normal 
-  <b>Computed value</b>       As declared 
-  <b>Applies to</b>    All elements 
-  <h5>Description</h5>   Changes how overlapping background images are
+<b>Initial value</b>  normal 
+<b>Computed value</b>  As declared 
+<b>Applies to</b>    All elements 
+<h5>Description</h5>   Changes how overlapping background images are
 composited against an "empty" backdrop. The "backdrop" here is a
 transparent layer underneath the background color. The default of
 normal imposes simple alpha blending, as CSS has permitted since its
@@ -3215,9 +3228,11 @@ whichever is lighter. darken is the same, except the darker of the two
 pixels will be shown. The results of these are likely to be familiar
 to users of Photoshop or any other graphic-editing tool. Compositing
 of multiple background layers is done back to front. 
- <h5>Examples</h5>  li.shadowed {background-blend-mode: darken;} aside
- {background-blend-mode: color-burn, luminosity, darken;} 
-
+<h5>Examples</h5>
+<pre>
+li.shadowed {background-blend-mode: darken;} aside
+{background-blend-mode: color-burn, luminosity, darken;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### background-clip Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3234,28 +3249,29 @@ goes to the outer edge of the border area. This property allows more
 constrained clipping boxes at the outer edge of the padding area and at
 the content edge itself.
 
-<h5>Examples</h5> body {background-clip: content-box;}
-
+<h5>Examples</h5>
+<pre>
+body {background-clip: content-box;}
 .callout {background-clip: content-box, border-box, padding-box;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **background-color**  **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    *&lt;color&gt;* 
  **Initial value**  transparent 
- **Computed value**   As declared       
+ **Computed value**   As declared  
  **Applies to**    All elements
  **Description**  Defines a solid color for the 
     background of the element. This 
  color fills the box defined by the  
- value of background-clip---by       
+ value of background-clip---by  
  default, the content, padding, and  
  border areas of the element,
  extending to the outer edge of the  
  element's border. Borders that have 
- transparent sections (such as       
- dashed borders) will show the       
+ transparent sections (such as  
+ dashed borders) will show the  
  background color through the
  transparent sections in cases where 
  the background color extends into 
@@ -3289,10 +3305,10 @@ background-position.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>background-origin</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b>     &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;#      
-<b>Initial value</b>      padding-box      
+<b>Values</b>     &lbrack; border-box &vert; padding-box &vert; content-box &rbrack;# 
+<b>Initial value</b> padding-box 
 <b>Computed value</b>    As declared     
-<b>Applies to</b>     All elements       
+<b>Applies to</b>     All elements  
 <h5>Description</h5>  Defines the boundary within the element box against
     which background image positioning is calculated.    
 Historically, this has been equivalent to the
@@ -3307,42 +3323,42 @@ background-clip: content-box; background-position:
 100% 100%;} 
 In this case the image will be placed so that its 
 bottom-right corner aligns with the bottom-right 
-       corner of the outer border edge, but the only parts 
+  corner of the outer border edge, but the only parts 
 of it that will be visible are those that fall 
 within the content area. 
- <h5>Examples</h5>   html, body {background-origin: border-box;} 
-
+<h5>Examples</h5>
+<pre>
+html, body {background-origin: border-box;} 
 h1 {background-origin: content-box, padding-box;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **background-position**       **Inh. N Anim. Y**
+#### **background-position**  **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;position&gt;*&#35;
- **Initial value**    0% 0%  
- **Computed values**   The absolute length offsets, if 
+**Values**    *&lt;position&gt;*&#35;
+**Initial value**    0% 0%  
+**Computed values**   The absolute length offsets, if 
  *&lt;length&gt;* is specified;  
  otherwise, percentage values 
- **Percentages**  Refer to the corresponding point on
+**Percentages**  Refer to the corresponding point on
     both the element and the origin image 
- **Applies to**    Block-level and replaced elements   
- **Description**  Defines the position(s) of one or
+**Applies to**    Block-level and replaced elements   
+**Description**  Defines the position(s) of one or
     more backgrounds' origin images (as
  defined by background-image); this 
  is the point from which any
  background repetition or tiling    
- will occur. Percentage values      
+ will occur. Percentage values 
  define not only a point within the 
 element, but also the same point in
  the origin image itself. That means
- (for example) an image can be      
+ (for example) an image can be 
  centered by declaring its position 
  to be 50% 50%. When percentage or  
  length values are used, the first  
  is always the horizontal position  
  and the second is the vertical     
  position. If only one value is     
- given, it sets the horizontal      
+ given, it sets the horizontal 
  position, while the missing value  
  is assumed to be either center or  
  50%. Negative values are permitted 
@@ -3352,20 +3368,21 @@ element, but also the same point in
  context within which an origin     
  image is placed can be affected by 
  the value of background-origin. 
- <b>Examples</b>  body {background-position: top 
- center;} div#navbar
- {background-position:
- right, 50% 75%, 0 40px;} pre
- {background-position: 10px 50%;} 
-
+<h5>Examples</h5>
+<pre>
+body {background-position: top 
+center;} div#navbar
+{background-position:
+right, 50% 75%, 0 40px;} pre
+{background-position: 10px 50%;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### <b>background-repeat</b>  <b>Inh. N Anim. N</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**  *&lt;repeat-style&gt;*&#35; 
+**Definition** 
 
- **Values**  *&lt;repeat-style&gt;*&#35; 
- **Definition** 
-
-***&lt;repeat-style&gt;*** repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;
+**&lt;repeat-style&gt;*** repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;
 round &vert; no-repeat &rbrack;{1,2}
 
 **Initial value** repeat
@@ -3400,7 +3417,7 @@ repeat-y, round space, repeat;}
 &rbrack;{1,2} &vert; cover &vert; contain &rbrack;# 
  **Initial value**   auto 
  **Computed value**  As declared, but with all lengths made absolute and  
-       any missing auto keywords added      
+  any missing auto keywords added 
  **Applies to**   All elements 
  **Description**  Defines the size of one or more background origin
     images. If two keywords are used (e.g., 50px 25%),   
@@ -3424,22 +3441,24 @@ div.photo {background-size: cover;}
 
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
- **Initial value**    Refer to individual properties      
+ **Initial value**    Refer to individual properties 
  **Computed value**   As declared 
  **Applies to**    All elements    
-       Border width and color; not border style    
- **Animatable**      
+  Border width and color; not border style    
+ **Animatable** 
  **Description**  A shorthand property that defines the width, color,
     and style of an element's border. Note that while 
  none of the values are actually required, omitting  
- a border style will result in no border being       
+ a border style will result in no border being  
  applied because the default border style is none.   
 
- <h5>Examples</h5>  h1 {border: 2px dashed olive;} a:link {border: blue 
- solid 1px;} 
+<h5>Examples</h5>
+<pre>
+h1 {border: 2px dashed olive;} a:link {border: blue 
+solid 1px;} 
      
- p.warning {border: double 5px red;} 
-
+p.warning {border: double 5px red;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-bottom Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3461,10 +3480,12 @@ div.photo {background-size: cover;}
 with border, omission of a border style will result in no border
 appearing.
 
-<h5>Examples</h5> ul {border-bottom: 0.5in groove green;}
+<h5>Examples</h5>
+<pre>
+ul {border-bottom: 0.5in groove green;}
 
 a:active {border-bottom: purple 2px dashed;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-bottom-color Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3479,62 +3500,59 @@ a:active {border-bottom: purple 2px dashed;}
 border of an element. The border's style must be something other than
 none or hidden for any visible border to appear.
 
-<h5>Examples</h5> ul {border-bottom-color: green;}
+<h5>Examples</h5>
+<pre>
+ul {border-bottom-color: green;}
 
 a:active {border-bottom-color: purple;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-bottom-left-radius Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 
-  **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
+**Initial value** 0
 
-  **Initial value** 0
-
-  **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
+**ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
   value**   made absolute
 
-  **Percentages**   Calculated with respect to the relevant dimension of
+**Percentages**   Calculated with respect to the relevant dimension of
     the border box
 
-  **Applies to**    All elements, except internal table elements
+**Applies to**    All elements, except internal table elements
 
-  **Description**   Defines the rounding radius for the bottom-left corner
+**Description**   Defines the rounding radius for the bottom-left corner
     of an element's border. If two values are supplied,
     the first is the horizontal radius and the second is
     the vertical radius. See border-radius for a
     description of how the values create the rounding
     shape.
 
-  <h5>Examples</h5>
+<h5>Examples</h5>
 <pre>
 h1 {border-bottom-left-radius: 10%;}
 h2 {border-bottom-left-radius: 1em 10px;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-bottom-right-radius Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 
-  **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
+**Initial value** 0
 
-  **Initial value** 0
-
-  **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
+**ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
   value**   made absolute
 
-  **Percentages**   Calculated with respect to the relevant dimension of
+**Percentages**   Calculated with respect to the relevant dimension of
     the border box
 
-  **Applies to**    All elements, except internal table elements
+**Applies to**    All elements, except internal table elements
 
-  **Description**   Defines the rounding radius for the bottom-right
+**Description**   Defines the rounding radius for the bottom-right
     corner of an element's border. If two values are
     supplied, the first is the horizontal radius and the
-    sec‐
-
-ond is the vertical radius. See border-radius for a description of how
-the values create the rounding shape.
+    second is the vertical radius. See border-radius for a description of how
+	the values create the rounding shape.
 
 <h5>Examples</h5>
 <pre>
@@ -3544,7 +3562,6 @@ h2 {border-bottom-right-radius: 1em 10px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-bottom-style Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
 
@@ -3560,10 +3577,12 @@ h2 {border-bottom-right-radius: 1em 10px;}
 ment. The value must be something other than none or hidden for any
 border to appear.
 
-<h5>Examples</h5> ul {border-bottom-style: groove;}
+<h5>Examples</h5>
+<pre>
+ul {border-bottom-style: groove;}
 
 a:active {border-bottom-style: dashed;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-bottom-width Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3581,33 +3600,34 @@ which will take effect only if the border's style is something other
 than none or hidden. If the border style is none, the border width is
 effectively reset to 0. Negative length values are not permitted.
 
-<h5>Examples</h5> ul {border-bottom-width: 0.5in;}
+<h5>Examples</h5>
+<pre>
+ul {border-bottom-width: 0.5in;}
 
 a:active {border-bottom-width: 2px;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-collapse Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**collapse &vert; separate &vert; inherit
+**Initial value** separate
 
-  **Values**collapse &vert; separate &vert; inherit
-  **Initial value** separate
+**ComputedAs declared value**   
 
-  **ComputedAs declared
-  value**   
+**Applies to**    Elements with the display value table or tableinline
 
-  **Applies to**    Elements with the display value table or tableinline
-
-  **Description**   Defines the layout model used in laying out the
+**Description**   Defines the layout model used in laying out the
     borders in a table---i.e., those applied to cells,
     rows, and so forth. Although the property applies only
     to tables, it is inherited by all the elements within
     the table and actually used by them.
 
-  <h5>Example</h5>       table {border-collapse: separate; border-spacing: 3px
-    5px;}
+<h5>Example</h5>
+<pre>
+table {border-collapse: separate; border-spacing: 3px 5px;}
+</pre>
 
-  **Note**  In CSS2, the default was collapse.
-
+**Note**  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-color Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3633,38 +3653,38 @@ a:visited {border-color: maroon;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     *&lt;border-image-source&gt;* ‖ *&lt;border-image-slice&gt;* 
-        &lbrack; / 
-             
-        *&lt;border-image-width&gt;* &vert; /
-        *&lt;border-image-width&gt;*? /  
-             
-        *&lt;border-image-outset&gt;* &rbrack;? ‖      
-        *&lt;border-image-repeat&gt;*    
- **Initial      See individual properties    
- value**             
+   &lbrack; / 
+   
+   *&lt;border-image-width&gt;* &vert; /
+   *&lt;border-image-width&gt;*? /  
+   
+   *&lt;border-image-outset&gt;* &rbrack;? ‖ 
+   *&lt;border-image-repeat&gt;*    
+ **Initial See individual properties    
+ value**   
  **Computed     See individual properties    
- value**             
- **Applies      See individual properties    
- to**        
- *      Refer to individual border-image properties to see   
+ value**   
+ **Applies See individual properties    
+ to**   
+ * Refer to individual border-image properties to see   
  *Animatable**  which are animatable 
  **     A shorthand property that defines the source,
  Description**  slicing pattern, border width, degree of extension,  
-        and repetition of an image-based border. The syntax  
-        is somewhat unusual compared to the rest of CSS, so  
-        take extra time with it. For example, three of the   
-        five values possible are slash-separated and must be 
-        listed in a specific order.  
-             
-        Note that it is effectively impossible to take a     
-        simple image (say, a star) and repeat it around the  
-        edges of an element. To create that effect, you must 
-        create a single image that contains nine copies of   
-        the image you wish to repeat in a 3×3 grid. It may   
-        also be necessary to set border-width (*not* 
-        border-imagewidth) to be large enough to show the    
-        image, depending on the value of     
-        border-image-outset. 
+   and repetition of an image-based border. The syntax  
+   is somewhat unusual compared to the rest of CSS, so  
+   take extra time with it. For example, three of the   
+   five values possible are slash-separated and must be 
+   listed in a specific order.  
+   
+   Note that it is effectively impossible to take a     
+   simple image (say, a star) and repeat it around the  
+   edges of an element. To create that effect, you must 
+   create a single image that contains nine copies of   
+   the image you wish to repeat in a 3×3 grid. It may   
+   also be necessary to set border-width (*not* 
+   border-imagewidth) to be large enough to show the    
+   image, depending on the value of     
+   border-image-outset. 
  <h5>Examples</h5> 
 <pre>
 div.starry {border-image:    
@@ -3704,119 +3724,123 @@ div#pow {border-image-outset: 10 17 13 5;}
 #### border-image-repeat Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**   &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}       
- **Initial    stretch      
- value**           
- **Computed   Two keywords, one for each axis      
- value**           
+ **Values**   &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}  
+ **Initial    stretch 
+ value** 
+ **Computed   Two keywords, one for each axis 
+ value** 
  **Applies    All elements, except internal table elements when    
  to** border-collapse is collapse  
  **   Defines the repetition pattern (or lack thereof) of  
  Description**  the sides of a border image. stretch causes a single 
-        copy of the image to be stretched to fit the border  
-        segment (top, right, bottom, or left). repeat
-        "tiles" the image in a manner familiar from  
-        background images, though border images are only     
-        ever tiled   
+   copy of the image to be stretched to fit the border  
+   segment (top, right, bottom, or left). repeat
+   "tiles" the image in a manner familiar from  
+   background images, though border images are only     
+   ever tiled   
 
 along one axis. round "tiles" the border image as many times as it
 will fit without clipping, then (if necessary) scales the entire set
 of tiled images to exactly fit the border segment.
 
-<h5>Examples</h5> div.starry {border-image-repeat: repeat;}
+<h5>Examples</h5>
+<pre>
+div.starry {border-image-repeat: repeat;}
 
 aside {border-image-repeat: stretch round;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-image-slice Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**     &lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill? 
- **Initial      100% 
- value**             
- **Computed     Four values, each a number or percentage, and
- value**        optionally the fill keyword  
- **     Refer to the size of the border image
- Percentages**       
- **Applies      All elements, except internal table elements when    
- to**   border-collapse is collapse  
- *      *&lt;number&gt;* and *&lt;percentage&gt;* values only
- *Animatable**       
+**Values**     &lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill? 
+**Initial 100% 
+**value**   
+**Computed     Four values, each a number or percentage, and
+**value**   optionally the fill keyword  
+     Refer to the size of the border image
+**Percentages**  
+**Applies All elements, except internal table elements when    
+ to   border-collapse is collapse  
+ * *&lt;number&gt;* and *&lt;percentage&gt;* values only
+ *Animatable**  
  **     Defines "slice distances," which are offsets from    
  Description**  the top, right, bottom, and left edges of the border 
-        image. Taken together, they divide the image into    
-        nine regions, which correspond to the eight segments 
-        of the element's border (four corners and four       
-        sides) and the element's background area.    
-             
-        In cases where two opposite regions combine to       
-        exceed the total of the dimension they share, both   
-        are made completely transparent. For example, if the 
-        top slice offset value is 10 and the bottom slice    
-        offset value is 20, but the source image is only 25  
-        pixels tall, the two exceed the height of the image. 
-        Thus, both the top and bottom segments of the border 
-        will be entirely transparent. The same holds for     
-        right and left slices and width. Corners are never   
-        forcibly made transparent, even in cases where their 
-        slices may overlap in the source image.      
+   image. Taken together, they divide the image into    
+   nine regions, which correspond to the eight segments 
+   of the element's border (four corners and four  
+   sides) and the element's background area.    
+   
+   In cases where two opposite regions combine to  
+   exceed the total of the dimension they share, both   
+   are made completely transparent. For example, if the 
+   top slice offset value is 10 and the bottom slice    
+   offset value is 20, but the source image is only 25  
+   pixels tall, the two exceed the height of the image. 
+   Thus, both the top and bottom segments of the border 
+   will be entirely transparent. The same holds for     
+   right and left slices and width. Corners are never   
+   forcibly made transparent, even in cases where their 
+   slices may overlap in the source image. 
 
-<h5>Examples</h5> div.starry {border-image-slice: 5px;}
+<h5>Examples</h5>
+<pre>
+div.starry {border-image-slice: 5px;}
 
 aside {border-image-slice: 100 50 150;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-image-source Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**none &vert; *&lt;image&gt;*
+**Values**none &vert; *&lt;image&gt;*
   **Initial value** none
 
-  **Computednone, or the image with its URI made absolute
+**Computednone, or the image with its URI made absolute
   value**   
 
-  **Applies to**    All elements, except internal table elements when
+**Applies to**    All elements, except internal table elements when
     border-collapse is collapse
 
-  **Description**   Supplies the location of the image to be used as an
+**Description**   Supplies the location of the image to be used as an
     element's border image.
 
-  <h5>Examples</h5>      div.starry {border-image-source:
+<h5>Examples</h5>
+<pre>
+div.starry {border-image-source:
 
 url(stargrid.png);}
 
 aside {border-image-source: url(asides.png);}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-image-width Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  
-        &vert; auto &rbrack;{1,4}      
+   &vert; auto &rbrack;{1,4} 
  **Initial    1    
- value**           
+ value**      
  **Computed   Four values, each a percentage, a number, a  
- value**      *&lt;length&gt;* made absolute, or the auto keyword      
+ value** *&lt;length&gt;* made absolute, or the auto keyword 
  **   Relative to the width/height of the entire border    
  Percentages**  image area; that is, the outer edges of the border   
-        box  
+   box  
  **Applies    All elements, except table elements when     
  to** bordercollapse is collapse   
  **   Defines an image width for each of the four sides of 
  Description**  an image border. Border image slices that have a     
-        different width than the border image width value    
-        are scaled to match it, which may impact how they    
-        are repeated. For example, if the right edge of an   
-        image border is 10 pixels wide, but  
-        border-image-width: 3px has been declared, the       
-        border images along the right side are scaled to be  
-        three pixels wide.   
-             
-        Note that border-image-width is different from       
-        border-width: a border image's width can be  
-        different than the width of the border area. In      
-        cases where the image is wider or taller than the    
-        border area, it      
+   different width than the border image width value    
+   are scaled to match it, which may impact how they    
+   are repeated. For example, if the right edge of an   
+   image border is 10 pixels wide, but  
+   border-image-width: 3px has been declared, the  
+   border images along the right side are scaled to be  
+   three pixels wide.   
+   
+   Note that border-image-width is different from  
+   border-width: a border image's width can be  
+   different than the width of the border area. In 
+   cases where the image is wider or taller than the    
+   border area, it 
 
 will be clipped by default (but border-imageoutset may prevent this).
 If it is narrower or shorter than the border area, it will not be
@@ -3827,7 +3851,6 @@ scaled up. Negative values are not permitted.
 aside {border-image-width: 8 3 13;}
 div#pow{border-image-width: 25px 35;}
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### *border-left**  **Inh. N Anim. P**  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3835,13 +3858,13 @@ div#pow{border-image-width: 25px 35;}
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
  **Initial     See individual properties   
- value**           
- **Computed    See individual properties (border-width, etc.)      
- value**           
+ value**      
+ **Computed    See individual properties (border-width, etc.) 
+ value**      
  **Applies     All elements
- to**      
-       Border width and color; not border style    
- **Animatable**      
+ to** 
+  Border width and color; not border style    
+ **Animatable** 
  *     A shorthand property that defines the width, color, 
  *Description**  and style of the left border of an element. As with 
  border, omission of a border style will result in   
@@ -3854,48 +3877,44 @@ double black 4px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-left-color Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**   *&lt;color&gt;*  
- **Initial    currentColor 
- value**           
- **Computed   A color      
- value**           
- **Applies    All elements 
- to**      
- **   Defines the color for the visible portions of the    
- Description**  left border of an element. The border's style must   
-        be something other than none or hidden for any       
-        visible border to appear.    
-           
-  <h5>Examples</h5>       
+**Values**   *&lt;color&gt;*  
+**Initial    currentColor 
+**value**      
+**Computed   A color 
+**value**
+**Applies to**   All elements 
+   Defines the color for the visible portions of the    
+**Description**  left border of an element. The border's style must   
+   be something other than none or hidden for any  
+   visible border to appear.    
+      
+<h5>Examples</h5>  
 <pre>
-p         
- {borde            
- r-left-color:       
- gray;} pre        
- {borde            
- r-left-color:       
- black;}           
+p    
+ {borde  
+ r-left-color:  
+ gray;} pre   
+ {borde  
+ r-left-color:  
+ black;}      
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-left-style Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
+**Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
-  **Initial value** none
+**Initial value** none
 
-  **ComputedAs declared
-  value**   
+**ComputedAs declared value**
 
-  **Applies to**    All elements
+**Applies to**    All elements
 
-  **Description**   Defines the style for the left border of an element.
+**Description**   Defines the style for the left border of an element.
     The value must be something other than none or hidden
     for any border to appear.
 
-  <h5>Examples</h5>
+<h5>Examples</h5>
 <pre>
 p {border-left-style: solid;}
 pre {border-left-style: double;}
@@ -3903,22 +3922,21 @@ pre {border-left-style: double;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-left-width Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
+**Initial value** medium
 
-  **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
-  **Initial value** medium
+**ComputedAn value** absolute length, or 0 if the style of the border is
+    none or hidden; otherwise, as declared
 
-  **ComputedAn absolute length, or 0 if the style of the border is
-  value**   none or hidden; otherwise, as declared
+**Applies to**    All elements
 
-  **Applies to**    All elements
-
-  **Description**   Defines the width for the left border of an element,
+**Description**   Defines the width for the left border of an element,
     which will take effect only if the border's style is
     something other than none or hidden. If the border
     style is none, the border width is effectively reset
     to 0. Negative length values are not permitted.
 
-  <h5>Examples</h5> 
+<h5>Examples</h5> 
 <pre>
 p {border-left-width: 3em;}
 pre {border-left-width: 4px;}
@@ -3935,40 +3953,40 @@ pre {border-left-width: 4px;}
 **Initial value** 0
 
  **Computed     Four values, each a *&lt;percentage&gt;* or *&lt;length&gt;* 
- value**        made absolute
+ value**   made absolute
  **     Calculated with respect to the relevant dimension of 
- Percentages**  the border box       
- **Applies      All elements, except internal table elements 
- to**        
- **     A shorthand property that defines the rounding       
+ Percentages**  the border box  
+ **Applies All elements, except internal table elements 
+ to**   
+ **     A shorthand property that defines the rounding  
  Description**  radius for the bottom-right corner of an element's   
-        border. The actual corners will be the height and    
-        width declared. Thus, given: 
-             
-        .callout {border-radius: 10px;}      
-             
-        each corner of an element with a class of callout    
-        will have a rounding that is 10 pixels across, as    
-        measured from the beginning of the rounding to the   
-        outer side edge of the element, and is similarly 10  
-        pixels high. This can be visualized as if the
-        element had 10-pixel-radius (20-pixel-diameter)      
-        circles drawn in its corners, and then the border    
-        were bent along the circles' edges.  
-             
-        Using fewer than four values causes the supplied     
-        values to be repeated in the familiar pattern (see   
-        margin, padding, etc.), but with a slight offset.    
-        Rather than being Top-Right-Bottom-Left (TRBL, or    
-        "trouble"), the pattern is   
-        TopLeft-TopRightBottomRight-BottomLeft (TLTRBRBL, or 
-        "tilter burble"). Otherwise, the repeat pattern is   
-        the same.    
-             
-        Percentages, when used, are calculated with respect  
-        to the size of the element's border box (the box     
-        defined by the outer edges of the element's border   
-        area) dimension on the related axis. 
+   border. The actual corners will be the height and    
+   width declared. Thus, given: 
+   
+   .callout {border-radius: 10px;} 
+   
+   each corner of an element with a class of callout    
+   will have a rounding that is 10 pixels across, as    
+   measured from the beginning of the rounding to the   
+   outer side edge of the element, and is similarly 10  
+   pixels high. This can be visualized as if the
+   element had 10-pixel-radius (20-pixel-diameter) 
+   circles drawn in its corners, and then the border    
+   were bent along the circles' edges.  
+   
+   Using fewer than four values causes the supplied     
+   values to be repeated in the familiar pattern (see   
+   margin, padding, etc.), but with a slight offset.    
+   Rather than being Top-Right-Bottom-Left (TRBL, or    
+   "trouble"), the pattern is   
+   TopLeft-TopRightBottomRight-BottomLeft (TLTRBRBL, or 
+   "tilter burble"). Otherwise, the repeat pattern is   
+   the same.    
+   
+   Percentages, when used, are calculated with respect  
+   to the size of the element's border box (the box     
+   defined by the outer edges of the element's border   
+   area) dimension on the related axis. 
 <h5>Examples</h5>
 <pre>
 a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
@@ -4028,13 +4046,13 @@ h3 {border-right-color: cyan;}
 #### border-right-style Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;       
-        double &vert; groove &vert; ridge &vert; inset &vert; outset 
+ **Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
+   double &vert; groove &vert; ridge &vert; inset &vert; outset 
  **Initial    none 
- value**           
- **Computed          
- value** As          
- declared            
+ value**      
+ **Computed     
+ value** As     
+ declared  
 
 **Applies to** All elements
 
@@ -4042,10 +4060,12 @@ h3 {border-right-color: cyan;}
 The value must be something other than none or hidden for any border to
 appear.
 
-<h5>Examples</h5> img {border-right-style: dotted;}
+<h5>Examples</h5>
+<pre>
+img {border-right-style: dotted;}
 
 h3 {border-right-style: inset;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-right-width Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4065,32 +4085,37 @@ something other than none or hidden. If the border style is none, the
 border width is effectively reset to 0. Negative length values are not
 permitted.
 
-<h5>Examples</h5> img {border-right-width: 30px;}
+<h5>Examples</h5>
+<pre>
+img {border-right-width: 30px;}
 
 h3 {border-right-width: 1em;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### border-spacing Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   *&lt;length&gt;* *&lt;length&gt;*?   
  **Initial    0    
- value**           
+ value**      
  **Computed   Two absolute lengths 
- value**           
+ value**      
  **Applies    Elements with the display value table or tableinline 
- to**      
+ to** 
  **   Defines the distance between table cell borders in   
  Description**  the separated borders table layout model. The first  
-        of the two length values is the horizontal   
-        separation and the second is the vertical    
-        separation. Although the property applies only to    
-        tables, it is inherited by all of the elements       
-        within the table.    
+   of the two length values is the horizontal   
+   separation and the second is the vertical    
+   separation. Although the property applies only to    
+   tables, it is inherited by all of the elements  
+   within the table.    
 
-<h5>Examples</h5> table {border-spacing: 0;}
+<h5>Examples</h5>
+<pre>
+table {border-spacing: 0;}
 
 table {border-spacing: 3px 5px;}
+</pre>
 
 **Note** This property is ignored unless the value of bordercollapse is
 separate.
@@ -4103,20 +4128,20 @@ separate.
  double &vert; groove &vert; ridge &vert; inset &vert; outset
  &rbrack;{1,4}     
  **Initial     See individual properties   
- value**           
+ value**      
  **Computed    See individual properties (border-top-style, etc.)  
- value**           
+ value**      
  **Applies     All elements
- to**      
+ to** 
  *     A shorthand property used to define the styles for  
  *Description**  the overall border of an element or for each side   
- individually. The value of any border must be       
+ individually. The value of any border must be  
  something other than none or hidden for the border  
  to appear. Note that setting border-style to none   
  (its default value) will result in no border at     
  all. In such a case, any value of border-width will 
  be ignored and the width of the border will be set  
- to 0. Any unrecognized value from the list of       
+ to 0. Any unrecognized value from the list of  
  values should be reinterpreted as solid.    
  <h5>Examples</h5>
 <pre>
@@ -4130,13 +4155,13 @@ img {border-style:inset;}
  **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
  **Initial     See individual properties   
- value**           
- **Computed    See individual properties (border-width, etc.)      
- value**           
+ value**      
+ **Computed    See individual properties (border-width, etc.) 
+ value**      
  **Applies     All elements
- to**      
-       Border width and color; not border style    
- **Animatable**      
+ to** 
+  Border width and color; not border style    
+ **Animatable** 
  *     A shorthand property that defines the width, color, 
  *Description**  and style of the top border of an element. As with  
 
@@ -4147,7 +4172,10 @@ border, omission of a border style will result in no border appearing.
 ul {border-top: 0.5in solid black;}
 h1 {border-top: dashed 1px gray;}
 </pre>
-### border-top-color Inh. N Anim. Y
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+#### border-top-color Inh. N Anim. Y
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 **Values** *&lt;color&gt;*
 
@@ -4177,15 +4205,15 @@ h1 {border-top-color: gray;}
   **Percentages**   Calculated with respect to the relevant dimension of
     the border box
 
-  **Applies to**    All elements, except internal table elements
+**Applies to**    All elements, except internal table elements
 
-  **Description**   Defines the rounding radius for the top-left corner of
+**Description**   Defines the rounding radius for the top-left corner of
     an element's border. If two values are supplied, the
     first is the horizontal radius and the second is the
     vertical radius. See border-radius for a description
     of how the values create the rounding shape.
 
-  <h5>Examples</h5>
+<h5>Examples</h5>
 <pre>
 h1 {border-top-left-radius: 10%;}
 h2 {border-top-left-radius: 1em 10px;}
@@ -4268,17 +4296,17 @@ h1 {border-top-width: 1px;}
 
  **Values**    &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  
  **Initial     See individual properties   
- value**           
+ value**      
  **Computed    See individual properties (border-top-style, etc.)  
- value**           
+ value**      
  **Applies     All elements
- to**      
+ to** 
  *     A shorthand property that defines the width for the 
- *Description**  overall border of an element or for each side       
- individually. The width will take effect for a      
+ *Description**  overall border of an element or for each side  
+ individually. The width will take effect for a 
  given border only if the border's style is  
  something other than none or hidden. If the border  
- style is none, the border width is effectively      
+ style is none, the border width is effectively 
  reset to 0. Negative length values are not  
  permitted.  
  <h5>Examples</h5>  h1 {border-width: 2ex;}     
@@ -4287,16 +4315,16 @@ h1 {border-top-width: 1px;}
  **bottom**    **Inh. N Anim. P**  
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
  **Initial     auto
- value**           
+ value**      
  **Computed    For static elements, auto; for length values, the   
- value**       corresponding absolute length; for percentage       
+ value**  corresponding absolute length; for percentage  
  values, the specified value; otherwise, auto
- *           
- *Percentages**      
- Refer to the        
- height of the       
- containing          
- block       
+ *      
+ *Percentages** 
+ Refer to the   
+ height of the  
+ containing     
+ block  
 
 **Applies to** Positioned elements
 
@@ -4354,12 +4382,12 @@ span {box-decoration-break: clone;} a
 **Values**    none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&    
 *&lt;color&gt;*?&rbrack;#     
 **Initial     none
-value**           
-**Computed    *&lt;length&gt;* values as absolute length values;      
-value**       *&lt;color&gt;* values as computed internally;  
-otherwise, as declared      
+value**      
+**Computed    *&lt;length&gt;* values as absolute length values; 
+value**  *&lt;color&gt;* values as computed internally;  
+otherwise, as declared 
 **Applies     All elements
-to**      
+to** 
 *     Defines one or more shadows that are derived from   
 Description**  the shape of the element box. Either outset 
 ("drop") shadows or inset shadows can be defined,   
@@ -4379,7 +4407,7 @@ Note that all shadows are clipped by the element's
 border edge. Thus, an outset shadow is only drawn   
 outside the border edge. A semitransparent or fully 
 transparent element background will *not* reveal an 
-outset shadow "behind" the element. Similarly,      
+outset shadow "behind" the element. Similarly, 
 inset shadows are only visible inside the border    
 edge and are never drawn beyond it. 
 <h5>Examples</h5>
@@ -4439,13 +4467,13 @@ element placed just before (or after) the table.
 dropped due to a lack of widespread support.
 
  **clear**     **Inh. N Anim. N**  
- **Values**    left &vert; right &vert; both &vert; none       
+ **Values**    left &vert; right &vert; both &vert; none  
  **Initial     none
- value**           
+ value**      
  **Computed    As declared 
- value**           
+ value**      
  **Applies     Block-level elements
- to**      
+ to** 
 
  *     Defines to which side (or sides) of an element no   
  *Description**  floating element may be placed. If normal layout of 
@@ -4457,14 +4485,14 @@ dropped due to a lack of widespread support.
  margin of the cleared element. In CSS2.1, clearance 
  space is added above the element's top margin, but  
  the margin itself is not altered. In either case,   
- the end result is that the element's top outer      
+ the end result is that the element's top outer 
  border edge is just below the bottom outer margin   
  edge of a floated element on the declared side.     
  <h5>Examples</h5>  h1 {clear: both;} p + h3 {clear: right;}    
-       **Inh. N Anim. P**  
-  **clip-path**      
+  **Inh. N Anim. P**  
+  **clip-path** 
 
-  **Values**       none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert;
+  **Values**  none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert;
    ellipse() &vert; polygon() &rbrack; ‖ &lbrack; border-box &vert;
    padding-box &vert; content-box &vert; margin-box &vert; fill-box
    &vert; stroke-box &vert; view-box &rbrack; &rbrack;
@@ -4472,7 +4500,7 @@ dropped due to a lack of widespread support.
   **Initialnone
   value**  
 
-  **Computed       As declared
+  **Computed  As declared
   value**  
 
   **Applies to**   All elements (in SVG, applies to all graphics elements
@@ -4499,9 +4527,9 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
  **Values**    nonzero &vert; evenodd  
  **Initial     nonzero     
- value**           
+ value**      
  **Computed    As declared 
- value**           
+ value**      
  **Applies     All SVG graphics elements (circle, ellipse, image,  
  to**  line, path, polygon, polyline, rect, text, and use) 
  *if and only if* they are children of a clipPath    
@@ -4512,7 +4540,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
  be filled. evenodd can result in portions of the    
  shape's interior being fully transparent.   
  <h5>Examples</h5>  span.fullshape {clip-rule: nonzero;} span.knockouts 
- {clip-rule: evenodd;}       
+ {clip-rule: evenodd;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **color**     **Inh. Y Anim. Y**
@@ -4520,11 +4548,11 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 
  **Values**    *&lt;color&gt;* 
  **Initial     User agent--specific
- value**           
+ value**      
  **Computed    As declared 
- value**           
+ value**      
  **Applies     All elements
- to**      
+ to** 
  *     Defines the foreground color of an element, which   
  *Description**  in HTML rendering means the text of an element;     
  raster images are not affected by color. This is    
@@ -4553,16 +4581,16 @@ pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
 
  **Values**    normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;   
  *&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;  
- open-quote &vert; close-quote &vert; no-open-quote &vert;       
+ open-quote &vert; close-quote &vert; no-open-quote &vert;  
  no-close-quote &rbrack;+  
- **Initial     normal      
- value**           
+ **Initial     normal 
+ value**      
  **Computed    For *&lt;uri&gt;* values, an absolute URI; for  
- value**       attribute references, the resulting string; 
- otherwise, as declared      
+ value**  attribute references, the resulting string; 
+ otherwise, as declared 
  **Applies     ::before and ::after pseudo-elements
- to**      
- *     Defines the generated content placed before or      
+ to** 
+ *     Defines the generated content placed before or 
  *Description**  after an element. By default, this is likely to be  
  inline content, but the type of box the content     
  creates can be defined using the property display.  
@@ -4595,18 +4623,18 @@ decremented) by any value, positive or negative or 0. If no
 #### counter-reset Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none      
- **Initial**     User agent--dependent       
- **value**           
+ **Values**    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
+ **Initial**     User agent--dependent  
+ **value**      
 +----------------+-----------------------------------------------------+
  **Computed    As declared 
- **value**           
+ **value**      
  **Applies**     All elements
- **to**      
-      With this property, counters can be reset (or set   
- **Description**  for the first time) to any value, positive or       
- negative. If no *&lt;integer&gt;* is supplied, it       
- defaults to 0.      
+ **to** 
+ With this property, counters can be reset (or set   
+ **Description**  for the first time) to any value, positive or  
+ negative. If no *&lt;integer&gt;* is supplied, it  
+ defaults to 0. 
  <h5>Examples</h5>  h1 {counter-reset: section;} h2 {counter-reset:     
  subsec 1;}
 
@@ -4614,19 +4642,19 @@ decremented) by any value, positive or negative or 0. If no
 #### **cursor**    **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**      &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
+**Values** &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
  &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help  
  &vert; pointer &vert; progress &vert; wait &vert; cell &vert; crosshair 
  &vert; text &vert; vertical-text &vert; alias &vert; copy &vert; move   
  &vert; no-drop &vert; not-allowed &vert; e-resize &vert; n-resize   
  &vert; ne-resize &vert; nw-resize &vert; s-resize &vert; se-resize  
  &vert; sw-resize &vert; w-resize &vert; ew-resize &vert; ns-resize  
- &vert; nesw-resize &vert; nwse-resize &vert; col-resize &vert;      
+ &vert; nesw-resize &vert; nwse-resize &vert; col-resize &vert; 
  row-resize &vert; allscroll &rbrack;  
-**Initial**       auto
+**Initial**  auto
 **value**     
-**Computed**      For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*
-**value** resolves to a       
+**Computed** For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*
+**value** resolves to a  
 
 supported file type, a single absolute URI with optional *x*,*y*
 coordinates; otherwise, as declared **Applies to** All elements
@@ -4663,12 +4691,12 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 
  **Values**    ltr &vert; rtl  
  **Initial**     ltr 
- **value**           
+ **value**      
  **Computed    As declared 
- **value**           
+ **value**      
  **Applies**     All elements
- **to**      
-      Defines the base writing direction of blocks and    
+ **to** 
+ Defines the base writing direction of blocks and    
  **Description**  the direction of embeddings and overrides for the   
  Unicode Bidirectional Algorithm (sometimes called   
 
@@ -4715,7 +4743,7 @@ table-
      tablecolumn-group &vert; table-column &vert; table-caption &vert;
      ruby-base &vert; ruby-text &vert; ruby-base-container &vert;
      ruby-text-container
-  ***&lt;display-box&gt;***      contents &vert; none
+  ***&lt;display-box&gt;*** contents &vert; none
 
   ***&lt;display-legacy&gt;***   inline-block &vert; inline-list-item &vert; inline-table &vert;
      inline-flex &vert; inline-grid
@@ -4753,48 +4781,48 @@ tr {display: table-row;}
 
 **Values**    show &vert; hide
 **Initial**     show
-**value**           
+**value**      
 **Computed**    As declared 
-**value**           
+**value**      
 **Applies**     Elements with the display value table-cell  
-**to**      
-      Defines the presentation of table cells that
+**to** 
+ Defines the presentation of table cells that
 **Description**  contain no content. If shown, the cell's borders    
 and background are drawn. This property is only     
-honored if border-collapse is set to separate;      
+honored if border-collapse is set to separate; 
 otherwise, it is ignored.   
 <h5>Example</h5>
 <pre>
 th, td {empty-cells: show;} 
 </pre>
 
-<h5>Note</h5>      empty-cells has no effect unless the value of border-collapse is separate.
+<h5>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **filter**    **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  
-dropshadow() &vert; grayscale() &vert; hue-rotate() &vert;      
+dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; 
 invert() &vert; opacity() &vert; sepia() &vert; saturate() &vert;   
 url() &rbrack;#   
 **Initial**     none
-**value**           
+**value**      
 **Computed**    As declared 
-**value**           
-**Applies**     All elements (in SVG, applies to all graphics       
+**value**      
+**Applies**     All elements (in SVG, applies to all graphics  
 **to**  elements and all container elements except the defs 
 element)    
 Applies a visual filter to the element, resulting   
 **Description**  in an alteration of its final appearance. url()     
-values point to filter elements in SVG files,       
-either externally or embedded within the HTML       
-document. SVG filters can be quite complex and      
+values point to filter elements in SVG files,  
+either externally or embedded within the HTML  
+document. SVG filters can be quite complex and 
 powerful.   
 <h5>Examples</h5>
 <pre>
 img.oldschool {filter: sepia(0.9);} h2.glowshadow   
 {filter:    
 drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em     
-0.75em 30px gray);} div.logo {filter:       
+0.75em 30px gray);} div.logo {filter:  
 url(/assets/filters.svg#spotlight);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4821,64 +4849,64 @@ url(/assets/filters.svg#spotlight);}
     the proportion and types of flexibility permitted
 
 <h5>Examples</h5>   for a flex item. The minimum valid value is a flex   
-        basis on its own, in which case the growth and       
+   basis on its own, in which case the growth and  
 **Note** shrink factors are set to their defaults of 0 and 1, 
 **flex-basis**   respectively. Including the growth and shrink
-        factors is optional, but if one is included, the     
-        other *must* also be present.
-             
-        /&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
-             
-        nav ul li {flex: 1 0 auto;}  
-             
-        /&ast; sets grow at 0, shrink at 1, basis at 50% &ast;/    
-             
-        ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
-        /&ast; INVALID &ast;/      
-             
-        It is *strongly* recommended that authors use this   
-        property instead of the separate properties it       
-        encompasses. 
-             
+   factors is optional, but if one is included, the     
+   other *must* also be present.
+   
+   /&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
+   
+   nav ul li {flex: 1 0 auto;}  
+   
+   /&ast; sets grow at 0, shrink at 1, basis at 50% &ast;/    
+   
+   ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
+   /&ast; INVALID &ast;/ 
+   
+   It is *strongly* recommended that authors use this   
+   property instead of the separate properties it  
+   encompasses. 
+   
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **flex-basis**  **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
-        auto &rbrack;      
+   auto &rbrack; 
  **Initial value**     auto 
  **Computed value**    As declared, with length values made absolute
  **Percentages**     Relative to the flex container's inner main axis size    
  **Applies to**   
  Flex items (children of flex containers)     
-      
+ 
  **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only
    
  **Description**  Defines the initial size of a flex item, used as a 
-        basis for all subsequent flex sizing calculations.   
-        This can override an explicitly assigned width value 
-        for the element.     
+   basis for all subsequent flex sizing calculations.   
+   This can override an explicitly assigned width value 
+   for the element.     
 <h5>Examples</h5>
 <pre>
 nav ul li {flex-basis: 50%;} ol.gallery li   
-        {flex-basis: 300px;} div span.whatevs {flex-basis:   
-        auto;}       
+   {flex-basis: 300px;} div span.whatevs {flex-basis:   
+   auto;}  
 </pre>
- **Note**       It is *strongly* recommended that instead of this    
-        property, authors use the flex shorthand property to 
-        set an item's flex basis.    
+ **Note**  It is *strongly* recommended that instead of this    
+   property, authors use the flex shorthand property to 
+   set an item's flex basis.    
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### flex-direction Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    row &vert; row-reverse &vert; column &vert; column-reverse      
+**Values**    row &vert; row-reverse &vert; column &vert; column-reverse 
 **Initial     row 
-value**           
+value**      
 **Computed value**   As declared 
 **Applies to**    Flex containers     
-      Defines the direction in which flex items will be   
-**Description**  flowed into the flex container, which in turn       
-defines how the flex lines will fill the flex       
+ Defines the direction in which flex items will be   
+**Description**  flowed into the flex container, which in turn  
+defines how the flex lines will fill the flex  
 container.  
 <h5>Examples</h5>
 <pre>
@@ -4890,7 +4918,7 @@ column;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **flex-flow**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;*      
+**Values**    *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;* 
 **Initial value**    row nowrap  
 **Computed value**   As declared 
 **Applies to**    Flex containers     
@@ -4901,7 +4929,7 @@ column;}
 <pre>
 div.gallery {display: flex; flex-flow: row wrap;}   
      
-nav.sidenav {display: flex; flex-flow: column       
+nav.sidenav {display: flex; flex-flow: column  
 nowrap;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4911,8 +4939,8 @@ nowrap;}
  **Initial value**    0   
  **Computed value**   As declared 
  **Applies to**     Flex items (children of flex containers)    
-          
-      Sets the *growth factor* for a flex item. The value 
+     
+ Sets the *growth factor* for a flex item. The value 
  **Description**  Sets the *growth factor* for a flex item. The value 
   supplied is summed up with all the growth factors of the flex items in the same flex line, 
  and the amount they grow is scaled in proportion to their growth factors as a percentage of the whole. 
@@ -4932,11 +4960,11 @@ growth factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;number&gt;*
 **Initial     1   
-value**           
+value**      
 **Computed    As declared 
-value**           
+value**      
 **Applies     Flex items (children of flex containers)    
-to**      
+to** 
      Sets the *shrink factor* for a flex item. The value 
 **Description**  supplied is summed up with all the shrink factors   
 of the other flex items in the same flex line, and  
@@ -4948,7 +4976,7 @@ nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/
 ol.gallery li {flex-shrink: 0.5;} div span.whatevs  
 {flex-shrink: 1;}   
 </pre>
-**Note**      It is *strongly* recommended that instead of this   
+**Note** It is *strongly* recommended that instead of this   
 property, authors use the flex shorthand property   
 to set an item's flex shrink factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5006,7 +5034,7 @@ p.sidebar {float: right; width: 15em;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font**      **Inh. Y Anim. P**
+#### **font** **Inh. Y Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  
@@ -5014,31 +5042,31 @@ p.sidebar {float: right; width: 15em;}
  *&lt;line-height&gt;* &rbrack;? *&lt;fontfamily&gt;*&rbrack; &vert; caption 
  &vert; icon &vert; menu &vert; message-box &vert; small-caption &vert;  
  status-bar  
- **Initial     Refer to individual properties      
- value**           
+ **Initial     Refer to individual properties 
+ value**      
  **Computed    See individual properties (font-style, etc.)
- value**           
+ value**      
  *     Calculated with respect to the parent element for   
  *Percentages**  *&lt;font-size&gt;* and with respect to the element's   
  *&lt;fontsize&gt;* for *&lt;line-height&gt;*
  **Applies     All elements
- to**      
-       Refer to individual font properties to see which    
- **Animatable**  are animatable      
+ to** 
+  Refer to individual font properties to see which    
+ **Animatable**  are animatable 
  *     A shorthand property used to set all the aspects of 
  *Description**  an element's font at once. It can also be used to   
  set the element's font to match an aspect of the    
  user's computing environment using keywords such as 
  icon. If keywords are not used, the minimum font    
  value *must* include the font size and family *in   
- that order*, and any font value that is not a       
+ that order*, and any font value that is not a  
  keyword must end with the font family. Otherwise,   
- the font declaration will be ignored.       
+ the font declaration will be ignored.  
 <h5>Examples</h5>  
 <pre>
-p {font: small-caps italic bold small/      
-1.25em Helvetica,sans-serif;}       
-p.example {font: 14px Arial;} /&ast; technically       
+p {font: small-caps italic bold small/ 
+1.25em Helvetica,sans-serif;}  
+p.example {font: 14px Arial;} /&ast; technically  
 correct, although generic font-families are 
 encouraged for fallback purposes &ast;/
 .figure span {font: icon;}
@@ -5049,11 +5077,11 @@ encouraged for fallback purposes &ast;/
 
 **Values**    &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    
 **Initial     User agent--specific
-value**           
+value**      
 **Computed    As declared 
-value**           
-**Applies to**      
-All elements        
+value**      
+**Applies to** 
+All elements   
 
 **Description** Defines a font family to be used in the display of an
 element's text. Note that use of a specific font family (e.g., Geneva)
@@ -5077,34 +5105,34 @@ p {font-family: Helvetica, Arial, sans-serif;} li
 #### font-feature-settings Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**     normal &vert; *&lt;feature-tag-value&gt;*&#35;  
-**Initial value**      normal
+**Initial value** normal
 **Computed value**    As declared  
 **Applies to**     All elements 
-      Used to turn font features on and off; examples
+ Used to turn font features on and off; examples
 **Description**  include ligatures, old-style numbers, and more.
-        Whether a font feature actually can be enabled
-        depends entirely on the font face being used:
-        turning ligatures on or off can only work if the
-        face has defined ligatures in the first place.
+   Whether a font feature actually can be enabled
+   depends entirely on the font face being used:
+   turning ligatures on or off can only work if the
+   face has defined ligatures in the first place.
 <h5>Examples</h5>
 <pre>
 h1 {font-feature-settings: &quot;liga&quot;;}
-             
+   
 ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on, 
-             
+   
 &quot;zero&quot; on;}
 </pre>
 <h5>Note</h5>  Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-kerning Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    auto &vert; normal &vert; none      
+**Values**    auto &vert; normal &vert; none 
 **Initial     auto
- value**           
+ value**      
  **Computed    As declared 
- value**           
+ value**      
  **Applies     All elements
- to**      
+ to** 
  *     In effect, allows the author to disable kerning of  
  *Description**  text for a given element. The default of auto tells 
  user agents to do what they normally do, whatever   
@@ -5113,32 +5141,32 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
  even if it normally wouldn't. With none, kerning is 
  disabled, even if the face has kerning information  
  and the user agent would make use of it. Note that  
- kerning is done *before* any letter spacing is      
+ kerning is done *before* any letter spacing is 
  altered (see letterspacing).
  <h5>Examples</h5>
 <pre>
 body {kerning: normal;} div.typewriter {kerning:    
-none;}      
+none;} 
 </pre>
 
-**Note**      Has a corresponding &#64;font-face descriptor. 
+**Note** Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font-size** **Inh. Y Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**      xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
+**Values** xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
 x-large &vert; xx-large &vert; smaller &vert; larger &vert; 
 *&lt;length&gt;* &vert;     
      
 *&lt;percentage&gt;*    
-**Initial       medium      
+**Initial  medium 
 value**     
-**Computed      For length values, the absolute length; otherwise,  
+**Computed For length values, the absolute length; otherwise,  
 value** as declared 
-*       Calculated with respect to the parent element's     
+*  Calculated with respect to the parent element's     
 *Percentages**  font size   
 **Applies to**  All elements
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
-*       Defines the size of the font. The size can be       
+**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+*  Defines the size of the font. The size can be  
 *Description**  defined as an absolute size, a relative size, a     
 length value, or a  
 
@@ -5199,19 +5227,19 @@ only swap in a variant face (if it exists).
 {font-stretch: condensed;} **Note** Has a corresponding &#64;font-face
 descriptor.
 
-         
+    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font-style**  **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    italic &vert; oblique &vert; normal 
-**Initial     normal      
-value**           
+**Initial     normal 
+value**      
 **Computed    As declared 
-value**           
+value**      
 **Applies     All elements
-to**      
+to** 
 *     Defines whether the font uses an italic, oblique,   
-*Description**  or normal font face. Italic text is generally       
+*Description**  or normal font face. Italic text is generally  
 defined as a separate face within the font family.  
 It is theoretically possible for a user agent to    
 compute a slanted font face from the normal face.   
@@ -5223,7 +5251,7 @@ same way.
 <pre>
 em {font-style: oblique;} i {font-style: italic;}
 </pre>
-**Note**      Has a corresponding &#64;font-face descriptor. 
+**Note** Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-synthesis Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5252,34 +5280,34 @@ pre code {font-synthesis: style;}
 #### font-variant Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values       normal &vert; small-caps 
- (CSS2.1)**          
- **Values       normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖       
- (Level 3)**         
-        *&lt;discretionary-lig-values&gt;* ‖     
-        *&lt;historical-lig-values&gt;* ‖
-        *&lt;contextual-alt-values&gt;* ‖
-        stylistic(*&lt;featurevalue-name&gt;*) ‖ 
-        historical-forms ‖   
-        styleset(*&lt;feature-value-name&gt;*#) ‖
-        charactervariant(*&lt;feature-value-name&gt;*#) ‖
-        swash(*&lt;featurevalue-name&gt;*) ‖     
-        ornaments(*&lt;feature-value-name&gt;*) ‖
-        annotation(*&lt;feature-value-name&gt;*) ‖ &lbrack; smallcaps  
-        &vert; all-small-caps &vert; petite-caps &vert; allpetite-caps   
-        &vert; unicase &vert; titling-caps &rbrack; ‖      
-        *&lt;numeric-figure-values&gt;* ‖
-        *&lt;numeric-spacingvalues&gt;* ‖
-        *&lt;numeric-fraction-values&gt;* ‖ ordinal ‖    
-        slashed-zero ‖ *&lt;east-asian-variant-values&gt;* ‖     
-             
-        *&lt;east-asian-width-values&gt;* ‖ ruby &rbrack;      
- **Initial      normal       
- value**             
+ **Values  normal &vert; small-caps 
+ (CSS2.1)**     
+ **Values  normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖  
+ (Level 3)**    
+   *&lt;discretionary-lig-values&gt;* ‖     
+   *&lt;historical-lig-values&gt;* ‖
+   *&lt;contextual-alt-values&gt;* ‖
+   stylistic(*&lt;featurevalue-name&gt;*) ‖ 
+   historical-forms ‖   
+   styleset(*&lt;feature-value-name&gt;*#) ‖
+   charactervariant(*&lt;feature-value-name&gt;*#) ‖
+   swash(*&lt;featurevalue-name&gt;*) ‖     
+   ornaments(*&lt;feature-value-name&gt;*) ‖
+   annotation(*&lt;feature-value-name&gt;*) ‖ &lbrack; smallcaps  
+   &vert; all-small-caps &vert; petite-caps &vert; allpetite-caps   
+   &vert; unicase &vert; titling-caps &rbrack; ‖ 
+   *&lt;numeric-figure-values&gt;* ‖
+   *&lt;numeric-spacingvalues&gt;* ‖
+   *&lt;numeric-fraction-values&gt;* ‖ ordinal ‖    
+   slashed-zero ‖ *&lt;east-asian-variant-values&gt;* ‖     
+   
+   *&lt;east-asian-width-values&gt;* ‖ ruby &rbrack; 
+ **Initial normal  
+ value**   
  **Computed     As declared  
- value**             
- **Applies      All elements 
- to**        
+ value**   
+ **Applies All elements 
+ to**   
  **     Defines whether text is set in the small-caps style. 
  Description**  It   
 
@@ -5294,17 +5322,17 @@ h3 {font-variant: small-caps;} p {font-variant: normal;}
 **Note** Has a corresponding &#64;font-face descriptor.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font-weight**      **Inh. Y Anim. N**
+#### **font-weight** **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
 &vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900    
-**Initial     normal      
-value**           
+**Initial     normal 
+value**      
 **Computed    One of the numeric values (100, etc.), or one of    
-value**       the numeric values plus one of the relative values  
+value**  the numeric values plus one of the relative values  
 (bolder or lighter) 
 **Applies     All elements
-to**      
+to** 
 *     Defines the font weight used in rendering an
 *Description**  element's text. The numeric value 400 is equivalent 
 to the keyword normal, and 700 is equivalent to     
@@ -5320,25 +5348,25 @@ b {font-weight: 700;} strong {font-weight: bold;}
 
 .delicate {font-weight: lighter;}   
 </pre>
- **Note**      Has a corresponding &#64;font-face descriptor.
+ **Note** Has a corresponding &#64;font-face descriptor.
  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **grid**      **Inh. N Anim. N**
+#### **grid** **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**      none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    
+**Values** none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    
 *&lt;gridtemplate-columns&gt;* &rbrack; &vert; &lbrack; 
-*&lt;line-names&gt;*? *&lt;string&gt; &lt;track-size&gt;*?      
+*&lt;line-names&gt;*? *&lt;string&gt; &lt;track-size&gt;*? 
 *&lt;line-names&gt;*? &rbrack;+ &lbrack; / *&lt;track-list&gt;* &rbrack;? &vert;  
 &lbrack; *&lt;grid-auto-flow&gt;* &lbrack; *&lt;grid-auto-rows&gt;* &lbrack;  
-/ *&lt;gridauto-columns&gt;* &rbrack;? &rbrack;? &rbrack; &rbrack;      
-**Initial       See individual properties   
+/ *&lt;gridauto-columns&gt;* &rbrack;? &rbrack;? &rbrack; &rbrack; 
+**Initial  See individual properties   
 value**     
-**Computed      See individual properties   
+**Computed See individual properties   
 value**     
 **Applies to**  Grid containers     
-*       A shorthand property allowing the almost complete   
-*Description**      
+*  A shorthand property allowing the almost complete   
+*Description** 
 
 definition of an element's grid system, not counting
 
@@ -5359,23 +5387,23 @@ body {display: grid; grid:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}
 **Initial     See individual properties   
-value**           
+value**      
 **Computed    As declared 
-value**           
+value**      
 **Applies     Grid items and absolutely positioned elements, if   
 to**  their containing block is a grid container  
 *     Used to assign a grid item to a specific area of a  
-*Description**  defined grid. This can be done using a single       
-identifier, or using slash-separated grid line      
+*Description**  defined grid. This can be done using a single  
+identifier, or using slash-separated grid line 
 identifiers. If all four grid lines are supplied,   
-they are given in the order row-start (top) /       
+they are given in the order row-start (top) /  
 column-start (left) / row-end (bottom) / column-end 
 (right), which is the reverse of the usual  
 top-right-bottom-left order for margins, padding,   
 and so on.  
 <h5>Examples</h5>
 <pre>
-#masthead {grid-area: header;}      
+#masthead {grid-area: header;} 
      
 #sidebar {grid-area: 1 / 2 / 1 / 3;}
 </pre>
@@ -5428,19 +5456,19 @@ div.gallery {grid-auto-flow: row dense;}
 #### grid-auto-rows Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   
-        *&lt;trackbreadth&gt;*)  
+   *&lt;trackbreadth&gt;*)  
 *    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;    
  *Definition**  min-content &vert; max-content &vert; auto   
-           
-***&lt;track        
- -breadth&gt;***       
+      
+***&lt;track   
+ -breadth&gt;***  
  **Initial    auto 
- value**           
+ value**      
  **Computed   Depends on the specific track sizing 
- value**           
- **Applies           
- to** Grid           
- containers          
+ value**      
+ **Applies      
+ to** Grid      
+ containers     
 
 **Description** Defines the sizing of row tracks for rows that are
 automatically generated; that is, rows that are created because a grid
@@ -5458,25 +5486,25 @@ grid-auto-rows: 80px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?     
-             
-*           
-*Definition**       
-***&lt;g auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* &&      
+   
+*      
+*Definition**  
+***&lt;g auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* && 
 rid-line&gt;***  *&lt;identifier&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;*  
-        &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;  
-**Initial      auto 
-value**             
+   &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;  
+**Initial auto 
+value**   
 **Computed     As declared  
-value**             
-**Applies      Grid items and absolutely positioned elements, if    
+value**   
+**Applies Grid items and absolutely positioned elements, if    
 to**   their containing block is a grid container   
 **     Acts as a shorthand property encompassing the
 Description**  grid-column-start and grid-column-end properties.    
-        When a single number or identifier is given, the     
-        second is assumed to be the span 1 (for a number) or 
-        the same identifier. Negative numeric grid lines     
-        count backward from the end of the explicit grid     
-        (generally the right side).  
+   When a single number or identifier is given, the     
+   second is assumed to be the span 1 (for a number) or 
+   the same identifier. Negative numeric grid lines     
+   count backward from the end of the explicit grid     
+   (generally the right side).  
 <h5>Examples</h5>
 <pre>
 header {grid-column: 1 / -1;}
@@ -5538,13 +5566,13 @@ containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**   auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    
-        *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* 
-        ‖ *&lt;customident&gt;* &rbrack;&rbrack;     
+   *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* 
+   ‖ *&lt;customident&gt;* &rbrack;&rbrack;     
  **Initial    auto 
- value**           
- **Computed          
- value** As          
- declared            
+ value**      
+ **Computed     
+ value** As     
+ declared  
 
 **Applies to** Grid items and absolutely positioned elements, if their
 containing block is a grid container
@@ -5565,11 +5593,11 @@ header {grid-column-start: masthead;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*    
 **Initial     0 0 
-value**           
+value**      
 **Computed    As declared 
-value**           
+value**      
 **Applies     Grid containers     
-to**      
+to** 
 *     A shorthand property encompassing the grid-rowgap   
 *Description**  and grid-column-gap properties, in that order. If   
 only one value is supplied, the value is assumed to 
@@ -5579,8 +5607,8 @@ be the same for both row and column gaps.
 #grid {display: grid; grid-gap: 12px 1em;}
 div.gallery {display: grid; grid-gap: 2.5vw;}
 </pre>
-**Note**      As of early 2018, the CSS Working Group intends to  
-change this property to simply gap and have it      
+**Note** As of early 2018, the CSS Working Group intends to  
+change this property to simply gap and have it 
 apply to multicolumn and flex containers as well as 
 grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5738,7 +5766,7 @@ grid-template-areas:
   **Description**   Provides authors a way to define grid line names and
     track sizes for columns in the explicit grid.
 
-  <h5>Examples</h5>      aside {grid-template-columns:
+  <h5>Examples</h5> aside {grid-template-columns:
 
 max-content min-content max-content;} article {grid-template-columns:
 15em 4.5fr 3fr 10%;} section {grid-template-columns:
@@ -5753,37 +5781,37 @@ max-content min-content max-content;} article {grid-template-columns:
 
 **Values**    none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   
 **Initial     none
-value**           
+value**      
 **Computed    As declared, with lengths made absolute     
-value**           
+value**      
 *     Refer to the block size (usually height) of the     
-*Percentages**  grid container      
+*Percentages**  grid container 
 **Applies     Grid containers     
-to**      
+to** 
 *     Provides authors a way to define grid line names    
-*Description**  and track sizes for rows in the explicit grid.      
+*Description**  and track sizes for rows in the explicit grid. 
 <h5>Examples</h5>  aside {grid-template-rows: 200px 50% 100px;}
 article {grid-template-rows: 3em minmax(5em,1fr)    
 2em;} section {grid-template-rows:  
      
 &lbrack;start masthead&rbrack; 3em &lbrack;content&rbrack; calc(100%-5em)   
      
-&lbrack;footer&rbrack; 2em &lbrack;stop end&rbrack;;}       
+&lbrack;footer&rbrack; 2em &lbrack;stop end&rbrack;;}  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **height**    **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**      *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
- **Initial       auto
+ **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+ **Initial  auto
  value**     
- **Computed      For auto and percentage values, as declared;
+ **Computed For auto and percentage values, as declared;
  value** otherwise, an absolute length, unless the property  
  does not apply to the element (then auto)   
- *       Calculated with respect to the height of the
- *Percentages**  containing block (when valid)       
+ *  Calculated with respect to the height of the
+ *Percentages**  containing block (when valid)  
  **Applies to**  All elements except nonreplaced inline elements,    
  table rows, and row groups  
- *       Defines the total height of portions of an element; 
+ *  Defines the total height of portions of an element; 
  *Description**  the exact portions depend on the value of   
  boxsizing. Negative length and percentage values    
  are not permitted.  
@@ -5796,17 +5824,17 @@ h1 {height: 1.75em;}
 #### **hyphens**   **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**    manual &vert; auto &vert; none      
-**Initial value**    manual      
+**Values**    manual &vert; auto &vert; none 
+**Initial value**    manual 
 **Computed value**   As declared 
-      No  
-**Animatabale**      
+ No  
+**Animatabale** 
 **Applies to**    All elements
-      Used to declare whether the hyphenation of words at 
+ Used to declare whether the hyphenation of words at 
 **Description**  line breaks must be done manually (e.g., with a     
  "soft hyphen"---&shy; or U+00AD---inserted into the 
  document) or can be done automatically by the user  
- agent. In the case of none, all hyphenation is      
+ agent. In the case of none, all hyphenation is 
  suppressed, even when hinted manually in the
  document. Automatic hyphenation is heavily  
  languagedependent, and may vary greatly between     
@@ -5818,16 +5846,16 @@ h1 {height: 1.75em;}
 #### **isolation** **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**      auto &vert; isolate     
-**Initial value**      auto
+**Values** auto &vert; isolate     
+**Initial value** auto
 **Computed value**     As declared 
-**Applies to**  All elements (in SVG, it applies to container       
+**Applies to**  All elements (in SVG, it applies to container  
  elements, graphics elements, and    
- graphics-referencing elements)      
-        Determines whether an element creates an isolated   
+ graphics-referencing elements) 
+   Determines whether an element creates an isolated   
 **Description**  blending context. An isolated element will only     
  blend with itself; that is, the foreground portions 
- of the element will blend with the background       
+ of the element will blend with the background  
  portions    
 
 of that same element, but *not* with the backdrop of its parent element
@@ -5847,31 +5875,31 @@ from its ancestors.
 **Initial value**     flex-start  
 **Computed value**   As declared 
 **Applies to**    Flex containers     
-      Defines the distribution of flex items along the    
-**Description**  main axis of a flex container.      
+ Defines the distribution of flex items along the    
+**Description**  main axis of a flex container. 
 <h5>Examples</h5>  nav {justify-content: space-evenly;} div.gallery    
  {justify-content: space-between;}   
-**Note**      As of early 2018, there are plans to have this      
+**Note** As of early 2018, there are plans to have this 
  property apply to many (or all) elements, not just  
  flex containers, and be given the values start and  
  end to replicate flex-start and flex-end behavior   
  for non-flex environments.
  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **left**      **Inh. N Anim. P**
+#### **left** **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**      *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
-**Initial value**      auto
-       
+**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+**Initial value** auto
+  
 **Computed value**     For static elements, auto; for length values, the   
- corresponding absolute length; for percentage       
+ corresponding absolute length; for percentage  
  values, the specified value; otherwise, auto
-        Refer to the height of the containing block for top 
+   Refer to the height of the containing block for top 
  **Percentages**  and bottom, and the width of the containing block   
  for right and left  
  **Applies to**  Positioned elements 
- **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
+ **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
 
 **Description** Defines the offset between the left outer margin edge of
 an absolutely positioned element and the left edge of its containing
@@ -5886,14 +5914,14 @@ element is offset to the right of its starting position.
 #### letter-spacing Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**    *&lt;length&gt;* &vert; normal      
-**Initial     normal      
-value**           
+**Values**    *&lt;length&gt;* &vert; normal 
+**Initial     normal 
+value**      
 **Computed    For length values, the absolute length; otherwise,  
-value**           
-normal      
+value**      
+normal 
 **Applies     All elements
-to**      
+to** 
 *     Defines the amount of whitespace to be inserted     
  *Description**  between the character boxes of text. Because
  character glyphs are typically narrower than their  
@@ -5915,57 +5943,57 @@ p.cramped {letter-spacing: −0.5em;}
 
 **Values**    auto &vert; loose &vert; normal &vert; strict   
 **Initial     auto
-value**           
+value**      
 **Computed    As declared 
-value**           
+value**      
 **Applies     All elements
-to**      
+to** 
 *     Affects the wrapping of lines of text in CJK
 *Description**  (Chinese-Japanese-Korean) text. The precise 
-meanings of loose, normal, and strict are left      
-unde‐       
-fined, so         
-the only          
+meanings of loose, normal, and strict are left 
+unde‐  
+fined, so    
+the only     
 solid     
-expectation       
-is that           
-loose will        
-use the           
-"least            
-restrictive"      
-          
-line-breaking,      
-normal will       
-use the           
-"most     
-common"           
-           
- line-breaking,      
- and strict        
- will use the      
- "most     
-stringent"        
-           
-line-breaking.      
+expectation  
+is that      
+loose will   
+use the      
+"least  
+restrictive" 
      
-<h5>Example</h5>         
+line-breaking, 
+normal will  
+use the      
+"most     
+common"      
+      
+ line-breaking, 
+ and strict   
+ will use the 
+ "most     
+stringent"   
+      
+line-breaking. 
+     
+<h5>Example</h5>    
 div.cjk     
-{line-break:        
-strict;}            
+{line-break:   
+strict;}  
      
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **line-height** **Inh. Y Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**      *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
-normal      
-**Initial value**      normal      
-**Computed value**     For length and percentage values, the absolute      
-value; otherwise, as declared       
+**Values** *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
+normal 
+**Initial value** normal 
+**Computed value**     For length and percentage values, the absolute 
+value; otherwise, as declared  
 Relative to the font size of the element    
-**Percentages**      
+**Percentages** 
 **Applies to**  All elements (but see text regarding replaced and   
-block-level elements)       
+block-level elements)  
 This property influences the layout of line boxes.  
 **Description**  When applied to a block-level element, it defines   
 the minimum (but not the maximum) distance between  
@@ -5973,7 +6001,7 @@ baselines within that element. When applied to an
 inline element, it is used to define the *leading*  
 of that element.    
      
-The difference between the computed values of       
+The difference between the computed values of  
 line-height and font-size (called "leading" in CSS) 
 is split in half and added to the top and bottom of 
 each piece of content in a line of text. The
@@ -5996,20 +6024,20 @@ pre {line-height: 0.75em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ 
 *&lt;list-styleposition&gt;* &rbrack; 
-**Initial value**     Refer to individual properties      
+**Initial value**     Refer to individual properties 
 **Computed value**   See individual properties   
 **Applies to**    Elements whose display value is list-item   
-      A shorthand property that defines the marker type,  
-**Description**  whether a symbol or an image, and its (crude)       
+ A shorthand property that defines the marker type,  
+**Description**  whether a symbol or an image, and its (crude)  
 placement. Because it applies to any element that   
 has a display value of list-item, it will apply     
 only to li elements in ordinary HTML, although it   
-can be applied to any element and subsequently      
+can be applied to any element and subsequently 
 inherited by list-item elements.    
 <h5>Examples</h5>  ul {list-style: square url(bullet3.gif) outer;} /&ast; 
 values are inherited by &apos;li&apos; elements &ast;/ 
      
-ol {list-style: upper-roman;}       
+ol {list-style: upper-roman;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### list-style-image Inh. Y Anim. N
@@ -6028,7 +6056,7 @@ value**   none
     image with respect to the content of the list item can
     be crudely controlled using list-styleposition.
 
-  <h5>Examples</h5>      
+  <h5>Examples</h5> 
 <pre>
 ul {list-style-image: url(bullet3.gif);}
 ul li {list-style-image:
@@ -6105,10 +6133,10 @@ ol {list-style-type: lower-roman;}
  **Initial value**    Not defined 
  **Computed value**   See individual properties   
  Refer to the width of the containing block  
- **Percentages**      
+ **Percentages** 
  **Applies to**    All elements
  **Description**  A shorthand property that defines the width of the  
- overall margin for an element or sets distinct      
+ overall margin for an element or sets distinct 
  widths for the individual side margins. Vertically  
  adjacent margins of block-level elements are
  collapsed, whereas inline elements effectively do   
@@ -6143,7 +6171,7 @@ p {margin: auto;} img {margin: 10px;}
     Negative values are permitted, but caution is
     warranted (see margin).
 
-  <h5>Examples</h5>      ul {margin-bottom: 0.5in;}
+  <h5>Examples</h5> ul {margin-bottom: 0.5in;}
 
 h1 {margin-bottom: 2%;}
 
@@ -6165,7 +6193,7 @@ h1 {margin-bottom: 2%;}
     Negative values are permitted, but caution is
     warranted (see margin).
 
-  <h5>Examples</h5>      p {margin-left: 5%;}
+  <h5>Examples</h5> p {margin-left: 5%;}
 
 pre {margin-left: 3em;}
 
@@ -6187,7 +6215,7 @@ pre {margin-left: 3em;}
     Negative values are permitted, but caution is
     warranted (see margin).
 
-  <h5>Examples</h5>      img {margin-right: 30px;}
+  <h5>Examples</h5> img {margin-right: 30px;}
 
 ol {margin-right: 5em;}
 
@@ -6197,42 +6225,42 @@ ol {margin-right: 5em;}
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
  **Initial     0   
- value**           
+ value**      
  **Computed    For length values, the absolute length; otherwise,  
- value**       as declared 
+ value**  as declared 
  *     Refer to the width of the containing block  
- *Percentages**      
+ *Percentages** 
  **Applies     All elements
- to**      
+ to** 
  *     Defines the width of the top margin for an element. 
- *Description**  Negative values are permitted, but caution is       
+ *Description**  Negative values are permitted, but caution is  
  warranted (see margin).     
  <h5>Examples</h5>  ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **mask**      **Inh. N Anim. P**
+#### **mask** **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; /      
+ **Values**    &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; / 
  *&lt;masksize&gt;* &rbrack;? ‖ *&lt;mask-repeat&gt;* ‖    
  *&lt;mask-clip&gt;* ‖ *&lt;maskorigin&gt;* ‖
  *&lt;mask-composite&gt;* ‖ *&lt;mask-mode&gt;* &rbrack;#  
- **Initial           
- value** See         
- individual          
- properties          
- **Computed      As declared 
+ **Initial      
+ value** See    
+ individual     
+ properties     
+ **Computed As declared 
  value**     
- **Applies to**  All elements (in SVG, applies to all graphics       
+ **Applies to**  All elements (in SVG, applies to all graphics  
  elements and all container elements except the defs 
  element)    
  **Animatable**  Refer to individual mask properties to see which    
- are animatable      
- *       A shorthand property encompassing all the other     
+ are animatable 
+ *  A shorthand property encompassing all the other     
  *Description**  image masking properties. It is analogous to
  background as compared to the various background    
  properties, and many of the masking and background  
- properties share values and behaviors.      
+ properties share values and behaviors. 
  <h5>Examples</h5>    img.masked {mask:   
 
 url(#mask) no-repeat center/cover luminance;}
@@ -6246,22 +6274,22 @@ add;
 #### **mask-clip** **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    &lbrack; content-box &vert; padding-box &vert; border-box &vert;      
+ **Values**    &lbrack; content-box &vert; padding-box &vert; border-box &vert; 
  margin-box &vert; fill-box &vert; stroke-box &vert; view-box &vert; 
  no-clip &rbrack;# 
  **Initial     border-box  
- value**           
+ value**      
  **Computed    As declared 
- value**           
- **Applies     All elements (in SVG, applies to all graphics       
+ value**      
+ **Applies     All elements (in SVG, applies to all graphics  
  to**  elements and all container elements except the defs 
  element)    
  *     Defines the outer edge of the visible portions of   
  *Description**  an element's mask, as an aspect of the element's    
  box model. This allows authors to apply a masking   
  shape to an element but then further reduce the     
- visible parts of the element without having to      
- directly alter the mask shape.      
+ visible parts of the element without having to 
+ directly alter the mask shape. 
  <h5>Examples</h5>  p:nth-child(1) {mask-clip: border-box;}     
  p:nth-child(2) {mask-clip: padding-box;}    
  p:nth-child(3) {mask-clip: content-box;}    
@@ -6297,24 +6325,24 @@ span.mask3 {mask-composite: subtract, add, add;}
 #### mask-image Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**   &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;#      
+ **Values**   &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;# 
  **   Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     
  Definitions**  *&lt;imageset()&gt;*, *&lt;element()&gt;*,   
-      *&lt;cross-fade()&gt;*, or *&lt;gradient&gt;*
- **        
- *&lt;image&gt;***       
- ***&lt;mas     A url() that points to a mask element in an SVG      
+ *&lt;cross-fade()&gt;*, or *&lt;gradient&gt;*
+ **   
+ *&lt;image&gt;***  
+ ***&lt;mas     A url() that points to a mask element in an SVG 
  k-source&gt;***  image
  **Initial    none 
- value**           
+ value**      
  **Computed   As declared  
- value**           
+ value**      
  **Applies    All elements (in SVG, applies to all graphics
  to** elements and all container elements except the defs  
-        element)     
+   element)     
  **   Applies an image, or a portion of an SVG image, to   
  Description**  an element as a masking shape. The result is that    
-        the  
+   the  
 
 masked element has portions of itself made invisible, while others are
 wholly or partially visible. The exact visual result will depend on
@@ -6355,7 +6383,7 @@ will be used to determine the masking of the element.
     mask element, in which case it's the same as
     luminance.
 
-  <h5>Examples</h5>      p {mask-mode: alpha;}
+  <h5>Examples</h5> p {mask-mode: alpha;}
 
 img.lum {mask-mode: luminance, alpha;}
 
@@ -6378,7 +6406,7 @@ img.lum {mask-mode: luminance, alpha;}
     to vary the initial placement of the mask before
     sizing, repeating, or positioning it.
 
-  <h5>Examples</h5>      div.inset {mask-origin: content-box;}
+  <h5>Examples</h5> div.inset {mask-origin: content-box;}
 
 svg#radio {mask-origin: stroke-box, fill-box;}
 
@@ -6402,7 +6430,7 @@ svg#radio {mask-origin: stroke-box, fill-box;}
     default will place the masking image in the top-left
     corner of the box defined by maskorigin.
 
-  <h5>Examples</h5>      p:nth-child(1) {mask-position: top right;}
+  <h5>Examples</h5> p:nth-child(1) {mask-position: top right;}
 
 p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 {mask-position: 5em 120%;}
@@ -6412,37 +6440,37 @@ p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    
- round &vert; no-repeat &rbrack;{1,2} &rbrack;#      
- **Initial     repeat      
- value**           
+ round &vert; no-repeat &rbrack;{1,2} &rbrack;# 
+ **Initial     repeat 
+ value**      
  **Computed    As declared 
- value**           
- **Applies     All elements (in SVG, applies to all graphics       
+ value**      
+ **Applies     All elements (in SVG, applies to all graphics  
  to**  elements and all container elements except the defs 
  element)    
- *     Allows authors to repeat a masking image in a       
+ *     Allows authors to repeat a masking image in a  
  *Description**  manner identical to the repetition of background    
  images. Note that the default is to repeat a mask   
  in all directions.  
- <h5>Examples</h5>  p:nth-child(1) {mask-repeat: repeat;}       
+ <h5>Examples</h5>  p:nth-child(1) {mask-repeat: repeat;}  
  p:nth-child(2) {mask-repeat: repeat round;} 
- p:nth-child(3) {mask-repeat: space no-repeat;}      
+ p:nth-child(3) {mask-repeat: space no-repeat;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **mask-size** **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**      &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto      
+**Values** &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto 
  &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#     
- **Initial       auto
+ **Initial  auto
  value**     
- **Computed      As declared, with length values converted to
+ **Computed As declared, with length values converted to
  value** absolute lengths    
- **Applies to**  All elements (in SVG, applies to all graphics       
+ **Applies to**  All elements (in SVG, applies to all graphics  
  elements and all container elements except the defs 
  element)    
- **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
- *       Sets the size of the initial masking image in a     
+ **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+ *  Sets the size of the initial masking image in a     
  *Description**  manner identical to the sizing of background
  images.     
  <h5>Examples</h5>    p:nth-child(1) {mask-size: 80%;}    
@@ -6477,13 +6505,13 @@ mask element masks default to luminance.
  **Initial     none
  value**   
  **Computed    For percentages, as declared; for length values,    
- value**       the absolute length; otherwise, none
+ value**  the absolute length; otherwise, none
  *     Refer to the height of the containing block 
- *Percentages**      
+ *Percentages** 
  **Applies     All elements except nonreplaced inline elements and 
- to**  table elements      
-       *&lt;length&gt;* and *&lt;percentage&gt;* values only       
- **Animatable**      
+ to**  table elements 
+  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+ **Animatable** 
  *     Defines a maximum constraint on the height of the   
  *Description**  element (the exact nature of that height is 
  dependent on the value of box-sizing). Thus, the    
@@ -6491,7 +6519,7 @@ mask element masks default to luminance.
  not taller. 
      
  Negative values are not permitted.  
- <h5>Example</h5>   div#footer {max-height: 3em;}       
+ <h5>Example</h5>   div#footer {max-height: 3em;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **max-width** **Inh. N Anim. P**
@@ -6500,14 +6528,14 @@ mask element masks default to luminance.
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
  **Initial   
  value** none
- **Computed      For percentages, as declared; for length values,    
+ **Computed For percentages, as declared; for length values,    
  value** the absolute length; otherwise, none
- *       Refer to the height of the containing block 
- *Percentages**      
+ *  Refer to the height of the containing block 
+ *Percentages** 
  **Applies to**  All elements except nonreplaced inline elements and 
- table elements      
- **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
- *       Defines a maximum constraint on the width of the    
+ table elements 
+ **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+ *  Defines a maximum constraint on the width of the    
  *Description**  element (the exact nature of that width is  
  dependent on the value of box-sizing). Thus, the    
  element can 
@@ -6525,11 +6553,11 @@ not permitted.
  **Initial     0   
  value**   
  **Computed    For percentages, as declared; for length values,    
- value**       the absolute length 
+ value**  the absolute length 
  *     Refer to the width of the containing block  
- *Percentages**      
+ *Percentages** 
  **Applies     All elements except nonreplaced inline elements and 
- to**  table elements      
+ to**  table elements 
  *     Defines a minimum constraint on the height of the   
  *Description**  element (the exact nature of that height is 
  dependent on the value of box-sizing). Thus, the    
@@ -6537,7 +6565,7 @@ not permitted.
  not shorter.
      
  Negative values are not permitted.  
- <h5>Example</h5>   div#footer {min-height: 1em;}       
+ <h5>Example</h5>   div#footer {min-height: 1em;}  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **min-width** **Inh. N Anim. Y**
@@ -6571,12 +6599,12 @@ are not permitted.
 lighten &vert; color-dodge &vert; color-burn &vert; hard-light   
 &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;   
 saturation &vert; color &vert; luminosity    
- **Initial    normal       
+ **Initial    normal  
  value**   
  **Computed   As declared  
  value**   
  **Applies    All elements 
- to**      
+ to** 
  **   Changes how an element is composited with its
  Description**  backdrop. The "backdrop" consists of any ancestor    
 backgrounds and other elements that are "behind" the 
@@ -6585,13 +6613,13 @@ simple alpha blending, as CSS has permitted since
 its inception. The others cause the element and its  
 backdrop to be combined in various ways; for 
 example, lighten means that the final result will    
-show, at each pixel, either the element or its       
+show, at each pixel, either the element or its  
 backdrop, whichever is lighter. darken is the same,  
 except the darker of the two pixels will be shown.   
 The results of these are likely to be familiar to    
-users of Photoshop or any other graphic-editing      
+users of Photoshop or any other graphic-editing 
 tool.
-      li.shadowed {mix-blend-mode: darken;} aside  
+ li.shadowed {mix-blend-mode: darken;} aside  
   <h5>Examples</h5>  {mix-blend-mode:     
      
 color-burn, luminosity, darken;}     
@@ -6600,19 +6628,19 @@ color-burn, luminosity, darken;}
 #### **object-fit**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- *object-fit**       
- **Values**   fill &vert; contain &vert; cover &vert; scale-down &vert; none       
+ *object-fit**  
+ **Values**   fill &vert; contain &vert; cover &vert; scale-down &vert; none  
  **Initial    fill 
  value**   
  **Computed   As declared  
  value**   
  **Applies    Replaced elements    
- to**      
+ to** 
  **   Alters the way an image's contents are sized with    
- Description**  respect to its content box. The default, fill,       
+ Description**  respect to its content box. The default, fill,  
 causes the image to be stretched or squashed to fit  
 its height and width, as images always have. none    
-means the image keeps its intrinsic height and       
+means the image keeps its intrinsic height and  
 width, regardless of the values of the img element's 
 height and width properties. contain will cause the  
 entire image to be visible within its element box,   
@@ -6623,9 +6651,9 @@ maintaining its intrinsic aspect ratio. scale-down
 means the image will stay its intrinsic size unless  
 it's too big to fit into the element box, in which   
 case it will be scaled down to fit.  
-      img:nth-of-type(1) {object-fit: none;}       
-  <h5>Examples</h5>  img:nth-of-type(2) {object-fit: fill;}       
-img:nth-of-type(3) {object-fit: cover;}      
+ img:nth-of-type(1) {object-fit: none;}  
+  <h5>Examples</h5>  img:nth-of-type(2) {object-fit: fill;}  
+img:nth-of-type(3) {object-fit: cover;} 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### object-position Inh. N Anim. Y
@@ -6658,13 +6686,13 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
  **Computed    As declared 
  value**   
  **Applies     All elements
- to**      
+ to** 
  **Computed    Same as declared (or a clipped value if declared    
- value**       value must be clipped)      
- *     Defines an element's degree of opacity using a      
+ value**  value must be clipped) 
+ *     Defines an element's degree of opacity using a 
  *Description**  number in the range 0--1, inclusive. Any values     
  outside that range are clipped to the nearest edge  
- (0 or 1). This property affects every visible       
+ (0 or 1). This property affects every visible  
  portion of an element. If it is necessary to have   
  the content of an element semiopaque but not the    
  background, or vice versa, use alpha color types    
@@ -6677,7 +6705,7 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
  than 1 creates its own stacking context even if it  
  is not positioned. For similar reasons, an  
  absolutely positioned element with opacity less     
- than 1 and a z-index of auto force-alters the       
+ than 1 and a z-index of auto force-alters the  
  z-index value to 0. 
 <h5>Examples</h5>
 <pre>
@@ -6717,13 +6745,13 @@ li:nth-of-type(14) {order: -1;}
 #### **orphans**   **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    *&lt;integer&gt;*       
+ **Values**    *&lt;integer&gt;*  
  **Initial     2   
  value**   
  **Computed    As declared 
  value**   
  **Applies     Block-level elements
- to**      
+ to** 
  *     Defines the minimum number of text lines within an  
  *Description**  element that can be left at the bottom of a page.   
  This can affect the placement of page breaks within 
@@ -6858,11 +6886,11 @@ form:focus {outline-width: 0.25em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     visible &vert; hidden &vert; scroll &vert; auto  
- **Initial      visible      
+ **Initial visible 
  value**     
  **Computed     As declared  
  value**     
- **Applies      Block-level and replaced elements    
+ **Applies Block-level and replaced elements    
  to**
  **     A shorthand property that defines what happens to    
  Description**  content that overflows the content area of an ele‐   
@@ -6918,9 +6946,9 @@ value**
 **Computed    As declared 
 value**   
 **Applies     Block-level and replaced elements   
-to**      
+to** 
  *     Defines the overflow behavior along the horizontal  
- *Description**  (x) axis of the element; that is, the left and      
+ *Description**  (x) axis of the element; that is, the left and 
  right edges of the element. 
 <h5>Examples</h5>
 <pre>
@@ -6950,27 +6978,27 @@ scroll;}
  **Values**    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} 
  **Initial     Not defined for shorthand elements  
  value**   
- **Computed    See individual properties (padding-top, etc.)       
+ **Computed    See individual properties (padding-top, etc.)  
  value**   
  *     Refer to the width of the containing block  
- *Percentages**      
+ *Percentages** 
  **Applies     All elements
- to**      
+ to** 
  *     A shorthand property that defines the width of the  
  *Description**  overall padding for an element or sets the widths   
  of each individual side's padding. Padding set on   
  inline nonreplaced elements does not affect 
  line-height calculations; therefore, such an
- element with both padding and a background may      
+ element with both padding and a background may 
  visibly extend into other lines and potentially     
  overlap other content. The background of the
  element will extend throughout the padding. 
  Negative padding values are not permitted.  
 <h5>Examples</h5>
 <pre>
-img {padding: 10px;} h1 {padding: 2ex 0.33em;}      
+img {padding: 10px;} h1 {padding: 2ex 0.33em;} 
      
-pre {padding: 0.75em 0.5em 1em 0.5em;}      
+pre {padding: 0.75em 0.5em 1em 0.5em;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### padding-bottom Inh. N Anim. Y
@@ -7059,17 +7087,17 @@ ol {padding-right: 5em;}
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
  **Initial     0   
  value**   
- **Computed    For percentage values, as declared; for length      
- value**       values, the absolute length 
+ **Computed    For percentage values, as declared; for length 
+ value**  values, the absolute length 
  *     Refer to the width of the containing block  
- *Percentages**      
+ *Percentages** 
  **Applies     All elements
- to**      
+ to** 
  *     Defines the width of the top padding for an 
- *Description**  element. Top padding set on inline nonreplaced      
+ *Description**  element. Top padding set on inline nonreplaced 
  elements does not affect line-height calculations;  
  therefore, such an element with both top padding    
- and a background may visibly extend into other      
+ and a background may visibly extend into other 
  lines and potentially overlap other content.
  Negative padding values are not permitted.  
  <h5>Examples</h5>
@@ -7109,7 +7137,7 @@ table.summary {page: wide;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    auto &vert; always     
- **Initial     auto       
+ **Initial     auto  
  value**  
  **Computed    As declared
  value**  
@@ -7120,7 +7148,7 @@ table.summary {page: wide;}
  *Description**  breaks should be placed after an   
  element. Although it is    
  theoretically possible to force    
- breaks with always, it is not      
+ breaks with always, it is not 
  possible to guarantee prevention;  
  avoid asks the user agent to avoid 
  inserting a page break if  
@@ -7136,7 +7164,7 @@ always;}
 h1 {page-break-after:
 avoid;}    
 </pre>
-**Note**      This property is essentially       
+**Note** This property is essentially  
  replaced by breakafter, but
  browser support for
  page-break-after may be stronger.  
@@ -7172,36 +7200,36 @@ before, but browser support for page-breakbefore may be stronger.
 #### **page-break-inside**  **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**       auto &vert; avoid   
+ **Values**  auto &vert; avoid   
  **Initialauto    
  value**  
- **Computed       As declared     
+ **Computed  As declared     
  value**  
  **Applies to**   Nonfloated block-level elements 
     with a position value of
-    relative or static      
+    relative or static 
  **Description**  Defines whether a page break    
     should be avoided within the    
     element. Note that such 
     avoidance may not be possible;  
     for example, declaring body     
     {pagebreak-inside: avoid;} for a
-    lengthy document will not       
+    lengthy document will not  
     prevent the insertion of page   
-    breaks by the user agent.       
- <h5>Example</h5>      table {page-break-inside:       
+    breaks by the user agent.  
+ <h5>Example</h5> table {page-break-inside:  
     avoid;} 
  **Note** This property is essentially    
     replaced by breakbefore, but    
     browser support for     
     page-breakbefore may be 
-    stronger.       
+    stronger.  
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **perspective**  **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**       none &vert; *&lt;length&gt;*            
+ **Values**  none &vert; *&lt;length&gt;*  
 
 **Initial value** none
 
@@ -7224,19 +7252,19 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### perspective-origin Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;position&gt;*      
+**Values**    *&lt;position&gt;* 
 **Initial     50% 50%     
-**value**           
+**value**      
 **Computed**    A percentage, except for length values, which are   
-**value**       converted to an absolute length     
-     Refer to the size of the bounding box       
-**Percentages**      
+**value**  converted to an absolute length     
+     Refer to the size of the bounding box  
+**Percentages** 
 **Applies**     Any transformable element   
-**to**      
-       *&lt;length&gt;* and *&lt;percentage&gt;* values only       
-**Animatable**      
+**to** 
+  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+**Animatable** 
      Defines the origin point of the apparent 3D 
-**Description**  perspective within the element. In effect, it       
+**Description**  perspective within the element. In effect, it  
 defines the point in the element that appears to be 
 directly in front of the viewer.    
 <h5>Examples</h5>
@@ -7270,12 +7298,12 @@ offset from its default placement in the normal flow.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
- **Initial     User agent--dependent       
- value**           
+ **Initial     User agent--dependent  
+ value**      
  **Computed    As declared 
- value**           
+ value**      
  **Applies     All elements
- to**      
+ to** 
  *     Defines the quotation pattern used with quotes and  
  *Description**  nested quotes. The actual quote marks are inserted  
  via the content property's open-quote and   
@@ -7312,19 +7340,19 @@ textarea {resize: vertical;} iframe {resize: both;}
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
  **Initial     auto
- value**           
+ value**      
  **Computed    For static elements, auto; for length values, the   
- value**       corresponding absolute length; for percentage       
+ value**  corresponding absolute length; for percentage  
  values, the specified value; otherwise, auto
  *     Refer to the height of the containing block 
- *Percentages**      
+ *Percentages** 
  **Applies     Positioned elements 
- to**      
-       *&lt;length&gt;* and *&lt;percentage&gt;* values only       
- **Animatable**      
+ to** 
+  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+ **Animatable** 
  *     Defines the offset between the right outer margin   
  *Description**  edge of a positioned element and the right edge of  
- its containing block.       
+ its containing block.  
 <h5>Examples</h5>
 <pre>
 div#footer {position: fixed; right: 0;}     
@@ -7336,20 +7364,20 @@ div#footer {position: fixed; right: 0;}
 
  **Values**   *&lt;number&gt;* 
  **Initial    0.0  
- value**           
+ value**      
  **Computed   The same as the specified value after clipping the   
- value**      *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;       
- **Applies    Floats       
- to**      
- **   Changes the alpha channel value that acts as a       
+ value** *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;  
+ **Applies    Floats  
+ to** 
+ **   Changes the alpha channel value that acts as a  
  Description**  threshold for float shape creation via an image. By  
-      default, only fully transparent areas in the shape's 
-      source image are used to define the float shape. If  
+ default, only fully transparent areas in the shape's 
+ source image are used to define the float shape. If  
 <h5>Examples</h5>
 the value is changed to 0.7, then all areas of the   
 source image that are 70% or more transparent are    
 used to define the float shape. This allows for the  
-same image to be used to define multiple float       
+same image to be used to define multiple float  
 shapes, for example. A value of 0 will cause the     
 entire image to be ignored for shape calculation.    
 <pre>
@@ -7390,27 +7418,27 @@ img.floated {shape-image-threshold: 0.1;}
 #### shape-outside Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
-        *&lt;image&gt;*  
+   *&lt;image&gt;*  
 **   inset &vert; circle() &vert; ellipse() &vert; polygon()  
-**Definitions**       
-           
-***&lt;bas          
- ic-shape&gt;***       
- ***&lt;s       margin-box &vert; border-box &vert; padding-box &vert;   
+**Definitions**  
+      
+***&lt;bas     
+ ic-shape&gt;***  
+ ***&lt;s  margin-box &vert; border-box &vert; padding-box &vert;   
  hape-box&gt;***  contentbox   
  **Initial    none 
- value**           
+ value**      
  **Computed   For a *&lt;basic-shape&gt;*, as defined for an   
- value**      *&lt;image&gt;*, its URI made absolute; otherwise, as    
-        declared     
- **Applies    Floats       
- to**      
+ value** *&lt;image&gt;*, its URI made absolute; otherwise, as    
+   declared     
+ **Applies    Floats  
+ to** 
  *    *&lt;basic-shape&gt;* values only
- *Animatable**       
- **   Defines the shape of a floated element for the       
+ *Animatable**  
+ **   Defines the shape of a floated element for the  
  Description**  purposes of calculating text flow past the float.    
-        Possibilities include defining a polygon that echoes 
-        the outer    
+   Possibilities include defining a polygon that echoes 
+   the outer    
 
 edge of an illustration, or using that image's transparent areas to
 define the float shape. Shapes are clipped at the edges of the shape's
@@ -7429,18 +7457,18 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 **Values**    auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     
 &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack; 
 **Initial value**    auto
-**Computed value**   *&lt;length&gt;* values as absolute length values;      
-        otherwise, as declared      
-**Applies to**    The page area       
+**Computed value**   *&lt;length&gt;* values as absolute length values; 
+   otherwise, as declared 
+**Applies to**    The page area  
 **Description**  Defines the size and orientation of a page box. The 
  keywords auto, portrait, and landscape cause the    
  page box to fill the available rendering space on   
- the page. Page boxes set to portrait have the       
+ the page. Page boxes set to portrait have the  
  content printed with the long sides of the page box 
- being the right and left sides; in the case of      
+ being the right and left sides; in the case of 
  landscape, the content is printed with the longer   
- sides of the page box being the top and bottom      
- sides.      
+ sides of the page box being the top and bottom 
+ sides. 
      
  If a page box is specified using lengths or one of  
  the *&lt;page-size&gt;* keywords (e.g., A4) and the     
@@ -7450,12 +7478,12 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
  declared, it sets both dimensions and thus defines  
  a square page box. Length values that use em or ex  
  units are calculated with respect to the computed   
- font size of the page context.      
+ font size of the page context. 
 <h5>Example</h5>
 <pre>
-body        
-{page-size:         
-landscape;}         
+body   
+{page-size:    
+landscape;}    
 </pre>
 **Note** *&lt;page-size&gt;* is one of a defined set of standard page sizes;
 see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
@@ -7465,13 +7493,13 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
 #### **tab-size**  **Inh. Y Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    *&lt;length&gt;* &vert; *&lt;integer&gt;*       
+ **Values**    *&lt;length&gt;* &vert; *&lt;integer&gt;*  
  **Initial     8   
- value**           
+ value**      
  **Computed    The absolute-length equivalent of the value 
- value**           
- **Applies     Block elements      
- to**      
+ value**      
+ **Applies     Block elements 
+ to** 
  *     Sets the width of tab characters' whitespace when   
  *Description**  they are present in the displayed source *and* are  
  honored for display due to the value of whitespace. 
@@ -7514,7 +7542,7 @@ table.directory {table-display: auto;}
  **Values**    start &vert; end &vert; left &vert; right &vert; center &vert; justify  
  &vert; match-parent &vert; start end
  **Initial     In CSS3, start; in CSS2.1, this was user    
- value**       agent--specific, likely depending on writing
+ value**  agent--specific, likely depending on writing
  direction (e.g., left for Western languages like    
  English)    
  **Computed value**   As declared, except in the case of match-parent     
@@ -7583,11 +7611,11 @@ value overline underline for the h1 rule and either
 move it after the h1, h2 rule or extend its 
 selector to raise its specificity.  
      
-User agents are not required to support blink.      
+User agents are not required to support blink. 
 <h5>Examples</h5>
 <pre>
 u {text-decoration: underline;}     
-.old {text-decoration: line-through;}       
+.old {text-decoration: line-through;}  
 u.old {text-decoration: line-through underline;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7624,7 +7652,7 @@ an outdent effect without using a negative length value.
 **Values**mixed &vert; upright &vert; sideways
 **Initial value** mixed
 
-**Computed value**       As declared
+**Computed value**  As declared
 
 **Applies to**    All elements except table row groups, table rows,
     table column groups, and table columns
@@ -7720,27 +7748,27 @@ h1 {text-transform: uppercase;} .title
 {text-transform: capitalize;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **top**      **Inh. N Anim. P**
+#### **top** **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**      *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
-**Initial value**      auto
+**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+**Initial value** auto
 **Computed value**     For static elements, auto; for length values, the 
  corresponding absolute length; for percentage
  values, the specified value; otherwise, auto
-        Refer to the height of the containing block 
-**Percentages**      
+   Refer to the height of the containing block 
+**Percentages** 
 **Applies to**  Positioned elements 
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
-        Defines the offset between the top outer margin     
+**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+   Defines the offset between the top outer margin     
 **Description**  edge of a positioned element and the top edge of    
- its containing block.       
+ its containing block.  
 <h5>Examples</h5>
 
 <pre>
 #masthead {position: fixed; top: 0;} sub {position: 
 relative; top: 0.5em; vertical-align: baseline;}    
 </pre>
- **Note**        For relatively positioned elements, if both top and 
+ **Note**   For relatively positioned elements, if both top and 
  bottom are auto, their computed values are both 0.  
  If one of them is auto, it becomes the negative of  
  the other; if neither is auto, bottom becomes the   
@@ -7752,19 +7780,19 @@ relative; top: 0.5em; vertical-align: baseline;}
  **Values**    *&lt;transform-list&gt;* &vert; none
  **Initial value**    none
  **Computed value**   As declared, except for relative length values,     
-        which are converted to an absolute length   
- *     Refer to the size of the bounding box       
- *Percentages**        
+   which are converted to an absolute length   
+ *     Refer to the size of the bounding box  
+ *Percentages**   
  **Applies to**    All elements except "atomic inline-level" boxes     
-   As a transform      
- **Animatable**      
+   As a transform 
+ **Animatable** 
  *     Defines one or more transforms of an element. These 
- *Description**  transforms can occur in a 2D or a simulated 3D      
+ *Description**  transforms can occur in a 2D or a simulated 3D 
  space, depending on how the transforms are  
  declared.   
      
 The permitted values for *&lt;transform-function&gt;*   
-are lengthy and complex. For a full list with       
+are lengthy and complex. For a full list with  
 minimalist descriptions, please consult the W3C's   
 documentation on [transform 
 functions](http://  
@@ -7779,15 +7807,15 @@ scale3d(1.2,1.7,0.85);}
 #### transform-origin   Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-**Values**   *&lt;position&gt;*       
-**Initial value**   50% 50%      
+**Values**   *&lt;position&gt;*  
+**Initial value**   50% 50% 
 **Computed value**  A percentage, except for length values, which are    
-     converted to an absolute length      
+     converted to an absolute length 
 **   Refer to the size of the bounding box
- Percentages**       
+ Percentages**  
 **Applies to**   Any transformable element    
      *&lt;length&gt;* and *&lt;percentage&gt;* values only
-**Animatable**       
+**Animatable**  
 **   Defines the origin point for an element's transforms 
 Description**  in either 2D or simulated 3D space. The marked-as-   
 optional *&lt;length&gt;* values are what define a 3D origin point;
@@ -7815,7 +7843,7 @@ li {transform-origin: 10% 10px 10em;}
  values may be rendered "in front of" or "behind"    
  the element's plane as it rotates. Elements whose   
  overflow value is hidden cannot preserve 3D effects 
- and are treated as though the value of      
+ and are treated as though the value of 
  transform-style is flat.    
 <h5>Example</h5>
 <pre>
@@ -7824,13 +7852,13 @@ li {transform-style: preserve-3d;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **transition**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values**      &lbrack; &lbrack; none &vert; *&lt;transition-property&gt;* &rbrack; ‖
+ **Values** &lbrack; &lbrack; none &vert; *&lt;transition-property&gt;* &rbrack; ‖
  *&lt;time&gt;* ‖ *&lt;transition-timing-function&gt;* ‖     
- *&lt;time&gt;* &rbrack;#      
- **Initial value**      all 0s ease 0s      
+ *&lt;time&gt;* &rbrack;# 
+ **Initial value** all 0s ease 0s 
  **Computed value**     As declared 
  **Applies to**  All elements and :before and :after pseudoelements  
- *       A shorthand property that defines the aspects of    
+ *  A shorthand property that defines the aspects of    
  *Description**  one or more of an element's transitions from one    
  state to another.   
 
@@ -7900,25 +7928,25 @@ h1 {transition-duration: 10s;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
  **Values**     none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#    
- **Initial      all  
- value**             
+ **Initial all  
+ value**   
  **Computed     As declared  
- value**             
- **Applies      All elements and :before and :after pseudoelements   
- to**        
+ value**   
+ **Applies All elements and :before and :after pseudoelements   
+ to**   
  **     Defines one or more properties that are transitioned 
  Description**  from one state to another; for example, color means  
-        that the foreground color of an element is   
-        transitioned from the start color to the finish      
-        color. If a shorthand property is declared, the      
-        transition parameters meant for that property are    
-        propagated to all the properties represented by the  
-        shorthand.   
-             
-        The keyword all means all properties are     
-        transitioned. The keyword none prevents any  
-        properties from being transitioned, effectively      
-        shutting down the transition.
+   that the foreground color of an element is   
+   transitioned from the start color to the finish 
+   color. If a shorthand property is declared, the 
+   transition parameters meant for that property are    
+   propagated to all the properties represented by the  
+   shorthand.   
+   
+   The keyword all means all properties are     
+   transitioned. The keyword none prevents any  
+   properties from being transitioned, effectively 
+   shutting down the transition.
 <h5>Examples</h5>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-property: color;}
@@ -7990,10 +8018,10 @@ bottom &vert; text-bottom &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 **Initial value** baseline
 
  **Computed values**  For percentage and length values, the absolute length; 
-      otherwise, as declared 
+ otherwise, as declared 
   **Percentages**     Refer to the value of line-height for the element 
-  **Applies to**      Inline elements and table cells 
-  **Animatable**      *&lt;length&gt;* and *&lt;percentage&gt;* values only 
+  **Applies to** Inline elements and table cells 
+  **Animatable** *&lt;length&gt;* and *&lt;percentage&gt;* values only 
   **Description**     Defines the vertical alignment of an inline element's
     baseline with respect to the baseline of the line in
     which it resides. Negative length and percentage values 
@@ -8010,9 +8038,9 @@ sup {vertical-align: super;}
 .fnote {vertical-align: 50%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **visibility**      **Inh. Y Anim. N**
+#### **visibility** **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    visible &vert; hidden &vert; collapse       
+**Values**    visible &vert; hidden &vert; collapse  
 **Initial value**    visible
 **Computed value**   As declared
 **Applies to**    All elements
@@ -8060,17 +8088,17 @@ tt {white-space: pre;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **widows**   **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;integer&gt;*       
+**Values**    *&lt;integer&gt;*  
 **Initial value**    2   
 **Computed value**   As declared 
 **Applies to**    Block-level elements
-      Defines the minimum number of text lines within an  
+ Defines the minimum number of text lines within an  
 **Description**  element that can be left at the top of a page. This 
  can affect the placement of page breaks within the  
  element.    
 <h5>Examples</h5>
 <pre>
-p {widows: 4;} ul {widows: 2;}      
+p {widows: 4;} ul {widows: 2;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **width**    **Inh. N Anim. Y**
@@ -8103,11 +8131,11 @@ table {width: 80%;}
 #### **word-break**  **Inh. Y Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**    normal &vert; break-all &vert; keep-all     
-**Initial value**    normal      
+**Initial value**    normal 
 **Computed value**   As declared 
 **Applies to*    All elements
 *     Defines how text should be wrapped in situations    
-*Description**  where it would not ordinarily be wrapped; for       
+*Description**  where it would not ordinarily be wrapped; for  
 example, a very long string of numbers containing   
 no spaces, such as the first thousand digits of pi. 
 The value break-all permits user agents to break a  
@@ -8144,7 +8172,7 @@ p.cramped {word-spacing: −0.5em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### writing-mode Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**        horizontal-tb &vert; vertical-rl &vert; vertical-lr 
+**Values**   horizontal-tb &vert; vertical-rl &vert; vertical-lr 
 **Initial value**  horizontal-tb 
 **Computed value**  As declared 
 **Applies to**    All elements except table row groups, table column 
