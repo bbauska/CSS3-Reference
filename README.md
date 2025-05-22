@@ -1722,8 +1722,8 @@ inferred.</p>
 &ast; {color: red;}
 div &ast; p {color: blue;}</pre>
 
-| <h3>Universal Selector</h3> | |
-|---------|--------|
+| <h3>Universal</h3> | <h3>Selector</h3> |
+|---------|-------------------|
 | <b>Pattern</b> | &ast; |
 | <b>Description</b> | Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred. |
 | <b>Examples</b> | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
@@ -1738,6 +1738,10 @@ to these as "element selectors.")</p>
 <p><b>Examples</b></p>
 <pre>body {background: #FFF;} 
 p {font-size: 1em;}</pre>
+
+| <h3>Type</h3> | <h3>Selector</h3> |
+|---------|--------|
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Descendant Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
