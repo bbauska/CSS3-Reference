@@ -553,7 +553,6 @@ box</i>, which describes the amount of space occupied by an element. Figure
   alt="The complete box model."
   style="width:60%;" />
 </p>
-
 <!-- image003 -->
 <p align="center"><i>Figure 1-2. The complete box model</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -786,14 +785,14 @@ that element.</p>
     <ol type="a">
 	  <li>If the ancestor is block-level, the containing block is that element's outer 
 	    padding edge; in other words, it is the area bounded by the element's border.</li>
- <li>If the ancestor is inline-level, the containing block is set to the content 
+      <li>If the ancestor is inline-level, the containing block is set to the content 
 	    edge of the ancestor. In left-to-right languages, the top and left of the 
 		containing block are the top and left content edges of the first box in the 
 		ancestor, and the bottom and right edges are the bottom and right content edges 
 		of the last box. In rightto-left languages, the right edge of the containing 
 		block corresponds to the right content edge of the first box, and the left is 
 		taken from the last box. The top and bottom are the same.</li>
- <li>If there are no ancestors as described in 3a and 3b, the absolutely positioned 
+      <li>If there are no ancestors as described in 3a and 3b, the absolutely positioned 
 	    element's containing block is defined to be the initial containing block.</li>
     </ol>
   </li>
@@ -912,97 +911,108 @@ but the components are relatively simple to list and explain:</p>
 
 <h5><b><mark><i>&lt;length&gt; &vert; &lt;percentage&gt;</i></mark></b></h5>
 
-Any non-negative length or percentage value. Thus, 5em defines a 5-em
+<p>Any non-negative length or percentage value. Thus, 5em defines a 5-em
 gap between grid lines, whereas 5% creates a gap between lines that is
 5% of the total grid length in the given direction (i.e., the
-horizontal length for grid rows, and the vertical length for columns).
+horizontal length for grid rows, and the vertical length for columns).</p>
 
 <h5><b><mark><i>&lt;flex&gt;</i></mark></b></h5>
 
-A positive real number with the unit identifier fr (e.g., 2fr or
-3.14fr) which defines a <i>flex factor</i> for the grid track.
+<p>A positive real number with the unit identifier fr (e.g., 2fr or
+3.14fr) which defines a <i>flex factor</i> for the grid track.</p>
 
 <h5><b><mark>min-content</mark></b></h5>
 
-Sets the grid track's width (or height) to be as small as possible
+<p>Sets the grid track's width (or height) to be as small as possible
 while still containing all the content within the grid track. For
 example, column tracks that contain only text will become as narrow as
-the widest run of text that cannot be line-broken within the track.
+the widest run of text that cannot be line-broken within the track.</p>
 
 <h5><b><mark>max-content</mark></b></h5>
 
-Sets the grid track's width (or height) to be large enough to contain
+<p>Sets the grid track's width (or height) to be large enough to contain
 the largest rendering of all the content within the grid track. For
 example, column tracks that contain only text will become as wide as
-the longest run of text, <i>without</i> any line-wrapping of the text.
+the longest run of text, <i>without</i> any line-wrapping of the text.</p>
 
 <h5><b><mark>auto</mark></b></h5>
 
-In most cases, auto is equivalent to the largest minimum size of the
+<p>In most cases, auto is equivalent to the largest minimum size of the
 grid items occupying the grid track; that is, once all the minimum
 sizes of the grid items in the track have been determined, the track
 is made as wide as the widest of those minimums. When auto is used as
 a maximum value (see minmax() later in this list), it is identical to
-max-content.
+max-content.</p>
 
 <h5><b><mark>minmax(<i>&lt;min&gt;,&lt;max&gt;</i>)</mark></b></h5>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets a range of sizes outside which the grid track cannot grow or shrink. Either <i>&lt;min&gt;</i> or <i>&lt;max&gt;</i> can be a <i>&lt;length&gt;</i> or <i>&lt;percentage&gt;</i> value, min-content, or max-content. <i>&lt;max&gt;</i> can be a <i>&lt;flex&gt;</i> value, but <i>&lt;min&gt;</i> cannot. If the minimum value computes to be larger than the maximum computed value, the maximum sizing is ignored and the minimum size is used as a minimum.
+<p>Sets a range of sizes outside which the grid track cannot grow or shrink. Either <i>&lt;min&gt;</i> 
+or <i>&lt;max&gt;</i> can be a <i>&lt;length&gt;</i> or <i>&lt;percentage&gt;</i> value, min-content, 
+or max-content. <i>&lt;max&gt;</i> can be a <i>&lt;flex&gt;</i> value, but <i>&lt;min&gt;</i> cannot. 
+If the minimum value computes to be larger than the maximum computed value, the maximum sizing is ignored 
+and the minimum size is used as a minimum.</p>
 
 <h5><b><mark>fit-content( &lbrack; <i>&lt;length&gt; &vert; &lt;percentage&gt;</i> &rbrack; )</mark></b></h5>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equivalent to minmax(auto,max-content) with an exception: if the track's size is larger than the auto value's computed value, that size can't go higher than the given value (a <i>&lt;length&gt;</i> or <i>&lt;percentage&gt;</i>). This is intended to let authors declare a maximum track size while still letting the track size be content-bound below that maximum.
+Equivalent to minmax(auto,max-content) with an exception: if the track's size is larger than the 
+auto value's computed value, that size can't go higher than the given value (a <i>&lt;length&gt;</i> 
+or <i>&lt;percentage&gt;</i>). This is intended to let authors declare a maximum track size while 
+still letting the track size be content-bound below that maximum.
 
-<h5><b><mark>repeat( &lbrack; <i>&lt;integer&gt; &vert;</i> auto-fill <i>&vert;</i> auto-fit &rbrack; , <i>&lt;track-list&gt;</i> )</mark></b></h5>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allows authors to repeat a pattern of grid track sizes as many times as they like. The <i>&lt;integer&gt;</i> value must be positive. auto-fill and auto-fit delegate the number of tracks to the user agent. <i>&lt;track-list&gt;</i> can be any valid combination of track sizes.
+<h5><b><mark>repeat( &lbrack; <i>&lt;integer&gt; &vert;</i> auto-fill <i>&vert;</i> auto-fit &rbrack;, 
+<i>&lt;track-list&gt;</i> )</mark></b></h5>
+<p>Allows authors to repeat a pattern of grid track sizes as many times as they like. The 
+<i>&lt;integer&gt;</i> value must be positive. auto-fill and auto-fit delegate the number of tracks 
+to the user agent. <i>&lt;track-list&gt;</i> can be any valid combination of track sizes.</p>
 
 <p>There are three kinds of track sizing. These are:</p>
 
-<h5><b><i>Fixed</i></b></h5>
+<h5><b><i><mark>Fixed</mark></i></b></h5>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a size in absolute lengths (such as px or em), or sized with %. Percentage values count as fixed track sizes because they are always the same for a given grid container size. The tracks' sizing does not depend on their contents. 
+<p>Tracks are given a size in absolute lengths (such as px or em), or sized with %. 
+Percentage values count as fixed track sizes because they are always the same for a 
+given grid container size. The tracks' sizing does not depend on their contents.</p>
 
-<h5><b><i>Flexible</i></b></h5>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a flex or fractional sizing via the fr unit. Their sizing does not depend on their contents.
+<h5><b><i><mark>Flexible</mark></i></b></h5>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a flex or fractional sizing via the fr 
+unit. Their sizing does not depend on their contents.
 
-<h5><b><i>Intrinsic</i></b></h5>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The tracks' size is dependent on the things found within them; i.e., with min-content, max-content, fit-content(), and auto. These tracks may always be the same size for a given container size and set of content, but they are not regarded as fixed for layout purposes because their contents directly affect their sizing.
+<h5><b><i><mark>Intrinsic</mark></i></b></h5>
+<p>The tracks' size is dependent on the things found within them; i.e., with min-content, 
+max-content, fit-content(), and auto. These tracks may always be the same size for a given 
+container size and set of content, but they are not regarded as fixed for layout purposes 
+because their contents directly affect their sizing.</p>
 
-The process of actually determining the size of grid tracks, including
+<p>The process of actually determining the size of grid tracks, including
 what to do when track sizes are overconstrained or could lead to
 circular dependencies, is too long to go into here. In broad strokes,
-this is the process to find the track sizes:
-
-1.  Initialize track sizes, including determining the minimum and
+this is the process to find the track sizes:</p>
+<ol type="1"
+  <li>Initialize track sizes, including determining the minimum and
     maximum sizes for each track. Resolve fixed track sizes to absolute
     length values. Set intrinsically sized tracks' minimum size to zero
     and maximum size to unlimited. Flexible tracks are left flexible,
-    with an initial minimum size of zero.
-
-2.  Determine the size of intrinsic (e.g., auto) tracks, resolving each
+    with an initial minimum size of zero.</li>
+  <li>Determine the size of intrinsic (e.g., auto) tracks, resolving each
     to an absolute length. First find sizes based on the items within
     the track, and then gradually add space to encompass items that span
-    multiple tracks.
-
-3.  Maximize tracks up to their growth limit (this is determined
-    automatically).
-
-4.  Expand flexible (fr) tracks by adding space according to the ratio
+    multiple tracks.</li>
+  <li>Maximize tracks up to their growth limit (this is determined
+    automatically).</li>
+  <li>Expand flexible (fr) tracks by adding space according to the ratio
     of each track's flex factor to the total of all flex factors in the
-    grid track.
-
-5.  Expand any auto-sized tracks by dividing the remaining free space
-    (if any) by the number of auto tracks and expanding them equally.
-
-The details of each step are quite lengthy, and can be found in section
-11 of the [CSS Grid Layout Module Level 1
-documentation](https://www.w3.org/TR/css-grid-1/#layout-algorithm).
-
+    grid track.</li>
+  <li>Expand any auto-sized tracks by dividing the remaining free space
+    (if any) by the number of auto tracks and expanding them equally.</li>
+</ol>
+<p>The details of each step are quite lengthy, and can be found in section
+11 of the <a href="https://www.w3.org/TR/css-grid-1/#layout-algorithm">
+CSS Grid Layout Module Level 1 documentation</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-13-1">1.13. Table Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The layout of tables can get quite complicated, especially because CSS
+<p>The layout of tables can get quite complicated, especially because CSS
 defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
-table. Figure 1-6 illustrates the components of a table.
+table. Figure 1-6 illustrates the components of a table.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. Table layout components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1016,25 +1026,21 @@ table. Figure 1-6 illustrates the components of a table.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Arrangement Rules</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In general, a table is laid out according to the following principles:
-
--   Each row box encompasses a single row of grid cells. All of the row
+<p>In general, a table is laid out according to the following principles:</p>
+<ul>
+  <li>Each row box encompasses a single row of grid cells. All of the row
     boxes in a table fill the table from top to bottom in the order they
     occur in the source document. Thus, the table contains as many grid
-    rows as there are row elements.
-
--   A row group's box encompasses the same grid cells as the row boxes
-    that it contains.
-
--   A column box encompasses one or more columns of grid cells. Column
+    rows as there are row elements.</li>
+  <li>A row group's box encompasses the same grid cells as the row boxes
+    that it contains.</li>
+  <li>A column box encompasses one or more columns of grid cells. Column
     boxes are placed next to each other in the order in which they
     occur. The first column box is on the left for left-to-right
-    languages and on the right for rightto-left languages.
-
--   A column group's box encompasses the same grid cells as the column
-    boxes that it contains.
-
--   Although cells may span several rows or columns, CSS does not define
+    languages and on the right for rightto-left languages.</li>
+  <li>A column group's box encompasses the same grid cells as the column
+    boxes that it contains.</li>
+  <li>Although cells may span several rows or columns, CSS does not define
     how that happens. It is instead left to the document language to
     define spanning. Each spanned cell is a rectangular box one or more
     grid cells wide and high. The top row of this rectangle is in the
@@ -1045,163 +1051,142 @@ In general, a table is laid out according to the following principles:
     a left-to-right language. In right-to-left languages, a spanned cell
     must be as far to the right as possible without overlapping other
     cells, and must be to the left of all cells in the same row that
-    come after it in the document source.
-
--   A cell's box cannot extend beyond the last row box of a table or row
+    come after it in the document source.</li>
+  <li>A cell's box cannot extend beyond the last row box of a table or row
     group. If the table structure causes this condition, the cell must
     be shortened until it fits within the table or row group that
-    encloses it.
-
+    encloses it.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Fixed Table Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The fixed-layout model is fast because its layout doesn't depend on the
+<p>The fixed-layout model is fast because its layout doesn't depend on the
 contents of table cells; it's driven by the width values of the table,
 columns, and cells within the first row of the table. The fixed-layout
-model uses the following steps:
-
-1.  Any column element whose width property has a value other than auto
-    sets the width for that column.
-
-2.  If a column has an auto width, but the cell in the first row of the
+model uses the following steps:</p>
+<ol type="1">
+  <li>Any column element whose width property has a value other than auto
+    sets the width for that column.</li>
+  <li>If a column has an auto width, but the cell in the first row of the
     table within that column has a width other than auto, that cell sets
     the width for that column. If the cell spans multiple columns, the
-    width is divided equally among the columns.
-
-3.  Any columns that are still auto-sized are sized so that their widths
-    are as equal as possible.
-
-At that point, the width of the table is set to be either the value of
+    width is divided equally among the columns.</li>
+  <li>Any columns that are still auto-sized are sized so that their widths
+    are as equal as possible.</li>
+</ol>
+<p>At that point, the width of the table is set to be either the value of
 width for the table or the sum of the column widths, whichever is
 greater. If the table turns out to be wider than the column widths, the
 difference is divided by the number of columns and added to each of
-them. 
-
+them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Automatic Table Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The automatic-layout model, although not as fast as the fixedlayout
+<p>The automatic-layout model, although not as fast as the fixedlayout
 model, is likely to be much more familiar to authors, because it's
 substantially the same model that HTML tables have used for years. In
 most current user agents, use of this model will be triggered by a table
 with a width of auto, regardless of the value of table-layout---although
-this is not assured.
+this is not assured.</p>
 
-Here's how the model works:
-
-1.  For each cell in a column, calculate both the minimum and maximum
-    cell width.
-
-2.  Determine the minimum width required to display the content. In
+<p>Here's how the model works:</p>
+<ol type="1">
+  <li>For each cell in a column, calculate both the minimum and maximum
+    cell width.</li>
+  <li>Determine the minimum width required to display the content. In
     determining the minimum content width, the content can flow to any
     number of lines, but it may not stick out of the cell's box. If the
     cell's width value is larger than the minimum possible width, the
     minimum cell width is set to that value. If the cell's width value
-    is auto, the minimum cell width is set to the minimum content width.
-
-3.  For the maximum width, determine the width required to display the
+    is auto, the minimum cell width is set to the minimum content width.</li>
+  <li>For the maximum width, determine the width required to display the
     content without any line-breaking, other than that forced by
     explicit line-breaking (e.g., due to the &lt;br&gt; element). That value
-    is the maximum cell width.
-
-4.  For each column, calculate both the minimum and maximum column
-    width:
-
-    a.  The column's minimum width is determined by the largest minimum
-cell width of the cells within the column. If the column has
-been given an explicit width value that is larger than any of
-the minimum cell widths within the column, the minimum column
-width is set to the value of width.
-
-    b.  For the maximum width, take the largest maximum cell width of
-the cells within the column. If the column has an explicit width
-value larger than any of the maximum cell widths within the
-column, the maximum column width is set to the value of width.
-These two behaviors recreate the traditional HTML table behavior
-of forcibly expanding any column to be as wide as its widest
-cell.
-
-5.  In cases where a cell spans more than one column, the sum of the
-    minimum column widths must be equal to the minimum cell width for
-    the spanning cell. Similarly, the sum of the maximum column widths
-    must equal the spanning cell's maximum width. User agents should
-    divide any changes in column widths equally among the spanned
-    columns.
-
-In addition, the user agent must take into account that when a column
+    is the maximum cell width.</li>
+  <li>For each column, calculate both the minimum and maximum column width:
+    <ol type-="a">
+      <li>The column's minimum width is determined by the largest minimum cell width of the 
+	    cells within the column. If the column has been given an explicit width value that is 
+		larger than any of the minimum cell widths within the column, the minimum column width 
+		is set to the value of width.</li>
+      <li>For the maximum width, take the largest maximum cell width of the cells within the column. 
+	    If the column has an explicit width value larger than any of the maximum cell widths within 
+		the column, the maximum column width is set to the value of width. These two behaviors recreate 
+		the traditional HTML table behavior of forcibly expanding any column to be as wide as its widest
+        cell.</li>
+      <li>In cases where a cell spans more than one column, the sum of the minimum column widths must 
+	    be equal to the minimum cell width for the spanning cell. Similarly, the sum of the maximum 
+		column widths must equal the spanning cell's maximum width. User agents should divide any 
+		changes in column widths equally among the spanned columns.</li>
+    </ol>
+  </li>
+</ol>
+<p>In addition, the user agent must take into account that when a column
 width has a percentage value for its width, the percentage is calculated
 in relation to the width of the table---even though that width is not
 known yet. The user agent must hang on to the percentage value and use
 it in the next part of the algorithm. Once the user agent has determined
 how wide or narrow each column can be, it can calculate the width of the
-table. This happens as follows:
-
-1.  If the computed width of the table is not auto, the computed table
+table. This happens as follows:</p>
+<ol type="1">
+  <li>If the computed width of the table is not auto, the computed table
     width is compared to the sum of all the column widths plus any
     borders and cell spacing. (Columns with percentage widths are likely
     calculated at this time.) The larger of the two values is the final
     width of the table. If the table's computed width is larger than the
     sum of the column widths, borders, and cell spacing, all columns are
     increased in width by an equal amount so they fill the computed
-    width of the table.
-
-2.  If the computed width of the table is auto, the final width of the
+    width of the table.</li>
+  <li>If the computed width of the table is auto, the final width of the
     table is determined by summing up the column widths, borders, and
     cell spacing. This means the table will be only as wide as needed to
     display its content, just as with traditional HTML tables. Any
     columns with percentage widths use that percentage as a constraint,
-    but it is a constraint that a user agent does not have to satisfy.
-
-Once the last step is completed (and only then), the user agent can
-actually lay out the table.
-
+    but it is a constraint that a user agent does not have to satisfy.</li>
+</ol>
+<p>Once the last step is completed (and only then), the user agent can
+actually lay out the table.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Collapsing Cell Borders</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The collapsing cell model largely describes how HTML tables have always
+<p>The collapsing cell model largely describes how HTML tables have always
 been laid out when they have no cell spacing. The following rules govern
-this model:
-
--   Table elements cannot have any padding, although they can have
+this model:</p>
+<ul>
+  <li>Table elements cannot have any padding, although they can have
     margins. Thus, there is never separation between the border around
-    the outside of the table and its outermost cells.
-
--   Borders can be applied to cells, rows, row groups, columns, and
+    the outside of the table and its outermost cells.</li>
+  <li>Borders can be applied to cells, rows, row groups, columns, and
     column groups. The table element itself can, as always, have a
-    border.
-
--   There is never any separation between cell borders. In fact, borders
+    border.</li>
+  <li>There is never any separation between cell borders. In fact, borders
     collapse into each other where they adjoin so that only one of the
     collapsing borders is actually drawn. This is somewhat akin to
     margin collapsing, where the largest margin wins. When cell borders
-    collapse, the "most interesting" border wins.
-
--   Once they are collapsed, the borders between cells are centered on
-    the hypothetical grid lines between the cells.
-
+    collapse, the "most interesting" border wins.</li>
+  <li>Once they are collapsed, the borders between cells are centered on
+    the hypothetical grid lines between the cells.</li>
+</ul>
 <h5>Collapsing borders</h5>
-When two or more borders are adjacent, they collapse into each other, as
+<p>When two or more borders are adjacent, they collapse into each other, as
 shown in Figure 1-7. There are strict rules governing which borders will
-win and which will not:
-
-1.  If one of the collapsing borders has a border-style of hidden, it
+win and which will not:</p>
+<ol type="1">
+  <li>If one of the collapsing borders has a border-style of hidden, it
     takes precedence over all other collapsing borders: all borders at
-    this location are hidden.
-
-2.  If one of the collapsing borders has a border-style of none, it
+    this location are hidden.</li>
+  <li>If one of the collapsing borders has a border-style of none, it
     takes the lowest priority. There will be no border drawn at this
     location only if all of the borders meeting at this location have a
-    value of none. Note that none is the default value for border-style.
-
-3.  If at least one of the collapsing borders has a value other than
+    value of none. Note that none is the default value for border-style.</li>
+  <li>If at least one of the collapsing borders has a value other than
     either none or hidden, narrow borders lose out to wider ones. If two
     or more of the collapsing borders have the same width, the border
     style is taken in the following order, from most preferred to least:
     double, solid, dashed, dotted, ridge, outset, groove, inset. Thus,
     if two borders with the same width collapse and one is dashed while
-    the other is outset, the border at that location will be dashed.
-
-4.  If collapsing borders have the same style and width but differ in
+    the other is outset, the border at that location will be dashed.</li>
+  <li>If collapsing borders have the same style and width but differ in
     color, the color used is taken from an element in the following
     list, from most preferred to least: cell, row, row group, column,
     column group, table. Thus, if the borders of a cell and a
@@ -1210,8 +1195,8 @@ win and which will not:
     borders come from the same type of element---such as two row borders
     with the same style and width, but different colors---the one
     farthest to the left and top wins in left-to-right languages; in
-    right-to-left languages, the cell farthest to the right and top
-    wins.
+    right-to-left languages, the cell farthest to the right and top wins.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. Collapsing cell borders model ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1225,70 +1210,66 @@ win and which will not:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Vertical Alignment Within Cells</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The following describes the detailed process for aligning cell contents
-within a row:
-
-1.  If any of the cells are baseline-aligned, the row's baseline is
-    determined and the content of the baseline-aligned cells is placed.
-
-2.  Any top-aligned cell has its content placed. The row now has a
+<p>The following describes the detailed process for aligning cell contents
+within a row:</p>
+<ol type="1">
+  <li>If any of the cells are baseline-aligned, the row's baseline is
+    determined and the content of the baseline-aligned cells is placed.</li>
+  <li>Any top-aligned cell has its content placed. The row now has a
     provisional height, which is defined by the lowest cell bottom of
-    the cells that have already had their content placed.
-
-3.  If any remaining cells are middle- or bottom-aligned, and the
+    the cells that have already had their content placed.</li>
+  <li>If any remaining cells are middle- or bottom-aligned, and the
     content height is taller than the provisional row height, the height
     of the row is increased by lowering the baseline in order to enclose
-    the tallest of those cells.
-
-4.  All remaining cells have their content placed. In any cell with
+    the tallest of those cells.</li>
+  <li>All remaining cells have their content placed. In any cell with
     contents shorter than the row height, the cell's padding is
-    increased in order to match the height of the row.
-
+    increased in order to match the height of the row.</li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2">2. CHAPTER 2 Values</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-There are a variety of value types in CSS, most of which use units.
+<p>There are a variety of value types in CSS, most of which use units.
 Combining basic value types (such as numbers) with units (such as
 pixels) makes it possible to do any number of interesting things with
-CSS.
+CSS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-1-1">2.1. Keywords</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Keywords are defined on a per-property basis and have a meaning specific
+<p>Keywords are defined on a per-property basis and have a meaning specific
 only to a given property. For example, normal has totally unique
 meanings for the properties font-variant and letter-spacing. Keywords,
-like property names, are not case-sensitive.
+like property names, are not case-sensitive.</p>
 
-CSS defines three "global" keywords that are accepted by every property
-in the specification: inherit
+<p>CSS defines three "global" keywords that are accepted by every property
+in the specification: inherit</p>
 
-Forces the value for the property to be inherited from the element's
+<p>Forces the value for the property to be inherited from the element's
 parent element, even if the property in question is not inherited
 (e.g., background-image). Another way to think of this is that the
-value is copied from the parent element.
+value is copied from the parent element.</p>
 
 <h5>initial</h5>
 
-Forces the value of the property to be the initial value defined by
+<p>Forces the value of the property to be the initial value defined by
 the relevant CSS module. For example, fontstyle: initial sets the
 value of font-style to normal regardless of the font-style value that
 would have been inherited from the parent element. In cases where the
 initial value is defined as determined by the user agent, such as for
 font-size, the value is set to the "default" defined by the user
-agent's preferences.
+agent's preferences.</p>
 
 <h5>unset</h5>
 
-Combines the effects of both inherit and initial, with a rudimentary
+<p>Combines the effects of both inherit and initial, with a rudimentary
 logic built in for good measure. If a property is inherited (e.g.,
 color), then unset has the same effect as inherit. If the property is
 <i>not</i> inherited (e.g., backgroundimage), then unset has the same
-effect as initial.
+effect as initial.</p>
 
-If you have a situation where you want to set all of the properties on
+<p>If you have a situation where you want to set all of the properties on
 an element to their default values, thus breaking any chains of
-inheritance, see the all property in Chapter 4.
-
+inheritance, see the all property in Chapter 4.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2-1">2.2. Color Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1296,22 +1277,22 @@ inheritance, see the all property in Chapter 4.
 
 <h5><i>#RRGGBB</i></h5>
 
-This is a hex-pair notation familiar to authors using traditional
+<p>This is a hex-pair notation familiar to authors using traditional
 HTML. In this format, the first pair of digits corresponds to the red
 level, the second pair to the green, and the third pair to the blue.
 Each pair is in hexadecimal notation in the range 00--FF (decimal
 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is
-written #FF0000, and so on.
+written #FF0000, and so on.</p>
 
 <h5><i>#RGB</i></h5>
 
-This is a shorter form of the six-digit notation described previously.
+<p>This is a shorter form of the six-digit notation described previously.
 In this format, each digit is replicated to arrive at an equivalent
-six-digit value; thus, #F8C becomes #FF88CC.
+six-digit value; thus, #F8C becomes #FF88CC.</p>
 
 <h5><i>#RRGGBBAA</i></h5>
 
-An extension of the #RRGGBB notation which adds an alpha channel. As
+<p>An extension of the #RRGGBB notation which adds an alpha channel. As
 with the R, G, and B values, the A (alpha) value is in hexadecimal
 notation in the range 00-- FF. These are mapped from hexadecimal to
 decimal in the range 0--1; thus, #00FF0099 is equivalent to the color
@@ -1319,340 +1300,320 @@ decimal in the range 0--1; thus, #00FF0099 is equivalent to the color
 derived by converting hexadecimal 99 to decimal 153, and then dividing
 153 by 255 to get 0.6. Put another way, #00FF0099 is exactly
 equivalent to rgba(0,255,0,0.6). Note: support for this notation first
-emerged in early 2016.
+emerged in early 2016.</p>
 
 <h5><i>#RGBA</i></h5>
 
-This is a shorter form of the eight-digit #RRGGBBAA notation described
+<p>This is a shorter form of the eight-digit #RRGGBBAA notation described
 previously. In this format, each digit is replicated to arrive at an
-equivalent eight-digit value; thus,
+equivalent eight-digit value; thus,</p>
 
-&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.
+<p>&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.</p>
 
 <h5><i>rgb(rrr,ggg,bbb)</i></h5>
 
-This format allows the author to use RGB values in the range 0--255;
+<p>This format allows the author to use RGB values in the range 0--255;
 only integers are permitted. Not coincidentally, this range is the
 decimal equivalent of 00--FF in hexadecimal. In this format, "pure"
-green is rgb(0,255,0), and white is represented as rgb(255,255,255).
+green is rgb(0,255,0), and white is represented as rgb(255,255,255).</p>
 
 <h5><i>rgb(rrr.rr%,ggg.gg%,bbb.bb%)</i></h5>
 
-This format allows the author to use RGB values in the range 0% to
+<p>This format allows the author to use RGB values in the range 0% to
 100%, with decimal values allowed (e.g., 75.5%). The value for black
-is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).
+is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).</p>
 
 <h5><i>hsl(hhh.hh,sss.ss%,lll.ll%)</i></h5>
 
-This format permits authors to specify a color by its hue angle,
+<p>This format permits authors to specify a color by its hue angle,
 saturation, and lightness (HSL). The hue angle is always a unitless
 number or a <i>&lt;degree&gt;</i> value in the range 0 to 360, and the
 saturation and brightness values are always percentages. Hue angles 0
 and 360 are equivalent, and are both red. Hue angles greater than 360
-can be
+can be declared, but they are normalized to the 0--360 range; thus, setting a
+hue angle of 454 is equivalent to setting an angle of 94.</p>
 
-<h5><b>Color Values</b></h5>
-declared, but they are normalized to the 0--360 range; thus, setting a
-hue angle of 454 is equivalent to setting an angle of 94. Any HSL value,
-regardless of color angle, will be rendered as a shade of gray if the
+<p>Any HSL value, regardless of color angle, will be rendered as a shade of gray if the
 saturation value is 0%; the exact shade will depend on the lightness
 value. Any HSL value, regardless of the hue angle, will be rendered
 solid black if lightness is 0% and solid white if lightness is 100%. The
 "normal" lightness value---that is, the value associated with most
-common colors---is 50%. <i>rgba(rrr,ggg,bbb,a.aa)
-rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</i>
+common colors---is 50%. <i>rgba(rrr,ggg,bbb,a.aa) rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</i></p>
 
-These extend the previous three formats to include an alpha (opacity)
+<p>These extend the previous three formats to include an alpha (opacity)
 value. The alpha value must be a real number between 0 and 1
 inclusive; percentages are not permitted for the alpha value. Thus,
 rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
-are all equivalent half-opaque red.
+are all equivalent half-opaque red.</p>
 
 <h5><i>&lt;keyword&gt;</i></h5>
 
-One of 16 recognized keywords based on the original Windows VGA
+<p>One of 16 recognized keywords based on the original Windows VGA
 colors. These keywords are aqua, black, blue, fuchsia, gray, green,
 lime, maroon, navy, olive, purple, red, silver, teal, white, and
 yellow. Browsers generally also recognize the 148 color keywords
 documented in the [CSS Color Module Level 4
 specification](http://www.w3.org/TR/css-color-4/), referred to for
 historical reasons as "the X11 colors" (though the list does not
-precisely replicate X11's colors).
+precisely replicate X11's colors).</p>
 
 <h5>currentColor</h5>
 
-A special keyword that represents the current computed value of the
+<p>A special keyword that represents the current computed value of the
 element's color property. This means you can declare background-color:
 currentColor and set the element's background to be the same color as
 its foreground (not recommended). When applied to the color property,
 it is equivalent to declaring color: inherit. It can also be used on
 borders; border: 1px solid is equivalent to border: 1px solid
 currentColor. This can be quite useful when (un)setting a border's
-color via DOM scripting.
+color via DOM scripting.</p>
 
 <h5>transparent</h5>
 
-A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
-which is the computed value any time transparent is used.
-
+<p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
+which is the computed value any time transparent is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-1">2.3. Number Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A number value is expressed as a positive or negative number
-
+<p>A number value is expressed as a positive or negative number
 (when permitted). Numbers can be either real (represented as
 <i>&lt;number&gt;</i>) or integers (<i>&lt;integer&gt;</i>). They may also restrict the
 range of acceptable values, as with color values that accept only
 integers in the range 0--255. A more common range restriction is to
 limit a number to be non-negative. These are sometimes represented as
-<i>&lt;non-negative number&gt;</i> or <i>&lt;non-negative integer&gt;</i>.
-
+<i>&lt;non-negative number&gt;</i> or <i>&lt;non-negative integer&gt;</i>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-1">2.4. Percentage Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately
+<p>A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately
 by a percent sign (%). There should never be any space between the
 number and the percent sign. A percentage value will always be computed
 relative to something else. For example, declaring font-size: 120% for
 an element sets its font size to 120% of the computed font-size of its
 parent element. Fractional values, such as 543.21%, are valid. Some
-properties may restrict percentage values to be non-negative.
-
+properties may restrict percentage values to be non-negative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5-1">2.5. Length Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A length value is expressed as a positive or negative number (when
+<p>A length value is expressed as a positive or negative number (when
 permitted), followed immediately by a unit identifier. There should
 never be any space between the number and the unit identifier. A length
-value of 0 (zero) does not require a unit identifier.
+value of 0 (zero) does not require a unit identifier.</p>
 
 <h5><b>Number Values</b></h5>
-Length units are divided into two types: <i>absolute units</i>, which are (in
+<p>Length units are divided into two types: <i>absolute units</i>, which are (in
 theory) always measured in the same way, and <i>relative units</i>, which are
-measured in relation to other things. <b>Absolute Length Units</b>
+measured in relation to other things. <b>Absolute Length Units</b></p>
 
-The available absolute units are:
+<p>The available absolute units are:</p>
 
 <h5><i>Centimeters</i> (cm)</h5>
 
-The centimeters found on rulers the world over. There are 2.54
+<p>The centimeters found on rulers the world over. There are 2.54
 centimeters to an inch, and 1 centimeter equals 0.394 inches. The same
-mapping warnings that applied to inches also apply to centimeters.
+mapping warnings that applied to inches also apply to centimeters.</p>
 
 <h5><i>Millimeters</i> (mm)</h5>
 
-There are 10 millimeters to a centimeter, so you get 25.4 millimeters
+<p>There are 10 millimeters to a centimeter, so you get 25.4 millimeters
 to an inch, and 1 millimeter equals 0.0394 inches. Bear in mind the
-previous warnings about mapping lengths to displays.
+previous warnings about mapping lengths to displays.</p>
 
 <h5><i>Quarter-millimeters</i> (q)</h5>
 
-Exactly what they say they are: one-fourth of a millimeter.
+<p>Exactly what they say they are: one-fourth of a millimeter.</p>
 
-In other words, 4q equals one millimeter, and 400q equals one
-centimeter. Again, bear in mind the previous mapping warnings.
+<p>In other words, 4q equals one millimeter, and 400q equals one
+centimeter. Again, bear in mind the previous mapping warnings.</p>
 
 <h5><i>Inches</i> (in)</h5>
 
-As you might expect, the same inches found on typical US rulers. The
+<p>As you might expect, the same inches found on typical US rulers. The
 mapping from inches to a display device is usually approximate at
 best, because many systems have no concept of the relation of their
 display areas to "realworld" measurements such as inches. Thus, inches
-should be used with extreme caution in screen design.
+should be used with extreme caution in screen design.</p>
 
 <h5><i>Points</i> (pt)</h5>
 
-Points are standard typographical measures used by printers and
+<p>Points are standard typographical measures used by printers and
 typesetters for centuries and by word-processing programs for decades.
 By modern definition, there are 72 points to an inch. Therefore, the
 capital letters of text set to 12 points should be 1/6 of an inch
 tall. For example, p {font-size: 18pt;} is equivalent to p {font-size:
 0.25in;}, assuming proper mapping of lengths to the display
-environment (see previous comments).
+environment (see previous comments).</p>
 
 <h5><i>Picas</i> (pc)</h5>
 
-Another typographical term. A pica is equivalent to 12 points, which
+<p>Another typographical term. A pica is equivalent to 12 points, which
 means there are 6 picas to an inch. The capital letters of text set to 1
 pica should be 1/6 of an inch tall. For example, p {font-size: 1.5pc;}
 would set text to be the same size as the example declarations found in
 the definition of points. Keep in mind the previous warnings. <b>Relative
-Length Units</b>
+Length Units</b></p>
 
-The available relative units are:
+<p>The available relative units are:</p>
 
 <h5><i>Em-height</i> (em)</h5>
 
-This refers to the em-height of a given font face. In CSS, the
+<p>This refers to the em-height of a given font face. In CSS, the
 em-height is equivalent to the height of the character box for the
 font face, which is to say the computed value of font-size. Ems can be
 used to set relative sizes for fonts; for example, font-size: 1.2em is
-the same as saying fontsize: 120%.
+the same as saying fontsize: 120%.</p>
 
 <h5><i>Root element em-height</i> (rem)</h5>
 
-Equal to the em-height of the root element (in HTML, the html
-element).
+<p>Equal to the em-height of the root element (in HTML, the html element).</p>
 
 <h5><i>X-height</i> (ex)</h5>
 
-This refers to the x-height of the font face, which is to say the
+<p>This refers to the x-height of the font face, which is to say the
 height of the lowercase "x" character in the given font face. However,
 the vast majority of font faces do not include their x-height, so many
 browsers approximate it (poorly) by simply setting 1ex to be equal to
-0.5em.
+0.5em.</p>
 
 <h5><i>ZERO width</i> (ch)</h5>
 
-This refers to the width of a single zero (Unicode U+0300, "ZERO") in
+<p>This refers to the width of a single zero (Unicode U+0300, "ZERO") in
 the current font family and size. This is often, but erroneously,
 assumed to mean "one character." This will only be true in monospace
-fonts, where all characters are the same width.
+fonts, where all characters are the same width.</p>
 
 <h5><b>Length Values</b></h5>
-Since most proportional fonts have zeros that are
+<p>Since most proportional fonts have zeros that are
 slimmer than the alphabetic symbols, setting something like width:
-60ch will often result in lines of text with fewer than 60 characters.
+60ch will often result in lines of text with fewer than 60 characters.</p>
 
 <h5><i>Pixels</i> (px)</h5>
 
-A pixel is usually thought of as a small box on a display, but CSS
+<p>A pixel is usually thought of as a small box on a display, but CSS
 defines pixels more abstractly. In CSS terms, a pixel is defined to be
 about the size required to yield 96 units per inch. Many user agents
 ignore this definition in favor of simply addressing the pixels on the
 display, but others (such as those on high-resolution mobile devices)
 go the CSS route, treating each px as being multiple physical
-on-screen pixels.
+on-screen pixels.</p>
 
 <h5><i>Viewport width unit</i> (vw)</h5>
 
-This unit is calculated with respect to the viewport's width, which is
+<p>This unit is calculated with respect to the viewport's width, which is
 divided by 100. If the viewport is 937 pixels wide, for example, 1vw
 is equal to 9.37px. If the viewport's width changes, say by dragging
 the browser window to be wider or narrower, the value of vw changes
-along with it.
+along with it.</p>
 
 <h5><i>Viewport height unit</i> (vh)</h5>
 
-This unit is calculated with respect to the viewport's height, which
+<p>This unit is calculated with respect to the viewport's height, which
 is divided by 100. If the viewport is 650 pixels tall, for example,
 1vh is equal to 6.5px. If the viewport's height changes, say by
 dragging the browser window to be taller or shorter, the value of vh
-changes along with it.
+changes along with it.</p>
 
 <h5><i>Viewport minimum unit</i> (vmin)</h5>
 
-This unit is 1/100 of the viewport's width or height, whichever is
+<p>This unit is 1/100 of the viewport's width or height, whichever is
 <i>lesser</i>. Thus, given a viewport that is 937 pixels wide by 650 pixels
-tall, 1vmin is equal to 6.5px.
+tall, 1vmin is equal to 6.5px.</p>
 
 <h5><i>Viewport maximum unit</i> (vmax)</h5>
 
-This unit is 1/100 of the viewport's width or height, whichever is
+<p>This unit is 1/100 of the viewport's width or height, whichever is
 <i>greater</i>. Thus, given a viewport that is 937 pixels wide by 650
-pixels tall, 1vmax is equal to 9.37px.
-
+pixels tall, 1vmax is equal to 9.37px.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6-1">2.6. Fraction Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A <i>fraction value</i> is a <i>&lt;number&gt;</i> followed by the label fr. Thus, one
+<p>A <i>fraction value</i> is a <i>&lt;number&gt;</i> followed by the label fr. Thus, one
 fraction unit is 1fr, four fraction units are 4fr, and so on. This is a
 concept introduced by Grid Layout, and is used to divide up fractions of
 the unconstrained space in a layout. Note that fr is <i>not</i> a
 <i>&lt;length&gt;</i> unit, and thus cannot be used in places where length values
 are permitted (e.g., calc() expressions, see "Calculation Values" on
-page 45).
-
+page 45).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-1">2.7. URIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or
+<p>A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or
 another stylesheet. CSS defines a URI as relative to the stylesheet that
 contains it. URI stands for Uniform Resource Identifier, which is the
 more recent name for URLs. (Technically, URLs are a subset of URIs.) In
 CSS, which was first defined when URIs were still called URLs, this
 means that references to URIs will often appear in the form
-url(<i>&lt;uri&gt;</i>). Fun!
-
+url(<i>&lt;uri&gt;</i>). Fun!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-8-1">2.8. Angles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed
+<p>The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed
 immediately by an angle unit. There are four types of angle units:
 degrees (deg), grads (grad), radians (rad), and turns (turn). For
 example, a right angle could be declared as 90deg, 100grad, 1.571rad, or
 0.25turn. In each case, the values are translated into degrees in the
 range 0 through 360. This is also true of negative values: −90deg is
-equivalent to 270deg.
-
+equivalent to 270deg.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-9-1">2.9. Times</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A time value (<i>&lt;time&gt;</i>) is expressed as a <i>&lt;number&gt;</i> followed
+<p>A time value (<i>&lt;time&gt;</i>) is expressed as a <i>&lt;number&gt;</i> followed
 immediately by a time unit. There are two types of time units: seconds
 (s) and milliseconds (ms). Time values appear in aural styles, which are
 not widely supported, and in the much bettersupported transitions and
-animations.
-
+animations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10-1">2.10. Frequencies</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A frequency value (<i>&lt;frequency&gt;</i>) is expressed as a non-negative
+<p>A frequency value (<i>&lt;frequency&gt;</i>) is expressed as a non-negative
 <i>&lt;number&gt;</i> followed immediately by a frequency unit. There are two
-types of frequency units: hertz (Hz) and kilohertz (kHz).
+types of frequency units: hertz (Hz) and kilohertz (kHz).</p>
 
-The unit identifiers are case-insensitive, so 6kHz and 6khz are
+<p>The unit identifiers are case-insensitive, so 6kHz and 6khz are
 equivalent. As of this writing, frequency values are only used with
-aural styles, which are not well supported.
-
+aural styles, which are not well supported.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-11-1">2.11. Position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-A position value (<i>&lt;position&gt;</i>) is how you specify the placement of an
-origin image in backgrounds, object fitting, masking placement, and a
-few other circumstances. Its syntactical structure is rather
-complicated:
+<p>A position value (<i>&lt;position&gt;</i>) is how you specify the placement of an
+origin image in backgrounds, object fitting, masking placement, and a few other 
+circumstances. Its syntactical structure is rather complicated:</p>
 
 <pre>
 &lbrack;
 
 &lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert;
-<i>&lt;length&gt;</i> &rbrack; &vert;
-
+<i>&lt;length&gt;</i> &rbrack; &vert;</p>
 &lbrack; left &vert; center &vert; right &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack;
-
 &lbrack; top &vert; center &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack; &vert;
-
 &lbrack; center &vert; &lbrack; left &vert; right &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i>
 &rbrack;? &rbrack; &&
-
 &lbrack; center &vert; &lbrack; top &vert; bottom &rbrack; &lbrack; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i>
 &rbrack;? &rbrack; &rbrack;
 </pre>
 
-That might seem a little convoluted and repetitive, but it's all down to
+<p>That might seem a little convoluted and repetitive, but it's all down to
 the subtly complex patterns that this value type has to allow, such as
 center, bottom right, 50% center, left 77px, and so on. The notation
-used here is described in "Value Syntax Conventions" on page 73.
+used here is described in "Value Syntax Conventions" on page 73.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-12-1">2.12. Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either
+<p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either
 single or double quotes. If a string needs to include the same quote
-that encloses it, it must be escaped. For example,
+that encloses it, it must be escaped. For example,</p>
 
-&apos;That\\&apos;s amazing!&apos; or &quot;Deploy the \\&quot;scare quotes\\&quot; at once!&quot;.
+<p>&apos;That\\&apos;s amazing!&apos; or &quot;Deploy the \\&quot;scare quotes\\&quot; at once!&quot;.
 If a newline is needed within a string, it is represented as \\A, which
 is the Unicode codepoint for the line feed character. Any Unicode
 character can be represented using an escaped codepoint reference; thus,
 a left curly double quotation mark can be represented with \\201C. If a
 string does contain a line feed for legibility reasons, it must be
-escaped and will be removed when processing the string.
+escaped and will be removed when processing the string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-13-1">2.13. Identifiers</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-There are some properties that accept an <i>identifier value</i>, which is a
+<p>There are some properties that accept an <i>identifier value</i>, which is a
 user-defined label of some kind; the most common examples are grid lines
 and areas in grid layout and keyframe names in animations. Identifiers
 are represented in the value syntax as <i>&lt;identifier&gt;</i>. Identifiers are
@@ -1660,21 +1621,19 @@ words and are case-sensitive; thus, myID and MyID are, as far as CSS is
 concerned, completely distinct and unrelated to each other. In cases
 where a property accepts both an identifier and one or more keywords,
 the author should take care to never define an identifier identical to a
-valid keyword.
-
+valid keyword.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-14-1">2.14. Attribute Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In a few CSS properties, it's possible to pull in the value of an HTML
+<p>In a few CSS properties, it's possible to pull in the value of an HTML
 attribute defined for the element being styled. This is done with the
 attr() value. As of early 2018, this is almost exclusively done with
-generated content, using the content property.
+generated content, using the content property.</p>
 
-For example, h2::before {content: &quot;&lbrack;&quot; attr(ID) &quot;&rbrack; &quot;;} will insert
+<p>For example, h2::before {content: &quot;&lbrack;&quot; attr(ID) &quot;&rbrack; &quot;;} will insert
 an opening square bracket, the ID of the h2 element, and then a closing
 square bracket and trailing space. Any attribute, including HTML data-&ast;
-attributes, can be addressed in this manner.
-
+attributes, can be addressed in this manner.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-15-1">2.15. Calculation Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1851,14 +1810,11 @@ a.external {font-style: italic;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>ID Selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- <h5>Pattern</h5>   element1#idname     
- <h5>Description</h5>  In languages that permit it, such as HTML or SVG, 
- an ID selector selects elements that have an id     
- attribute containing a specific value. The name of  
- the ID value must immediately follow the octothorpe 
- (#). If no element name precedes the octothorpe,    
- the selector matches all elements containing that   
- ID value.   
+<h5>Pattern</h5>  element1#idname
+<h5>Description</h5>  In languages that permit it, such as HTML or SVG, an ID selector selects 
+elements that have an id attribute containing a specific value. The name of the ID value must 
+immediately follow the octothorpe (#). If no element name precedes the octothorpe, the 
+selector matches all elements containing that ID value.
 
 <h5>Examples</h5>
 <pre>
