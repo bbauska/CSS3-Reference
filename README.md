@@ -1723,10 +1723,28 @@ inferred.</p>
 &ast; {color: red;}
 div &ast; p {color: blue;}</pre>
 
+<h3>Universal Selector</h3>
+<table>
+  <tbody>
+    <tr>
+	  <td>Pattern</td>
+	  <td>&ast;</td>
+	</tr>
+	<tr>
+	  <td>Description</td>
+	  <td>Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred.</td>
+    </tr>
+	<tr>
+	  <td>Examples</td>
+	  <td><pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre></td>
+	</tr>
+  </tbody>
+</table>
+	
 | <h3>Universal</h3> | <h3>Selector</h3> |
 |--------:|:-------------------|
 | <b>Pattern</b> | &ast; |
-| <b>Description</b> | Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred. |
+| <b>Description</b> |  |
 | <b>Examples</b> | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
