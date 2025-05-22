@@ -1,9 +1,10 @@
 ---
 title: |
-  CSS3 Reference Buide
+  CSS3 Reference Guide
   by Brian Bauska
 author: "bbauska"
 date last editted: "5/21/2025 Wed 2+pm"
+date last editted: "5/22/2025 Thu 1+pm"
 output: 
   markdown:
     with some style
@@ -1723,7 +1724,7 @@ inferred.</p>
 div &ast; p {color: blue;}</pre>
 
 | <h3>Universal</h3> | <h3>Selector</h3> |
-|---------|-------------------|
+|--------:|:-------------------|
 | <b>Pattern</b> | &ast; |
 | <b>Description</b> | Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred. |
 | <b>Examples</b> | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
