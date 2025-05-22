@@ -1722,9 +1722,11 @@ inferred.</p>
 &ast; {color: red;}
 div &ast; p {color: blue;}</pre>
 
-| Pattern | &ast; |
-| Description | Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred. |
-| Examples | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
+| <h3>Universal Selector</h3> | |
+|---------|--------|
+| <b>Pattern</b> | &ast; |
+| <b>Description</b> | Matches any element name in the document's language. If a rule does not have an explicit selector, the universal selector is inferred. |
+| <b>Examples</b> | <pre>&ast; {color: red }<br>div &ast; p {color: blue;}</pre> |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Type Selector</h3>
