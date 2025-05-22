@@ -1004,9 +1004,16 @@ The layout of tables can get quite complicated, especially because CSS
 defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
 table. Figure 1-6 illustrates the components of a table.
-
-<i>Figure 1-6. Table layout components</i>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. Table layout components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image007.png?raw=true"
+  title="Table layout components"
+  alt="Table layout components."
+  style="width:50%;" />
+</p>
+<p align="center"><i>Figure 1-6. Table layout components</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Arrangement Rules</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1203,9 +1210,16 @@ win and which will not:
     farthest to the left and top wins in left-to-right languages; in
     right-to-left languages, the cell farthest to the right and top
     wins.
-
-<i>Figure 1-7. Collapsing cell borders model</i>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. Collapsing cell borders model ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image008.png?raw=true"
+  title="Collapsing cell borders model"
+  alt="Collapsing cell borders model."
+  style="width:50%;" />
+</p>
+<p align="center"><i>Figure 1-7. Collapsing cell borders model</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Vertical Alignment Within Cells</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2432,15 +2446,17 @@ p:first-letter {text-decoration: underline;}
 <h4>::first-line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- <b>Generates</b>   A pseudo-element that contains the first formatted 
+<b>Generates</b>   A pseudo-element that contains the first formatted 
       line of an element 
- <h5>Description</h5>  Styles the first line of text in an element, regardless
+<h5>Description</h5>  Styles the first line of text in an element, regardless
        of how many or how few words may appear in that 
 					   line. ::first-line can be attached only to blocklevel 
 					   elements. There is a limited set of properties that can 
 					   apply to a first line. 
- <b>Example</b>  p.lead:first-line {font-weight: bold;} 
-
+<h5>Example</h5>
+<pre>
+p.lead:first-line {font-weight: bold;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-1">3.6. Media Queries</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6663,8 +6679,10 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
  absolutely positioned element with opacity less     
  than 1 and a z-index of auto force-alters the       
  z-index value to 0. 
- <h5>Examples</h5>  h2 {opacity: 0.8;} .hideme {opacity: 0;}    
-
+<h5>Examples</h5>
+<pre>
+h2 {opacity: 0.8;} .hideme {opacity: 0;}    
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **order**     **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6689,10 +6707,12 @@ conceived as a way to change the visual layout order of flex items, this
 property now also allows authors to rearrange the order of auto-flowed
 grid items.
 
-<h5>Examples</h5> li:nth-of-type(6) {order: 1;}
+<h5>Examples</h5>
+<pre>
+li:nth-of-type(6) {order: 1;}
 
 li:nth-of-type(14) {order: -1;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **orphans**   **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6708,12 +6728,13 @@ li:nth-of-type(14) {order: -1;}
  *Description**  element that can be left at the bottom of a page.   
  This can affect the placement of page breaks within 
  the element.
- <h5>Examples</h5>  p {orphans: 4;} ul {orphans: 2;}
- 
+<h5>Examples</h5>
+<pre>
+p {orphans: 4;} ul {orphans: 2;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **outline**   **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
 *&lt;outlinewidth&gt;* &rbrack;
 
@@ -6731,10 +6752,12 @@ which form element or hyperlink currently has focus (accepts keyboard
 input). Outlines can be of irregular shape, and no matter how thick,
 they do not change or otherwise affect the placement of elements.
 
-<h5>Examples</h5> &ast;&lbrack;href&rbrack;:focus {outline: 2px dashed invert;}
+<h5>Examples</h5>
+<pre>
+&ast;&lbrack;href&rbrack;:focus {outline: 2px dashed invert;}
 
 form:focus {outline: outset cyan 0.25em;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### outline-color Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6752,10 +6775,12 @@ agents are permitted to ignore invert on platforms that don't support
 color inversion. In that case, the outline's color defaults to the value
 of color for the element.
 
-<h5>Examples</h5> &ast;&lbrack;href&rbrack;:focus {outline-color: invert;}
+<h5>Examples</h5>
+<pre>
+&ast;&lbrack;href&rbrack;:focus {outline-color: invert;}
 
 form:focus {outline-color: cyan;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### outline-offset Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6774,10 +6799,12 @@ it applies equally to all sides of the outline. Values can be negative,
 which causes the outline to "shrink" inward toward the element's center.
 Note that outline-offset cannot be set via the shorthand outline.
 
-<h5>Examples</h5> &ast;&lbrack;href&rbrack;:focus {outline-offset: 0.33em;}
+<h5>Examples</h5>
+<pre>
+&ast;&lbrack;href&rbrack;:focus {outline-offset: 0.33em;}
 
 form:focus {outline-offset: −1px;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### outline-style Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6796,10 +6823,12 @@ form:focus {outline-offset: −1px;}
 ment. The style must be something other than none for any outline to
 appear.
 
-<h5>Examples</h5> &ast;&lbrack;href&rbrack;:focus {outline-style: dashed;}
+<h5>Examples</h5>
+<pre>
+&ast;&lbrack;href&rbrack;:focus {outline-style: dashed;}
 
 form:focus {outline-style: outset;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### outline-width Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6819,9 +6848,11 @@ only if the value of outline-style is something other than none. If
 the style *is* none, the width is
 effectively reset to 0. Negative length values are   
 not permitted.  
- <h5>Examples</h5>  &ast;&lbrack;href&rbrack;:focus {outline-width: 2px;} 
-				form:focus {outline-width: 0.25em;}
-
+<h5>Examples</h5>
+<pre>
+&ast;&lbrack;href&rbrack;:focus {outline-width: 2px;} 
+form:focus {outline-width: 0.25em;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **overflow**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6843,10 +6874,12 @@ box. If two values are supplied, the first defines the value of
 overflow-x and the second defines overflow-y. Otherwise, a single
 value defines both.
 
-<h5>Examples</h5> #masthead {overflow: hidden;}
+<h5>Examples</h5>
+<pre>
+#masthead {overflow: hidden;}
 
 object {overflow: visible scroll;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### overflow-wrap Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6867,7 +6900,10 @@ fit inside its element's
 containing block. (This behavior is in contrast to word-break, which
 does not force a pre-word line break.)
 
-<h5>Example</h5> pre {overflow-wrap: break-word;}
+<h5>Example</h5>
+<pre>
+pre {overflow-wrap: break-word;}
+</pre>
 
 **Note** This property used to be called word-wrap. Browsers that
 supported word-wrap in the past now use it as an alias for
@@ -6876,38 +6912,37 @@ overflow-wrap.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **overflow-x**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    visible &vert; hidden &vert; scroll &vert; auto 
- **Initial     visible     
- value**   
- **Computed    As declared 
- value**   
- **Applies     Block-level and replaced elements   
- to**      
+**Values**    visible &vert; hidden &vert; scroll &vert; auto 
+**Initial     visible     
+value**   
+**Computed    As declared 
+value**   
+**Applies     Block-level and replaced elements   
+to**      
  *     Defines the overflow behavior along the horizontal  
  *Description**  (x) axis of the element; that is, the left and      
  right edges of the element. 
- <h5>Examples</h5>  #masthead {overflow-x: hidden;} object {overflow-x: 
- visible;}   
-
+<h5>Examples</h5>
+<pre>
+#masthead {overflow-x: hidden;} object {overflow-x: 
+visible;}   
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **overflow-y**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** visible &vert; hidden &vert; scroll &vert; auto
-
 **Initial value** visible
-
 **Computed value** As declared
-
 **Applies to** Block-level and replaced elements
 
 **Description** Defines the overflow behavior along the vertical (y)
 axis of the element; that is, the top and bottom edges of the element.
 
-<h5>Examples</h5> #masthead {overflow-y: hidden;} object {overflow-y:
+<h5>Examples</h5>
+<pre>
+#masthead {overflow-y: hidden;} object {overflow-y:
 scroll;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **padding**   **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6931,10 +6966,12 @@ scroll;}
  overlap other content. The background of the
  element will extend throughout the padding. 
  Negative padding values are not permitted.  
- <h5>Examples</h5>  img {padding: 10px;} h1 {padding: 2ex 0.33em;}      
+<h5>Examples</h5>
+<pre>
+img {padding: 10px;} h1 {padding: 2ex 0.33em;}      
      
- pre {padding: 0.75em 0.5em 1em 0.5em;}      
-
+pre {padding: 0.75em 0.5em 1em 0.5em;}      
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### padding-bottom Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6957,10 +6994,11 @@ scroll;}
 					and potentially overlap other content. Negative padding
 					values are not permitted.
 
-<h5>Examples</h5> ul {padding-bottom: 0.5in;}
-
+<h5>Examples</h5>
+<pre>
+ul {padding-bottom: 0.5in;}
 h1 {padding-bottom: 2%;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### padding-left Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6982,10 +7020,12 @@ h1 {padding-bottom: 2%;}
 box generated by the element. Negative padding values are not
 permitted.
 
-<h5>Examples</h5> p {padding-left: 5%;}
+<h5>Examples</h5>
+<pre>
+p {padding-left: 5%;}
 
 pre {padding-left: 3em;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### padding-right Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7006,10 +7046,12 @@ pre {padding-left: 3em;}
     box generated by the element. Negative padding values
     are not permitted.
 
-<h5>Examples</h5> img {padding-right: 30px;}
+<h5>Examples</h5>
+<pre>
+img {padding-right: 30px;}
 
 ol {padding-right: 5em;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### padding-top Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7030,9 +7072,10 @@ ol {padding-right: 5em;}
  and a background may visibly extend into other      
  lines and potentially overlap other content.
  Negative padding values are not permitted.  
- <h5>Examples</h5>  ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
-
-
+ <h5>Examples</h5>
+<pre>
+ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **page**    **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7056,10 +7099,11 @@ type declared by page. (Multiple page breaks may be used if other
 styles call for using a right- or lefthand page when starting the new
 page.)
 
-<h5>Examples</h5> &#64;page wide {size: landscape;}
-
+<h5>Examples</h5>
+<pre>
+&#64;page wide {size: landscape;}
 table.summary {page: wide;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **page-break-after**  **Inh. N Anim.**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7085,18 +7129,20 @@ table.summary {page: wide;}
  element to make the next page be a 
  lefthand page; similarly, right is 
  used for a righthand page. 
- <h5>Examples</h5>  section {page-break-after: 
- always;} h1 {page-break-after:     
- avoid;}    
- **Note**      This property is essentially       
+<h5>Examples</h5>
+<pre>
+section {page-break-after: 
+always;}
+h1 {page-break-after:
+avoid;}    
+</pre>
+**Note**      This property is essentially       
  replaced by breakafter, but
  browser support for
  page-break-after may be stronger.  
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### page-break-before Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** auto &vert; always
 
 **Initial value** auto
@@ -7114,13 +7160,14 @@ The keyword left is used to insert enough breaks before the element to
 make the page be a lefthand page; similarly, right is used for a
 righthand page.
 
-<h5>Examples</h5> section {page-break-before: always;} h2 {page-break-before:
+<h5>Examples</h5>
+<pre>
+section {page-break-before: always;} h2 {page-break-before:
 avoid;}
+</pre>
 
 **Note** This property is essentially replaced by break-
-
 before, but browser support for page-breakbefore may be stronger.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **page-break-inside**  **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7168,32 +7215,35 @@ define a foreshortening depth in pixels; smaller numbers define more
 extreme perspective effects. Negative values are treated the same as
 none.
 
-<h5>Examples</h5> body {perspective: 250;} /&ast; middlin&apos; &ast;/
+<h5>Examples</h5>
+<pre>
+body {perspective: 250;} /&ast; middlin&apos; &ast;/
 
 #wrapper {perspective: 10;} /&ast; extreme &ast;/
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### perspective-origin Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;position&gt;*      
- **Initial     50% 50%     
- value**           
- **Computed    A percentage, except for length values, which are   
- value**       converted to an absolute length     
- *     Refer to the size of the bounding box       
- *Percentages**      
- **Applies     Any transformable element   
- to**      
+**Values**    *&lt;position&gt;*      
+**Initial     50% 50%     
+**value**           
+**Computed**    A percentage, except for length values, which are   
+**value**       converted to an absolute length     
+     Refer to the size of the bounding box       
+**Percentages**      
+**Applies**     Any transformable element   
+**to**      
        *&lt;length&gt;* and *&lt;percentage&gt;* values only       
- **Animatable**      
- *     Defines the origin point of the apparent 3D 
- *Description**  perspective within the element. In effect, it       
- defines the point in the element that appears to be 
- directly in front of the viewer.    
- <h5>Examples</h5>  body {perspective-origin: bottom right;} #wrapper   
- div {perspective-origin: 0 50%;}    
-
+**Animatable**      
+     Defines the origin point of the apparent 3D 
+**Description**  perspective within the element. In effect, it       
+defines the point in the element that appears to be 
+directly in front of the viewer.    
+<h5>Examples</h5>
+<pre>
+body {perspective-origin: bottom right;} #wrapper   
+div {perspective-origin: 0 50%;}    
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **position** **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7210,10 +7260,11 @@ with absolute or fixed will generate a block-level box regardless of
 what kind of element it is. An element that is relatively positioned is
 offset from its default placement in the normal flow.
 
-<h5>Examples</h5> #footer {position: fixed; bottom: 0;}
-
+<h5>Examples</h5>
+<pre>
+#footer {position: fixed; bottom: 0;}
 &ast;.offset {position: relative; top: 0.5em;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **quotes**   **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7229,10 +7280,12 @@ offset from its default placement in the normal flow.
  *Description**  nested quotes. The actual quote marks are inserted  
  via the content property's open-quote and   
  closequote values.  
- <h5>Examples</h5>  q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot;;} q     
+<h5>Examples</h5>
+<pre>
+q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot;;} q     
  {quotes: &apos;\\201C&apos; &apos;\\201D&apos; &apos;\\2018&apos;   
  &apos;\\2019&apos;;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **resize**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7249,8 +7302,10 @@ offset from its default placement in the normal flow.
 the user. The actual appearance and operation of any resize mechanism is
 left to the user agent and is likely dependent on the writing direction.
 
-<h5>Examples</h5> textarea {resize: vertical;} iframe {resize: both;}
-
+<h5>Examples</h5>
+<pre>
+textarea {resize: vertical;} iframe {resize: both;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **right**    **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7270,9 +7325,11 @@ left to the user agent and is likely dependent on the writing direction.
  *     Defines the offset between the right outer margin   
  *Description**  edge of a positioned element and the right edge of  
  its containing block.       
- <h5>Examples</h5>  div#footer {position: fixed; right: 0;}     
- &ast;.overlapper {position: relative; right: −25px;}   
-
+<h5>Examples</h5>
+<pre>
+div#footer {position: fixed; right: 0;}     
+&ast;.overlapper {position: relative; right: −25px;}   
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### shape-image-threshold Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7288,29 +7345,29 @@ left to the user agent and is likely dependent on the writing direction.
  Description**  threshold for float shape creation via an image. By  
       default, only fully transparent areas in the shape's 
       source image are used to define the float shape. If  
-  <h5>Examples</h5>  the value is changed to 0.7, then all areas of the   
-        source image that are 70% or more transparent are    
-        used to define the float shape. This allows for the  
-        same image to be used to define multiple float       
-        shapes, for example. A value of 0 will cause the     
-        entire image to be ignored for shape calculation.    
-             
-        aside.illustrate {shape-image-threshold: 0.667;}     
-        img.floated {shape-image-threshold: 0.1;}    
-
+<h5>Examples</h5>
+the value is changed to 0.7, then all areas of the   
+source image that are 70% or more transparent are    
+used to define the float shape. This allows for the  
+same image to be used to define multiple float       
+shapes, for example. A value of 0 will cause the     
+entire image to be ignored for shape calculation.    
+<pre>
+aside.illustrate {shape-image-threshold: 0.667;}     
+img.floated {shape-image-threshold: 0.1;}    
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### shape-margin Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
+**Initial value** 0
 
-  **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-  **Initial value** 0
+**ComputedAn** absolute length
+  **value**   
 
-  **ComputedAn absolute length
-  value**   
+**Applies to**    Floats
 
-  **Applies to**    Floats
-
-  **Description**   Defines an offset distance between the edges of a
+**Description**   Defines an offset distance between the edges of a
     float shape and the closest points at which text may
     approach the shape. This is useful when floating an
     image and using that same image to define the float
@@ -7321,22 +7378,23 @@ left to the user agent and is likely dependent on the writing direction.
     large shape margins are most likely to result in a
     traditional rectangular float box.
 
-  <h5>Examples</h5>      #one {shape-margin: 0;}
+<h5>Examples</h5>
+<pre>
+#one {shape-margin: 0;}
 
 #two {shape-margin: 1.5em;}
->
-#thr (shape-margin: 10%;}
 
+#thr (shape-margin: 10%;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### shape-outside Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
+**Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
         *&lt;image&gt;*  
- **   inset &vert; circle() &vert; ellipse() &vert; polygon()  
- Definitions**       
+**   inset &vert; circle() &vert; ellipse() &vert; polygon()  
+**Definitions**       
            
- ***&lt;bas          
+***&lt;bas          
  ic-shape&gt;***       
  ***&lt;s       margin-box &vert; border-box &vert; padding-box &vert;   
  hape-box&gt;***  contentbox   
@@ -7359,21 +7417,22 @@ define the float shape. Shapes are clipped at the edges of the shape's
 outer margin edge, so a float shape can never be larger than the
 unshaped version of that float.
 
-<h5>Examples</h5> img.web20 {shape-outside: inset(7% round 0.5em/5px);}
+<h5>Examples</h5>
+<pre>
+img.web20 {shape-outside: inset(7% round 0.5em/5px);}
 img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 {shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **size**     **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     
- &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack; 
- **Initial value**    auto
- **Computed value**   *&lt;length&gt;* values as absolute length values;      
+**Values**    auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     
+&vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack; 
+**Initial value**    auto
+**Computed value**   *&lt;length&gt;* values as absolute length values;      
         otherwise, as declared      
- **Applies to**    The page area       
- **Description**  Defines the size and orientation of a page box. The 
+**Applies to**    The page area       
+**Description**  Defines the size and orientation of a page box. The 
  keywords auto, portrait, and landscape cause the    
  page box to fill the available rendering space on   
  the page. Page boxes set to portrait have the       
@@ -7392,11 +7451,12 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
  a square page box. Length values that use em or ex  
  units are calculated with respect to the computed   
  font size of the page context.      
- <h5>Example</h5>         
- body        
- {page-size:         
- landscape;}         
-
+<h5>Example</h5>
+<pre>
+body        
+{page-size:         
+landscape;}         
+</pre>
 **Note** *&lt;page-size&gt;* is one of a defined set of standard page sizes;
 see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
 Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
@@ -7417,22 +7477,23 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
  honored for display due to the value of whitespace. 
  An *&lt;integer&gt;* value sets the number of   
  "spaces" a tab character will generate.     
- <h5>Examples</h5>  pre.source {tab-size: 4;}   
- p.typer {tab-size: 0.25in;} 
-
+<h5>Examples</h5>
+<pre>
+pre.source {tab-size: 4;}   
+p.typer {tab-size: 0.25in;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### table-layout Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**auto &vert; fixed
+**Initial value** auto
 
-  **Values**auto &vert; fixed
-  **Initial value** auto
+**ComputedAs** declared
+  **value**   
 
-  **ComputedAs declared
-  value**   
+**Applies to**    Elements with the display value table or inlinetable
 
-  **Applies to**    Elements with the display value table or inlinetable
-
-  **Description**   Defines whether a table element should be laid out
+**Description**   Defines whether a table element should be laid out
     using an automatic-layout algorithm or a fixedlayout
     algorithm. The benefit of the automatic algorithm is
     that it's very similar to what authors are used to
@@ -7440,10 +7501,12 @@ Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
     the fixed-layout algorithm is theoretically faster and
     more predictable.
 
-  <h5>Examples</h5>      table.data {table-display: fixed;}
+<h5>Examples</h5>
+<pre>
+table.data {table-display: fixed;}
 
 table.directory {table-display: auto;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **text-align** **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7463,8 +7526,10 @@ table.directory {table-display: auto;}
  programmatically adjust the word (but not letter)   
  spacing of the line's content; results may vary by  
  user agent. 
- <h5>Examples</h5>  p {text-align: justify;} h4 {text-align: center;}   
-
+<h5>Examples</h5>
+<pre>
+p {text-align: justify;} h4 {text-align: center;}   
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### text-align-last   Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7483,50 +7548,51 @@ boxes are aligned. The value justify is supported by allowing user
 agents to programmatically adjust the word (but not letter) spacing of
 the line's content; results may vary by user agent.
 
-<h5>Examples</h5> p {text-align-last: justify;}
+<h5>Examples</h5>
+<pre>
+p {text-align-last: justify;}
 
 h4 {text-align-last: right;}
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### text-decoration Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    
+**Values**    none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    
  blink &rbrack;    
- **Initial value**    none
- **Computed value**   As declared 
- **Applies to**    All elements
- *     Defines text-decoration effects such as     
- *Description**  underlining. These decorations will span descendant 
- elements that don't have decorations of their own,  
- in many cases making the child elements appear to   
- be decorated. Combinations of the values are legal. 
- Any time two text-decoration declarations apply to  
- the same element, the values of the two     
- declarations are *not* combined. For example:       
+**Initial value**    none
+**Computed value**   As declared 
+**Applies to**    All elements
+     Defines text-decoration effects such as     
+**Description**  underlining. These decorations will span descendant 
+elements that don't have decorations of their own,  
+in many cases making the child elements appear to   
+be decorated. Combinations of the values are legal. 
+Any time two text-decoration declarations apply to  
+the same element, the values of the two     
+declarations are *not* combined. For example:
+<pre>     
+h1 {text-decoration: overline;} h1, h2
+{text-decoration: underline;}
+</pre>
+Given these styles, h1 elements will be underlined  
+with no overline because the value of underline     
+completely overrides the value of overline. If h1   
+should have both overlines and underlines, use the  
+value overline underline for the h1 rule and either 
+move it after the h1, h2 rule or extend its 
+selector to raise its specificity.  
      
- h1 {text-decoration: overline;} h1, h2      
- {text-decoration: underline;}       
-     
- Given these styles, h1 elements will be underlined  
- with no overline because the value of underline     
- completely overrides the value of overline. If h1   
- should have both overlines and underlines, use the  
- value overline underline for the h1 rule and either 
- move it after the h1, h2 rule or extend its 
- selector to raise its specificity.  
-     
- User agents are not required to support blink.      
- <h5>Examples</h5>  u {text-decoration: underline;}     
-     
- .old {text-decoration: line-through;}       
-     
- u.old {text-decoration: line-through underline;}    
-
+User agents are not required to support blink.      
+<h5>Examples</h5>
+<pre>
+u {text-decoration: underline;}     
+.old {text-decoration: line-through;}       
+u.old {text-decoration: line-through underline;}    
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **text-indent**  **Inh. Y Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
 **Initial value** 0
@@ -7555,16 +7621,15 @@ an outdent effect without using a negative length value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### text-orientation Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values**mixed &vert; upright &vert; sideways
+**Initial value** mixed
 
-  **Values**mixed &vert; upright &vert; sideways
-  **Initial value** mixed
+**Computed value**       As declared
 
-  **Computed value**       As declared
-
-  **Applies to**    All elements except table row groups, table rows,
+**Applies to**    All elements except table row groups, table rows,
     table column groups, and table columns
 
-  **Description**   Defines how characters are oriented in text,
+**Description**   Defines how characters are oriented in text,
     potentially independent of their writing mode (see
     writing-mode). When mixed, each character is aligned
     according to its language defaults as compared to the
@@ -7575,11 +7640,12 @@ an outdent effect without using a negative length value.
     be upright regardless of their language, and sideways
     forces all characters to be shown sideways.
 
-  <h5>Examples</h5>      #one {text-orientation: mixed;}
-
+<h5>Examples</h5>
+<pre>
+#one {text-orientation: mixed;}
 ### two {text-orientation: upright;}
-
 ### thr {text-orientation: sideways;}
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### text-rendering Inh. Y Anim. Y
@@ -7601,24 +7667,24 @@ important. Note that some user agents always optimize for legibility
 when rendering HTML text, so this property may have minimal or no
 effect outside of SVG (which is where it started out).
 
-<h5>Examples</h5> p {text-rendering: optimizeSpeed;}
-
+<h5>Examples</h5>
+<pre>
+p {text-rendering: optimizeSpeed;}
 svg tspan {text-rendering: optimizeLegibility;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### text-shadow Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**none &vert; &lbrack;*&lt;length&gt;* ‖ *&lt;color&gt;*? &&
+**Values**none &vert; &lbrack;*&lt;length&gt;* ‖ *&lt;color&gt;*? &&
     *&lt;length&gt;*{2,3}&rbrack;#
-  **Initial value** none
+**Initial value** none
 
-  **ComputedA color plus three absolute lengths
-  value**   
+**ComputedA** color plus three absolute lengths
+  **value**   
 
-  **Applies to**    All elements
+**Applies to**    All elements
 
-  **Description**   Defines one or more shadows to be "cast" by the text
+**Description**   Defines one or more shadows to be "cast" by the text
     of an element. Shadows are always painted behind the
     element's text, but in front of the element's
     background, borders, and outline. Shadows are drawn
@@ -7629,44 +7695,51 @@ order: horizontal offset, vertical offset, and blur distance. When
 positive, the offset values go down and to the right; when negative,
 they go back and to the left. Blur values cannot be negative.
 
-<h5>Examples</h5> h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
+<h5>Examples</h5>
+<pre>
+h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 −3px 0.5em blue;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### text-transform Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**    uppercase &vert; lowercase &vert; capitalize &vert; none
- **Initial value**    none
- **Computed value**   As declared 
- **Applies to**    All elements
- *     Defines the pattern for changing the case of
- *Description**  letters in an element, regardless of the case of    
+**Values**    uppercase &vert; lowercase &vert; capitalize &vert; none
+**Initial value**    none
+**Computed value**   As declared 
+**Applies to**    All elements
+     Defines the pattern for changing the case of
+**Description**  letters in an element, regardless of the case of    
  the text in the document source. The determination  
  of which letters are to be capitalized by the value 
  capitalize is not precisely defined, as it depends  
  on user agents knowing how to recognize a "word."   
- <h5>Examples</h5>  h1 {text-transform: uppercase;} .title      
- {text-transform: capitalize;}       
-
+<h5>Examples</h5>
+<pre>
+h1 {text-transform: uppercase;} .title
+{text-transform: capitalize;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **top**      **Inh. N Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values**      *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
- **Initial       auto
- value**     
- **Computed      For static elements, auto; for length values, the   
- value** corresponding absolute length; for percentage       
+**Values**      *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+**Initial value**      auto
+**Computed value**     For static elements, auto; for length values, the 
+ corresponding absolute length; for percentage
  values, the specified value; otherwise, auto
- *       Refer to the height of the containing block 
- *Percentages**      
- **Applies to**  Positioned elements 
- **Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
- *       Defines the offset between the top outer margin     
- *Description**  edge of a positioned element and the top edge of    
+        Refer to the height of the containing block 
+**Percentages**      
+**Applies to**  Positioned elements 
+**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only       
+        Defines the offset between the top outer margin     
+**Description**  edge of a positioned element and the top edge of    
  its containing block.       
- <h5>Examples</h5>    #masthead {position: fixed; top: 0;} sub {position: 
- relative; top: 0.5em; vertical-align: baseline;}    
+<h5>Examples</h5>
+
+<pre>
+#masthead {position: fixed; top: 0;} sub {position: 
+relative; top: 0.5em; vertical-align: baseline;}    
+</pre>
  **Note**        For relatively positioned elements, if both top and 
  bottom are auto, their computed values are both 0.  
  If one of them is auto, it becomes the negative of  
@@ -7690,37 +7763,41 @@ they go back and to the left. Blur values cannot be negative.
  space, depending on how the transforms are  
  declared.   
      
- The permitted values for *&lt;transform-function&gt;*   
- are lengthy and complex. For a full list with       
- minimalist descriptions, please consult the W3C's   
- documentation on [transform 
- functions](http://  
- w3.org/TR/css3-3d-transforms/#transform-functions). 
- <h5>Examples</h5>  table th {transform: rotate(45deg);} li {transform: 
- scale3d(1.2,1.7,0.85);}     
+The permitted values for *&lt;transform-function&gt;*   
+are lengthy and complex. For a full list with       
+minimalist descriptions, please consult the W3C's   
+documentation on [transform 
+functions](http://  
+w3.org/TR/css3-3d-transforms/#transform-functions). 
+<h5>Examples</h5>
+<pre>
+table th {transform: rotate(45deg);} li {transform: 
+scale3d(1.2,1.7,0.85);}     
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### transform-origin   Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
- **Values**   *&lt;position&gt;*       
- **Initial value**   50% 50%      
- **Computed value**  A percentage, except for length values, which are    
+**Values**   *&lt;position&gt;*       
+**Initial value**   50% 50%      
+**Computed value**  A percentage, except for length values, which are    
      converted to an absolute length      
- **   Refer to the size of the bounding box
+**   Refer to the size of the bounding box
  Percentages**       
- **Applies to**   Any transformable element    
- *    *&lt;length&gt;* and *&lt;percentage&gt;* values only
- *Animatable**       
- **   Defines the origin point for an element's transforms 
- Description**  in either 2D or simulated 3D space. The marked-as-   
-
+**Applies to**   Any transformable element    
+     *&lt;length&gt;* and *&lt;percentage&gt;* values only
+**Animatable**       
+**   Defines the origin point for an element's transforms 
+Description**  in either 2D or simulated 3D space. The marked-as-   
 optional *&lt;length&gt;* values are what define a 3D origin point;
 without them, the value is necessarily in 2D space.
 
-<h5>Examples</h5> table th {transform-origin: bottom left;}
-
+<h5>Examples</h5>
+<pre>
+table th {transform-origin: bottom left;}
 li {transform-origin: 10% 10px 10em;}
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### transform-style Inh. N Anim. N
@@ -7740,8 +7817,10 @@ li {transform-origin: 10% 10px 10em;}
  overflow value is hidden cannot preserve 3D effects 
  and are treated as though the value of      
  transform-style is flat.    
- <h5>Example</h5>   li {transform-style: preserve-3d;}  
-
+<h5>Example</h5>
+<pre>
+li {transform-style: preserve-3d;}  
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **transition**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7761,26 +7840,25 @@ two *&lt;time&gt;* values are declared, the first is the duration and the
 second is the delay. If only one is declared, it defines only the
 duration.
 
-<h5>Examples</h5> a:hover {transition: color 1s 0.25s ease-in-out;} h1
+<h5>Examples</h5>
+<pre>
+a:hover {transition: color 1s 0.25s ease-in-out;} h1
 {transition: linear all 10s;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### transition-delay Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+**Values***&lt;time&gt;*&#35;
+**Initial value** 0s
 
-  **Values***&lt;time&gt;*&#35;
-  **Initial value** 0s
+**ComputedAs value** declared
 
-  **ComputedAs declared
-  value**   
+**Applies to**    All elements and :before and :after pseudoelements
 
-  **Applies to**    All elements and :before and :after pseudoelements
-
-  **Description**   Defines a delay between when a transition could
+**Description**   Defines a delay between when a transition could
     theoretically first start and when it actually starts.
     For example, if a transition is defined to begin on
     hover but has a delay of 0.5s, the transition will
-
 actually begin half a second after the element is first hovered over.
 Negative time values are permitted, but rather than creating a
 paradox, this simply jumps the transition to the point it would have
@@ -7788,10 +7866,12 @@ reached had it been started at the defined time offset in the past. In
 other words, it will be started partway through the transition and run
 to its conclusion.
 
-<h5>Examples</h5> a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
+<h5>Examples</h5>
+<pre>
+a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
 
 h1 {transition-delay: 0;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### transition-duration Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7809,10 +7889,12 @@ to run from start to finish. The default 0s means the transition is
 instantaneous and no animation occurs. Negative time values are treated
 as 0s.
 
-<h5>Examples</h5> a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
+<h5>Examples</h5>
+<pre>
+a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
 
 h1 {transition-duration: 10s;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### transition-property Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7837,10 +7919,12 @@ h1 {transition-duration: 10s;}
         transitioned. The keyword none prevents any  
         properties from being transitioned, effectively      
         shutting down the transition.
- <h5>Examples</h5>   a&lbrack;href&rbrack;:hover {transition-property: color;}
+<h5>Examples</h5>
+<pre>
+a&lbrack;href&rbrack;:hover {transition-property: color;}
 
 h1 {transition-property: all;} 
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **transition-timing-function Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7856,25 +7940,26 @@ cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
 
 *&lt;number&gt;*)
 
-  **Initial value** ease
-  **ComputedAs declared
-  value**   
+**Initial value** ease
+**ComputedAs value** declared
 
-  **Applies to**    All elements and :before and :after pseudoelements
+**Applies to**    All elements and :before and :after pseudoelements
 
-  **Description**   Defines the way in which intermediate states of a
+**Description**   Defines the way in which intermediate states of a
     transition are calculated. The value keywords (ease,
     linear, etc.) are shorthands for specific
     cubicbezier() values defined in the specification, so
     in effect all values of this property are
     cubic-bezier() values.
 
-  <h5>Examples</h5>      a&lbrack;href&rbrack;:hover {transition-timing-function:
+<h5>Examples</h5>
+<pre>
+a&lbrack;href&rbrack;:hover {transition-timing-function:
 
 ease-in-out;}
 
 h1 {transition-timing-function: linear;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### unicode-bidi Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7891,8 +7976,10 @@ h1 {transition-timing-function: linear;}
 the Unicode Bidirectional Algorithm. User agents that do not support
 bidirectional ("bidi") text are permitted to ignore this property.
 
-<h5>Example</h5> span.name {direction: rtl; unicode-bidi: embed;}
-
+<h5>Example</h5>
+<pre>
+span.name {direction: rtl; unicode-bidi: embed;}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### vertical-align    Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7916,29 +8003,30 @@ In table cells, this property sets the alignment of the content of the
 cell within the cell box. When applied to table cells, only the values
 baseline, top, middle, and bottom are recognized.
 
-<h5>Examples</h5> sup {vertical-align: super;}
+<h5>Examples</h5>
+<pre>
+sup {vertical-align: super;}
 
 .fnote {vertical-align: 50%;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **visibility**      **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values**    visible &vert; hidden &vert; collapse       
- **Initial     visible     
- value**           
- **Computed    As declared 
- value**           
- **Applies     All elements
- to**      
- *     Defines whether the element box generated by an     
- *Description**  element is rendered. This means authors can have    
- the element take up the space it would ordinarily   
- take up, while remaining completely invisible. The  
- value collapse is used in tables to remove columns  
- or rows from the table's layout.    
- <h5>Examples</h5>  ul.submenu {visibility: hidden;} tr.hide    
- {visibility: collapse;}     
-
+**Values**    visible &vert; hidden &vert; collapse       
+**Initial value**    visible
+**Computed value**   As declared
+**Applies to**    All elements
+**Description**  Defines whether the element box generated by an 
+element is rendered. This means authors can have    
+the element take up the space it would ordinarily   
+take up, while remaining completely invisible. The  
+value collapse is used in tables to remove columns  
+or rows from the table's layout.    
+<h5>Examples</h5>
+<pre>
+ul.submenu {visibility: hidden;} tr.hide    
+{visibility: collapse;}     
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### white-space Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7963,29 +8051,30 @@ automatically wrapping lines of text, and the latter honors newline
 characters within the text while collapsing all other whitespace as per
 normal.
 
-<h5>Examples</h5> td {white-space: nowrap;}
+<h5>Examples</h5>
+<pre>
+td {white-space: nowrap;}
 
 tt {white-space: pre;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **widows**   **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values**    *&lt;integer&gt;*       
- **Initial value**    2   
- **Computed value**   As declared 
- **Applies to**    Block-level elements
- *     Defines the minimum number of text lines within an  
- *Description**  element that can be left at the top of a page. This 
+**Values**    *&lt;integer&gt;*       
+**Initial value**    2   
+**Computed value**   As declared 
+**Applies to**    Block-level elements
+      Defines the minimum number of text lines within an  
+**Description**  element that can be left at the top of a page. This 
  can affect the placement of page breaks within the  
  element.    
- <h5>Examples</h5>  p {widows: 4;} ul {widows: 2;}      
-
-
+<h5>Examples</h5>
+<pre>
+p {widows: 4;} ul {widows: 2;}      
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **width**    **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
 **Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 
 auto
@@ -7993,37 +8082,41 @@ auto
     For auto and percentage values, as declared; 
     otherwise, an absolute length, unless the property 
     does not apply to the element (then auto) 
-  **Percentages**   Refer to the width of the containing block 
-  **Applies to**    All elements except nonreplaced inline elements, table 
+**Percentages**   Refer to the width of the containing block 
+**Applies to**    All elements except nonreplaced inline elements, table 
     rows, and row groups 
-  **Description**   Defines the width of an element's content area, 
+**Description**   Defines the width of an element's content area, 
     outside of which padding, borders, and margins are 
     added. This property is ignored for inline nonreplaced
     elements. Negative length and percentage values are 
     not permitted. 
 
-  <h5>Examples</h5>      table {width: 80%;}
+<h5>Examples</h5>
+<pre>
+table {width: 80%;}
 
 #sidebar {width: 20%;}
 
 .figure img {width: 200px;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **word-break**  **Inh. Y Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **Values**    normal &vert; break-all &vert; keep-all     
- **Initial value**    normal      
- **Computed value**   As declared 
- **Applies to*    All elements
- *     Defines how text should be wrapped in situations    
- *Description**  where it would not ordinarily be wrapped; for       
- example, a very long string of numbers containing   
- no spaces, such as the first thousand digits of pi. 
- The value break-all permits user agents to break a  
- word (text string) at arbitrary points if it cannot 
- find regular breakpoints within the word.   
- <h5>Examples</h5>  td {word-break: break-all;} p {word-break: normal;} 
-
+**Values**    normal &vert; break-all &vert; keep-all     
+**Initial value**    normal      
+**Computed value**   As declared 
+**Applies to*    All elements
+*     Defines how text should be wrapped in situations    
+*Description**  where it would not ordinarily be wrapped; for       
+example, a very long string of numbers containing   
+no spaces, such as the first thousand digits of pi. 
+The value break-all permits user agents to break a  
+word (text string) at arbitrary points if it cannot 
+find regular breakpoints within the word.   
+<h5>Examples</h5>
+<pre>
+td {word-break: break-all;} p {word-break: normal;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### word-spacing Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8043,21 +8136,21 @@ collapsed whitespace between strings of nonwhitespace characters.
 Negative length values are permitted and will cause words to bunch
 closer together.
 
-<h5>Examples</h5> p.spacious {word-spacing: 6px;} em {word-spacing: 0.2em;}
-
+<h5>Examples</h5>
+<pre>
+p.spacious {word-spacing: 6px;} em {word-spacing: 0.2em;}
 p.cramped {word-spacing: −0.5em;}
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### writing-mode Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**        horizontal-tb &vert; vertical-rl &vert; vertical-lr 
-  **Initial value**  horizontal-tb 
-  **Computed value**  As declared 
-  **Applies to**    All elements except table row groups, table column 
+**Values**        horizontal-tb &vert; vertical-rl &vert; vertical-lr 
+**Initial value**  horizontal-tb 
+**Computed value**  As declared 
+**Applies to**    All elements except table row groups, table column 
     groups, table rows, table columns, Ruby base 
     containers, and Ruby annotation containers 
-  **Description**   Allows the author to change the writing method used to 
+**Description**   Allows the author to change the writing method used to 
     flow text and other inline content into the element. 
     The vertical values are useful for languages that are 
     primarily vertical, as is the case with many non-Roman 
@@ -8068,13 +8161,14 @@ p.cramped {word-spacing: −0.5em;}
     text-orientation). Similarly, it's possible to take a 
     normally vertical language and flow it horizontally 
     with horizontal-tb. 
-  <h5>Examples</h5>     &lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} 
-   &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;} 
-
+<h5>Examples</h5>
+<pre>
+&lbrack;lang=&quot;en&quot;&rbrack; {writing-mode: horizontal-tb;} 
+&lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;} 
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### z-index
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** *&lt;integer&gt;* &vert; auto
 
 **Initial value** auto
@@ -8090,5 +8184,7 @@ z-axis, which is defined to be the axis that extends perpendicular to
 the display area. Positive numbers are closer to the user, and negative
 numbers are farther away.
 
-<h5>Example</h5> #masthead {position: relative; z-index: 10000;}
-
+<h5>Example</h5>
+<pre>
+#masthead {position: relative; z-index: 10000;}
+</pre>
