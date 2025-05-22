@@ -716,26 +716,31 @@ the following rules:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When elements are positioned, a number of special rules come into play. These rules 
 govern not only the containing block of the element, but also how it is laid out within 
-that element. <b>Types of Positioning</b></p>
-
+that element.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Types of Positioning</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are five types of positioning:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Static</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>The element's box is generated as normal. Block-level elements generate a rectangular 
     box that is part of the document's flow, and inline-level boxes generate one or more 
 	line boxes that flow within their parent element.</li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Relative</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>The element's box is offset by some distance. Its containing block can be considered 
     to be the area that the element would occupy if it were not positioned. The element 
 	retains the shape it would have had were it not positioned, and the space that the 
 	element would otherwise have occupied in the normal flow is preserved.</li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Absolute</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>The element's box is completely removed from the flow of the document and positioned 
     with respect to its containing block, which may be another element in the document or 
@@ -744,14 +749,17 @@ that element. <b>Types of Positioning</b></p>
 	not exist. The positioned element generates a block box, regardless of the type of box 
 	it would generate if it were in the normal flow.</li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Sticky</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>The element's box stays in the normal flow until it reaches a sticky edge of the 
     containing box, at which time it "sticks" there as if absolutely positioned. The space 
 	that the element would otherwise have occupied in the normal flow is preserved.</li>
 </ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Fixed</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>The element's box behaves as though set to absolute, but its containing block is 
     the viewport itself.</li>
@@ -802,81 +810,70 @@ be the initial containing block.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-11-1">1.11. Flexible Box Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Flexible box layout (also known as <i>flexbox</i> or <i>flex layout</i>) is ideal for 
+almost any one-dimensional layout; that is, situations where a number of elements need 
+to be placed and distributed along a line. There are two kinds of flex elements: the 
+<i>flex container</i> and the <i>flex items</i> that are placed within the container.</p>
 
-Flexible box layout (also known as <i>flexbox</i> or <i>flex layout</i>) is ideal
-for almost any one-dimensional layout; that is, situations where a
-number of elements need to be placed and distributed along a line. There
-are two kinds of flex elements: the <i>flex container</i> and the <i>flex
-items</i> that are placed within the container.
+<p>All the direct children of the flex container element are flex items.</p>
 
-All the direct children of the flex container element are flex items.
+<p>There are two kinds of flex containers: block flexboxes (display: flex) and inline 
+flexboxes (display: inline-flex). These are very much like block and inline-block boxes.</p>
+<p>Flex items are laid out in a single line by default, even if this causes the flex items 
+to overflow the flex container. This behavior can be changed using the flex-wrap property.</p>
 
-There are two kinds of flex containers: block flexboxes
+<p>Figure 1-4 shows the values (and their effects) of the justify content and align-items 
+properties.</p>
+<!-- image00 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. justify and align values ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img class="displayed"
+  src="/images/image005.png?raw=true"
+  title="Justify and align values"
+  alt="Justify and align values."
+  style="width:50%;" />
+</p>
+<p align="center"><i>Figure 1-4. Justify and align values</i></p>
 
-(display: flex) and inline flexboxes (display: inline-flex). These are
-very much like block and inline-block boxes. Flex items are laid out in
-a single line by default, even if this causes the flex items to overflow
-the flex container. This behavior can be changed using the flex-wrap
-property.
+<p>The process of calculating flex sizes is fairly complex. Here's a simplified version 
+of the algorithm:</p>
+<ol>
+  <li>Add together all the hypothetical outer main sizes of the flex items in a flex 
+    container. If the sum is smaller than the container size, the <i>flex factor</i> is 
+	to grow; otherwise, the flex factor is to shrink.</li>
+  <li>Any items that are inflexible are frozen in size. These are:
+    <ul>
+	  <li>Any item with a flex factor of zero</li>
+	  <li>Any item whose <i>hypothetical main size</i> is greater (if growing) or
+	    smaller (if shrinking) than its <i>base size</i></li>
+      <li>Any item with a growth factor (if growing) or shrink factor (if shrinking) 
+	  of zero.</li>
+	</ul>
+  <li>Calculate the <i>initial free space</i> by finding the difference between the outer 
+    sizes of all flex items and the size of the flex container.</li>
+  <li>Distribute the available free space to the flex items. The amount given to each flex 
+    item is initially determined by the ratio of its flex factor to the sum of all the items' 
+	flex factors. If an item will be grown past its maximum allowed size, or shrunk below its
+    minimum allowed size, set the size to be the allowed maximum (if growing) or minimum (if 
+	shrinking).</li>
+</ol>
 
-Figure 1-4 shows the values (and their effects) of the justifycontent
-and align-items properties.
-
-<i>Figure 1-4. Justify and align values</i>
-
-The process of calculating flex sizes is fairly complex. Here's a
-simplified version of the algorithm:
-
-1.  Add together all the hypothetical outer main sizes of the flex items
-    in a flex container. If the sum is smaller than the container size,
-    the <i>flex factor</i> is to grow; otherwise, the flex factor is to
-    shrink.
-
-2.  Any items that are inflexible are frozen in size. These are:
-
-<b>Flexible Box Layout</b>
-
--   Any item with a flex factor of zero
-
--   Any item whose <i>hypothetical main size</i> is greater (if growing) or
-    smaller (if shrinking) than its <i>base size</i>
-
--   Any item with a growth factor (if growing) or shrink factor (if
-    shrinking) of zero
-
-3.  Calculate the <i>initial free space</i> by finding the difference between
-    the outer sizes of all flex items and the size of the flex
-    container.
-
-4.  Distribute the available free space to the flex items. The amount
-    given to each flex item is initially determined by the ratio of its
-    flex factor to the sum of all the items' flex factors. If an item
-    will be grown past its maximum allowed size, or shrunk below its
-    minimum allowed size, set the size to be the allowed maximum (if
-    growing) or minimum (if shrinking).
-
-Again, this is a simplified version of the actual flex sizing algorithm
-given in the [W3C
-documentation](https://www.w3.org/TR/css-flexbox-1/#resolve-flexible-lengths).
-Consult section 9.7 of the CSS Flexible Box Layout Module Level 1 for
-full details if you want to know more.
-
+<p>Again, this is a simplified version of the actual flex sizing algorithm given in the 
+<a href="https://www.w3.org/TR/css-flexbox-1/#resolve-flexible-lengths">
+W3C documentation</a>. Consult section 9.7 of the CSS Flexible Box Layout Module Level 1 for
+full details if you want to know more.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-12-1">1.12. Grid Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Grid layout is ideal for almost any two-dimensional layout. There are two kinds of 
+grid elements: the <i>grid container</i> and the <i>grid items</i> that are placed within 
+the container. All the direct children of the grid container element are grid items.</p>
 
-Grid layout is ideal for almost any two-dimensional layout. There are
-two kinds of grid elements: the <i>grid container</i> and the <i>grid items</i>
-that are placed within the container. All the direct children of the
-grid container element are grid items.
+<p>There are two kinds of grid containers: block grids (display: grid) and inline grids 
+(display: inline-grid). These are very much like block and inline-block boxes.</p>
 
-There are two kinds of grid containers: block grids (display:
-
-grid) and inline grids (display: inline-grid). These are very much like
-block and inline-block boxes.
-
-A grid is made up of the following components, as illustrated in Figure
-1-5:
+<p>A grid is made up of the following components, as illustrated in Figure 1-5:</p>
 
 -   A *grid line* is a horizontal or vertical dividing line within the
     grid container. These are placed as the author directs and create
