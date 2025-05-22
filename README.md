@@ -3446,7 +3446,6 @@ appearing.
 <p><b>Examples</b></p>
 <pre>
 ul {border-bottom: 0.5in groove green;}
-
 a:active {border-bottom: purple 2px dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3542,7 +3541,6 @@ border to appear.
 <p><b>Examples</b></p>
 <pre>
 ul {border-bottom-style: groove;}
-
 a:active {border-bottom-style: dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3565,7 +3563,6 @@ effectively reset to 0. Negative length values are not permitted.
 <p><b>Examples</b></p>
 <pre>
 ul {border-bottom-width: 0.5in;}
-
 a:active {border-bottom-width: 2px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3591,9 +3588,8 @@ table {border-collapse: separate; border-spacing: 3px 5px;}
 
 **Note**  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-color Inh. N Anim. Y</h3>
+<h3>border-color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** *&lt;color&gt;*{1,4}
 
 **Initial value** See individual properties
@@ -3606,14 +3602,39 @@ portions of the overall border of an element or sets a different color
 for each of the four sides. Remember that a border's style must be
 something other than none or hidden for any visible border to appear.
 
-<p><b>Examples</b></p> h1 {border-color: purple;}
-
+<p><b>Examples</b></p>
+<pre>
+h1 {border-color: purple;}
 a:visited {border-color: maroon;}
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- <h3>border-image  Inh. N Anim. P</h3>  -->
+<!-- <h3><div id="left">border-image</div><div align="right">Inh. N Anim. P</div></h3> -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+#left {
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-image Inh. N Anim. P</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+#center {
+    text-align: center;
+}
+
+#right {
+    float: right;
+    text-align: right;
+    padding-left: 10px;
+}
+-->
 <table>
+  <thead>
+    <tr>
+	  <th> border-image </th>
+	  <th> Inh. N Anim. P </th>
+	</tr>
+  </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
@@ -3637,7 +3658,7 @@ a:visited {border-color: maroon;}
 	  <td><b>Animatable</b></td>
 	  <td>Refer to individual border-image properties to see which are animatable.</td>
 	</tr>
-	  <td><b>Description</b></td>
+	  <td><b>Description    </b></td>
 	  <td>A shorthand property that defines the source, slicing pattern, border width, degree of extension,  
    and repetition of an image-based border. The syntax is somewhat unusual compared to the rest of CSS, so 
    take extra time with it. For example, three of the five values possible are slash-separated and must be 
@@ -3649,10 +3670,12 @@ a:visited {border-color: maroon;}
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
-	  <td><pre>div.starry {border-image;<br>
-	    url(stargrid.png) 5px repeat;}<br>
-      aside {border-image: url(asides.png)<br>
-        100 50 150 / 8 3 13 / 2 stretch round;}</pre></td>
+	  <td>
+<pre>div.starry {border-image;
+  url(stargrid.png) 5px repeat;}
+aside {border-image: url(asides.png)
+  100 50 150 / 8 3 13 / 2 stretch round;}</pre>
+      </td>
 	</tr>
   </tbody>
 </table>
@@ -8152,22 +8175,81 @@ p.cramped {word-spacing: −0.5em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>z-index</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;integer&gt;* &vert; auto
-
-**Initial value** auto
-
-**Computed value** As declared
-
-**Applies to** Positioned elements
-
-**Inh. N Anim. Y**
-
-**Description** Defines the placement of a positioned element along the
-z-axis, which is defined to be the axis that extends perpendicular to
-the display area. Positive numbers are closer to the user, and negative
-numbers are farther away.
-
-<p><b>Example</b></p>
+<table>
+  <thead>
+    <tr>
+	  <th>z-index</th>
+	  <th>Inh. N Anim. Y</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;integer&gt;</i> &vert; auto</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>auto</td>
+	</tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Positioned elements</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the placement of a positioned element along the z-axis, which is defined to be the axis that extends perpendicular to the display area. Positive numbers are closer to the user, and negative numbers are farther away.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td><pre>#masthead {position: relative; z-index: 10000;}</pre></td>
+	</tr>
+  </tbody>
+</table>
+<!-- wip
+<table>
+  <thead>
+    <tr>
+	  <th>border-image</th>
+	  <th>Inh. N Anim. P</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><br>
+	     <br>
+	  </td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>See individual properties</td>
+	</tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Refer to individual border-image properties to see which are animatable.</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>
+	  </td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
-#masthead {position: relative; z-index: 10000;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+-->
