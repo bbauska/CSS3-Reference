@@ -616,7 +616,7 @@ determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Any string of characters not contained within an inline element. Thus, in the markup:<br>
-      <p><b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b></p>
+    <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b><br>
     the sequences "I'm " and " happy!" are anonymous text. Note that the spaces are part 
     of the anonymous text, as a space is a character like any other.</li>
 </ul>
@@ -633,38 +633,40 @@ determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Content area</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In nonreplaced elements, this can be the box described by the em-boxes
-of every character in the element, strung together, or else the box
-described by the character glyphs in the element. In CSS2.1 and later,
-user agents can choose either. This text uses the em-box definition
-for simplicity's sake. In replaced elements, the content area is the
-intrinsic height of the element plus any margins, borders, or padding.
+<ul>
+  <li>In nonreplaced elements, this can be the box described by the em-boxes of every 
+    character in the element, strung together, or else the box described by the character 
+	glyphs in the element. In CSS2.1 and later, user agents can choose either. This text 
+	uses the em-box definition for simplicity's sake. In replaced elements, the content 
+	area is the intrinsic height of the element plus any margins, borders, or padding.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Leading</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>&nbsp;&nbsp;The difference between the values of font-size and lineheight. Half<br>
-&nbsp;&nbsp;this difference is applied to the top and half to the bottom of the<br>
-&nbsp;&nbsp;content area. These additions to the content area are called, not<br>
-&nbsp;&nbsp;surprisingly, <i>half-leading</i>. Leading is applied only to nonreplaced<br>
-&nbsp;&nbsp;elements.</p>
+<ul>
+  <li>The difference between the values of font-size and lineheight. Half this difference 
+    is applied to the top and half to the bottom of the content area. These additions to 
+	the content area are called, not surprisingly, <i>half-leading</i>. Leading is 
+	applied only to nonreplaced elements.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Inline box</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  The box described by the addition of the leading to the content area.
-  For nonreplaced elements, the height of the inline box of an element
-  will be equal to the value for line-height. For replaced elements, the
-  height of the inline box of an element will be equal to the content
-  area, as leading is not applied to replaced elements.
-
+<ul>
+  <li>The box described by the addition of the leading to the content area. For nonreplaced 
+    elements, the height of the inline box of an element will be equal to the value for 
+	line-height. For replaced elements, the height of the inline box of an element will be 
+	equal to the content area, as leading is not applied to replaced elements.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Line box</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  The shortest box that bounds the highest and lowest points of the
-  inline boxes that are found in the line. In other words, the top edge
-  of the line box will be placed along the top of the highest inline box
-  top, and the bottom of the line box is placed along the bottom of the
-  lowest inline box bottom. (See Figure 1-3).
+<ul>
+  <li>The shortest box that bounds the highest and lowest points of the inline boxes that 
+    are found in the line. In other words, the top edge of the line box will be placed 
+	along the top of the highest inline box top, and the bottom of the line box is placed 
+	along the bottom of the lowest inline box bottom. (See Figure 1-3).</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. inline layout details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -679,115 +681,95 @@ intrinsic height of the element plus any margins, borders, or padding.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-9-1">1.9. Floating</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Floating allows an element to be placed to the left or right of its
+<p>Floating allows an element to be placed to the left or right of its
 containing block (which is the nearest block-level ancestor element),
 with following content flowing around the element. Any floated element
 automatically generates a block box, regardless of what type of box it
 would generate if not floated. A floated element is placed according to
-the following rules:
-
--   The left (or right) outer edge of a floated element may not be to
-    the left (or right) of the inner edge of its containing block.
-
--   The left (or right) outer edge of a floated element must be to the
-    right (or left) of the right (left) outer edge of a leftfloating (or
-    right-floating) element that occurs earlier in the document's
-    source, unless the top of the latter element is below the bottom of
-    the former.
-
--   The right outer edge of a left-floating element may not be to the
-    right of the left outer edge of any right-floating element to its
-    right. The left outer edge of a right-floating element may not be to
-    the left of the right outer edge of any left-floating element to its
-    left.
-
-<b>Floating</b>
-
--   A floating element's top may not be higher than the inner top of its
-    containing block.
-
--   A floating element's top may not be higher than the top of any
-    earlier floating or block-level element.
-
--   A floating element's top may not be higher than the top of any line
-    box with content that precedes the floating element.
-
--   A left (or right) floating element that has another floating element
-    to its left (right) may not have its right (left) outer edge to the
-    right (left) of its containing block's right (left) edge.
-
--   A floating element must be placed as high as possible.
-
--   A left-floating element must be put as far to the left as possible,
-    and a right-floating element as far to the right as possible. A
-    higher position is preferred to one that is farther to the right or
-    left.
-
+the following rules:</p>
+<ul>
+  <li>The left (or right) outer edge of a floated element may not be to the left (or right) 
+    of the inner edge of its containing block.</li>
+  <li>The left (or right) outer edge of a floated element must be to the right (or left) 
+    of the right (left) outer edge of a leftfloating (or right-floating) element that 
+	occurs earlier in the document's source, unless the top of the latter element is 
+	below the bottom of the former.</li>
+  <li>The right outer edge of a left-floating element may not be to the right of the left 
+    outer edge of any right-floating element to its right. The left outer edge of a 
+	right-floating element may not be to the left of the right outer edge of any 
+	left-floating element to its left.</li>
+  <li>A floating element's top may not be higher than the inner top of its containing block.</li>
+  <li>A floating element's top may not be higher than the top of any earlier floating or 
+    block-level element.</li>
+  <li>A floating element's top may not be higher than the top of any line box with content 
+    that precedes the floating element.</li>
+  <li>A left (or right) floating element that has another floating element to its left 
+    (right) may not have its right (left) outer edge to the right (left) of its 
+	containing block's right (left) edge.</li>
+  <li>A floating element must be placed as high as possible.</li>
+  <li>A left-floating element must be put as far to the left as possible, and a right-floating 
+    element as far to the right as possible. A higher position is preferred to one that is 
+	farther to the right or left.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-10-1">1.10. Positioning</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When elements are positioned, a number of special rules come into play. These rules 
+govern not only the containing block of the element, but also how it is laid out within 
+that element. <b>Types of Positioning</b></p>
 
-When elements are positioned, a number of special rules come into play.
-These rules govern not only the containing block of the element, but
-also how it is laid out within that element. <b>Types of Positioning</b>
+<h4>Types of Positioning</h4>
+<p>There are five types of positioning:</p>
+<h5><i>Static</i></h5>
+<ul>
+  <li>The element's box is generated as normal. Block-level elements generate a rectangular 
+    box that is part of the document's flow, and inline-level boxes generate one or more 
+	line boxes that flow within their parent element.</li>
+</ul>
 
-There are five types of positioning:
+<h5><i>Relative</i></h5>
+<ul>
+  <li>The element's box is offset by some distance. Its containing block can be considered 
+    to be the area that the element would occupy if it were not positioned. The element 
+	retains the shape it would have had were it not positioned, and the space that the 
+	element would otherwise have occupied in the normal flow is preserved.</li>
+</ul>
 
-<i>Static</i>
+<h5><i>Absolute</i></h5>
+<ul>
+  <li>The element's box is completely removed from the flow of the document and positioned 
+    with respect to its containing block, which may be another element in the document or 
+	the initial containing block (described in the next section). Whatever space the element 
+	might have occupied in the normal document flow is closed up, as though the element did 
+	not exist. The positioned element generates a block box, regardless of the type of box 
+	it would generate if it were in the normal flow.</li>
+</ul>
 
-The element's box is generated as normal. Block-level elements
-generate a rectangular box that is part of the document's flow, and
-inline-level boxes generate one or more line boxes that flow within
-their parent element.
-
-<i>Relative</i>
-
-The element's box is offset by some distance. Its containing block can
-be considered to be the area that the element would occupy if it were
-not positioned. The element retains the shape it would have had were
-it not positioned, and the space that the element would otherwise have
-occupied in the normal flow is preserved.
-
-<i>Absolute</i>
-
-The element's box is completely removed from the flow of the document
-and positioned with respect to its containing block, which may be
-another element in the document or the initial containing block
-(described in the next section). Whatever space the element might have
-occupied in the normal document flow is closed up, as though the
-element did not exist. The positioned element generates a block box,
-regardless of the type of box it would generate if it were in the
-normal flow.
-
-<i>Sticky</i>
-
-The element's box stays in the normal flow until it reaches a sticky
-edge of the containing box, at which time it "sticks" there as if
-absolutely positioned. The space that the element would otherwise have
-occupied in the normal flow is preserved.
-
-<i>Fixed</i>
-
-The element's box behaves as though set to absolute, but its
-containing block is the viewport itself.
-
+<h5><i>Sticky</i></h5>
+<ul>
+  <li>The element's box stays in the normal flow until it reaches a sticky edge of the 
+    containing box, at which time it "sticks" there as if absolutely positioned. The space 
+	that the element would otherwise have occupied in the normal flow is preserved.</li>
+</ul>
+<h5><i>Fixed</i></h5>
+<ul>
+  <li>The element's box behaves as though set to absolute, but its containing block is 
+    the viewport itself.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Containing Block</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-The containing block of a positioned element is determined as follows:
-
-1.  The containing block of the <i>root element</i> (also called the <i>initial
+<p>The containing block of a positioned element is determined as follows:</p>
+<ol>
+  <li>The containing block of the <i>root element</i> (also called the <i>initial
     containing block</i>) is established by the user agent. In HTML, the
     root element is the html element, although some browsers may use
-    body.
-
-2.  For nonroot elements, if an element's position value is relative or
+    body.</li>
+  <li>For nonroot elements, if an element's position value is relative or
     static, its containing block is formed by the content edge of the
-    nearest block-level, table-, cell-, or
-
-<b>Positioning</b>
+    nearest block-level, table-, cell-, or</li>
+</ol>
+<h5>Positioning</h5>
 
 inline-block ancestor box. Despite this rule, relatively positioned
 elements are still simply offset (not positioned with respect to the
