@@ -2853,6 +2853,52 @@ environments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table>
+  <thead>
+    <tr>
+	  <th>align-self</th>
+	  <th>Inh. N Anim. N</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>flex-start &vert; flex-end &vert; center &vert; baseline &vert;<br>
+	  stretch</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>stretch</td>
+	</tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declarede</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Flex and grid items</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Sets the alignment for a single item with respect to the cross axis of the flex line it occupies.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+div.flexy .midpointed {align-self: center;}
+section.gallery h1 {align-self: stretch;}
+</pre>
+      </td>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>As of early 2018, there are plans to have this property apply to many (or all) elements, and be given the values start and end to replicate flex-start and flex-end behavior for non-flex environments.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!----------------------->
+
 <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
 <b>Initial value</b>     stretch     
 <b>Computed value</b>   As declared 
@@ -2869,9 +2915,7 @@ aligned with the lowest first-line baseline in the flex line.
 div.flexy .midpointed {align-self: center;}
 section.gallery h1 {align-self: stretch;}
 </pre>
-<b>Note</b> As of early 2018, there are plans to have this property apply
-to many (or all) elements, and be given the values start and end to
-replicate flex-start and flex-end behavior for non-flex environments.
+<b>Note</b> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>all</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4449,7 +4493,7 @@ the table box. The caption is rendered as though it were a block-level
 element placed just before (or after) the table.
 
 <p><b>Example</b></p>
-<pre
+<pre>
 caption {caption-side: top;}
 </pre>
 **Note** The values left and right appeared in CSS2 but were later
@@ -8173,7 +8217,7 @@ p.cramped {word-spacing: −0.5em;}
 &lbrack;lang=&quot;jp&quot;&rbrack; {writing-mode: vertical-rl;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>z-index</h3>
+<!-- <h3>z-index</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
   <thead>
