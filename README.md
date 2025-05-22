@@ -866,29 +866,29 @@ the container. All the direct children of the grid container element are grid it
 
 <p>A grid is made up of the following components, as illustrated in Figure 1-5:</p>
 <ul>
-  <li>A *grid line* is a horizontal or vertical dividing line within the
+  <li>A <i>grid line</i> is a horizontal or vertical dividing line within the
     grid container. These are placed as the author directs and create
-    grid *cells*, *areas*, and *tracks* by implication. Grid lines can
-    be labeled with *identifier tokens*; that's the basis of grid item
+    grid <i>cells</i>, <i>areas</i>, and <i>tracks</i> by implication. Grid lines can
+    be labeled with <i>identifier tokens</i>; that's the basis of grid item
     placement.</li>
-  <li>A *grid cell* is any space bounded by four grid lines, with no other
+  <li>A <i>grid cell</i> is any space bounded by four grid lines, with no other
     grid lines running through it, analogous to a table cell. This is
     the smallest unit of area in grid layout. Grid cells cannot be
     directly addressed with CSS grid properties; that is, no property
     allows you to say a grid item should be associated with a given
     cell. (But see the next point for more details.)</li>
-  <li>A *grid area* is any rectangular area bounded by four grid lines and
+  <li>A <i>grid area</i> is any rectangular area bounded by four grid lines and
     made up of one or more grid cells. An area can be as small as a
     single cell or as large as all the cells in the grid. Grid areas are
     directly addressable by CSS grid properties, which allow you to
     define the areas and then associate grid items with them.</li>
-  <li>A *grid track* is a continuous run between two adjacent grid
-    lines---in other words, a *grid column* or a *grid row*. It goes
+  <li>A <i>grid track</i> is a continuous run between two adjacent grid
+    lines---in other words, a <i>grid column</i> or a <i>grid row</i>. It goes
     from one edge of the grid container to the other. The size of a grid
     track is dependent on the placement of the grid lines that define
     it. Grid columns and rows are broadly analogous to table columns and
-    rows. More generically, they can be referred to as *block axis* and
-    *inline axis* tracks, where (in Western languages) column tracks are
+    rows. More generically, they can be referred to as <i>block axis</i> and
+    <i>inline axis</i> tracks, where (in Western languages) column tracks are
     on the block axis and row tracks are on the inline axis.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -910,33 +910,33 @@ unlabeled and later addressed using numbers.</p>
 <p>The formal syntax for defining grid track sizes is quite complicated,
 but the components are relatively simple to list and explain:</p>
 
-*&lt;length&gt; &vert; &lt;percentage&gt;*
+<h5><b><mark><i>&lt;length&gt; &vert; &lt;percentage&gt;</i></mark></b></h5>
 
 Any non-negative length or percentage value. Thus, 5em defines a 5-em
 gap between grid lines, whereas 5% creates a gap between lines that is
 5% of the total grid length in the given direction (i.e., the
 horizontal length for grid rows, and the vertical length for columns).
 
-*&lt;flex&gt;*
+<h5><b><mark><i>&lt;flex&gt;</i></mark></b></h5>
 
 A positive real number with the unit identifier fr (e.g., 2fr or
-3.14fr) which defines a *flex factor* for the grid track.
+3.14fr) which defines a <i>flex factor</i> for the grid track.
 
-min-content
+<h5><b><mark>min-content</mark></b></h5>
 
 Sets the grid track's width (or height) to be as small as possible
 while still containing all the content within the grid track. For
 example, column tracks that contain only text will become as narrow as
 the widest run of text that cannot be line-broken within the track.
 
-max-content
+<h5><b><mark>max-content</mark></b></h5>
 
 Sets the grid track's width (or height) to be large enough to contain
 the largest rendering of all the content within the grid track. For
 example, column tracks that contain only text will become as wide as
-the longest run of text, *without* any line-wrapping of the text.
+the longest run of text, <i>without</i> any line-wrapping of the text.
 
-auto
+<h5><b><mark>auto</mark></b></h5>
 
 In most cases, auto is equivalent to the largest minimum size of the
 grid items occupying the grid track; that is, once all the minimum
@@ -945,54 +945,26 @@ is made as wide as the widest of those minimums. When auto is used as
 a maximum value (see minmax() later in this list), it is identical to
 max-content.
 
-minmax(*&lt;min&gt;,&lt;max&gt;*)
+<h5><b><mark>minmax(<i>&lt;min&gt;,&lt;max&gt;</i>)</mark></b></h5>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets a range of sizes outside which the grid track cannot grow or shrink. Either <i>&lt;min&gt;</i> or <i>&lt;max&gt;</i> can be a <i>&lt;length&gt;</i> or <i>&lt;percentage&gt;</i> value, min-content, or max-content. <i>&lt;max&gt;</i> can be a <i>&lt;flex&gt;</i> value, but <i>&lt;min&gt;</i> cannot. If the minimum value computes to be larger than the maximum computed value, the maximum sizing is ignored and the minimum size is used as a minimum.
 
-Sets a range of sizes outside which the grid track cannot grow or
-shrink. Either *&lt;min&gt;* or *&lt;max&gt;* can be a *&lt;length&gt;* or
-*&lt;percentage&gt;* value, min-content, or max-content. *&lt;max&gt;* can be
-a *&lt;flex&gt;* value, but *&lt;min&gt;* cannot. If the minimum value
-computes to be larger than the maximum computed value, the maximum
-sizing is ignored and the minimum size is used as a minimum.
+<h5><b><mark>fit-content( &lbrack; <i>&lt;length&gt; &vert; &lt;percentage&gt;</i> &rbrack; )</mark></b></h5>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equivalent to minmax(auto,max-content) with an exception: if the track's size is larger than the auto value's computed value, that size can't go higher than the given value (a <i>&lt;length&gt;</i> or <i>&lt;percentage&gt;</i>). This is intended to let authors declare a maximum track size while still letting the track size be content-bound below that maximum.
 
-fit-content( &lbrack; *&lt;length&gt; &vert; &lt;percentage&gt;* &rbrack; )
+<h5><b><mark>repeat( &lbrack; <i>&lt;integer&gt; &vert;</i> auto-fill <i>&vert;</i> auto-fit &rbrack; , <i>&lt;track-list&gt;</i> )</mark></b></h5>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allows authors to repeat a pattern of grid track sizes as many times as they like. The <i>&lt;integer&gt;</i> value must be positive. auto-fill and auto-fit delegate the number of tracks to the user agent. <i>&lt;track-list&gt;</i> can be any valid combination of track sizes.
 
-Equivalent to minmax(auto,max-content) with an exception: if the
-track's size is larger than the auto value's computed value, that size
-can't go higher than the given value (a *&lt;length&gt;* or
-*&lt;percentage&gt;*). This is intended to let authors declare a maximum
-track size while still letting the track size be content-bound below
-that maximum.
+<p>There are three kinds of track sizing. These are:</p>
 
-repeat( &lbrack; *&lt;integer&gt; &vert;* auto-fill *&vert;* auto-fit &rbrack; ,
-*&lt;track-list&gt;* ) Allows authors to repeat a pattern of grid track
-sizes as many times as they like. The *&lt;integer&gt;* value must be positive.
+<h5><b><i>Fixed</i></b></h5>
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a size in absolute lengths (such as px or em), or sized with %. Percentage values count as fixed track sizes because they are always the same for a given grid container size. The tracks' sizing does not depend on their contents. 
 
-<b>Grid Layout</b>
-auto-fill and auto-fit delegate the number of tracks to the user
-agent. *&lt;track-list&gt;* can be any valid combination of track sizes.
+<h5><b><i>Flexible</i></b></h5>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a flex or fractional sizing via the fr unit. Their sizing does not depend on their contents.
 
-There are three kinds of track sizing. These are:
-
-*Fixed*
-
-Tracks are given a size in absolute lengths (such as px or em), or
-sized with %. Percentage values count as fixed track sizes because
-they are always the same for a given grid container size. The tracks'
-sizing does not depend on their contents.
-
-*Flexible*
-
-Tracks are given a flex or fractional sizing via the fr unit. Their
-sizing does not depend on their contents.
-
-*Intrinsic*
-
-The tracks' size is dependent on the things found within them; i.e.,
-with min-content, max-content, fit-content(), and auto. These tracks
-may always be the same size for a given container size and set of
-content, but they are not regarded as fixed for layout purposes
-because their contents directly affect their sizing.
+<h5><b><i>Intrinsic</i></b></h5>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The tracks' size is dependent on the things found within them; i.e., with min-content, max-content, fit-content(), and auto. These tracks may always be the same size for a given container size and set of content, but they are not regarded as fixed for layout purposes because their contents directly affect their sizing.
 
 The process of actually determining the size of grid tracks, including
 what to do when track sizes are overconstrained or could lead to
@@ -1033,7 +1005,7 @@ defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
 table. Figure 1-6 illustrates the components of a table.
 
-*Figure 1-6. Table layout components*
+<i>Figure 1-6. Table layout components</i>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table Arrangement Rules</h4>
@@ -1232,7 +1204,7 @@ win and which will not:
     right-to-left languages, the cell farthest to the right and top
     wins.
 
-*Figure 1-7. Collapsing cell borders model*
+<i>Figure 1-7. Collapsing cell borders model</i>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Vertical Alignment Within Cells</h4>
@@ -1295,7 +1267,7 @@ unset
 Combines the effects of both inherit and initial, with a rudimentary
 logic built in for good measure. If a property is inherited (e.g.,
 color), then unset has the same effect as inherit. If the property is
-*not* inherited (e.g., backgroundimage), then unset has the same
+<i>not</i> inherited (e.g., backgroundimage), then unset has the same
 effect as initial.
 
 If you have a situation where you want to set all of the properties on
@@ -1307,7 +1279,7 @@ inheritance, see the all property in Chapter 4.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Color values can be expressed in a variety of ways:
 
-*#RRGGBB*
+<i>#RRGGBB</i>
 
 This is a hex-pair notation familiar to authors using traditional
 HTML. In this format, the first pair of digits corresponds to the red
@@ -1316,13 +1288,13 @@ Each pair is in hexadecimal notation in the range 00--FF (decimal
 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is
 written #FF0000, and so on.
 
-*#RGB*
+<i>#RGB</i>
 
 This is a shorter form of the six-digit notation described previously.
 In this format, each digit is replicated to arrive at an equivalent
 six-digit value; thus, #F8C becomes #FF88CC.
 
-*#RRGGBBAA*
+<i>#RRGGBBAA</i>
 
 An extension of the #RRGGBB notation which adds an alpha channel. As
 with the R, G, and B values, the A (alpha) value is in hexadecimal
@@ -1334,7 +1306,7 @@ derived by converting hexadecimal 99 to decimal 153, and then dividing
 equivalent to rgba(0,255,0,0.6). Note: support for this notation first
 emerged in early 2016.
 
-*#RGBA*
+<i>#RGBA</i>
 
 This is a shorter form of the eight-digit #RRGGBBAA notation described
 previously. In this format, each digit is replicated to arrive at an
@@ -1343,24 +1315,24 @@ equivalent eight-digit value; thus,
 #F8C6 becomes #FF88CC66. Note: support for this notation first emerged
 in early 2016.
 
-*rgb(rrr,ggg,bbb)*
+<i>rgb(rrr,ggg,bbb)</i>
 
 This format allows the author to use RGB values in the range 0--255;
 only integers are permitted. Not coincidentally, this range is the
 decimal equivalent of 00--FF in hexadecimal. In this format, "pure"
 green is rgb(0,255,0), and white is represented as rgb(255,255,255).
 
-*rgb(rrr.rr%,ggg.gg%,bbb.bb%)*
+<i>rgb(rrr.rr%,ggg.gg%,bbb.bb%)</i>
 
 This format allows the author to use RGB values in the range 0% to
 100%, with decimal values allowed (e.g., 75.5%). The value for black
 is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).
 
-*hsl(hhh.hh,sss.ss%,lll.ll%)*
+<i>hsl(hhh.hh,sss.ss%,lll.ll%)</i>
 
 This format permits authors to specify a color by its hue angle,
 saturation, and lightness (HSL). The hue angle is always a unitless
-number or a *&lt;degree&gt;* value in the range 0 to 360, and the
+number or a <i>&lt;degree&gt;</i> value in the range 0 to 360, and the
 saturation and brightness values are always percentages. Hue angles 0
 and 360 are equivalent, and are both red. Hue angles greater than 360
 can be
@@ -1373,8 +1345,8 @@ saturation value is 0%; the exact shade will depend on the lightness
 value. Any HSL value, regardless of the hue angle, will be rendered
 solid black if lightness is 0% and solid white if lightness is 100%. The
 "normal" lightness value---that is, the value associated with most
-common colors---is 50%. *rgba(rrr,ggg,bbb,a.aa)
-rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)*
+common colors---is 50%. <i>rgba(rrr,ggg,bbb,a.aa)
+rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</i>
 
 These extend the previous three formats to include an alpha (opacity)
 value. The alpha value must be a real number between 0 and 1
@@ -1382,7 +1354,7 @@ inclusive; percentages are not permitted for the alpha value. Thus,
 rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
 are all equivalent half-opaque red.
 
-*&lt;keyword&gt;*
+<i>&lt;keyword&gt;</i>
 
 One of 16 recognized keywords based on the original Windows VGA
 colors. These keywords are aqua, black, blue, fuchsia, gray, green,
@@ -1415,16 +1387,16 @@ which is the computed value any time transparent is used.
 A number value is expressed as a positive or negative number
 
 (when permitted). Numbers can be either real (represented as
-*&lt;number&gt;*) or integers (*&lt;integer&gt;*). They may also restrict the
+<i>&lt;number&gt;</i>) or integers (<i>&lt;integer&gt;</i>). They may also restrict the
 range of acceptable values, as with color values that accept only
 integers in the range 0--255. A more common range restriction is to
 limit a number to be non-negative. These are sometimes represented as
-*&lt;non-negative number&gt;* or *&lt;non-negative integer&gt;*.
+<i>&lt;non-negative number&gt;</i> or <i>&lt;non-negative integer&gt;</i>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4-1">2.4. Percentage Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A percentage value is expressed as a *&lt;number&gt;* followed immediately
+A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately
 by a percent sign (%). There should never be any space between the
 number and the percent sign. A percentage value will always be computed
 relative to something else. For example, declaring font-size: 120% for
@@ -1441,32 +1413,32 @@ never be any space between the number and the unit identifier. A length
 value of 0 (zero) does not require a unit identifier.
 
 <b>Number Values</b>
-Length units are divided into two types: *absolute units*, which are (in
-theory) always measured in the same way, and *relative units*, which are
+Length units are divided into two types: <i>absolute units</i>, which are (in
+theory) always measured in the same way, and <i>relative units</i>, which are
 measured in relation to other things. <b>Absolute Length Units</b>
 
 The available absolute units are:
 
-*Centimeters* (cm)
+<i>Centimeters</i> (cm)
 
 The centimeters found on rulers the world over. There are 2.54
 centimeters to an inch, and 1 centimeter equals 0.394 inches. The same
 mapping warnings that applied to inches also apply to centimeters.
 
-*Millimeters* (mm)
+<i>Millimeters</i> (mm)
 
 There are 10 millimeters to a centimeter, so you get 25.4 millimeters
 to an inch, and 1 millimeter equals 0.0394 inches. Bear in mind the
 previous warnings about mapping lengths to displays.
 
-*Quarter-millimeters* (q)
+<i>Quarter-millimeters</i> (q)
 
 Exactly what they say they are: one-fourth of a millimeter.
 
 In other words, 4q equals one millimeter, and 400q equals one
 centimeter. Again, bear in mind the previous mapping warnings.
 
-*Inches* (in)
+<i>Inches</i> (in)
 
 As you might expect, the same inches found on typical US rulers. The
 mapping from inches to a display device is usually approximate at
@@ -1474,7 +1446,7 @@ best, because many systems have no concept of the relation of their
 display areas to "realworld" measurements such as inches. Thus, inches
 should be used with extreme caution in screen design.
 
-*Points* (pt)
+<i>Points</i> (pt)
 
 Points are standard typographical measures used by printers and
 typesetters for centuries and by word-processing programs for decades.
@@ -1484,7 +1456,7 @@ tall. For example, p {font-size: 18pt;} is equivalent to p {font-size:
 0.25in;}, assuming proper mapping of lengths to the display
 environment (see previous comments).
 
-*Picas* (pc)
+<i>Picas</i> (pc)
 
 Another typographical term. A pica is equivalent to 12 points, which
 means there are 6 picas to an inch. The capital letters of text set to 1
@@ -1495,7 +1467,7 @@ Length Units</b>
 
 The available relative units are:
 
-*Em-height* (em)
+<i>Em-height</i> (em)
 
 This refers to the em-height of a given font face. In CSS, the
 em-height is equivalent to the height of the character box for the
@@ -1503,12 +1475,12 @@ font face, which is to say the computed value of font-size. Ems can be
 used to set relative sizes for fonts; for example, font-size: 1.2em is
 the same as saying fontsize: 120%.
 
-*Root element em-height* (rem)
+<i>Root element em-height</i> (rem)
 
 Equal to the em-height of the root element (in HTML, the html
 element).
 
-*X-height* (ex)
+<i>X-height</i> (ex)
 
 This refers to the x-height of the font face, which is to say the
 height of the lowercase "x" character in the given font face. However,
@@ -1516,7 +1488,7 @@ the vast majority of font faces do not include their x-height, so many
 browsers approximate it (poorly) by simply setting 1ex to be equal to
 0.5em.
 
-*ZERO width* (ch)
+<i>ZERO width</i> (ch)
 
 This refers to the width of a single zero (Unicode U+0300, "ZERO") in
 the current font family and size. This is often, but erroneously,
@@ -1528,7 +1500,7 @@ Since most proportional fonts have zeros that are
 slimmer than the alphabetic symbols, setting something like width:
 60ch will often result in lines of text with fewer than 60 characters.
 
-*Pixels* (px)
+<i>Pixels</i> (px)
 
 A pixel is usually thought of as a small box on a display, but CSS
 defines pixels more abstractly. In CSS terms, a pixel is defined to be
@@ -1538,7 +1510,7 @@ display, but others (such as those on high-resolution mobile devices)
 go the CSS route, treating each px as being multiple physical
 on-screen pixels.
 
-*Viewport width unit* (vw)
+<i>Viewport width unit</i> (vw)
 
 This unit is calculated with respect to the viewport's width, which is
 divided by 100. If the viewport is 937 pixels wide, for example, 1vw
@@ -1546,7 +1518,7 @@ is equal to 9.37px. If the viewport's width changes, say by dragging
 the browser window to be wider or narrower, the value of vw changes
 along with it.
 
-*Viewport height unit* (vh)
+<i>Viewport height unit</i> (vh)
 
 This unit is calculated with respect to the viewport's height, which
 is divided by 100. If the viewport is 650 pixels tall, for example,
@@ -1554,44 +1526,44 @@ is divided by 100. If the viewport is 650 pixels tall, for example,
 dragging the browser window to be taller or shorter, the value of vh
 changes along with it.
 
-*Viewport minimum unit* (vmin)
+<i>Viewport minimum unit</i> (vmin)
 
 This unit is 1/100 of the viewport's width or height, whichever is
-*lesser*. Thus, given a viewport that is 937 pixels wide by 650 pixels
+<i>lesser</i>. Thus, given a viewport that is 937 pixels wide by 650 pixels
 tall, 1vmin is equal to 6.5px.
 
-*Viewport maximum unit* (vmax)
+<i>Viewport maximum unit</i> (vmax)
 
 This unit is 1/100 of the viewport's width or height, whichever is
-*greater*. Thus, given a viewport that is 937 pixels wide by 650
+<i>greater</i>. Thus, given a viewport that is 937 pixels wide by 650
 pixels tall, 1vmax is equal to 9.37px.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6-1">2.6. Fraction Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A *fraction value* is a *&lt;number&gt;* followed by the label fr. Thus, one
+A <i>fraction value</i> is a <i>&lt;number&gt;</i> followed by the label fr. Thus, one
 fraction unit is 1fr, four fraction units are 4fr, and so on. This is a
 concept introduced by Grid Layout, and is used to divide up fractions of
-the unconstrained space in a layout. Note that fr is *not* a
-*&lt;length&gt;* unit, and thus cannot be used in places where length values
+the unconstrained space in a layout. Note that fr is <i>not</i> a
+<i>&lt;length&gt;</i> unit, and thus cannot be used in places where length values
 are permitted (e.g., calc() expressions, see "Calculation Values" on
 page 45).
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-7-1">2.7. URIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A URI value (*&lt;uri&gt;*) is a reference to a file such as a graphic or
+A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or
 another stylesheet. CSS defines a URI as relative to the stylesheet that
 contains it. URI stands for Uniform Resource Identifier, which is the
 more recent name for URLs. (Technically, URLs are a subset of URIs.) In
 CSS, which was first defined when URIs were still called URLs, this
 means that references to URIs will often appear in the form
-url(*&lt;uri&gt;*). Fun!
+url(<i>&lt;uri&gt;</i>). Fun!
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-8-1">2.8. Angles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The format of an *&lt;angle&gt;* is expressed as a *&lt;number&gt;* followed
+The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed
 immediately by an angle unit. There are four types of angle units:
 degrees (deg), grads (grad), radians (rad), and turns (turn). For
 example, a right angle could be declared as 90deg, 100grad, 1.571rad, or
@@ -1602,7 +1574,7 @@ equivalent to 270deg.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-9-1">2.9. Times</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A time value (*&lt;time&gt;*) is expressed as a *&lt;number&gt;* followed
+A time value (<i>&lt;time&gt;</i>) is expressed as a <i>&lt;number&gt;</i> followed
 immediately by a time unit. There are two types of time units: seconds
 (s) and milliseconds (ms). Time values appear in aural styles, which are
 not widely supported, and in the much bettersupported transitions and
@@ -1611,8 +1583,8 @@ animations.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-10-1">2.10. Frequencies</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A frequency value (*&lt;frequency&gt;*) is expressed as a non-negative
-*&lt;number&gt;* followed immediately by a frequency unit. There are two
+A frequency value (<i>&lt;frequency&gt;</i>) is expressed as a non-negative
+<i>&lt;number&gt;</i> followed immediately by a frequency unit. There are two
 types of frequency units: hertz (Hz) and kilohertz (kHz).
 
 The unit identifiers are case-insensitive, so 6kHz and 6khz are
@@ -1623,7 +1595,7 @@ aural styles, which are not well supported.
 <h3 id="ch2-11-1">2.11. Position</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-A position value (*&lt;position&gt;*) is how you specify the placement of an
+A position value (<i>&lt;position&gt;</i>) is how you specify the placement of an
 origin image in backgrounds, object fitting, masking placement, and a
 few other circumstances. Its syntactical structure is rather
 complicated:
@@ -1652,7 +1624,7 @@ used here is described in "Value Syntax Conventions" on page 73.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-12-1">2.12. Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A string (*&lt;string&gt;*) is a series of characters enclosed by either
+A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either
 single or double quotes. If a string needs to include the same quote
 that encloses it, it must be escaped. For example,
 
@@ -1666,10 +1638,10 @@ escaped and will be removed when processing the string.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-13-1">2.13. Identifiers</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-There are some properties that accept an *identifier value*, which is a
+There are some properties that accept an <i>identifier value</i>, which is a
 user-defined label of some kind; the most common examples are grid lines
 and areas in grid layout and keyframe names in animations. Identifiers
-are represented in the value syntax as *&lt;identifier&gt;*. Identifiers are
+are represented in the value syntax as <i>&lt;identifier&gt;</i>. Identifiers are
 words and are case-sensitive; thus, myID and MyID are, as far as CSS is
 concerned, completely distinct and unrelated to each other. In cases
 where a property accepts both an identifier and one or more keywords,
@@ -1693,9 +1665,9 @@ attributes, can be addressed in this manner.
 <h3 id="ch2-15-1">2.15. Calculation Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Calculation values take the form calc(), with an equation inside the
-parentheses. calc() can be used wherever *&lt;length&gt;*, *&lt;frequency&gt;*,
-*&lt;angle&gt;*, *&lt;time&gt;*, *&lt;percentage&gt;*, *&lt;number&gt;*, or
-*&lt;integer&gt;* values are allowed. You can also use all these units.</p>
+parentheses. calc() can be used wherever <i>&lt;length&gt;</i>, <i>&lt;frequency&gt;</i>,
+<i>&lt;angle&gt;</i>, <i>&lt;time&gt;</i>, <i>&lt;percentage&gt;</i>, <i>&lt;number&gt;</i>, or
+<i>&lt;integer&gt;</i> values are allowed. You can also use all these units.</p>
 
 <b>Identifiers</b>
 <p>types within a calc() value, though there are some limitations to keep
@@ -1713,28 +1685,28 @@ permitted in calc().</p>
 sure that units are compatible:</p>
 
 1.  To either side of a + or -- operator, both values must have the same
-    unit type or must both be *&lt;number&gt;* and/or *&lt;integer&gt;* values
-    (in which case, the result is a *&lt;number&gt;*).
+    unit type or must both be <i>&lt;number&gt;</i> and/or <i>&lt;integer&gt;</i> values
+    (in which case, the result is a <i>&lt;number&gt;</i>).
 
 2.  Given a &ast; operator, one of the values involved must be a
-    *&lt;number&gt;* (which, remember, includes *&lt;integer&gt;* values).
+    <i>&lt;number&gt;</i> (which, remember, includes <i>&lt;integer&gt;</i> values).
 
-3.  Given a / operator, the value on the *right* side must be a
-    *&lt;number&gt;*. If the left-side value is an *&lt;integer&gt;*, the result
-    is a *&lt;number&gt;*. Otherwise, the result is of the unit used on the
+3.  Given a / operator, the value on the <i>right</i> side must be a
+    <i>&lt;number&gt;</i>. If the left-side value is an <i>&lt;integer&gt;</i>, the result
+    is a <i>&lt;number&gt;</i>. Otherwise, the result is of the unit used on the
     left side.
 
 4.  Any circumstance that creates division by zero makes the value
     invalid.
 
-<p>There's one more notable limitation: whitespace is *required* to either
+<p>There's one more notable limitation: whitespace is <i>required</i> to either
 side of the + and - operators, while it is not for &ast; and /. This avoids
 ambiguity with respect to numeric values, which can be negative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-16-1">2.16. Variable Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>As this book was being finished in early 2018, a new capability was
-being added to CSS. The technical term for this is *custom properties*,
+being added to CSS. The technical term for this is <i>custom properties</i>,
 even though what these really do is create (sort of) variables in your
 CSS. They do not, contrary to their name, create special CSS properties,
 in the sense of properties like color or font.</p>
@@ -1748,7 +1720,7 @@ in the sense of properties like color or font.</p>
 </pre>
 
 <p>The important thing is that any custom identifier of this type begins
-with *two* hyphens (&dash;-). Anything else, and the identifier will not be
+with <i>two</i> hyphens (&dash;-). Anything else, and the identifier will not be
 recognized, meaning the variable definition will fail.</p>
 
 <p>The defined value can then be invoked later on using a var() value type, like this:</p>
@@ -1910,8 +1882,8 @@ p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Pattern</h5> element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
 <h5>Description</h5> Matches elements based on a portion of the
-spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;*value*&quot;&rbrack;
-is equivalent to *.value* (see above).
+spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;<i>value</i>&quot;&rbrack;
+is equivalent to <i>.value</i> (see above).
 <h5>Examples</h5>
 <pre>
 a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
@@ -1982,13 +1954,13 @@ children of their parent element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b>  Any element 
 <h5>Description</h5>  Matches elements that have no child nodes---that  
-is, no child elements *or* content nodes. Content   
+is, no child elements <i>or</i> content nodes. Content   
 nodes are defined as any text, whitespace, entity   
 reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
-*not* empty because it has a single whitespace      
+<i>not</i> empty because it has a single whitespace      
 character inside it; nor is the element empty if    
 that space is replaced with a newline. Note that    
-this pseudo-class does *not* apply to empty 
+this pseudo-class does <i>not</i> apply to empty 
 elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.
 <h5>Examples</h5>
 <pre>
@@ -2003,7 +1975,7 @@ padding: 1ch;} li:empty {display: none;}
  <h5>Description</h5>  Matches an element when it is the first child of  
  another element. Thus, div:first-child will select  
  any div that is the first child of another element, 
- *not* the first child element of any div.   
+ <i>not</i> the first child element of any div.   
 <h5>Examples</h5>
 <pre>
 td:first-child {border-left: 1px solid;}
@@ -2044,7 +2016,7 @@ html:lang(en) {background: silver;} <br>
 <h5>Description</h5>  Matches an element when it is the last child of  
  another element. Thus, div:last-child will select  
  any div that is the last child of another element, 
- *not* the last child element of any div. 
+ <i>not</i> the last child element of any div. 
 <h5>Examples</h5>
 <pre>
 td:last-child {border-right: 1px solid;}
@@ -2067,13 +2039,13 @@ Any element
 
 <pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-child(*a*n±*b*)</h4>
+<h4>:nth-child(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </pre>
 <b>Applies to</b>
 
-<h5>Description</h5> Matches every *n*th child with the pattern of selection
-defined by the formula *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s
+<h5>Description</h5> Matches every <i>n</i>th child with the pattern of selection
+defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s
 and n represents an infinite series of integers, counting forward from
 the first child. Thus, to select every fourth child of the body element,
 starting with the first child, you would write body &gt;
@@ -2083,11 +2055,11 @@ fourteenth, and so on children of the body.
 
 If you literally wish to select the fourth, eighth, twelfth, and so on
 children, you can modify the selector to body &gt; &ast;:nth-child(4n). It
-is also possible for *b* to be negative: body &gt; &ast;:nth-child(4n-- 1)
+is also possible for <i>b</i> to be negative: body &gt; &ast;:nth-child(4n-- 1)
 selects the third, seventh, eleventh, fifteenth, and so on children of
 the body.
 
-In place of the *a*n±*b* formula, there are two keywords permitted:
+In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 
 <h5>Examples</h5>
@@ -2096,19 +2068,19 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 tbody tr:nth-child(odd) {background-color: #EEF;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-last-child(*a*n±*b*)</h4>
+<h4>:nth-last-child(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <b>Applies to</b> Any element
 
-<h5>Description</h5> Matches every *n*th child with the pattern of selection
-defined by the formula *a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s
-and n represents an infinite series of integers, *counting backward from
-the last child*. Thus, to select every fourth-to-last child of the body
+<h5>Description</h5> Matches every </i>n</i>th child with the pattern of selection
+defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s
+and n represents an infinite series of integers, <i>counting backward from
+the last child</i>. Thus, to select every fourth-to-last child of the body
 element, starting with the last child, you would write body &gt;
 
 &ast;:nth-last-child(4n+1). This is, in effect, the mirror image of :nth-child.
-In place of the *a*n±*b* formula, there are two keywords permitted:
+In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 <h5>Examples</h5>
 <pre>
@@ -2116,18 +2088,18 @@ even and odd. These are equivalent to 2n and 2n+1, respectively.
 tr:nth-last-child(odd) { background-color: #EEF;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-last-of-type(*a*n±*b*)</h4>
+<h4>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<h5>Description</h5> Matches every *n*th child that is of the same type as
+<h5>Description</h5> Matches every <i>n</i>th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
-*a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
-infinite series of integers, *counting backward from the last such
-element*. Thus, to select every third-to-last paragraph (p) that is a
+<i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s and n represents an
+infinite series of integers, <i>counting backward from the last such
+element</i>. Thus, to select every third-to-last paragraph (p) that is a
 child of the body element, starting with the first such paragraph, you
 would write body &gt; p:nthlast-of-type(3n+1). This holds true even if
 other elements (e.g., lists, tables, or other elements) are interspersed
-between the various paragraphs. In place of the *a*n±*b* formula, there
+between the various paragraphs. In place of the <i>a</i>n±<i>b</i> formula, there
 are two keywords permitted: even and odd. These are equivalent to 2n and
 2n+1, respectively.
 <h5>Examples</h5>
@@ -2139,12 +2111,12 @@ border: 2px solid;}
 </pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>:nth-of-type(*a*n±*b*)</h4>
+<h4>:nth-of-type(<i>a</i>n±<i>b</i>)</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Applies to</b> Any element
-<h5>Description</h5> Matches every *n*th child that is of the same type as
+<h5>Description</h5> Matches every <i>n</i>th child that is of the same type as
 the element named, with the pattern of selection defined by the formula
-*a*n±*b*, where *a* and *b* are *&lt;integer&gt;*s and n represents an
+<i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s and n represents an
 infinite series of integers, counting forward from the first such
 element. Thus, to select every third paragraph (p) that is a child of
 the body element, starting with the first such paragraph, you would
@@ -2152,7 +2124,7 @@ write body &gt; p:nth-oftype(3n+1). This will select the first, fourth,
 seventh, tenth, and so on child paragraphs of the body. This holds
 true even if other elements (e.g., lists, tables, or other elements)
 are interspersed between the various paragraphs.
-In place of the *a*n±*b* formula, there are two keywords permitted:
+In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
 even and odd. These are equivalent to 2n and 2n+1, respectively.
 <h5>Examples</h5>
 <pre>
@@ -2215,10 +2187,10 @@ is needed.
 There is but one pseudo-class that handles negation, but it is so unique
 that it deserves its own subsection.
 
-<b>:not(*e*)</b>      
+<b>:not(<i>e</i>)</b>      
 <b>Applies to</b>  Any element 
-<h5>Description</h5>  Matches every element that is *not* described by    
-the simple selector *e*. For example, you can       
+<h5>Description</h5>  Matches every element that is <i>not</i> described by    
+the simple selector <i>e</i>. For example, you can       
 select every element that is not a paragraph by     
 stating &ast;:not(p).  
 More usefully, negation can be used within the      
