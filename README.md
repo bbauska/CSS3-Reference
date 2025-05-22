@@ -1736,7 +1736,7 @@ scoped to the element to which they are applied.</p>
   <tbody>
     <tr>
 	  <td><b>Pattern</b></td>
-	  <td>element1;</td>
+	  <td>element1</td>
 	</tr>
 	<tr>
 	  <td><b>Description</b></td>
@@ -3619,7 +3619,7 @@ a:visited {border-color: maroon;}
 	  <td><b>Values</b></td>
 	  <td>&lt;border-image-source&gt; ‖  &lt;border-image-slice&gt; &lbrack; /<br>
 	  &lt;border-image-width&gt; | / &lt;border-image-width&gt;? /<br>
-	  &lt;border-image-outset&gt; |? ‖ &lt;border-image-repeat&gt;</td>
+	  &lt;border-image-outset&gt; &rbrack;? ‖ &lt;border-image-repeat&gt;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -3638,10 +3638,10 @@ a:visited {border-color: maroon;}
 	  <td>Refer to individual border-image properties to see which are animatable.</td>
 	</tr>
 	  <td><b>Description</b></td>
-	  <td> A shorthand property that defines the source, slicing pattern, border width, degree of extension,  
+	  <td>A shorthand property that defines the source, slicing pattern, border width, degree of extension,  
    and repetition of an image-based border. The syntax is somewhat unusual compared to the rest of CSS, so 
    take extra time with it. For example, three of the five values possible are slash-separated and must be 
-   listed in a specific order.<br>Note that it is effectively impossible to take a 
+   listed in a specific order.<br><br>Note that it is effectively impossible to take a 
    simple image (say, a star) and repeat it around the edges of an element. To create that effect, you must 
    create a single image that contains nine copies of the image you wish to repeat in a 3×3 grid. It may   
    also be necessary to set border-width (<i>not</i> border-imagewidth) to be large enough to show the    
@@ -3649,46 +3649,13 @@ a:visited {border-color: maroon;}
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
-	  <td><pre>div.starry {border-image;<br>   url(stargrid.png) 5px repeat;}<br>
-        aside {border-image: url(asides.png)<br>
-          100 50 150 / 8 3 13 / 2 stretch round;}</td>
+	  <td><pre>div.starry {border-image;<br>
+	    url(stargrid.png) 5px repeat;}<br>
+      aside {border-image: url(asides.png)<br>
+        100 50 150 / 8 3 13 / 2 stretch round;}</pre></td>
 	</tr>
   </tbody>
 </table>
-
-
-**Values**     *&lt;border-image-source&gt;* ‖ *&lt;border-image-slice&gt;* 
-   &lbrack; / 
-   
-   *&lt;border-image-width&gt;* &vert; /
-   *&lt;border-image-width&gt;*? /  
-   
-   *&lt;border-image-outset&gt;* &rbrack;? ‖ 
-   *&lt;border-image-repeat&gt;*    
-**Initial See individual properties    
-**value**   
-**Computed     See individual properties    
-**value**
-**Applies See individual properties    
-**to**
- * Refer to individual border-image properties to see   
- *Animatable**  which are animatable 
- **     A shorthand property that defines the source,
- Description**  slicing pattern, border width, degree of extension,  
-   and repetition of an image-based border. The syntax  
-   is somewhat unusual compared to the rest of CSS, so  
-   take extra time with it. For example, three of the   
-   five values possible are slash-separated and must be 
-   listed in a specific order.  
-   
- <p><b>Examples</b></p> 
-<pre>
-div.starry {border-image:    
-url(stargrid.png) 5px repeat;}
-aside {border-image: url(asides.png) 100 50 150 / 8 3 13 / 2 stretch
-round;}
-</pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-outset Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
