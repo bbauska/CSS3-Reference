@@ -2374,7 +2374,7 @@ with an ID that is not search by using
 &lbrack;id&rbrack;:not(&lbrack;id=&quot;search&quot;&rbrack;). 
      
 Note that there is one exception to the "simple     
-selector" definition of *e*: it cannot be a 
+selector" definition of <i>e</i>: it cannot be a 
 negation pseudoclass itself. That is, it is 
 impermissible to write :not(:not(div)).     
 
@@ -2444,7 +2444,7 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
 to accept user input because of language attributes 
 or other nonpresentational means; for example, 
 &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note 
-that :disabled does *not* apply when an input     
+that :disabled does <i>not</i> apply when an input     
 element has simply been removed from the viewport 
 with properties like position or display. 
 <p><b>Example</b></p>
@@ -2495,7 +2495,7 @@ input:focus {background: yellow;}
 	  <td>Any interaction element</td>
 	</tr>
 	  <td><b>Description</b></td>
-	  <td>Matches an element during the period in which it is being *hovered* over (when the user 
+	  <td>Matches an element during the period in which it is being <i>hovered</i> over (when the user 
 	  is designating an element without activating it). The most common example of this is moving 
 	  the mouse pointer inside the boundaries of a hyperlink in an HTML document. Other elements 
 	  can in theory be hovered over, although CSS doesn't define which ones.</td>
@@ -2707,9 +2707,9 @@ that it is possible to list more than one query in a comma-separated list:</p>
 
 In any situation where one of the media queries evaluates to true, the
 associated stylesheet is applied. Thus, given the previous &#64;import,
-*print-color.css* will be applied if rendering to a color printer or a
+<i>print-color.css</i> will be applied if rendering to a color printer or a
 color projection environment. If printing on a black-and-white printer,
-both queries will evaluate to false and *print-color.css* will not be
+both queries will evaluate to false and <i>print-color.css</i> will not be
 applied to the document. The same holds for any screen medium, a
 grayscale projection environment, an aural media environment, and so
 forth.
@@ -2731,15 +2731,15 @@ least 800 pixels wide, the stylesheet is used.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Negates the entire query so that if all of the conditions are true,
-the stylesheet is *not* applied. For example, not
+the stylesheet is <i>not</i> applied. For example, not
 
 (color) and (orientation: landscape) and (mindevice-width: 800px)
 means that if the three conditions are satisfied, the statement is
 negated. Thus, if the media environment has color, and is in landscape
 orientation, and the device's display is at least 800 pixels wide, the
-stylesheet is *not* used. In all other cases, it will be used. Note
+stylesheet is <i>not</i> used. In all other cases, it will be used. Note
 that the not keyword can only be used at the beginning of a media
-query. It is *not* legal to write something like (color) and not
+query. It is <i>not</i> legal to write something like (color) and not
 (min-device-width: 800px). In such cases, the query will be ignored.
 Note also that browsers too old to understand media queries will
 always skip a stylesheet whose media descriptor starts with not.
@@ -2768,85 +2768,85 @@ only keyword can be used only at the beginning of a media query.
 There are two new value types introduced by media queries, which (as of
 early 2018) are not used in any other context:
 
-*&lt;ratio&gt;*
-A ratio value is two positive *&lt;integer&gt;* values separated by a
+<i>&lt;ratio&gt;</i>
+A ratio value is two positive <i>&lt;integer&gt;</i> values separated by a
 solidus (/) and optional whitespace. The first value refers to the
 width, and the second to the height. Thus, to express a
 width-to-height ratio of 16:9, you can write 16/9 or 16 / 9.
 
-*&lt;resolution&gt;*
-A resolution value is a positive *&lt;integer&gt;* followed by either of
+<i>&lt;resolution&gt;</i>
+A resolution value is a positive <i>&lt;integer&gt;</i> followed by either of
 the unit identifiers dpi or dpcm. As usual, whitespace is not
-permitted between the *&lt;integer&gt;* and the identifier.
+permitted between the <i>&lt;integer&gt;</i> and the identifier.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Media Features</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As of early 2018, the available media features are as follows. Note that
-their values cannot be negative: width*,* min-width*,* max-width
+their values cannot be negative: width, min-width, max-width
 
-*Values: &lt;length&gt;*
+<i>Values: &lt;length&gt;</i>
 Refers to the width of the display area of the user agent. In a
 screen-media web browser, this is the width of the viewport plus any
 scrollbars. In paged media, this is the width of the page box. Thus,
 (minwidth: 850px) applies when the viewport is greater than 850 pixels
 wide.
-device-width*,* min-device-width*,* max-device-width
+device-width, min-device-width, max-device-width
 
-*Values: &lt;length&gt;*
+<i>Values: &lt;length&gt;</i>
 Refers to the width of the complete rendering area of the output
 device. In screen media, this is the width of the screen. In paged
 media, this is the width of the page. Thus, (max-device-width: 1200px)
 applies when the device's output area is less than 1,200 pixels wide.
-height*,* min-height*,* max-height
+height, min-height, max-height
 
-*Values: &lt;length&gt;*
+<i>Values: &lt;length&gt;</i>
 Refers to the height of the display area of the user agent. In a
 screen-media web browser, this is the height of the viewport plus any
 scrollbars. In paged media, this is the height of the page box. Thus,
 (height: 567px) applies when the viewport's height is precisely 567
 pixels tall.
-device-height*,* min-device-height*,* max-device-height
+device-height, min-device-height, max-device-height
 
-*Values: &lt;length&gt;*
+<i>Values: &lt;length&gt;</i>
 Refers to the height of the complete rendering area of the output
 device. In screen media, this is the height of the screen. In paged
 media, this is the height of the page. Thus, (max-device-height:
 400px) applies when the device's output area is less than 400 pixels
 tall.
-aspect-ratio*,* min-aspect-ratio*,* max-aspect-ratio
+aspect-ratio, min-aspect-ratio, max-aspect-ratio
 
-*Values: &lt;ratio&gt;*
+<i>Values: &lt;ratio&gt;</i>
 Refers to the ratio that results from comparing the width media
 feature to the height media feature (see the definition of
-*&lt;ratio&gt;*). Thus, (min-aspect-ratio: 2/1) applies to any viewport
+<i>&lt;ratio&gt;</i>). Thus, (min-aspect-ratio: 2/1) applies to any viewport
 whose width-to-height ratio is at least 2:1.
-device-aspect-ratio*,* min-device-aspect-ratio*,* max-deviceaspect-ratio
+device-aspect-ratio, min-device-aspect-ratio, max-deviceaspect-ratio
 
-*Values: &lt;length&gt;*
+<i>Values: &lt;length&gt;</i>
 Refers to the ratio that results from comparing the device-width media
 feature to the device-height media feature (see the definition of
-*&lt;ratio&gt;*). Thus, (device-aspect-ratio: 16/9) applies to any output
+<i>&lt;ratio&gt;</i>). Thus, (device-aspect-ratio: 16/9) applies to any output
 device whose display area width-to-height ratio is exactly 16:9.
-color*,* min-color*,* max-color
+color, min-color, max-color
 
-*Values: &lt;integer&gt;*
+<i>Values: &lt;integer&gt;</i>
 Refers to the presence of color-display capability in the output
 device, with an optional number representing the number of bits used
 in each color component. Thus, (color) applies to any device with any
 color depth at all, whereas (min-color: 4) means there must be at
 least four bits used per color component. Any device that does not
 support color will return 0.
-color-index*,* min-color-index*,* max-color-index
+color-index, min-color-index, max-color-index
 
-*Values: &lt;integer&gt;*
+<i>Values: &lt;integer&gt;</i>
 Refers to the total number of colors available in the output device's
 color lookup table. Thus, (min-colorindex: 256) applies to any device
 with a minimum of 256 colors available. Any device that does not use a
 color lookup table will return 0.
 
-monochrome*,* min-monochrome*,* max-monochrome
+monochrome, min-monochrome, max-monochrome
 
-*Values: &lt;integer&gt;*
+<i>Values: &lt;integer&gt;</i>
 Refers to the presence of a monochrome display, with an optional
 number of bits per pixel in the output device's frame buffer. Thus,
 (monochrome) applies to any monochrome output device, whereas
@@ -2854,9 +2854,9 @@ number of bits per pixel in the output device's frame buffer. Thus,
 minimum of two bits per pixel in the frame buffer. Any device that is
 not monochrome will return 0.
 
-resolution*,* min-resolution*,* max-resolution
+resolution, min-resolution, max-resolution
 
-*Values: &lt;resolution&gt;*
+<i>Values: &lt;resolution&gt;</i>
 Refers to the resolution of the output device in terms of pixel
 density, measured in either dots per inch (dpi) or dots per centimeter
 (dpcm). If an output device has pixels that are not square, the least
@@ -2866,19 +2866,19 @@ Additionally, a bare resolution feature query can never match (though
 min-resolution and max-resolution can).
 orientation
 
-*Values:* portrait *&vert;* landscape
+<i>Values:</i> portrait <i>&vert;</i> landscape
 Refers to the output device's total output area, where portrait is
 returned if the media feature height is equal to or greater than the
 media feature width. Otherwise, the result is landscape.
 scan
 
-*Values:* progressive *&vert;* interlace
+<i>Values:</i> progressive <i>&vert;</i> interlace
 Refers to the scanning process used in an output device with a media
 type of tv.
 
 grid
 
-*Values:* 0 *&vert;* 1
+<i>Values:</i> 0 <i>&vert;</i> 1
 Refers to the presence (or absence) of a grid-based output device,
 such as a tty terminal. A grid-based device will return 1; otherwise,
 0 is returned.
@@ -2886,7 +2886,7 @@ such as a tty terminal. A grid-based device will return 1; otherwise,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-7-1">3.7. Feature Queries</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A *feature query* is an at-rule block similar to a media query. The
+A <i>feature query</i> is an at-rule block similar to a media query. The
 difference is that it queries a user agent about its support for a given
 property-value combination. If the user agent indicates it supports the
 query, the rules within the at-block are applied.
@@ -2923,8 +2923,8 @@ It's also possible to do a negated feature query using the keyword not:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Each property listed in this chapter has "Inh." and "Anim." values. The
 values "N" (for no) and "Y" (for yes) indicate whether a property is
-*inherited* by descendant elements and whether the property is
-*animatable*, or able to be affected using the various animation and
+<i>inherited</i> by descendant elements and whether the property is
+<i>animatable</i>, or able to be affected using the various animation and
 transition properties. In cases where only some of a property's values
 are animatable, the value given will be "P" (for partial) and more
 details will be given in the property's definition.
@@ -2938,9 +2938,9 @@ also be used literally.
 Any italicized words between "&lt;" and "&gt;" give a type of value, or a
 reference to another property's values. For example, the property font
 accepts values that originally belong to the property font-family. This
-is denoted by using the text *&lt;fontfamily&gt;*. Similarly, if a value
+is denoted by using the text <i>&lt;fontfamily&gt;</i>. Similarly, if a value
 type like a color is permitted, it will be represented using
-*&lt;color&gt;*.
+<i>&lt;color&gt;</i>.
 
 There are a number of ways to combine components of a value definition:
 
@@ -2990,11 +2990,11 @@ Any user agent that has fully implemented the Cascading and Inheritance
 module will honor the following values for all properties. Think of it
 as a given property's value syntax being written something like:
 
-&lbrack; *(listed value syntax)* &rbrack; &vert; inherit &vert; initial &vert; unset
+&lbrack; <i>(listed value syntax)</i> &rbrack; &vert; inherit &vert; initial &vert; unset
 
 These three keywords are not listed in the following property
 definitions, for purposes of clarity. The exception is the property all,
-which accepts *only* these three keywords as values. For definitions of
+which accepts <i>only</i> these three keywords as values. For definitions of
 these keywords' meaning, see Chapter 2.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3483,9 +3483,9 @@ running, paused, running;} table {animation-play-state: running;}
 </table>
 <b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
 ease-in-out &vert; step-start &vert; step-end &vert;     
-steps(*&lt;integer&gt;*, start) &vert; steps(*&lt;integer&gt;*,  
-end) &vert; cubic-bezier(*&lt;number&gt;*,   
-*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*) &rbrack;#  
+steps(<i>&lt;integer&gt;</i>, start) &vert; steps(<i>&lt;integer&gt;</i>,  
+end) &vert; cubic-bezier(<i>&lt;number&gt;</i>,   
+<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#  
 <b>Initial value</b>   ease 
 <b>Computed value</b>  As declared  
 <b>Applies to</b>    All elements, ::before and ::after pseudoelements    
@@ -3578,7 +3578,7 @@ span.cubeside {backface-visibility: visible;}
 	</tr>
   </tbody>
 </table>
-<b>Values</b> &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    
+<b>Values</b> &lbrack; <i>&lt;bg-layer&gt;</i> , &rbrack;&ast; <i>&lt;final-bg-layer&gt;</i>    
 <b>Initial value</b>  Refer to individual properties   
 <b>Computed value</b> Refer to individual properties 
 <b>Applies to</b>     All elements     
@@ -3652,7 +3652,7 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
     the element when the document is scrolled. This 
 property can be used to create "aligned" 
 backgrounds; for more details, see Chapter 9 of 
-*CSS: The Definitive Guide*, 4th Edition. 
+<i>CSS: The Definitive Guide</i>, 4th Edition. 
 
 <p><b>Examples</b></p>
 <pre>
@@ -3756,13 +3756,13 @@ body {background-clip: content-box;}
 .callout {background-clip: content-box, border-box, padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**background-color**  **Inh. N Anim. Y**</h3>
+<h3>background-color  Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
 	  <th width="200"><h3>  </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -3783,7 +3783,7 @@ body {background-clip: content-box;}
 	</tr>
   </tbody>
 </table>
-**Values**    *&lt;color&gt;* 
+**Values**    <i>&lt;color&gt;</i> 
 **Initial value**  transparent 
 **Computed value**   As declared  
 **Applies to**    All elements
@@ -3836,7 +3836,7 @@ pre {background-color: #FF9;}
 	</tr>
   </tbody>
 </table>
-<b>Values</b>  &lbrack; *&lt;image&gt;* &vert; none &rbrack;# 
+<b>Values</b>  &lbrack; <i>&lt;image&gt;</i> &vert; none &rbrack;# 
 <b>Initial value</b>  none 
 <b>Computed value</b>  As declared, but with all URIs made absolute 
 <b>Applies to</b>  All elements 
