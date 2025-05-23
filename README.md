@@ -1574,11 +1574,11 @@ Conventions" on page 73.</p>
 single or double quotes. If a string needs to include the same quote
 that encloses it, it must be escaped. For example,</p>
 
-<p>&apos;That\\&apos;s amazing!&apos; or &quot;Deploy the \\&quot;scare quotes\\&quot; at once!&quot;.
-If a newline is needed within a string, it is represented as \\A, which
+<p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at once!&quot;.
+If a newline is needed within a string, it is represented as \A, which
 is the Unicode codepoint for the line feed character. Any Unicode
 character can be represented using an escaped codepoint reference; thus,
-a left curly double quotation mark can be represented with \\201C. If a
+a left curly double quotation mark can be represented with \201C. If a
 string does contain a line feed for legibility reasons, it must be
 escaped and will be removed when processing the string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1726,7 +1726,7 @@ scoped to the element to which they are applied.</p>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Descendant Selector</h3>
+<!--  <h3>Descendant Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1756,7 +1756,7 @@ table tr td div ul li {color:purple;} element1 &gt; element2
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Child Selector</h3>
+<!--  <h3>Child Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1786,7 +1786,7 @@ ul &gt; li {font-weight: bold;}
 </table>
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Adjacent Sibling Selector</h3>
+<!--  <h3>Adjacent Sibling Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1817,7 +1817,7 @@ h1 + &ast; {margin-top: 0;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>General Sibling Selector</h3>
+<!--  <h3>General Sibling Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1847,7 +1847,7 @@ h1 + &ast; {margin-top: 0;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Class Selector</h3>
+<!--  <h3>Class Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1883,32 +1883,65 @@ a.external {font-style: italic;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ID Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b>  element1#idname
-<p><b>Description</b>  In languages that permit it, such as HTML or SVG, an ID selector selects 
-elements that have an id attribute containing a specific value. The name of the ID value must 
-immediately follow the octothorpe (#). If no element name precedes the octothorpe, the 
-selector matches all elements containing that ID value.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>ID Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1#idname</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>In languages that permit it, such as HTML or SVG, an ID selector selects elements 
+	  that have an id attribute containing a specific value. The name of the ID value must 
+	  immediately follow the octothorpe (#). If no element name precedes the octothorpe, the 
+	  selector matches all elements containing that ID value.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
- h1#page-title {font-size: 250%;}
- body#home {background: silver;}
- #example {background: lime;}
+h1#page-title {font-size: 250%;}
+body#home {background: silver;}
+#example {background: lime;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Simple Attribute Selector</h3>
+<!--  <h3>Simple Attribute Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;attr&rbrack;
-<p><b>Description</b> Matches elements based on the presence of an
-attribute, regardless of the attribute's value.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Simple Attribute Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;attr&rbrack;</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on the presence of an attribute, regardless of the attribute's value.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;rel&rbrack; {border-bottom: 3px double gray;}
 p&lbrack;class&rbrack; {border: 1px dotted silver;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Exact Attribute Value Selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1924,7 +1957,7 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
 	  <td>element1&lbrack;attr=&quot;value&quot;&rbrack;</td>
 	</tr>
 	  <td><b>Description</b></td>
-	  <td> Matches elements based on the precise and complete value of an attribute.</td>
+	  <td>Matches elements based on the precise and complete value of an attribute.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
