@@ -2399,45 +2399,95 @@ p:hover {background: yellow;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:link</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>   A hyperlink to a resource that has not been visited 
-<p><b>Description</b>  Matches a link to a URI that has not been visited;  
-  that is, the URI to which the link points does not  
-  appear in the user agent's history. This state is   
-  mutually exclusive with the :visited state.   
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:link</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>A hyperlink to a resource that has not been visited</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches a link to a URI that has not been visited; that is, the URI to which the link 
+	  points does not appear in the user agent's history. This state is mutually exclusive with 
+	  the :visited state.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a:link {color: blue;} 
 &ast;:link {text-decoration: underline;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:target</h3>
+<!--  <h3>:target</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>  Any element 
-<p><b>Description</b>  Matches an element which is itself matched by the
-  fragment identifier portion of the URI used to 
-					   access the page. Thus, http://www.w3.org/TR/ 
-					   css3-selectors/#target-pseudo would be 
-					   matched by :target and would apply the declared 
-					   styles to any element with the id of target-pseudo. 
-					   If that element was a paragraph, it would also be
-  matched by p:target. 
-<p><b>Example</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:target</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element which is itself matched by the fragment identifier portion of the URI 
+	  used to access the page. Thus, http://www.w3.org/TR/ css3-selectors/#target-pseudo would be 
+	  matched by :target and would apply the declared  styles to any element with the id of 
+	  target-pseudo. If that element was a paragraph, it would also be matched by p:target.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 :target {background: #EE0;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:visited</h3>
+<!--  <h3>:visited</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>  A hyperlink to a resource that has already been visited 
-<p><b>Description</b>  Matches a link to a URI that has been visited; that is,
-  the URI to which the link points appears in the user 
-					   agent's history. This state is mutually exclusive with 
-					   the :link state. 
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:visited</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>A hyperlink to a resource that has already been visited</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches a link to a URI that has been visited; that is, the URI to which the link points 
+	  appears in the user agent's history. This state is mutually exclusive with the :link state.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a:visited {color: purple;}
 &ast;:visited {color: gray;}  
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5. Pseudo-Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
