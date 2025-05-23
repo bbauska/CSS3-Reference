@@ -2366,21 +2366,36 @@ a:focus {outline: 1px dotted red;}
 input:focus {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:hover</h3>
+<!--  <h3>:hover</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>   Any interaction element     
-<p><b>Description</b>  Matches an element during the period in which it is 
-  being *hovered* over (when the user is designating  
-  an element without activating it). The most common  
-  example of this is moving the mouse pointer inside  
-  the boundaries of a hyperlink in an HTML document.  
-  Other elements can in theory be hovered over,  
-  although CSS doesn't define which ones.     
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:hover</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to </b></td>
+	  <td>Any interaction element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element during the period in which it is being *hovered* over (when the user 
+	  is designating an element without activating it). The most common example of this is moving 
+	  the mouse pointer inside the boundaries of a hyperlink in an HTML document. Other elements 
+	  can in theory be hovered over, although CSS doesn't define which ones.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&rbrack;:hover {text-decoration: underline;}
 p:hover {background: yellow;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:link</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2970,215 +2985,410 @@ section.gallery h1 {align-self: stretch;}
 
 
 <!----------------------->
-
-<b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
-<b>Initial value</b>     stretch     
-<b>Computed value</b>   As declared 
-<b>Applies to</b>    Flex and grid items 
-<p><b>Description</b>  Sets the alignment for a single item with respect 
-  to the cross axis of the flex line it occupies.
-baseline    
-
-alignment means the baseline of the item's first line of text is
-aligned with the lowest first-line baseline in the flex line.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>  </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>stretch</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Flex and grid items</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Sets the alignment for a single item with respect to the cross axis of the flex line it occupies. 
+	  baseline alignment means the baseline of the item's first line of text is aligned with the lowest 
+	  first-line baseline in the flex line.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 div.flexy .midpointed {align-self: center;}
 section.gallery h1 {align-self: stretch;}
 </pre>
-<b>Note</b> 
+	<tr>
+	  <td><b>Notes</b></td>
+	  <td>baseline alignment means the baseline of the item's first line of text is aligned with the lowest 
+	  first-line baseline in the flex line.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>all</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>all</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b>    inherit &vert; initial &vert; unset 
-<b>Initial value</b>    See individual properties   
-<b>Computed value</b>   As declared 
-<b>Applies to</b>     All elements
-<p><b>Description</b>  Applies the declared value to all properties
-    *except* direction and unicode-bidi, which are 
-exempted for accessibility and historical reasons.  
-This allows an author to, for example, force an     
-element to reset all of its style properties to     
-their default values, thus blocking the inheritance 
-of values for all properties (except the exempted   
-two).  
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>all</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Value</b></td>
+	  <td>inherit &vert; initial &vert; unset</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Applies the declared value to all properties <i>except</i> direction and unicode-bidi, which are 
+	  exempted for accessibility and historical reasons. This allows an author to, for example, force an 
+	  element to reset all of its style properties to their default values, thus blocking the inheritance 
+	  of values for all properties (except the exempted two).</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
-&ast;.blendin {all: inherit;}<br>
-&ast;.embedded {all: unset;}   
+&ast;.blendin {all: inherit;}
+&ast;.embedded {all: unset;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>animation</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>animation</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b> &lbrack; *&lt;animation-name&gt;* ‖ *&lt;animation-duration&gt;* ‖
-
-*&lt;animation-timing-function&gt;* ‖ *&lt;animation-delay&gt;* ‖
-*&lt;animation-iteration-count&gt;* ‖ *&lt;animationdirection&gt;* ‖
-*&lt;animation-fill-mode&gt;* ‖ *&lt;animationplay-state&gt;* &rbrack;#
-
-<b>Initial value</b> 0s ease 0s 1 normal none running none
-
-<b>Computed value</b> As declared
-
-<b>Applies to</b> All elements, ::before and ::after pseudoelements
-
-<p><b>Description</b> A shorthand property encompassing all the aspects of one
-or more comma-separated CSS animations. The parts of the value can occur
-in any order. Therefore, beware possible ambiguity in the delay and
-duration values. As of this writing, it is most likely that the first
-time value will be taken to define the duration and the second to define
-the delay, but this cannot be guaranteed.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; <i>&lt;animation-name&gt;</i> ‖ <i>&lt;animation-duration&gt;</i> ‖<br>
+<i>&lt;animation-timing-function&gt;</i> ‖ <i>&lt;animation-delay&gt;</i> ‖<br>
+<i>&lt;animation-iteration-count&gt;</i> ‖ <i>&lt;animationdirection&gt;</i> ‖<br>
+<i>&lt;animation-fill-mode&gt;</i> ‖ <i>&lt;animationplay-state&gt;</i> &rbrack;#</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0s ease 0s 1 normal none running none</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>A shorthand property encompassing all the aspects of one or more comma-separated CSS animations. The parts of the value can occur in any order. Therefore, beware possible ambiguity in the delay and duration values. As of this writing, it is most likely that the first time value will be taken to define the duration and the second to define the delay, but this cannot be guaranteed.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 div#slide {animation: &apos;slide&apos; 2.5s linear
 0 1 normal;}
 h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
 </pre>
-
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>animation-delay Inh. N Anim. N</h3>
+<!--  <h3>animation-delay Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b>*&lt;time&gt;*&#35;
-<b>Initial value</b> 0s
-
-<b>Computed value</b>  As declared
-<b>Applies to</b>    All elements, ::before and ::after pseudoelements
-
-<p><b>Description</b>   Defines the amount of time that the user agent waits
-    before starting the CSS animation(s). The timer starts
-    when the user agent applies the animation CSS. For a
-    noninteractive element, this is likely (but not
-    guaranteed) to be at the end of page load.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation-delay</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;time&gt;</i>&#35;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0s</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the amount of time that the user agent waits before starting the CSS animation(s). The timer starts when the user agent applies the animation CSS. For a noninteractive element, this is likely (but not guaranteed) to be at the end of page load.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 body {animation-delay: 1s, 2000ms, 4s;}
-
 a:hover {animation-delay: 400ms;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>animation-direction Inh. N Anim. N</h3>
+<!-- <h3>animation-direction Inh. N Anim. N</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<b>Values</b> &lbrack; normal &vert; reverse &vert; alternate &vert; alternatereverse &rbrack;#
-
-<b>Initial value</b> normal
-
-<b>Computed value</b> As declared
-
-<b>Applies to</b> All elements, ::before and ::after pseudoelements
-
-<p><b>Description</b> Specifies whether a CSS animation with more than one
-cycle (see animation-iteration-count) should always go the same
-direction or should reverse direction on every other cycle. For example,
-an alternate animation that moves an element 300 pixels to the right
-would move it 300 pixels to the left on every other cycle, thus
-returning it to its starting position. Setting that same animation to
-normal would cause the element to move 300 pixels right, then jump back
-to its starting place and move 300 pixels right again, over and over
-until the animation stops (assuming it ever does). 
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation-direction</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; normal &vert; reverse &vert; alternate &vert; alternatereverse &rbrack;#</td>
+	</tr>
+	  <td><b>Initial value</b></td>
+	  <td>normal</td>
+    </tr>
+	</tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	</tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Specifies whether a CSS animation with more than one cycle (see animation-iteration-count) 
+	  should always go the same direction or should reverse direction on every other cycle. For example, 
+	  an alternate animation that moves an element 300 pixels to the right would move it 300 pixels to 
+	  the left on every other cycle, thus returning it to its starting position. Setting that same 
+	  animation to normal would cause the element to move 300 pixels right, then jump back to its 
+	  starting place and move 300 pixels right again, over and over until the animation stops (assuming 
+	  it ever does).</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 body
 {animation-direction:
-
 alternate, normal, normal;} #scanner {animation-direction: normal;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>animation-duration Inh. N Anim. N</h3>
+<!--  <h3>animation-duration Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b>*&lt;time&gt;*&#35;
-
-<b>Initial value</b> 0s
-
-<b>Computed value</b>  As declared
-
-<b>Applies to</b>    All elements, ::before and ::after pseudoelements
-
-<p><b>Description</b>   Defines the length of time it should take for each
-    cycle of a CSS animation to run from start to finish.
-    Therefore, in animations with only one cycle, it
-    defines the total time of the animation. The default
-    value, 0s, means that there will be no animation
-    besides moving the element from its start state to its
-    end state. Negative values are converted to 0s.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation-duration</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;time&gt;</i>&#35;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0s</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the length of time it should take for each cycle of a CSS animation to run from 
+	  start to finish. Therefore, in animations with only one cycle, it defines the total time of 
+	  the animation. The default value, 0s, means that there will be no animation besides moving 
+	  the element from its start state to its end state. Negative values are converted to 0s.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
-
 .zip {animation-duration: 90ms;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>animation-iteration-count Inh. N Anim. N</h3>
+<!-- <h3>animation-iteration-count Inh. N Anim. N</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b>&lbrack; *&lt;number&gt;* &vert; infinite &rbrack;#
-
-<b>Initial value</b> 1
-
-<b>Computed value</b>  As declared
-
-<b>Applies to</b>    All elements, ::before and ::after pseudoelements
-
-<p><b>Description</b>   Defines the number of cycles in the animation(s). The
-    default value, 1, means that the animation will run
-    exactly once, going from the start state to the end
-    state. A fractional value (e.g., 2.75) means the
-    animation will be halted midway through its final
-    cycle. A value of 0 means that there will be no
-    animation; negative values are converted to 0. As its
-    name implies, infinite means the animation will never
-    end. Use with caution.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation-iteration-count</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; <i>&lt;number&gt;</i> &vert; infinite &rbrack;#</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>1</td>
+    </tr>
+	<tr>
+	  <td><b>Computed As value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the number of cycles in the animation(s). The default value, 1, means that the 
+	  animation will run exactly once, going from the start state to the end state. A fractional 
+	  value (e.g., 2.75) means the animation will be halted midway through its final cycle. A 
+	  value of 0 means that there will be no animation; negative values are converted to 0. As 
+	  its name implies, infinite means the animation will never end. Use with caution.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 body {animation-iteration-count: 2, 1, 7.5875;}
-
 ol.dance {animation-iteration-count: infinite;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>animation-name</b>  <b>Inh. N Anim. N</b></h3>
+<!-- <h3><b>animation-name</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b> &lbrack; *&lt;single-animation-name&gt;* &vert; none &rbrack;# 
-<b>Initial value</b>  none 
-<b>Computed value</b>  As declared 
-<b>Applies to</b>     All elements, ::before and ::after pseudoelements 
-<p><b>Description</b>   Defines the declared name(s) of CSS animation(s). Each
-    name refers to a CSS animation keyframe atrule. If no
-    animation name is declared or the keyword none is
-    supplied, the animation is not run regardless of the
-    values of any other animation properties. For example,
-    given animation-name: bounce, none, jumper and that
-    the animation name jumper has not been defined, the
-    first animation will run but the second and third will
-    not. 
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation-name</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; <i>&lt;single-animation-name&gt;</i> &vert; none &rbrack;#</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>none</td>
+    </tr>
+	<tr>
+	  <td><b>Computed As value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the declared name(s) of CSS animation(s). Each name refers to a CSS animation 
+	  keyframe atrule. If no animation name is declared or the keyword none is supplied, the 
+	  animation is not run regardless of the values of any other animation properties. For 
+	  example, given animation-name: bounce, none, jumper and that the animation name jumper 
+	  has not been defined, the first animation will run but the second and third will not.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 html {animation-name: turn, slide, none;}
-
 h2 {animation-name: flip;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>animation-play-state</b>  <b>Inh. N Anim. N</b></h3>
+<!-- <h3><b>animation-play-state</b>  <b>Inh. N Anim. N</b></h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Values</b>   &lbrack; running &vert; paused &rbrack;# 
-<b>Initial value</b>  running 
-<b>Computed value</b>  As declared 
-<b>Applies to</b>    All elements, ::before and ::after pseudoelements 
-<p><b>Description</b>    Defines the run state of one or more CSS animations.
-    The default state of running is the most useful in
-    static CSS environments, but it can be used to easily
-    stop or start animations via DOM scripting or
-    interactive CSS (e.g., :hover). 
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>animation-play-state</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; running &vert; paused &rbrack;#</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>running</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the run state of one or more CSS animations. The default state of running is the most useful in static CSS environments, but it can be used to easily stop or start animations via DOM scripting or interactive CSS (e.g., :hover).</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 pre {animation-play-state: 
-
 running, paused, running;} table {animation-play-state: running;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4347,27 +4557,47 @@ h1 {border-top-right-radius: 10%;}
 h2 {border-top-right-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-top-style Inh. N Anim. N</h3>
+<!--  <h3>border-top-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
-    &vert; groove &vert; ridge &vert; inset &vert; outset
-**Initial value** none
-
-**ComputedAs declared
-  value**   
-
-**Applies to**    All elements
-
-**Description**   Defines the style for the top border of an element.
-    The value must be something other than none or hidden
-    for any border to appear.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>border-top-style</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double &vert; groove 
+	  &vert; ridge &vert; inset &vert; outset</td>
+	</tr>
+	  <td><b>Initial value</b></td>
+	  <td>none</td>
+    </tr>
+	</tr>
+	  <td><b>Computed As value</b></td>
+	  <td>declared</td>
+    </tr>
+	</tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the style for the top border of an element. The value must be something other than none or hidden for any border to appear.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 ul {border-top-style: solid;}
 h1 {border-top-style: dashed;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-top-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5027,22 +5257,46 @@ section.appetizers {display: flex; flex-direction:
 column;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**flex-flow**  **Inh. N Anim. N**</h3>
+<!-- <h3>**flex-flow**  **Inh. N Anim. N**</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;flex-direction&gt;* ‖ *&lt;flex-wrap&gt;* 
-**Initial value**    row nowrap  
-**Computed value**   As declared 
-**Applies to**    Flex containers     
-**Description**  A shorthand property encompassing the flexdirection 
-  and flex-wrap properties. Note that the default     
- wrapping value is nowrap (see flex-wrap).   
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>flex-flow</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;flex-direction&gt;</i> ‖ <i>&lt;flex-wrap&gt;</i></td>
+	</tr>
+	  <td><b>Initial value</b></td>
+	  <td>row nowrap</td>
+    </tr>
+	</tr>
+	  <td><b>Computed As value</b></td>
+	  <td>As declared</td>
+    </tr>
+	</tr>
+	  <td><b>Applies to</b></td>
+	  <td>Flex containers</td>
+    </tr>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>A shorthand property encompassing the flexdirection and flex-wrap properties. Note that the default wrapping value is nowrap (see flex-wrap).</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 div.gallery {display: flex; flex-flow: row wrap;}   
-     
-nav.sidenav {display: flex; flex-flow: column  
-nowrap;}    
+nav.sidenav {display: flex; flex-flow: column nowrap;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **flex-grow**  **Inh. N Anim. Y**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8392,3 +8646,42 @@ p.cramped {word-spacing: −0.5em;}
 	</tr>
   </tbody>
 </table>
+<!--
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>  </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b> </b></td>
+	  <td>  </td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed As value</b></td>
+	  <td> </td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+-->
