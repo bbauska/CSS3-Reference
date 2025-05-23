@@ -5311,7 +5311,6 @@ nav ul li {flex-basis: 50%;} ol.gallery li
 **Note**  It is *strongly* recommended that instead of this    
    property, authors use the flex shorthand property to 
    set an item's flex basis.    
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>flex-direction Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6788,31 +6787,45 @@ mask element masks default to luminance.
 svg #mask {mask-type: alpha;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>max-height Inh. N Anim. P</h3>
+<!--  <h3>max-height Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
- **Initial     none
- value**   
- **Computed    For percentages, as declared; for length values,    
- value**  the absolute length; otherwise, none
- *     Refer to the height of the containing block 
- *Percentages** 
- **Applies     All elements except nonreplaced inline elements and 
- to**  table elements 
-  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
- **Animatable** 
- *     Defines a maximum constraint on the height of the   
- *Description**  element (the exact nature of that height is 
- dependent on the value of box-sizing). Thus, the    
- element can be shorter than the declared value but  
- not taller. 
-     
- Negative values are not permitted.  
-<p><b>Example</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>max-height</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; none</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>none</td>
+	</tr>
+    <tr>
+	  <td><b>Computed value</b></td>
+	  <td>For percentages, as declared; for length values, value the absolute 
+	  length; otherwise, none Refer to the height of the containing block 
+	  <i>Percentages</i> </td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements except nonreplaced inline elements and table elements  *Defines a maximum constraint on the height of the *Description**  element (the exact nature of that height is dependent on the value of box-sizing). Thus, the element can be shorter than the declared value but not taller.</td>
+	</tr>
+    <tr>
+	  <td><b>Admintable</b></td>
+	  <td>Negative values are not permitted.</td>
+	</tr>
 <pre>
 div#footer {max-height: 3em;}  
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**max-width** **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7887,17 +7900,16 @@ h2 {text-indent: −25px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>text-rendering Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**auto &vert; optimizeSpeed &vert; optimizeLegibility &vert;
+**Values**auto &vert; optimizeSpeed &vert; optimizeLegibility &vert;
     geometricPrecision
-  **Initial value** auto
+**Initial value** auto
 
-  **ComputedAs declared
+**ComputedAs declared
   value**   
 
-  **Applies to**    All elements
+**Applies to**    All elements
 
-  **Description**   Sets the approach used to render text, allowing
+**Description**   Sets the approach used to render text, allowing
 
 authors to decide if speed, legibility, or precision is most
 important. Note that some user agents always optimize for legibility
@@ -7940,7 +7952,6 @@ h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>text-transform Inh. Y Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values**    uppercase &vert; lowercase &vert; capitalize &vert; none
 **Initial value**    none
 **Computed value**   As declared 
@@ -8035,13 +8046,12 @@ li {transform-origin: 10% 10px 10em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>transform-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    flat &vert; preserve-3d 
- **Initial value**    flat
- **Computed value**   As declared 
- **Applies to**    Any transformable element   
- *     Defines whether an element transformed in simulated 
- *Description**  3D space should have its children rendered using a  
+**Values**    flat &vert; preserve-3d 
+**Initial value**    flat
+**Computed value**   As declared 
+**Applies to**    Any transformable element   
+     Defines whether an element transformed in simulated 
+**Description**  3D space should have its children rendered using a  
  flat style, thus putting them all in the same 2D    
  plane as the element, or attempt to use a 3D effect 
  where children with positive or negative zindex     
@@ -8105,29 +8115,49 @@ a&lbrack;href&rbrack;:hover {transition-delay: 0.25;}
 h1 {transition-delay: 0;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>transition-duration Inh. N Anim. N</h3>
+<!--  <h3>transition-duration Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**Values** *&lt;time&gt;*&#35;
-
-**Initial value** 0s
-
-**Computed value** As declared
-
-**Applies to** All elements and :before and :after pseudoelements
-
-**Description** Defines the length of time it takes for the transition
-to run from start to finish. The default 0s means the transition is
-instantaneous and no animation occurs. Negative time values are treated
-as 0s.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>transitions-duration</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;time&gt;</i>&#35;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0s</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements and :before and :after pseudoelements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the length of time it takes for the transition to run from start to finish. The default 0s means the transition is instantaneous and no animation occurs. Negative time values are treated as 0s.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-duration: 1s;}
 h1 {transition-duration: 10s;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>transition-property Inh. N Anim. N</h3>
+<!--  <h3>transition-property Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8177,58 +8207,102 @@ h1 {transition-property: all;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**transition-timing-function Inh. N Anim. N**</h3>
+<!--  <h3>**transition-timing-function Inh. N Anim. N**</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**Values** *&lt;timing-function&gt;*&#35;
-
-**Definition**
-
-***&lt;timing-function&gt;***ease &vert; linear &vert; ease-in &vert; ease-out &vert;
-ease-in-out &vert;
-
-cubic-bezier(*&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*,
-
-*&lt;number&gt;*)
-
-**Initial value** ease
-**ComputedAs value** declared
-
-**Applies to**    All elements and :before and :after pseudoelements
-
-**Description**   Defines the way in which intermediate states of a
-    transition are calculated. The value keywords (ease,
-    linear, etc.) are shorthands for specific
-    cubicbezier() values defined in the specification, so
-    in effect all values of this property are
-    cubic-bezier() values.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Type Selector</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;timing-function&gt;</i>&#35;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+    <tr>
+	  <td><b>Definition</b></td>
+	  <td><b><i>&lt;timing-function&gt;</i></b>ease &vert; linear &vert; ease-in &vert; 
+	  ease-out &vert;ease-in-out &vert;cubic-bezier(<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,
+	  <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>)</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>ease</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>ComputedAs value to</b></td>
+	  <td>declared</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements and :before and :after pseudoelements</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the way in which intermediate states of a transition are calculated. The value keywords (ease, linear, etc.) are shorthands for specific cubicbezier() values defined in the specification, so in effect all values of this property are cubic-bezier() values.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-timing-function:
 ease-in-out;}
 h1 {transition-timing-function: linear;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>unicode-bidi Inh. N Anim. Y</h3>
+<!--  <h3>unicode-bidi Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-**Values** normal &vert; embed &vert; bidi-override
-
-**Initial value** normal
-
-**Computed value** As declared
-
-**Applies to** All elements
-
-**Description** Allows the author to generate levels of embedding within
-the Unicode Bidirectional Algorithm. User agents that do not support
-bidirectional ("bidi") text are permitted to ignore this property.
-
-<p><b>Example</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>  </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>normal &vert; embed &vert; bidi-override</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>normal</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Allows the author to generate levels of embedding within the Unicode Bidirectional Algorithm. User agents that do not support bidirectional ("bidi") text are permitted to ignore this property.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 span.name {direction: rtl; unicode-bidi: embed;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>vertical-align    Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8379,7 +8453,7 @@ tt {white-space: pre;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**widows**   **Inh. N Anim. Y**</h3>
+<!--  <h3>**widows**   **Inh. N Anim. Y**</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
