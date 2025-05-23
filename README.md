@@ -3545,14 +3545,13 @@ span.cubeside {backface-visibility: visible;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>background</b>   <b>Inh. N Anim. P</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b> &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    
- <b>Initial value</b>  Refer to individual properties   
- <b>Computed value</b> Refer to individual properties 
- <b>Applies to</b>     All elements     
- <b>Animatable</b>     Refer to individual background properties to see 
+<b>Values</b> &lbrack; *&lt;bg-layer&gt;* , &rbrack;&ast; *&lt;final-bg-layer&gt;*    
+<b>Initial value</b>  Refer to individual properties   
+<b>Computed value</b> Refer to individual properties 
+<b>Applies to</b>     All elements     
+<b>Animatable</b>     Refer to individual background properties to see 
     which are animatable     
- <p><b>Description</b>    A shorthand way of expressing the various 
+<p><b>Description</b>    A shorthand way of expressing the various 
     background properties of one or more element     
     backgrounds using a single declaration. As with  
     all shorthands, this property will set all of    
@@ -3635,7 +3634,6 @@ li.shadowed {background-blend-mode: darken;} aside
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>background-clip Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <b>Values</b> &lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#
 <b>Initial value</b> border-box <b>Computed value</b> As declared
 
@@ -3656,25 +3654,24 @@ body {background-clip: content-box;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**background-color**  **Inh. N Anim. Y**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    *&lt;color&gt;* 
- **Initial value**  transparent 
- **Computed value**   As declared  
- **Applies to**    All elements
- **Description**  Defines a solid color for the 
+**Values**    *&lt;color&gt;* 
+**Initial value**  transparent 
+**Computed value**   As declared  
+**Applies to**    All elements
+**Description**  Defines a solid color for the 
     background of the element. This 
- color fills the box defined by the  
- value of background-clip---by  
- default, the content, padding, and  
+color fills the box defined by the  
+value of background-clip---by  
+default, the content, padding, and  
  border areas of the element,
- extending to the outer edge of the  
- element's border. Borders that have 
- transparent sections (such as  
- dashed borders) will show the  
- background color through the
- transparent sections in cases where 
- the background color extends into 
- the border area. 
+extending to the outer edge of the  
+element's border. Borders that have 
+transparent sections (such as  
+dashed borders) will show the  
+background color through the
+transparent sections in cases where 
+the background color extends into 
+the border area. 
 <p><b>Examples</b></p>
 <pre>
 h4 {background-color: white;}
@@ -3685,12 +3682,11 @@ pre {background-color: #FF9;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>background-image</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>  &lbrack; *&lt;image&gt;* &vert; none &rbrack;# 
- <b>Initial value</b>  none 
- <b>Computed value</b>  As declared, but with all URIs made absolute 
- <b>Applies to</b>  All elements 
- <p><b>Description</b>  Places one or more images in the background of the
+<b>Values</b>  &lbrack; *&lt;image&gt;* &vert; none &rbrack;# 
+<b>Initial value</b>  none 
+<b>Computed value</b>  As declared, but with all URIs made absolute 
+<b>Applies to</b>  All elements 
+<p><b>Description</b>  Places one or more images in the background of the
 element. Depending on the value of backgroundrepeat, the image may tile
 infinitely, along one axis, or not at all. The initial background image
 (the origin image) is placed according to the value of
@@ -3780,16 +3776,11 @@ right, 50% 75%, 0 40px;} pre
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**  *&lt;repeat-style&gt;*&#35; 
 **Definition** 
-
 **&lt;repeat-style&gt;*** repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;
 round &vert; no-repeat &rbrack;{1,2}
-
 **Initial value** repeat
-
 **Computed value** As declared
-
 **Applies to** All elements
-
 **Description** Defines the tiling pattern for one or more background
 images. The repetition begins from the origin image, which is defined as
 the value of background-image and is placed according to the value of
@@ -3862,7 +3853,6 @@ p.warning {border: double 5px red;}
 **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
 **Initial value** See individual properties
-
 **ComputedSee individual properties (border-width, etc.)
   **value**   
 **Applies to**    All elements
@@ -3928,17 +3918,12 @@ a:active {border-bottom-color: purple;}
 <h3>border-bottom-left-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
-
 **Initial value** 0
-
 **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
   value**   made absolute
-
 **Percentages**   Calculated with respect to the relevant dimension of
     the border box
-
 **Applies to**    All elements, except internal table elements
-
 **Description**   Defines the rounding radius for the bottom-left corner
     of an element's border. If two values are supplied,
     the first is the horizontal radius and the second is
@@ -3955,17 +3940,12 @@ h2 {border-bottom-left-radius: 1em 10px;}
 <h3>border-bottom-right-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
-
 **Initial value** 0
-
 **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
   value**   made absolute
-
 **Percentages**   Calculated with respect to the relevant dimension of
     the border box
-
 **Applies to**    All elements, except internal table elements
-
 **Description**   Defines the rounding radius for the bottom-right
     corner of an element's border. If two values are
     supplied, the first is the horizontal radius and the
@@ -3982,19 +3962,13 @@ h2 {border-bottom-right-radius: 1em 10px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
-
 **Initial value** none
-
 **ComputedAs declared
   value**   
-
 **Applies to**    All elements
-
 **Description**   Defines the style for the bottom border of an ele‐
-
 ment. The value must be something other than none or hidden for any
 border to appear.
-
 <p><b>Examples</b></p>
 <pre>
 ul {border-bottom-style: groove;}
@@ -4004,13 +3978,9 @@ a:active {border-bottom-style: dashed;}
 <h3>border-bottom-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;
-
 **Initial value** See individual properties
-
 **Computed value** See individual properties (border-top-style, etc.)
-
 **Applies to** All elements
-
 **Description** Defines the width for the bottom border of an element,
 which will take effect only if the border's style is something other
 than none or hidden. If the border style is none, the border width is
@@ -4026,11 +3996,8 @@ a:active {border-bottom-width: 2px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**collapse &vert; separate &vert; inherit
 **Initial value** separate
-
 **ComputedAs declared value**   
-
 **Applies to**    Elements with the display value table or tableinline
-
 **Description**   Defines the layout model used in laying out the
     borders in a table---i.e., those applied to cells,
     rows, and so forth. Although the property applies only
@@ -4376,7 +4343,6 @@ pre {border-left-width: 4px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 **Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
 *&lt;length&gt;* &vert;
 
@@ -4429,20 +4395,18 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+**Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
-  **Initial value** See individual properties
+**Initial value** See individual properties
 
-  **ComputedSee individual properties (border-width, etc.)
+**ComputedSee individual properties (border-width, etc.)
   value**   
 
-  **Applies to**    All elements
+**Applies to**    All elements
 
-  **Animatable**    Border width and color; not border style
+**Animatable**    Border width and color; not border style
 
-  **Description**   A shorthand property that defines the width, color,
-
+**Description**   A shorthand property that defines the width, color,
 and style of the right border of an element. As with border, omission
 of a border style will result in no border appearing.
 
@@ -4454,21 +4418,19 @@ h3 {border-right: cyan 1em inset;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values***&lt;color&gt;*
-  **Initial value** currentColor
-
-  **ComputedA color
+**Values***&lt;color&gt;*
+**Initial value** currentColor
+**ComputedA color
   value**   
 
-  **Applies to**    All elements
+**Applies to**    All elements
 
-  **Description**   Defines the color for the visible portions of the
+**Description**   Defines the color for the visible portions of the
     right border of an element. The border's style must be
     something other than none or hidden for any visible
     border to appear.
 
-  <p><b>Examples</b></p>
+<p><b>Examples</b></p>
 <pre>
 img {border-right-color: blue;}
 h3 {border-right-color: cyan;}
@@ -4476,12 +4438,11 @@ h3 {border-right-color: cyan;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
+**Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
    double &vert; groove &vert; ridge &vert; inset &vert; outset 
- **Initial    none 
+**Initial    none 
  value**      
- **Computed     
+**Computed     
  value** As     
  declared  
 
@@ -4525,15 +4486,14 @@ h3 {border-right-width: 1em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-spacing Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**   *&lt;length&gt;* *&lt;length&gt;*?   
- **Initial    0    
+**Values**   *&lt;length&gt;* *&lt;length&gt;*?   
+**Initial    0    
  value**      
- **Computed   Two absolute lengths 
+**Computed   Two absolute lengths 
  value**      
- **Applies    Elements with the display value table or tableinline 
+**Applies    Elements with the display value table or tableinline 
  to** 
- **   Defines the distance between table cell borders in   
+**   Defines the distance between table cell borders in   
  Description**  the separated borders table layout model. The first  
    of the two length values is the horizontal   
    separation and the second is the vertical    
@@ -4554,17 +4514,16 @@ separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
+**Values**    &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
  double &vert; groove &vert; ridge &vert; inset &vert; outset
  &rbrack;{1,4}     
- **Initial     See individual properties   
+**Initial     See individual properties   
  value**      
- **Computed    See individual properties (border-top-style, etc.)  
+**Computed    See individual properties (border-top-style, etc.)  
  value**      
- **Applies     All elements
+**Applies     All elements
  to** 
- *     A shorthand property used to define the styles for  
+     A shorthand property used to define the styles for  
  *Description**  the overall border of an element or for each side   
  individually. The value of any border must be  
  something other than none or hidden for the border  
@@ -4582,19 +4541,18 @@ img {border-style:inset;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  **border-top**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
- *&lt;bordercolor&gt;* &rbrack;
- **Initial     See individual properties   
- value**      
- **Computed    See individual properties (border-width, etc.) 
- value**      
- **Applies     All elements
- to** 
-  Border width and color; not border style    
- **Animatable** 
- *     A shorthand property that defines the width, color, 
- *Description**  and style of the top border of an element. As with  
+**Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+*&lt;bordercolor&gt;* &rbrack;
+**Initial     See individual properties   
+value**      
+**Computed    See individual properties (border-width, etc.) 
+value**      
+**Applies     All elements
+to** 
+Border width and color; not border style    
+**Animatable** 
+A shorthand property that defines the width, color, 
+**Description**  and style of the top border of an element. As with  
 border, omission of a border style will result in no border appearing.
 
 <p><b>Examples</b></p>
