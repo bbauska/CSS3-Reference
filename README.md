@@ -1667,7 +1667,6 @@ recognized, meaning the variable definition will fail.</p>
 <pre>
 <b>h1</b> {<b>color</b>: var(&dash;-mainColor);}
 </pre>
-
 <p>Note that these names are case-sensitive, so &dash;-maincolor and
 &dash;-MainColor are completely separate identifiers. Custom properties are
 scoped to the element to which they are applied.</p>
@@ -1943,7 +1942,7 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Exact Attribute Value Selector</h3>
+<!--  <h3>Exact Attribute Value Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1971,67 +1970,153 @@ p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Partial Attribute Value Selector</h3>
+<!--  <h3>Partial Attribute Value Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;
-<p><b>Description</b> Matches elements based on a portion of the
-spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;<i>value</i>&quot;&rbrack;
-is equivalent to <i>.value</i> (see above).
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Partial Attribute Value Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;attr&#126;=&quot;value&quot;&rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on a portion of the spaceseparated value of an attribute. Note that &lbrack;class&#126;=&quot;<i>value</i>&quot;&rbrack; is equivalent to <i>.value</i> (see above).</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;rel&#126;=&quot;friend&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Beginning Substring Attribute Value Selector</h3>
+<!--  <h3>Beginning Substring Attribute Value Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;
-<p><b>Description</b> Matches elements based on a substring at the very
-beginning of an attribute's value.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Beginning Substring Attribute Value Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;attr&#94;=&quot;substring&quot;&rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on a substring at the very beginning of an attribute's value.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&#94;=&quot;/blog&quot;&rbrack; {text-transform: uppercase;}
 p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Ending Substring Attribute Value Selector</h3>
+<!--  <h3>Ending Substring Attribute Value Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;
-<p><b>Description</b> Matches elements based on a substring at the very end of
-an attribute's value.
-<b>Example</b>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Ending Substring Attribute Value Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;attr&dollar;=&quot;substring&quot;&rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on a substring at the very end of an attribute's value.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Arbitrary Substring Attribute Value Selector</h3>
+<!--  <h3>Arbitrary Substring Attribute Value Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;
-<p><b>Description</b> Matches elements based on a substring found anywhere
-within an attribute's value.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Arbitrary Substring Attribute Value Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;attr&ast;=&quot;substring&quot;&rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on a substring found anywhere within an attribute's value.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&ast;=&quot;oreilly.com&quot;&rbrack; {font-weight: bold;}
- div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
+div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Language Attribute Selector</h3>
+<!--  <h3>Language Attribute Selector</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Pattern</b> element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;
-<p><b>Description</b> Matches elements with a lang attribute whose value is
-one of a hyphen-separated list of values, starting with the value
-provided in the selector.</p>
-
-In an HTML document, the language of an element is determined by its
-lang attribute. If an element does not have one, its language is
-determined by the lang attribute of its nearest ancestor that does
-have one, or, lacking that, by the Content-Language HTTP header
-response field (or the respective meta http-equiv) for the document.
-
-<b>Example</b>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>Language Attribute Selector</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Pattern</b></td>
+	  <td>element1&lbrack;lang&vert;=&quot;language-identifier&quot;&rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements with a lang attribute whose value is one of a hyphen-separated list 
+	  of values, starting with the value provided in the selector. In an HTML document, the 
+	  language of an element is determined by its lang attribute. If an element does not have 
+	  one, its language is determined by the lang attribute of its nearest ancestor that does 
+	  have one, or, lacking that, by the Content-Language HTTP header response field (or the 
+	  respective meta http-equiv) for the document.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2-1">3.2. Structural Pseudo-Classes</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8739,21 +8824,9 @@ p.cramped {word-spacing: −0.5em;}
   </thead>
   <tbody>
     <tr>
-	  <td><b> </b></td>
+	  <td><b>Pattern</b></td>
 	  <td>  </td>
 	</tr>
-	<tr>
-	  <td><b>Initial value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Computed As value</b></td>
-	  <td> </td>
-    </tr>
-	<tr>
-	  <td><b>Applies to</b></td>
-	  <td>All elements</td>
-    </tr>
 	<tr>
 	  <td><b>Description</b></td>
 	  <td>.</td>
