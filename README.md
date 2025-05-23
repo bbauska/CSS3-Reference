@@ -8449,32 +8449,53 @@ h1 {transition-duration: 10s;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>transition-property Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**     none &vert; &lbrack; all &vert; *&lt;property-name&gt;* &rbrack;#    
- **Initial all  
- value**   
- **Computed     As declared  
- value**   
- **Applies All elements and :before and :after pseudoelements   
- to**   
- **     Defines one or more properties that are transitioned 
- Description**  from one state to another; for example, color means  
-   that the foreground color of an element is   
-   transitioned from the start color to the finish 
-   color. If a shorthand property is declared, the 
-   transition parameters meant for that property are    
-   propagated to all the properties represented by the  
-   shorthand.   
-   
-   The keyword all means all properties are     
-   transitioned. The keyword none prevents any  
-   properties from being transitioned, effectively 
-   shutting down the transition.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>transition-property</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>none &vert; &lbrack; all &vert; <i>&lt;property-name&gt;</i> &rbrack;#</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>All</td>
+	</tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements and :before and :after pseudoelements</td>
+	</tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Refer to individual border-image properties to see which are animatable.</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Defines one or more properties that are transitioned from one state to another; for 
+	  example, color means that the foreground color of an element is transitioned from the start 
+	  color to the finish color. If a shorthand property is declared, the transition parameters 
+	  meant for that property are propagated to all the properties represented by the  shorthand. 
+	  The keyword all means all properties are transitioned. The keyword none prevents any properties 
+	  from being transitioned, effectively shutting down the transition.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&rbrack;:hover {transition-property: color;}
 h1 {transition-property: all;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**transition-timing-function Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8746,11 +8767,14 @@ p.cramped {word-spacing: −0.5em;}
 	</tr>
   </tbody>
 </table>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- wip
 <table style="width:500px;">
   <thead>
     <tr>
 	  <th width="200"><h3>Type Selector</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8767,6 +8791,10 @@ p.cramped {word-spacing: −0.5em;}
 	<tr>
 	  <td><b>Computed value</b></td>
 	  <td>See individual properties</td>
+	</tr>
+    <tr>
+	  <td><b></b></td>
+	  <td></td>
 	</tr>
 	<tr>
 	  <td><b>Applies to</b></td>
@@ -8790,6 +8818,8 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--
 <table style="width:500px;">
   <thead>
@@ -8814,6 +8844,8 @@ p.cramped {word-spacing: −0.5em;}
 	</tr>
   </tbody>
 </table>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--
 <table style="width:500px;">
   <thead>
@@ -8841,3 +8873,5 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
