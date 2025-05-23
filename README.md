@@ -2662,7 +2662,6 @@ p:first-letter {text-decoration: underline;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>::first-line</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <b>Generates</b>   A pseudo-element that contains the first formatted 
  line of an element 
 <p><b>Description</b>  Styles the first line of text in an element, regardless
@@ -2763,7 +2762,6 @@ those browsers that understand media queries, you would write
 something like &#64;import url(new.css) only all. In browsers that do
 understand media queries, the only keyword is ignored. Note that the
 only keyword can be used only at the beginning of a media query.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Media Query Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2771,14 +2769,12 @@ There are two new value types introduced by media queries, which (as of
 early 2018) are not used in any other context:
 
 *&lt;ratio&gt;*
-
 A ratio value is two positive *&lt;integer&gt;* values separated by a
 solidus (/) and optional whitespace. The first value refers to the
 width, and the second to the height. Thus, to express a
 width-to-height ratio of 16:9, you can write 16/9 or 16 / 9.
 
 *&lt;resolution&gt;*
-
 A resolution value is a positive *&lt;integer&gt;* followed by either of
 the unit identifiers dpi or dpcm. As usual, whitespace is not
 permitted between the *&lt;integer&gt;* and the identifier.
@@ -2789,33 +2785,26 @@ As of early 2018, the available media features are as follows. Note that
 their values cannot be negative: width*,* min-width*,* max-width
 
 *Values: &lt;length&gt;*
-
 Refers to the width of the display area of the user agent. In a
 screen-media web browser, this is the width of the viewport plus any
 scrollbars. In paged media, this is the width of the page box. Thus,
 (minwidth: 850px) applies when the viewport is greater than 850 pixels
 wide.
-
 device-width*,* min-device-width*,* max-device-width
 
 *Values: &lt;length&gt;*
-
 Refers to the width of the complete rendering area of the output
 device. In screen media, this is the width of the screen. In paged
 media, this is the width of the page. Thus, (max-device-width: 1200px)
 applies when the device's output area is less than 1,200 pixels wide.
-
 height*,* min-height*,* max-height
 
 *Values: &lt;length&gt;*
-
 Refers to the height of the display area of the user agent. In a
 screen-media web browser, this is the height of the viewport plus any
 scrollbars. In paged media, this is the height of the page box. Thus,
-
 (height: 567px) applies when the viewport's height is precisely 567
 pixels tall.
-
 device-height*,* min-device-height*,* max-device-height
 
 *Values: &lt;length&gt;*
@@ -2824,16 +2813,13 @@ device. In screen media, this is the height of the screen. In paged
 media, this is the height of the page. Thus, (max-device-height:
 400px) applies when the device's output area is less than 400 pixels
 tall.
-
 aspect-ratio*,* min-aspect-ratio*,* max-aspect-ratio
 
 *Values: &lt;ratio&gt;*
-
 Refers to the ratio that results from comparing the width media
 feature to the height media feature (see the definition of
 *&lt;ratio&gt;*). Thus, (min-aspect-ratio: 2/1) applies to any viewport
 whose width-to-height ratio is at least 2:1.
-
 device-aspect-ratio*,* min-device-aspect-ratio*,* max-deviceaspect-ratio
 
 *Values: &lt;length&gt;*
@@ -2841,22 +2827,18 @@ Refers to the ratio that results from comparing the device-width media
 feature to the device-height media feature (see the definition of
 *&lt;ratio&gt;*). Thus, (device-aspect-ratio: 16/9) applies to any output
 device whose display area width-to-height ratio is exactly 16:9.
-
 color*,* min-color*,* max-color
 
 *Values: &lt;integer&gt;*
-
 Refers to the presence of color-display capability in the output
 device, with an optional number representing the number of bits used
 in each color component. Thus, (color) applies to any device with any
 color depth at all, whereas (min-color: 4) means there must be at
 least four bits used per color component. Any device that does not
 support color will return 0.
-
 color-index*,* min-color-index*,* max-color-index
 
 *Values: &lt;integer&gt;*
-
 Refers to the total number of colors available in the output device's
 color lookup table. Thus, (min-colorindex: 256) applies to any device
 with a minimum of 256 colors available. Any device that does not use a
@@ -2865,7 +2847,6 @@ color lookup table will return 0.
 monochrome*,* min-monochrome*,* max-monochrome
 
 *Values: &lt;integer&gt;*
-
 Refers to the presence of a monochrome display, with an optional
 number of bits per pixel in the output device's frame buffer. Thus,
 (monochrome) applies to any monochrome output device, whereas
@@ -2876,7 +2857,6 @@ not monochrome will return 0.
 resolution*,* min-resolution*,* max-resolution
 
 *Values: &lt;resolution&gt;*
-
 Refers to the resolution of the output device in terms of pixel
 density, measured in either dots per inch (dpi) or dots per centimeter
 (dpcm). If an output device has pixels that are not square, the least
@@ -2884,26 +2864,21 @@ dense axis is used; for example, if a device is 100dpcm along one axis
 and 120dpcm along the other, 100dpcm is the value returned.
 Additionally, a bare resolution feature query can never match (though
 min-resolution and max-resolution can).
-
 orientation
 
 *Values:* portrait *&vert;* landscape
-
 Refers to the output device's total output area, where portrait is
 returned if the media feature height is equal to or greater than the
 media feature width. Otherwise, the result is landscape.
-
 scan
 
 *Values:* progressive *&vert;* interlace
-
 Refers to the scanning process used in an output device with a media
 type of tv.
 
 grid
 
 *Values:* 0 *&vert;* 1
-
 Refers to the presence (or absence) of a grid-based output device,
 such as a tty terminal. A grid-based device will return 1; otherwise,
 0 is returned.
@@ -2915,48 +2890,32 @@ A *feature query* is an at-rule block similar to a media query. The
 difference is that it queries a user agent about its support for a given
 property-value combination. If the user agent indicates it supports the
 query, the rules within the at-block are applied.
-
 Otherwise, they are ignored.
-
 A basic example is to ask the browser if it supports backgroundcolor:
 red:
-
 <b>&#64;supports</b> (<b>background-color</b>: red) { <b>html</b>
 {<b>background-color</b>: yellow;} <b>body</b> {<b>background-color</b>:
 white;} }
-
 There is no obligation to use the property-value combination in the
 query in the subsequent rules. In fact, there's no obligation even to
 use the property that was part of the feature query. You can ask if a
 browser supports color: #FFF and then write rules that never touch
 color. (But just because you can doesn't mean you should.)
-
 Feature queries are useful when applying advanced CSS features. For
 example, converting a float-based layout to grid might look something
 like this:
-
 &lbrack;..<b>.float</b> <b>layout</b> <b>rules</b> <b>here</b>...&rbrack;
-
 <b>&#64;supports</b> (<b>display</b>: grid) {
-
 &lbrack;..<b>.grid</b> <b>layout</b> <b>rules</b> <b>here</b>...&rbrack;
-
 &lbrack;..<b>.rules</b> <b>that</b> <b>turn</b> <b>off</b> <b>margins</b>, <b>clearing</b>,
 <b>and</b> <b>other</b> <b>rules</b> <b>needed</b> <b>for</b> <b>float</b> <b>layout</b>
-
 <b>but</b> <b>not</b> <b>in</b> <b>grid</b> <b>layout</b>...&rbrack; }
-
 It's also possible to do a negated feature query using the keyword not:
-
 <b>&#64;supports</b> <b>not</b> (<b>shape-outside</b>: circle()) {
-
 &lbrack;..<b>.rules</b> <b>for</b> <b>use</b> <b>in</b> <b>browsers</b> <b>that</b>
 <b>don</b>&apos;<b>t</b> <b>understand</b>
-
 <b>circle</b> <b>float</b> <b>shapes</b>...&rbrack; }
-
 <b>Feature Queries</b>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4">4. CHAPTER 4 Property Reference</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3089,7 +3048,6 @@ property apply to many (or all) elements and be
 given the values start and end to replicate 
 flex-start and flex-end behavior for non-flex 
 environments. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3503,11 +3461,11 @@ ease-in-out &vert; step-start &vert; step-end &vert;
 steps(*&lt;integer&gt;*, start) &vert; steps(*&lt;integer&gt;*,  
 end) &vert; cubic-bezier(*&lt;number&gt;*,   
 *&lt;number&gt;*,*&lt;number&gt;*,*&lt;number&gt;*) &rbrack;#  
- <b>Initial value</b>   ease 
- <b>Computed value</b>  As declared  
- <b>Applies to</b>    All elements, ::before and ::after pseudoelements    
- <p><b>Description</b>  Defines how an animation is run over the course of
-    the animation's full cycle or within an individual  
+<b>Initial value</b>   ease 
+<b>Computed value</b>  As declared  
+<b>Applies to</b>    All elements, ::before and ::after pseudoelements    
+<p><b>Description</b>  Defines how an animation is run over the course of
+the animation's full cycle or within an individual  
 keyframe, depending on where the property is used.   
 The keywords are all defined to have cubicbezier()   
 equivalents; for example, linear is equivalent to    
@@ -3560,9 +3518,7 @@ span.cubeside {backface-visibility: visible;}
     not explicitly supplied. 
 
 Thus, the following two rules will have the same appearance:
-
 background: yellow;
-
 background: yellow none top left repeat; Furthermore, these defaults
 can override previous declarations made with more specific background
 properties. For example, given the following rules:
@@ -3582,7 +3538,6 @@ positioning, and so may seem counterintuitive.
 <pre>
 body {background: white url(bg41.gif) fixed center
 repeat-x;} p {background:
-
 url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 #555;} pre {background: yellow;}
 </pre>
@@ -3602,7 +3557,6 @@ backgrounds; for more details, see Chapter 9 of
 <p><b>Examples</b></p>
 <pre>
 body {background-attachment: scroll, scroll, fixed;}
-
 div.fixbg {background-attachment: fixed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3732,37 +3686,37 @@ h1 {background-origin: content-box, padding-box;}
 **Values**    *&lt;position&gt;*&#35;
 **Initial value**    0% 0%  
 **Computed values**   The absolute length offsets, if 
- *&lt;length&gt;* is specified;  
- otherwise, percentage values 
+*&lt;length&gt;* is specified;  
+otherwise, percentage values 
 **Percentages**  Refer to the corresponding point on
-    both the element and the origin image 
+both the element and the origin image 
 **Applies to**    Block-level and replaced elements   
 **Description**  Defines the position(s) of one or
-    more backgrounds' origin images (as
- defined by background-image); this 
- is the point from which any
- background repetition or tiling    
- will occur. Percentage values 
- define not only a point within the 
+more backgrounds' origin images (as
+defined by background-image); this 
+is the point from which any
+background repetition or tiling    
+will occur. Percentage values 
+define not only a point within the 
 element, but also the same point in
- the origin image itself. That means
- (for example) an image can be 
- centered by declaring its position 
- to be 50% 50%. When percentage or  
- length values are used, the first  
- is always the horizontal position  
- and the second is the vertical     
- position. If only one value is     
- given, it sets the horizontal 
- position, while the missing value  
- is assumed to be either center or  
- 50%. Negative values are permitted 
- and may place the origin image     
- outside the element's content area 
- without actually rendering it. The 
- context within which an origin     
- image is placed can be affected by 
- the value of background-origin. 
+the origin image itself. That means
+(for example) an image can be 
+centered by declaring its position 
+to be 50% 50%. When percentage or  
+length values are used, the first  
+is always the horizontal position  
+and the second is the vertical     
+position. If only one value is     
+given, it sets the horizontal 
+position, while the missing value  
+is assumed to be either center or  
+50%. Negative values are permitted 
+and may place the origin image     
+outside the element's content area 
+without actually rendering it. The 
+context within which an origin     
+image is placed can be affected by 
+the value of background-origin. 
 <p><b>Examples</b></p>
 <pre>
 body {background-position: top 
@@ -4304,11 +4258,8 @@ p
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
 **Initial value** none
-
 **ComputedAs declared value**
-
 **Applies to**    All elements
-
 **Description**   Defines the style for the left border of an element.
     The value must be something other than none or hidden
     for any border to appear.
@@ -4323,12 +4274,9 @@ pre {border-left-style: double;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 **Initial value** medium
-
 **ComputedAn value** absolute length, or 0 if the style of the border is
     none or hidden; otherwise, as declared
-
 **Applies to**    All elements
-
 **Description**   Defines the width for the left border of an element,
     which will take effect only if the border's style is
     something other than none or hidden. If the border
@@ -4345,19 +4293,16 @@ pre {border-left-width: 4px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 **Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
 *&lt;length&gt;* &vert;
-
 *&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?
-
 **Initial value** 0
-
- **Computed     Four values, each a *&lt;percentage&gt;* or *&lt;length&gt;* 
+**Computed     Four values, each a *&lt;percentage&gt;* or *&lt;length&gt;* 
  value**   made absolute
- **     Calculated with respect to the relevant dimension of 
+**     Calculated with respect to the relevant dimension of 
  Percentages**  the border box  
- **Applies All elements, except internal table elements 
+**Applies All elements, except internal table elements 
  to**   
- **     A shorthand property that defines the rounding  
- Description**  radius for the bottom-right corner of an element's   
+**     A shorthand property that defines the rounding  
+**Description**  radius for the bottom-right corner of an element's 
    border. The actual corners will be the height and    
    width declared. Thus, given: 
    
@@ -4398,7 +4343,6 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
 **Initial value** See individual properties
-
 **ComputedSee individual properties (border-width, etc.)
   value**   
 
@@ -4422,9 +4366,7 @@ h3 {border-right: cyan 1em inset;}
 **Initial value** currentColor
 **ComputedA color
   value**   
-
 **Applies to**    All elements
-
 **Description**   Defines the color for the visible portions of the
     right border of an element. The border's style must be
     something other than none or hidden for any visible
@@ -4445,9 +4387,7 @@ h3 {border-right-color: cyan;}
 **Computed     
  value** As     
  declared  
-
 **Applies to** All elements
-
 **Description** Defines the style for the right border of an element.
 The value must be something other than none or hidden for any border to
 appear.
@@ -4455,24 +4395,18 @@ appear.
 <p><b>Examples</b></p>
 <pre>
 img {border-right-style: dotted;}
-
 h3 {border-right-style: inset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-  **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
-  **Initial value** medium
-
-  **ComputedAn absolute length, or 0 if the style of the border is
+**Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
+**Initial value** medium
+**ComputedAn absolute length, or 0 if the style of the border is
   value**   none or hidden; otherwise, as declared
-
-  **Applies to**    All elements
-
-  **Description**   Defines the width for the right border of an element,
+**Applies to**    All elements
+**Description**   Defines the width for the right border of an element,
     which will take effect only if the border's style is
-
 something other than none or hidden. If the border style is none, the
 border width is effectively reset to 0. Negative length values are not
 permitted.
@@ -4480,7 +4414,6 @@ permitted.
 <p><b>Examples</b></p>
 <pre>
 img {border-right-width: 30px;}
-
 h3 {border-right-width: 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4504,7 +4437,6 @@ h3 {border-right-width: 1em;}
 <p><b>Examples</b></p>
 <pre>
 table {border-spacing: 0;}
-
 table {border-spacing: 3px 5px;}
 </pre>
 
@@ -4533,7 +4465,7 @@ separate.
  be ignored and the width of the border will be set  
  to 0. Any unrecognized value from the list of  
  values should be reinterpreted as solid.    
- <p><b>Examples</b></p>
+<p><b>Examples</b></p>
 <pre>
 h1 {border-style: solid;} 
 img {border-style:inset;}     
@@ -4798,7 +4730,6 @@ edge and are never drawn beyond it.
 <pre>
 h1 {box-shadow: 5px 10px gray;} table th    
 {box-shadow: inset 0.5em 0.75em 5px −2px    
-     
 rgba(255,0,0,0.5);} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4899,24 +4830,25 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**clip-rule** **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- **Values**    nonzero &vert; evenodd  
- **Initial     nonzero     
- value**      
- **Computed    As declared 
- value**      
- **Applies     All SVG graphics elements (circle, ellipse, image,  
- to**  line, path, polygon, polyline, rect, text, and use) 
- *if and only if* they are children of a clipPath    
- element     
- *     Alters the way in which portions of a path that     
- *Description**  overlap each other cause the resulting shape to be  
- filled. A nonzero rule causes the entire shape to   
- be filled. evenodd can result in portions of the    
- shape's interior being fully transparent.   
- <p><b>Examples</b></p>  span.fullshape {clip-rule: nonzero;} span.knockouts 
- {clip-rule: evenodd;}  
-
+**Values**    nonzero &vert; evenodd  
+**Initial     nonzero     
+value**      
+**Computed    As declared 
+value**      
+**Applies     All SVG graphics elements (circle, ellipse, image,  
+to**  line, path, polygon, polyline, rect, text, and use) 
+*if and only if* they are children of a clipPath    
+element     
+*     Alters the way in which portions of a path that     
+*Description**  overlap each other cause the resulting shape to be  
+filled. A nonzero rule causes the entire shape to   
+be filled. evenodd can result in portions of the    
+shape's interior being fully transparent.   
+<p><b>Examples</b></p>
+<pre>
+span.fullshape {clip-rule: nonzero;} span.knockouts 
+{clip-rule: evenodd;}  
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>**color**     **Inh. Y Anim. Y**</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4992,15 +4924,10 @@ font-size: smaller;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>counter-increment Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <b>Values</b> &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none
-
 <b>Initial value</b> User agent--dependent
-
 <b>Computed value</b> As declared
-
 <b>Applies to</b> All elements
-
 <b>Description</b> With this property, counters can be incremented (or
 decremented) by any value, positive or negative or 0. If no
 *&lt;integer&gt;* is supplied, it defaults to 1.
@@ -5013,16 +4940,15 @@ h1 {counter-increment: section;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>counter-reset Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
- <b>Values</b>    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
- <b>Initial</b>     User agent--dependent  
- <b>value</b>      
- <b>Computed Value</b>   As declared 
- <b>Applies</b>     All elements
- <b>to</b> 
- With this property, counters can be reset (or set   
- <b>Description</b>  for the first time) to any value, positive or  
- negative. If no *&lt;integer&gt;* is supplied, it  
+<b>Values</b>    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
+<b>Initial</b>     User agent--dependent  
+<b>value</b>      
+<b>Computed Value</b>   As declared 
+<b>Applies</b>     All elements
+<b>to</b> 
+With this property, counters can be reset (or set   
+<b>Description</b>  for the first time) to any value, positive or  
+negative. If no *&lt;integer&gt;* is supplied, it  
 defaults to 0. 
 <p><b>Examples</b></p>
 <pre>
@@ -5045,7 +4971,6 @@ subsec 1;}
 <b>value</b>     
 <b>Computed</b> For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*
 <b>value</b> resolves to a  
-
 supported file type, a single absolute URI with optional *x*,*y*
 coordinates; otherwise, as declared <b>Applies to</b> All elements
 
@@ -5128,13 +5053,9 @@ table-
 
 </b>*&lt;display-legacy&gt;*</b>   inline-block &vert; inline-list-item &vert; inline-table &vert;
      inline-flex &vert; inline-grid
-
 <b>Initial value</b>  inline
-
 <b>Computed value</b> As declared
-
 <b>Applies to</b>     All elements
-
 <b>Description</b> Defines the kind of display box an element generates
 during layout. Gratuitous use of display with a document type such as
 HTML can be tricky, as it upsets the display hierarchy already defined
@@ -5229,20 +5150,16 @@ basis on its own, in which case the growth and
 <b>flex-basis</b>   respectively. Including the growth and shrink
    factors is optional, but if one is included, the     
    other *must* also be present.
-   
-   /&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
-   
-</pre>
+<pre>
+/&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
 nav ul li {flex: 1 0 auto;}  
 /&ast; sets grow at 0, shrink at 1, basis at 50% &ast;/    
 ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
 /&ast; INVALID &ast;/ 
 </pre>
-   
 It is *strongly* recommended that authors use this   
 property instead of the separate properties it  
 encompasses. 
-   
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**flex-basis**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
