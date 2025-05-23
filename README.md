@@ -3716,7 +3716,7 @@ li.shadowed {background-blend-mode: darken;} aside
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>background-clip</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3761,7 +3761,7 @@ body {background-clip: content-box;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>background-color</h3></th>
 	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
@@ -3814,7 +3814,7 @@ pre {background-color: #FF9;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>background-image</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3857,7 +3857,7 @@ background-position.
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>background-origin</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3901,7 +3901,7 @@ h1 {background-origin: content-box, padding-box;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**background-position**  **Inh. N Anim. Y**</h3>
+<!--  <h3>background-position  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3958,7 +3958,7 @@ right, 50% 75%, 0 40px;} pre
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>background-repeat</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>background-repeat</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4259,8 +4259,8 @@ a:visited {border-color: maroon;}
 <table>
   <thead>
     <tr>
-	  <th> border-image </th>
-	  <th> Inh. N Anim. P </th>
+	  <th><h3>border-image</h3></th>
+	  <th>Inh. N Anim. P</th>
 	</tr>
   </thead>
   <tbody>
@@ -4502,7 +4502,6 @@ p
  r-left-color:  
  black;}      
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-left-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7976,7 +7975,7 @@ table.data {table-display: fixed;}
 table.directory {table-display: auto;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**text-align** **Inh. Y Anim. N**</h3>
+<!--  <h3>text-align Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8035,7 +8034,7 @@ English)
 p {text-align: justify;} h4 {text-align: center;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>text-align-last   Inh. Y Anim. N</h3>
+<!--  <h3>text-align-last   Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8090,7 +8089,7 @@ p {text-align-last: justify;}
 h4 {text-align-last: right;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>text-decoration Inh. N Anim. N</h3>
+<!--  <h3>text-decoration Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8162,7 +8161,7 @@ u {text-decoration: underline;}
 u.old {text-decoration: line-through underline;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**text-indent**  **Inh. Y Anim. Y**</h3>
+<!--  <h3>text-indent  Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8227,13 +8226,13 @@ p {text-indent: 5em;}
 h2 {text-indent: −25px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>text-orientation Inh. Y Anim. Y</h3>
+<!--  <h3>text-orientation Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
 	  <th width="200"><h3>text-orientation</h3></th>
-	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8391,7 +8390,7 @@ h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>text-transform Inh. Y Anim. N</h3>
+<!--  <h3>text-transform Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8446,7 +8445,7 @@ h1 {text-transform: uppercase;} .title
 {text-transform: capitalize;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**top** **Inh. N Anim. P**</h3>
+<!--  <h3>top Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8504,7 +8503,7 @@ relative; top: 0.5em; vertical-align: baseline;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**transform**   **Inh. N Anim. P**</h3>
+<!--  <h3>transform   Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8637,7 +8636,7 @@ li {transform-style: preserve-3d;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**transition**  **Inh. N Anim. N**</h3>
+<!--  <h3>transition  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
