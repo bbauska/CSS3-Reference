@@ -7602,8 +7602,45 @@ avoid;}
 **Note** This property is essentially replaced by break-
 before, but browser support for page-breakbefore may be stronger.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**page-break-inside**  **Inh. Y Anim. N**</h3>
+<!--  <h3>page-break-inside  Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>page-break-inside</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**  auto &vert; avoid   
  **Initialauto    
  value**  
@@ -7632,8 +7669,45 @@ table {page-break-inside:
     page-breakbefore may be 
     stronger.  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**perspective**  **Inh. N Anim. Y**</h3>
+<!--  <h3>perspective  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>prespective</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**  none &vert; *&lt;length&gt;*  
 **Initial value** none
 **Computed value** The absolute length, or else none
@@ -7650,8 +7724,45 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
 #wrapper {perspective: 10;} /&ast; extreme &ast;/
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>perspective-origin Inh. N Anim. P</h3>
+<!--  <h3>perspective-origin Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>perspective-origin</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    *&lt;position&gt;* 
 **Initial     50% 50%     
 **value**      
@@ -7673,8 +7784,45 @@ body {perspective-origin: bottom right;} #wrapper
 div {perspective-origin: 0 50%;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**position** **Inh. N Anim. N**</h3>
+<!--  <h3>position Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>position</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** static &vert; relative &vert; sticky &vert; absolute &vert; fixed
 **Initial value** static **Computed value** As declared
 **Applies to** All elements
@@ -7690,8 +7838,45 @@ offset from its default placement in the normal flow.
 &ast;.offset {position: relative; top: 0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**quotes**   **Inh. Y Anim. N**</h3>
+<!--  <h3>quotes   Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>quotes</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
 **Initial     User agent--dependent  
 value**      
@@ -7710,8 +7895,45 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
  &apos;\\2019&apos;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**resize**  **Inh. N Anim. N**</h3>
+<!--  <h3>resize  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>resize</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** none &vert; both &vert; horizontal &vert; vertical
 **Initial value** none
 **Computed value** As declared
@@ -7725,8 +7947,45 @@ left to the user agent and is likely dependent on the writing direction.
 textarea {resize: vertical;} iframe {resize: both;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**right**    **Inh. N Anim. P**</h3>
+<!--  <h3>right    Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>right</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 
  **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
  **Initial     auto
@@ -7749,8 +8008,45 @@ div#footer {position: fixed; right: 0;}
 &ast;.overlapper {position: relative; right: −25px;}   
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### shape-image-threshold Inh. N Anim. Y</h3>
+<!--  shape-image-threshold Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>shape-image-threshold</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   *&lt;number&gt;* 
 **Initial    0.0  
 value**      
@@ -7774,8 +8070,45 @@ aside.illustrate {shape-image-threshold: 0.667;}
 img.floated {shape-image-threshold: 0.1;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>shape-margin Inh. N Anim. Y</h3>
+<!--  <h3>shape-margin Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>shape-margin</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
 **Initial value** 0
 **ComputedAn** absolute length
@@ -7798,8 +8131,45 @@ img.floated {shape-image-threshold: 0.1;}
 #thr (shape-margin: 10%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>shape-outside Inh. N Anim. P</h3>
+<!--  <h3>shape-outside Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>shape-outside</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
    *&lt;image&gt;*  
 **   inset &vert; circle() &vert; ellipse() &vert; polygon()  
@@ -7835,42 +8205,52 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 {shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**size**     **Inh. N Anim. N**</h3>
+<!--  <h3>size     Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    auto &vert; *&lt;length&gt;*{1,2} &vert; &lbrack; *&lt;page-size&gt;*     
-&vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack; 
-**Initial value**    auto
-**Computed value**   *&lt;length&gt;* values as absolute length values; 
-   otherwise, as declared 
-**Applies to**    The page area  
-**Description**  Defines the size and orientation of a page box. The 
- keywords auto, portrait, and landscape cause the    
- page box to fill the available rendering space on   
- the page. Page boxes set to portrait have the  
- content printed with the long sides of the page box 
- being the right and left sides; in the case of 
- landscape, the content is printed with the longer   
- sides of the page box being the top and bottom 
- sides. 
-     
- If a page box is specified using lengths or one of  
- the *&lt;page-size&gt;* keywords (e.g., A4) and the     
- page box cannot be fit onto the actual page used    
- for display, the page box and its contents may be   
- scaled down to fit. If only one length value is     
- declared, it sets both dimensions and thus defines  
- a square page box. Length values that use em or ex  
- units are calculated with respect to the computed   
- font size of the page context. 
-<p><b>Example</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>size/h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>auto &vert; <i>&lt;length&gt;</i>{1,2} &vert; &lbrack; <i>&lt;page-size&gt;</i> &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>auto</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td><i>&lt;length&gt;</i> values as absolute length values; otherwise, as declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>The page area </td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the size and orientation of a page box. The keywords auto, portrait, and landscape cause the page box to fill the available rendering space on the page. Page boxes set to portrait have the content printed with the long sides of the page box being the right and left sides; in the case of landscape, the content is printed with the longer sides of the page box being the top and bottom sides. If a page box is specified using lengths or one of the *&lt;page-size&gt;* keywords (e.g., A4) and the page box cannot be fit onto the actual page used for display, the page box and its contents may be scaled down to fit. If only one length value is declared, it sets both dimensions and thus defines a square page box. Length values that use em or ex units are calculated with respect to the computed font size of the page context.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 body   
 {page-size:    
 landscape;}    
 </pre>
-**Note** *&lt;page-size&gt;* is one of a defined set of standard page sizes;
-see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th
-Edition](http://shop.oreilly.com/product/0636920012726.do), for details.
+      </td>
+	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>*&lt;page-size&gt;* is one of a defined set of standard page sizes; see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th Edition](http://shop.oreilly.com/product/0636920012726.do), for details.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h3>**tab-size**  **Inh. Y Anim. Y**</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7926,54 +8306,35 @@ p.typer {tab-size: 0.25in;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>auto &vert; fixed</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>auto</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Elements with the display value table or inlinetable</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether a table element should be laid out using an automatic-layout algorithm or a fixedlayout algorithm. The benefit of the automatic algorithm is that it's very similar to what authors are used to from more than a decade of browser behavior. However, the fixed-layout algorithm is theoretically faster and more predictable.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+table.data {table-display: fixed;}
+table.directory {table-display: auto;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**auto &vert; fixed
-**Initial value** auto
-
-**ComputedAs** declared
-  **value**   
-
-**Applies to**    Elements with the display value table or inlinetable
-
-**Description**   Defines whether a table element should be laid out
-    using an automatic-layout algorithm or a fixedlayout
-    algorithm. The benefit of the automatic algorithm is
-    that it's very similar to what authors are used to
-    from more than a decade of browser behavior. However,
-    the fixed-layout algorithm is theoretically faster and
-    more predictable.
-
-<p><b>Examples</b></p>
-<pre>
-table.data {table-display: fixed;}
-table.directory {table-display: auto;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>text-align Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7987,52 +8348,34 @@ table.directory {table-display: auto;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>start &vert; end &vert; left &vert; right &vert; center &vert; justify &vert; match-parent &vert; start end</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>In CSS3, start; in CSS2.1, this was user agent--specific, likely depending on writing direction (e.g., left for Western languages like English)</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared, except in the case of match-parent</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Block-level elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the horizontal alignment of text within a block-level element by defining the point to which line boxes are aligned. The value justify is supported by allowing user agents to programmatically adjust the word (but not letter) spacing of the line's content; results may vary by user agent.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+p {text-align: justify;} h4 {text-align: center;}   
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**    start &vert; end &vert; left &vert; right &vert; center &vert; justify  
-&vert; match-parent &vert; start end
-**Initial     In CSS3, start; in CSS2.1, this was user    
-value**  agent--specific, likely depending on writing
-direction (e.g., left for Western languages like    
-English)    
-**Computed value**   As declared, except in the case of match-parent     
-**Applies to**    Block-level elements
-**Description**  Defines the horizontal alignment of text within a   
-  block-level element by defining the point to which  
- line boxes are aligned. The value justify is
- supported by allowing user agents to
- programmatically adjust the word (but not letter)   
- spacing of the line's content; results may vary by  
- user agent. 
-<p><b>Examples</b></p>
-<pre>
-p {text-align: justify;} h4 {text-align: center;}   
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>text-align-last   Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8046,48 +8389,35 @@ p {text-align: justify;} h4 {text-align: center;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; justify</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>auto</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Block-level elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the horizontal alignment of the last line of text within a block-level element by defining the point to which line boxes are aligned. The value justify is supported by allowing user agents to programmatically adjust the word (but not letter) spacing of the line's content; results may vary by user agent.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+p {text-align-last: justify;}
+h4 {text-align-last: right;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values** auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; justify
-**Initial value** auto
-**Computed value** As declared
-**Applies to** Block-level elements
-**Description** Defines the horizontal alignment of the last line of
-text within a block-level element by defining the point to which line
-boxes are aligned. The value justify is supported by allowing user
-agents to programmatically adjust the word (but not letter) spacing of
-the line's content; results may vary by user agent.
-
-<p><b>Examples</b></p>
-<pre>
-p {text-align-last: justify;}
-h4 {text-align-last: right;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>text-decoration Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8101,50 +8431,37 @@ h4 {text-align-last: right;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; &lbrack; underline ‖ overline ‖ line-through ‖ blink &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines text-decoration effects such as underlining. These decorations will span descendant elements that don't have decorations of their own, in many cases making the child elements appear to be decorated. Combinations of the values are legal. Any time two text-decoration declarations apply to the same element, the values of the two declarations are *not* combined.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {text-decoration: overline;} h1, h2
+{text-decoration: underline;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**    none &vert; &lbrack; underline ‖ overline ‖ line-through ‖    
- blink &rbrack;    
-**Initial value**    none
-**Computed value**   As declared 
-**Applies to**    All elements
-     Defines text-decoration effects such as     
-**Description**  underlining. These decorations will span descendant 
-elements that don't have decorations of their own,  
-in many cases making the child elements appear to   
-be decorated. Combinations of the values are legal. 
-Any time two text-decoration declarations apply to  
-the same element, the values of the two     
-declarations are *not* combined. For example:
-<pre>     
-h1 {text-decoration: overline;} h1, h2
-{text-decoration: underline;}
-</pre>
+
+<!--
 Given these styles, h1 elements will be underlined  
 with no overline because the value of underline     
 completely overrides the value of overline. If h1   
@@ -8160,6 +8477,7 @@ u {text-decoration: underline;}
 .old {text-decoration: line-through;}  
 u.old {text-decoration: line-through underline;}    
 </pre>
+-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>text-indent  Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8173,58 +8491,40 @@ u.old {text-decoration: line-through underline;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>0</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>For percentage values, as declared; for length
+values, the absolute length</td>
+    </tr>
+	<tr>
+	  <td><b>Percentages</b></td>
+	  <td>Refer to the width of the containing block</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Block-level elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the indentation of the first line of content in a block-level element. This property is most often used to create a tab effect. Negative values are permitted and cause outdent (or hanging indent) effects. In CSS3, the value each-line will apply the indentation to any new line that results from a forced line break (e.g., due to a br element) within the element, not just the first line. The value hanging inverts the defined pattern of indentation, allowing for the creation of an outdent effect without using a negative length value.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+p {text-indent: 5em;}
+h2 {text-indent: −25px;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-
-**Initial value** 0
-
-**Computed value** For percentage values, as declared; for length
-values, the absolute length
-
-**Percentages** Refer to the width of the containing block
-
-**Applies to** Block-level elements
-
-**Description** Defines the indentation of the first line of content in
-a block-level element. This property is most often used to create a tab
-effect. Negative values are permitted and cause outdent (or hanging
-indent) effects. In CSS3, the value each-line will apply the indentation
-to any new line that results from a forced line break (e.g., due to a br
-element) within the element, not just the first line. The value hang ing
-inverts the defined pattern of indentation, allowing for the creation of
-an outdent effect without using a negative length value.
-
-<p><b>Examples</b></p> 
-<pre>
-p {text-indent: 5em;}
-h2 {text-indent: −25px;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>text-orientation Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8238,59 +8538,36 @@ h2 {text-indent: −25px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>mixed &vert; upright &vert; sideways</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>mixed</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements except table row groups, table rows, table column groups, and table columns</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines how characters are oriented in text, potentially independent of their writing mode (see writing-mode). When mixed, each character is aligned according to its language defaults as compared to the writing direction; for example, mixed English and Japanese text written in a vertical writing mode would have the English characters sideways and the Japanese characters upright. upright forces all characters to be upright regardless of their language, and sideways forces all characters to be shown sideways.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+#one {text-orientation: mixed;}
+### two {text-orientation: upright;}
+### thr {text-orientation: sideways;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**mixed &vert; upright &vert; sideways
-**Initial value** mixed
-
-**Computed value**  As declared
-
-**Applies to**    All elements except table row groups, table rows,
-    table column groups, and table columns
-
-**Description**   Defines how characters are oriented in text,
-    potentially independent of their writing mode (see
-    writing-mode). When mixed, each character is aligned
-    according to its language defaults as compared to the
-    writing direction; for example, mixed English and
-    Japanese text written in a vertical writing mode would
-    have the English characters sideways and the Japanese
-    characters upright. upright forces all characters to
-    be upright regardless of their language, and sideways
-    forces all characters to be shown sideways.
-
-<p><b>Examples</b></p>
-<pre>
-#one {text-orientation: mixed;}
-### two {text-orientation: upright;}
-### thr {text-orientation: sideways;}
-</pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>text-rendering Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
