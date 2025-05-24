@@ -4007,6 +4007,43 @@ repeat-y, round space, repeat;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>background-size</b>  <b>Inh. N Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
 &rbrack;{1,2} &vert; cover &vert; contain &rbrack;# 
 **Initial value**   auto 
@@ -4032,6 +4069,43 @@ div.photo {background-size: cover;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**border**    **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
 **Initial value**    Refer to individual properties 
@@ -4055,6 +4129,43 @@ p.warning {border: double 5px red;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-bottom Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
 **Initial value** See individual properties
@@ -4078,6 +4189,43 @@ a:active {border-bottom: purple 2px dashed;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-bottom-color Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <table style="width:500px;">
   <thead>
     <tr>
@@ -4122,6 +4270,43 @@ a:active {border-bottom-color: purple;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-bottom-left-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 **Initial value** 0
 **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
@@ -4144,6 +4329,43 @@ h2 {border-bottom-left-radius: 1em 10px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-bottom-right-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 **Initial value** 0
 **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
@@ -4165,6 +4387,43 @@ h2 {border-bottom-right-radius: 1em 10px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-bottom-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
 **Initial value** none
@@ -4308,59 +4567,138 @@ aside {border-image: url(asides.png)
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-image-outset Inh. N Anim. Y</h3>
+<!--  <h3>border-image-outset Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**&lbrack; *&lt;length&gt;* &vert; *&lt;number&gt;* &rbrack;{1,4}
-**Initial value** 0
-
-**ComputedFour values, each a number or *&lt;length&gt;* made
-  value**   absolute
-
-**Applies to**    All elements, except internal table elements when
-    border-collapse is collapse
-
-**Description**   Defines the distance by which a border image may
-    exceed the border area of the element. The values
-    define distances from the top, right, bottom, and left
-
-edges of the border image, in that order. Numbers are calculated with
-respect to the image's intrinsic coordinate system; thus, for a raster
-image, the number 7 is taken to mean seven pixels. Images in formats
-such as SVG may have different coordinate systems. Negative values are
-not permitted.
-
-<p><b>Examples</b></p> aside {border-image-outset: 2;}
-
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>border-image-outset</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;number&gt;* &rbrack;{1,4}</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>Four values, each a number or *&lt;length&gt;* made absolute</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, except internal table elements when
+    border-collapse is collapse</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the distance by which a border image may exceed the border area of the element. 
+	  The values define distances from the top, right, bottom, and left edges of the border image, 
+	  in that order. Numbers are calculated with respect to the image's intrinsic coordinate system; 
+	  thus, for a raster image, the number 7 is taken to mean seven pixels. Images in formats such 
+	  as SVG may have different coordinate systems. Negative values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+aside {border-image-outset: 2;}
 div#pow {border-image-outset: 10 17 13 5;}
-
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-repeat Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**   &lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}  
-**Initial    stretch 
- value** 
-**Computed   Two keywords, one for each axis 
- value** 
-**Applies    All elements, except internal table elements when    
- to** border-collapse is collapse  
-**Defines the repetition pattern (or lack thereof) of  
-**Description**  the sides of a border image. stretch causes a single 
-   copy of the image to be stretched to fit the border  
-   segment (top, right, bottom, or left). repeat
-   "tiles" the image in a manner familiar from  
-   background images, though border images are only     
-   ever tiled along one axis. round "tiles" the border image as many times as it 
-will fit without clipping, then (if necessary) scales the entire set
-of tiled images to exactly fit the border segment.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; stretch &vert; repeat &vert; round &vert; space &rbrack;{1,2}</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>stretch</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>Two keywords, one for each axis </td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, except internal table elements when border-collapse is collapse</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>the sides of a border image. stretch causes a single copy of the image to be stretched to 
+	  fit the border segment (top, right, bottom, or left). repeat "tiles" the image in a manner 
+	  familiar from background images, though border images are only ever tiled along one axis. 
+	  round "tiles" the border image as many times as it will fit without clipping, then (if necessary) 
+	  scales the entire set of tiled images to exactly fit the border segment.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 div.starry {border-image-repeat: repeat;}
 aside {border-image-repeat: stretch round;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-slice Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**     &lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill? 
 **Initial 100% 
 **value**   
@@ -4399,6 +4737,43 @@ aside {border-image-slice: 100 50 150;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-source Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**none &vert; *&lt;image&gt;*
   **Initial value** none
 
@@ -4422,6 +4797,43 @@ aside {border-image-source: url(asides.png);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  
    &vert; auto &rbrack;{1,4} 
 **Initial    1    
@@ -4459,6 +4871,43 @@ div#pow{border-image-width: 25px 35;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>*border-left**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
 **Initial     See individual properties   
@@ -4481,6 +4930,43 @@ double black 4px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-left-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   *&lt;color&gt;*  
 **Initial    currentColor 
 **value**      
@@ -4505,6 +4991,43 @@ p
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-left-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
 **Initial value** none
@@ -4522,6 +5045,43 @@ pre {border-left-style: double;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-left-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 **Initial value** medium
 **ComputedAn value** absolute length, or 0 if the style of the border is
@@ -4541,6 +5101,43 @@ pre {border-left-width: 4px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
 *&lt;length&gt;* &vert;
 *&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?
@@ -4590,6 +5187,43 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
 **Initial value** See individual properties
@@ -4612,6 +5246,43 @@ h3 {border-right: cyan 1em inset;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values***&lt;color&gt;*
 **Initial value** currentColor
 **ComputedA color
@@ -4630,6 +5301,43 @@ h3 {border-right-color: cyan;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
    double &vert; groove &vert; ridge &vert; inset &vert; outset 
 **Initial    none 
@@ -4650,6 +5358,43 @@ h3 {border-right-style: inset;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-right-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 **Initial value** medium
 **ComputedAn absolute length, or 0 if the style of the border is
@@ -4669,6 +5414,43 @@ h3 {border-right-width: 1em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-spacing Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**   *&lt;length&gt;* *&lt;length&gt;*?   
 **Initial    0    
  value**      
@@ -4696,6 +5478,43 @@ separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-style Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
  double &vert; groove &vert; ridge &vert; inset &vert; outset
  &rbrack;{1,4}     
@@ -4723,6 +5542,43 @@ img {border-style:inset;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
  **border-top**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
 *&lt;bordercolor&gt;* &rbrack;
 **Initial     See individual properties   
@@ -4745,6 +5601,43 @@ h1 {border-top: dashed 1px gray;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-top-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** *&lt;color&gt;*
 **Initial value** currentColor **Computed value** A color
 **Applies to** All elements
@@ -4760,6 +5653,43 @@ h1 {border-top-color: gray;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-top-left-radius Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
 **Initial value** 0
 **ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
