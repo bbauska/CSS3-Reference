@@ -7289,262 +7289,599 @@ Note that outline-offset cannot be set via the shorthand outline.
 form:focus {outline-offset: −1px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>outline-style Inh. N Anim. N</h3>
+<!--  <h3>outline-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**auto &vert; none &vert; solid &vert; dotted &vert; dashed &vert; double &vert;
-    groove &vert; ridge &vert; inset &vert; outset
-**Initial value** none
-**ComputedAs declared
-  value**   
-**Applies to**    All elements
-**Description**   Defines the style for the overall border of an ele‐
-ment. The style must be something other than none for any outline to
-appear.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>outline-style</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>auto &vert; none &vert; solid &vert; dotted &vert; dashed &vert; double &vert; groove &vert; 
+	  ridge &vert; inset &vert; outset</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>none</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the style for the overall border of an element. The style must be something other 
+	  than none for any outline to appear.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-style: dashed;}
 form:focus {outline-style: outset;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>outline-width Inh. N Anim. Y</h3>
+<!--  <h3>outline-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; thin &vert; medium &vert; thick
-**Initial value** medium
-**ComputedAn absolute length, or 0 if the style of the outline
-value**   is none; otherwise, as declared
-**Applies to**    All elements
-**Description**   Defines the width for the overall outline of an
-    element. The width will take effect for a given
-    outline only if the value of outline-style is something other than none. If
-the style *is* none, the width is
-effectively reset to 0. Negative length values are   
-not permitted.  
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>outline-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lt;length&gt;* &vert; thin &vert; medium &vert; thick</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>medium</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>absolute length, or 0 if the style of the outline value is none; otherwise, as declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the width for the overall outline of an element. The width will take effect for a 
+	  given outline only if the value of outline-style is something other than none. If the style 
+	  <i>is</i> none, the width is effectively reset to 0. Negative length values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-width: 2px;} 
 form:focus {outline-width: 0.25em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**overflow**  **Inh. N Anim. N**</h3>
+<!--  <h3>overflow  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**     visible &vert; hidden &vert; scroll &vert; auto  
-**Initial visible 
- value**     
-**Computed     As declared  
- value**     
-**Applies Block-level and replaced elements    
- to**
-**     A shorthand property that defines what happens to    
- Description**  content that overflows the content area of an ele‐   
-ment. For the value scroll, user agents should provide a scrolling
-mechanism whether or not it is actually needed; for example,
-scrollbars would appear even if all content can fit within the element
-box. If two values are supplied, the first defines the value of
-overflow-x and the second defines overflow-y. Otherwise, a single
-value defines both.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>overflow</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>visible &vert; hidden &vert; scroll &vert; auto</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>visible</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Applies Block-level and replaced elements to</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>A shorthand property that defines what happens to content that overflows the content area 
+	  of an element. For the value scroll, user agents should provide a scrolling mechanism whether 
+	  or not it is actually needed; for example, scrollbars would appear even if all content can fit 
+	  within the element box. If two values are supplied, the first defines the value of overflow-x 
+	  and the second defines overflow-y. Otherwise, a single value defines both.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 #masthead {overflow: hidden;}
 object {overflow: visible scroll;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>overflow-wrap Inh. Y Anim. Y</h3>
+<!--  <h3>overflow-wrap Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** normal &vert; break-word **Initial value** normal
-**Computed value** As declared
-**Applies to** All elements
-**Description** Allows authors to specify whether line breaks are
-permitted inside words that are longer than their containing element is
-wide and which cannot be hyphenated, either due to language or the
-values of other properties. If break-word is set, the linebreaking will
-*only* occur if the word is placed on a new text line and still cannot
-fit inside its element's
-
-containing block. (This behavior is in contrast to word-break, which
-does not force a pre-word line break.)
-
-<p><b>Example</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>overflow-wrap</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>normal &vert; break-word **Initial value** normal</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Allows authors to specify whether line breaks are permitted inside words that are longer 
+	  than their containing element is wide and which cannot be hyphenated, either due to language 
+	  or the values of other properties. If break-word is set, the linebreaking will *only* occur 
+	  if the word is placed on a new text line and still cannot fit inside its element's containing 
+	  block. (This behavior is in contrast to word-break, which does not force a pre-word line break.)</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 pre {overflow-wrap: break-word;}
 </pre>
-
-**Note** This property used to be called word-wrap. Browsers that
-supported word-wrap in the past now use it as an alias for
-overflow-wrap.
+      </td>
+	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>This property used to be called word-wrap. Browsers that supported word-wrap in the past 
+	  now use it as an alias for overflow-wrap.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**overflow-x**  **Inh. N Anim. N**</h3>
+<!--  <h3>overflow-x  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    visible &vert; hidden &vert; scroll &vert; auto 
-**Initial     visible     
-value**   
-**Computed    As declared 
-value**   
-**Applies     Block-level and replaced elements   
-to** 
- *     Defines the overflow behavior along the horizontal  
- *Description**  (x) axis of the element; that is, the left and 
- right edges of the element. 
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>overflow-x</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>visible &vert; hidden &vert; scroll &vert; auto</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>visible</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Block-level and replaced elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the overflow behavior along the horizontal (x) axis of the element; that is, the 
+	  left and right edges of the element.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 #masthead {overflow-x: hidden;} object {overflow-x: 
 visible;}   
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**overflow-y**  **Inh. N Anim. N**</h3>
+<!--  <h3>overflow-y  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** visible &vert; hidden &vert; scroll &vert; auto
-**Initial value** visible
-**Computed value** As declared
-**Applies to** Block-level and replaced elements
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>overflow-y</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>visible &vert; hidden &vert; scroll &vert; auto</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>visible</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Block-level and replaced elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the overflow behavior along the vertical (y) axis of the element; that is, the top and bottom edges of the element.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 
-**Description** Defines the overflow behavior along the vertical (y)
-axis of the element; that is, the top and bottom edges of the element.
-
-<p><b>Examples</b></p>
 <pre>
 #masthead {overflow-y: hidden;} object {overflow-y:
 scroll;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**padding**   **Inh. N Anim. Y**</h3>
+<!--  <h3>padding   Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} 
-**Initial     Not defined for shorthand elements  
-value**   
-**Computed    See individual properties (padding-top, etc.)  
-value**   
- *     Refer to the width of the containing block  
-*Percentages** 
-**Applies     All elements
-to** 
-*     A shorthand property that defines the width of the  
-*Description**  overall padding for an element or sets the widths   
-of each individual side's padding. Padding set on   
-inline nonreplaced elements does not affect 
-line-height calculations; therefore, such an
-element with both padding and a background may 
-visibly extend into other lines and potentially     
-overlap other content. The background of the
-element will extend throughout the padding. 
-Negative padding values are not permitted.  
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>padding</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4}</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>Not defined for shorthand elements</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>See individual properties (padding-top, etc.) </td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>A shorthand property that defines the width of the overall padding for an element or 
+	  sets the widths of each individual side's padding. Padding set on inline nonreplaced elements 
+	  does not affect line-height calculations; therefore, such an element with both padding and a 
+	  background may visibly extend into other lines and potentially overlap other content. The 
+	  background of the element will extend throughout the padding. Negative padding values are not 
+	  permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 img {padding: 10px;} h1 {padding: 2ex 0.33em;} 
 pre {padding: 0.75em 0.5em 1em 0.5em;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>padding-bottom Inh. N Anim. Y</h3>
+<!--  <h3>padding-bottom Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-**Initial value** 0
-**ComputedFor percentage values, as declared; for length values,
-value**   the absolute length
-**Percentages**   Refer to the width of the containing block
-**Applies to**    All elements
-**Description**   Defines the width of the bottom padding for an
-    element. Bottom padding set on inline nonreplaced
-    elements does not affect line-height calculations;
-    therefore, such an element with both bottom padding
-    and a background may visibly extend into other lines 
-					and potentially overlap other content. Negative padding
-					values are not permitted.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>padding-bottom</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>For percentage values, as declared; for length values, the absolute length</td>
+    </tr>
+	<tr>
+	  <td><b>Percentage</b></td>
+	  <td>Refer to the width of the containing block</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the width of the bottom padding for an element. Bottom padding set on inline nonreplaced elements does not affect line-height calculations; therefore, such an element with both bottom padding and a background may visibly extend into other lines and potentially overlap other content. Negative padding values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 ul {padding-bottom: 0.5in;}
 h1 {padding-bottom: 2%;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>padding-left Inh. N Anim. Y</h3>
+<!--  <h3>padding-left Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-**Initial value** 0
-**ComputedFor percentage values, as declared; for length values,
-  value**   the absolute length
-**Percentages**   Refer to the width of the containing block
-**Applies to**    All elements
-**Description**   Defines the width of the left padding for an element.
-    Left padding set for an inline nonreplaced element
-    will appear only on the left edge of the first inline
-
-box generated by the element. Negative padding values are not
-permitted.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>padding-left</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lt;length&gt;* &vert; *&lt;percentage&gt;*</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>For percentage values, as declared; for length values, the absolute length.</td>
+    </tr>
+	<tr>
+	  <td><b>Percentages</b></td>
+	  <td>Refer to the width of the containing block</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the width of the left padding for an element. Left padding set for an inline 
+	  nonreplaced element will appear only on the left edge of the first inline box generated 
+	  by the element. Negative padding values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 p {padding-left: 5%;}
 pre {padding-left: 3em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>padding-right Inh. N Anim. Y</h3>
+<!--  <h3>padding-right Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-**Initial value** 0
-**ComputedFor percentage values, as declared; for length values,
-  value**   the absolute length
-**Percentages**   Refer to the width of the containing block
-**Applies to**    All elements
-**Description**   Defines the width of the right padding for an element.
-    Right padding set for an inline nonreplaced element
-    will appear only on the right edge of the last inline
-    box generated by the element. Negative padding values
-    are not permitted.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>padding-right</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;*</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>For percentage values, as declared; for length values,
+     the absolute length</td>
+    </tr>
+	<tr>
+	  <td><b>Percentage</b></td>
+	  <td>Refer to the width of the containing block</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the width of the right padding for an element. Right padding set for an inline 
+	  nonreplaced element will appear only on the right edge of the last inline box generated by 
+	  the element. Negative padding values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 img {padding-right: 30px;}
 ol {padding-right: 5em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>padding-top Inh. N Anim. Y</h3>
+<!--  <h3>padding-top Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
-**Initial     0   
- value**   
-**Computed    For percentage values, as declared; for length 
- value**  values, the absolute length 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>padding-top</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* </td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>For percentage values, as declared; for length 
+   values, the absolute length 
  *     Refer to the width of the containing block  
- *Percentages** 
-**Applies     All elements
- to** 
- *     Defines the width of the top padding for an 
- *Description**  element. Top padding set on inline nonreplaced 
- elements does not affect line-height calculations;  
- therefore, such an element with both top padding    
- and a background may visibly extend into other 
- lines and potentially overlap other content.
- Negative padding values are not permitted.  
-<p><b>Examples</b></p>
+ *Percentages** </td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the width of the top padding for an element. Top padding set on inline nonreplaced 
+	  elements does not affect line-height calculations; therefore, such an element with both top 
+	  padding and a background may visibly extend into other lines and potentially overlap other 
+	  content. Negative padding values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**page**    **Inh. N Anim. N**</h3>
+<!--  <h3>page    Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;identifier&gt;* &vert; auto
-**Initial value** auto
-**Computed value** As declared
-**Applies to** Block-level elements
-**Description** Defines the page type that *should* be used when
-displaying the element. The emphasis of the word "should" is taken
-directly from the specification, so author beware.
-
-The intended effect is that if an element has a value of page that is
-different than that of the preceding element, at least one page break
-is inserted before the element and a new page started using the page
-type declared by page. (Multiple page breaks may be used if other
-styles call for using a right- or lefthand page when starting the new
-page.)
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>page</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;identifier&gt;* &vert; auto</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>auto</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Block-level elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the page type that *should* be used when displaying the element. The emphasis of 
+	  the word "should" is taken directly from the specification, so author beware. The intended 
+	  effect is that if an element has a value of page that is different than that of the preceding 
+	  element, at least one page break is inserted before the element and a new page started using 
+	  the page type declared by page. (Multiple page breaks may be used if other styles call for using 
+	  a right- or lefthand page when starting the new page.)</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 &#64;page wide {size: landscape;}
 table.summary {page: wide;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**page-break-after**  **Inh. N Anim.**</h3>
+<!--  <h3>page-break-after  Inh. N Anim.</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>page-break-after</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    auto &vert; always     
 **Initial     auto  
  value**  
@@ -7578,8 +7915,45 @@ replaced by breakafter, but
 browser support for
 page-break-after may be stronger.  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>page-break-before Inh. N Anim. N</h3>
+<!--  <h3>page-break-before Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>page-break-before</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** auto &vert; always
 **Initial value** auto
 **Computed value** As declared
