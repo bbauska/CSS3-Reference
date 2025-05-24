@@ -4672,68 +4672,51 @@ aside {border-image-repeat: stretch round;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill?</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>100% </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>Four values, each a number or percentage, and optionally the fill keyword</td>
+    </tr>
+	<tr>
+	  <td><b>Percentage</b></td>
+	  <td>Refer to the size of the border image</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements, except internal table elements when border-collapse is collapse *&lt;number&gt;* and *&lt;percentage&gt;* values only </td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td><i>&lt;number&gt;</i> and <i>&lt;percentage&gt;</i> values only</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines "slice distances," which are offsets from the top, right, bottom, and left edges 
+	  of the border image. Taken together, they divide the image into nine regions, which correspond 
+	  to the eight segments of the element's border (four corners and four sides) and the element's 
+	  background area. In cases where two opposite regions combine to exceed the total of the dimension 
+	  they share, both are made completely transparent. For example, if the top slice offset value is 10 
+	  and the bottom slice offset value is 20, but the source image is only 25 pixels tall, the two exceed 
+	  the height of the image. Thus, both the top and bottom segments of the border will be entirely 
+	  transparent. The same holds for right and left slices and width. Corners are never forcibly made 
+	  transparent, even in cases where their slices may overlap in the source image.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+div.starry {border-image-slice: 5px;}
+aside {border-image-slice: 100 50 150;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**     &lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill? 
-**Initial 100% 
-**value**   
-**Computed     Four values, each a number or percentage, and
-**value**   optionally the fill keyword  
-     Refer to the size of the border image
-**Percentages**  
-**Applies All elements, except internal table elements when    
- to   border-collapse is collapse  
- * *&lt;number&gt;* and *&lt;percentage&gt;* values only
- *Animatable**  
- **     Defines "slice distances," which are offsets from    
- Description**  the top, right, bottom, and left edges of the border 
-   image. Taken together, they divide the image into    
-   nine regions, which correspond to the eight segments 
-   of the element's border (four corners and four  
-   sides) and the element's background area.    
-   
-   In cases where two opposite regions combine to  
-   exceed the total of the dimension they share, both   
-   are made completely transparent. For example, if the 
-   top slice offset value is 10 and the bottom slice    
-   offset value is 20, but the source image is only 25  
-   pixels tall, the two exceed the height of the image. 
-   Thus, both the top and bottom segments of the border 
-   will be entirely transparent. The same holds for     
-   right and left slices and width. Corners are never   
-   forcibly made transparent, even in cases where their 
-   slices may overlap in the source image. 
-
-<p><b>Examples</b></p>
-<pre>
-div.starry {border-image-slice: 5px;}
-aside {border-image-slice: 100 50 150;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-source Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4747,53 +4730,36 @@ aside {border-image-slice: 100 50 150;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; *&lt;image&gt;*</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>none, or the image with its URI made absolute</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements, except internal table elements when border-collapse is collapse</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Supplies the location of the image to be used as an element's border image.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+div.starry {border-image-source:
+url(stargrid.png);}
+aside {border-image-source: url(asides.png);}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**none &vert; *&lt;image&gt;*
-  **Initial value** none
-
-**Computednone, or the image with its URI made absolute
-  value**   
-
-**Applies to**    All elements, except internal table elements when
-    border-collapse is collapse
-
-**Description**   Supplies the location of the image to be used as an
-    element's border image.
-
-<p><b>Examples</b></p>
-<pre>
-div.starry {border-image-source:
-
-url(stargrid.png);}
-
-aside {border-image-source: url(asides.png);}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-image-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4807,178 +4773,130 @@ aside {border-image-source: url(asides.png);}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;number&gt;</i> &vert; auto &rbrack;{1,4}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>1</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>Four values, each a percentage, a number, a <i>&lt;length&gt;</i> made absolute, or the 
+	  auto keyword Relative to the width/height of the entire border</td>
+    </tr>
+	<tr>
+	  <td><b>Percentages</b></td>
+	  <td>image area; that is, the outer edges of the border box</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements, except table elements when bordercollapse is collapse</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines an image width for each of the four sides of an image border. Border image slices 
+	  that have a different width than the border image width value are scaled to match it, which 
+	  may impact how they are repeated. For example, if the right edge of an image border is 10 pixels 
+	  wide, but border-image-width: 3px has been declared, the border images along the right side are 
+	  scaled to be three pixels wide. Note that border-image-width is different from border-width: a 
+	  border image's width can be different than the width of the border area. In cases where the image 
+	  is wider or taller than the border area, it will be clipped by default (but border-imageoutset may 
+	  prevent this). If it is narrower or shorter than the border area, it will not be scaled up. Negative 
+	  values are not permitted.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+aside {border-image-width: 8 3 13;}
+div#pow{border-image-width: 25px 35;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**   &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;number&gt;*  
-   &vert; auto &rbrack;{1,4} 
-**Initial    1    
- value**      
-**Computed   Four values, each a percentage, a number, a  
- value** *&lt;length&gt;* made absolute, or the auto keyword 
-**   Relative to the width/height of the entire border    
- Percentages**  image area; that is, the outer edges of the border   
-   box  
-**Applies    All elements, except table elements when     
- to** bordercollapse is collapse   
-**   Defines an image width for each of the four sides of 
- Description**  an image border. Border image slices that have a     
-   different width than the border image width value    
-   are scaled to match it, which may impact how they    
-   are repeated. For example, if the right edge of an   
-   image border is 10 pixels wide, but  
-   border-image-width: 3px has been declared, the  
-   border images along the right side are scaled to be  
-   three pixels wide.   
-   
-   Note that border-image-width is different from  
-   border-width: a border image's width can be  
-   different than the width of the border area. In 
-   cases where the image is wider or taller than the    
-   border area, it will be clipped by default (but border-imageoutset may prevent this).
-If it is narrower or shorter than the border area, it will not be
-scaled up. Negative values are not permitted.
-
-<p><b>Examples</b></p>
-</pre>
-aside {border-image-width: 8 3 13;}
-div#pow{border-image-width: 25px 35;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>*border-left**  **Inh. N Anim. P**</h3>
+<!--  <h3>border-left  Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-left</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖ *&lt;bordercolor&gt;* &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties (border-width, etc.)</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Border width and color; not border style</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the width, color, and style of the left border 
+	  of an element. As with border, omission of a border style will result in no border appearing.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
- *&lt;bordercolor&gt;* &rbrack;
-**Initial     See individual properties   
- value**      
-**Computed    See individual properties (border-width, etc.) 
- value**      
-**Applies     All elements
- to** 
-  Border width and color; not border style    
-**Animatable** 
- *     A shorthand property that defines the width, color, 
-**Description**  and style of the left border of an element. As with 
-border, omission of a border style will result in   
-no border appearing.
-<p><b>Examples</b></p>  
 <pre>
 p {border-left: 3em solid gray;} pre {border-left:  
 double black 4px;}  
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-left-color Inh. N Anim. Y</h3>
+<!--  <h3>border-left-color Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-left-color/h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;color&gt;*</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>currentColor</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>A color</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the color for the visible portions of the left border of an element. The border's 
+	  style must be something other than none or hidden for any visible border to appear.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**   *&lt;color&gt;*  
-**Initial    currentColor 
-**value**      
-**Computed   A color 
-**value**
-**Applies to**   All elements 
-   Defines the color for the visible portions of the    
-**Description**  left border of an element. The border's style must   
-   be something other than none or hidden for any  
-   visible border to appear.    
-      
-<p><b>Examples</b></p>  
 <pre>
 p    
  {borde  
@@ -4988,323 +4906,247 @@ p
  r-left-color:  
  black;}      
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-left-style Inh. N Anim. N</h3>
+<!--  <h3>border-left-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>border-left-style</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double &vert; groove &vert; ridge &vert; inset &vert; outset</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>declared value**</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the style for the left border of an element. The value must be something other 
+	  than none or hidden for any border to appear.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
-    &vert; groove &vert; ridge &vert; inset &vert; outset
-**Initial value** none
-**ComputedAs declared value**
-**Applies to**    All elements
-**Description**   Defines the style for the left border of an element.
-    The value must be something other than none or hidden
-    for any border to appear.
-
-<p><b>Examples</b></p>
 <pre>
 p {border-left-style: solid;}
 pre {border-left-style: double;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-left-width Inh. N Anim. Y</h3>
+<!--  <h3>border-left-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-left-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>thin &vert; medium &vert; thick &vert; *&lt;length&gt;*</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>medium</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>absolute length, or 0 if the style of the border is none or hidden; otherwise, as declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the width for the left border of an element, which will take effect only if the 
+	  border's style is something other than none or hidden. If the border style is none, the border 
+	  width is effectively reset to 0. Negative length values are not permitted.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
-**Initial value** medium
-**ComputedAn value** absolute length, or 0 if the style of the border is
-    none or hidden; otherwise, as declared
-**Applies to**    All elements
-**Description**   Defines the width for the left border of an element,
-    which will take effect only if the border's style is
-    something other than none or hidden. If the border
-    style is none, the border width is effectively reset
-    to 0. Negative length values are not permitted.
-
-<p><b>Examples</b></p> 
 <pre>
 p {border-left-width: 3em;}
 pre {border-left-width: 4px;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-radius Inh. N Anim. Y</h3>
+<!--  <h3>border-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-radius</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>0</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>Four values, each a *&lt;percentage&gt;* or *&lt;length&gt;* 
+   made absolute</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements, except internal table elements </td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the rounding radius for the bottom-right corner of an 
+	  element's border. The actual corners will be the height and width declared. Thus, given: 
+	  .callout {border-radius: 10px;} each corner of an element with a class of callout will 
+	  have a rounding that is 10 pixels across, as measured from the beginning of the rounding 
+	  to the outer side edge of the element, and is similarly 10 pixels high. This can be visualized 
+	  as if the element had 10-pixel-radius (20-pixel-diameter) circles drawn in its corners, and then 
+	  the border were bent along the circles' edges. Using fewer than four values causes the supplied 
+	  values to be repeated in the familiar pattern (see margin, padding, etc.), but with a slight offset. 
+	  Rather than being Top-Right-Bottom-Left (TRBL, or "trouble"), the pattern is 
+	  TopLeft-TopRightBottomRight-BottomLeft (TLTRBRBL, or "tilter burble"). Otherwise, the repeat 
+	  pattern is the same. Percentages, when used, are calculated with respect to the size of the 
+	  element's border box (the box defined by the outer edges of the element's border area) dimension 
+	  on the related axis.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values** &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack;
-*&lt;length&gt;* &vert;
-*&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?
-**Initial value** 0
-**Computed     Four values, each a *&lt;percentage&gt;* or *&lt;length&gt;* 
- value**   made absolute
-**     Calculated with respect to the relevant dimension of 
- Percentages**  the border box  
-**Applies All elements, except internal table elements 
- to**   
-**     A shorthand property that defines the rounding  
-**Description**  radius for the bottom-right corner of an element's 
-   border. The actual corners will be the height and    
-   width declared. Thus, given: 
-   
-   .callout {border-radius: 10px;} 
-   
-   each corner of an element with a class of callout    
-   will have a rounding that is 10 pixels across, as    
-   measured from the beginning of the rounding to the   
-   outer side edge of the element, and is similarly 10  
-   pixels high. This can be visualized as if the
-   element had 10-pixel-radius (20-pixel-diameter) 
-   circles drawn in its corners, and then the border    
-   were bent along the circles' edges.  
-   
-   Using fewer than four values causes the supplied     
-   values to be repeated in the familiar pattern (see   
-   margin, padding, etc.), but with a slight offset.    
-   Rather than being Top-Right-Bottom-Left (TRBL, or    
-   "trouble"), the pattern is   
-   TopLeft-TopRightBottomRight-BottomLeft (TLTRBRBL, or 
-   "tilter burble"). Otherwise, the repeat pattern is   
-   the same.    
-   
-   Percentages, when used, are calculated with respect  
-   to the size of the element's border box (the box     
-   defined by the outer edges of the element's border   
-   area) dimension on the related axis. 
-<p><b>Examples</b></p>
 <pre>
 a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
 .callout {border-radius:
 10px 20px 30px 40px /
 1em 2em 3em 4em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-right Inh. N Anim. P</h3>
+<!--  <h3>border-right Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-right</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖ *&lt;bordercolor&gt;* &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties (border-width, etc.)</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the width, color, and style of the right border of an 
+	  element. As with border, omission of a border style will result in no border appearing.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
-    *&lt;bordercolor&gt;* &rbrack;
-**Initial value** See individual properties
-**ComputedSee individual properties (border-width, etc.)
-  value**   
-
-**Applies to**    All elements
-
-**Animatable**    Border width and color; not border style
-
-**Description**   A shorthand property that defines the width, color,
-and style of the right border of an element. As with border, omission
-of a border style will result in no border appearing.
-
-<p><b>Examples</b></p>
 <pre>
 img {border-right: 30px dotted blue;}
 h3 {border-right: cyan 1em inset;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-right-color Inh. N Anim. Y</h3>
+<!--  <h3>border-right-color Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-right-color</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;color&gt;*</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>currentColor</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>color</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the color for the visible portions of the right border of an element. The 
+	  border's style must be something other than none or hidden for any visible border to appear.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+img {border-right-color: blue;}
+h3 {border-right-color: cyan;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values***&lt;color&gt;*
-**Initial value** currentColor
-**ComputedA color
-  value**   
-**Applies to**    All elements
-**Description**   Defines the color for the visible portions of the
-    right border of an element. The border's style must be
-    something other than none or hidden for any visible
-    border to appear.
-
-<p><b>Examples</b></p>
-<pre>
-img {border-right-color: blue;}
-h3 {border-right-color: cyan;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-right-style Inh. N Anim. N</h3>
+<!--  <h3>border-right-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>border-right-style</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -5356,13 +5198,13 @@ img {border-right-style: dotted;}
 h3 {border-right-style: inset;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-right-width Inh. N Anim. Y</h3>
+<!--  <h3>border-right-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-right-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -5412,76 +5254,61 @@ img {border-right-width: 30px;}
 h3 {border-right-width: 1em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-spacing Inh. Y Anim. Y</h3>
+<!--  <h3>border-spacing Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-spacing</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;length&gt;* *&lt;length&gt;*? </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>0</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>Two absolute lengths</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Elements with the display value table or tableinline </td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the distance between table cell borders in the separated borders table layout 
+	  model. The first of the two length values is the horizontal separation and the second is 
+	  the vertical separation. Although the property applies only to tables, it is inherited by 
+	  all of the elements within the table.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**   *&lt;length&gt;* *&lt;length&gt;*?   
-**Initial    0    
- value**      
-**Computed   Two absolute lengths 
- value**      
-**Applies    Elements with the display value table or tableinline 
- to** 
-**   Defines the distance between table cell borders in   
- Description**  the separated borders table layout model. The first  
-   of the two length values is the horizontal   
-   separation and the second is the vertical    
-   separation. Although the property applies only to    
-   tables, it is inherited by all of the elements  
-   within the table.    
-
-<p><b>Examples</b></p>
-<pre>
 table {border-spacing: 0;}
 table {border-spacing: 3px 5px;}
 </pre>
-
-**Note** This property is ignored unless the value of bordercollapse is
-separate.
-
+      </td>
+	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>This property is ignored unless the value of bordercollapse is separate.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-style Inh. N Anim. N</h3>
+<!--  <h3>border-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>border-style</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -5540,124 +5367,99 @@ h1 {border-style: solid;}
 img {border-style:inset;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
- **border-top**  **Inh. N Anim. P**</h3>
+<!--  border-top  Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-top</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖ *&lt;bordercolor&gt;* &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties (border-width, etc.)</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Border width and color; not border style</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the width, color, and style of the top border of 
+	  an element. As with border, omission of a border style will result in no border appearing.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-**Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
-*&lt;bordercolor&gt;* &rbrack;
-**Initial     See individual properties   
-value**      
-**Computed    See individual properties (border-width, etc.) 
-value**      
-**Applies     All elements
-to** 
-Border width and color; not border style    
-**Animatable** 
-A shorthand property that defines the width, color, 
-**Description**  and style of the top border of an element. As with  
-border, omission of a border style will result in no border appearing.
-
-<p><b>Examples</b></p>
 <pre>
 ul {border-top: 0.5in solid black;}
 h1 {border-top: dashed 1px gray;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+<p><b>Examples</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-top-color Inh. N Anim. Y</h3>
+<!--  <h3>border-top-color Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-top-color</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;color&gt;*</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>currentColor **Computed value** A color</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Sets the color for the visible portions of the top border of an element. The border's style must be something other than none or hidden for any visible border to appear.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+ul {border-top-color: black;}
+h1 {border-top-color: gray;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values** *&lt;color&gt;*
-**Initial value** currentColor **Computed value** A color
-**Applies to** All elements
-**Description** Sets the color for the visible portions of the top
-border of an element. The border's style must be something other than
-none or hidden for any visible border to appear.
-
-<p><b>Examples</b></p>
-<pre>
-ul {border-top-color: black;}
-h1 {border-top-color: gray;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-top-left-radius Inh. N Anim. Y</h3>
+<!--  <h3>border-top-left-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-too-left-radius</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -5799,6 +5601,44 @@ h1 {border-top-style: dashed;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-top-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values** thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
 **Initial value** medium
 **ComputedAn absolute length, or 0 if the style of the border is
@@ -5818,6 +5658,44 @@ h1 {border-top-width: 1px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**    &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  
 **Initial     See individual properties   
 value**      
@@ -5841,6 +5719,44 @@ img {border-width: 5px thick thin 1em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**bottom**    **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 **Initial     auto
 value**      
@@ -5871,6 +5787,44 @@ sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>box-decoration-break Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**slice &vert; clone
 **Initial value** slice
 **ComputedAs declared
@@ -5899,6 +5853,44 @@ span {box-decoration-break: clone;} a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>box-shadow Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**    none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&    
 *&lt;color&gt;*?&rbrack;#     
 **Initial     none
@@ -5939,6 +5931,44 @@ rgba(255,0,0,0.5);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**box-sizing**  **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values** content-box &vert; padding-box &vert; border-box
 **Initial value** content-box
 **Computed value** As declared
@@ -5962,6 +5992,44 @@ body {box-sizing: padding-box;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>caption-side Inh. Y Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values** top &vert; bottom
 **Initial value** top
 **Computed value** As declared
@@ -5980,6 +6048,44 @@ dropped due to a lack of widespread support.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**clear**     **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
  **Values**    left &vert; right &vert; both &vert; none  
  **Initial     none
  value**      
@@ -6008,6 +6114,44 @@ h1 {clear: both;} p + h3 {clear: right;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3> **clip-path** **Inh. N Anim P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**  none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert;
    ellipse() &vert; polygon() &rbrack; ‖ &lbrack; border-box &vert;
    padding-box &vert; content-box &vert; margin-box &vert; fill-box
@@ -6034,6 +6178,44 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**clip-rule** **Inh. N Anim. N**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**    nonzero &vert; evenodd  
 **Initial     nonzero     
 value**      
@@ -6105,6 +6287,44 @@ pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>content</b>   <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>    normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;   
 *&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;  
 open-quote &vert; close-quote &vert; no-open-quote &vert;  
@@ -6128,6 +6348,44 @@ font-size: smaller;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>counter-increment Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b> &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none
 <b>Initial value</b> User agent--dependent
 <b>Computed value</b> As declared
@@ -6144,6 +6402,44 @@ h1 {counter-increment: section;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>counter-reset Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
 <b>Initial</b>     User agent--dependent  
 <b>value</b>      
@@ -6162,6 +6458,44 @@ subsec 1;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>cursor</b>    <b>Inh. Y Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b> &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
  &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help  
  &vert; pointer &vert; progress &vert; wait &vert; cell &vert; crosshair 
@@ -6208,6 +6542,44 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>direction</b>  <b>Inh. Y Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>    ltr &vert; rtl  
 <b>Initial</b>     ltr 
 <b>value</b>
@@ -6238,6 +6610,44 @@ property.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>display</b>  <b>Inh. N Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>
 *&lt;display-legacy&gt;*
 <b>Definitions</b>
@@ -6285,6 +6695,44 @@ tr {display: table-row;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>    show &vert; hide
 <b>Initial</b>     show
 <b>value</b>      
@@ -6306,6 +6754,44 @@ th, td {empty-cells: show;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>filter</b>    <b>Inh. N Anim. Y</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>    &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  
 dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; 
 invert() &vert; opacity() &vert; sepia() &vert; saturate() &vert;   
@@ -6334,6 +6820,44 @@ url(/assets/filters.svg#spotlight);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><b>flex</b>   <b>Inh. N Anim. P</b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>&lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*?
     *&lt;flex-basis&gt;* &rbrack; &vert; none
 <b>Initial value</b> 0 1 auto
@@ -6367,6 +6891,44 @@ encompasses.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>**flex-basis**  **Inh. N Anim. P**</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
    auto &rbrack; 
 **Initial value**     auto 
@@ -6475,8 +7037,46 @@ nav.sidenav {display: flex; flex-flow: column nowrap;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **flex-grow**  **Inh. N Anim. Y**
+<!--  #### flex-grow  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>flex-grow</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**    *&lt;number&gt;*
 **Initial value**    0   
 **Computed value**   As declared 
@@ -6497,8 +7097,46 @@ ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 **Note** It is *strongly* recommended that instead of this property, authors use the flex shorthand property to set an item's flex
 growth factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **flex-shrink**  **Inh. N Anim. Y** 
+<!--  #### flex-shrink  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>flex-shrink</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 **Values**    *&lt;number&gt;*
 **Initial     1   
 value**      
@@ -6523,6 +7161,43 @@ to set an item's flex shrink factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **flex-wrap** **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** nowrap &vert; wrap &vert; wrap-reverse
 **Initial value** nowrap
 **Computed value** As declared
@@ -6543,6 +7218,43 @@ they run out of room (as in an image gallery), make sure to wrap them.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **float**  **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** left &vert; right &vert; none
 **Initial value** none
 **Computed value** As declared
@@ -6566,6 +7278,43 @@ p.sidebar {float: right; width: 15em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font** **Inh. Y Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  
  ‖ *&lt;fontweight&gt;* &rbrack;? *&lt;font-size&gt;* &lbrack; / 
  *&lt;line-height&gt;* &rbrack;? *&lt;fontfamily&gt;*&rbrack; &vert; caption 
@@ -6603,6 +7352,43 @@ encouraged for fallback purposes &ast;/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font-family** **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    
 **Initial     User agent--specific
 value**      
@@ -6631,6 +7417,43 @@ p {font-family: Helvetica, Arial, sans-serif;} li
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-feature-settings Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**     normal &vert; *&lt;feature-tag-value&gt;*&#35;  
 **Initial value** normal
 **Computed value**    As declared  
@@ -6651,6 +7474,43 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-kerning Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    auto &vert; normal &vert; none 
 **Initial     auto
 value**      
@@ -6678,6 +7538,43 @@ none;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font-size** **Inh. Y Anim. P**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
 x-large &vert; xx-large &vert; smaller &vert; larger &vert; 
 *&lt;length&gt;* &vert;     
@@ -6712,6 +7609,43 @@ p.caption {font-size: 9px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-size-adjust Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** *&lt;number&gt;* &vert; none
 **Initial value** none
 **ComputedAs declared value**
@@ -6730,6 +7664,43 @@ font-size-adjust: 0.53;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-stretch Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** normal &vert; ultra-condensed &vert; extra-condensed &vert; condensed &vert;
 semi-condensed &vert; semi-expanded &vert; expanded &vert; extra-expanded &vert;
 ultra-expanded
@@ -6746,6 +7717,43 @@ descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font-style**  **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    italic &vert; oblique &vert; normal 
 **Initial     normal 
 value**      
@@ -6770,6 +7778,43 @@ em {font-style: oblique;} i {font-style: italic;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-synthesis Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** none &vert; &lbrack; weight ‖ style &rbrack;
 **Initial value** weight style **Computed value** As declared
 **Applies to** All elements
@@ -6790,6 +7835,43 @@ pre code {font-synthesis: style;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-variant Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values  normal &vert; small-caps 
  (CSS2.1)**     
 **Values  normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖  
@@ -6831,6 +7913,43 @@ h3 {font-variant: small-caps;} p {font-variant: normal;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **font-weight** **Inh. Y Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**    normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
 &vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900    
 **Initial     normal 
@@ -6858,6 +7977,43 @@ b {font-weight: 700;} strong {font-weight: bold;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### **grid** **Inh. N Anim. N**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values** none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    
 *&lt;gridtemplate-columns&gt;* &rbrack; &vert; &lbrack; 
 *&lt;line-names&gt;*? *&lt;string&gt; &lt;track-size&gt;*? 
@@ -8201,23 +9357,50 @@ of color for the element.
 form:focus {outline-color: cyan;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>outline-offset Inh. N Anim. N</h3>
+<!--  <h3>outline-offset Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;length&gt;*
-**Initial value** 0
-**Computed value** An absolute length value
-**Applies to** All elements
-**Description** Defines the offset distance between the outer border
-edge and inner outline edge. Only one length value can be supplied, and
-it applies equally to all sides of the outline. Values can be negative,
-which causes the outline to "shrink" inward toward the element's center.
-Note that outline-offset cannot be set via the shorthand outline.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>outline-offset</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;length&gt;*</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>0</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>An absolute length value</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the offset distance between the outer border edge and inner outline edge. Only one 
+	  length value can be supplied, and it applies equally to all sides of the outline. Values can 
+	  be negative, which causes the outline to "shrink" inward toward the element's center. Note that 
+	  outline-offset cannot be set via the shorthand outline.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 &ast;&lbrack;href&rbrack;:focus {outline-offset: 0.33em;}
 form:focus {outline-offset: −1px;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>outline-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
