@@ -4439,25 +4439,89 @@ ul {border-bottom-style: groove;}
 a:active {border-bottom-style: dashed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-bottom-width Inh. N Anim. Y</h3>
+<!--  <h3>border-bottom-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;
-**Initial value** See individual properties
-**Computed value** See individual properties (border-top-style, etc.)
-**Applies to** All elements
-**Description** Defines the width for the bottom border of an element,
-which will take effect only if the border's style is something other
-than none or hidden. If the border style is none, the border width is
-effectively reset to 0. Negative length values are not permitted.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>border-bottom-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>See individual properties (border-top-style, etc.)</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the width for the bottom border of an element, which will take effect only if 
+	  the border's style is something other than none or hidden. If the border style is none, 
+	  the border width is effectively reset to 0. Negative length values are not permitted.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 ul {border-bottom-width: 0.5in;}
 a:active {border-bottom-width: 2px;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>border-collapse Inh. Y Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 **Values**collapse &vert; separate &vert; inherit
 **Initial value** separate
 **ComputedAs declared value**   
@@ -4475,25 +4539,49 @@ table {border-collapse: separate; border-spacing: 3px 5px;}
 
 **Note**  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inh. N Anim. Y</h3>
+<!--  <h3>border-color  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;color&gt;*{1,4}
-
-**Initial value** See individual properties
-
-**Computed value** See individual properties (border-top-color, etc.)
-**Applies to** All elements
-
-**Description** A shorthand property that sets the color for the visible
-portions of the overall border of an element or sets a different color
-for each of the four sides. Remember that a border's style must be
-something other than none or hidden for any visible border to appear.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>border-color</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;color&gt;*{1,4}</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>A shorthand property that sets the color for the visible portions of the overall border 
+	  of an element or sets a different color for each of the four sides. Remember that a border's 
+	  style must be something other than none or hidden for any visible border to appear.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 h1 {border-color: purple;}
 a:visited {border-color: maroon;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h3>border-image  Inh. N Anim. P</h3>  -->
 <!-- <h3><div id="left">border-image</div><div align="right">Inh. N Anim. P</div></h3> -->
@@ -4660,13 +4748,13 @@ aside {border-image-repeat: stretch round;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-image-slice Inh. N Anim. P</h3>
+<!--  <h3>border-image-slice Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-image-slice</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4688,7 +4776,8 @@ aside {border-image-repeat: stretch round;}
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td>All elements, except internal table elements when border-collapse is collapse *&lt;number&gt;* and *&lt;percentage&gt;* values only </td>
+	  <td>All elements, except internal table elements when border-collapse is collapse 
+	  <i>&lt;number&gt;</i> and <i>&lt;percentage&gt;</i> values only.</td>
     </tr>
 	<tr>
 	  <td><b>Animatable</b></td>
@@ -4718,19 +4807,19 @@ aside {border-image-slice: 100 50 150;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-image-source Inh. N Anim. N</h3>
+<!--  <h3>border-image-source Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>border-image-source</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>none &vert; *&lt;image&gt;*</td>
+	  <td>none &vert; <i>&lt;image&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4761,19 +4850,20 @@ aside {border-image-source: url(asides.png);}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-image-width Inh. N Anim. Y</h3>
+<!--  <h3>border-image-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-image-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;number&gt;</i> &vert; auto &rbrack;{1,4}</td>
+	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;number&gt;</i> 
+	  &vert; auto &rbrack;{1,4}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5153,50 +5243,36 @@ h3 {border-right-color: cyan;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double &vert; groove &vert; ridge &vert; inset &vert; outset</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the style for the right border of an element. The value must be something other 
+	  than none or hidden for any border to appear.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+img {border-right-style: dotted;}
+h3 {border-right-style: inset;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**   none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert;  
-   double &vert; groove &vert; ridge &vert; inset &vert; outset 
-**Initial    none 
- value**      
-**Computed     
- value** As     
- declared  
-**Applies to** All elements
-**Description** Defines the style for the right border of an element.
-The value must be something other than none or hidden for any border to
-appear.
-
-<p><b>Examples</b></p>
-<pre>
-img {border-right-style: dotted;}
-h3 {border-right-style: inset;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-right-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5210,49 +5286,37 @@ h3 {border-right-style: inset;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>thin &vert; medium &vert; thick &vert; <i>&lt;length&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>medium</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>absolute length, or 0 if the style of the border is none or hidden; otherwise, as declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the width for the right border of an element, which will take effect only if the 
+	  border's style is something other than none or hidden. If the border style is none, the border 
+	  width is effectively reset to 0. Negative length values are not permitted.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+img {border-right-width: 30px;}
+h3 {border-right-width: 1em;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
-**Initial value** medium
-**ComputedAn absolute length, or 0 if the style of the border is
-  value**   none or hidden; otherwise, as declared
-**Applies to**    All elements
-**Description**   Defines the width for the right border of an element,
-    which will take effect only if the border's style is
-something other than none or hidden. If the border style is none, the
-border width is effectively reset to 0. Negative length values are not
-permitted.
-
-<p><b>Examples</b></p>
-<pre>
-img {border-right-width: 30px;}
-h3 {border-right-width: 1em;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-spacing Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5315,57 +5379,42 @@ table {border-spacing: 3px 5px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
+ double &vert; groove &vert; ridge &vert; inset &vert; outset
+ &rbrack;{1,4}  </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties   </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties (border-top-style, etc.)  </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property used to define the styles for the overall border of an element or 
+	  for each side individually. The value of any border must be something other than none or 
+	  hidden for the border to appear. Note that setting border-style to none (its default value) 
+	  will result in no border at all. In such a case, any value of border-width will be ignored 
+	  and the width of the border will be set to 0. Any unrecognized value from the list of values 
+	  should be reinterpreted as solid.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {border-style: solid;} 
+img {border-style:inset;}     
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**    &lbrack; none &vert; hidden &vert; solid &vert; dotted &vert; dashed &vert;   
- double &vert; groove &vert; ridge &vert; inset &vert; outset
- &rbrack;{1,4}     
-**Initial     See individual properties   
- value**      
-**Computed    See individual properties (border-top-style, etc.)  
- value**      
-**Applies     All elements
- to** 
-     A shorthand property used to define the styles for  
- *Description**  the overall border of an element or for each side   
- individually. The value of any border must be  
- something other than none or hidden for the border  
- to appear. Note that setting border-style to none   
- (its default value) will result in no border at     
- all. In such a case, any value of border-width will 
- be ignored and the width of the border will be set  
- to 0. Any unrecognized value from the list of  
- values should be reinterpreted as solid.    
-<p><b>Examples</b></p>
-<pre>
-h1 {border-style: solid;} 
-img {border-style:inset;}     
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  border-top  Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5465,51 +5514,41 @@ h1 {border-top-color: gray;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>0</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>Two values, each a <i>&lt;percentage&gt;</i> or <i>&lt;length&gt;</i> made absolute</td>
+    </tr>
+	<tr>
+	  <td><b>Percentages</b></td>
+	  <td>Calculated with respect to the relevant dimension of the border box</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements, except internal table elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the rounding radius for the top-left corner of an element's border. If two 
+	  values are supplied, the first is the horizontal radius and the second is the vertical 
+	  radius. See border-radius for a description of how the values create the rounding shape.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {border-top-left-radius: 10%;}
+h2 {border-top-left-radius: 1em 10px;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-**Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
-**Initial value** 0
-**ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
-value**   made absolute
-**Percentages**   Calculated with respect to the relevant dimension of
-    the border box
-**Applies to**    All elements, except internal table elements
-**Description**   Defines the rounding radius for the top-left corner of
-    an element's border. If two values are supplied, the
-    first is the horizontal radius and the second is the
-    vertical radius. See border-radius for a description
-    of how the values create the rounding shape.
-
-<p><b>Examples</b></p>
-<pre>
-h1 {border-top-left-radius: 10%;}
-h2 {border-top-left-radius: 1em 10px;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  ### border-top-right-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5599,257 +5638,204 @@ h1 {border-top-style: dashed;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-top-width Inh. N Anim. Y</h3>
+<!--  <h3>border-top-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-top-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>thin &vert; medium &vert; thick &vert; *&lt;length&gt;*</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>medium</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>An absolute length, or 0 if the style of the border is
+  none or hidden; otherwise, as declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the width for the top border of an element, which will take effect only if the 
+	  border's style is something other than none or hidden. If the style is none, the width is 
+	  effectively reset to 0. Negative length values are not permitted.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-**Values** thin &vert; medium &vert; thick &vert; *&lt;length&gt;*
-**Initial value** medium
-**ComputedAn absolute length, or 0 if the style of the border is
-  value**   none or hidden; otherwise, as declared
-**Applies to**    All elements
-**Description**   Defines the width for the top border of an element,
-    which will take effect only if the border's style is
-    something other than none or hidden. If the style is
-    none, the width is effectively reset to 0. Negative
-    length values are not permitted.
-
-<p><b>Examples</b></p>
 <pre>
 ul {border-top-width: 0.5in;}
 h1 {border-top-width: 1px;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-width Inh. N Anim. Y</h3>
+<!--  <h3>border-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4} </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties (border-top-style, etc.)</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
-    </tr>
-	<tr>
-	  <td><b>Examples</b></td>
-	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-**Values**    &lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4}  
-**Initial     See individual properties   
-value**      
-**Computed    See individual properties (border-top-style, etc.)  
-value**      
-**Applies     All elements
-to** 
-*     A shorthand property that defines the width for the 
+	  <td>A shorthand property that defines the width for the 
 *Description**  overall border of an element or for each side  
 individually. The width will take effect for a 
 given border only if the border's style is  
 something other than none or hidden. If the border  
  style is none, the border width is effectively 
 eset to 0. Negative length values are not  
-permitted.  
-<p><b>Examples</b></p>
-<pre>
-h1 {border-width: 2ex;}     
-img {border-width: 5px thick thin 1em;}     
-</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**bottom**    **Inh. N Anim. P**</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table style="width:500px;">
-  <thead>
-    <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
-	</tr>
-  </thead>
-  <tbody>
-    <tr>
-	  <td><b>Values</b></td>
-	  <td></td>
-	</tr>
-	<tr>
-	  <td><b>Initial value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Computed value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Applies to</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
+permitted.  </td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {border-width: 2ex;}
+img {border-width: 5px thick thin 1em;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
-**Initial     auto
-value**      
-**Computed    For static elements, auto; for length values, the   
-value**  corresponding absolute length; for percentage  
-values, the specified value; otherwise, auto
- *      
-*Percentages** 
-Refer to the   
-height of the  
-containing     
-block  
-
-**Applies to** Positioned elements
-**Animatable** *&lt;length&gt;* and *&lt;percentage&gt;* values only
-**Description** Defines the offset between the bottom outer margin edge
-of a positioned element and the bottom edge of its containing block. For
-relatively positioned elements, if both bottom and top are auto, their
-computed values are both 0; if one of them is auto, it becomes the
-negative of the other; if neither is auto, bottom will become the
-negative of the value of top.
-
-<p><b>Examples</b></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--  <h3>bottom    Inh. N Anim. P</h3>  -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>bottom</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>auto</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>For static elements, auto; for length values, the corresponding absolute length; 
+	  for percentage values, the specified value; otherwise, auto</td>
+    </tr>
+	<tr>
+	  <td><b>Percentage</b></td>
+	  <td>Refer to the height of the containing block.</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Positioned elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the offset between the bottom outer margin edge of a positioned element and 
+	  the bottom edge of its containing block. For relatively positioned elements, if both 
+	  bottom and top are auto, their computed values are both 0; if one of them is auto, it 
+	  becomes the negative of the other; if neither is auto, bottom will become the negative 
+	  of the value of top.</td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td><i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 div#footer {position: fixed; bottom: 0;}
 sup {position: relative; bottom: 0.5em; vertical-align: baseline;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>box-decoration-break Inh. N Anim. N</h3>
+<!--  <h3>box-decoration-break Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>box-decoration-break</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>slice &vert; clone</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>slice</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether the decorations---the background, padding, borders, rounded corners, 
+	  border image, and box shadow---of a box that has been rendered in multiple pieces are 
+	  applied to each piece separately or applied to the entire box before it is broken apart. 
+	  The most common case is an inline element that wraps across one or more line breaks. With 
+	  the default behavior, slice, the pieces of the inline element are drawn as though the 
+	  whole element was laid out in a single line and then sliced apart at each line break. If 
+	  clone is declared, then each piece of the element is decorated as though they were separate 
+	  elements sharing the same styles. box-decoration-break also applies to block boxes that 
+	  are split across columns or pages.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+span {box-decoration-break: clone;} a
+{box-decoration-break: slice;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-**Values**slice &vert; clone
-**Initial value** slice
-**ComputedAs declared
-value**   
-**Applies to**    All elements
-**Description**   Defines whether the decorations---the background,
-    padding, borders, rounded corners, border image, and
-    box shadow---of a box that has been rendered in
-    multiple pieces are applied to each piece separately
-    or applied to the entire box before it is broken
-    apart. The most common case is an inline element that
-wraps across one or more line breaks. With the default behavior,
-slice, the pieces of the inline element are drawn as though the whole
-element was laid out in a single line and then sliced apart at each
-line break. If clone is declared, then each piece of the element is
-decorated as though they were separate elements sharing the same
-styles.
-box-decoration-break also applies to block boxes that are split across
-columns or pages.
-
-<p><b>Examples</b></p>
-<pre>
-span {box-decoration-break: clone;} a
-{box-decoration-break: slice;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>box-shadow Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
