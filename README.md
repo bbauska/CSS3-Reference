@@ -5842,385 +5842,297 @@ span {box-decoration-break: clone;} a
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>box-shadow</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; &lbrack;inset? && <i>&lt;length&gt;</i>{2,4} && <i>&lt;color&gt;</i>?&rbrack;#</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td><i>&lt;length&gt;</i> values as absolute length values; <i>&lt;color&gt;</i> values as 
+	  computed internally; otherwise, as declared.</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines one or more shadows that are derived from the shape of the element box. 
+	  Either outset ("drop") shadows or inset shadows can be defined, the latter with use 
+	  of the optional inset keyword. Without that keyword, the shadow will be outset. The 
+	  four length values that can be declared are, in order: horizontal offset, vertical 
+	  offset, blur distance, and spread distance. When positive, the offset values go down 
+	  and to the right; when negative, they go back and to the left. Positive spread values 
+	  increase the size of the shadow and negative values contract it. Blur values cannot 
+	  be negative. Note that all shadows are clipped by the element's border edge. Thus, an 
+	  outset shadow is only drawn outside the border edge. A semitransparent or fully 
+	  transparent element background will *not* reveal an outset shadow "behind" the element. 
+	  Similarly, inset shadows are only visible inside the border edge and are never drawn 
+	  beyond it.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-**Values**    none &vert; &lbrack;inset? && *&lt;length&gt;*{2,4} &&    
-*&lt;color&gt;*?&rbrack;#     
-**Initial     none
-value**      
-**Computed    *&lt;length&gt;* values as absolute length values; 
-value**  *&lt;color&gt;* values as computed internally;  
-otherwise, as declared 
-**Applies     All elements
-to** 
-*     Defines one or more shadows that are derived from   
-Description**  the shape of the element box. Either outset 
-("drop") shadows or inset shadows can be defined,   
-the latter with use of the optional inset keyword.  
-Without that keyword, the shadow will be outset.    
-     
-The four length values that can be declared are, in 
-order: horizontal offset, vertical offset, blur     
-distance, and spread distance. When positive, the   
-offset values go down and to the right; when
-negative, they go back and to the left. Positive    
-spread values increase the size of the shadow and   
-negative values contract it. Blur values cannot be  
-negative.   
-     
-Note that all shadows are clipped by the element's  
-border edge. Thus, an outset shadow is only drawn   
-outside the border edge. A semitransparent or fully 
-transparent element background will *not* reveal an 
-outset shadow "behind" the element. Similarly, 
-inset shadows are only visible inside the border    
-edge and are never drawn beyond it. 
-<p><b>Examples</b></p>
 <pre>
 h1 {box-shadow: 5px 10px gray;} table th    
 {box-shadow: inset 0.5em 0.75em 5px −2px    
 rgba(255,0,0,0.5);} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**box-sizing**  **Inh. N Anim. N**</h3>
+<!--  <h3>box-sizing  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>box-sizing</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>content-box &vert; padding-box &vert; border-box</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>content-box</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements that accept width or height values</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether the height and width of the element define the dimensions of the 
+	  content box (the historical behavior) or the border box. If the latter, the value of 
+	  width defines the distance from the left outer border edge to the right outer border 
+	  edge; similarly, height defines the distance from the top outer border edge to the 
+	  bottom outer border edge. Any padding or border widths are "subtracted" from those 
+	  dimensions instead of the historical "additive" behavior. Thus, given: body 
+	  {box-sizing: border-box; width: 880px; padding: 0 20px;} the final width of the 
+	  content area will be 840 pixels (880--20--20).</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-**Values** content-box &vert; padding-box &vert; border-box
-**Initial value** content-box
-**Computed value** As declared
-**Applies to** All elements that accept width or height values
-**Description** Defines whether the height and width of the element
-define the dimensions of the content box (the historical behavior) or
-the border box. If the latter, the value of width defines the distance
-from the left outer border edge to the right outer border edge;
-similarly, height defines the distance from the top outer border edge to
-the bottom outer border edge. Any padding or border widths are
-"subtracted" from those dimensions instead of the historical "additive"
-behavior. Thus, given:
-
-body {box-sizing: border-box; width: 880px; padding: 0 20px;} the
-final width of the content area will be 840 pixels (880--20--20).
-
-<p><b>Example</b></p>
 <pre>
 body {box-sizing: padding-box;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>caption-side Inh. Y Anim. N</h3>
+<!--  <h3>caption-side Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>caption-side</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>top &vert; bottom</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>top</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Elements with the display value table-caption</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the placement of a table caption with respect to the table box. The caption 
+	  is rendered as though it were a block-level element placed just before (or after) the 
+	  table.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-**Values** top &vert; bottom
-**Initial value** top
-**Computed value** As declared
-**Applies to** Elements with the display value table-caption
-**Description** Defines the placement of a table caption with respect to
-the table box. The caption is rendered as though it were a block-level
-element placed just before (or after) the table.
-
-<p><b>Example</b></p>
 <pre>
 caption {caption-side: top;}
 </pre>
-**Note** The values left and right appeared in CSS2 but were later
-dropped due to a lack of widespread support.
-
+      </td>
+	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>The values left and right appeared in CSS2 but were later dropped due to a lack of 
+	  widespread support.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**clear**     **Inh. N Anim. N**</h3>
+<!--  <h3>clear     Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>clear</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>left &vert; right &vert; both &vert; none</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Block-level elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines to which side (or sides) of an element no floating element may be placed. 
+	  If normal layout of a cleared element would result in a floated element appearing on 
+	  the cleared side, the cleared element is pushed down until it sits below (clears) the 
+	  floated element. In CSS1 and CSS2, this is accomplished by automatically increasing 
+	  the top margin of the cleared element. In CSS2.1, clearance space is added above the 
+	  element's top margin, but the margin itself is not altered. In either case, the end 
+	  result is that the element's top outer border edge is just below the bottom outer 
+	  margin edge of a floated element on the declared side.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
- **Values**    left &vert; right &vert; both &vert; none  
- **Initial     none
- value**      
- **Computed    As declared 
- value**      
- **Applies     Block-level elements
- to** 
-
- *     Defines to which side (or sides) of an element no   
- *Description**  floating element may be placed. If normal layout of 
- a cleared element would result in a floated element 
- appearing on the cleared side, the cleared element  
- is pushed down until it sits below (clears) the     
- floated element. In CSS1 and CSS2, this is  
- accomplished by automatically increasing the top    
- margin of the cleared element. In CSS2.1, clearance 
- space is added above the element's top margin, but  
- the margin itself is not altered. In either case,   
- the end result is that the element's top outer 
- border edge is just below the bottom outer margin   
-edge of a floated element on the declared side.     
-<p><b>Examples</b></p>
 <pre>
 h1 {clear: both;} p + h3 {clear: right;}    
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3> **clip-path** **Inh. N Anim P**</h3>
+<!--  <h3> clip-path Inh. N Anim P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>clip-path</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert; ellipse() 
+	  &vert; polygon() &rbrack; ‖ &lbrack; border-box &vert; padding-box &vert; 
+	  content-box &vert; margin-box &vert; fill-box &vert; stroke-box &vert; 
+	  view-box &rbrack; &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>none</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements (in SVG, applies to all graphics elements
+   and all container elements except the defs element)</td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>inset(), circle(), ellipse(), and polygon() values</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines a clipping shape inside of which an element is visible, and outside of which 
+	  it is invisible. url() values can be used to refer to an SVG file or an SVG clipPath 
+	  element to be used as the clipping shape.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-**Values**  none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert;
-   ellipse() &vert; polygon() &rbrack; ‖ &lbrack; border-box &vert;
-   padding-box &vert; content-box &vert; margin-box &vert; fill-box
-   &vert; stroke-box &vert; view-box &rbrack; &rbrack;
-**Initialnone
-  value**  
-**Computed  As declared
-  value**  
-**Applies to**   All elements (in SVG, applies to all graphics elements
-   and all container elements except the defs element)
-**Animatable**   inset(), circle(), ellipse(), and polygon() values
-**Description** Defines a clipping shape inside of which an element is
-visible, and outside of which it is invisible. url() values can be used
-to refer to an SVG file or an SVG clipPath element to be used as the
-clipping shape.
-
-<b>Examples</b>
 <pre>
 p.clipped {clip-path: url(shapes.svg#cloud02);}
 p.rounded {clip-path: ellipse(100px 50px at 75% 25%);}
 p.diamond {clip-path:
 polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**clip-rule** **Inh. N Anim. N**</h3>
+<!--  <h3>clip-rule  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>clip-rule</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>nonzero &vert; evenodd</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>nonzero </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All SVG graphics elements (circle, ellipse, image, line, path, polygon, polyline, rect, 
+	  text, and use) *if and only if* they are children of a clipPath element.</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Alters the way in which portions of a path that overlap each other cause the resulting 
+	  shape to be filled. A nonzero rule causes the entire shape to be filled. evenodd can result 
+	  in portions of the shape's interior being fully transparent.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+span.fullshape {clip-rule: nonzero;} span.knockouts 
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-**Values**    nonzero &vert; evenodd  
-**Initial     nonzero     
-value**      
-**Computed    As declared 
-value**      
-**Applies     All SVG graphics elements (circle, ellipse, image,  
-to**  line, path, polygon, polyline, rect, text, and use) 
-*if and only if* they are children of a clipPath    
-element     
-*     Alters the way in which portions of a path that     
-*Description**  overlap each other cause the resulting shape to be  
-filled. A nonzero rule causes the entire shape to   
-be filled. evenodd can result in portions of the    
-shape's interior being fully transparent.   
-<p><b>Examples</b></p>
-<pre>
-span.fullshape {clip-rule: nonzero;} span.knockouts 
-{clip-rule: evenodd;}  
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>**color**     **Inh. Y Anim. Y**</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6276,7 +6188,7 @@ pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>content</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -6337,7 +6249,7 @@ font-size: smaller;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>counter-increment</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -6391,7 +6303,7 @@ h1 {counter-increment: section;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>counter-reset</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -6442,13 +6354,13 @@ h1 {counter-reset: section;} h2 {counter-reset:
 subsec 1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>cursor</b>    <b>Inh. Y Anim. N</b></h3>
+<!--  <h3><b>cursor</b>    <b>Inh. Y Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>cursor</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -6526,13 +6438,13 @@ a.moreinfo {cursor: help;}
 a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>direction</b>  <b>Inh. Y Anim. Y</b></h3>
+<!--  <h3><b>direction</b>  <b>Inh. Y Anim. Y</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>direction</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -6594,12 +6506,12 @@ property.
 &vert;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>display</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>display</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>display</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -6684,8 +6596,8 @@ tr {display: table-row;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>empty-cells</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -6738,13 +6650,13 @@ th, td {empty-cells: show;}
 
 <p><b>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>filter</b>    <b>Inh. N Anim. Y</b></h3>
+<!--  <h3><b>filter</b>    <b>Inh. N Anim. Y</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>filter</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
