@@ -2640,7 +2640,7 @@ p:before {content: attr(class);}
 a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>::first-letter<.h4>
+<h3>::first-letter</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <b>Generates</b>    A pseudo-element that contains the first letter of an element.  
 <p><b>Description</b>  Styles the first letter of an element. Any leading  
