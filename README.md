@@ -8601,8 +8601,45 @@ ul {list-style-type: square;}
 ol {list-style-type: lower-roman;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### margin    Inh. N Anim. Y
+<!--  #### margin    Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>margin</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4} 
 Initial value    Not defined 
 Computed value   See individual properties   
@@ -8629,8 +8666,45 @@ h1 {margin: 2ex;}
 p {margin: auto;} img {margin: 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### margin-bottom Inh. N Anim. Y
+<!--  #### margin-bottom Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>margin-bottom</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 Initial value 0
 ComputedFor length values, the absolute length; otherwise, as
@@ -8647,8 +8721,45 @@ ul {margin-bottom: 0.5in;}
 h1 {margin-bottom: 2%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### margin-left Inh. N Anim. Y
+<!--  #### margin-left Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>margin-left</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 Initial value 0
 ComputedFor length values, the absolute length; otherwise, as
@@ -8665,8 +8776,45 @@ p {margin-left: 5%;}
 pre {margin-left: 3em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### margin-right Inh. N Anim. Y
+<!--  #### margin-right Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>margin-right</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
 Initial value 0
 ComputedFor length values, the absolute length; otherwise, as
@@ -8683,8 +8831,45 @@ img {margin-right: 30px;}
 ol {margin-right: 5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### margin-top Inh. N Anim. Y
+<!--  #### margin-top Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>margin-top</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 Initial     0   
 value      
@@ -8702,8 +8887,45 @@ warranted (see margin).
 ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask Inh. N Anim. P
+<!--  #### mask Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>mask</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; / 
 *&lt;masksize&gt;* &rbrack;? ‖ *&lt;mask-repeat&gt;* ‖    
 *&lt;mask-clip&gt;* ‖ *&lt;maskorigin&gt;* ‖
@@ -8734,8 +8956,45 @@ add;
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-clip Inh. N Anim. N
+<!--  #### mask-clip Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>mask-clip</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    &lbrack; content-box &vert; padding-box &vert; border-box &vert; 
  margin-box &vert; fill-box &vert; stroke-box &vert; view-box &vert; 
  no-clip &rbrack;# 
@@ -8759,8 +9018,45 @@ p:nth-child(2) {mask-clip: padding-box;}
 p:nth-child(3) {mask-clip: content-box;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-composite Inh. N Anim. N
+<!--  #### mask-composite Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>mask-comnposite</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values&lbrack; add &vert; subtract &vert; intersect &vert; exclude &rbrack;#
 Initial value add
 Computed value  As declared
@@ -8782,8 +9078,45 @@ img.masked {mask-composite: add;}
 span.mask3 {mask-composite: subtract, add, add;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-image Inh. N Anim. N
+<!--  #### mask-image Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>mask-image</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values   &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;# 
 Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     
  Definitions  *&lt;imageset()&gt;*, *&lt;element()&gt;*,   
@@ -8814,8 +9147,45 @@ will be used to determine the masking of the element.
 &ast;.masked.theatre {mask-image: url(theatre-masks.svg);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-mode Inh. N Anim. N
+<!--  #### mask-mode Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>mask-mode</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values&lbrack; alpha &vert; luminance &vert; match-source &rbrack;#
 Initial value match-source
 ComputedAs declared
@@ -8845,12 +9215,12 @@ p {mask-mode: alpha;}
 img.lum {mask-mode: luminance, alpha;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-origin
+<!--  #### mask-origin  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>mask-origin</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -8902,13 +9272,13 @@ div.inset {mask-origin: content-box;}
 svg#radio {mask-origin: stroke-box, fill-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-position Inh. N Anim. P
+<!--  #### mask-position Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>mask-position</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8959,8 +9329,45 @@ p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 {mask-position: 5em 120%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### mask-repeat Inh. N Anim. Y
+<!-- <h3>mask-repeat Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>mask-repeat</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    
  round &vert; no-repeat &rbrack;{1,2} &rbrack;# 
 Initial     repeat 
@@ -8981,13 +9388,13 @@ p:nth-child(2) {mask-repeat: repeat round;}
 p:nth-child(3) {mask-repeat: space no-repeat;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>mask-size Inh. N Anim. P</h3>
+<!--  <h3>mask-size Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>mask-size</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9040,12 +9447,12 @@ p:nth-child(2) {mask-size: 2em 3em, 100%;} p:nth-child(3) {mask-size:
 cover, 100%, contain;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>mask-type  Inh. N Anim. N</h3>
+<!--  <h3>mask-type  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>mask-type</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -9095,7 +9502,6 @@ svg #mask {mask-type: alpha;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>max-height Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <table style="width:500px;">
   <thead>
     <tr>
@@ -9137,13 +9543,13 @@ div#footer {max-height: 3em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>max-width Inh. N Anim. P</h3>
+<!--  <h3>max-width Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>max-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9199,13 +9605,13 @@ not permitted.
 #sidebar img {width: 50px; max-width: 100%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>min-height Inh. N Anim. Y</h3>
+<!--  <h3>min-height Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>min-height</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9259,13 +9665,13 @@ Negative values are not permitted.
 div#footer {min-height: 1em;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>min-width Inh. N Anim. Y</h3>
+<!--  <h3>min-width Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>min-width</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9321,12 +9727,12 @@ are not permitted.
 div.aside {width: 13em; max-width: 33%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>mix-blend-mode Inh. N Anim. N</h3>
+<!--  <h3>mix-blend-mode Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>mix-blend-mode</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -9391,12 +9797,12 @@ li.shadowed {mix-blend-mode: darken;} aside
 color-burn, luminosity, darken;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>object-fit  Inh. N Anim. N</h3>
+<!--  <h3>object-fit  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>object-fit</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -9460,13 +9866,13 @@ img:nth-of-type(2) {object-fit: fill;}
 img:nth-of-type(3) {object-fit: cover;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>object-position Inh. N Anim. Y</h3>
+<!--  <h3>object-position Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>object-position</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9515,13 +9921,13 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
 {object-position: left 142%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>opacity  Inh. N Anim. Y</h3>
+<!--  <h3>opacity  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>opacity</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9586,13 +9992,13 @@ z-index value to 0.
 h2 {opacity: 0.8;} .hideme {opacity: 0;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>order     Inh. N Anim. Y</h3>
+<!--  <h3>order     Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>order</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9647,13 +10053,13 @@ li:nth-of-type(6) {order: 1;}
 li:nth-of-type(14) {order: -1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>orphans   Inh. N Anim. Y</h3>
+<!--  <h3>orphans   Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>orphans</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9707,7 +10113,7 @@ p {orphans: 4;} ul {orphans: 2;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>outline </h3></th>
+	  <th width="200"><h3>outline</h3></th>
 	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
@@ -9759,13 +10165,13 @@ they do not change or otherwise affect the placement of elements.
 form:focus {outline: outset cyan 0.25em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>outline-color Inh. N Anim. Y</h3>
+<!--  <h3>outline-color Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>outline-color</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
