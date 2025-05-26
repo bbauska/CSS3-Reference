@@ -3454,12 +3454,12 @@ running, paused, running;} table {animation-play-state: running;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>animation-timing-function</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3506,12 +3506,12 @@ cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
 linear;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>backface-visibility</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3551,13 +3551,13 @@ div.card {backface-visibility: hidden;}
 span.cubeside {backface-visibility: visible;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>background</b>   <b>Inh. N Anim. P</b></h3>
+<!--  <h3><b>background</b>   <b>Inh. N Anim. P</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>background</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -3617,12 +3617,12 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 #555;} pre {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>background-attachment</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>background-attachment</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>background-attachments</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3660,12 +3660,12 @@ body {background-attachment: scroll, scroll, fixed;}
 div.fixbg {background-attachment: fixed;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>  </h3></th>
+	  <th width="200"><h3>background-blend-mode</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -3711,7 +3711,7 @@ li.shadowed {background-blend-mode: darken;} aside
 {background-blend-mode: color-burn, luminosity, darken;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>background-clip Inh. N Anim. N</h3>
+<!--  <h3>background-clip Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3756,7 +3756,7 @@ body {background-clip: content-box;}
 .callout {background-clip: content-box, border-box, padding-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>background-color  Inh. N Anim. Y</h3>
+<!--  <h3>background-color  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3809,7 +3809,7 @@ rgba(50%,50%,50%,0.33);}
 pre {background-color: #FF9;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>background-image</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>background-image</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4005,13 +4005,13 @@ repeat-y, round space, repeat;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>background-size</b>  <b>Inh. N Anim. Y</b></h3>
+<!--  <h3><b>background-size</b>  <b>Inh. N Anim. Y</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>background-size</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4067,13 +4067,13 @@ body {background-size: 100% 90%;}
 div.photo {background-size: cover;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border    Inh. N Anim. P</h3>
+<!--  <h3>border    Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4127,13 +4127,13 @@ solid 1px;}
 p.warning {border: double 5px red;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-bottom Inh. N Anim. P</h3>
+<!--  <h3>border-bottom Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-bottom</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4192,8 +4192,8 @@ a:active {border-bottom: purple 2px dashed;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-bottom-color</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4268,13 +4268,13 @@ a:active {border-bottom-color: purple;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-bottom-left-radius Inh. N Anim. Y</h3>
+<!--  <h3>border-bottom-left-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-bottom-left-radius</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4327,13 +4327,13 @@ h1 {border-bottom-left-radius: 10%;}
 h2 {border-bottom-left-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-bottom-right-radius Inh. N Anim. Y</h3>
+<!--  <h3>border-bottom-right-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-bottom-right-radius</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4385,12 +4385,12 @@ h1 {border-bottom-right-radius: 10%;}
 h2 {border-bottom-right-radius: 1em 10px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-bottom-style Inh. N Anim. N</h3>
+<!--  <h3>border-bottom-style Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>border-bottom-style</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -4483,13 +4483,13 @@ a:active {border-bottom-width: 2px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-collapse Inh. Y Anim. Y</h3>
+<!--  <h3>border-collapse Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>border-collapse</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -4702,12 +4702,12 @@ div#pow {border-image-outset: 10 17 13 5;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>border-image-repeat Inh. N Anim. N</h3>
+<!--  <h3>border-image-repeat Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>border-image-repeat</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -5108,7 +5108,7 @@ pre {border-left-width: 4px;}
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td>Four values, each a *&lt;percentage&gt;* or *&lt;length&gt;* 
+	  <td>Four values, each a <i>&lt;percentage&gt;</i> or <i>&lt;length&gt;</i> 
    made absolute</td>
     </tr>
 	<tr>
@@ -5157,7 +5157,7 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖ *&lt;bordercolor&gt;* &rbrack;</td>
+	  <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ <i>&lt;bordercolor&gt;</i> &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5200,7 +5200,7 @@ h3 {border-right: cyan 1em inset;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;color&gt;*</td>
+	  <td><i>&lt;color&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5330,7 +5330,7 @@ h3 {border-right-width: 1em;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;* *&lt;length&gt;*? </td>
+	  <td><i>&lt;length&gt;</i> <i>&lt;length&gt;</i>? </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5428,7 +5428,7 @@ img {border-style:inset;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖ *&lt;bordercolor&gt;* &rbrack;</td>
+	  <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ <i>&lt;bordercolor&gt;</i> &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5476,7 +5476,7 @@ h1 {border-top: dashed 1px gray;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;color&gt;*</td>
+	  <td><i>&lt;color&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5514,7 +5514,7 @@ h1 {border-top-color: gray;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}</td>
+	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,2}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5650,7 +5650,7 @@ h1 {border-top-style: dashed;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>thin &vert; medium &vert; thick &vert; *&lt;length&gt;*</td>
+	  <td>thin &vert; medium &vert; thick &vert; <i>&lt;length&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5695,7 +5695,7 @@ h1 {border-top-width: 1px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;{1,4} </td>
+	  <td>&lbrack; thin &vert; medium &vert; thick &vert; <i>&lt;length&gt;</i> &rbrack;{1,4} </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5711,14 +5711,10 @@ h1 {border-top-width: 1px;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>A shorthand property that defines the width for the 
-*Description  overall border of an element or for each side  
-individually. The width will take effect for a 
-given border only if the border's style is  
-something other than none or hidden. If the border  
- style is none, the border width is effectively 
-eset to 0. Negative length values are not  
-permitted.  </td>
+	  <td>A shorthand property that defines the width for the overall border of an element or 
+	  for each side individually. The width will take effect for a given border only if the 
+	  border's style is something other than none or hidden. If the border style is none, the 
+	  border width is effectively reset to 0. Negative length values are not permitted.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -5744,7 +5740,7 @@ img {border-width: 5px thick thin 1em;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto</td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; auto</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5837,7 +5833,7 @@ span {box-decoration-break: clone;} a
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>box-shadow Inh. N Anim. Y</h3>
+<!--  <h3>box-shadow Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5875,7 +5871,7 @@ span {box-decoration-break: clone;} a
 	  increase the size of the shadow and negative values contract it. Blur values cannot 
 	  be negative. Note that all shadows are clipped by the element's border edge. Thus, an 
 	  outset shadow is only drawn outside the border edge. A semitransparent or fully 
-	  transparent element background will *not* reveal an outset shadow "behind" the element. 
+	  transparent element background will <i>not</i> reveal an outset shadow "behind" the element. 
 	  Similarly, inset shadows are only visible inside the border edge and are never drawn 
 	  beyond it.</td>
     </tr>
@@ -6048,7 +6044,7 @@ h1 {clear: both;} p + h3 {clear: right;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>none &vert; *&lt;uri&gt;* &vert; &lbrack; &lbrack; inset() &vert; circle() &vert; ellipse() 
+	  <td>none &vert; <i>&lt;uri&gt;</i> &vert; &lbrack; &lbrack; inset() &vert; circle() &vert; ellipse() 
 	  &vert; polygon() &rbrack; ‖ &lbrack; border-box &vert; padding-box &vert; 
 	  content-box &vert; margin-box &vert; fill-box &vert; stroke-box &vert; 
 	  view-box &rbrack; &rbrack;</td>
@@ -6115,7 +6111,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
 	<tr>
 	  <td><b>Applies to</b></td>
 	  <td>All SVG graphics elements (circle, ellipse, image, line, path, polygon, polyline, rect, 
-	  text, and use) *if and only if* they are children of a clipPath element.</td>
+	  text, and use) <i>if and only if</i> they are children of a clipPath element.</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
@@ -6223,12 +6219,12 @@ pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
   </tbody>
 </table>
 
-<b>Values</b>    normal &vert; &lbrack; *&lt;string&gt;* &vert; *&lt;uri&gt;* &vert;   
-*&lt;counter&gt;* &vert; attr(*&lt;identifier&gt;*) &vert;  
+<b>Values</b>    normal &vert; &lbrack; <i>&lt;string&gt;</i> &vert; <i>&lt;uri&gt;</i> &vert;   
+<i>&lt;counter&gt;</i> &vert; attr(<i>&lt;identifier&gt;</i>) &vert;  
 open-quote &vert; close-quote &vert; no-open-quote &vert;  
 no-close-quote &rbrack;+  
 <b>Initial value</b>    normal 
-<b>Computed value</b>   For *&lt;uri&gt;* values, an absolute URI; for  
+<b>Computed value</b>   For <i>&lt;uri&gt;</i> values, an absolute URI; for  
   attribute references, the resulting string; 
 otherwise, as declared 
 <b>Applies to</b>    ::before and ::after pseudo-elements
@@ -6244,7 +6240,7 @@ a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;
 font-size: smaller;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>counter-increment Inh. N Anim. N</h3>
+<!--  <h3>counter-increment Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6256,49 +6252,38 @@ font-size: smaller;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; <i>&lt;identifier&gt;</i> <i>&lt;integer&gt;</i>? &rbrack;+ &vert; none</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>User agent--dependent</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>With this property, counters can be incremented (or decremented) by any value, 
+	  positive or negative or 0. If no <i>&lt;integer&gt;</i> is supplied, it defaults to 1.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {counter-increment: section;}
+&ast;.backward li {counter-increment: counter −1;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-<b>Values</b> &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none
-<b>Initial value</b> User agent--dependent
-<b>Computed value</b> As declared
-<b>Applies to</b> All elements
-<b>Description</b> With this property, counters can be incremented (or
-decremented) by any value, positive or negative or 0. If no
-*&lt;integer&gt;* is supplied, it defaults to 1.
-
-<p><b>Examples</b></p>
-<pre>
-h1 {counter-increment: section;}
-&ast;.backward li {counter-increment: counter −1;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>counter-reset Inh. N Anim. N</h3>
+<!--  <h3>counter-reset Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6310,49 +6295,36 @@ h1 {counter-increment: section;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; <i>&lt;identifier&gt;</i> <i>&lt;integer&gt;</i>? &rbrack;+ &vert; none </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>User agent--dependent </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>With this property, counters can be reset (or set for the first time) to any value, 
+	  positive or negative. If no <i>&lt;integer&gt;</i> is supplied, it defaults to 0.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {counter-reset: section;} h2 {counter-reset:     
+subsec 1;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-<b>Values</b>    &lbrack; *&lt;identifier&gt;* *&lt;integer&gt;*? &rbrack;+ &vert; none 
-<b>Initial</b>     User agent--dependent  
-<b>value</b>      
-<b>Computed Value</b>   As declared 
-<b>Applies</b>     All elements
-<b>to</b> 
-With this property, counters can be reset (or set   
-<b>Description</b>  for the first time) to any value, positive or  
-negative. If no *&lt;integer&gt;* is supplied, it  
-defaults to 0. 
-<p><b>Examples</b></p>
-<pre>
-h1 {counter-reset: section;} h2 {counter-reset:     
-subsec 1;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>cursor</b>    <b>Inh. Y Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6366,77 +6338,55 @@ subsec 1;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; <i>&lt;uri&gt;</i> &lbrack; <i>&lt;number&gt;</i> <i>&lt;number&gt;</i> &rbrack;?,&rbrack;&ast; 
+	  &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help &vert; pointer &vert; 
+	  progress &vert; wait &vert; cell &vert; crosshair &vert; text &vert; vertical-text &vert; 
+	  alias &vert; copy &vert; move &vert; no-drop &vert; not-allowed &vert; e-resize &vert; n-resize 
+      &vert; ne-resize &vert; nw-resize &vert; s-resize &vert; se-resize &vert; sw-resize &vert; w-resize 
+      &vert; ew-resize &vert; ns-resize &vert; nesw-resize &vert; nwse-resize &vert; col-resize &vert; 
+	  row-resize &vert; allscroll &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>auto</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>For <i>&lt;uri&gt;</i> values, given that a <i>&lt;uri&gt;</i> resolves to a supported file type, 
+	  a single absolute URI with optional <i>x</i>,<i>y</i> coordinates; otherwise, as declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the cursor shape to be used when a mouse pointer is placed within the 
+	  boundary of an element. Authors are cautioned to remember that users are typically 
+	  very aware of cursor changes and can be easily confused by changes that seem counter 
+	  intuitive. For example, making any noninteractive element switch the cursor state to 
+	  pointer is quite likely to cause user frustration. Note that the value syntax makes 
+	  URI values optional, but the keyword mandatory. Thus, you can specify any number of 
+	  URIs to external cursor resources, but the value <i>must</i> end with a keyword. Leaving 
+	  off the keyword will cause conforming user agents to drop the declaration entirely. 
+	  CSS3 allows two numbers to be supplied with a <i>&lt;uri&gt;</i> value. These define the 
+	  <i>x</i>,<i>y</i> coordinates of the cursor's "active point"; that is, the point in the cursor 
+	  that is used for determining hover states, active actions, and so forth. If no numbers 
+	  are supplied and the cursor image has no "intrinsic hotspot" (to quote the specification), 
+	  the top-left corner of the image is used (equivalent to 0 0). Note that the numbers are 
+	  unitless and are interpreted relative to the "cursor's coordinate system" (to quote again).</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+a.moreinfo {cursor: help;}
+a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-<b>Values</b> &lbrack; *&lt;uri&gt;* &lbrack; *&lt;number&gt;* *&lt;number&gt;* &rbrack;?,&rbrack;&ast;  
- &lbrack; auto &vert; default &vert; none &vert; context-menu &vert; help  
- &vert; pointer &vert; progress &vert; wait &vert; cell &vert; crosshair 
- &vert; text &vert; vertical-text &vert; alias &vert; copy &vert; move   
- &vert; no-drop &vert; not-allowed &vert; e-resize &vert; n-resize   
- &vert; ne-resize &vert; nw-resize &vert; s-resize &vert; se-resize  
- &vert; sw-resize &vert; w-resize &vert; ew-resize &vert; ns-resize  
- &vert; nesw-resize &vert; nwse-resize &vert; col-resize &vert; 
- row-resize &vert; allscroll &rbrack;  
-<b>Initial</b>  auto
-<b>value</b>     
-<b>Computed</b> For *&lt;uri&gt;* values, given that a *&lt;uri&gt;*
-<b>value</b> resolves to a  
-supported file type, a single absolute URI with optional *x*,*y*
-coordinates; otherwise, as declared <b>Applies to</b> All elements
-
-<b>Description</b> Defines the cursor shape to be used when a mouse pointer
-is placed within the boundary of an element. Authors are cautioned to
-remember that users are typically very aware of cursor changes and can
-be easily confused by changes that seem counterintuitive. For example,
-making any noninteractive element switch the cursor state to pointer is
-quite likely to cause user frustration.
-
-Note that the value syntax makes URI values optional, but the keyword
-mandatory. Thus, you can specify any number of URIs to external cursor
-resources, but the value *must* end with a keyword. Leaving off the
-keyword will cause conforming user agents to drop the declaration
-entirely.
-
-CSS3 allows two numbers to be supplied with a *&lt;uri&gt;* value. These
-define the *x*,*y* coordinates of the cursor's "active point"; that
-is, the point in the cursor that is used for determining hover states,
-active actions, and so forth. If no numbers are supplied and the
-cursor image has no "intrinsic hotspot" (to quote the specification),
-the top-left corner of the image is used (equivalent to 0 0). Note
-that the numbers are unitless and are interpreted relative to the
-"cursor's coordinate system" (to quote again).
-
-<p><b>Examples</b></p>
-<pre>
-a.moreinfo {cursor: help;}
-a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>direction</b>  <b>Inh. Y Anim. Y</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6487,7 +6437,7 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
  Defines the base writing direction of blocks and    
  <b>Description</b>  the direction of embeddings and overrides for the   
  Unicode Bidirectional Algorithm (sometimes called   
-*bidi*). Furthermore, it changes the way a number of properties and
+<i>bidi</i>). Furthermore, it changes the way a number of properties and
 layout decisions are handled, including but not limited to the
 placement of table cells in a table row and the layout algorithms for
 block boxes.
@@ -6501,8 +6451,8 @@ property.
 <pre>
 &ast;:lang(en) {direction: ltr;}
 &ast;:lang(ar) {direction: rtl;}
-&lbrack; *&lt;display-outside&gt;* ‖ *&lt;display-inside&gt;* &rbrack; &vert;
-*&lt;displaylistitem&gt;* &vert; *&lt;display-internal&gt;* &vert; *&lt;display-box&gt;*
+&lbrack; <i>&lt;display-outside&gt;</i> ‖ <i>&lt;display-inside&gt;</i> &rbrack; &vert;
+<i>&lt;displaylistitem&gt;</i> &vert; <i>&lt;display-internal&gt;</i> &vert; <i>&lt;display-box&gt;</i>
 &vert;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6547,12 +6497,12 @@ property.
 </table>
 
 <b>Values</b>
-*&lt;display-legacy&gt;*
+<i>&lt;display-legacy&gt;</i>
 <b>Definitions</b>
 <i><b>&lt;display-outside&gt;</b></i>block &vert; inline &vert; run-in
 <i><b>&lt;display-inside&gt;</b></i> flow &vert; flow-root &vert; table &vert; flex &vert; grid &vert;
 ruby
-<i><b>&lt;display-listitem&gt;</b></i>list-item && *&lt;display-outside&gt;*? && &lbrack; flow
+<i><b>&lt;display-listitem&gt;</b></i>list-item && <i>&lt;display-outside&gt;</i>? && &lbrack; flow
 &vert; flowroot &rbrack;?
 <i><b>&lt;display-internal&gt;</b></i>table-row-group &vert; table-header-group &vert;
 table-
@@ -6561,9 +6511,9 @@ table-
      tablecolumn-group &vert; table-column &vert; table-caption &vert;
      ruby-base &vert; ruby-text &vert; ruby-base-container &vert;
      ruby-text-container
-</b>*&lt;display-box&gt;</b>* contents &vert; none
+</b><i>&lt;display-box&gt;</i></b> contents &vert; none
 
-</b>*&lt;display-legacy&gt;*</b>   inline-block &vert; inline-list-item &vert; inline-table &vert;
+</b><i>&lt;display-legacy&gt;</i></b>   inline-block &vert; inline-list-item &vert; inline-table &vert;
      inline-flex &vert; inline-grid
 <b>Initial value</b>  inline
 <b>Computed value</b> As declared
@@ -6756,8 +6706,8 @@ url(/assets/filters.svg#spotlight);}
   </tbody>
 </table>
 
-<b>Values</b>&lbrack; *&lt;flex-grow&gt;* *&lt;flex-shrink&gt;*?
-    *&lt;flex-basis&gt;* &rbrack; &vert; none
+<b>Values</b>&lbrack; <i>&lt;flex-grow&gt;</i> <i>&lt;flex-shrink&gt;</i>?
+    <i>&lt;flex-basis&gt;</i> &rbrack; &vert; none
 <b>Initial value</b> 0 1 auto
 <b>ComputedRefer to individual properties
   value</b>   
@@ -6775,7 +6725,7 @@ basis on its own, in which case the growth and
 <b>Note</b> shrink factors are set to their defaults of 0 and 1, 
 <b>flex-basis</b>   respectively. Including the growth and shrink
    factors is optional, but if one is included, the     
-   other *must* also be present.
+   other <i>must</i> also be present.
 <pre>
 /&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
 nav ul li {flex: 1 0 auto;}  
@@ -6783,7 +6733,7 @@ nav ul li {flex: 1 0 auto;}
 ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
 /&ast; INVALID &ast;/ 
 </pre>
-It is *strongly* recommended that authors use this   
+It is <i>strongly</i> recommended that authors use this   
 property instead of the separate properties it  
 encompasses. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6827,7 +6777,7 @@ encompasses.
   </tbody>
 </table>
 
-Values     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
+Values     content &vert; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert;    
    auto &rbrack; 
 Initial value     auto 
 Computed value    As declared, with length values made absolute
@@ -6835,7 +6785,7 @@ Percentages     Relative to the flex container's inner main axis size
 Applies to   
  Flex items (children of flex containers)     
  
-Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only
+Animatable  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only
    
 Description  Defines the initial size of a flex item, used as a 
    basis for all subsequent flex sizing calculations.   
@@ -6847,7 +6797,7 @@ nav ul li {flex-basis: 50%;} ol.gallery li
    {flex-basis: 300px;} div span.whatevs {flex-basis:   
    auto;}  
 </pre>
-Note  It is *strongly* recommended that instead of this    
+Note  It is <i>strongly</i> recommended that instead of this    
    property, authors use the flex shorthand property to 
    set an item's flex basis.    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6975,13 +6925,13 @@ nav.sidenav {display: flex; flex-flow: column nowrap;}
   </tbody>
 </table>
 
-Values    *&lt;number&gt;*
+Values    <i>&lt;number&gt;</i>
 Initial value    0   
 Computed value   As declared 
 Applies to     Flex items (children of flex containers)    
      
- Sets the *growth factor* for a flex item. The value 
-Description  Sets the *growth factor* for a flex item. The value 
+ Sets the <i>growth factor</i> for a flex item. The value 
+Description  Sets the <i>growth factor</i> for a flex item. The value 
   supplied is summed up with all the growth factors of the flex items in the same flex line, 
  and the amount they grow is scaled in proportion to their growth factors as a percentage of the whole. 
 
@@ -6992,7 +6942,7 @@ nav ul li {flex-grow: 1;}
 ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 {flex-grow: 0.5;}
 </pre>
-Note It is *strongly* recommended that instead of this property, authors use the flex shorthand property to set an item's flex
+Note It is <i>strongly</i> recommended that instead of this property, authors use the flex shorthand property to set an item's flex
 growth factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  #### flex-shrink  Inh. N Anim. Y  -->
@@ -7035,14 +6985,14 @@ growth factor.
   </tbody>
 </table>
 
-Values    *&lt;number&gt;*
+Values    <i>&lt;number&gt;</i>
 Initial     1   
 value      
 Computed    As declared 
 value      
 Applies     Flex items (children of flex containers)    
 to 
-     Sets the *shrink factor* for a flex item. The value 
+     Sets the <i>shrink factor</i> for a flex item. The value 
 Description  supplied is summed up with all the shrink factors   
 of the other flex items in the same flex line, and  
 the amount they shrink is scaled proportional to    
@@ -7053,7 +7003,7 @@ nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/
 ol.gallery li {flex-shrink: 0.5;} div span.whatevs  
 {flex-shrink: 1;}   
 </pre>
-Note It is *strongly* recommended that instead of this   
+Note It is <i>strongly</i> recommended that instead of this   
 property, authors use the flex shorthand property   
 to set an item's flex shrink factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7213,29 +7163,29 @@ p.sidebar {float: right; width: 15em;}
 	</tr>
   </tbody>
 </table>
-Values    &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  
- ‖ *&lt;fontweight&gt;* &rbrack;? *&lt;font-size&gt;* &lbrack; / 
- *&lt;line-height&gt;* &rbrack;? *&lt;fontfamily&gt;*&rbrack; &vert; caption 
+Values    &lbrack;&lbrack; <i>&lt;font-style&gt;</i> ‖ &lbrack; normal &vert; small-caps &rbrack;  
+ ‖ <i>&lt;fontweight&gt;</i> &rbrack;? <i>&lt;font-size&gt;</i> &lbrack; / 
+ <i>&lt;line-height&gt;</i> &rbrack;? <i>&lt;fontfamily&gt;</i>&rbrack; &vert; caption 
  &vert; icon &vert; menu &vert; message-box &vert; small-caption &vert;  
  status-bar  
 Initial     Refer to individual properties 
  value      
 Computed    See individual properties (font-style, etc.)
  value      
- *     Calculated with respect to the parent element for   
-Percentages  *&lt;font-size&gt;* and with respect to the element's   
- *&lt;fontsize&gt;* for *&lt;line-height&gt;*
+      Calculated with respect to the parent element for   
+Percentages  <i>&lt;font-size&gt;</i> and with respect to the element's   
+ <i>&lt;fontsize&gt;</i> for <i>&lt;line-height&gt;</i>
 Applies     All elements
  to 
   Refer to individual font properties to see which    
 Animatable  are animatable 
- *     A shorthand property used to set all the aspects of 
- *Description  an element's font at once. It can also be used to   
+ </i>     A shorthand property used to set all the aspects of 
+ Description  an element's font at once. It can also be used to   
  set the element's font to match an aspect of the    
  user's computing environment using keywords such as 
  icon. If keywords are not used, the minimum font    
- value *must* include the font size and family *in   
- that order*, and any font value that is not a  
+ value <i>must</i> include the font size and family in   
+ that order, and any font value that is not a  
  keyword must end with the font family. Otherwise,   
  the font declaration will be ignored.  
 <p><b>Examples</b></p>  
@@ -7287,7 +7237,7 @@ encouraged for fallback purposes &ast;/
 	</tr>
   </tbody>
 </table>
-Values    &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    
+Values    &lbrack; <i>&lt;family-name&gt;</i> &vert; <i>&lt;generic-family&gt;</i> &rbrack;#    
 Initial     User agent--specific
 value      
 Computed    As declared 
@@ -7303,7 +7253,7 @@ containing the glyphs needed to display the content. Therefore, using
 generic family names as a fallback is strongly encouraged. Font names
 that contain spaces or nonalphabetic characters should be quoted to
 minimize potential confusion. In contrast, generic fallback family names
-should *never* be quoted.
+should never be quoted.
 
 <p><b>Examples</b></p>
 <pre>
@@ -7352,7 +7302,7 @@ p {font-family: Helvetica, Arial, sans-serif;} li
 	</tr>
   </tbody>
 </table>
-Values     normal &vert; *&lt;feature-tag-value&gt;*&#35;  
+Values     normal &vert; <i>&lt;feature-tag-value&gt;</i>&#35;  
 Initial value normal
 Computed value    As declared  
 Applies to     All elements 
@@ -7416,15 +7366,15 @@ Computed    As declared
 value      
 Applies     All elements
 to 
-*     In effect, allows the author to disable kerning of  
-*Description  text for a given element. The default of auto tells 
+     In effect, allows the author to disable kerning of  
+Description  text for a given element. The default of auto tells 
 user agents to do what they normally do, whatever   
 that is. normal directs the user agent to use any   
 kerning information in the font face to kern text,  
 even if it normally wouldn't. With none, kerning is 
 disabled, even if the face has kerning information  
 and the user agent would make use of it. Note that  
-kerning is done *before* any letter spacing is 
+kerning is done before any letter spacing is 
 altered (see letterspacing).
 <p><b>Examples</b></p>
 <pre>
@@ -7475,19 +7425,19 @@ Note Has a corresponding &#64;font-face descriptor.
 </table>
 Values xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
 x-large &vert; xx-large &vert; smaller &vert; larger &vert; 
-*&lt;length&gt;* &vert;     
+<i>&lt;length&gt;</i> &vert;     
      
-*&lt;percentage&gt;*    
+<i>&lt;percentage&gt;</i>    
 Initial  medium 
 value     
 Computed For length values, the absolute length; otherwise,  
 value as declared 
-*  Calculated with respect to the parent element's     
-*Percentages  font size   
+  Calculated with respect to the parent element's     
+Percentages  font size   
 Applies to  All elements
-Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
-*  Defines the size of the font. The size can be  
-*Description  defined as an absolute size, a relative size, a     
+Animatable  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
+  Defines the size of the font. The size can be  
+Description  defined as an absolute size, a relative size, a     
 length value, or a  
 
 percentage value. Negative length and percentage values are not
@@ -7544,11 +7494,11 @@ p.caption {font-size: 9px;}
 	</tr>
   </tbody>
 </table>
-Values *&lt;number&gt;* &vert; none
+Values <i>&lt;number&gt;</i> &vert; none
 Initial value none
 ComputedAs declared value
 Applies to    All elements
-Description   Defines an *aspect value* for the element, which is
+Description   Defines an aspect value for the element, which is
     used to scale fonts such that they more closely match
     each other in cases where fallback fonts are used. The
     proper aspect value for a font is its true xheight
@@ -7605,7 +7555,7 @@ ultra-expanded
 Initial value normal Computed value As declared
 Applies to All elements
 Description Replaces a given font face with a narrower or wider
-variant, but *only* if the face has narrower or wider variants defined.
+variant, but only if the face has narrower or wider variants defined.
 User agents will not programmatically stretch or squeeze a face, but
 only swap in a variant face (if it exists).
 
@@ -7659,8 +7609,8 @@ Computed    As declared
 value      
 Applies     All elements
 to 
-*     Defines whether the font uses an italic, oblique,   
-*Description  or normal font face. Italic text is generally  
+     Defines whether the font uses an italic, oblique,   
+Description  or normal font face. Italic text is generally  
 defined as a separate face within the font family.  
 It is theoretically possible for a user agent to    
 compute a slanted font face from the normal face.   
@@ -7772,26 +7722,26 @@ pre code {font-synthesis: style;}
 </table>
 Values  normal &vert; small-caps 
  (CSS2.1)     
-Values  normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖  
+Values  normal &vert; none &vert; &lbrack; <i>&lt;common-lig-values&gt;</i> ‖  
  (Level 3)    
-   *&lt;discretionary-lig-values&gt;* ‖     
-   *&lt;historical-lig-values&gt;* ‖
-   *&lt;contextual-alt-values&gt;* ‖
-   stylistic(*&lt;featurevalue-name&gt;*) ‖ 
+   <i>&lt;discretionary-lig-values&gt;</i> ‖     
+   <i>&lt;historical-lig-values&gt;</i> ‖
+   <i>&lt;contextual-alt-values&gt;</i> ‖
+   stylistic(<i>&lt;featurevalue-name&gt;</i>) ‖ 
    historical-forms ‖   
-   styleset(*&lt;feature-value-name&gt;*#) ‖
-   charactervariant(*&lt;feature-value-name&gt;*#) ‖
-   swash(*&lt;featurevalue-name&gt;*) ‖     
-   ornaments(*&lt;feature-value-name&gt;*) ‖
-   annotation(*&lt;feature-value-name&gt;*) ‖ &lbrack; smallcaps  
+   styleset(<i>&lt;feature-value-name&gt;</i>#) ‖
+   charactervariant(<i>&lt;feature-value-name&gt;</i>#) ‖
+   swash(<i>&lt;featurevalue-name&gt;</i>) ‖     
+   ornaments(<i>&lt;feature-value-name&gt;</i>) ‖
+   annotation(<i>&lt;feature-value-name&gt;</i>) ‖ &lbrack; smallcaps  
    &vert; all-small-caps &vert; petite-caps &vert; allpetite-caps   
    &vert; unicase &vert; titling-caps &rbrack; ‖ 
-   *&lt;numeric-figure-values&gt;* ‖
-   *&lt;numeric-spacingvalues&gt;* ‖
-   *&lt;numeric-fraction-values&gt;* ‖ ordinal ‖    
-   slashed-zero ‖ *&lt;east-asian-variant-values&gt;* ‖     
+   <i>&lt;numeric-figure-values&gt;</i> ‖
+   <i>&lt;numeric-spacingvalues&gt;</i> ‖
+   <i>&lt;numeric-fraction-values&gt;</i> ‖ ordinal ‖    
+   slashed-zero ‖ <i>&lt;east-asian-variant-values&gt;</i> ‖     
    
-   *&lt;east-asian-width-values&gt;* ‖ ruby &rbrack; 
+   <i>&lt;east-asian-width-values&gt;</i> ‖ ruby &rbrack; 
 Initial normal  
  value   
 Computed     As declared  
@@ -7857,8 +7807,8 @@ value  the numeric values plus one of the relative values
 (bolder or lighter) 
 Applies     All elements
 to 
-*     Defines the font weight used in rendering an
-*Description  element's text. The numeric value 400 is equivalent 
+     Defines the font weight used in rendering an
+Description  element's text. The numeric value 400 is equivalent 
 to the keyword normal, and 700 is equivalent to     
 bold. If a font has only two weights---normal and   
 bold--- the numbers 100 through 500 will be normal, 
@@ -7873,12 +7823,12 @@ b {font-weight: 700;} strong {font-weight: bold;}
 </pre>
  Note Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid Inh. N Anim. N
+<!--  #### grid Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>grid</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -7941,6 +7891,43 @@ body {display: grid; grid:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-area Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}
 Initial     See individual properties   
 value      
@@ -7965,6 +7952,43 @@ and so on.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-auto-columns Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,
 *&lt;trackbreadth&gt;*)
 Definition
@@ -7987,6 +8011,43 @@ grid-auto-columns: 20em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-auto-flow Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values &lbrack; row &vert; column &rbrack; ‖ dense
 Initial value row
 Computed value As declared
@@ -8004,6 +8065,43 @@ div.gallery {grid-auto-flow: row dense;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-auto-rows Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values   *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   
  *&lt;trackbreadth&gt;*)  
  *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;    
@@ -8029,6 +8127,43 @@ grid-auto-rows: 80px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values     *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?     
 Definition  
 *&lt;g auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* && 
@@ -8056,6 +8191,43 @@ footer {grid-column: footer / 4;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column-end Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* && *&lt;custom-*
 *ident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖ *&lt;customident&gt;* &rbrack;&rbrack;
 Initial value auto
@@ -8073,6 +8245,43 @@ header {grid-column-end: main-content;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column-gap Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 Initial value 0
 Computed value An absolute length
@@ -8091,6 +8300,43 @@ containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column-start Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values   auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    
    *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* 
    ‖ *&lt;customident&gt;* &rbrack;&rbrack;     
@@ -8116,6 +8362,43 @@ header {grid-column-start: masthead;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-gap  Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*    
 Initial     0 0 
 value      
@@ -8139,6 +8422,43 @@ grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row  Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?
 Definition
 *&lt;grid-line&gt;* auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
@@ -8165,6 +8485,43 @@ header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row-end Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Valuesauto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
     *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖
     *&lt;customident&gt;* &rbrack;&rbrack;
@@ -8185,6 +8542,43 @@ header {grid-row-end: span 1;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row-gap Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 Initial value 0
 Computed value An absolute length
@@ -8203,6 +8597,43 @@ containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row-start Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Valuesauto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
     *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖
     *&lt;customident&gt;* &rbrack;&rbrack;
@@ -8226,6 +8657,43 @@ footer {grid-row-start: footer-start;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-template-areas Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values none &vert; *&lt;string&gt;*
 Initial value none
 Computed value As declared
@@ -8252,6 +8720,43 @@ grid-template-areas:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-template-columns Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Valuesnone &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*
 Initial value none
 ComputedAs declared, with lengths made absolute
@@ -8272,6 +8777,43 @@ max-content min-content max-content;} article {grid-template-columns:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-template-rows Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   
 Initial     none
 value      
@@ -8294,6 +8836,43 @@ article {grid-template-rows: 3em minmax(5em,1fr)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### height    Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 Initial  auto
 value     
@@ -8316,6 +8895,43 @@ h1 {height: 1.75em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### hyphens   Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    manual &vert; auto &vert; none 
 Initial value    manual 
 Computed value   As declared 
@@ -8336,6 +8952,43 @@ Description  line breaks must be done manually (e.g., with a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### isolation Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values auto &vert; isolate     
 Initial value auto
 Computed value     As declared 
@@ -8357,8 +9010,45 @@ from its ancestors.
 <p><b>Example</b></p> p.alone {isolation: isolate;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### justify-content Inh. N Anim. N
+<!--  #### justify-content Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>justify-content</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    flex-start &vert; flex-end &vert; center &vert; space-between   
  &vert; space-around &vert; space-evenly     
 Initial value     flex-start  
@@ -8373,10 +9063,46 @@ Note As of early 2018, there are plans to have this
  flex containers, and be given the values start and  
  end to replicate flex-start and flex-end behavior   
  for non-flex environments.
- 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### left Inh. N Anim. P
+<!--  #### left Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>left</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
 Initial value auto
   
@@ -8401,6 +9127,43 @@ div#footer {position: fixed; left: 0;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### letter-spacing Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>letter-spacing</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    *&lt;length&gt;* &vert; normal 
 Initial     normal 
 value      
@@ -8424,8 +9187,45 @@ em {letter-spacing: 0.2em;}
 p.cramped {letter-spacing: −0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### line-break Inh. Y Anim. Y
+<!--  #### line-break Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>line-break</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values    auto &vert; loose &vert; normal &vert; strict   
 Initial     auto
 value      
@@ -8470,6 +9270,43 @@ strict;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### line-height Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 Values *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
 normal 
 Initial value normal 
@@ -8507,107 +9344,11 @@ pre {line-height: 0.75em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### list-style Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Values    &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ 
-*&lt;list-styleposition&gt;* &rbrack; 
-Initial value     Refer to individual properties 
-Computed value   See individual properties   
-Applies to    Elements whose display value is list-item   
- A shorthand property that defines the marker type,  
-Description  whether a symbol or an image, and its (crude)  
-placement. Because it applies to any element that   
-has a display value of list-item, it will apply     
-only to li elements in ordinary HTML, although it   
-can be applied to any element and subsequently 
-inherited by list-item elements.    
-<p><b>Examples</b></p>
-<pre>
-ul {list-style: square url(bullet3.gif) outer;} /&ast; 
-values are inherited by &apos;li&apos; elements &ast;/ 
-ol {list-style: upper-roman;}  
-</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### list-style-image Inh. Y Anim. N
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Values*&lt;uri&gt;* &vert; *&lt;image&gt;* &vert; none
-Initial value none
-ComputedFor *&lt;uri&gt;* values, the absolute URI; otherwise,
-value   none
-Applies to    Elements whose display value is list-item
-Description   Specifies an image to be used as the marker on an
-    ordered or unordered list item. The placement of the
-    image with respect to the content of the list item can
-    be crudely controlled using list-styleposition.
-
-<p><b>Examples</b></p> 
-<pre>
-ul {list-style-image: url(bullet3.gif);}
-ul li {list-style-image:
-url(\\http://example.org/pix/checkmark.png);}
-</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### list-style-position Inh. Y Anim. N
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Values inside &vert; outside
-Initial value outside
-Computed value As declared
-Applies to Elements whose display value is list-item
-Description Defines the position of the list marker with respect to
-the content of the list item. Outside markers are placed some distance
-from the border edge of the list item, but the distance is not defined
-in CSS. Inside markers are treated as though they were inline elements
-inserted at the beginning of the list item's content.
-
-<p><b>Examples</b></p>
-<pre>
-li {list-style-position: outside;}
-ol li {list-style-position: inside;}
-</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### list-style-type Inh. Y Anim. N
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Values disc &vert; circle &vert; square &vert; disclosure-open &vert;
-disclosure-closed &vert; decimal &vert; decimal-leadingzero &vert; arabic-indic &vert;
-armenian &vert; upper-armenian &vert; lower-armenian &vert; bengali &vert; cambodian &vert;
-khmer &vert; cjk-decimal &vert; devanagari &vert; gujarati &vert; gurmukhi &vert; georgian
-&vert; hebrew &vert; kannada &vert; lao &vert; malayalam &vert; mongolian &vert; myanmar &vert;
-oriya &vert; persian &vert; lowerroman &vert; upper-roman &vert; tamil &vert; telugu &vert; thai
-&vert; tibetan &vert; lower-alpha &vert; lower-latin &vert; upperalpha &vert; upper-latin &vert;
-cjk-earthly-branch &vert; cjkheavenly-stem &vert; lower-greek &vert; hiragana &vert;
-hiragana-iroha &vert; katakana &vert; katakana-iroha &vert; japanese-informal &vert;
-japanese-formal &vert; koreanhangul-formal &vert; korean-hanja-informal &vert;
-koreanhanja-formal &vert; simp-chinese-informal &vert; simpchinese-formal &vert;
-trad-chinese-informal &vert; tradchinese-formal &vert; ethiopic-numeric &vert;
-*&lt;string&gt;* &vert; none
-
-Initial value disc
-Computed value As declared
-Applies to Elements whose display value is list-item
-Description Defines the type of marker system to be used in the
-presentation of a list. CSS3 provides a greatly expanded number of list
-types, but as of early 2018, support for these newer list types has some
-spotty parts. Use caution when using list types beyond those provided by
-CSS2.1.
-
-There is no defined behavior for what happens when a list using an
-alphabetic ordering exceeds the letters in the list. For example, once
-an upper-latin list reaches "Z," the specification does not say what
-the next bullet should be. (Two possible answers are "AA" and "ZA.")
-This is the case regardless of the alphabet in use. Thus, there is no
-guarantee that different user agents will act consistently.
-
-<p><b>Examples</b></p>
-<pre>
-ul {list-style-type: square;}
-ol {list-style-type: lower-roman;}
-</pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### margin    Inh. N Anim. Y  -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>margin</h3></th>
-	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8640,13 +9381,211 @@ ol {list-style-type: lower-roman;}
 	</tr>
   </tbody>
 </table>
-Values    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4} 
-Initial value    Not defined 
+Values    &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ 
+*&lt;list-styleposition&gt;* &rbrack; 
+Initial value     Refer to individual properties 
 Computed value   See individual properties   
-Refer to the width of the containing block  
-Percentages 
-Applies to    All elements
-Description  A shorthand property that defines the width of the  
+Applies to    Elements whose display value is list-item   
+ A shorthand property that defines the marker type,  
+Description  whether a symbol or an image, and its (crude)  
+placement. Because it applies to any element that   
+has a display value of list-item, it will apply     
+only to li elements in ordinary HTML, although it   
+can be applied to any element and subsequently 
+inherited by list-item elements.    
+<p><b>Examples</b></p>
+<pre>
+ul {list-style: square url(bullet3.gif) outer;} /&ast; 
+values are inherited by &apos;li&apos; elements &ast;/ 
+ol {list-style: upper-roman;}  
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+#### list-style-image Inh. Y Anim. N
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>*&lt;uri&gt;* &vert; *&lt;image&gt;* &vert; none</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>none</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>*&lt;uri&gt;* values, the absolute URI; otherwise, none</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Elements whose display value is list-item</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Specifies an image to be used as the marker on an ordered or unordered list item. The placement of the
+image with respect to the content of the list item can be crudely controlled using list-style position.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+ul {list-style-image: url(bullet3.gif);}
+ul li {list-style-image:
+url(\\http://example.org/pix/checkmark.png);}
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--  #### list-style-position Inh. Y Anim. N  -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>list-style-position</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>inside &vert; outside</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>outside</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Elements whose display value is list-item</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the position of the list marker with respect to
+the content of the list item. Outside markers are placed some distance
+from the border edge of the list item, but the distance is not defined
+in CSS. Inside markers are treated as though they were inline elements
+inserted at the beginning of the list item's content.
+</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+li {list-style-position: outside;}
+ol li {list-style-position: inside;}
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--  #### list-style-type Inh. Y Anim. N  -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>list-style-type</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>disc &vert; circle &vert; square &vert; disclosure-open &vert;
+disclosure-closed &vert; decimal &vert; decimal-leadingzero &vert; arabic-indic &vert;
+armenian &vert; upper-armenian &vert; lower-armenian &vert; bengali &vert; cambodian &vert;
+khmer &vert; cjk-decimal &vert; devanagari &vert; gujarati &vert; gurmukhi &vert; georgian
+&vert; hebrew &vert; kannada &vert; lao &vert; malayalam &vert; mongolian &vert; myanmar &vert;
+oriya &vert; persian &vert; lowerroman &vert; upper-roman &vert; tamil &vert; telugu &vert; thai
+&vert; tibetan &vert; lower-alpha &vert; lower-latin &vert; upperalpha &vert; upper-latin &vert;
+cjk-earthly-branch &vert; cjkheavenly-stem &vert; lower-greek &vert; hiragana &vert;
+hiragana-iroha &vert; katakana &vert; katakana-iroha &vert; japanese-informal &vert;
+japanese-formal &vert; koreanhangul-formal &vert; korean-hanja-informal &vert;
+koreanhanja-formal &vert; simp-chinese-informal &vert; simpchinese-formal &vert;
+trad-chinese-informal &vert; tradchinese-formal &vert; ethiopic-numeric &vert;
+*&lt;string&gt;* &vert; none</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>disc</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>Elements whose display value is list-item</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Defines the type of marker system to be used in the
+presentation of a list. CSS3 provides a greatly expanded number of list
+types, but as of early 2018, support for these newer list types has some
+spotty parts. Use caution when using list types beyond those provided by
+CSS2.1.
+
+There is no defined behavior for what happens when a list using an
+alphabetic ordering exceeds the letters in the list. For example, once
+an upper-latin list reaches "Z," the specification does not say what
+the next bullet should be. (Two possible answers are "AA" and "ZA.")
+This is the case regardless of the alphabet in use. Thus, there is no
+guarantee that different user agents will act consistently.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+ul {list-style-type: square;}
+ol {list-style-type: lower-roman;}
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--  #### margin    Inh. N Anim. Y  -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>margin</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4}</td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>Not defined </td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>See individual properties   
+Refer to the width of the containing block </td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>A shorthand property that defines the width of the  
  overall margin for an element or sets distinct 
  widths for the individual side margins. Vertically  
  adjacent margins of block-level elements are
@@ -8655,16 +9594,20 @@ Description  A shorthand property that defines the width of the
  margins of inline elements do not collapse, nor do  
  margins on floated elements. Negative margin values 
  are permitted, but caution is warranted because     
- negative values     
-
-can cause elements to overlap other elements or to appear to be wider
-than their parent elements.
-
-<p><b>Examples</b></p>
+ negative values can cause elements to overlap other elements or to appear to be wider than their parent elements.
+</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 h1 {margin: 2ex;}
 p {margin: auto;} img {margin: 10px;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  #### margin-bottom Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
