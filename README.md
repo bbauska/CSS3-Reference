@@ -3783,11 +3783,11 @@ body {background-clip: content-box;}
 	</tr>
   </tbody>
 </table>
-**Values**    <i>&lt;color&gt;</i> 
-**Initial value**  transparent 
-**Computed value**   As declared  
-**Applies to**    All elements
-**Description**  Defines a solid color for the 
+Values    <i>&lt;color&gt;</i> 
+Initial value  transparent 
+Computed value   As declared  
+Applies to    All elements
+Description  Defines a solid color for the 
     background of the element. This 
 color fills the box defined by the  
 value of background-clip---by  
@@ -4044,13 +4044,13 @@ repeat-y, round space, repeat;}
 	</tr>
   </tbody>
 </table>
-**Values**   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
+Values   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
 &rbrack;{1,2} &vert; cover &vert; contain &rbrack;# 
-**Initial value**   auto 
-**Computed value**  As declared, but with all lengths made absolute and  
+Initial value   auto 
+Computed value  As declared, but with all lengths made absolute and  
   any missing auto keywords added 
-**Applies to**   All elements 
-**Description**  Defines the size of one or more background origin
+Applies to   All elements 
+Description  Defines the size of one or more background origin
     images. If two keywords are used (e.g., 50px 25%),   
 the first defines the horizontal size of the image   
 and the second defines the vertical size. The origin 
@@ -4067,7 +4067,7 @@ body {background-size: 100% 90%;}
 div.photo {background-size: cover;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**border**    **Inh. N Anim. P**</h3>
+<h3>border    Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4106,14 +4106,14 @@ div.photo {background-size: cover;}
 	</tr>
   </tbody>
 </table>
-**Values**    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+Values    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
  *&lt;bordercolor&gt;* &rbrack;
-**Initial value**    Refer to individual properties 
-**Computed value**   As declared 
-**Applies to**    All elements    
+Initial value    Refer to individual properties 
+Computed value   As declared 
+Applies to    All elements    
   Border width and color; not border style    
-**Animatable** 
-**Description**  A shorthand property that defines the width, color,
+Animatable 
+Description  A shorthand property that defines the width, color,
     and style of an element's border. Note that while 
  none of the values are actually required, omitting  
  a border style will result in no border being  
@@ -4166,16 +4166,16 @@ p.warning {border: double 5px red;}
 	</tr>
   </tbody>
 </table>
-**Values**&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+Values&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
     *&lt;bordercolor&gt;* &rbrack;
-**Initial value** See individual properties
-**ComputedSee individual properties (border-width, etc.)
-  **value**   
-**Applies to**    All elements
+Initial value See individual properties
+ComputedSee individual properties (border-width, etc.)
+  value   
+Applies to    All elements
 
-**Animatable**    Border width and color; not border style
+Animatable    Border width and color; not border style
 
-**Description**   A shorthand property that defines the width, color,
+Description   A shorthand property that defines the width, color,
     and style of the bottom border of an element. As
 
 with border, omission of a border style will result in no border
@@ -4307,14 +4307,14 @@ a:active {border-bottom-color: purple;}
 	</tr>
   </tbody>
 </table>
-**Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
-**Initial value** 0
-**ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
-  value**   made absolute
-**Percentages**   Calculated with respect to the relevant dimension of
+Values&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
+Initial value 0
+ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
+  value   made absolute
+Percentages   Calculated with respect to the relevant dimension of
     the border box
-**Applies to**    All elements, except internal table elements
-**Description**   Defines the rounding radius for the bottom-left corner
+Applies to    All elements, except internal table elements
+Description   Defines the rounding radius for the bottom-left corner
     of an element's border. If two values are supplied,
     the first is the horizontal radius and the second is
     the vertical radius. See border-radius for a
@@ -4366,14 +4366,14 @@ h2 {border-bottom-left-radius: 1em 10px;}
 	</tr>
   </tbody>
 </table>
-**Values**&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
-**Initial value** 0
-**ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
-  value**   made absolute
-**Percentages**   Calculated with respect to the relevant dimension of
+Values&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
+Initial value 0
+ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
+  value   made absolute
+Percentages   Calculated with respect to the relevant dimension of
     the border box
-**Applies to**    All elements, except internal table elements
-**Description**   Defines the rounding radius for the bottom-right
+Applies to    All elements, except internal table elements
+Description   Defines the rounding radius for the bottom-right
     corner of an element's border. If two values are
     supplied, the first is the horizontal radius and the
     second is the vertical radius. See border-radius for a description of how
@@ -4424,13 +4424,13 @@ h2 {border-bottom-right-radius: 1em 10px;}
 	</tr>
   </tbody>
 </table>
-**Values**none &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
+Valuesnone &vert; hidden &vert; dotted &vert; dashed &vert; solid &vert; double
     &vert; groove &vert; ridge &vert; inset &vert; outset
-**Initial value** none
-**ComputedAs declared
-  value**   
-**Applies to**    All elements
-**Description**   Defines the style for the bottom border of an ele‐
+Initial value none
+ComputedAs declared
+  value   
+Applies to    All elements
+Description   Defines the style for the bottom border of an ele‐
 ment. The value must be something other than none or hidden for any
 border to appear.
 <p><b>Examples</b></p>
@@ -4522,11 +4522,11 @@ a:active {border-bottom-width: 2px;}
 	</tr>
   </tbody>
 </table>
-**Values**collapse &vert; separate &vert; inherit
-**Initial value** separate
-**ComputedAs declared value**   
-**Applies to**    Elements with the display value table or tableinline
-**Description**   Defines the layout model used in laying out the
+Valuescollapse &vert; separate &vert; inherit
+Initial value separate
+ComputedAs declared value   
+Applies to    Elements with the display value table or tableinline
+Description   Defines the layout model used in laying out the
     borders in a table---i.e., those applied to cells,
     rows, and so forth. Although the property applies only
     to tables, it is inherited by all the elements within
@@ -4537,7 +4537,7 @@ a:active {border-bottom-width: 2px;}
 table {border-collapse: separate; border-spacing: 3px 5px;}
 </pre>
 
-**Note**  In CSS2, the default was collapse.
+Note  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-color  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5021,7 +5021,7 @@ p
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td>declared value**</td>
+	  <td>declared value</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
@@ -5480,7 +5480,7 @@ h1 {border-top: dashed 1px gray;}
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td>currentColor **Computed value** A color</td>
+	  <td>currentColor Computed value A color</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
@@ -5712,7 +5712,7 @@ h1 {border-top-width: 1px;}
 	<tr>
 	  <td><b>Description</b></td>
 	  <td>A shorthand property that defines the width for the 
-*Description**  overall border of an element or for each side  
+*Description  overall border of an element or for each side  
 individually. The width will take effect for a 
 given border only if the border's style is  
 something other than none or hidden. If the border  
@@ -6134,7 +6134,7 @@ span.fullshape {clip-rule: nonzero;} span.knockouts
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>**color**     **Inh. Y Anim. Y**</h3>  -->
+<!--  <h3>color     Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6787,7 +6787,7 @@ It is *strongly* recommended that authors use this
 property instead of the separate properties it  
 encompasses. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**flex-basis**  **Inh. N Anim. P**</h3>
+<h3>flex-basis  Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6827,17 +6827,17 @@ encompasses.
   </tbody>
 </table>
 
-**Values**     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
+Values     content &vert; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert;    
    auto &rbrack; 
-**Initial value**     auto 
-**Computed value**    As declared, with length values made absolute
-**Percentages**     Relative to the flex container's inner main axis size    
-**Applies to**   
+Initial value     auto 
+Computed value    As declared, with length values made absolute
+Percentages     Relative to the flex container's inner main axis size    
+Applies to   
  Flex items (children of flex containers)     
  
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only
+Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only
    
-**Description**  Defines the initial size of a flex item, used as a 
+Description  Defines the initial size of a flex item, used as a 
    basis for all subsequent flex sizing calculations.   
    This can override an explicitly assigned width value 
    for the element.     
@@ -6847,7 +6847,7 @@ nav ul li {flex-basis: 50%;} ol.gallery li
    {flex-basis: 300px;} div span.whatevs {flex-basis:   
    auto;}  
 </pre>
-**Note**  It is *strongly* recommended that instead of this    
+Note  It is *strongly* recommended that instead of this    
    property, authors use the flex shorthand property to 
    set an item's flex basis.    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6894,7 +6894,7 @@ column;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>**flex-flow**  **Inh. N Anim. N**</h3>  -->
+<!-- <h3>flex-flow  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6975,13 +6975,13 @@ nav.sidenav {display: flex; flex-flow: column nowrap;}
   </tbody>
 </table>
 
-**Values**    *&lt;number&gt;*
-**Initial value**    0   
-**Computed value**   As declared 
-**Applies to**     Flex items (children of flex containers)    
+Values    *&lt;number&gt;*
+Initial value    0   
+Computed value   As declared 
+Applies to     Flex items (children of flex containers)    
      
  Sets the *growth factor* for a flex item. The value 
-**Description**  Sets the *growth factor* for a flex item. The value 
+Description  Sets the *growth factor* for a flex item. The value 
   supplied is summed up with all the growth factors of the flex items in the same flex line, 
  and the amount they grow is scaled in proportion to their growth factors as a percentage of the whole. 
 
@@ -6992,7 +6992,7 @@ nav ul li {flex-grow: 1;}
 ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 {flex-grow: 0.5;}
 </pre>
-**Note** It is *strongly* recommended that instead of this property, authors use the flex shorthand property to set an item's flex
+Note It is *strongly* recommended that instead of this property, authors use the flex shorthand property to set an item's flex
 growth factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  #### flex-shrink  Inh. N Anim. Y  -->
@@ -7035,15 +7035,15 @@ growth factor.
   </tbody>
 </table>
 
-**Values**    *&lt;number&gt;*
-**Initial     1   
-value**      
-**Computed    As declared 
-value**      
-**Applies     Flex items (children of flex containers)    
-to** 
+Values    *&lt;number&gt;*
+Initial     1   
+value      
+Computed    As declared 
+value      
+Applies     Flex items (children of flex containers)    
+to 
      Sets the *shrink factor* for a flex item. The value 
-**Description**  supplied is summed up with all the shrink factors   
+Description  supplied is summed up with all the shrink factors   
 of the other flex items in the same flex line, and  
 the amount they shrink is scaled proportional to    
 their shrink factors as a percentage of the whole.  
@@ -7053,11 +7053,11 @@ nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/
 ol.gallery li {flex-shrink: 0.5;} div span.whatevs  
 {flex-shrink: 1;}   
 </pre>
-**Note** It is *strongly* recommended that instead of this   
+Note It is *strongly* recommended that instead of this   
 property, authors use the flex shorthand property   
 to set an item's flex shrink factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **flex-wrap** **Inh. N Anim. N**
+#### flex-wrap Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7096,11 +7096,11 @@ to set an item's flex shrink factor.
 	</tr>
   </tbody>
 </table>
-**Values** nowrap &vert; wrap &vert; wrap-reverse
-**Initial value** nowrap
-**Computed value** As declared
-**Applies to** Flex containers
-**Description** Defines whether flex items can wrap to multiple flex
+Values nowrap &vert; wrap &vert; wrap-reverse
+Initial value nowrap
+Computed value As declared
+Applies to Flex containers
+Description Defines whether flex items can wrap to multiple flex
 lines, or only a single flex line is allowed. In a way, it is analogous
 to white-space wrapping in text content. Note, however, that the default
 is nowrap, so flex items will keep going in a single line (either a row
@@ -7114,7 +7114,7 @@ they run out of room (as in an image gallery), make sure to wrap them.
 {display: flex; flex-wrap: nowrap;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **float**  **Inh. N Anim. N**
+#### float  Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7153,11 +7153,11 @@ they run out of room (as in an image gallery), make sure to wrap them.
 	</tr>
   </tbody>
 </table>
-**Values** left &vert; right &vert; none
-**Initial value** none
-**Computed value** As declared
-**Applies to** All elements
-**Description** Defines the direction in which an element is floated.
+Values left &vert; right &vert; none
+Initial value none
+Computed value As declared
+Applies to All elements
+Description Defines the direction in which an element is floated.
 This has traditionally been applied to images in order to let text flow
 around them, but in CSS, any element may be floated. A floated element
 will generate a block-level box no matter what kind of element it may
@@ -7174,7 +7174,7 @@ img.figure {float: left;}
 p.sidebar {float: right; width: 15em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font** **Inh. Y Anim. P**
+#### font Inh. Y Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7213,24 +7213,24 @@ p.sidebar {float: right; width: 15em;}
 	</tr>
   </tbody>
 </table>
-**Values**    &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  
+Values    &lbrack;&lbrack; *&lt;font-style&gt;* ‖ &lbrack; normal &vert; small-caps &rbrack;  
  ‖ *&lt;fontweight&gt;* &rbrack;? *&lt;font-size&gt;* &lbrack; / 
  *&lt;line-height&gt;* &rbrack;? *&lt;fontfamily&gt;*&rbrack; &vert; caption 
  &vert; icon &vert; menu &vert; message-box &vert; small-caption &vert;  
  status-bar  
-**Initial     Refer to individual properties 
- value**      
-**Computed    See individual properties (font-style, etc.)
- value**      
+Initial     Refer to individual properties 
+ value      
+Computed    See individual properties (font-style, etc.)
+ value      
  *     Calculated with respect to the parent element for   
-**Percentages**  *&lt;font-size&gt;* and with respect to the element's   
+Percentages  *&lt;font-size&gt;* and with respect to the element's   
  *&lt;fontsize&gt;* for *&lt;line-height&gt;*
-**Applies     All elements
- to** 
+Applies     All elements
+ to 
   Refer to individual font properties to see which    
-**Animatable**  are animatable 
+Animatable  are animatable 
  *     A shorthand property used to set all the aspects of 
- *Description**  an element's font at once. It can also be used to   
+ *Description  an element's font at once. It can also be used to   
  set the element's font to match an aspect of the    
  user's computing environment using keywords such as 
  icon. If keywords are not used, the minimum font    
@@ -7248,7 +7248,7 @@ encouraged for fallback purposes &ast;/
 .figure span {font: icon;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font-family** **Inh. Y Anim. N**
+#### font-family Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7287,15 +7287,15 @@ encouraged for fallback purposes &ast;/
 	</tr>
   </tbody>
 </table>
-**Values**    &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    
-**Initial     User agent--specific
-value**      
-**Computed    As declared 
-value**      
-**Applies to** 
+Values    &lbrack; *&lt;family-name&gt;* &vert; *&lt;generic-family&gt;* &rbrack;#    
+Initial     User agent--specific
+value      
+Computed    As declared 
+value      
+Applies to 
 All elements   
 
-**Description** Defines a font family to be used in the display of an
+Description Defines a font family to be used in the display of an
 element's text. Note that use of a specific font family (e.g., Geneva)
 is wholly dependent on that family being available, either on the user's
 computer or thanks to a downloadable font file, and the font family
@@ -7352,12 +7352,12 @@ p {font-family: Helvetica, Arial, sans-serif;} li
 	</tr>
   </tbody>
 </table>
-**Values**     normal &vert; *&lt;feature-tag-value&gt;*&#35;  
-**Initial value** normal
-**Computed value**    As declared  
-**Applies to**     All elements 
+Values     normal &vert; *&lt;feature-tag-value&gt;*&#35;  
+Initial value normal
+Computed value    As declared  
+Applies to     All elements 
  Used to turn font features on and off; examples
-**Description**  include ligatures, old-style numbers, and more.
+Description  include ligatures, old-style numbers, and more.
    Whether a font feature actually can be enabled
    depends entirely on the font face being used:
    turning ligatures on or off can only work if the
@@ -7409,15 +7409,15 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
 	</tr>
   </tbody>
 </table>
-**Values**    auto &vert; normal &vert; none 
-**Initial     auto
-value**      
-**Computed    As declared 
-value**      
-**Applies     All elements
-to** 
+Values    auto &vert; normal &vert; none 
+Initial     auto
+value      
+Computed    As declared 
+value      
+Applies     All elements
+to 
 *     In effect, allows the author to disable kerning of  
-*Description**  text for a given element. The default of auto tells 
+*Description  text for a given element. The default of auto tells 
 user agents to do what they normally do, whatever   
 that is. normal directs the user agent to use any   
 kerning information in the font face to kern text,  
@@ -7432,9 +7432,9 @@ body {kerning: normal;} div.typewriter {kerning:
 none;} 
 </pre>
 
-**Note** Has a corresponding &#64;font-face descriptor. 
+Note Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font-size** **Inh. Y Anim. P**
+#### font-size Inh. Y Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7473,21 +7473,21 @@ none;}
 	</tr>
   </tbody>
 </table>
-**Values** xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
+Values xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
 x-large &vert; xx-large &vert; smaller &vert; larger &vert; 
 *&lt;length&gt;* &vert;     
      
 *&lt;percentage&gt;*    
-**Initial  medium 
-value**     
-**Computed For length values, the absolute length; otherwise,  
-value** as declared 
+Initial  medium 
+value     
+Computed For length values, the absolute length; otherwise,  
+value as declared 
 *  Calculated with respect to the parent element's     
-*Percentages**  font size   
-**Applies to**  All elements
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+*Percentages  font size   
+Applies to  All elements
+Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
 *  Defines the size of the font. The size can be  
-*Description**  defined as an absolute size, a relative size, a     
+*Description  defined as an absolute size, a relative size, a     
 length value, or a  
 
 percentage value. Negative length and percentage values are not
@@ -7544,11 +7544,11 @@ p.caption {font-size: 9px;}
 	</tr>
   </tbody>
 </table>
-**Values** *&lt;number&gt;* &vert; none
-**Initial value** none
-**ComputedAs declared value**
-**Applies to**    All elements
-**Description**   Defines an *aspect value* for the element, which is
+Values *&lt;number&gt;* &vert; none
+Initial value none
+ComputedAs declared value
+Applies to    All elements
+Description   Defines an *aspect value* for the element, which is
     used to scale fonts such that they more closely match
     each other in cases where fallback fonts are used. The
     proper aspect value for a font is its true xheight
@@ -7599,21 +7599,21 @@ font-size-adjust: 0.53;}
 	</tr>
   </tbody>
 </table>
-**Values** normal &vert; ultra-condensed &vert; extra-condensed &vert; condensed &vert;
+Values normal &vert; ultra-condensed &vert; extra-condensed &vert; condensed &vert;
 semi-condensed &vert; semi-expanded &vert; expanded &vert; extra-expanded &vert;
 ultra-expanded
-**Initial value** normal **Computed value** As declared
-**Applies to** All elements
-**Description** Replaces a given font face with a narrower or wider
+Initial value normal Computed value As declared
+Applies to All elements
+Description Replaces a given font face with a narrower or wider
 variant, but *only* if the face has narrower or wider variants defined.
 User agents will not programmatically stretch or squeeze a face, but
 only swap in a variant face (if it exists).
 
 <p><b>Examples</b></p> h1.bigtext {font-stretch: ultra-expanded;} caption.meme
-{font-stretch: condensed;} **Note** Has a corresponding &#64;font-face
+{font-stretch: condensed;} Note Has a corresponding &#64;font-face
 descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font-style**  **Inh. Y Anim. N**
+#### font-style  Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7652,15 +7652,15 @@ descriptor.
 	</tr>
   </tbody>
 </table>
-**Values**    italic &vert; oblique &vert; normal 
-**Initial     normal 
-value**      
-**Computed    As declared 
-value**      
-**Applies     All elements
-to** 
+Values    italic &vert; oblique &vert; normal 
+Initial     normal 
+value      
+Computed    As declared 
+value      
+Applies     All elements
+to 
 *     Defines whether the font uses an italic, oblique,   
-*Description**  or normal font face. Italic text is generally  
+*Description  or normal font face. Italic text is generally  
 defined as a separate face within the font family.  
 It is theoretically possible for a user agent to    
 compute a slanted font face from the normal face.   
@@ -7672,7 +7672,7 @@ same way.
 <pre>
 em {font-style: oblique;} i {font-style: italic;}
 </pre>
-**Note** Has a corresponding &#64;font-face descriptor. 
+Note Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### font-synthesis Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7713,10 +7713,10 @@ em {font-style: oblique;} i {font-style: italic;}
 	</tr>
   </tbody>
 </table>
-**Values** none &vert; &lbrack; weight ‖ style &rbrack;
-**Initial value** weight style **Computed value** As declared
-**Applies to** All elements
-**Description** Defines whether user agents are permitted to
+Values none &vert; &lbrack; weight ‖ style &rbrack;
+Initial value weight style Computed value As declared
+Applies to All elements
+Description Defines whether user agents are permitted to
 programmatically generate bold or italic variants for
 
 fonts that don't have bold or italic faces. This is generally frowned
@@ -7770,10 +7770,10 @@ pre code {font-synthesis: style;}
 	</tr>
   </tbody>
 </table>
-**Values  normal &vert; small-caps 
- (CSS2.1)**     
-**Values  normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖  
- (Level 3)**    
+Values  normal &vert; small-caps 
+ (CSS2.1)     
+Values  normal &vert; none &vert; &lbrack; *&lt;common-lig-values&gt;* ‖  
+ (Level 3)    
    *&lt;discretionary-lig-values&gt;* ‖     
    *&lt;historical-lig-values&gt;* ‖
    *&lt;contextual-alt-values&gt;* ‖
@@ -7792,14 +7792,14 @@ pre code {font-synthesis: style;}
    slashed-zero ‖ *&lt;east-asian-variant-values&gt;* ‖     
    
    *&lt;east-asian-width-values&gt;* ‖ ruby &rbrack; 
-**Initial normal  
- value**   
-**Computed     As declared  
- value**   
-**Applies All elements 
- to**   
-**Defines whether text is set in the small-caps style. 
-**Description**  It   
+Initial normal  
+ value   
+Computed     As declared  
+ value   
+Applies All elements 
+ to   
+Defines whether text is set in the small-caps style. 
+Description  It   
 is theoretically possible for a user agent to compute a small-caps
 font face from the normal face.
 
@@ -7807,9 +7807,9 @@ font face from the normal face.
 <pre>
 h3 {font-variant: small-caps;} p {font-variant: normal;}
 </pre>
-**Note** Has a corresponding &#64;font-face descriptor.
+Note Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **font-weight** **Inh. Y Anim. N**
+#### font-weight Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7848,17 +7848,17 @@ h3 {font-variant: small-caps;} p {font-variant: normal;}
 	</tr>
   </tbody>
 </table>
-**Values**    normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
+Values    normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
 &vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900    
-**Initial     normal 
-value**      
-**Computed    One of the numeric values (100, etc.), or one of    
-value**  the numeric values plus one of the relative values  
+Initial     normal 
+value      
+Computed    One of the numeric values (100, etc.), or one of    
+value  the numeric values plus one of the relative values  
 (bolder or lighter) 
-**Applies     All elements
-to** 
+Applies     All elements
+to 
 *     Defines the font weight used in rendering an
-*Description**  element's text. The numeric value 400 is equivalent 
+*Description  element's text. The numeric value 400 is equivalent 
 to the keyword normal, and 700 is equivalent to     
 bold. If a font has only two weights---normal and   
 bold--- the numbers 100 through 500 will be normal, 
@@ -7871,9 +7871,9 @@ least as heavy as the next highest number.
 b {font-weight: 700;} strong {font-weight: bold;}   
 .delicate {font-weight: lighter;}   
 </pre>
- **Note** Has a corresponding &#64;font-face descriptor.
+ Note Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **grid** **Inh. N Anim. N**
+#### grid Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7912,19 +7912,19 @@ b {font-weight: 700;} strong {font-weight: bold;}
 	</tr>
   </tbody>
 </table>
-**Values** none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    
+Values none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    
 *&lt;gridtemplate-columns&gt;* &rbrack; &vert; &lbrack; 
 *&lt;line-names&gt;*? *&lt;string&gt; &lt;track-size&gt;*? 
 *&lt;line-names&gt;*? &rbrack;+ &lbrack; / *&lt;track-list&gt;* &rbrack;? &vert;  
 &lbrack; *&lt;grid-auto-flow&gt;* &lbrack; *&lt;grid-auto-rows&gt;* &lbrack;  
 / *&lt;gridauto-columns&gt;* &rbrack;? &rbrack;? &rbrack; &rbrack; 
-**Initial  See individual properties   
-value**     
-**Computed See individual properties   
-value**     
-**Applies to**  Grid containers     
+Initial  See individual properties   
+value     
+Computed See individual properties   
+value     
+Applies to  Grid containers     
 *  A shorthand property allowing the almost complete   
-*Description** 
+*Description 
 definition of an element's grid system, not counting
 grid gaps. The value syntax can become quite complex and, for
 clarity's sake, most authors rely on the individual properties instead
@@ -7939,17 +7939,17 @@ body {display: grid; grid:
 2em 3fr minmax(10em,1fr) 2em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **grid-area** **Inh. N Anim. N**
+#### grid-area Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}
-**Initial     See individual properties   
-value**      
-**Computed    As declared 
-value**      
-**Applies     Grid items and absolutely positioned elements, if   
-to**  their containing block is a grid container  
+Values    *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}
+Initial     See individual properties   
+value      
+Computed    As declared 
+value      
+Applies     Grid items and absolutely positioned elements, if   
+to  their containing block is a grid container  
 *     Used to assign a grid item to a specific area of a  
-*Description**  defined grid. This can be done using a single  
+*Description  defined grid. This can be done using a single  
 identifier, or using slash-separated grid line 
 identifiers. If all four grid lines are supplied,   
 they are given in the order row-start (top) /  
@@ -7965,16 +7965,16 @@ and so on.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-auto-columns Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,
+Values *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,
 *&lt;trackbreadth&gt;*)
-**Definition**
-***&lt;track-breadth&gt;** &lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;
+Definition
+*&lt;track-breadth&gt; &lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;
 min-content &vert;
 max-content &vert; auto
-**Initial value** auto
+Initial value auto
 Depends on the specific track sizing
 Grid containers
-**Description** Defines the sizing of column tracks for columns that are
+Description Defines the sizing of column tracks for columns that are
 automatically generated; that is, columns that are created because a
 grid item needs to be placed outside the explicitly defined grid
 columns.
@@ -7987,11 +7987,11 @@ grid-auto-columns: 20em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-auto-flow Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** &lbrack; row &vert; column &rbrack; ‖ dense
-**Initial value** row
-**Computed value** As declared
-**Applies to** Grid containers
-**Description** Defines the direction in which grid items that have not
+Values &lbrack; row &vert; column &rbrack; ‖ dense
+Initial value row
+Computed value As declared
+Applies to Grid containers
+Description Defines the direction in which grid items that have not
 been explicitly assigned to a grid area using grid-area or the
 grid-column and grid-row properties will be automatically flowed into
 the grid container.
@@ -8004,20 +8004,20 @@ div.gallery {grid-auto-flow: row dense;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-auto-rows Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**   *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   
+Values   *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,   
  *&lt;trackbreadth&gt;*)  
  *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;    
-**Definition**  min-content &vert; max-content &vert; auto   
-***&lt;track   
--breadth&gt;***  
-**Initial    auto 
-value**      
-**Computed   Depends on the specific track sizing 
-value**      
-**Applies      
-to** Grid      
+Definition  min-content &vert; max-content &vert; auto   
+*&lt;track   
+-breadth&gt;*  
+Initial    auto 
+value      
+Computed   Depends on the specific track sizing 
+value      
+Applies      
+to Grid      
 containers     
-**Description** Defines the sizing of row tracks for rows that are
+Description Defines the sizing of row tracks for rows that are
 automatically generated; that is, rows that are created because a grid
 item needs to be placed outside the explicitly defined grid rows.
 <p><b>Example</b></p>
@@ -8029,19 +8029,19 @@ grid-auto-rows: 80px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**     *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?     
-**Definition**  
-***&lt;g auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* && 
-rid-line&gt;***  *&lt;identifier&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;*  
+Values     *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?     
+Definition  
+*&lt;g auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* && 
+rid-line&gt;*  *&lt;identifier&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;*  
    &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;  
-**Initial auto 
-value**   
-**Computed     As declared  
-value**   
-**Applies Grid items and absolutely positioned elements, if    
-to**   their containing block is a grid container   
-**     Acts as a shorthand property encompassing the
-Description**  grid-column-start and grid-column-end properties.    
+Initial auto 
+value   
+Computed     As declared  
+value   
+Applies Grid items and absolutely positioned elements, if    
+to   their containing block is a grid container   
+     Acts as a shorthand property encompassing the
+Description  grid-column-start and grid-column-end properties.    
    When a single number or identifier is given, the     
    second is assumed to be the span 1 (for a number) or 
    the same identifier. Negative numeric grid lines     
@@ -8056,13 +8056,13 @@ footer {grid-column: footer / 4;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column-end Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* && *&lt;custom-*
+Values auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* && *&lt;custom-*
 *ident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖ *&lt;customident&gt;* &rbrack;&rbrack;
-**Initial value** auto
+Initial value auto
 As declared
 Grid items and absolutely positioned elements, if their containing
 block is a grid container
-**Description** Defines the column grid line on which an element's
+Description Defines the column grid line on which an element's
 layout ends, or (when using the span keyword) the number of column
 tracks, or identified column tracks, the element spans.
 <p><b>Examples</b></p>
@@ -8073,11 +8073,11 @@ header {grid-column-end: main-content;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column-gap Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-**Initial value** 0
-**Computed value** An absolute length
-**Applies to** Grid containers
-**Description** Sets a gap distance between column tracks. This permits
+Values *&lt;length&gt;* &vert; *&lt;percentage&gt;*
+Initial value 0
+Computed value An absolute length
+Applies to Grid containers
+Description Sets a gap distance between column tracks. This permits
 an author to force open gaps between column tracks, even when the grid
 items have no margins to push them away from each other. The gap size is
 the same for all column gaps.
@@ -8085,25 +8085,25 @@ the same for all column gaps.
 <pre>
 #grid {display: grid; grid-column-gap: 1em;}
 </pre>
-**Note** As of early 2018, the CSS Working Group intends to change this
+Note As of early 2018, the CSS Working Group intends to change this
 property to simply column-gap and have it apply to multicolumn and flex
 containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-column-start Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**   auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    
+Values   auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&    
    *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* 
    ‖ *&lt;customident&gt;* &rbrack;&rbrack;     
-**Initial    auto 
-value**      
-**Computed     
-value** As     
+Initial    auto 
+value      
+Computed     
+value As     
 declared  
 
-**Applies to** Grid items and absolutely positioned elements, if their
+Applies to Grid items and absolutely positioned elements, if their
 containing block is a grid container
 
-**Description** Defines the column grid line on which an element's
+Description Defines the column grid line on which an element's
 layout starts, by means of either a grid line number or an identifier.
 If the span keyword is used, the grid item spans back from the grid line
 defined by gridcolumn-end.
@@ -8114,17 +8114,17 @@ header {grid-column-start: masthead;}
 #sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **grid-gap**  **Inh. N Anim. Y**
+#### grid-gap  Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*    
-**Initial     0 0 
-value**      
-**Computed    As declared 
-value**      
-**Applies     Grid containers     
-to** 
+Values    *&lt;grid-row-gap&gt;* *&lt;grid-column-gap&gt;*    
+Initial     0 0 
+value      
+Computed    As declared 
+value      
+Applies     Grid containers     
+to 
 *     A shorthand property encompassing the grid-rowgap   
-*Description**  and grid-column-gap properties, in that order. If   
+*Description  and grid-column-gap properties, in that order. If   
 only one value is supplied, the value is assumed to 
 be the same for both row and column gaps.   
 <p><b>Examples</b></p>
@@ -8132,26 +8132,26 @@ be the same for both row and column gaps.
 #grid {display: grid; grid-gap: 12px 1em;}
 div.gallery {display: grid; grid-gap: 2.5vw;}
 </pre>
-**Note** As of early 2018, the CSS Working Group intends to  
+Note As of early 2018, the CSS Working Group intends to  
 change this property to simply gap and have it 
 apply to multicolumn and flex containers as well as 
 grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **grid-row**  **Inh. N Anim. N**
+#### grid-row  Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?
-**Definition**
-***&lt;grid-line&gt;*** auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
+Values *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;?
+Definition
+*&lt;grid-line&gt;* auto &vert; *&lt;identifier&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
 *&lt;identifier&gt;*? &rbrack; &vert;
 
 &lbrack; span && &lbrack; *&lt;integer&gt;* &vert;&vert; *&lt;identifier&gt;* &rbrack; &rbrack;
-**Initial value** auto
+Initial value auto
 As declared
 
 Grid items and absolutely positioned elements, if their containing
 block is a grid container
 
-**Description** Acts as a shorthand property encompassing the
+Description Acts as a shorthand property encompassing the
 grid-row-start and grid-row-end properties. When a single number or
 identifier is declared, the second is assumed to be the span 1 (for a
 number) or the same identifier.
@@ -8165,14 +8165,14 @@ header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row-end Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
+Valuesauto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
     *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖
     *&lt;customident&gt;* &rbrack;&rbrack;
-**Initial value** auto
-**ComputedAs declared value**
-**Applies to**    Grid items and absolutely positioned elements, if
+Initial value auto
+ComputedAs declared value
+Applies to    Grid items and absolutely positioned elements, if
     their containing block is a grid container
-**Description**   Defines the row grid line on which an element's layout
+Description   Defines the row grid line on which an element's layout
     ends, or (when using the span keyword) the number of
     row tracks, or identified row tracks, the element
     spans across.
@@ -8185,11 +8185,11 @@ header {grid-row-end: span 1;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row-gap Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
-**Initial value** 0
-**Computed value** An absolute length
-**Applies to** Grid containers
-**Description** Sets a gap distance between row tracks. This permits an
+Values *&lt;length&gt;* &vert; *&lt;percentage&gt;*
+Initial value 0
+Computed value An absolute length
+Applies to Grid containers
+Description Sets a gap distance between row tracks. This permits an
 author to force open gaps between row tracks, even when the grid items
 have no margins to push them away from each other. The gap size is the
 same for all row gaps.
@@ -8197,21 +8197,21 @@ same for all row gaps.
 <p><b>Example</b></p>
 <pre>#grid {display: grid; grid-row-gap: 12px;}</pre>
 
-**Note** As of early 2018, the CSS Working Group intends to change this
+Note As of early 2018, the CSS Working Group intends to change this
 property to simply row-gap and have it apply to multicolumn and flex
 containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-row-start Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**auto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
+Valuesauto &vert; *&lt;custom-ident&gt;* &vert; &lbrack; *&lt;integer&gt;* &&
     *&lt;customident&gt;*? &rbrack; &vert; &lbrack; span && &lbrack; *&lt;integer&gt;* ‖
     *&lt;customident&gt;* &rbrack;&rbrack;
-**Initial value** auto
-**ComputedAs declared
-  value**   
-**Applies to**    Grid items and absolutely positioned elements, if
+Initial value auto
+ComputedAs declared
+  value   
+Applies to    Grid items and absolutely positioned elements, if
     their containing block is a grid container
-**Description**   Defines the row grid line on which an element's layout
+Description   Defines the row grid line on which an element's layout
     starts, by means of either a grid line number or an
     identifier. If the span keyword is used, this means
     the grid item spans back from the grid line defined by
@@ -8226,11 +8226,11 @@ footer {grid-row-start: footer-start;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-template-areas Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** none &vert; *&lt;string&gt;*
-**Initial value** none
-**Computed value** As declared
-**Applies to** Grid containers
-**Description** This property allows the author to create an explicit
+Values none &vert; *&lt;string&gt;*
+Initial value none
+Computed value As declared
+Applies to Grid containers
+Description This property allows the author to create an explicit
 grid system using strings of text to define the names and placement of
 grid areas. This allows for a much more visual representation of the
 grid areas in a grid container, and automatically creating named grid
@@ -8252,14 +8252,14 @@ grid-template-areas:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-template-columns Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*
-**Initial value** none
-**ComputedAs declared, with lengths made absolute
-  value**   
-**Percentages**   Refer to the inline size (usually width) of the grid
+Valuesnone &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*
+Initial value none
+ComputedAs declared, with lengths made absolute
+  value   
+Percentages   Refer to the inline size (usually width) of the grid
     container
-**Applies to**    Grid containers
-**Description**   Provides authors a way to define grid line names and
+Applies to    Grid containers
+Description   Provides authors a way to define grid line names and
     track sizes for columns in the explicit grid.
 <p><b>Examples</b></p>
 <pre>
@@ -8272,17 +8272,17 @@ max-content min-content max-content;} article {grid-template-columns:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### grid-template-rows Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   
-**Initial     none
-value**      
-**Computed    As declared, with lengths made absolute     
-value**      
+Values    none &vert; *&lt;track-list&gt;* &vert; *&lt;auto-track-list&gt;*   
+Initial     none
+value      
+Computed    As declared, with lengths made absolute     
+value      
 *     Refer to the block size (usually height) of the     
-*Percentages**  grid container 
-**Applies     Grid containers     
-to** 
+*Percentages  grid container 
+Applies     Grid containers     
+to 
 *     Provides authors a way to define grid line names    
-*Description**  and track sizes for rows in the explicit grid. 
+*Description  and track sizes for rows in the explicit grid. 
 <p><b>Examples</b></p>
 <pre>
 aside {grid-template-rows: 200px 50% 100px;}
@@ -8292,20 +8292,20 @@ article {grid-template-rows: 3em minmax(5em,1fr)
 &lbrack;footer&rbrack; 2em &lbrack;stop end&rbrack;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **height**    **Inh. N Anim. Y**
+#### height    Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
-**Initial  auto
-value**     
-**Computed For auto and percentage values, as declared;
-value** otherwise, an absolute length, unless the property  
+Values *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+Initial  auto
+value     
+Computed For auto and percentage values, as declared;
+value otherwise, an absolute length, unless the property  
 does not apply to the element (then auto)   
 *  Calculated with respect to the height of the
-*Percentages**  containing block (when valid)  
-**Applies to**  All elements except nonreplaced inline elements,    
+*Percentages  containing block (when valid)  
+Applies to  All elements except nonreplaced inline elements,    
 table rows, and row groups  
 *  Defines the total height of portions of an element; 
-*Description**  the exact portions depend on the value of   
+*Description  the exact portions depend on the value of   
 boxsizing. Negative length and percentage values    
 are not permitted.  
 <p><b>Examples</b></p>
@@ -8314,16 +8314,16 @@ img.icon {height: 50px;}
 h1 {height: 1.75em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **hyphens**   **Inh. Y Anim. N**
+#### hyphens   Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    manual &vert; auto &vert; none 
-**Initial value**    manual 
-**Computed value**   As declared 
+Values    manual &vert; auto &vert; none 
+Initial value    manual 
+Computed value   As declared 
  No  
-**Animatabale** 
-**Applies to**    All elements
+Animatabale 
+Applies to    All elements
  Used to declare whether the hyphenation of words at 
-**Description**  line breaks must be done manually (e.g., with a     
+Description  line breaks must be done manually (e.g., with a     
  "soft hyphen"---&shy; or U+00AD---inserted into the 
  document) or can be done automatically by the user  
  agent. In the case of none, all hyphenation is 
@@ -8334,16 +8334,16 @@ h1 {height: 1.75em;}
 <p><b>Examples</b></p>  h1, h2 {hyphens: none;} aside.poem {hyphens:
  manual;}    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **isolation** **Inh. N Anim. N**
+#### isolation Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** auto &vert; isolate     
-**Initial value** auto
-**Computed value**     As declared 
-**Applies to**  All elements (in SVG, it applies to container  
+Values auto &vert; isolate     
+Initial value auto
+Computed value     As declared 
+Applies to  All elements (in SVG, it applies to container  
  elements, graphics elements, and    
  graphics-referencing elements) 
    Determines whether an element creates an isolated   
-**Description**  blending context. An isolated element will only     
+Description  blending context. An isolated element will only     
  blend with itself; that is, the foreground portions 
  of the element will blend with the background  
  portions    
@@ -8359,36 +8359,36 @@ from its ancestors.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### justify-content Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    flex-start &vert; flex-end &vert; center &vert; space-between   
+Values    flex-start &vert; flex-end &vert; center &vert; space-between   
  &vert; space-around &vert; space-evenly     
-**Initial value**     flex-start  
-**Computed value**   As declared 
-**Applies to**    Flex containers     
+Initial value     flex-start  
+Computed value   As declared 
+Applies to    Flex containers     
  Defines the distribution of flex items along the    
-**Description**  main axis of a flex container. 
+Description  main axis of a flex container. 
 <p><b>Examples</b></p>  nav {justify-content: space-evenly;} div.gallery    
  {justify-content: space-between;}   
-**Note** As of early 2018, there are plans to have this 
+Note As of early 2018, there are plans to have this 
  property apply to many (or all) elements, not just  
  flex containers, and be given the values start and  
  end to replicate flex-start and flex-end behavior   
  for non-flex environments.
  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **left** **Inh. N Anim. P**
+#### left Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
-**Initial value** auto
+Values *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+Initial value auto
   
-**Computed value**     For static elements, auto; for length values, the   
+Computed value     For static elements, auto; for length values, the   
 corresponding absolute length; for percentage  
 values, the specified value; otherwise, auto
 Refer to the height of the containing block for top 
-**Percentages**  and bottom, and the width of the containing block   
+Percentages  and bottom, and the width of the containing block   
 for right and left  
-**Applies to**  Positioned elements 
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
-**Description** Defines the offset between the left outer margin edge of
+Applies to  Positioned elements 
+Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+Description Defines the offset between the left outer margin edge of
 an absolutely positioned element and the left edge of its containing
 block; or, for relatively positioned elements, the distance by which the
 element is offset to the right of its starting position.
@@ -8401,16 +8401,16 @@ div#footer {position: fixed; left: 0;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### letter-spacing Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;length&gt;* &vert; normal 
-**Initial     normal 
-value**      
-**Computed    For length values, the absolute length; otherwise,  
-value**      
+Values    *&lt;length&gt;* &vert; normal 
+Initial     normal 
+value      
+Computed    For length values, the absolute length; otherwise,  
+value      
 normal 
-**Applies     All elements
-to** 
+Applies     All elements
+to 
 *     Defines the amount of whitespace to be inserted     
- *Description**  between the character boxes of text. Because
+ *Description  between the character boxes of text. Because
  character glyphs are typically narrower than their  
  character boxes, length values create a modifier to 
  the usual spacing between letters. Thus, normal is  
@@ -8424,17 +8424,17 @@ em {letter-spacing: 0.2em;}
 p.cramped {letter-spacing: −0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **line-break** **Inh. Y Anim. Y**
+#### line-break Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    auto &vert; loose &vert; normal &vert; strict   
-**Initial     auto
-value**      
-**Computed    As declared 
-value**      
-**Applies     All elements
-to** 
+Values    auto &vert; loose &vert; normal &vert; strict   
+Initial     auto
+value      
+Computed    As declared 
+value      
+Applies     All elements
+to 
 *     Affects the wrapping of lines of text in CJK
-*Description**  (Chinese-Japanese-Korean) text. The precise 
+*Description  (Chinese-Japanese-Korean) text. The precise 
 meanings of loose, normal, and strict are left 
 unde‐  
 fined, so    
@@ -8468,19 +8468,19 @@ div.cjk
 strict;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **line-height** **Inh. Y Anim. Y**
+#### line-height Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
+Values *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
 normal 
-**Initial value** normal 
-**Computed value**     For length and percentage values, the absolute 
+Initial value normal 
+Computed value     For length and percentage values, the absolute 
 value; otherwise, as declared  
 Relative to the font size of the element    
-**Percentages** 
-**Applies to**  All elements (but see text regarding replaced and   
+Percentages 
+Applies to  All elements (but see text regarding replaced and   
 block-level elements)  
 This property influences the layout of line boxes.  
-**Description**  When applied to a block-level element, it defines   
+Description  When applied to a block-level element, it defines   
 the minimum (but not the maximum) distance between  
 baselines within that element. When applied to an   
 inline element, it is used to define the *leading*  
@@ -8505,15 +8505,15 @@ ul {line-height: 1.2;}
 pre {line-height: 0.75em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### list-style **Inh. Y Anim. N**
+#### list-style Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ 
+Values    &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ 
 *&lt;list-styleposition&gt;* &rbrack; 
-**Initial value**     Refer to individual properties 
-**Computed value**   See individual properties   
-**Applies to**    Elements whose display value is list-item   
+Initial value     Refer to individual properties 
+Computed value   See individual properties   
+Applies to    Elements whose display value is list-item   
  A shorthand property that defines the marker type,  
-**Description**  whether a symbol or an image, and its (crude)  
+Description  whether a symbol or an image, and its (crude)  
 placement. Because it applies to any element that   
 has a display value of list-item, it will apply     
 only to li elements in ordinary HTML, although it   
@@ -8528,12 +8528,12 @@ ol {list-style: upper-roman;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### list-style-image Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;uri&gt;* &vert; *&lt;image&gt;* &vert; none
-**Initial value** none
-**ComputedFor *&lt;uri&gt;* values, the absolute URI; otherwise,
-value**   none
-**Applies to**    Elements whose display value is list-item
-**Description**   Specifies an image to be used as the marker on an
+Values*&lt;uri&gt;* &vert; *&lt;image&gt;* &vert; none
+Initial value none
+ComputedFor *&lt;uri&gt;* values, the absolute URI; otherwise,
+value   none
+Applies to    Elements whose display value is list-item
+Description   Specifies an image to be used as the marker on an
     ordered or unordered list item. The placement of the
     image with respect to the content of the list item can
     be crudely controlled using list-styleposition.
@@ -8547,11 +8547,11 @@ url(\\http://example.org/pix/checkmark.png);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### list-style-position Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** inside &vert; outside
-**Initial value** outside
-**Computed value** As declared
-**Applies to** Elements whose display value is list-item
-**Description** Defines the position of the list marker with respect to
+Values inside &vert; outside
+Initial value outside
+Computed value As declared
+Applies to Elements whose display value is list-item
+Description Defines the position of the list marker with respect to
 the content of the list item. Outside markers are placed some distance
 from the border edge of the list item, but the distance is not defined
 in CSS. Inside markers are treated as though they were inline elements
@@ -8565,7 +8565,7 @@ ol li {list-style-position: inside;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### list-style-type Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** disc &vert; circle &vert; square &vert; disclosure-open &vert;
+Values disc &vert; circle &vert; square &vert; disclosure-open &vert;
 disclosure-closed &vert; decimal &vert; decimal-leadingzero &vert; arabic-indic &vert;
 armenian &vert; upper-armenian &vert; lower-armenian &vert; bengali &vert; cambodian &vert;
 khmer &vert; cjk-decimal &vert; devanagari &vert; gujarati &vert; gurmukhi &vert; georgian
@@ -8579,10 +8579,10 @@ koreanhanja-formal &vert; simp-chinese-informal &vert; simpchinese-formal &vert;
 trad-chinese-informal &vert; tradchinese-formal &vert; ethiopic-numeric &vert;
 *&lt;string&gt;* &vert; none
 
-**Initial value** disc
-**Computed value** As declared
-**Applies to** Elements whose display value is list-item
-**Description** Defines the type of marker system to be used in the
+Initial value disc
+Computed value As declared
+Applies to Elements whose display value is list-item
+Description Defines the type of marker system to be used in the
 presentation of a list. CSS3 provides a greatly expanded number of list
 types, but as of early 2018, support for these newer list types has some
 spotty parts. Use caution when using list types beyond those provided by
@@ -8601,15 +8601,15 @@ ul {list-style-type: square;}
 ol {list-style-type: lower-roman;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **margin**    **Inh. N Anim. Y**
+#### margin    Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4} 
-**Initial value**    Not defined 
-**Computed value**   See individual properties   
+Values    &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto &rbrack;{1,4} 
+Initial value    Not defined 
+Computed value   See individual properties   
 Refer to the width of the containing block  
-**Percentages** 
-**Applies to**    All elements
-**Description**  A shorthand property that defines the width of the  
+Percentages 
+Applies to    All elements
+Description  A shorthand property that defines the width of the  
  overall margin for an element or sets distinct 
  widths for the individual side margins. Vertically  
  adjacent margins of block-level elements are
@@ -8631,13 +8631,13 @@ p {margin: auto;} img {margin: 10px;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### margin-bottom Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-**Initial value** 0
-**ComputedFor length values, the absolute length; otherwise, as
-value**   declared
-**Percentages**   Refer to the width of the containing block
-**Applies to**    All elements
-**Description**   Defines the width of the bottom margin for an element.
+Values*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
+Initial value 0
+ComputedFor length values, the absolute length; otherwise, as
+value   declared
+Percentages   Refer to the width of the containing block
+Applies to    All elements
+Description   Defines the width of the bottom margin for an element.
     Negative values are permitted, but caution is
     warranted (see margin).
 
@@ -8649,13 +8649,13 @@ h1 {margin-bottom: 2%;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### margin-left Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-**Initial value** 0
-**ComputedFor length values, the absolute length; otherwise, as
-  value**   declared
-**Percentages**   Refer to the width of the containing block
-**Applies to**    All elements
-**Description**   Defines the width of the left margin for an element.
+Values*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
+Initial value 0
+ComputedFor length values, the absolute length; otherwise, as
+  value   declared
+Percentages   Refer to the width of the containing block
+Applies to    All elements
+Description   Defines the width of the left margin for an element.
     Negative values are permitted, but caution is
     warranted (see margin).
 
@@ -8667,13 +8667,13 @@ pre {margin-left: 3em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### margin-right Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
-**Initial value** 0
-**ComputedFor length values, the absolute length; otherwise, as
-value**   declared
-**Percentages**   Refer to the width of the containing block
-**Applies to**    All elements
-**Description**   Defines the width of the right margin for an element.
+Values*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto
+Initial value 0
+ComputedFor length values, the absolute length; otherwise, as
+value   declared
+Percentages   Refer to the width of the containing block
+Applies to    All elements
+Description   Defines the width of the right margin for an element.
     Negative values are permitted, but caution is
     warranted (see margin).
 
@@ -8685,42 +8685,42 @@ ol {margin-right: 5em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### margin-top Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
-**Initial     0   
-value**      
-**Computed    For length values, the absolute length; otherwise,  
-value**  as declared 
+Values    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
+Initial     0   
+value      
+Computed    For length values, the absolute length; otherwise,  
+value  as declared 
 *     Refer to the width of the containing block  
-*Percentages** 
-**Applies     All elements
-to** 
+*Percentages 
+Applies     All elements
+to 
 *     Defines the width of the top margin for an element. 
-*Description**  Negative values are permitted, but caution is  
+*Description  Negative values are permitted, but caution is  
 warranted (see margin).     
 <p><b>Examples</b></p>
 <pre>
 ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **mask** **Inh. N Anim. P**
+#### mask Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; / 
+Values    &lbrack; *&lt;mask-image&gt;* ‖ *&lt;mask-position&gt;* &lbrack; / 
 *&lt;masksize&gt;* &rbrack;? ‖ *&lt;mask-repeat&gt;* ‖    
 *&lt;mask-clip&gt;* ‖ *&lt;maskorigin&gt;* ‖
 *&lt;mask-composite&gt;* ‖ *&lt;mask-mode&gt;* &rbrack;#  
-**Initial      
-value** See    
+Initial      
+value See    
 individual     
 properties     
-**Computed As declared 
-value**     
-**Applies to**  All elements (in SVG, applies to all graphics  
+Computed As declared 
+value     
+Applies to  All elements (in SVG, applies to all graphics  
 elements and all container elements except the defs 
 element)    
-**Animatable**  Refer to individual mask properties to see which    
+Animatable  Refer to individual mask properties to see which    
  are animatable 
  *  A shorthand property encompassing all the other     
- *Description**  image masking properties. It is analogous to
+ *Description  image masking properties. It is analogous to
  background as compared to the various background    
  properties, and many of the masking and background  
  properties share values and behaviors. 
@@ -8734,20 +8734,20 @@ add;
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **mask-clip** **Inh. N Anim. N**
+#### mask-clip Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; content-box &vert; padding-box &vert; border-box &vert; 
+Values    &lbrack; content-box &vert; padding-box &vert; border-box &vert; 
  margin-box &vert; fill-box &vert; stroke-box &vert; view-box &vert; 
  no-clip &rbrack;# 
-**Initial     border-box  
- value**      
-**Computed    As declared 
- value**      
-**Applies     All elements (in SVG, applies to all graphics  
-to**  elements and all container elements except the defs 
+Initial     border-box  
+ value      
+Computed    As declared 
+ value      
+Applies     All elements (in SVG, applies to all graphics  
+to  elements and all container elements except the defs 
 element)    
 *     Defines the outer edge of the visible portions of   
-*Description**  an element's mask, as an aspect of the element's    
+*Description  an element's mask, as an aspect of the element's    
 box model. This allows authors to apply a masking   
 shape to an element but then further reduce the     
 visible parts of the element without having to 
@@ -8759,14 +8759,14 @@ p:nth-child(2) {mask-clip: padding-box;}
 p:nth-child(3) {mask-clip: content-box;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### **mask-composite** **Inh. N Anim. N**
+#### mask-composite Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**&lbrack; add &vert; subtract &vert; intersect &vert; exclude &rbrack;#
-**Initial value** add
-**Computed value**  As declared
-**Applies to**    All elements (in SVG, applies to all graphics elements
+Values&lbrack; add &vert; subtract &vert; intersect &vert; exclude &rbrack;#
+Initial value add
+Computed value  As declared
+Applies to    All elements (in SVG, applies to all graphics elements
     and all container elements except the defs element)
-**Description**   Controls the way multiple masks are combined, with the
+Description   Controls the way multiple masks are combined, with the
     result sometimes dependent on the order of the mask
     shapes. For example, if a square mask is atop a
     circular mask and the value of mask-composite is
@@ -8784,23 +8784,23 @@ span.mask3 {mask-composite: subtract, add, add;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-image Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**   &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;# 
-**Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     
- Definitions**  *&lt;imageset()&gt;*, *&lt;element()&gt;*,   
+Values   &lbrack; none &vert; *&lt;image&gt;* &vert; *&lt;mask-source&gt;* &rbrack;# 
+Any of the value types *&lt;uri&gt;*, *&lt;image()&gt;*,     
+ Definitions  *&lt;imageset()&gt;*, *&lt;element()&gt;*,   
  *&lt;cross-fade()&gt;*, or *&lt;gradient&gt;*
-**   
- *&lt;image&gt;***  
-***&lt;mas     A url() that points to a mask element in an SVG 
- k-source&gt;***  image
-**Initial    none 
- value**      
-**Computed   As declared  
- value**      
-**Applies    All elements (in SVG, applies to all graphics
- to** elements and all container elements except the defs  
+   
+ *&lt;image&gt;*  
+*&lt;mas     A url() that points to a mask element in an SVG 
+ k-source&gt;*  image
+Initial    none 
+ value      
+Computed   As declared  
+ value      
+Applies    All elements (in SVG, applies to all graphics
+ to elements and all container elements except the defs  
    element)     
-**   Applies an image, or a portion of an SVG image, to   
- Description**  an element as a masking shape. The result is that    
+   Applies an image, or a portion of an SVG image, to   
+ Description  an element as a masking shape. The result is that    
    the  
 
 masked element has portions of itself made invisible, while others are
@@ -8816,13 +8816,13 @@ will be used to determine the masking of the element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-mode Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**&lbrack; alpha &vert; luminance &vert; match-source &rbrack;#
-**Initial value** match-source
-**ComputedAs declared
-value**   
-**Applies to**    All elements (in SVG, applies to all graphics elements
+Values&lbrack; alpha &vert; luminance &vert; match-source &rbrack;#
+Initial value match-source
+ComputedAs declared
+value   
+Applies to    All elements (in SVG, applies to all graphics elements
     and all container elements except the defs element)
-**Description**   Determines which aspect of a masking image is used to
+Description   Determines which aspect of a masking image is used to
     determine its masking shape: its transparency or its
     brightness. If alpha is used, then any part of the
     masking image with no transparency reveal the masked
@@ -8847,14 +8847,51 @@ img.lum {mask-mode: luminance, alpha;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-origin
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**&lbrack; content-box &vert; padding-box &vert; border-box &vert;
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values&lbrack; content-box &vert; padding-box &vert; border-box &vert;
     margin-box &vert; fill-box &vert; stroke-box &vert; view-box &rbrack;#
-**Initial value** border-box
-**ComputedAs declared
-  value**   
-**Applies to**    All elements (in SVG, applies to all graphics elements
+Initial value border-box
+ComputedAs declared
+  value   
+Applies to    All elements (in SVG, applies to all graphics elements
     and all container elements except the defs element)
-**Description**   Changes the origin box for the masking image as
+Description   Changes the origin box for the masking image as
     applied to the masked element. This allows the author
     to vary the initial placement of the mask before
     sizing, repeating, or positioning it.
@@ -8867,14 +8904,51 @@ svg#radio {mask-origin: stroke-box, fill-box;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-position Inh. N Anim. P
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values***&lt;position&gt;*&#35;
-**Initial value** 0% 0%
-**ComputedAs declared
-  value**   
-**Applies to**    All elements (in SVG, applies to all graphics elements
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values*&lt;position&gt;*&#35;
+Initial value 0% 0%
+ComputedAs declared
+  value   
+Applies to    All elements (in SVG, applies to all graphics elements
     and all container elements except the defs element)
-**Animatable**    *&lt;length&gt;* and *&lt;percentage&gt;* values only
-**Description**   Allows authors to position a masking image in a manner
+Animatable    *&lt;length&gt;* and *&lt;percentage&gt;* values only
+Description   Allows authors to position a masking image in a manner
     identical to the positioning of background images. The
     default will place the masking image in the top-left
     corner of the box defined by maskorigin.
@@ -8887,17 +8961,17 @@ p:nth-child(2) {mask-position: 33% 80%;} p:nth-child(3)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 #### mask-repeat Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    
+Values    &lbrack; repeat-x &vert; repeat-y &vert; &lbrack; repeat &vert; space &vert;    
  round &vert; no-repeat &rbrack;{1,2} &rbrack;# 
-**Initial     repeat 
-**value**      
-**Computed    As declared 
-**value**
-**Applies     All elements (in SVG, applies to all graphics  
-**to**  elements and all container elements except the defs 
+Initial     repeat 
+value      
+Computed    As declared 
+value
+Applies     All elements (in SVG, applies to all graphics  
+to  elements and all container elements except the defs 
         element)    
       Allows authors to repeat a masking image in a  
-**Description**  manner identical to the repetition of background    
+Description  manner identical to the repetition of background    
  images. Note that the default is to repeat a mask   
  in all directions.  
 <p><b>Examples</b></p>
@@ -8907,20 +8981,57 @@ p:nth-child(2) {mask-repeat: repeat round;}
 p:nth-child(3) {mask-repeat: space no-repeat;} 
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**mask-size** **Inh. N Anim. P**</h3>
+<h3>mask-size Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto 
  &rbrack;{1,2} &vert; cover &vert; contain &rbrack;#     
-**Initial  auto
- value**     
-**Computed As declared, with length values converted to
- value** absolute lengths    
-**Applies to**  All elements (in SVG, applies to all graphics  
+Initial  auto
+ value     
+Computed As declared, with length values converted to
+ value absolute lengths    
+Applies to  All elements (in SVG, applies to all graphics  
  elements and all container elements except the defs 
  element)    
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
  *  Sets the size of the initial masking image in a     
- *Description**  manner identical to the sizing of background
+ *Description  manner identical to the sizing of background
  images.     
 <p><b>Examples</b></p>
 <pre>
@@ -8931,11 +9042,48 @@ cover, 100%, contain;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>mask-type  Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** luminance &vert; alpha
-**Initial value** luminance
-**Computed value** As declared
-**Applies to** SVG mask elements
-**Description** Sets the blending mode when the masking image is defined
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values luminance &vert; alpha
+Initial value luminance
+Computed value As declared
+Applies to SVG mask elements
+Description Sets the blending mode when the masking image is defined
 by an SVG mask element as opposed to, say, a PNG file or an entire SVG.
 Of interest because most masking images use the alpha blending mode, but
 mask element masks default to luminance.
@@ -8947,6 +9095,7 @@ svg #mask {mask-type: alpha;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>max-height Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <table style="width:500px;">
   <thead>
     <tr>
@@ -8971,7 +9120,10 @@ svg #mask {mask-type: alpha;}
 	</tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td>All elements except nonreplaced inline elements and table elements  *Defines a maximum constraint on the height of the *Description**  element (the exact nature of that height is dependent on the value of box-sizing). Thus, the element can be shorter than the declared value but not taller.</td>
+	  <td>All elements except nonreplaced inline elements and table elements  *Defines a maximum 
+	  constraint on the height of the element (the exact nature of that height is dependent on 
+	  the value of box-sizing). Thus, the element can be shorter than the declared value but not 
+	  taller.</td>
 	</tr>
     <tr>
 	  <td><b>Admintable</b></td>
@@ -8985,20 +9137,57 @@ div#footer {max-height: 3em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**max-width** **Inh. N Anim. P**</h3>
+<h3>max-width Inh. N Anim. P</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; none    
-**Initial   
- value** none
-**Computed For percentages, as declared; for length values,    
- value** the absolute length; otherwise, none
- *  Refer to the height of the containing block 
- *Percentages** 
-**Applies to**  All elements except nonreplaced inline elements and 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values    *&lt;length&gt;* &vert; *&lt;percentage&gt; &vert; none    
+Initial   
+ value none
+Computed For percentages, as declared; for length values,    
+ value the absolute length; otherwise, none
+   Refer to the height of the containing block 
+ Percentages 
+Applies to  All elements except nonreplaced inline elements and 
  table elements 
-**Animatable**  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
- *  Defines a maximum constraint on the width of the    
- *Description**  element (the exact nature of that width is  
+Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+   Defines a maximum constraint on the width of the    
+ Description  element (the exact nature of that width is  
  dependent on the value of box-sizing). Thus, the    
  element can 
 
@@ -9012,17 +9201,54 @@ not permitted.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>min-height Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
-**Initial     0   
-**value**   
-**Computed    For percentages, as declared; for length values,    
-**value**  the absolute length 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
+Initial     0   
+value   
+Computed    For percentages, as declared; for length values,    
+value  the absolute length 
      Refer to the width of the containing block  
-**Percentages** 
-**Applies     All elements except nonreplaced inline elements and 
-**to**  table elements 
- *     Defines a minimum constraint on the height of the   
-**Description**  element (the exact nature of that height is 
+Percentages 
+Applies     All elements except nonreplaced inline elements and 
+to  table elements 
+      Defines a minimum constraint on the height of the   
+Description  element (the exact nature of that height is 
  dependent on the value of box-sizing). Thus, the    
  element can be taller than the declared value, but  
  not shorter.
@@ -9033,20 +9259,57 @@ Negative values are not permitted.
 div#footer {min-height: 1em;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**min-width** **Inh. N Anim. Y**</h3>
+<h3>min-width Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;length&gt;* &vert; *&lt;percentage&gt;*
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values *&lt;length&gt;* &vert; *&lt;percentage&gt;*
 
-**Initial value** 0
+Initial value 0
 
-**Computed value** For percentages, as declared; for length values, the
+Computed value For percentages, as declared; for length values, the
      absolute length
-  **Percentages**   Refer to the width of the containing block
+  Percentages   Refer to the width of the containing block
 
-  **Applies to**    All elements except nonreplaced inline elements and
+  Applies to    All elements except nonreplaced inline elements and
     table elements
 
-  **Description**   Defines a minimum constraint on the width of the
+  Description   Defines a minimum constraint on the width of the
     element (the exact nature of that width is dependent
     on the value of box-sizing). Thus, the element can
 
@@ -9060,18 +9323,55 @@ div.aside {width: 13em; max-width: 33%;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>mix-blend-mode Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**   normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values   normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; 
 lighten &vert; color-dodge &vert; color-burn &vert; hard-light   
 &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;   
 saturation &vert; color &vert; luminosity    
-**Initial    normal  
- value**   
-**Computed   As declared  
- value**   
-**Applies    All elements 
- to** 
-**   Changes how an element is composited with its
- Description**  backdrop. The "backdrop" consists of any ancestor    
+Initial    normal  
+ value   
+Computed   As declared  
+ value   
+Applies    All elements 
+ to 
+   Changes how an element is composited with its
+ Description  backdrop. The "backdrop" consists of any ancestor    
 backgrounds and other elements that are "behind" the 
 element being styled. The default of normal imposes  
 simple alpha blending, as CSS has permitted since    
@@ -9091,18 +9391,55 @@ li.shadowed {mix-blend-mode: darken;} aside
 color-burn, luminosity, darken;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**object-fit**  **Inh. N Anim. N**</h3>
+<h3>object-fit  Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-*object-fit**  
-**Values**   fill &vert; contain &vert; cover &vert; scale-down &vert; none  
-**Initial    fill 
- value**   
-**Computed   As declared  
- value**   
-**Applies    Replaced elements    
- to** 
-**   Alters the way an image's contents are sized with    
-Description**  respect to its content box. The default, fill,  
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+object-fit  
+Values   fill &vert; contain &vert; cover &vert; scale-down &vert; none  
+Initial    fill 
+ value   
+Computed   As declared  
+ value   
+Applies    Replaced elements    
+ to 
+   Alters the way an image's contents are sized with    
+Description  respect to its content box. The default, fill,  
 causes the image to be stretched or squashed to fit  
 its height and width, as images always have. none    
 means the image keeps its intrinsic height and  
@@ -9125,11 +9462,48 @@ img:nth-of-type(3) {object-fit: cover;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>object-position Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;position&gt;*
-**Initial value** 50% 50%
-**Computed value** As declared
-**Applies to** Replaced elements
-**Description** Provides a way to change the position of a fitted image
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values *&lt;position&gt;*
+Initial value 50% 50%
+Computed value As declared
+Applies to Replaced elements
+Description Provides a way to change the position of a fitted image
 (see object-fit) within its element box, in a manner identical to how
 background origin images can be positioned.
 
@@ -9141,19 +9515,56 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
 {object-position: left 142%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**opacity**  **Inh. N Anim. Y**</h3>
+<h3>opacity  Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;number&gt;*
-**Initial     1   
-value**   
-**Computed    As declared 
-value**   
-**Applies     All elements
-to** 
-**Computed    Same as declared (or a clipped value if declared    
-value**  value must be clipped)
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values    <i>&lt;number&gt;</i>
+Initial     1   
+value   
+Computed    As declared 
+value   
+Applies     All elements
+to 
+Computed    Same as declared (or a clipped value if declared    
+value  value must be clipped)
      Defines an element's degree of opacity using a 
-**Description**  number in the range 0--1, inclusive. Any values     
+Description  number in the range 0--1, inclusive. Any values     
 outside that range are clipped to the nearest edge  
 (0 or 1). This property affects every visible  
 portion of an element. If it is necessary to have   
@@ -9175,14 +9586,51 @@ z-index value to 0.
 h2 {opacity: 0.8;} .hideme {opacity: 0;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**order**     **Inh. N Anim. Y**</h3>
+<h3>order     Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;integer&gt;*
-**Initial value** 0
-**Computed value** As declared
-**Applies to** Flex and grid items, and the absolutely positioned
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values *&lt;integer&gt;*
+Initial value 0
+Computed value As declared
+Applies to Flex and grid items, and the absolutely positioned
 children of flex and grid containers
-**Description** Sets a visual rendering order independently of the
+Description Sets a visual rendering order independently of the
 document source order. One example is turning a set of list items into
 flex items, and then designating a list item (or group of list items)
 from the middle of the list to be the first flex items displayed in the
@@ -9199,17 +9647,54 @@ li:nth-of-type(6) {order: 1;}
 li:nth-of-type(14) {order: -1;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**orphans**   **Inh. N Anim. Y**</h3>
+<h3>orphans   Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values**    *&lt;integer&gt;*  
-**Initial     2   
-value**   
-**Computed    As declared 
-value**   
-**Applies     Block-level elements
-to** 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values    <i>&lt;integer&gt;</i>
+Initial     2   
+value   
+Computed    As declared 
+value   
+Applies     Block-level elements
+to 
      Defines the minimum number of text lines within an  
-**Description**  element that can be left at the bottom of a page.   
+Description  element that can be left at the bottom of a page.   
 This can affect the placement of page breaks within 
 the element.
 <p><b>Examples</b></p>
@@ -9217,15 +9702,52 @@ the element.
 p {orphans: 4;} ul {orphans: 2;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>**outline**   **Inh. N Anim. P**</h3>
+<!--  <h3>outline   Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>outline </h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
 *&lt;outlinewidth&gt;* &rbrack;
-**Initial value** none
-**Computed value** As declared
-**Applies to** All elements
-**Animatable** Outline width and color; not style
-**Description** This is a shorthand property that defines the overall
+Initial value none
+Computed value As declared
+Applies to All elements
+Animatable Outline width and color; not style
+Description This is a shorthand property that defines the overall
 outline for an element. The most common use of outlines is to indicate
 which form element or hyperlink currently has focus (accepts keyboard
 input). Outlines can be of irregular shape, and no matter how thick,
@@ -9239,10 +9761,47 @@ form:focus {outline: outset cyan 0.25em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>outline-color Inh. N Anim. Y</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-**Values** *&lt;color&gt;* &vert; invert
-**Initial value** invert **Computed value** As declared
-**Applies to** All elements
-**Description** Defines the color for the visible portions of the
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3> </h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+Values *&lt;color&gt;* &vert; invert
+Initial value invert Computed value As declared
+Applies to All elements
+Description Defines the color for the visible portions of the
 overall outline of an element. Remember that the value of outline-style
 must be something other than none for any visible border to appear. User
 agents are permitted to ignore invert on platforms that don't support
@@ -9446,7 +10005,7 @@ object {overflow: visible scroll;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>normal &vert; break-word **Initial value** normal</td>
+	  <td>normal &vert; break-word <b>Initial value</b> normal</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -9782,8 +10341,8 @@ ol {padding-right: 5em;}
 	  <td><b>Computed value</b></td>
 	  <td>For percentage values, as declared; for length 
    values, the absolute length 
- *     Refer to the width of the containing block  
- *Percentages** </td>
+      Refer to the width of the containing block  
+ Percentages </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
@@ -9893,16 +10452,16 @@ table.summary {page: wide;}
 	</tr>
   </tbody>
 </table>
-**Values**    auto &vert; always     
-**Initial     auto  
- value**  
- **Computed    As declared
- value**  
- **Applies     Nonfloated block-level elements    
- to**  with a position value of relative  
+Values    auto &vert; always     
+Initial     auto  
+ value  
+ Computed    As declared
+ value  
+ Applies     Nonfloated block-level elements    
+ to  with a position value of relative  
  or static  
- *     Defines whether one or more page   
- *Description**  breaks should be placed after an   
+      Defines whether one or more page   
+ Description  breaks should be placed after an   
  element. Although it is    
  theoretically possible to force    
  breaks with always, it is not 
@@ -9921,7 +10480,7 @@ always;}
 h1 {page-break-after:
 avoid;}    
 </pre>
-**Note** This property is essentially  
+Note This property is essentially  
 replaced by breakafter, but
 browser support for
 page-break-after may be stronger.  
@@ -9965,12 +10524,12 @@ page-break-after may be stronger.
 	</tr>
   </tbody>
 </table>
-**Values** auto &vert; always
-**Initial value** auto
-**Computed value** As declared
-**Applies to** Nonfloated block-level elements with a position value of
+Values auto &vert; always
+Initial value auto
+Computed value As declared
+Applies to Nonfloated block-level elements with a position value of
 relative or static
-**Description** Defines whether one or more page breaks should be placed
+Description Defines whether one or more page breaks should be placed
 before an element. It's theoretically possible to use always to force a
 page break, but while avoid asks the user agent to avoid inserting a
 page break if possible, there's no guarantee it won't insert one anyway.
@@ -9984,7 +10543,7 @@ section {page-break-before: always;} h2 {page-break-before:
 avoid;}
 </pre>
 
-**Note** This property is essentially replaced by break-
+Note This property is essentially replaced by break-
 before, but browser support for page-breakbefore may be stronger.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>page-break-inside  Inh. Y Anim. N</h3>  -->
@@ -10026,15 +10585,15 @@ before, but browser support for page-breakbefore may be stronger.
 	</tr>
   </tbody>
 </table>
-**Values**  auto &vert; avoid   
- **Initialauto    
- value**  
- **Computed  As declared     
- value**  
- **Applies to**   Nonfloated block-level elements 
+Values  auto &vert; avoid   
+ Initialauto    
+ value  
+ Computed  As declared     
+ value  
+ Applies to   Nonfloated block-level elements 
     with a position value of
     relative or static 
- **Description**  Defines whether a page break    
+ Description  Defines whether a page break    
     should be avoided within the    
     element. Note that such 
     avoidance may not be possible;  
@@ -10048,7 +10607,7 @@ before, but browser support for page-breakbefore may be stronger.
 table {page-break-inside:  
   avoid;} 
 </pre>
-**Note** This property is essentially    
+Note This property is essentially    
     replaced by breakbefore, but    
     browser support for     
     page-breakbefore may be 
@@ -10093,11 +10652,11 @@ table {page-break-inside:
 	</tr>
   </tbody>
 </table>
-**Values**  none &vert; *&lt;length&gt;*  
-**Initial value** none
-**Computed value** The absolute length, or else none
-**Applies to** Any transformable element
-**Description** Defines the amount of apparent 3D perspective of an
+Values  none &vert; *&lt;length&gt;*  
+Initial value none
+Computed value The absolute length, or else none
+Applies to Any transformable element
+Description Defines the amount of apparent 3D perspective of an
 element's transformed children, but not for the element itself. Numbers
 define a foreshortening depth in pixels; smaller numbers define more
 extreme perspective effects. Negative values are treated the same as
@@ -10148,19 +10707,19 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
 	</tr>
   </tbody>
 </table>
-**Values**    *&lt;position&gt;* 
-**Initial     50% 50%     
-**value**      
-**Computed**    A percentage, except for length values, which are   
-**value**  converted to an absolute length     
+Values    <i>&lt;position&gt;</i> 
+Initial     50% 50%     
+value      
+Computed    A percentage, except for length values, which are   
+value  converted to an absolute length     
      Refer to the size of the bounding box  
-**Percentages** 
-**Applies**     Any transformable element   
-**to** 
+Percentages 
+Applies     Any transformable element   
+to 
   *&lt;length&gt;* and *&lt;percentage&gt;* values only  
-**Animatable** 
+Animatable 
      Defines the origin point of the apparent 3D 
-**Description**  perspective within the element. In effect, it  
+Description  perspective within the element. In effect, it  
 defines the point in the element that appears to be 
 directly in front of the viewer.    
 <p><b>Examples</b></p>
@@ -10208,10 +10767,10 @@ div {perspective-origin: 0 50%;}
 	</tr>
   </tbody>
 </table>
-**Values** static &vert; relative &vert; sticky &vert; absolute &vert; fixed
-**Initial value** static **Computed value** As declared
-**Applies to** All elements
-**Description** Defines the positioning scheme used to lay out an
+Values static &vert; relative &vert; sticky &vert; absolute &vert; fixed
+Initial value static Computed value As declared
+Applies to All elements
+Description Defines the positioning scheme used to lay out an
 element. Any element may be positioned, although an element positioned
 with absolute or fixed will generate a block-level box regardless of
 what kind of element it is. An element that is relatively positioned is
@@ -10262,15 +10821,15 @@ offset from its default placement in the normal flow.
 	</tr>
   </tbody>
 </table>
-**Values**    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
-**Initial     User agent--dependent  
-value**      
-**Computed    As declared 
-value**      
-**Applies     All elements
-to** 
-*     Defines the quotation pattern used with quotes and  
-*Description**  nested quotes. The actual quote marks are inserted  
+Values    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
+Initial     User agent--dependent  
+value      
+Computed    As declared 
+value      
+Applies     All elements
+to 
+     Defines the quotation pattern used with quotes and  
+Description  nested quotes. The actual quote marks are inserted  
 via the content property's open-quote and   
 closequote values.  
 <p><b>Examples</b></p>
@@ -10319,11 +10878,11 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
 	</tr>
   </tbody>
 </table>
-**Values** none &vert; both &vert; horizontal &vert; vertical
-**Initial value** none
-**Computed value** As declared
-**Applies to** Elements whose overflow value is not visible
-**Description** Defines how (or whether) an element can be resized by
+Values none &vert; both &vert; horizontal &vert; vertical
+Initial value none
+Computed value As declared
+Applies to Elements whose overflow value is not visible
+Description Defines how (or whether) an element can be resized by
 the user. The actual appearance and operation of any resize mechanism is
 left to the user agent and is likely dependent on the writing direction.
 
@@ -10372,20 +10931,20 @@ textarea {resize: vertical;} iframe {resize: both;}
   </tbody>
 </table>
 
- **Values**    *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto    
- **Initial     auto
- value**      
- **Computed    For static elements, auto; for length values, the   
- value**  corresponding absolute length; for percentage  
+ Values    <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; auto    
+ Initial     auto
+ value      
+ Computed    For static elements, auto; for length values, the   
+ value  corresponding absolute length; for percentage  
  values, the specified value; otherwise, auto
- *     Refer to the height of the containing block 
- *Percentages** 
- **Applies     Positioned elements 
- to** 
-  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
- **Animatable** 
- *     Defines the offset between the right outer margin   
- *Description**  edge of a positioned element and the right edge of  
+      Refer to the height of the containing block 
+ Percentages 
+ Applies     Positioned elements 
+ to 
+  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
+ Animatable 
+      Defines the offset between the right outer margin   
+ Description  edge of a positioned element and the right edge of  
  its containing block.  
 <p><b>Examples</b></p>
 <pre>
@@ -10432,15 +10991,15 @@ div#footer {position: fixed; right: 0;}
 	</tr>
   </tbody>
 </table>
-**Values**   *&lt;number&gt;* 
-**Initial    0.0  
-value**      
-**Computed   The same as the specified value after clipping the   
-value** *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;  
-**Applies    Floats  
-to** 
-**   Changes the alpha channel value that acts as a  
-Description**  threshold for float shape creation via an image. By  
+Values   <i>&lt;number&gt;</i>
+Initial    0.0  
+value      
+Computed   The same as the specified value after clipping the   
+value *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;  
+Applies    Floats  
+to 
+   Changes the alpha channel value that acts as a  
+Description  threshold for float shape creation via an image. By  
 default, only fully transparent areas in the shape's 
 source image are used to define the float shape. If  
 <p><b>Examples</b></p>
@@ -10494,12 +11053,12 @@ img.floated {shape-image-threshold: 0.1;}
 	</tr>
   </tbody>
 </table>
-**Values***&lt;length&gt;* &vert; *&lt;percentage&gt;*
-**Initial value** 0
-**ComputedAn** absolute length
-  **value**   
-**Applies to**    Floats
-**Description**   Defines an offset distance between the edges of a
+Values <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i>
+Initial value 0
+ComputedAn absolute length
+  value   
+Applies to    Floats
+Description   Defines an offset distance between the edges of a
     float shape and the closest points at which text may
     approach the shape. This is useful when floating an
     image and using that same image to define the float
@@ -10555,26 +11114,26 @@ img.floated {shape-image-threshold: 0.1;}
 	</tr>
   </tbody>
 </table>
-**Values**   none &vert; &lbrack; *&lt;basic-shape&gt;* ‖ *&lt;shape-box&gt;* &rbrack; &vert; 
-   *&lt;image&gt;*  
-**   inset &vert; circle() &vert; ellipse() &vert; polygon()  
-**Definitions**  
+Values   none &vert; &lbrack; <i>&lt;basic-shape&gt;</i> ‖ <i>&lt;shape-box&gt;</i> &rbrack; &vert; 
+   &lt;image&gt;
+  inset &vert; circle() &vert; ellipse() &vert; polygon()  
+Definitions  
       
-***&lt;bas     
- ic-shape&gt;***  
- ***&lt;s  margin-box &vert; border-box &vert; padding-box &vert;   
- hape-box&gt;***  contentbox   
- **Initial    none 
- value**      
- **Computed   For a *&lt;basic-shape&gt;*, as defined for an   
- value** *&lt;image&gt;*, its URI made absolute; otherwise, as    
+&lt;bas     
+ ic-shape&gt;
+ &lt;s  margin-box &vert; border-box &vert; padding-box &vert;   
+ hape-box&gt;  contentbox   
+ Initial    none 
+ value      
+ Computed value  For a <i>&lt;basic-shape&gt;</i>, as defined for an   
+ <i>&lt;image&gt;</i>, its URI made absolute; otherwise, as    
    declared     
- **Applies    Floats  
- to** 
- *    *&lt;basic-shape&gt;* values only
- *Animatable**  
- **   Defines the shape of a floated element for the  
- Description**  purposes of calculating text flow past the float.    
+ Applies    Floats  
+ to 
+     <i>&lt;basic-shape&gt;</i> values only
+ Animatable  
+ Description  Defines the shape of a floated element for the  
+ purposes of calculating text flow past the float.    
    Possibilities include defining a polygon that echoes 
    the outer    
 
@@ -10602,7 +11161,8 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>auto &vert; <i>&lt;length&gt;</i>{1,2} &vert; &lbrack; <i>&lt;page-size&gt;</i> &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack;</td>
+	  <td>auto &vert; <i>&lt;length&gt;</i>{1,2} &vert; &lbrack; <i>&lt;page-size&gt;</i> 
+	  &vert;&vert; &lbrack; portrait &vert; landscape &rbrack; &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -10618,7 +11178,16 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines the size and orientation of a page box. The keywords auto, portrait, and landscape cause the page box to fill the available rendering space on the page. Page boxes set to portrait have the content printed with the long sides of the page box being the right and left sides; in the case of landscape, the content is printed with the longer sides of the page box being the top and bottom sides. If a page box is specified using lengths or one of the *&lt;page-size&gt;* keywords (e.g., A4) and the page box cannot be fit onto the actual page used for display, the page box and its contents may be scaled down to fit. If only one length value is declared, it sets both dimensions and thus defines a square page box. Length values that use em or ex units are calculated with respect to the computed font size of the page context.</td>
+	  <td>Defines the size and orientation of a page box. The keywords auto, portrait, and 
+	  landscape cause the page box to fill the available rendering space on the page. Page 
+	  boxes set to portrait have the content printed with the long sides of the page box 
+	  being the right and left sides; in the case of landscape, the content is printed with 
+	  the longer sides of the page box being the top and bottom sides. If a page box is 
+	  specified using lengths or one of the *&lt;page-size&gt;</i> keywords (e.g., A4) and 
+	  the page box cannot be fit onto the actual page used for display, the page box and 
+	  its contents may be scaled down to fit. If only one length value is declared, it sets 
+	  both dimensions and thus defines a square page box. Length values that use em or ex 
+	  units are calculated with respect to the computed font size of the page context.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -10632,12 +11201,12 @@ landscape;}
 	</tr>
 	<tr>
 	  <td><b>Note</b></td>
-	  <td>*&lt;page-size&gt;* is one of a defined set of standard page sizes; see Chapter 20 of [*CSS: The* *Definitive Guide*, 4th Edition](http://shop.oreilly.com/product/0636920012726.do), for details.</td>
+	  <td>*&lt;page-size&gt;</i> is one of a defined set of standard page sizes; see Chapter 20 of [*CSS: The</i> *Definitive Guide</i>, 4th Edition](http://shop.oreilly.com/product/0636920012726.do), for details.</td>
     </tr>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>**tab-size**  **Inh. Y Anim. Y**</h3> -->
+<!-- <h3>tab-size  Inh. Y Anim. Y</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -10665,7 +11234,9 @@ landscape;}
 	</tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Sets the width of tab characters' whitespace when they are present in the displayed source <i>and</i> are honored for display due to the value of whitespace. An <i>&lt;integer&gt;</i> value sets the number of "spaces" a tab character will generate.</td>
+	  <td>Sets the width of tab characters' whitespace when they are present in the displayed 
+	  source <i>and</i> are honored for display due to the value of whitespace. An <i>&lt;integer&gt;</i> 
+	  value sets the number of "spaces" a tab character will generate.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -10707,7 +11278,10 @@ p.typer {tab-size: 0.25in;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines whether a table element should be laid out using an automatic-layout algorithm or a fixedlayout algorithm. The benefit of the automatic algorithm is that it's very similar to what authors are used to from more than a decade of browser behavior. However, the fixed-layout algorithm is theoretically faster and more predictable.</td>
+	  <td>Defines whether a table element should be laid out using an automatic-layout algorithm 
+	  or a fixedlayout algorithm. The benefit of the automatic algorithm is that it's very similar 
+	  to what authors are used to from more than a decade of browser behavior. However, the fixed-layout 
+	  algorithm is theoretically faster and more predictable.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -10737,7 +11311,8 @@ table.directory {table-display: auto;}
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td>In CSS3, start; in CSS2.1, this was user agent--specific, likely depending on writing direction (e.g., left for Western languages like English)</td>
+	  <td>In CSS3, start; in CSS2.1, this was user agent--specific, likely depending on writing 
+	  direction (e.g., left for Western languages like English)</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
@@ -10749,7 +11324,10 @@ table.directory {table-display: auto;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines the horizontal alignment of text within a block-level element by defining the point to which line boxes are aligned. The value justify is supported by allowing user agents to programmatically adjust the word (but not letter) spacing of the line's content; results may vary by user agent.</td>
+	  <td>Defines the horizontal alignment of text within a block-level element by defining the point 
+	  to which line boxes are aligned. The value justify is supported by allowing user agents to 
+	  programmatically adjust the word (but not letter) spacing of the line's content; results may 
+	  vary by user agent.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -10790,7 +11368,10 @@ p {text-align: justify;} h4 {text-align: center;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines the horizontal alignment of the last line of text within a block-level element by defining the point to which line boxes are aligned. The value justify is supported by allowing user agents to programmatically adjust the word (but not letter) spacing of the line's content; results may vary by user agent.</td>
+	  <td>Defines the horizontal alignment of the last line of text within a block-level element by 
+	  defining the point to which line boxes are aligned. The value justify is supported by allowing 
+	  user agents to programmatically adjust the word (but not letter) spacing of the line's content; 
+	  results may vary by user agent.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -10832,7 +11413,10 @@ h4 {text-align-last: right;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines text-decoration effects such as underlining. These decorations will span descendant elements that don't have decorations of their own, in many cases making the child elements appear to be decorated. Combinations of the values are legal. Any time two text-decoration declarations apply to the same element, the values of the two declarations are *not* combined.</td>
+	  <td>Defines text-decoration effects such as underlining. These decorations will span descendant 
+	  elements that don't have decorations of their own, in many cases making the child elements 
+	  appear to be decorated. Combinations of the values are legal. Any time two text-decoration 
+	  declarations apply to the same element, the values of the two declarations are <i>not</i> combined.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -11012,8 +11596,8 @@ svg tspan {text-rendering: optimizeLegibility;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>none &vert; &lbrack;*&lt;length&gt;* ‖ *&lt;color&gt;*? &&
-    *&lt;length&gt;*{2,3}&rbrack;#</td>
+	  <td>none &vert; &lbrack;<i>&lt;length&gt;</i> ‖ <i>&lt;color&gt;</i>? &&
+    <i>&lt;length&gt;</i>{2,3}&rbrack;#</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11091,12 +11675,12 @@ h1 {text-shadow: 0.5em 0.33em 4px gray;} h2 {text-shadow: 0
 	</tr>
   </tbody>
 </table>
-**Values**    uppercase &vert; lowercase &vert; capitalize &vert; none
-**Initial value**    none
-**Computed value**   As declared 
-**Applies to**    All elements
-     Defines the pattern for changing the case of
-**Description**  letters in an element, regardless of the case of    
+Values    uppercase &vert; lowercase &vert; capitalize &vert; none
+Initial value    none
+Computed value   As declared 
+Applies to    All elements
+Description:     Defines the pattern for changing the case of
+ letters in an element, regardless of the case of    
  the text in the document source. The determination  
  of which letters are to be capitalized by the value 
  capitalize is not precisely defined, as it depends  
@@ -11119,7 +11703,7 @@ h1 {text-transform: uppercase;} .title
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto</td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; auto</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11142,7 +11726,7 @@ h1 {text-transform: uppercase;} .title
     </tr>
 	<tr>
 	  <td><b>Animatable</b></td>
-	  <td>*&lt;length&gt;* and *&lt;percentage&gt;* values only  
+	  <td><i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
    Defines the offset between the top outer margin .</td>
     </tr>
 	<tr>
@@ -11177,7 +11761,7 @@ relative; top: 0.5em; vertical-align: baseline;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;transform-list&gt;* &vert; none</td>
+	  <td><i>&lt;transform-list&gt;</i> &vert; none</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11201,7 +11785,11 @@ relative; top: 0.5em; vertical-align: baseline;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines one or more transforms of an element. These transforms can occur in a 2D or a simulated 3D space, depending on how the transforms are declared. The permitted values for *&lt;transform-function&gt;* are lengthy and complex. For a full list with minimalist descriptions, please consult the W3C's documentation on [transform functions](http://w3.org/TR/css3-3d-transforms/#transform-functions).</td>
+	  <td>Defines one or more transforms of an element. These transforms can occur in a 2D or a 
+	  simulated 3D space, depending on how the transforms are declared. The permitted values for 
+	  <i>&lt;transform-function&gt;</i> are lengthy and complex. For a full list with minimalist 
+	  descriptions, please consult the W3C's documentation on 
+	  <a href="http://w3.org/TR/css3-3d-transforms/#transform-functions">transform functions</a>.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -11478,7 +12066,7 @@ h1 {transition-property: all;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>**transition-timing-function Inh. N Anim. N**</h3>  -->
+<!--  <h3>transition-timing-function Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11629,7 +12217,7 @@ sup {vertical-align: super;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>**visibility** **Inh. Y Anim. N**</h3>  -->
+<!--  <h3>visibility Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11724,7 +12312,7 @@ tt {white-space: pre;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>**widows**   **Inh. N Anim. Y**</h3>  -->
+<!--  <h3>widows   Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11766,7 +12354,7 @@ p {widows: 4;} ul {widows: 2;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>**width**    **Inh. N Anim. Y**</h3>  -->
+<!--  <h3>width    Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11810,7 +12398,7 @@ table {width: 80%;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>**word-break**  **Inh. Y Anim. Y**</h3>  -->
+<!--  <h3>word-break  Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
