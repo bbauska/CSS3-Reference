@@ -2128,16 +2128,8 @@ elements that are the last children of their parent element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:empty</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element 
-<p><b>Description</b>  Matches elements that have no child nodes---that  
-is, no child elements <i>or</i> content nodes. Content   
-nodes are defined as any text, whitespace, entity   
-reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is 
-<i>not</i> empty because it has a single whitespace 
-character inside it; nor is the element empty if    
-that space is replaced with a newline. Note that    
-this pseudo-class does <i>not</i> apply to empty 
-elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.
+<p><b>Applies to</b> Any element</p>
+<p><b>Description</b>  Matches elements that have no child nodes---that is, no child elements <i>or</i> content nodes. Content nodes are defined as any text, whitespace, entity reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is <i>not</i> empty because it has a single whitespace character inside it; nor is the element empty if that space is replaced with a newline. Note that this pseudo-class does <i>not</i> apply to empty elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.</p>
 <p><b>Examples</b></p>
 <pre>
 p:empty {padding: 1em; background: red;}
@@ -2512,12 +2504,12 @@ p:hover {background: yellow;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:link</h3>
+<!--  <h3>:link</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3>:link</h3></th>
+	  <th width="200">:link<h3>:link</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -3001,8 +2993,52 @@ these keywords' meaning, see Chapter 2.
 <h3 id="ch4-4-1">4.4. Properties</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>align-content</b>  <b>Inh. N Anim. N</b> 
+<!--  <h3><b>align-content</b>  <b>Inh. N Anim. N</b>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>align-content</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><br>
+	     <br>
+	  </td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+    <tr>
+	  <td><b></b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b></b></td>
+	  <td></td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>
+	  </td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>   flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
 space-around &vert; space-evenly &vert; stretch 
 <b>Initial value</b>    stretch  
@@ -3027,8 +3063,52 @@ space-around &vert; space-evenly &vert; stretch
   tent trivial in nearly all cases. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>align-items</b>  <b>Inh. N Anim. N</b>
+<!--  <h3><b>align-items</b>  <b>Inh. N Anim. N</b>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>align-items</h3></th>
+	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Values</b></td>
+	  <td><br>
+	     <br>
+	  </td>
+	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>See individual properties</td>
+	</tr>
+    <tr>
+	  <td><b></b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+	</tr>
+	<tr>
+	  <td><b></b></td>
+	  <td></td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>
+	  </td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+
 <b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
 <b>Initial value</b>  stretch 
 <b>Computed value</b>   As declared 
@@ -3049,7 +3129,7 @@ given the values start and end to replicate
 flex-start and flex-end behavior for non-flex 
 environments. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
   <thead>
@@ -3465,46 +3545,41 @@ running, paused, running;} table {animation-play-state: running;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td>&lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert; ease-in-out &vert; step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
 	</tr>
 	<tr>
+	  <td><b>Initial value</b></td>
+	  <td>ease</td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared</td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td>All elements, ::before and ::after pseudo elements</td>
+    </tr>
+	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines how an animation is run over the course of the animation's full cycle or within 
+	  an individual keyframe, depending on where the property is used. The keywords are all defined 
+	  to have cubicbezier() equivalents; for example, linear is equivalent to cubic-bezier(0,0,1,1). 
+	  They should therefore have consistent effects across user agents ---but, as always, authors 
+	  are cautioned not to count on that.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {animation-timing-function: ease, ease-in,
+cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
+linear;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-<b>Values</b>   &lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert;  
-ease-in-out &vert; step-start &vert; step-end &vert;     
-steps(<i>&lt;integer&gt;</i>, start) &vert; steps(<i>&lt;integer&gt;</i>,  
-end) &vert; cubic-bezier(<i>&lt;number&gt;</i>,   
-<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#  
-<b>Initial value</b>   ease 
-<b>Computed value</b>  As declared  
-<b>Applies to</b>    All elements, ::before and ::after pseudoelements    
-<p><b>Description</b>  Defines how an animation is run over the course of
-the animation's full cycle or within an individual  
-keyframe, depending on where the property is used.   
-The keywords are all defined to have cubicbezier()   
-equivalents; for example, linear is equivalent to    
-cubic-bezier(0,0,1,1). They should therefore have    
-consistent effects across user agents
-
----but, as always, authors are cautioned not to count on that.
-
-<p><b>Examples</b></p>
-<pre>
-h1 {animation-timing-function: ease, ease-in,
-cubic-bezier(0.13,0.42,0.67,0.75)} p {animation-timing-function:
-linear;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3517,39 +3592,39 @@ linear;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td>visible &vert; hidden</td>
+	</tr>
+    <tr>
+	  <td><b>Initial value</b></td>
+	  <td>visible</td>
+	</tr>
+    <tr>
+	  <td><b>Computed value</b></td>
+	  <td>As declared </td>
+	</tr>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any transformable element</td>
 	</tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether the back side of an element is visible once the element has been 
+	  rotated in a simulated 3D space and is "facing away" from the viewer. If the value is 
+	  hidden, the element will be effectively invisible until it is rotated such that the 
+	  front side of the element is once more "facing toward" the viewer.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+div.card {backface-visibility: hidden;}  
+span.cubeside {backface-visibility: visible;}    
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-<b>Values</b>  visible &vert; hidden
-<b>Initial value</b>  visible  
-<b>Computed value</b> As declared  
-<b>Applies to</b>   Any transformable element
-<p><b>Description</b>  Defines whether the back side of an element is   
-    visible once the element has been rotated in a   
-    simulated 3D space and is "facing away" from the 
-    viewer. If the value is hidden, the element will 
-    be effectively invisible until it is rotated     
-    such that the front side of the element is once  
-    more "facing toward" the viewer. 
-
-<p><b>Examples</b></p>
-<pre>
-div.card {backface-visibility: hidden;}  
-span.cubeside {backface-visibility: visible;}    
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>background</b>   <b>Inh. N Anim. P</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3562,12 +3637,24 @@ span.cubeside {backface-visibility: visible;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td></td>
 	</tr>
 	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td></td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -3628,14 +3715,25 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td></td>
 	</tr>
 	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td><b>Initial value</b></td>
+	  <td></td>
     </tr>
 	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td></td>
+    </tr>	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
@@ -3671,12 +3769,24 @@ div.fixbg {background-attachment: fixed;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td></td>
 	</tr>
 	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td></td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -3722,9 +3832,25 @@ li.shadowed {background-blend-mode: darken;} aside
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td></td>
 	</tr>
+	<tr>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td></td>
+    </tr>
 	<tr>
 	  <td><b>Description</b></td>
 	  <td>.</td>
@@ -3767,12 +3893,24 @@ body {background-clip: content-box;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td></td>
 	</tr>
 	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td></td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -3820,12 +3958,24 @@ pre {background-color: #FF9;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
-	  <td>  </td>
+	  <td><b>Values</b></td>
+	  <td></td>
 	</tr>
 	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td><b>Initial value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td></td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -4988,13 +5138,8 @@ double black 4px;}
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
-p    
- {borde  
- r-left-color:  
- gray;} pre   
- {borde  
- r-left-color:  
- black;}      
+p {border-left-color:  gray;} 
+pre {border-left-color:  black;}
 </pre>
       </td>
 	</tr>
@@ -5550,7 +5695,7 @@ h2 {border-top-left-radius: 1em 10px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  ### border-top-right-radius Inh. N Anim. Y</h3>  -->
+<!--  <h3>border-top-right-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6179,7 +6324,7 @@ pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>content</b>   <b>Inh. N Anim. N</b></h3>
+<!--  <h3><b>content</b>   <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6541,7 +6686,7 @@ li {display: list-item;} img {display: inline;} .hide {display: none;}
 tr {display: table-row;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h3>
+<!--  <h3><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6634,6 +6779,11 @@ th, td {empty-cells: show;}
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+img.oldschool {filter: sepia(0.9);} h2.glowshadow   
+{filter:    
+drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em     
+0.75em 30px gray);} div.logo {filter:  
+url(/assets/filters.svg#spotlight);}
 </pre>
       </td>
 	</tr>
@@ -6666,13 +6816,13 @@ drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em
 url(/assets/filters.svg#spotlight);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><b>flex</b>   <b>Inh. N Anim. P</b></h3>
+<!--  <h3><b>flex</b>   <b>Inh. N Anim. P</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>flex</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -6737,13 +6887,13 @@ It is <i>strongly</i> recommended that authors use this
 property instead of the separate properties it  
 encompasses. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>flex-basis  Inh. N Anim. P</h3>
+<!--  <h3>flex-basis  Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>flex-basis </h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -6885,7 +7035,7 @@ nav.sidenav {display: flex; flex-flow: column nowrap;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### flex-grow  Inh. N Anim. Y  -->
+<!--  <h3>flex-grow  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -6945,7 +7095,7 @@ ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 Note It is <i>strongly</i> recommended that instead of this property, authors use the flex shorthand property to set an item's flex
 growth factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### flex-shrink  Inh. N Anim. Y  -->
+<!--   <h3>flex-shrink  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7007,12 +7157,12 @@ Note It is <i>strongly</i> recommended that instead of this
 property, authors use the flex shorthand property   
 to set an item's flex shrink factor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### flex-wrap Inh. N Anim. N
+<!--  <h3>flex-wrap Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>flex-wrap</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -7064,12 +7214,12 @@ they run out of room (as in an image gallery), make sure to wrap them.
 {display: flex; flex-wrap: nowrap;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### float  Inh. N Anim. N
+<!--  <h3>float  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>float</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -7124,13 +7274,13 @@ img.figure {float: left;}
 p.sidebar {float: right; width: 15em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font Inh. Y Anim. P
+<!--  <h3>font Inh. Y Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font</h3></th>
+	  <th align="right"><h3>Inh. N Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7198,13 +7348,13 @@ encouraged for fallback purposes &ast;/
 .figure span {font: icon;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-family Inh. Y Anim. N
+<!--  <h3>font-family Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-family</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7263,13 +7413,13 @@ p {font-family: Helvetica, Arial, sans-serif;} li
 &quot;Courier New&quot;, &quot;Andale Mono&quot;, Monaco, monospace;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-feature-settings Inh. Y Anim. N
+<!--  <h3>font-feature-settings Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-feature-settings</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7320,13 +7470,13 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
 </pre>
 <p><b>Note</h5>  Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-kerning Inh. Y Anim. N
+<!--  <h3>font-kerning Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-kerning</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7384,13 +7534,13 @@ none;}
 
 Note Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-size Inh. Y Anim. P
+<!--  <h3>font-size Inh. Y Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-size</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. P</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7455,13 +7605,13 @@ code {font-size: 0.9em;}
 p.caption {font-size: 9px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-size-adjust Inh. Y Anim. Y
+<!--  <h3>font-size-adjust Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-size-adjust</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7510,13 +7660,13 @@ body {font-family: Helvetica, sans-serif;
 font-size-adjust: 0.53;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-stretch Inh. Y Anim. N
+<!--  <h3>font-stretch Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-stretch</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7563,13 +7713,13 @@ only swap in a variant face (if it exists).
 {font-stretch: condensed;} Note Has a corresponding &#64;font-face
 descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-style  Inh. Y Anim. N
+<!--  <h3>font-style  Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-style</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7624,13 +7774,13 @@ em {font-style: oblique;} i {font-style: italic;}
 </pre>
 Note Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-synthesis Inh. Y Anim. N
+<!--  <h3>font-synthesis Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>font-sythesis</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -7681,7 +7831,7 @@ h1 {font-synthesis: none;}
 pre code {font-synthesis: style;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-variant Inh. Y Anim. N
+<h3>font-variant Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7759,7 +7909,7 @@ h3 {font-variant: small-caps;} p {font-variant: normal;}
 </pre>
 Note Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### font-weight Inh. Y Anim. N
+<h3>font-weight Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7823,7 +7973,7 @@ b {font-weight: 700;} strong {font-weight: bold;}
 </pre>
  Note Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### grid Inh. N Anim. N  -->
+<!--  <h3>grid Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7889,7 +8039,7 @@ body {display: grid; grid:
 2em 3fr minmax(10em,1fr) 2em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-area Inh. N Anim. N
+<h3>grid-area Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7950,7 +8100,7 @@ and so on.
 #sidebar {grid-area: 1 / 2 / 1 / 3;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-auto-columns Inh. N Anim. N
+<h3>grid-auto-columns Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8009,7 +8159,7 @@ grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
 grid-auto-columns: 20em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-auto-flow Inh. N Anim. N
+<h3>grid-auto-flow Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8063,7 +8213,7 @@ section.menu {grid-auto-flow: column;}
 div.gallery {grid-auto-flow: row dense;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-auto-rows Inh. N Anim. N
+<h3>grid-auto-rows Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8125,7 +8275,7 @@ grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
 grid-auto-rows: 80px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-column Inh. N Anim. N
+<h3>grid-column Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8189,7 +8339,7 @@ header {grid-column: 1 / -1;}
 footer {grid-column: footer / 4;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-column-end Inh. N Anim. N
+<h3>grid-column-end Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8243,7 +8393,7 @@ header {grid-column-end: main-content;}
 #sidebar {grid-column-end: span 2;} footer {grid-column-end: 4;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-column-gap Inh. N Anim. Y
+<h3>grid-column-gap Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8298,7 +8448,7 @@ Note As of early 2018, the CSS Working Group intends to change this
 property to simply column-gap and have it apply to multicolumn and flex
 containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-column-start Inh. N Anim. N
+<h3>grid-column-start Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8360,7 +8510,7 @@ header {grid-column-start: masthead;}
 #sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-gap  Inh. N Anim. Y
+<h3>grid-gap  Inh. N Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8420,7 +8570,7 @@ change this property to simply gap and have it
 apply to multicolumn and flex containers as well as 
 grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-row  Inh. N Anim. N
+<h3>grid-row  Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8483,7 +8633,7 @@ footer {grid-row: footer-start / footer-end;}f
 header {grid-row: top;} /&ast; a trailing &apos;/ span 1&apos; is assumed &ast;/
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-row-end Inh. N Anim. N
+<h3>grid-row-end Inh. N Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -8540,13 +8690,13 @@ header {grid-row-end: span 1;}
 &dollar;sidebar {grid-row-end: -1;} footer {grid-row-end: footer-end;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-row-gap Inh. N Anim. Y
+<!--  <h3>grid-row-gap Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>grid-row-gap</h3></th>
+	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8595,12 +8745,12 @@ Note As of early 2018, the CSS Working Group intends to change this
 property to simply row-gap and have it apply to multicolumn and flex
 containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-row-start Inh. N Anim. N
+<!--  <h3>grid-row-start Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>grid-row-start</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -8655,12 +8805,12 @@ header {grid-row-start: masthead;}
 footer {grid-row-start: footer-start;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-template-areas Inh. N Anim. N
+<!--  <h3>grid-template-areas Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>grid-template-areas</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -8718,12 +8868,12 @@ grid-template-areas:
 &quot;leftside footer footer footer&quot;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-template-columns Inh. N Anim. N
+<!--  <h3>grid-template-columns Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>grid-template-columns</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -8775,12 +8925,12 @@ max-content min-content max-content;} article {grid-template-columns:
 &lbrack;stop end last&rbrack;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### grid-template-rows Inh. N Anim. N
+<!--  <h3>grid-template-rows Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>grid-template-rows</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -8834,12 +8984,12 @@ article {grid-template-rows: 3em minmax(5em,1fr)
 &lbrack;footer&rbrack; 2em &lbrack;stop end&rbrack;;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### height    Inh. N Anim. Y
+<!--  <h3>height    Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>height</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -8893,13 +9043,13 @@ img.icon {height: 50px;}
 h1 {height: 1.75em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### hyphens   Inh. Y Anim. N
+<!--  <h3>hyphens   Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>hyphens</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -8950,12 +9100,12 @@ Description  line breaks must be done manually (e.g., with a
 <p><b>Examples</b></p>  h1, h2 {hyphens: none;} aside.poem {hyphens:
  manual;}    
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### isolation Inh. N Anim. N
+<!--  <h3>isolation Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
+	  <th width="200"><h3>isolation</h3></th>
 	  <th align="right"><h3>Inh. N Anim. N</h3></th>
 	</tr>
   </thead>
@@ -9010,7 +9160,7 @@ from its ancestors.
 <p><b>Example</b></p> p.alone {isolation: isolate;}
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### justify-content Inh. N Anim. N  -->
+<!--  <h3>justify-content Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9064,7 +9214,7 @@ Note As of early 2018, there are plans to have this
  end to replicate flex-start and flex-end behavior   
  for non-flex environments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### left Inh. N Anim. P  -->
+<!--  <h3>left Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9125,7 +9275,7 @@ div#footer {position: fixed; left: 0;}
 &ast;.hanger {position: relative; left: −25px;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### letter-spacing Inh. Y Anim. Y
+<!--  <h3>letter-spacing Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9187,7 +9337,7 @@ em {letter-spacing: 0.2em;}
 p.cramped {letter-spacing: −0.5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### line-break Inh. Y Anim. Y  -->
+<!--  <h3>line-break Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9268,7 +9418,7 @@ div.cjk
 strict;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### line-height Inh. Y Anim. Y
+<!--  <h3>line-height Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9342,7 +9492,7 @@ ul {line-height: 1.2;}
 pre {line-height: 0.75em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### list-style Inh. Y Anim. N
+<!--  <h3>list-style Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9400,7 +9550,7 @@ values are inherited by &apos;li&apos; elements &ast;/
 ol {list-style: upper-roman;}  
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-#### list-style-image Inh. Y Anim. N
+<!--  <h3>list-style-image Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9444,7 +9594,7 @@ url(\\http://example.org/pix/checkmark.png);}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### list-style-position Inh. Y Anim. N  -->
+<!--  <h3>list-style-position Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9491,7 +9641,7 @@ ol li {list-style-position: inside;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### list-style-type Inh. Y Anim. N  -->
+<!--  <h3>list-style-type Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9556,7 +9706,7 @@ ol {list-style-type: lower-roman;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### margin    Inh. N Anim. Y  -->
+<!--  <h3>margin    Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9609,7 +9759,7 @@ p {margin: auto;} img {margin: 10px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### margin-bottom Inh. N Anim. Y  -->
+<!--  <h3>margin-bottom Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9664,7 +9814,7 @@ ul {margin-bottom: 0.5in;}
 h1 {margin-bottom: 2%;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### margin-left Inh. N Anim. Y  -->
+<!--  <h3>margin-left Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9719,7 +9869,7 @@ p {margin-left: 5%;}
 pre {margin-left: 3em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### margin-right Inh. N Anim. Y  -->
+<!--  <h3>margin-right Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9774,7 +9924,7 @@ img {margin-right: 30px;}
 ol {margin-right: 5em;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### margin-top Inh. N Anim. Y  -->
+<!--  <h3>margin-top Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9830,7 +9980,7 @@ warranted (see margin).
 ul {margin-top: 0.5in;} h3 {margin-top: 1.5em;}     
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask Inh. N Anim. P  -->
+<!--  <h3>mask Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9899,7 +10049,7 @@ add;
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask-clip Inh. N Anim. N  -->
+<!--  <h3>mask-clip Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -9961,7 +10111,7 @@ p:nth-child(2) {mask-clip: padding-box;}
 p:nth-child(3) {mask-clip: content-box;}    
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask-composite Inh. N Anim. N  -->
+<!--  <h3>mask-composite Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -10021,7 +10171,7 @@ img.masked {mask-composite: add;}
 span.mask3 {mask-composite: subtract, add, add;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask-image Inh. N Anim. N  -->
+<!--  <h3>mask-image Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -10090,7 +10240,7 @@ will be used to determine the masking of the element.
 &ast;.masked.theatre {mask-image: url(theatre-masks.svg);}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask-mode Inh. N Anim. N  -->
+<!--  <!--  <h3>mask-mode Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -10158,7 +10308,7 @@ p {mask-mode: alpha;}
 img.lum {mask-mode: luminance, alpha;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask-origin  -->
+<!--  <!--  <h3>mask-origin  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -10215,7 +10365,7 @@ div.inset {mask-origin: content-box;}
 svg#radio {mask-origin: stroke-box, fill-box;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  #### mask-position Inh. N Anim. P  -->
+<!--  <!--  <h3>mask-position Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
