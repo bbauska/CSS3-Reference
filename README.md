@@ -3250,63 +3250,52 @@ these keywords' meaning, see Chapter 2.
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td><br>
-	     <br>
-	  </td>
+	  <td>flex-start &vert; flex-end &vert; center &vert; space-between &vert; space-around 
+	  &vert; space-evenly &vert; stretch</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td>See individual properties</td>
+	  <td>stretch</td>
 	</tr>
     <tr>
-	  <td><b></b></td>
-	  <td></td>
+	  <td><b>Computed value</b></td>
+	  <td>As declared </td>
 	</tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Flex containers</td>
 	</tr>
 	<tr>
 	  <td><b></b></td>
 	  <td></td>
 	</tr>
+	<tr>
 	  <td><b>Description</b></td>
-	  <td>
-	  </td>
+	  <td>Defines the distribution of flex lines along the cross axis of a flex container, 
+	  given that the container's cross-axis length does not equal the sum of the flex lines' 
+	  size along the same axis.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+aside {display: flex; align-content: center;}<br>
+  section {display: flex; height: 90vh;<br>
+  align-content: flex-end;} 
 </pre>
       </td>
 	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>As of early 2018, there are plans to have this property apply to many (or all) 
+	  elements, not just flex flex containers, and be given the values start and end to 
+	  replicate replicate flex-start and flex-end behavior for non-flex environments. 
+	  Thanks to the center value, this change would make vertical centering of content 
+	  trivial in nearly all cases.</td>
+	</tr>
   </tbody>
 </table>
-
-<b>Values</b>   flex-start &vert; flex-end &vert; center &vert; space-between &vert;<br>
-space-around &vert; space-evenly &vert; stretch 
-<b>Initial value</b>    stretch  
-<b>Computed value</b>  As declared 
-<b>Applies to</b>   Flex containers 
-<b> Description</b>  Defines the distribution of flex lines along the cross<br>
-     axis of a flex container, given that the container's<br>
-     cross-axis length does not equal the sum of the flex<br>
-     lines' size along the same axis. 
-<p><b>Examples</b></p>
-<pre>
-  aside {display: flex; align-content: center;}<br>
-  section {display: flex; height: 90vh;<br>
-    align-content: flex-end;} 
 </pre>
-<b>Note</b>  As of early 2018, there are plans to have this prop-<br>
-  erty apply to many (or all) elements, not just flex<br>
-  flex containers, and be given the values start and end to replicate <br>
-  replicate flex-start and flex-end behavior for <br>
-  non-flex environments. Thanks to the center value,<br>
-  this change would make vertical centering of con-<br>
-  tent trivial in nearly all cases. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>align-items</b>  <b>Inh. N Anim. N</b>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3320,59 +3309,43 @@ space-around &vert; space-evenly &vert; stretch
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td><br>
-	     <br>
-	  </td>
+	  <td>flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td>See individual properties</td>
+	  <td>stretch</td>
 	</tr>
     <tr>
-	  <td><b></b></td>
-	  <td></td>
+	  <td><b>Computed value</b></td>
+	  <td>As declared </td>
 	</tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Flex containers, grid containers, and multicolumn containers </td>
 	</tr>
 	<tr>
-	  <td><b></b></td>
-	  <td></td>
-	</tr>
 	  <td><b>Description</b></td>
-	  <td>
-	  </td>
+	  <td>Sets a flex-container-wide default for items' alignment with respect to the cross 
+	  axis of the flex line they occupy. baseline alignment means the items in a line are 
+	  all placed such that the baselines of their first lines of text line up.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-<b>Values</b>    flex-start &vert; flex-end &vert; center &vert; baseline &vert; stretch 
-<b>Initial value</b>  stretch 
-<b>Computed value</b>   As declared 
-<b>Applies to</b>     Flex containers, grid containers, and multicolumn containers  
-<p><b>Description</b>  Sets a flex-container-wide default for items' 
-alignment with respect to the cross axis of the
-flex line they occupy. baseline alignment means the
-items in a line are all placed such that the
-baselines of their first lines of text line up. 
-<p><b>Examples</b></p>
-<pre>
 div.flexy {align-items: flex-start;} 
 section.gallery {align-items: baseline;} 
 </pre>
-<b>Note</b>  As of early 2018, there are plans to have this
-property apply to many (or all) elements and be 
-given the values start and end to replicate 
-flex-start and flex-end behavior for non-flex 
-environments. 
+      </td>
+	</tr>
+	<tr>
+	  <td><b></b></td>
+	  <td>As of early 2018, there are plans to have this property apply to many (or all) 
+	  elements and be given the values start and end to replicate flex-start and flex-end 
+	  behavior for non-flex environments.</td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3402,7 +3375,8 @@ environments.
 	  <td>Flex and grid items</td>
 	</tr>
 	  <td><b>Description</b></td>
-	  <td>Sets the alignment for a single item with respect to the cross axis of the flex line it occupies.</td>
+	  <td>Sets the alignment for a single item with respect to the cross axis of the flex line 
+	  it occupies.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -3414,7 +3388,9 @@ section.gallery h1 {align-self: stretch;}
       </td>
 	<tr>
 	  <td><b>Note</b></td>
-	  <td>As of early 2018, there are plans to have this property apply to many (or all) elements, and be given the values start and end to replicate flex-start and flex-end behavior for non-flex environments.</td>
+	  <td>As of early 2018, there are plans to have this property apply to many (or all) elements, 
+	  and be given the values start and end to replicate flex-start and flex-end behavior for 
+	  non-flex environments.</td>
     </tr>
   </tbody>
 </table>
@@ -3495,7 +3471,11 @@ section.gallery h1 {align-self: stretch;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>A shorthand property encompassing all the aspects of one or more comma-separated CSS animations. The parts of the value can occur in any order. Therefore, beware possible ambiguity in the delay and duration values. As of this writing, it is most likely that the first time value will be taken to define the duration and the second to define the delay, but this cannot be guaranteed.</td>
+	  <td>A shorthand property encompassing all the aspects of one or more comma-separated 
+	  CSS animations. The parts of the value can occur in any order. Therefore, beware 
+	  possible ambiguity in the delay and duration values. As of this writing, it is most 
+	  likely that the first time value will be taken to define the duration and the second 
+	  to define the delay, but this cannot be guaranteed.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -3538,7 +3518,10 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines the amount of time that the user agent waits before starting the CSS animation(s). The timer starts when the user agent applies the animation CSS. For a noninteractive element, this is likely (but not guaranteed) to be at the end of page load.</td>
+	  <td>Defines the amount of time that the user agent waits before starting the CSS 
+	  animation(s). The timer starts when the user agent applies the animation CSS. For 
+	  a noninteractive element, this is likely (but not guaranteed) to be at the end of 
+	  page load.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -3791,7 +3774,10 @@ running, paused, running;} table {animation-play-state: running;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert; ease-in-out &vert; step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
+	  <td>&lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert; ease-in-out &vert; 
+	  step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; 
+	  steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, 
+	  <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4015,41 +4001,26 @@ div.fixbg {background-attachment: fixed;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
+    &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
+    &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
+    saturation &vert; color &vert; luminosity &rbrack;# </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
-	  <td><b>Animatable</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Examples</b></td>
-	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-<b>Values</b>   &lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
-    &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
-    &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
-    saturation &vert; color &vert; luminosity &rbrack;# 
-<b>Initial value</b>  normal 
-<b>Computed value</b>  As declared 
-<b>Applies to</b>    All elements 
-<p><b>Description</b>   Changes how overlapping background images are
+	  <td><b>Description</b></td>
+	  <td>Changes how overlapping background images are
 composited against an "empty" backdrop. The "backdrop" here is a
 transparent layer underneath the background color. The default of
 normal imposes simple alpha blending, as CSS has permitted since its
@@ -4059,12 +4030,19 @@ result will show, at each pixel, either the image or its backdrop,
 whichever is lighter. darken is the same, except the darker of the two
 pixels will be shown. The results of these are likely to be familiar
 to users of Photoshop or any other graphic-editing tool. Compositing
-of multiple background layers is done back to front. 
-<p><b>Examples</b></p>
+of multiple background layers is done back to front.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 li.shadowed {background-blend-mode: darken;} aside
 {background-blend-mode: color-burn, luminosity, darken;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>background-clip Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4078,54 +4056,40 @@ li.shadowed {background-blend-mode: darken;} aside
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>border-box</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Animatable</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the boundary within the element box at which the
+background is clipped (that is, no longer drawn). Historically, this has
+been equivalent to the default value of border-box, where the background
+goes to the outer edge of the border area. This property allows more
+constrained clipping boxes at the outer edge of the padding area and at
+the content edge itself.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+body {background-clip: content-box;}
+.callout {background-clip: content-box, border-box, padding-box;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-<b>Values</b> &lbrack; border-box &vert; padding-box &vert; content-box &vert; text &rbrack;#
-<b>Initial value</b> border-box <b>Computed value</b> As declared
-
-<b>Applies to</b> All elements
-
-<p><b>Description</b> Defines the boundary within the element box at which the
-background is clipped (that is, no longer drawn). Historically, this has
-been equivalent to the default value of border-box, where the background
-goes to the outer edge of the border area. This property allows more
-constrained clipping boxes at the outer edge of the padding area and at
-the content edge itself.
-
-<p><b>Examples</b></p>
-<pre>
-body {background-clip: content-box;}
-.callout {background-clip: content-box, border-box, padding-box;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>background-color  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4154,7 +4118,7 @@ body {background-clip: content-box;}
 	  <td></td>
     </tr>
 	<tr>
-	  <td><b>Animatable</b></td>
+	  <td><b>Description</b></td>
 	  <td></td>
     </tr>
 	<tr>
@@ -4219,7 +4183,7 @@ pre {background-color: #FF9;}
 	  <td></td>
     </tr>
 	<tr>
-	  <td><b>Animatable</b></td>
+	  <td><b>Description</b></td>
 	  <td></td>
     </tr>
 	<tr>
@@ -4412,55 +4376,42 @@ repeat-y, round space, repeat;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; auto &rbrack;{1,2} &vert; cover &vert; contain &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>auto</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared, but with all lengths made absolute and  
+  any missing auto keywords added </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements </td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the size of one or more background origin images. If two keywords are used 
+	  (e.g., 50px 25%), the first defines the horizontal size of the image and the second 
+	  defines the vertical size. The origin image can be deformed to exactly cover the 
+	  background with 100% 100%. By contrast, cover scales up the image to cover the entire 
+	  background even if some of it exceeds the background area and is thus clipped, and 
+	  contain scales up the origin image so that at least one of its dimensions exactly 
+	  fills the corresponding axis of the background area.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+body {background-size: 100% 90%;}
+div.photo {background-size: cover;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values   &lbrack; &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; auto  
-&rbrack;{1,2} &vert; cover &vert; contain &rbrack;# 
-Initial value   auto 
-Computed value  As declared, but with all lengths made absolute and  
-  any missing auto keywords added 
-Applies to   All elements 
-Description  Defines the size of one or more background origin
-    images. If two keywords are used (e.g., 50px 25%),   
-the first defines the horizontal size of the image   
-and the second defines the vertical size. The origin 
-image can be deformed to exactly cover the   
-background with 100% 100%. By contrast, cover scales 
-up the image to cover the entire background even if some of it exceeds
-the background area and is thus clipped, and contain scales up the
-origin image so that at least one of its dimensions exactly fills the
-corresponding axis of the background area. 
-
-<p><b>Examples</b></p>
-<pre>
-body {background-size: 100% 90%;}
-div.photo {background-size: cover;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border    Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4474,53 +4425,43 @@ div.photo {background-size: cover;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
+ *&lt;bordercolor&gt;* &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>Refer to individual properties </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements  </td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Border width and color; not border style</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the width, color, and style of an element's border. 
+	  Note that while none of the values are actually required, omitting a border style will 
+	  result in no border being applied because the default border style is none.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {border: 2px dashed olive;} a:link {border: blue 
+solid 1px;} 
+p.warning {border: double 5px red;} 
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values    &lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
- *&lt;bordercolor&gt;* &rbrack;
-Initial value    Refer to individual properties 
-Computed value   As declared 
-Applies to    All elements    
-  Border width and color; not border style    
-Animatable 
-Description  A shorthand property that defines the width, color,
-    and style of an element's border. Note that while 
- none of the values are actually required, omitting  
- a border style will result in no border being  
- applied because the default border style is none.   
-
-<p><b>Examples</b></p>
-<pre>
-h1 {border: 2px dashed olive;} a:link {border: blue 
-solid 1px;} 
-     
-p.warning {border: double 5px red;} 
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-bottom Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
