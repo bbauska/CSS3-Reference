@@ -4475,93 +4475,44 @@ p.warning {border: double 5px red;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ <i>&lt;bordercolor&gt;</i> &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties (border-width, etc.)</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
+    </tr>
+	<tr>
+	  <td><b>Animatable</b></td>
+	  <td>Border width and color; not border style</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the width, color, and style of the bottom border 
+	  of an element. As with border, omission of a border style will result in no border 
+	  appearing.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-Values&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
-    *&lt;bordercolor&gt;* &rbrack;
-Initial value See individual properties
-ComputedSee individual properties (border-width, etc.)
-  value   
-Applies to    All elements
-
-Animatable    Border width and color; not border style
-
-Description   A shorthand property that defines the width, color,
-    and style of the bottom border of an element. As
-
-with border, omission of a border style will result in no border
-appearing.
-
-<p><b>Examples</b></p>
 <pre>
 ul {border-bottom: 0.5in groove green;}
 a:active {border-bottom: purple 2px dashed;}
 </pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>border-bottom-color Inh. N Anim. Y</h3>  -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table style="width:500px;">
-  <thead>
-    <tr>
-	  <th width="200"><h3>border-bottom-color</h3></th>
-	  <th align="right"><h3>Inh. N Anim. Y</h3></th>
-	</tr>
-  </thead>
-  <tbody>
-    <tr>
-	  <td><b>Values</b></td>
-	  <td></td>
-	</tr>
-	<tr>
-	  <td><b>Initial value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Computed value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Applies to</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Description</b></td>
-	  <td>.</td>
-    </tr>
-	<tr>
-	  <td><b>Examples</b></td>
-	  <td>
-<pre>
-</pre>
       </td>
 	</tr>
   </tbody>
 </table>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--  <h3>border-bottom-color Inh. N Anim. Y</h3>  -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
@@ -4616,52 +4567,42 @@ a:active {border-bottom-color: purple;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>0</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>Two values, each a *&lt;percentage&gt;* or *&lt;length&gt;* made absolute</td>
+    </tr>
+	<tr>
+	  <td><b>Percentages</b></td>
+	  <td>Calculated with respect to the relevant dimension of
+    the border box</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements, except internal table elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the rounding radius for the bottom-left corner of an element's border. If two 
+	  values are supplied, the first is the horizontal radius and the second is the vertical 
+	  radius. See border-radius for a description of how the values create the rounding shape.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {border-bottom-left-radius: 10%;}
+h2 {border-bottom-left-radius: 1em 10px;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
-Initial value 0
-ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
-  value   made absolute
-Percentages   Calculated with respect to the relevant dimension of
-    the border box
-Applies to    All elements, except internal table elements
-Description   Defines the rounding radius for the bottom-left corner
-    of an element's border. If two values are supplied,
-    the first is the horizontal radius and the second is
-    the vertical radius. See border-radius for a
-    description of how the values create the rounding
-    shape.
-
-<p><b>Examples</b></p>
-<pre>
-h1 {border-bottom-left-radius: 10%;}
-h2 {border-bottom-left-radius: 1em 10px;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-bottom-right-radius Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4683,6 +4624,10 @@ h2 {border-bottom-left-radius: 1em 10px;}
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Percentages</b></td>
 	  <td></td>
     </tr>
 	<tr>
@@ -4831,15 +4776,15 @@ a:active {border-bottom-width: 2px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>collapse &vert; separate &vert; inherit</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>separate</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>declared value</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
@@ -4847,33 +4792,26 @@ a:active {border-bottom-width: 2px;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the layout model used in laying out the
+    borders in a table---i.e., those applied to cells,
+    rows, and so forth. Although the property applies only
+    to tables, it is inherited by all the elements within
+    the table and actually used by them.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+table {border-collapse: separate; border-spacing: 3px 5px;}
 </pre>
       </td>
 	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>In CSS2, the default was collapse.</td>
+    </tr>
   </tbody>
 </table>
-Valuescollapse &vert; separate &vert; inherit
-Initial value separate
-ComputedAs declared value   
-Applies to    Elements with the display value table or tableinline
-Description   Defines the layout model used in laying out the
-    borders in a table---i.e., those applied to cells,
-    rows, and so forth. Although the property applies only
-    to tables, it is inherited by all the elements within
-    the table and actually used by them.
-
-<p><b>Example</b></p>
-<pre>
-table {border-collapse: separate; border-spacing: 3px 5px;}
-</pre>
-
-Note  In CSS2, the default was collapse.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>border-color  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
