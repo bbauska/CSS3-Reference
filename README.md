@@ -366,8 +366,8 @@ a property name or value:</p>
 <h4>Comments</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-<b>h1</b>/&ast; heading-level-1 &ast;/ {color /&ast; foreground color &ast;/:
-  rgba(23,58,89,0.42) /&ast; RGB + opacity &ast;/;}
+<span style="color:darkblue"><b>h1</b></span><span style="color:lightblue">/&ast; heading-level-1 &ast;/ {color /&ast; foreground color &ast;/:</span>
+  <span style="color:darkblue">rgba</span>(<span style="color:orange">23,58,89,0.42</span>)<span style="color:lightblue">/&ast; RGB + opacity &ast;/;}</span>
 </pre>
 
 <p>HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
