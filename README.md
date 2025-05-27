@@ -2128,6 +2128,29 @@ elements that are the last children of their parent element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:empty</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3></h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td></td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <p><b>Applies to</b> Any element</p>
 <p><b>Description</b>  Matches elements that have no child nodes---that is, no child elements <i>or</i> content nodes. Content nodes are defined as any text, whitespace, entity reference, or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is <i>not</i> empty because it has a single whitespace character inside it; nor is the element empty if that space is replaced with a newline. Note that this pseudo-class does <i>not</i> apply to empty elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.</p>
 <p><b>Examples</b></p>
@@ -2138,75 +2161,204 @@ div:not(:empty) {border: 1px solid;<br>
 li:empty {display: none;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:first-child</h3>
+<!--  <h3>:first-child</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>     Any element
-<p><b>Description</b>  Matches an element when it is the first child of  
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:first-child</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element when it is the first child of  
 another element. Thus, div:first-child will select  
 any div that is the first child of another element, 
-<i>not</i> the first child element of any div.   
-<p><b>Examples</b></p>
+<i>not</i> the first child element of any div.   </td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 td:first-child {border-left: 1px solid;}
 p:first-child {text-indent: 0; margin-top: 2em;}    
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:first-of-type</h3>
+<!--  <h3>:first-of-type</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element
-<p><b>Description</b> Matches an element when it is the first child of its
-type, as compared to all its sibling elements. Thus, div:first-of-type
-will select any div that is the first child div of another element.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:first-of-type</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element when it is the first child of its type, as compared to all its 
+	  sibling elements. Thus, div:first-of-type will select any div that is the first child 
+	  div of another element.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 td:first-of-type {border-left: 1px dotted;}
 h2:first-of-type {color: fuchsia;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:lang</h3>
+<!--  <h3>:lang</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>     Any element with associated language-encoding  
-    information.
-<p><b>Description</b>  Matches elements based on their human-language 
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:lang</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element with associated language-encoding information.</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches elements based on their human-language 
   encoding. Such language information must be 
  contained within, or otherwise associated with, the 
  document---it cannot be assigned from CSS. The 
  handling of :lang is the same as for &vert;= attribute  
- selectors.  
-<p><b>Examples</b></p>
+ selectors.  </td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 html:lang(en) {background: silver;} <br>
 &ast;:lang(fr) {quotes: &apos;&#171;&apos; &apos;&#187;&apos;;}     
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:last-child</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>     Any element 
-<p><b>Description</b>  Matches an element when it is the last child of  
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:last-child</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element when it is the last child of  
  another element. Thus, div:last-child will select  
  any div that is the last child of another element, 
- <i>not</i> the last child element of any div. 
-<p><b>Examples</b></p>
+ <i>not</i> the last child element of any div. </td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 td:last-child {border-right: 1px solid;}
 p:last-child {margin-bottom: 2em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:last-of-type</h3>
+<!--  <h3>:last-of-type</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element
-<p><b>Description</b> Matches an element when it is the last child of its
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:last-of-type</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element when it is the last child of its
 type, as compared to all its sibling elements. Thus, div:last-of-type
-will select any div that is the last child div of another element.
-<p><b>Examples</b></p> 
-
+will select any div that is the last child div of another element.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 td:last-of-type {border-right: 1px dotted;}
 h2:last-of-type {color: fuchsia;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:nth-child(<i>a</i>n±<i>b</i>)</h3>
+<!--  <h3>:nth-child(<i>a</i>n±<i>b</i>)</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:nth-child(<i>a</i>n±<i>b</i>)</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches every <i>n</i>th child with the pattern of selection
+defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s
+and n represents an infinite series of integers, counting forward from
+the first child. Thus, to select every fourth child of the body element,
+starting with the first child, you would write body &gt;
+
+&ast;:nth-child(4n+1). This will select the first, fifth, ninth,
+fourteenth, and so on children of the body.
+
+If you literally wish to select the fourth, eighth, twelfth, and so on
+children, you can modify the selector to body &gt; &ast;:nth-child(4n). It
+is also possible for <i>b</i> to be negative: body &gt; &ast;:nth-child(4n-- 1)
+selects the third, seventh, eleventh, fifteenth, and so on children of
+the body.
+
+In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
+even and odd. These are equivalent to 2n and 2n+1, respectively.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
+<pre>
+&ast;:nth-child(4n+1) {font-weight: bold;}
+tbody tr:nth-child(odd) {background-color: #EEF;}
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <b>Applies to</b>  Any element
 
 <p><b>Description</b> Matches every <i>n</i>th child with the pattern of selection
@@ -2235,115 +2387,208 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:nth-last-child(<i>a</i>n±<i>b</i>)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element
-
-<p><b>Description</b> Matches every </i>n</i>th child with the pattern of selection
-defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s
-and n represents an infinite series of integers, <i>counting backward from
-the last child</i>. Thus, to select every fourth-to-last child of the body
-element, starting with the last child, you would write body &gt;
-&ast;:nth-last-child(4n+1). This is, in effect, the mirror image of :nth-child.
-In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
-even and odd. These are equivalent to 2n and 2n+1, respectively.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:nth-last-child(<i>a</i>n±<i>b</i>)</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches every </i>n</i>th child with the pattern of selection defined by the 
+	  formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s 
+	  and n represents an infinite series of integers, <i>counting backward from the last 
+	  child</i>. Thus, to select every fourth-to-last child of the body element, starting 
+	  with the last child, you would write body &gt; &ast;:nth-last-child(4n+1). This is, 
+	  in effect, the mirror image of :nth-child. In place of the <i>a</i>n±<i>b</i> formula, 
+	  there are two keywords permitted: even and odd. These are equivalent to 2n and 2n+1, 
+	  respectively.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 &ast;:nth-last-child(4n+1) {font-weight: bold;} 
 tbody tr:nth-last-child(odd) { 
   background-color: #EEF;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element
-<p><b>Description</b> Matches every <i>n</i>th child that is of the same type as
-the element named, with the pattern of selection defined by the formula
-<i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s and n represents an
-infinite series of integers, <i>counting backward from the last such
-element</i>. Thus, to select every third-to-last paragraph (p) that is a
-child of the body element, starting with the first such paragraph, you
-would write body &gt; p:nthlast-of-type(3n+1). This holds true even if
-other elements (e.g., lists, tables, or other elements) are interspersed
-between the various paragraphs. In place of the <i>a</i>n±<i>b</i> formula, there
-are two keywords permitted: even and odd. These are equivalent to 2n and
-2n+1, respectively.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3></h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches every <i>n</i>th child that is of the same type as the element named, with 
+	  the pattern of selection defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and 
+	  <i>b</i> are <i>&lt;integer&gt;</i>s and n represents an infinite series of integers, 
+	  <i>counting backward from the last such element</i>. Thus, to select every third-to-last 
+	  paragraph (p) that is a child of the body element, starting with the first such paragraph, 
+	  you would write body &gt; p:nthlast-of-type(3n+1). This holds true even if other elements 
+	  (e.g., lists, tables, or other elements) are interspersed between the various paragraphs. 
+	  In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted: even and 
+	  odd. These are equivalent to 2n and 2n+1, respectively.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 td:nth-last-of-type(even) {
   background-color: #FCC;} 
 img:nth-last-of-type(3n) {float: left;
   border: 2px solid;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:nth-of-type(<i>a</i>n±<i>b</i>)</h3>
+<!--  <h3>:nth-of-type(<i>a</i>n±<i>b</i>)</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element
-<p><b>Description</b> Matches every <i>n</i>th child that is of the same type as
-the element named, with the pattern of selection defined by the formula
-<i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s and n represents an
-infinite series of integers, counting forward from the first such
-element. Thus, to select every third paragraph (p) that is a child of
-the body element, starting with the first such paragraph, you would
-write body &gt; p:nth-oftype(3n+1). This will select the first, fourth,
-seventh, tenth, and so on child paragraphs of the body. This holds
-true even if other elements (e.g., lists, tables, or other elements)
-are interspersed between the various paragraphs.
-In place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted:
-even and odd. These are equivalent to 2n and 2n+1, respectively.
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:nth-of-type(<i>a</i>n±<i>b</i>)</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches every <i>n</i>th child that is of the same type as the element named, with 
+	  the pattern of selection defined by the formula <i>a</i>n±<i>b</i>, where <i>a</i> and 
+	  <i>b</i> are <i>&lt;integer&gt;</i>s and n represents an infinite series of integers, 
+	  counting forward from the first such element. Thus, to select every third paragraph (p) 
+	  that is a child of the body element, starting with the first such paragraph, you would 
+	  write body &gt; p:nth-oftype(3n+1). This will select the first, fourth, seventh, tenth, 
+	  and so on child paragraphs of the body. This holds true even if other elements (e.g., 
+	  lists, tables, or other elements) are interspersed between the various paragraphs. In 
+	  place of the <i>a</i>n±<i>b</i> formula, there are two keywords permitted: even and odd. 
+	  These are equivalent to 2n and 2n+1, respectively.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 td:nth-of-type(even) {background-color: #FCC;}
 img:nth-of-type(3n) {float: right;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:only-child</h3>
+<!--  <h3>:only-child</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> Any element
-<p><b>Description</b> Matches an element that is the only child element of its
-parent element. A common use case for this selector is to remove the
-border from any linked image, assuming that image is the only element in
-the link. Note that an element can be selected by :only-child even if it
-has its own child or children. It must simply be the only child of its
-parent.
-
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:only-child</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>Any element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element that is the only child element of its parent element. A common 
+	  use case for this selector is to remove the border from any linked image, assuming that 
+	  image is the only element in the link. Note that an element can be selected by :only-child 
+	  even if it has its own child or children. It must simply be the only child of its parent.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a img:only-child {border: 0;}
 table div:only-child {margin: 5px;}
 </pre>
-
-Any element
-
-<b>:</b>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>only-of-type</h3>
+<!--  <h3>only-of-type</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b>
-
-<p><b>Description</b> Matches an element that is the only child element of its
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>only-of-type</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td></td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>Matches an element that is the only child element of its
 type of its parent element. Note that an element can be selected by
 :only-of-type even if it has its own child or children of its own type
-(such as divs within a div).
-<p><b>Examples</b></p> 
+(such as divs within a div).</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 p em:only-of-type {font-weight: bold;} 
-section article:only-of-type {margin: 2em 0 3em;} 
+section article:only-of-type {margin: 2em 0 3em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:root</h3>
+<!--  <h3>:root</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Applies to</b> The root element
-
-<p><b>Description</b> This matches the document's root element, which in <br>
+<table style="width:500px;">
+  <thead>
+    <tr>
+	  <th width="200"><h3>:root</h3></th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Applies to</b></td>
+	  <td>The root element</td>
+	</tr>
+	  <td><b>Description</b></td>
+	  <td>This matches the document's root element, which in <br>
 HTML is always the html element. In SVG, it is the <br>
 svg element. In XML formats, the root element can <br>
 have any name; thus, a generic root-element selector <br>
-is needed.
-
-<p><b>Examples</b></p>
+is needed.</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 :root {font: medium serif;}<br>
 :root &gt; &ast; {margin: 1.5em 0;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3-1">3.3. The Negation Pseudo-Class</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -14121,12 +14366,12 @@ p.cramped {word-spacing: −0.5em;}
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> Name here </h3></th>
+	  <th width="200"><h3></h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
-	  <td><b>Pattern</b></td>
+	  <td><b>Applies to</b></td>
 	  <td></td>
 	</tr>
 	  <td><b>Description</b></td>
