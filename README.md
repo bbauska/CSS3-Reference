@@ -4425,8 +4425,8 @@ div.photo {background-size: cover;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖
- *&lt;bordercolor&gt;* &rbrack;</td>
+	  <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖
+ <i>&lt;bordercolor&gt;</i> &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4567,7 +4567,7 @@ a:active {border-bottom-color: purple;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}</td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,2}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4575,7 +4575,7 @@ a:active {border-bottom-color: purple;}
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td>Two values, each a *&lt;percentage&gt;* or *&lt;length&gt;* made absolute</td>
+	  <td>Two values, each a <i>&lt;percentage&gt;</i> or <i>&lt;length&gt;</i> made absolute</td>
     </tr>
 	<tr>
 	  <td><b>Percentages</b></td>
@@ -4647,9 +4647,9 @@ h2 {border-bottom-left-radius: 1em 10px;}
 	</tr>
   </tbody>
 </table>
-Values&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,2}
+Values&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,2}
 Initial value 0
-ComputedTwo values, each a *&lt;percentage&gt;* or *&lt;length&gt;*
+ComputedTwo values, each a <i>&lt;percentage&gt;</i> or <i>&lt;length&gt;</i>
   value   made absolute
 Percentages   Calculated with respect to the relevant dimension of
     the border box
@@ -4732,7 +4732,7 @@ a:active {border-bottom-style: dashed;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; thin &vert; medium &vert; thick &vert; *&lt;length&gt;* &rbrack;</td>
+	  <td>&lbrack; thin &vert; medium &vert; thick &vert; <i>&lt;length&gt;</i> &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4825,7 +4825,7 @@ table {border-collapse: separate; border-spacing: 3px 5px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;color&gt;*{1,4}</td>
+	  <td><i>&lt;color&gt;</i>{1,4}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4941,7 +4941,7 @@ aside {border-image: url(asides.png)
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;number&gt;* &rbrack;{1,4}</td>
+	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;number&gt;</i> &rbrack;{1,4}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -4949,7 +4949,7 @@ aside {border-image: url(asides.png)
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td>Four values, each a number or *&lt;length&gt;* made absolute</td>
+	  <td>Four values, each a number or <i>&lt;length&gt;</i> made absolute</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
@@ -5034,7 +5034,7 @@ aside {border-image-repeat: stretch round;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;number&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} && fill?</td>
+	  <td>&lbrack; <i>&lt;number&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,4} && fill?</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5192,7 +5192,7 @@ div#pow{border-image-width: 25px 35;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;border-width&gt;* ‖ *&lt;border-style&gt;* ‖ *&lt;bordercolor&gt;* &rbrack;</td>
+	  <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ <i>&lt;bordercolor&gt;</i> &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5239,7 +5239,7 @@ double black 4px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;color&gt;*</td>
+	  <td><i>&lt;color&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5325,7 +5325,7 @@ pre {border-left-style: double;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>thin &vert; medium &vert; thick &vert; *&lt;length&gt;*</td>
+	  <td>thin &vert; medium &vert; thick &vert; <i>&lt;length&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -5369,7 +5369,7 @@ pre {border-left-width: 4px;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &lbrack; / &lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4} &rbrack;?</td>
+	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,4} &lbrack; / &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,4} &rbrack;?</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -7849,54 +7849,43 @@ descriptor.
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>italic &vert; oblique &vert; normal </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether the font uses an italic, oblique, or normal font face. Italic 
+	  text is generally defined as a separate face within the font family. It is 
+	  theoretically possible for a user agent to compute a slanted font face from the 
+	  normal face. In reality, user agents rarely (if at all) recognize the difference 
+	  between italic and oblique text and almost always render both in exactly the same 
+	  way.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+em {font-style: oblique;} i {font-style: italic;}
 </pre>
       </td>
 	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>Note Has a corresponding &#64;font-face descriptor.</td>
+    </tr>
   </tbody>
 </table>
-Values    italic &vert; oblique &vert; normal 
-Initial     normal 
-value      
-Computed    As declared 
-value      
-Applies     All elements
-to 
-     Defines whether the font uses an italic, oblique,   
-Description  or normal font face. Italic text is generally  
-defined as a separate face within the font family.  
-It is theoretically possible for a user agent to    
-compute a slanted font face from the normal face.   
-In reality, user agents rarely (if at all)  
-recognize the difference between italic and oblique 
-text and almost always render both in exactly the   
-same way.   
-<p><b>Examples</b></p>
-<pre>
-em {font-style: oblique;} i {font-style: italic;}
-</pre>
-Note Has a corresponding &#64;font-face descriptor. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-synthesis Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7910,50 +7899,39 @@ Note Has a corresponding &#64;font-face descriptor.
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; &lbrack; weight ‖ style &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>weight style</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether user agents are permitted to programmatically generate bold or 
+	  italic variants for fonts that don't have bold or italic faces. This is generally 
+	  frowned upon by typographers, and the results can be visually displeasing, but it 
+	  does permit visual emphasis of text in font families that lack the necessary faces. 
+	  If you don't want to risk it, use none to suppress this behavior.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h1 {font-synthesis: none;}
+pre code {font-synthesis: style;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values none &vert; &lbrack; weight ‖ style &rbrack;
-Initial value weight style Computed value As declared
-Applies to All elements
-Description Defines whether user agents are permitted to
-programmatically generate bold or italic variants for
-
-fonts that don't have bold or italic faces. This is generally frowned
-upon by typographers, and the results can be visually displeasing, but
-it does permit visual emphasis of text in font families that lack the
-necessary faces. If you don't want to risk it, use none to suppress
-this behavior.
-
-<p><b>Examples</b></p>
-<pre>
-h1 {font-synthesis: none;}
-pre code {font-synthesis: style;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h3>font-variant Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7967,71 +7945,46 @@ pre code {font-synthesis: style;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>normal &vert; small-caps (CSS2.1) normal &vert; none &vert; &lbrack; <i>&lt;common-lig-values&gt;</i> ‖  (Level 3)
+	  <i>&lt;discretionary-lig-values&gt;</i> ‖  <i>&lt;historical-lig-values&gt;</i> ‖ <i>&lt;contextual-alt-values&gt;</i> ‖
+	  stylistic(<i>&lt;featurevalue-name&gt;</i>) ‖ historical-forms ‖  styleset(<i>&lt;feature-value-name&gt;</i>#) ‖ 
+	  charactervariant(<i>&lt;feature-value-name&gt;</i>#) ‖ swash(<i>&lt;featurevalue-name&gt;</i>) ‖ 
+	  ornaments(<i>&lt;feature-value-name&gt;</i>) ‖ annotation(<i>&lt;feature-value-name&gt;</i>) ‖ &lbrack; smallcaps  
+	  &vert; all-small-caps &vert; petite-caps &vert; allpetite-caps &vert; unicase &vert; titling-caps &rbrack; ‖ 
+	  <i>&lt;numeric-figure-values&gt;</i> ‖ <i>&lt;numeric-spacingvalues&gt;</i> ‖ <i>&lt;numeric-fraction-values&gt;</i> ‖ 
+	  ordinal ‖ slashed-zero ‖ <i>&lt;east-asian-variant-values&gt;</i> ‖ <i>&lt;east-asian-width-values&gt;</i> ‖ ruby &rbrack;</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines whether text is set in the small-caps style. It is theoretically possible 
+	  for a user agent to compute a small-caps font face from the normal face.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+h3 {font-variant: small-caps;} p {font-variant: normal;}
 </pre>
       </td>
 	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>Has a corresponding &#64;font-face descriptor.</td>
+    </tr>
   </tbody>
 </table>
-Values  normal &vert; small-caps 
- (CSS2.1)     
-Values  normal &vert; none &vert; &lbrack; <i>&lt;common-lig-values&gt;</i> ‖  
- (Level 3)    
-   <i>&lt;discretionary-lig-values&gt;</i> ‖     
-   <i>&lt;historical-lig-values&gt;</i> ‖
-   <i>&lt;contextual-alt-values&gt;</i> ‖
-   stylistic(<i>&lt;featurevalue-name&gt;</i>) ‖ 
-   historical-forms ‖   
-   styleset(<i>&lt;feature-value-name&gt;</i>#) ‖
-   charactervariant(<i>&lt;feature-value-name&gt;</i>#) ‖
-   swash(<i>&lt;featurevalue-name&gt;</i>) ‖     
-   ornaments(<i>&lt;feature-value-name&gt;</i>) ‖
-   annotation(<i>&lt;feature-value-name&gt;</i>) ‖ &lbrack; smallcaps  
-   &vert; all-small-caps &vert; petite-caps &vert; allpetite-caps   
-   &vert; unicase &vert; titling-caps &rbrack; ‖ 
-   <i>&lt;numeric-figure-values&gt;</i> ‖
-   <i>&lt;numeric-spacingvalues&gt;</i> ‖
-   <i>&lt;numeric-fraction-values&gt;</i> ‖ ordinal ‖    
-   slashed-zero ‖ <i>&lt;east-asian-variant-values&gt;</i> ‖     
-   
-   <i>&lt;east-asian-width-values&gt;</i> ‖ ruby &rbrack; 
-Initial normal  
- value   
-Computed     As declared  
- value   
-Applies All elements 
- to   
-Defines whether text is set in the small-caps style. 
-Description  It   
-is theoretically possible for a user agent to compute a small-caps
-font face from the normal face.
-
-<p><b>Examples</b></p>
-<pre>
-h3 {font-variant: small-caps;} p {font-variant: normal;}
-</pre>
-Note Has a corresponding &#64;font-face descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-weight Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8045,57 +7998,47 @@ Note Has a corresponding &#64;font-face descriptor.
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
+&vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>One of the numeric values (100, etc.), or one of    
+ the numeric values plus one of the relative values  
+(bolder or lighter) </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the font weight used in rendering an element's text. The numeric 
+	  value 400 is equivalent to the keyword normal, and 700 is equivalent to bold. 
+	  If a font has only two weights---normal and bold--- the numbers 100 through 500 
+	  will be normal, and 600 through 900 will be bold. In general terms, the visual 
+	  result of each numeric value must be at least as light as the next lowest number 
+	  and at least as heavy as the next highest number.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-Values    normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
-&vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900    
-Initial     normal 
-value      
-Computed    One of the numeric values (100, etc.), or one of    
-value  the numeric values plus one of the relative values  
-(bolder or lighter) 
-Applies     All elements
-to 
-     Defines the font weight used in rendering an
-Description  element's text. The numeric value 400 is equivalent 
-to the keyword normal, and 700 is equivalent to     
-bold. If a font has only two weights---normal and   
-bold--- the numbers 100 through 500 will be normal, 
-and 600 through 900 will be bold. In general terms, 
-the visual result of each numeric value must be at  
-least as light as the next lowest number and at     
-least as heavy as the next highest number.  
-<p><b>Examples</b></p>
-<pre>
 b {font-weight: 700;} strong {font-weight: bold;}   
 .delicate {font-weight: lighter;}   
 </pre>
- Note Has a corresponding &#64;font-face descriptor.
+      </td>
+	</tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>Has a corresponding &#64;font-face descriptor.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>grid Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8109,52 +8052,35 @@ b {font-weight: 700;} strong {font-weight: bold;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>none &vert; subgrid &vert; &lbrack; <i>&lt;grid-template-rows&gt;</i> /    
+<i>&lt;gridtemplate-columns&gt;</i> &rbrack; &vert; &lbrack; 
+<i>&lt;line-names&gt;</i>? <i>&lt;string&gt; &lt;track-size&gt;</i>? 
+<i>&lt;line-names&gt;</i>? &rbrack;+ &lbrack; / <i>&lt;track-list&gt;</i> &rbrack;? &vert;  
+&lbrack; <i>&lt;grid-auto-flow&gt;</i> &lbrack; <i>&lt;grid-auto-rows&gt;</i> &lbrack;  
+/ <i>&lt;gridauto-columns&gt;</i> &rbrack;? &rbrack;? &rbrack; &rbrack</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Grid containers</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property allowing the almost complete definition of an element's grid system, 
+	  not counting grid gaps. The value syntax can become quite complex and, for clarity's sake, most 
+	  authors rely on the individual properties instead of grid, but there are no technical reasons 
+	  to avoid grid.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-Values none &vert; subgrid &vert; &lbrack; *&lt;grid-template-rows&gt;* /    
-*&lt;gridtemplate-columns&gt;* &rbrack; &vert; &lbrack; 
-*&lt;line-names&gt;*? *&lt;string&gt; &lt;track-size&gt;*? 
-*&lt;line-names&gt;*? &rbrack;+ &lbrack; / *&lt;track-list&gt;* &rbrack;? &vert;  
-&lbrack; *&lt;grid-auto-flow&gt;* &lbrack; *&lt;grid-auto-rows&gt;* &lbrack;  
-/ *&lt;gridauto-columns&gt;* &rbrack;? &rbrack;? &rbrack; &rbrack; 
-Initial  See individual properties   
-value     
-Computed See individual properties   
-value     
-Applies to  Grid containers     
-*  A shorthand property allowing the almost complete   
-*Description 
-definition of an element's grid system, not counting
-grid gaps. The value syntax can become quite complex and, for
-clarity's sake, most authors rely on the individual properties instead
-of grid, but there are no technical reasons to avoid grid.
-
-<p><b>Example</b></p> 
 <pre>
 body {display: grid; grid:
 &quot;header header header header&quot; 3em
@@ -8162,6 +8088,10 @@ body {display: grid; grid:
 &quot;footer footer footer footer&quot; 5em /
 2em 3fr minmax(10em,1fr) 2em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h3>grid-area Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8175,54 +8105,43 @@ body {display: grid; grid:
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td><i>&lt;grid-line&gt;</i> &lbrack; / <i>&lt;grid-line&gt;</i> &rbrack;{0,3}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>Grid items and absolutely positioned elements, if   
+  their containing block is a grid container  </td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
-    </tr>
-	<tr>
-	  <td><b>Examples</b></td>
-	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-Values    *&lt;grid-line&gt;* &lbrack; / *&lt;grid-line&gt;* &rbrack;{0,3}
-Initial     See individual properties   
-value      
-Computed    As declared 
-value      
-Applies     Grid items and absolutely positioned elements, if   
-to  their containing block is a grid container  
-*     Used to assign a grid item to a specific area of a  
-*Description  defined grid. This can be done using a single  
+	  <td>Used to assign a grid item to a specific area of a  
+defined grid. This can be done using a single  
 identifier, or using slash-separated grid line 
 identifiers. If all four grid lines are supplied,   
 they are given in the order row-start (top) /  
 column-start (left) / row-end (bottom) / column-end 
 (right), which is the reverse of the usual  
-top-right-bottom-left order for margins, padding,   
-and so on.  
-<p><b>Examples</b></p>
+top-right-bottom-left order for margins, padding,   .</td>
+    </tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 #masthead {grid-area: header;} 
 #sidebar {grid-area: 1 / 2 / 1 / 3;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>grid-auto-columns Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8236,52 +8155,38 @@ and so on.
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*, *&lt;trackbreadth&gt;*)</td>
 	</tr>
 	<tr>
+	  <td><b>Definition</b></td>
+	  <td><i>&lt;track-breadth&gt; &lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;flex&gt;</i> 
+	  &vert; min-content &vert; max-content &vert; auto</td>
+    </tr>
+	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>auto</td>
     </tr>
 	<tr>
-	  <td><b>Computed value</b></td>
-	  <td></td>
-    </tr>
-	<tr>
-	  <td><b>Applies to</b></td>
+	  <td><b>Grid containers</b></td>
 	  <td></td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the sizing of column tracks for columns that are automatically generated; that is, 
+	  columns that are created because a grid item needs to be placed outside the explicitly defined grid columns.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+div.grid {display: grid;
+grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
+grid-auto-columns: 20em;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values *&lt;track-breadth&gt;* &vert; minmax(*&lt;track-breadth&gt;*,
-*&lt;trackbreadth&gt;*)
-Definition
-*&lt;track-breadth&gt; &lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; *&lt;flex&gt;* &vert;
-min-content &vert;
-max-content &vert; auto
-Initial value auto
-Depends on the specific track sizing
-Grid containers
-Description Defines the sizing of column tracks for columns that are
-automatically generated; that is, columns that are created because a
-grid item needs to be placed outside the explicitly defined grid
-columns.
-<p><b>Example</b></p>
-<pre>
-div.grid {display: grid;
-grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
-grid-auto-columns: 20em;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>grid-auto-flow Inh. N Anim. N</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9282,7 +9187,6 @@ this analogy is not exact: the isolated element still inherits styles
 from its ancestors.
 
 <p><b>Example</b></p> p.alone {isolation: isolate;}
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>justify-content Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9411,55 +9315,40 @@ div#footer {position: fixed; left: 0;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;length&gt;* &vert; normal </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>For length values, the absolute length; otherwise, normal </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the amount of whitespace to be inserted between the character boxes of text. 
+	  Because character glyphs are typically narrower than their character boxes, length values 
+	  create a modifier to the usual spacing between letters. Thus, normal is (most likely) 
+	  synonymous with 0. Negative length and percentage values are permitted and will cause 
+	  letters to bunch closer together.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+p.spacious {letter-spacing: 6px;}
+em {letter-spacing: 0.2em;}
+p.cramped {letter-spacing: −0.5em;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values    *&lt;length&gt;* &vert; normal 
-Initial     normal 
-value      
-Computed    For length values, the absolute length; otherwise,  
-value      
-normal 
-Applies     All elements
-to 
-*     Defines the amount of whitespace to be inserted     
- *Description  between the character boxes of text. Because
- character glyphs are typically narrower than their  
- character boxes, length values create a modifier to 
- the usual spacing between letters. Thus, normal is  
- (most likely) synonymous with 0. Negative length    
- and percentage values are permitted and will cause  
- letters to bunch closer together.   
-<p><b>Examples</b></p>  
-<pre>
-p.spacious {letter-spacing: 6px;}
-em {letter-spacing: 0.2em;}
-p.cramped {letter-spacing: −0.5em;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>line-break Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9473,214 +9362,148 @@ p.cramped {letter-spacing: −0.5em;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>auto &vert; loose &vert; normal &vert; strict  </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>auto</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Affects the wrapping of lines of text in CJK (Chinese-Japanese-Korean) text. The precise 
+	  meanings of loose, normal, and strict are left undefined, so the only solid expectation is that 
+	  loose will use the "least restrictive" line-breaking, normal will use the "most common" line-breaking, 
+	  and strict will use the "most stringent" line-breaking.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+div.cjk     
+{line-break:   
+strict;}  
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values    auto &vert; loose &vert; normal &vert; strict   
-Initial     auto
-value      
-Computed    As declared 
-value      
-Applies     All elements
-to 
-*     Affects the wrapping of lines of text in CJK
-*Description  (Chinese-Japanese-Korean) text. The precise 
-meanings of loose, normal, and strict are left 
-unde‐  
-fined, so    
-the only     
-solid     
-expectation  
-is that      
-loose will   
-use the      
-"least  
-restrictive" 
-     
-line-breaking, 
-normal will  
-use the      
-"most     
-common"      
-      
- line-breaking, 
- and strict   
- will use the 
- "most     
-stringent"   
-      
-line-breaking. 
-     
-<p><b>Example</b></p>    
-<pre>
-div.cjk     
-{line-break:   
-strict;}  
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>line-height Inh. Y Anim. Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>line-height</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. Y</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>*&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
+normal </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>For length and percentage values, the absolute value; otherwise, as declared Relative to the font size of the element</td>
     </tr>
 	<tr>
-	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td><b>Percentages</b></td>
+	  <td>Applies to  All elements (but see text regarding replaced and block-level elements)</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>This property influences the layout of line boxes. When applied to a block-level element, it defines 
+	  the minimum (but not the maximum) distance between baselines within that element. When applied to an 
+	  inline element, it is used to define the *leading* of that element. The difference between the computed 
+	  values of line-height and font-size (called "leading" in CSS) is split in half and added to the top and 
+	  bottom of each piece of content in a line of text. The shortest box that can enclose all those pieces of 
+	  content is the line box. A raw number value assigns a scaling factor, which is inherited instead of a 
+	  computed value. Negative values are not permitted. A raw number value assigns a scaling factor, which is 
+	  inherited instead of a computed value. Negative values are not permitted.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-Values *&lt;number&gt;* &vert; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &vert; 
-normal 
-Initial value normal 
-Computed value     For length and percentage values, the absolute 
-value; otherwise, as declared  
-Relative to the font size of the element    
-Percentages 
-Applies to  All elements (but see text regarding replaced and   
-block-level elements)  
-This property influences the layout of line boxes.  
-Description  When applied to a block-level element, it defines   
-the minimum (but not the maximum) distance between  
-baselines within that element. When applied to an   
-inline element, it is used to define the *leading*  
-of that element.    
-     
-The difference between the computed values of  
-line-height and font-size (called "leading" in CSS) 
-is split in half and added to the top and bottom of 
-each piece of content in a line of text. The
-shortest box that can enclose all those pieces of   
-content is the line box.    
-     
-A raw number value assigns a scaling factor, which  
-is inherited instead of a computed value. Negative  
-values are not permitted.   
-<p><b>Examples</b></p>
-
 <pre>
  p {line-height: 1.5em;}     
 h2 {line-height: 200%;} 
 ul {line-height: 1.2;} 
 pre {line-height: 0.75em;}
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>list-style Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>list-style</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>&lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ *&lt;list-styleposition&gt;* &rbrack; </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>Refer to individual properties </td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>See individual properties</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td> Elements whose display value is list-item </td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>A shorthand property that defines the marker type,  
+ whether a symbol or an image, and its (crude)  
+placement. Because it applies to any element that   
+has a display value of list-item, it will apply     
+only to li elements in ordinary HTML, although it   
+can be applied to any element and subsequently 
+inherited by list-item elements.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+ul {list-style: square url(bullet3.gif) outer;} /&ast; 
+values are inherited by &apos;li&apos; elements &ast;/ 
+ol {list-style: upper-roman;}  
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-Values    &lbrack; *&lt;list-style-type&gt;* ‖ *&lt;list-style-image&gt;* ‖ 
-*&lt;list-styleposition&gt;* &rbrack; 
-Initial value     Refer to individual properties 
-Computed value   See individual properties   
-Applies to    Elements whose display value is list-item   
- A shorthand property that defines the marker type,  
-Description  whether a symbol or an image, and its (crude)  
-placement. Because it applies to any element that   
-has a display value of list-item, it will apply     
-only to li elements in ordinary HTML, although it   
-can be applied to any element and subsequently 
-inherited by list-item elements.    
-<p><b>Examples</b></p>
-<pre>
-ul {list-style: square url(bullet3.gif) outer;} /&ast; 
-values are inherited by &apos;li&apos; elements &ast;/ 
-ol {list-style: upper-roman;}  
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>list-style-image Inh. Y Anim. N
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-	  <th width="200"><h3> </h3></th>
-	  <th align="right"><h3>Inh. N Anim. N</h3></th>
+	  <th width="200"><h3>list-style-image</h3></th>
+	  <th align="right"><h3>Inh. Y Anim. N</h3></th>
 	</tr>
   </thead>
   <tbody>
@@ -9702,8 +9525,9 @@ ol {list-style: upper-roman;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Specifies an image to be used as the marker on an ordered or unordered list item. The placement of the
-image with respect to the content of the list item can be crudely controlled using list-style position.</td>
+	  <td>Specifies an image to be used as the marker on an ordered or unordered list item. 
+	  The placement of the image with respect to the content of the list item can be crudely 
+	  controlled using list-style position.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -9777,19 +9601,16 @@ ol li {list-style-position: inside;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>disc &vert; circle &vert; square &vert; disclosure-open &vert;
-disclosure-closed &vert; decimal &vert; decimal-leadingzero &vert; arabic-indic &vert;
-armenian &vert; upper-armenian &vert; lower-armenian &vert; bengali &vert; cambodian &vert;
-khmer &vert; cjk-decimal &vert; devanagari &vert; gujarati &vert; gurmukhi &vert; georgian
-&vert; hebrew &vert; kannada &vert; lao &vert; malayalam &vert; mongolian &vert; myanmar &vert;
-oriya &vert; persian &vert; lowerroman &vert; upper-roman &vert; tamil &vert; telugu &vert; thai
-&vert; tibetan &vert; lower-alpha &vert; lower-latin &vert; upperalpha &vert; upper-latin &vert;
-cjk-earthly-branch &vert; cjkheavenly-stem &vert; lower-greek &vert; hiragana &vert;
-hiragana-iroha &vert; katakana &vert; katakana-iroha &vert; japanese-informal &vert;
-japanese-formal &vert; koreanhangul-formal &vert; korean-hanja-informal &vert;
-koreanhanja-formal &vert; simp-chinese-informal &vert; simpchinese-formal &vert;
-trad-chinese-informal &vert; tradchinese-formal &vert; ethiopic-numeric &vert;
-*&lt;string&gt;* &vert; none</td>
+	  <td>disc &vert; circle &vert; square &vert; disclosure-open &vert; disclosure-closed &vert; decimal 
+	  &vert; decimal-leadingzero &vert; arabic-indic &vert; armenian &vert; upper-armenian &vert; lower-armenian 
+	  &vert; bengali &vert; cambodian &vert; khmer &vert; cjk-decimal &vert; devanagari &vert; gujarati &vert; 
+	  gurmukhi &vert; georgian &vert; hebrew &vert; kannada &vert; lao &vert; malayalam &vert; mongolian &vert; 
+	  myanmar &vert; oriya &vert; persian &vert; lowerroman &vert; upper-roman &vert; tamil &vert; telugu &vert; 
+	  thai &vert; tibetan &vert; lower-alpha &vert; lower-latin &vert; upperalpha &vert; upper-latin &vert;
+	  cjk-earthly-branch &vert; cjkheavenly-stem &vert; lower-greek &vert; hiragana &vert; hiragana-iroha &vert; 
+	  katakana &vert; katakana-iroha &vert; japanese-informal &vert; japanese-formal &vert; koreanhangul-formal &vert; 
+	  korean-hanja-informal &vert; koreanhanja-formal &vert; simp-chinese-informal &vert; simpchinese-formal &vert;
+	  trad-chinese-informal &vert; tradchinese-formal &vert; ethiopic-numeric &vert; <i>&lt;string&gt;</i> &vert; none</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -9805,18 +9626,13 @@ trad-chinese-informal &vert; tradchinese-formal &vert; ethiopic-numeric &vert;
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines the type of marker system to be used in the
-presentation of a list. CSS3 provides a greatly expanded number of list
-types, but as of early 2018, support for these newer list types has some
-spotty parts. Use caution when using list types beyond those provided by
-CSS2.1.
-
-There is no defined behavior for what happens when a list using an
-alphabetic ordering exceeds the letters in the list. For example, once
-an upper-latin list reaches "Z," the specification does not say what
-the next bullet should be. (Two possible answers are "AA" and "ZA.")
-This is the case regardless of the alphabet in use. Thus, there is no
-guarantee that different user agents will act consistently.</td>
+	  <td>Defines the type of marker system to be used in the presentation of a list. CSS3 provides a greatly 
+	  expanded number of list types, but as of early 2018, support for these newer list types has some spotty 
+	  parts. Use caution when using list types beyond those provided by CSS2.1. There is no defined behavior 
+	  for what happens when a list using an alphabetic ordering exceeds the letters in the list. For example, 
+	  once an upper-latin list reaches "Z," the specification does not say what the next bullet should be. (Two 
+	  possible answers are "AA" and "ZA.") This is the case regardless of the alphabet in use. Thus, there is 
+	  no guarantee that different user agents will act consistently.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
@@ -10653,9 +10469,9 @@ Computed As declared, with length values converted to
 Applies to  All elements (in SVG, applies to all graphics  
  elements and all container elements except the defs 
  element)    
-Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
- *  Sets the size of the initial masking image in a     
- *Description  manner identical to the sizing of background
+Animatable  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
+   Sets the size of the initial masking image in a     
+ Description  manner identical to the sizing of background
  images.     
 <p><b>Examples</b></p>
 <pre>
@@ -10743,7 +10559,7 @@ svg #mask {mask-type: alpha;}
 	</tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td>All elements except nonreplaced inline elements and table elements  *Defines a maximum 
+	  <td>All elements except nonreplaced inline elements and table elements  Defines a maximum 
 	  constraint on the height of the element (the exact nature of that height is dependent on 
 	  the value of box-sizing). Thus, the element can be shorter than the declared value but not 
 	  taller.</td>
@@ -10799,7 +10615,7 @@ div#footer {max-height: 3em;}
 	</tr>
   </tbody>
 </table>
-Values    *&lt;length&gt;* &vert; *&lt;percentage&gt; &vert; none    
+Values    <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; none    
 Initial   
  value none
 Computed For percentages, as declared; for length values,    
@@ -10808,7 +10624,7 @@ Computed For percentages, as declared; for length values,
  Percentages 
 Applies to  All elements except nonreplaced inline elements and 
  table elements 
-Animatable  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+Animatable  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
    Defines a maximum constraint on the width of the    
  Description  element (the exact nature of that width is  
  dependent on the value of box-sizing). Thus, the    
@@ -10861,7 +10677,7 @@ not permitted.
 	</tr>
   </tbody>
 </table>
-Values    *&lt;length&gt;* &vert; *&lt;percentage&gt;*    
+Values    <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i>    
 Initial     0   
 value   
 Computed    For percentages, as declared; for length values,    
@@ -10921,7 +10737,7 @@ div#footer {min-height: 1em;}
 	</tr>
   </tbody>
 </table>
-Values *&lt;length&gt;* &vert; *&lt;percentage&gt;*
+Values <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i>
 
 Initial value 0
 
@@ -11122,7 +10938,7 @@ img:nth-of-type(3) {object-fit: cover;}
 	</tr>
   </tbody>
 </table>
-Values *&lt;position&gt;*
+Values <i>&lt;position&gt;</i>
 Initial value 50% 50%
 Computed value As declared
 Applies to Replaced elements
@@ -11248,7 +11064,7 @@ h2 {opacity: 0.8;} .hideme {opacity: 0;}
 	</tr>
   </tbody>
 </table>
-Values *&lt;integer&gt;*
+Values <i>&lt;integer&gt;</i>
 Initial value 0
 Computed value As declared
 Applies to Flex and grid items, and the absolutely positioned
@@ -11364,8 +11180,8 @@ p {orphans: 4;} ul {orphans: 2;}
 	</tr>
   </tbody>
 </table>
-Values &lbrack; *&lt;outline-color&gt;* ‖ *&lt;outline-style&gt;* ‖
-*&lt;outlinewidth&gt;* &rbrack;
+Values &lbrack; <i>&lt;outline-color&gt;</i> ‖ <i>&lt;outline-style&gt;</i> ‖
+<i>&lt;outlinewidth&gt;</i> &rbrack;
 Initial value none
 Computed value As declared
 Applies to All elements
@@ -11421,7 +11237,7 @@ form:focus {outline: outset cyan 0.25em;}
 	</tr>
   </tbody>
 </table>
-Values *&lt;color&gt;* &vert; invert
+Values <i>&lt;color&gt;</i> &vert; invert
 Initial value invert Computed value As declared
 Applies to All elements
 Description Defines the color for the visible portions of the
@@ -11449,7 +11265,7 @@ form:focus {outline-color: cyan;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;*</td>
+	  <td><i>&lt;length&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11538,7 +11354,7 @@ form:focus {outline-style: outset;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lt;length&gt;* &vert; thin &vert; medium &vert; thick</td>
+	  <td>&lt;length&gt;</i> &vert; thin &vert; medium &vert; thick</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11646,7 +11462,7 @@ object {overflow: visible scroll;}
 	  <td><b>Description</b></td>
 	  <td>Allows authors to specify whether line breaks are permitted inside words that are longer 
 	  than their containing element is wide and which cannot be hyphenated, either due to language 
-	  or the values of other properties. If break-word is set, the linebreaking will *only* occur 
+	  or the values of other properties. If break-word is set, the linebreaking will <i>only</i> occur 
 	  if the word is placed on a new text line and still cannot fit inside its element's containing 
 	  block. (This behavior is in contrast to word-break, which does not force a pre-word line break.)</td>
     </tr>
@@ -11764,7 +11580,7 @@ scroll;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lbrack; *&lt;length&gt;* &vert; *&lt;percentage&gt;* &rbrack;{1,4}</td>
+	  <td>&lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &rbrack;{1,4}</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11857,7 +11673,7 @@ h1 {padding-bottom: 2%;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>&lt;length&gt;* &vert; *&lt;percentage&gt;*</td>
+	  <td>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11905,7 +11721,7 @@ pre {padding-left: 3em;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;*</td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -11954,7 +11770,7 @@ ol {padding-right: 5em;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;length&gt;* &vert; *&lt;percentage&gt;* </td>
+	  <td><i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -12001,7 +11817,7 @@ ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td>*&lt;identifier&gt;* &vert; auto</td>
+	  <td><i>&lt;identifier&gt;</i> &vert; auto</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
@@ -12017,7 +11833,7 @@ ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>Defines the page type that *should* be used when displaying the element. The emphasis of 
+	  <td>Defines the page type that <i>should</i> be used when displaying the element. The emphasis of 
 	  the word "should" is taken directly from the specification, so author beware. The intended 
 	  effect is that if an element has a value of page that is different than that of the preceding 
 	  element, at least one page break is inserted before the element and a new page started using 
@@ -12275,7 +12091,7 @@ Note This property is essentially
 	</tr>
   </tbody>
 </table>
-Values  none &vert; *&lt;length&gt;*  
+Values  none &vert; <i>&lt;length&gt;</i>  
 Initial value none
 Computed value The absolute length, or else none
 Applies to Any transformable element
@@ -12339,7 +12155,7 @@ value  converted to an absolute length
 Percentages 
 Applies     Any transformable element   
 to 
-  *&lt;length&gt;* and *&lt;percentage&gt;* values only  
+  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
 Animatable 
      Defines the origin point of the apparent 3D 
 Description  perspective within the element. In effect, it  
@@ -12444,7 +12260,7 @@ offset from its default placement in the normal flow.
 	</tr>
   </tbody>
 </table>
-Values    &lbrack; *&lt;string&gt;* *&lt;string&gt;* &rbrack;+ &vert; none    
+Values    &lbrack; <i>&lt;string&gt;</i> <i>&lt;string&gt;</i> &rbrack;+ &vert; none    
 Initial     User agent--dependent  
 value      
 Computed    As declared 
@@ -12618,7 +12434,7 @@ Values   <i>&lt;number&gt;</i>
 Initial    0.0  
 value      
 Computed   The same as the specified value after clipping the   
-value *&lt;number&gt;* to the range &lbrack;0.0, 1.0&rbrack;  
+value <i>&lt;number&gt;</i> to the range &lbrack;0.0, 1.0&rbrack;  
 Applies    Floats  
 to 
    Changes the alpha channel value that acts as a  
@@ -12806,7 +12622,7 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
 	  boxes set to portrait have the content printed with the long sides of the page box 
 	  being the right and left sides; in the case of landscape, the content is printed with 
 	  the longer sides of the page box being the top and bottom sides. If a page box is 
-	  specified using lengths or one of the *&lt;page-size&gt;</i> keywords (e.g., A4) and 
+	  specified using lengths or one of the <i>&lt;page-size&gt;</i> keywords (e.g., A4) and 
 	  the page box cannot be fit onto the actual page used for display, the page box and 
 	  its contents may be scaled down to fit. If only one length value is declared, it sets 
 	  both dimensions and thus defines a square page box. Length values that use em or ex 
@@ -12824,7 +12640,7 @@ landscape;}
 	</tr>
 	<tr>
 	  <td><b>Note</b></td>
-	  <td>*&lt;page-size&gt;</i> is one of a defined set of standard page sizes; see Chapter 20 of [*CSS: The</i> *Definitive Guide</i>, 4th Edition](http://shop.oreilly.com/product/0636920012726.do), for details.</td>
+	  <td><i>&lt;page-size&gt;</i> is one of a defined set of standard page sizes; see Chapter 20 of [<i>CSS: The</i> <i>Definitive Guide</i>, 4th Edition](http://shop.oreilly.com/product/0636920012726.do), for details.</td>
     </tr>
   </tbody>
 </table>
