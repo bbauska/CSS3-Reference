@@ -6460,54 +6460,44 @@ pre.pastoral {color: rgba(0%,100%,0%,0.33334);}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>normal &vert; &lbrack; <i>&lt;string&gt;</i> &vert; <i>&lt;uri&gt;</i> &vert;   
+<i>&lt;counter&gt;</i> &vert; attr(<i>&lt;identifier&gt;</i>) &vert;  
+open-quote &vert; close-quote &vert; no-open-quote &vert;  
+no-close-quote &rbrack;+  </td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>normal</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>For <i>&lt;uri&gt;</i> values, an absolute URI; for  
+  attribute references, the resulting string; 
+otherwise, as declared </td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>::before and ::after pseudo-elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the generated content placed before or 
+ after an element. By default, this is likely to be  
+inline content, but the type of box the content     
+creates can be defined using the property display.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
 <pre>
+p::before {content: &quot;Paragraph&hellip;&quot;;}     
+a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;  
+font-size: smaller;}
 </pre>
       </td>
 	</tr>
   </tbody>
 </table>
-
-<b>Values</b>    normal &vert; &lbrack; <i>&lt;string&gt;</i> &vert; <i>&lt;uri&gt;</i> &vert;   
-<i>&lt;counter&gt;</i> &vert; attr(<i>&lt;identifier&gt;</i>) &vert;  
-open-quote &vert; close-quote &vert; no-open-quote &vert;  
-no-close-quote &rbrack;+  
-<b>Initial value</b>    normal 
-<b>Computed value</b>   For <i>&lt;uri&gt;</i> values, an absolute URI; for  
-  attribute references, the resulting string; 
-otherwise, as declared 
-<b>Applies to</b>    ::before and ::after pseudo-elements
-
-     Defines the generated content placed before or 
-<b>Description</b>  after an element. By default, this is likely to be  
-inline content, but the type of box the content     
-creates can be defined using the property display.  
-<p><b>Examples</b></p>
-<pre>
-p::before {content: &quot;Paragraph&hellip;&quot;;}     
-a&lbrack;href&rbrack;::after {content: &quot;(&quot; attr(href) &quot;)&quot;;  
-font-size: smaller;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>counter-increment Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6669,54 +6659,35 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
   <tbody>
     <tr>
 	  <td><b>Values</b></td>
-	  <td></td>
+	  <td>ltr &vert; rtl</td>
 	</tr>
 	<tr>
 	  <td><b>Initial value</b></td>
-	  <td></td>
+	  <td>ltr</td>
     </tr>
 	<tr>
 	  <td><b>Computed value</b></td>
-	  <td></td>
+	  <td>As declared</td>
     </tr>
 	<tr>
 	  <td><b>Applies to</b></td>
-	  <td></td>
+	  <td>All elements</td>
     </tr>
 	<tr>
 	  <td><b>Description</b></td>
-	  <td>.</td>
+	  <td>Defines the base writing direction of blocks and the direction of embeddings and 
+	  overrides for the Unicode Bidirectional Algorithm (sometimes called <i>bidi</i>). 
+	  Furthermore, it changes the way a number of properties and layout decisions are 
+	  handled, including but not limited to the placement of table cells in a table row 
+	  and the layout algorithms for block boxes.<br>
+
+      For a variety of reasons, authors are strongly encouraged to use the HTML attribute 
+	  dir rather than the CSS property direction. User agents that do not support 
+	  bidirectional text are permitted to ignore this property.</td>
     </tr>
 	<tr>
 	  <td><b>Examples</b></td>
 	  <td>
-<pre>
-</pre>
-      </td>
-	</tr>
-  </tbody>
-</table>
-
-<b>Values</b>    ltr &vert; rtl  
-<b>Initial</b>     ltr 
-<b>value</b>
-<b>Computed value</b>   As declared 
-<b>Applies</b>     All elements
-<b>to</b> 
- Defines the base writing direction of blocks and    
- <b>Description</b>  the direction of embeddings and overrides for the   
- Unicode Bidirectional Algorithm (sometimes called   
-<i>bidi</i>). Furthermore, it changes the way a number of properties and
-layout decisions are handled, including but not limited to the
-placement of table cells in a table row and the layout algorithms for
-block boxes.
-
-For a variety of reasons, authors are strongly encouraged to use the
-HTML attribute dir rather than the CSS property direction. User agents
-that do not support bidirectional text are permitted to ignore this
-property.
-
-<p><b>Examples</b></p>
 <pre>
 &ast;:lang(en) {direction: ltr;}
 &ast;:lang(ar) {direction: rtl;}
@@ -6724,6 +6695,10 @@ property.
 <i>&lt;displaylistitem&gt;</i> &vert; <i>&lt;display-internal&gt;</i> &vert; <i>&lt;display-box&gt;</i>
 &vert;
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>display</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
