@@ -7073,55 +7073,44 @@ ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td><i>&lt;number&gt;</i></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>1</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Flex items (children of flex containers)</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Sets the <i>shrink factor</i> for a flex item. The value supplied is summed up 
+	    with all the shrink factors of the other flex items in the same flex line, and 
+		the amount they shrink is scaled proportional to their shrink factors as a 
+		percentage of the whole.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Values    <i>&lt;number&gt;</i>
-Initial     1   
-value      
-Computed    As declared 
-value      
-Applies     Flex items (children of flex containers)    
-to 
-     Sets the <i>shrink factor</i> for a flex item. The value 
-Description  supplied is summed up with all the shrink factors   
-of the other flex items in the same flex line, and  
-the amount they shrink is scaled proportional to    
-their shrink factors as a percentage of the whole.  
-<p><b>Examples</b></p>
-<pre>
 nav ul li {flex-shrink: 0;} /&ast; NO shrinking &ast;/    
 ol.gallery li {flex-shrink: 0.5;} div span.whatevs  
 {flex-shrink: 1;}   
 </pre>
-Note It is <i>strongly</i> recommended that instead of this   
-property, authors use the flex shorthand property   
-to set an item's flex shrink factor.
+      </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>It is <i>strongly</i> recommended that instead of this property, authors use 
+	    the flex shorthand property to set an item's flex shrink factor.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>flex-wrap Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7135,50 +7124,40 @@ to set an item's flex shrink factor.
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>nowrap &vert; wrap &vert; wrap-reverse</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>nowrap</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Flex containers</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines whether flex items can wrap to multiple flex lines, or only a single 
+	    flex line is allowed. In a way, it is analogous to white-space wrapping in text 
+		content. Note, however, that the default is nowrap, so flex items will keep going 
+		in a single line (either a row or a column) even if that means they continue 
+		outside the flex container. If you want your flex items to wrap to a new flex 
+		line when they run out of room (as in an image gallery), make sure to wrap them.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+div.gallery {display: flex; flex-wrap: wrap;} nav.sidenav
+{display: flex; flex-wrap: nowrap;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-Values nowrap &vert; wrap &vert; wrap-reverse
-Initial value nowrap
-Computed value As declared
-Applies to Flex containers
-Description Defines whether flex items can wrap to multiple flex
-lines, or only a single flex line is allowed. In a way, it is analogous
-to white-space wrapping in text content. Note, however, that the default
-is nowrap, so flex items will keep going in a single line (either a row
-or a column) even if that means they continue outside the flex
-container. If you want your flex items to wrap to a new flex line when
-they run out of room (as in an image gallery), make sure to wrap them.
-
-<p><b>Examples</b></p>
-<pre>
- div.gallery {display: flex; flex-wrap: wrap;} nav.sidenav
-{display: flex; flex-wrap: nowrap;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>float  Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7192,53 +7171,43 @@ they run out of room (as in an image gallery), make sure to wrap them.
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>left &vert; right &vert; none</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>none</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines the direction in which an element is floated. This has traditionally 
+	    been applied to images in order to let text flow around them, but in CSS, any 
+		element may be floated. A floated element will generate a block-level box no 
+		matter what kind of element it may be. Floated nonreplaced elements should be 
+		given an explicit width, as they otherwise tend to become as narrow as possible. 
+		Floating is generally well supported by all browsers, but the nature of floats 
+		can lead to unexpected results when they are used as a page layout mechanism. 
+		This is largely due to subtle differences in the interpretation of statements 
+		like "as narrow as possible."</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+img.figure {float: left;}
+p.sidebar {float: right; width: 15em;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-Values left &vert; right &vert; none
-Initial value none
-Computed value As declared
-Applies to All elements
-Description Defines the direction in which an element is floated.
-This has traditionally been applied to images in order to let text flow
-around them, but in CSS, any element may be floated. A floated element
-will generate a block-level box no matter what kind of element it may
-be. Floated nonreplaced elements should be given an explicit width, as
-they otherwise tend to become as narrow as possible. Floating is
-generally well supported by all browsers, but the nature of floats can
-lead to unexpected results when they are used as a page layout
-mechanism. This is largely due to subtle differences in the
-interpretation of statements like "as narrow as possible."
-
-<p><b>Examples</b></p>
-<pre>
-img.figure {float: left;}
-p.sidebar {float: right; width: 15em;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font Inh. Y Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7252,59 +7221,44 @@ p.sidebar {float: right; width: 15em;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>&lbrack;&lbrack; <i>&lt;font-style&gt;</i> ‖ &lbrack; normal &vert; small-caps &rbrack; 
+	    ‖ <i>&lt;fontweight&gt;</i> &rbrack;? <i>&lt;font-size&gt;</i> &lbrack; / <i>&lt;line-height&gt;</i> 
+		&rbrack;? <i>&lt;fontfamily&gt;</i>&rbrack; &vert; caption &vert; icon &vert; menu &vert; message-box 
+		&vert; small-caption &vert; status-bar</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>Refer to individual properties</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>See individual properties (font-style, etc.)</td>
+    </tr>
+    <tr>
+      <td><b>Percentages</b></td>
+      <td>Calculated with respect to the parent element for <i>&lt;font-size&gt;</i> and 
+	    with respect to the element's <i>&lt;fontsize&gt;</i> for <i>&lt;line-height&gt;</i></td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
+    </tr>
+    <tr>
+      <td><b>Animatable</b></td>
+      <td>Refer to individual font properties to see which are animatable</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>A shorthand property used to set all the aspects of an element's font at once. 
+	    It can also be used to set the element's font to match an aspect of the user's 
+		computing environment using keywords such as icon. If keywords are not used, the 
+		minimum font value <i>must</i> include the font size and family in that order, 
+		and any font value that is not a keyword must end with the font family. Otherwise, 
+		the font declaration will be ignored.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-Values    &lbrack;&lbrack; <i>&lt;font-style&gt;</i> ‖ &lbrack; normal &vert; small-caps &rbrack;  
- ‖ <i>&lt;fontweight&gt;</i> &rbrack;? <i>&lt;font-size&gt;</i> &lbrack; / 
- <i>&lt;line-height&gt;</i> &rbrack;? <i>&lt;fontfamily&gt;</i>&rbrack; &vert; caption 
- &vert; icon &vert; menu &vert; message-box &vert; small-caption &vert;  
- status-bar  
-Initial     Refer to individual properties 
- value      
-Computed    See individual properties (font-style, etc.)
- value      
-      Calculated with respect to the parent element for   
-Percentages  <i>&lt;font-size&gt;</i> and with respect to the element's   
- <i>&lt;fontsize&gt;</i> for <i>&lt;line-height&gt;</i>
-Applies     All elements
- to 
-  Refer to individual font properties to see which    
-Animatable  are animatable 
- </i>     A shorthand property used to set all the aspects of 
- Description  an element's font at once. It can also be used to   
- set the element's font to match an aspect of the    
- user's computing environment using keywords such as 
- icon. If keywords are not used, the minimum font    
- value <i>must</i> include the font size and family in   
- that order, and any font value that is not a  
- keyword must end with the font family. Otherwise,   
- the font declaration will be ignored.  
-<p><b>Examples</b></p>  
 <pre>
 p {font: small-caps italic bold small/ 
 1.25em Helvetica,sans-serif;}  
@@ -7313,6 +7267,10 @@ correct, although generic font-families are
 encouraged for fallback purposes &ast;/
 .figure span {font: icon;}
 </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-family Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7326,58 +7284,44 @@ encouraged for fallback purposes &ast;/
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>&lbrack; <i>&lt;family-name&gt;</i> &vert; <i>&lt;generic-family&gt;</i> &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>User agent--specific</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines a font family to be used in the display of an element's text. Note that 
+	    use of a specific font family (e.g., Geneva) is wholly dependent on that family 
+		being available, either on the user's computer or thanks to a downloadable font 
+		file, and the font family containing the glyphs needed to display the content. 
+		Therefore, using generic family names as a fallback is strongly encouraged. Font 
+		names that contain spaces or nonalphabetic characters should be quoted to minimize 
+		potential confusion. In contrast, generic fallback family names should never be 
+		quoted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-Values    &lbrack; <i>&lt;family-name&gt;</i> &vert; <i>&lt;generic-family&gt;</i> &rbrack;#    
-Initial     User agent--specific
-value      
-Computed    As declared 
-value      
-Applies to 
-All elements   
-
-Description Defines a font family to be used in the display of an
-element's text. Note that use of a specific font family (e.g., Geneva)
-is wholly dependent on that family being available, either on the user's
-computer or thanks to a downloadable font file, and the font family
-containing the glyphs needed to display the content. Therefore, using
-generic family names as a fallback is strongly encouraged. Font names
-that contain spaces or nonalphabetic characters should be quoted to
-minimize potential confusion. In contrast, generic fallback family names
-should never be quoted.
-
-<p><b>Examples</b></p>
 <pre>
 p {font-family: Helvetica, Arial, sans-serif;} li
 {font-family: Georgia, Times, TimesNR,
 &quot;New Century Schoolbook&quot;, serif;} pre {font-family: Consolas,
 &quot;Courier New&quot;, &quot;Andale Mono&quot;, Monaco, monospace;}
 </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-feature-settings Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7391,50 +7335,43 @@ p {font-family: Helvetica, Arial, sans-serif;} li
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>normal &vert; <i>&lt;feature-tag-value&gt;</i>&#35;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>normal</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Used to turn font features on and off; examples include ligatures, old-style 
+	    numbers, and more. Whether a font feature actually can be enabled depends 
+		entirely on the font face being used: turning ligatures on or off can only work 
+		if the face has defined ligatures in the first place.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-Values     normal &vert; <i>&lt;feature-tag-value&gt;</i>&#35;  
-Initial value normal
-Computed value    As declared  
-Applies to     All elements 
- Used to turn font features on and off; examples
-Description  include ligatures, old-style numbers, and more.
-   Whether a font feature actually can be enabled
-   depends entirely on the font face being used:
-   turning ligatures on or off can only work if the
-   face has defined ligatures in the first place.
-<p><b>Examples</b></p>
-<pre>
 h1 {font-feature-settings: &quot;liga&quot;;}
 ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on, 
 &quot;zero&quot; on;}
 </pre>
-<p><b>Note</h5>  Has a corresponding &#64;font-face descriptor.
+      </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>Has a corresponding &#64;font-face descriptor.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-kerning Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7448,57 +7385,45 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>auto &vert; normal &vert; none</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>auto</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>In effect, allows the author to disable kerning of text for a given element. 
+	    The default of auto tells user agents to do what they normally do, whatever 
+		that is. normal directs the user agent to use any kerning information in the 
+		font face to kern text, even if it normally wouldn't. With none, kerning is 
+		disabled, even if the face has kerning information and the user agent would 
+		make use of it. Note that kerning is done before any letter spacing is altered 
+		(see letterspacing).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-Values    auto &vert; normal &vert; none 
-Initial     auto
-value      
-Computed    As declared 
-value      
-Applies     All elements
-to 
-     In effect, allows the author to disable kerning of  
-Description  text for a given element. The default of auto tells 
-user agents to do what they normally do, whatever   
-that is. normal directs the user agent to use any   
-kerning information in the font face to kern text,  
-even if it normally wouldn't. With none, kerning is 
-disabled, even if the face has kerning information  
-and the user agent would make use of it. Note that  
-kerning is done before any letter spacing is 
-altered (see letterspacing).
-<p><b>Examples</b></p>
-<pre>
 body {kerning: normal;} div.typewriter {kerning:    
 none;} 
 </pre>
-
-Note Has a corresponding &#64;font-face descriptor. 
+      </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>Has a corresponding &#64;font-face descriptor.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-size Inh. Y Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7512,64 +7437,50 @@ Note Has a corresponding &#64;font-face descriptor.
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert; 
+	    x-large &vert; xx-large &vert; smaller &vert; larger &vert; 
+		<i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>medium</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>For length values, the absolute length; otherwise, as declared 
+	    Calculated with respect to the parent element's Percentages font size</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
+    </tr>
+    <tr>
+      <td><b>Animatable</b></td>
+      <td><i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines the size of the font. The size can be defined as an absolute size, a 
+	    relative size, a length value, or a percentage value. Negative length and 
+		percentage values are not permitted. The dangers of font size assignment are 
+		many and varied, and use of points is particularly discouraged in web design as 
+		there is no certain relationship between points and the pixels on a screen. It's 
+		a matter of historical interest that because of early misunderstandings, setting 
+		the font-size to medium led to different results in early versions of Internet 
+		Explorer and Navigator 4.x.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+h2 {font-size: 200%;}
+code {font-size: 0.9em;}
+p.caption {font-size: 9px;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-Values xx-small &vert; x-small &vert; small &vert; medium &vert; large &vert;  
-x-large &vert; xx-large &vert; smaller &vert; larger &vert; 
-<i>&lt;length&gt;</i> &vert;     
-     
-<i>&lt;percentage&gt;</i>    
-Initial  medium 
-value     
-Computed For length values, the absolute length; otherwise,  
-value as declared 
-  Calculated with respect to the parent element's     
-Percentages  font size   
-Applies to  All elements
-Animatable  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only  
-  Defines the size of the font. The size can be  
-Description  defined as an absolute size, a relative size, a     
-length value, or a  
-
-percentage value. Negative length and percentage values are not
-permitted. The dangers of font size assignment are many and varied,
-and use of points is particularly discouraged in web design as there
-is no certain relationship between points and the pixels on a screen.
-It's a matter of historical interest that because of early
-misunderstandings, setting the font-size to medium led to different
-results in early versions of Internet Explorer and Navigator 4.x.
-
-<p><b>Examples</b></p>
-<pre>
-h2 {font-size: 200%;}
-code {font-size: 0.9em;}
-p.caption {font-size: 9px;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-size-adjust Inh. Y Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7583,48 +7494,37 @@ p.caption {font-size: 9px;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td><i>&lt;number&gt;</i> &vert; none</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>none</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared value</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines an aspect value for the element, which is used to scale fonts such that 
+	    they more closely match each other in cases where fallback fonts are used. The 
+		proper aspect value for a font is its true xheight divided by its font size.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+body {font-family: Helvetica, sans-serif;
+font-size-adjust: 0.53;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-Values <i>&lt;number&gt;</i> &vert; none
-Initial value none
-ComputedAs declared value
-Applies to    All elements
-Description   Defines an aspect value for the element, which is
-    used to scale fonts such that they more closely match
-    each other in cases where fallback fonts are used. The
-    proper aspect value for a font is its true xheight
-    divided by its font size.
-
-<p><b>Examples</b></p>
-<pre>
-body {font-family: Helvetica, sans-serif;
-font-size-adjust: 0.53;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-stretch Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7638,46 +7538,39 @@ font-size-adjust: 0.53;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>normal &vert; ultra-condensed &vert; extra-condensed &vert; condensed &vert;
+	    semi-condensed &vert; semi-expanded &vert; expanded &vert; extra-expanded &vert;
+		ultra-expanded</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Computed value</b></td>
-      <td></td>
+      <td>normal Computed value As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Replaces a given font face with a narrower or wider variant, but only if the 
+	    face has narrower or wider variants defined. User agents will not programmatically 
+		stretch or squeeze a face, but only swap in a variant face (if it exists).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+h1.bigtext {font-stretch: ultra-expanded;} caption.meme
+{font-stretch: condensed;} 
 </pre>
       </td>
     </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>Has a corresponding &#64;font-face descriptor.</td>
+    </tr>
   </tbody>
 </table>
-Values normal &vert; ultra-condensed &vert; extra-condensed &vert; condensed &vert;
-semi-condensed &vert; semi-expanded &vert; expanded &vert; extra-expanded &vert;
-ultra-expanded
-Initial value normal Computed value As declared
-Applies to All elements
-Description Replaces a given font face with a narrower or wider
-variant, but only if the face has narrower or wider variants defined.
-User agents will not programmatically stretch or squeeze a face, but
-only swap in a variant face (if it exists).
-
-<p><b>Examples</b></p> h1.bigtext {font-stretch: ultra-expanded;} caption.meme
-{font-stretch: condensed;} Note Has a corresponding &#64;font-face
-descriptor.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>font-style  Inh. Y Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
