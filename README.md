@@ -7,6 +7,7 @@ date last editted: "5/21/2025 Wed 2+pm"
 date last editted: "5/22/2025 Thu 1+pm"
 date last editted: "6/03/2025 Tue 2+pm"
 date last editted: "6/04/2025 Wed 4+pm"
+date last editted: "6/05/2025 Thu 1+pm"
 output: 
   markdown:
     with some style
@@ -3315,8 +3316,8 @@ section.gallery {align-items: baseline;}
 <table>
   <thead>
     <tr>
-      <th>align-self</th>
-      <th>Inh. N Anim. N</th>
+      <th width="200"><h3>align-self</h3></th>
+      <th align="right"><h3>Inh. N Anim. N</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -3833,71 +3834,54 @@ span.cubeside {backface-visibility: visible;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>&lbrack; <i>&lt;bg-layer&gt;</i> , &rbrack;&ast; <i>&lt;final-bg-layer&gt;</i></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>Refer to individual properties</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>Refer to individual properties</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Animatable</b></td>
-      <td></td>
+      <td>Refer to individual background properties to see which are animatable</td>
+    </tr>
+    <tr>
+      <td><b>Description</b></td>
+      <td>A shorthand way of expressing the various background properties of one or more 
+	    element backgrounds using a single declaration. As with all shorthands, this 
+		property will set all of the allowed values (e.g., the repeat, position, and so 
+		on) to their defaults if the values are not explicitly supplied. Thus, the 
+		following two rules will have the same appearance: background: yellow; background: 
+		yellow none top left repeat; Furthermore, these defaults can override previous 
+		declarations made with more specific background properties. For example, given 
+		the following rules: h1 {background-repeat: repeat-x;} h1, h2 {background: yellow 
+		url(headback.gif);} the repeat value for both h1 and h2 elements will be set to 
+		the default of repeat, overriding the previously declared value of repeat-x. When 
+		declaring multiple backgrounds, only the last may have a background color. In cases 
+		where multiple background images overlap, the images are stacked with the first 
+		highest and the last lowest. This is the exact reverse of how overlapping is 
+		handled in CSS positioning, and so may seem counterintuitive.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<b>Values</b> &lbrack; <i>&lt;bg-layer&gt;</i> , &rbrack;&ast; <i>&lt;final-bg-layer&gt;</i>    
-<b>Initial value</b>  Refer to individual properties   
-<b>Computed value</b> Refer to individual properties 
-<b>Applies to</b>     All elements     
-<b>Animatable</b>     Refer to individual background properties to see 
-    which are animatable     
-<p><b>Description</b>    A shorthand way of expressing the various 
-    background properties of one or more element     
-    backgrounds using a single declaration. As with  
-    all shorthands, this property will set all of    
-    the allowed values (e.g., the repeat, position,  
-    and so on) to their defaults if the values are   
-    not explicitly supplied. 
-
-Thus, the following two rules will have the same appearance:
-background: yellow;
-background: yellow none top left repeat; Furthermore, these defaults
-can override previous declarations made with more specific background
-properties. For example, given the following rules:
-
-h1 {background-repeat: repeat-x;} h1, h2 {background: yellow
-url(headback.gif);} the repeat value for both h1 and h2 elements will
-be set to the default of repeat, overriding the previously declared
-value of repeat-x.
-
-When declaring multiple backgrounds, only the last may have a
-background color. In cases where multiple background images overlap,
-the images are stacked with the first highest and the last lowest.
-This is the exact reverse of how overlapping is handled in CSS
-positioning, and so may seem counterintuitive.
-
-<p><b>Examples</b></p>
 <pre>
 body {background: white url(bg41.gif) fixed center
 repeat-x;} p {background:
 url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
 &pound;555;} pre {background: yellow;}
 </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>background-attachment</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3911,47 +3895,37 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>&lbrack; scroll &vert; fixed &vert; local &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>scroll</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
-      <td><b>Animatable</b></td>
-      <td></td>
-    </tr>    <tr>
+      <td><b>Description</b></td>
+      <td>Defines whether background images scroll along with the element when the 
+	    document is scrolled. This property can be used to create "aligned" backgrounds; 
+		for more details, see Chapter 9 of <i>CSS: The Definitive Guide</i>, 4th Edition.</td>
+    </tr>
+	<tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+body {background-attachment: scroll, scroll, fixed;}
+div.fixbg {background-attachment: fixed;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-<b>Values</b>   &lbrack; scroll &vert; fixed &vert; local &rbrack;#  
-<b>Initial value</b>   scroll  
-<b>Computed value</b>  As declared  
-<b>Applies to</b>   All elements 
-<p><b>Description</b>  Defines whether background images scroll along with
-    the element when the document is scrolled. This 
-property can be used to create "aligned" 
-backgrounds; for more details, see Chapter 9 of 
-<i>CSS: The Definitive Guide</i>, 4th Edition. 
-
-<p><b>Examples</b></p>
-<pre>
-body {background-attachment: scroll, scroll, fixed;}
-div.fixbg {background-attachment: fixed;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3984,17 +3958,16 @@ div.fixbg {background-attachment: fixed;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Changes how overlapping background images are
-composited against an "empty" backdrop. The "backdrop" here is a
-transparent layer underneath the background color. The default of
-normal imposes simple alpha blending, as CSS has permitted since its
-inception. The others cause the background image and its backdrop to
-be combined in various ways; for example, lighten means that the final
-result will show, at each pixel, either the image or its backdrop,
-whichever is lighter. darken is the same, except the darker of the two
-pixels will be shown. The results of these are likely to be familiar
-to users of Photoshop or any other graphic-editing tool. Compositing
-of multiple background layers is done back to front.</td>
+      <td>Changes how overlapping background images are composited against an "empty" 
+	    backdrop. The "backdrop" here is a transparent layer underneath the background 
+		color. The default of normal imposes simple alpha blending, as CSS has permitted 
+		since its inception. The others cause the background image and its backdrop to 
+		be combined in various ways; for example, lighten means that the final result 
+		will show, at each pixel, either the image or its backdrop, whichever is lighter. 
+		darken is the same, except the darker of the two pixels will be shown. The 
+		results of these are likely to be familiar to users of Photoshop or any other 
+		graphic-editing tool. Compositing of multiple background layers is done back 
+		to front.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -8129,44 +8102,36 @@ header {grid-column-end: main-content;}
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>0</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>An absolute length</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Grid containers</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Sets a gap distance between column tracks. This permits an author to force 
+	    open gaps between column tracks, even when the grid items have no margins to 
+		push them away from each other. The gap size is the same for all column gaps.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-</pre>
+<pre>#grid {display: grid; grid-column-gap: 1em;}</pre>
       </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>As of early 2018, the CSS Working Group intends to change this property to 
+	    simply column-gap and have it apply to multicolumn and flex containers as 
+		well as grid containers.</td>
     </tr>
   </tbody>
 </table>
-Values 
-Initial value 0
-Computed value An absolute length
-Applies to Grid containers
-Description Sets a gap distance between column tracks. This permits
-an author to force open gaps between column tracks, even when the grid
-items have no margins to push them away from each other. The gap size is
-the same for all column gaps.
-<p><b>Example</b></p>
-<pre>
-#grid {display: grid; grid-column-gap: 1em;}
-</pre>
-Note As of early 2018, the CSS Working Group intends to change this
-property to simply column-gap and have it apply to multicolumn and flex
-containers as well as grid containers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>grid-column-start Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8180,55 +8145,39 @@ containers as well as grid containers.
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>auto &vert; <i>&lt;custom-ident&gt;</i> &vert; &lbrack; <i>&lt;integer&gt;</i> && 
+	    <i>&lt;customident&gt;</i>? &rbrack; &vert; &lbrack; span && &lbrack; <i>&lt;integer&gt;</i> 
+		‖ <i>&lt;customident&gt;</i> &rbrack;&rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>auto</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Grid items and absolutely positioned elements, if their containing block is a grid container</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines the column grid line on which an element's layout starts, by means of 
+	    either a grid line number or an identifier. If the span keyword is used, the grid 
+		item spans back from the grid line defined by gridcolumn-end.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+header {grid-column-start: masthead;}
+#sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-Values   auto &vert; <i>&lt;custom-ident&gt;</i> &vert; &lbrack; <i>&lt;integer&gt;</i> &&    
-   <i>&lt;customident&gt;</i>? &rbrack; &vert; &lbrack; span && &lbrack; <i>&lt;integer&gt;</i> 
-   ‖ <i>&lt;customident&gt;</i> &rbrack;&rbrack;     
-Initial    auto 
-value      
-Computed     
-value As     
-declared  
-
-Applies to Grid items and absolutely positioned elements, if their
-containing block is a grid container
-
-Description Defines the column grid line on which an element's
-layout starts, by means of either a grid line number or an identifier.
-If the span keyword is used, the grid item spans back from the grid line
-defined by gridcolumn-end.
-
-<p><b>Examples</b></p>
-<pre>
-header {grid-column-start: masthead;}
-#sidebar {grid-column-start: span 1;} footer {grid-column-start: -2;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>grid-gap  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9009,7 +8958,7 @@ strict;}
       <td><b>Examples</b></td>
       <td>
 <pre>
- p {line-height: 1.5em;}     
+p {line-height: 1.5em;}     
 h2 {line-height: 200%;} 
 ul {line-height: 1.2;} 
 pre {line-height: 0.75em;}
