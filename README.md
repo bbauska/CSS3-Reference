@@ -8482,7 +8482,7 @@ grid-template-areas:
   <thead>
     <tr>
       <th width="200"><h3>grid-template-columns</h3></th>
-      <th align="right"><h3>Inh. N Anim. N</h3></th>
+      <th width="600" align="right"><h3>Inh. N Anim. N</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -8508,7 +8508,8 @@ grid-template-areas:
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Provides authors a way to define grid line names and track sizes for columns in the explicit grid.</td>
+      <td>Provides authors a way to define grid line names and track sizes for columns 
+	    in the explicit grid.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13064,8 +13065,8 @@ p.cramped {word-spacing: −0.5em;}
 <table>
   <thead>
     <tr>
-      <th>z-index</th>
-      <th>Inh. N Anim. Y</th>
+      <th width="200"><h3>z-index</h3></th>
+      <th align="right"><h3>Inh. N Anim. Y</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -13097,147 +13098,3 @@ p.cramped {word-spacing: −0.5em;}
     </tr>
   </tbody>
 </table>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- wip
-<table style="width:500px;">
-  <thead>
-    <tr>
-      <th width="200"><h3>Type Selector</h3></th>
-      <th align="right"><h3>Inh. N Anim. N</h3></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Values</b></td>
-      <td><br>
-         <br>
-      </td>
-    </tr>
-    <tr>
-      <td><b>Initial value</b></td>
-      <td>See individual properties</td>
-    </tr>
-    <tr>
-      <td><b></b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Applies to</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b></b></td>
-      <td></td>
-    </tr>
-      <td><b>Description</b></td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td><b>Examples</b></td>
-      <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
--->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--
-<table style="width:500px;">
-  <thead>
-    <tr>
-      <th width="200"><h3></h3></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Applies to</b></td>
-      <td></td>
-    </tr>
-      <td><b>Description</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Examples</b></td>
-      <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--
-<table style="width:500px;">
-  <thead>
-    <tr>
-      <th width="200"><h3>  </h3></th>
-      <th align="right"><h3>Inh. N Anim. N</h3></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Pattern</b></td>
-      <td>  </td>
-    </tr>
-    <tr>
-      <td><b>Description</b></td>
-      <td>.</td>
-    </tr>
-    <tr>
-      <td><b>Examples</b></td>
-      <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
--->
-<!--
-<table style="width:500px;">
-  <thead>
-    <tr>
-      <th width="200"><h3> </h3></th>
-      <th align="right"><h3>Inh. N Anim. N</h3></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Values</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Initial value</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Computed value</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Applies to</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Description</b></td>
-      <td>.</td>
-    </tr>
-    <tr>
-      <td><b>Examples</b></td>
-      <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
--->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
