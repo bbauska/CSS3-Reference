@@ -5550,6 +5550,7 @@ h3 {border-right-width: 1em;}
     <tr>
       <td><b>Applies to</b></td>
       <td>Elements with the display value table or tableinline </td>
+      <td>Elements with the display value table or tableinline </td>
     </tr>
     <tr>
       <td><b>Description</b></td>
@@ -6614,14 +6615,13 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the base writing direction of blocks and the direction of embeddings and 
-      overrides for the Unicode Bidirectional Algorithm (sometimes called <i>bidi</i>). 
-      Furthermore, it changes the way a number of properties and layout decisions are 
-      handled, including but not limited to the placement of table cells in a table row 
-      and the layout algorithms for block boxes.<br>
-
-      For a variety of reasons, authors are strongly encouraged to use the HTML attribute 
-      dir rather than the CSS property direction. User agents that do not support 
-      bidirectional text are permitted to ignore this property.</td>
+        overrides for the Unicode Bidirectional Algorithm (sometimes called <i>bidi</i>). 
+        Furthermore, it changes the way a number of properties and layout decisions are 
+        handled, including but not limited to the placement of table cells in a table row 
+        and the layout algorithms for block boxes.
+        For a variety of reasons, authors are strongly encouraged to use the HTML attribute 
+        dir rather than the CSS property direction. User agents that do not support 
+        bidirectional text are permitted to ignore this property.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6650,78 +6650,58 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td><i>&lt;display-legacy&gt;</i></td>
+    </tr>
+    <tr>
+      <td><b>Definitions</b></td>
+      <td><i><b>&lt;display-outside&gt;</b></i>block &vert; inline &vert; run-in 
+	    <i><b>&lt;display-inside&gt;</b></i> flow &vert; flow-root &vert; table 
+		&vert; flex &vert; grid &vert; 
+		ruby <i><b>&lt;display-listitem&gt;</b></i>list-item && <i>&lt;display-outside&gt;</i>? 
+		&& &lbrack; flow &vert; flowroot &rbrack;? <i><b>&lt;display-internal&gt;</b></i>
+		table-row-group &vert; table-header-group &vert; table-footer-group &vert; table-row 
+		&vert; table-cell &vert; tablecolumn-group &vert; table-column &vert; table-caption 
+		&vert; ruby-base &vert; ruby-text &vert; ruby-base-container &vert; ruby-text-container 
+		</b><i>&lt;display-box&gt;</i></b> contents &vert; none </b><i>&lt;display-legacy&gt;</i></b>
+		inline-block &vert; inline-list-item &vert; inline-table &vert; inline-flex &vert; inline-grid</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>inline</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines the kind of display box an element generates during layout. Gratuitous 
+	    use of display with a document type such as HTML can be tricky, as it upsets the 
+		display hierarchy already defined in HTML, but it can also be very useful. In the 
+		case of XML, which has no such built-in visual hierarchy, display is indispensable. 
+		The value none is often used to make elements "disappear," since it removes the 
+		element and all of its descendant elements from the presentation. This is true not 
+		just in visual media, but in all media; thus, setting an element to display: none 
+		will prevent it from being spoken by a speaking browser. The value run-in was long 
+		a part of CSS2.1 but was dropped in early 2011 because of inconsistencies among 
+		browsers. Despite this, it is still listed as part of CSS3.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+h1 {display: block;}
+li {display: list-item;} img {display: inline;} .hide {display: none;}
+tr {display: table-row;}
 </pre>
       </td>
     </tr>
   </tbody>
 </table>
-
-<b>Values</b>
-<i>&lt;display-legacy&gt;</i>
-<b>Definitions</b>
-<i><b>&lt;display-outside&gt;</b></i>block &vert; inline &vert; run-in
-<i><b>&lt;display-inside&gt;</b></i> flow &vert; flow-root &vert; table &vert; flex &vert; grid &vert;
-ruby
-<i><b>&lt;display-listitem&gt;</b></i>list-item && <i>&lt;display-outside&gt;</i>? && &lbrack; flow
-&vert; flowroot &rbrack;?
-<i><b>&lt;display-internal&gt;</b></i>table-row-group &vert; table-header-group &vert;
-table-
-
-     footer-group &vert; table-row &vert; table-cell &vert;
-     tablecolumn-group &vert; table-column &vert; table-caption &vert;
-     ruby-base &vert; ruby-text &vert; ruby-base-container &vert;
-     ruby-text-container
-</b><i>&lt;display-box&gt;</i></b> contents &vert; none
-
-</b><i>&lt;display-legacy&gt;</i></b>   inline-block &vert; inline-list-item &vert; inline-table &vert;
-     inline-flex &vert; inline-grid
-<b>Initial value</b>  inline
-<b>Computed value</b> As declared
-<b>Applies to</b>     All elements
-<b>Description</b> Defines the kind of display box an element generates
-during layout. Gratuitous use of display with a document type such as
-HTML can be tricky, as it upsets the display hierarchy already defined
-in HTML, but it can also be very useful. In the case of XML, which has
-no such built-in visual hierarchy, display is indispensable.
-
-The value none is often used to make elements "disappear," since it
-removes the element and all of its descendant elements from the
-presentation. This is true not just in visual media, but in all media;
-thus, setting an element to display: none will prevent it from being
-spoken by a speaking browser.
-
-The value run-in was long a part of CSS2.1 but was dropped in early
-2011 because of inconsistencies among browsers. Despite this, it is
-still listed as part of CSS3.
-
-<p><b>Examples</b></p>
-<pre>
-h1 {display: block;}
-li {display: list-item;} img {display: inline;} .hide {display: none;}
-tr {display: table-row;}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>empty-cells</b>  <b>Inh. Y Anim. N</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6735,52 +6715,40 @@ tr {display: table-row;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>show &vert; hide</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>show</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared </td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Elements with the display value table-cell</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines the presentation of table cells that contain no content. If shown, the 
+	    cell's borders and background are drawn. This property is only honored if border-
+		collapse is set to separate; otherwise, it is ignored.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
+th, td {empty-cells: show;} 
 </pre>
       </td>
     </tr>
+	<tr>
+	  <td><b>Note</b></td>
+	  <td>empty-cells has no effect unless the value of border-collapse is separate.</td>
+	</tr>
   </tbody>
 </table>
-
-<b>Values</b>    show &vert; hide
-<b>Initial</b>     show
-<b>value</b>      
-<b>Computed</b>    As declared 
-<b>value</b>      
-<b>Applies</b>     Elements with the display value table-cell  
-<b>to</b> 
- Defines the presentation of table cells that
-<b>Description</b>  contain no content. If shown, the cell's borders    
-and background are drawn. This property is only     
-honored if border-collapse is set to separate; 
-otherwise, it is ignored.   
-<p><b>Example</b></p>
-<pre>
-th, td {empty-cells: show;} 
-</pre>
-
-<p><b>Note</h5> empty-cells has no effect unless the value of border-collapse is separate.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>filter</b>    <b>Inh. N Anim. Y</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6794,23 +6762,28 @@ th, td {empty-cells: show;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>&lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert; 
+	    dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; invert() &vert; 
+		opacity() &vert; sepia() &vert; saturate() &vert; url() &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>none</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements (in SVG, applies to all graphics elements and all container elements 
+	    except the defs element)</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Applies a visual filter to the element, resulting in an alteration of its final 
+	    appearance. url() values point to filter elements in SVG files, either externally 
+		or embedded within the HTML document. SVG filters can be quite complex and powerful.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6826,32 +6799,6 @@ url(/assets/filters.svg#spotlight);}
     </tr>
   </tbody>
 </table>
-
-<b>Values</b>    &lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert;  
-dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; 
-invert() &vert; opacity() &vert; sepia() &vert; saturate() &vert;   
-url() &rbrack;#   
-<b>Initial</b>     none
-<b>value</b>      
-<b>Computed</b>    As declared 
-<b>value</b>      
-<b>Applies</b>     All elements (in SVG, applies to all graphics  
-<b>to</b>  elements and all container elements except the defs 
-element)    
-Applies a visual filter to the element, resulting   
-<b>Description</b>  in an alteration of its final appearance. url()     
-values point to filter elements in SVG files,  
-either externally or embedded within the HTML  
-document. SVG filters can be quite complex and 
-powerful.   
-<p><b>Examples</b></p>
-<pre>
-img.oldschool {filter: sepia(0.9);} h2.glowshadow   
-{filter:    
-drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em     
-0.75em 30px gray);} div.logo {filter:  
-url(/assets/filters.svg#spotlight);}
-</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3><b>flex</b>   <b>Inh. N Anim. P</b></h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6865,54 +6812,38 @@ url(/assets/filters.svg#spotlight);}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>&lbrack; <i>&lt;flex-grow&gt;</i> <i>&lt;flex-shrink&gt;</i>?
+	    <i>&lt;flex-basis&gt;</i> &rbrack; &vert; none</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>0 1 auto</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>Refer to individual properties</td>
+    </tr>
+    <tr>
+      <td><b>Percentages</b></td>
+      <td>Valid for the flex-basis value only, relative to the element's parent's inner 
+	    main axis size</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Flex items (children of flex containers)</td>
+    </tr>
+    <tr>
+      <td><b>Animatable</b></td>
+      <td>Refer to individual flex properties to see which are animatable</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>A shorthand property encompassing the flex-grow, flex-shrink, and flex-basis 
+	    properties, used to set the proportion and types of flexibility permitted</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<b>Values</b>&lbrack; <i>&lt;flex-grow&gt;</i> <i>&lt;flex-shrink&gt;</i>?
-    <i>&lt;flex-basis&gt;</i> &rbrack; &vert; none
-<b>Initial value</b> 0 1 auto
-<b>ComputedRefer to individual properties
-  value</b>   
-<b>Percentages</b>   Valid for the flex-basis value only, relative to the
-    element's parent's inner main axis size
-<b>Applies to</b>    Flex items (children of flex containers)
-<b>Animatable</b>    Refer to individual flex properties to see which are
-    animatable
-<b>Description</b>   A shorthand property encompassing the flex-grow,
-    flex-shrink, and flex-basis properties, used to set
-    the proportion and types of flexibility permitted
-<p><b>Examples</b></p>
-for a flex item. The minimum valid value is a flex   
-basis on its own, in which case the growth and  
-<b>Note</b> shrink factors are set to their defaults of 0 and 1, 
-<b>flex-basis</b>   respectively. Including the growth and shrink
-   factors is optional, but if one is included, the     
-   other <i>must</i> also be present.
 <pre>
 /&ast; sets grow at 1, shrink at 0, basis at auto &ast;/   
 nav ul li {flex: 1 0 auto;}  
@@ -6920,9 +6851,19 @@ nav ul li {flex: 1 0 auto;}
 ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}  
 /&ast; INVALID &ast;/ 
 </pre>
-It is <i>strongly</i> recommended that authors use this   
-property instead of the separate properties it  
-encompasses. 
+      </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>For a flex item. The minimum valid value is a flex basis on its own, in which 
+	    case the growth and shrink factors are set to their defaults of 0 and 1, 
+		<b>flex-basis</b>   respectively. Including the growth and shrink factors is 
+		optional, but if one is included, the other <i>must</i> also be present. It is 
+		<i>strongly</i> recommended that authors use this property instead of the separate 
+		properties it encompasses.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>flex-basis  Inh. N Anim. P</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6936,57 +6877,52 @@ encompasses.
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td>content &vert; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> 
+	    &vert; auto &rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>auto</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared, with length values made absolute</td>
+    </tr>
+    <tr>
+      <td><b>Percentages</b></td>
+      <td>Relative to the flex container's inner main axis size</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Flex items (children of flex containers)</td>
+    </tr>
+    <tr>
+      <td><b>Animatable</b></td>
+      <td><i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Defines the initial size of a flex item, used as a basis for all subsequent 
+	    flex sizing calculations. This can override an explicitly assigned width value 
+		for the element.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Values     content &vert; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert;    
-   auto &rbrack; 
-Initial value     auto 
-Computed value    As declared, with length values made absolute
-Percentages     Relative to the flex container's inner main axis size    
-Applies to   
- Flex items (children of flex containers)     
- 
-Animatable  <i>&lt;length&gt;</i> and <i>&lt;percentage&gt;</i> values only
-   
-Description  Defines the initial size of a flex item, used as a 
-   basis for all subsequent flex sizing calculations.   
-   This can override an explicitly assigned width value 
-   for the element.     
-<p><b>Examples</b></p>
-<pre>
 nav ul li {flex-basis: 50%;} ol.gallery li   
    {flex-basis: 300px;} div span.whatevs {flex-basis:   
    auto;}  
 </pre>
-Note  It is <i>strongly</i> recommended that instead of this    
-   property, authors use the flex shorthand property to 
-   set an item's flex basis.    
+      </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>It is <i>strongly</i> recommended that instead of this property, authors use 
+	    the flex shorthand property to set an item's flex basis.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--  <h3>flex-direction Inh. N Anim. N</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7016,7 +6952,8 @@ Note  It is <i>strongly</i> recommended that instead of this
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>flowed into the flex container, which in turn defines how the flex lines will fill the flex container.</td>
+      <td>flowed into the flex container, which in turn defines how the flex lines will 
+	    fill the flex container.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7058,7 +6995,8 @@ column;}
     </tr>
     </tr>
       <td><b>Description</b></td>
-      <td>A shorthand property encompassing the flexdirection and flex-wrap properties. Note that the default wrapping value is nowrap (see flex-wrap).</td>
+      <td>A shorthand property encompassing the flexdirection and flex-wrap properties. 
+	    Note that the default wrapping value is nowrap (see flex-wrap).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7084,53 +7022,44 @@ nav.sidenav {display: flex; flex-flow: column nowrap;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td></td>
+      <td><i>&lt;number&gt;</i></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td></td>
+      <td>0</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td></td>
+      <td>As declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>Flex items (children of flex containers)</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>.</td>
+      <td>Sets the <i>growth factor</i> for a flex item. The value supplied is summed up 
+	    with all the growth factors of the flex items in the same flex line, and the 
+		amount they grow is scaled in proportion to their growth factors as a percentage 
+		of the whole.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
 <pre>
-</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-Values    <i>&lt;number&gt;</i>
-Initial value    0   
-Computed value   As declared 
-Applies to     Flex items (children of flex containers)    
-     
- Sets the <i>growth factor</i> for a flex item. The value 
-Description  Sets the <i>growth factor</i> for a flex item. The value 
-  supplied is summed up with all the growth factors of the flex items in the same flex line, 
- and the amount they grow is scaled in proportion to their growth factors as a percentage of the whole. 
-
-<p><b>Examples</b></p>
-<pre>
 nav ul li {flex-grow: 1;}
-
 ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
 {flex-grow: 0.5;}
 </pre>
-Note It is <i>strongly</i> recommended that instead of this property, authors use the flex shorthand property to set an item's flex
-growth factor.
+      </td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>It is <i>strongly</i> recommended that instead of this property, authors use 
+	    the flex shorthand property to set an item's flex growth factor.</td>
+    </tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--   <h3>flex-shrink  Inh. N Anim. Y</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
