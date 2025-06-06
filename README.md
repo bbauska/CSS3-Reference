@@ -8466,7 +8466,7 @@ grid-template-areas:
   <thead>
     <tr>
       <th width="200"><h3>grid-template-columns</h3></th>
-      <th width="600" align="right"><h3>Inh. N Anim. N</h3></th>
+      <th align="right"><h3>Inh. N Anim. N</h3></th>
     </tr>
   </thead>
   <tbody>
