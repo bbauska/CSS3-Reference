@@ -4113,9 +4113,9 @@ pre {background-color: #FF9;}
       <td><b>Examples</b></td>
       <td>
 <pre>
- body {background-image:
- url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
- url(http://www.pix.org/dots.png);}  
+body {background-image:
+url(bg41.gif), url(bg43.png), url(bg51.jpg);} h2 {background-image:
+url(http://www.pix.org/dots.png);}  
 </pre>
       </td>
     </tr>
@@ -4703,9 +4703,7 @@ a:active {border-bottom-width: 2px;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-table {border-collapse: separate; border-spacing: 3px 5px;}
-</pre>
+<pre>table {border-collapse: separate; border-spacing: 3px 5px;}</pre>
       </td>
     </tr>
     <tr>
@@ -6109,9 +6107,7 @@ rgba(255,0,0,0.5);}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-body {box-sizing: padding-box;}
-</pre>
+<pre>body {box-sizing: padding-box;}</pre>
       </td>
     </tr>
   </tbody>
@@ -6152,9 +6148,7 @@ body {box-sizing: padding-box;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-caption {caption-side: top;}
-</pre>
+<pre>caption {caption-side: top;}</pre>
       </td>
     </tr>
     <tr>
@@ -6205,9 +6199,7 @@ caption {caption-side: top;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-h1 {clear: both;} p + h3 {clear: right;}    
-</pre>
+<pre>h1 {clear: both;} p + h3 {clear: right;}</pre>
       </td>
     </tr>
   </tbody>
@@ -6303,9 +6295,7 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-span.fullshape {clip-rule: nonzero;} span.knockouts 
-</pre>
+<pre>span.fullshape {clip-rule: nonzero;} span.knockouts</pre>
       </td>
     </tr>
   </tbody>
@@ -6711,9 +6701,7 @@ tr {display: table-row;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-th, td {empty-cells: show;} 
-</pre>
+<pre>th, td {empty-cells: show;}</pre>
       </td>
     </tr>
 	<tr>
@@ -7583,9 +7571,7 @@ h1.bigtext {font-stretch: ultra-expanded;} caption.meme
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-em {font-style: oblique;} i {font-style: italic;}
-</pre>
+<pre>em {font-style: oblique;} i {font-style: italic;}</pre>
       </td>
     </tr>
     <tr>
@@ -7682,9 +7668,7 @@ pre code {font-synthesis: style;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-h3 {font-variant: small-caps;} p {font-variant: normal;}
-</pre>
+<pre>h3 {font-variant: small-caps;} p {font-variant: normal;}</pre>
       </td>
     </tr>
     <tr>
@@ -7888,7 +7872,8 @@ top-right-bottom-left order for margins, padding,   .</td>
       <td>
 <pre>
 div.grid {display: grid;
-grid-template-rows: 80px 80px; grid-template-columns: 20em 1fr;
+grid-template-rows: 80px 80px; 
+grid-template-columns: 20em 1fr;
 grid-auto-columns: 20em;}
 </pre>
       </td>
@@ -9927,9 +9912,7 @@ cover, 100%, contain;}
       <td><b>Admintable</b></td>
       <td>Negative values are not permitted.</td>
     </tr>
-<pre>
-div#footer {max-height: 3em;}  
-</pre>
+<pre>div#footer {max-height: 3em;}</pre>
       </td>
     </tr>
   </tbody>
@@ -9976,9 +9959,7 @@ div#footer {max-height: 3em;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-&pound;sidebar img {width: 50px; max-width: 100%;}
-</pre>
+<pre>&pound;sidebar img {width: 50px; max-width: 100%;}</pre>
       </td>
     </tr>
   </tbody>
@@ -10357,9 +10338,7 @@ li:nth-of-type(14) {order: -1;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-p {orphans: 4;} ul {orphans: 2;}
-</pre>
+<pre>p {orphans: 4;} ul {orphans: 2;}</pre>
       </td>
     </tr>
   </tbody>
@@ -10682,9 +10661,7 @@ object {overflow: visible scroll;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-pre {overflow-wrap: break-word;}
-</pre>
+<pre>pre {overflow-wrap: break-word;}</pre>
       </td>
     </tr>
     <tr>
@@ -10730,8 +10707,8 @@ pre {overflow-wrap: break-word;}
       <td><b>Examples</b></td>
       <td>
 <pre>
-#masthead {overflow-x: hidden;} object {overflow-x: 
-visible;}   
+#masthead {overflow-x: hidden;} 
+object {overflow-x: visible;}
 </pre>
       </td>
     </tr>
@@ -10772,9 +10749,8 @@ visible;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-
 <pre>
-&pound;masthead {overflow-y: hidden;} 
+#masthead {overflow-y: hidden;} 
 object {overflow-y: scroll;}
 </pre>
       </td>
@@ -11009,9 +10985,7 @@ ol {padding-right: 5em;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}   
-</pre>
+<pre>ul {padding-top: 0.5in;} h3 {padding-top: 1.5em;}</pre>
       </td>
     </tr>
   </tbody>
@@ -12810,7 +12784,7 @@ ul.submenu {visibility: hidden;} tr.hide
       <td><b>Applies to</b></td>
       <td>All elements</td>
     </tr>
-    <td>
+    <tr>
       <td><b>Description</b></td>
       <td>Defines how whitespace within an element is handled during layout. normal acts 
         as web browsers have traditionally treated text, in that it reduces any sequence of 
