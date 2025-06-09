@@ -93,7 +93,7 @@ ul.no-bullets {
 <h1 align="center">CSS3 Reference Guide</h1>
 <h6 align="center">(by Brian Bauska)</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ readme.md of css3-ref.bauska.org ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of css3-ref.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. css reference guide logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -103,13 +103,15 @@ ul.no-bullets {
   alt="CSS3 Reference Guide."
   style="width:20%;" />
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="css3-refguide">CSS3 Reference Guide</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="#table-of-contents">Table of Contents</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="preface">Preface</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 1: Basic Concepts</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <blockquote>
 <h3><a href="#ch1-1-1">1.1 Adding Styles to HTML</a></h3>
 <h3><a href="#ch1-2-1">1.2 Rule Structure</a></h3>
@@ -125,8 +127,9 @@ ul.no-bullets {
 <h3><a href="#ch1-12-1">1.12 Grid Layout</a></h3>
 <h3><a href="#ch1-13-1">1.13 Table Layout</a></h3>
 </blockquote>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 2: Values</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <blockquote>
 <h3><a href="#ch2-1-1">2.1 Keywords</a></h3>
 <h3><a href="#ch2-2-1">2.2 Color Values</a></h3>
@@ -145,8 +148,9 @@ ul.no-bullets {
 <h3><a href="#ch2-15-1">2.15 Calculation Values</a></h3>
 <h3><a href="#ch2-16-1">2.16 Variable Values</a></h3>
 </blockquote>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 3: Selectors and Queries</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <blockquote>
 <h3><a href="#ch3-1-1">3.1 Selectors</a></h3>
 <h3><a href="#ch3-2-1">3.2 Structural Pseudo-Classes</a></h3>
@@ -156,34 +160,36 @@ ul.no-bullets {
 <h3><a href="#ch3-6-1">3.6 Media Queries</a></h3>
 <h3><a href="#ch3-7-1">3.7 Feature Queries</a></h3>
 </blockquote>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 4: Property Reference</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <blockquote>
 <h3><a href="#ch4-1-1">4.1 Inheritance and Animation</a></h3>
 <h3><a href="#ch4-2-1">4.2 Value Syntax Conventions</a></h3>
 <h3><a href="#ch4-3-1">4.3 Universal Values</a></h3>
 <h3><a href="#ch4-4-1">4.4 Properties</a></h3>
 </blockquote>
-
 <!-- page v -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 style="text-align:right;">Preface</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Cascading Style Sheets (CSS) is the World Wide Web Consortium (W3C)
 standard for the visual presentation of web pages (although it can be
 used in other settings as well). After a short introduction to the key
 concepts of CSS, this pocket reference provides an alphabetical
 reference to all CSS3 selectors, followed by an alphabetical reference
 to CSS3 properties.</p>
-
 <!-- page 1 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch1">1. CHAPTER 1 Basic Concepts</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1-1">1.1. Adding Styles to HTML</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Styles can be applied to documents in three distinct ways, as discussed in the 
 following sections.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline Styles</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In HTML, style information can be specified for an individual element
 via the style attribute. The value of a style attribute is a
 <i>declaration block</i> (see the section "Rule Structure" on page 5) without
@@ -196,15 +202,15 @@ This text is alarmingly presented!&lt;/p&gt;
 block can be used as a style attribute value. For example, it is not
 possible to place hover styles (using :hover) in a style attribute, nor
 can &#64;import be used in this context.</p>
-
 <p>Although typical XML document languages (such as SVG) support the style
 attribute, it is unlikely that <i>all</i> XML languages will support a
 similar capability. Because of this---and especially because it
 encourages poor authoring practices---authors are discouraged from using
 the style attribute, and thus inline styles.</p>
-
 <!-- page 2 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Embedded Stylesheets</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A stylesheet can be embedded within an HTML document using the style
 element:</p>
 <pre>
@@ -297,26 +303,34 @@ restrict a stylesheet to one or more forms of media:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>3. <b>HTTP Link headers</b></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The last (and least common by far) way of associating an external
-stylesheet with your pages is to use an HTTP Link header. This approach
-uses HTTP headers to replicate the effects of a link element or &#64;import
-directive.</p>
-<p>Adding a line such as this to the <i>.htaccess</i> file at the root level of
-your server will make this happen for all pages on the site, where
-/style.css is the server path of the stylesheet to be loaded:</p>
+<p>The last (and least common by far) way of associating an external stylesheet with your 
+pages is to use an HTTP Link header. This approach uses HTTP headers to replicate the 
+effects of a link element or &#64;import directive.</p>
+
+<p>Adding a line such as this to the <i>.htaccess</i> file at the root level of your 
+server will make this happen for all pages on the site, where /style.css is the server 
+path of the stylesheet to be loaded:</p>
 <pre>
   &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 </pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Explanation of the attributes:</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>rel="stylesheet":</pre>
-<p>This attribute indicates that the linked file is a stylesheet, which defines how 
-the HTML content should be displayed.</p>
+<p>This attribute indicates that the linked file is a stylesheet, which defines how the 
+HTML content should be displayed.</p>
+
 <pre>href="style.css":</pre>
+
 <p>This attribute specifies the URL of the CSS file to be linked.</p>
+
 <pre>type="text/css":</pre>
+
 <p>This attribute specifies the MIME type of the linked file, indicating that it is 
 a CSS file. While technically redundant, it's good practice to include it for clarity.</p>
+
 <pre>media="all":</pre>
+
 <p>This attribute specifies that the stylesheet applies to all media types. This 
 means it will be applied to screens, printers, and any other media for which the 
 browser supports style sheets. If you want to target specific devices, you can use 
@@ -324,26 +338,28 @@ other media types like screen, print, or speech or use media queries.</p>
 <p>As an alternative to using <i>.htaccess</i>, which has been known to cause
 performance problems, you can edit your <i>httpd.conf</i> file to do the same
 thing:</p>
+
 <pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
   &quot;&lt;/style.css&gt;;rel=stylesheet;type=text/css;media=all&quot;
 &lt;/Directory&gt; 
 </pre>
-<p>where /usr/local/username/httpdocs is replaced with the
-Unix pathname of your website's actual home directory, and /style.css is
-replaced with the location of the stylesheet within that home directory.</p>
-<p>As of this writing, HTTP headers were not supported by all user agents,
-most notably Internet Explorer and Safari. Thus, this technique is
-usually limited to production environments based on other user agents,
-and the occasional Easter egg for Firefox and Opera users.</p>
+
+<p>where /usr/local/username/httpdocs is replaced with the Unix pathname of your 
+website's actual home directory, and /style.css is replaced with the location of the 
+stylesheet within that home directory.</p>
+
+<p>As of this writing, HTTP headers were not supported by all user agents, most notably 
+Internet Explorer and Safari. Thus, this technique is usually limited to production 
+environments based on other user agents, and the occasional Easter egg for Firefox and 
+Opera users.</p>
 <!-- page 5 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2-1">Rule Structure</h3>
+<h3 id="ch1-2-1">1.2. Rule Structure</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A stylesheet consists of one or more <i>rules</i> that describe how page
-elements should be presented. Every rule has two fundamental parts: the
-<i>selector</i> and the <i>declaration block</i>. Figure 1-1 illustrates the
-structure of a rule.</p>
+<p>A stylesheet consists of one or more <i>rules</i> that describe how page elements 
+should be presented. Every rule has two fundamental parts: the <i>selector</i> and the 
+<i>declaration block</i>. Figure 1-1 illustrates the structure of a rule.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. rule structure ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -355,24 +371,23 @@ structure of a rule.</p>
 </p>
 <!-- image001 rule structure -->
 <p align="center"><i>Figure 1-1. Rule structure</i></p>
-<p>On the left side of the rule, we find the selector, which selects the
-parts of the document to which the rule should be applied. Selectors can
-stand singly or be grouped as a comma-separated list; e.g., to select
-the top three heading levels at once, the selector group would be h1,
-h2, h3. On the right side of the rule, we have the declaration block. A
-declaration block is made up of one or more <i>declarations</i>; each
-declaration is a combination of a CSS <i>property</i> and a <i>value</i> of that
+<p>On the left side of the rule, we find the selector, which selects the parts of the 
+document to which the rule should be applied. Selectors can stand singly or be grouped as 
+a comma-separated list; e.g., to select the top three heading levels at once, the 
+selector group would be h1, h2, h3. On the right side of the rule, we have the 
+declaration block. A declaration block is made up of one or more <i>declarations</i>; 
+each declaration is a combination of a CSS <i>property</i> and a <i>value</i> of that
 property.</p>
-<p>The declaration block is always enclosed in curly braces. A declaration
-block can contain several declarations; each declaration must be
-terminated with a semicolon (;). The exception is the final declaration
-in a declaration block, for which the semicolon is optional (though
-recommended).</p>
-<p>Each property, which represents a particular stylistic parameter, is
-separated from its value by a colon (:). Property names in CSS are not
-case-sensitive. Legal values for a property are defined by the property
-description. Chapter 4 provides details on acceptable values for CSS
-properties.</p>
+
+<p>The declaration block is always enclosed in curly braces. A declaration block can 
+contain several declarations; each declaration must be terminated with a semicolon (;). 
+The exception is the final declaration in a declaration block, for which the semicolon is 
+optional (though recommended).</p>
+
+<p>Each property, which represents a particular stylistic parameter, is separated from 
+its value by a colon (:). Property names in CSS are not case-sensitive. Legal values for 
+a property are defined by the property description. Chapter 4 provides details on 
+acceptable values for CSS properties.</p>
 <!-- page 6 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3-1">1.3. <b><mark>&#64; At-rules</mark></b></h3>
@@ -381,50 +396,47 @@ properties.</p>
 identifier preceded by an @ sign. These are:</p>
 <ul>
   <li><b><mark>&#64;charset</mark></b><br>
-    Allows an author to define the encoding of the styles within the
-    stylesheet (e.g., &#64;charset &quot;utf-8&quot;;). This enables authors to
-    define the encoding of their styles even when they do not control the
-    encoding of the file or system in which the styles are written. If
-    multiple &#64;charset rules are declared, only the first will be used.
-    This <i>must</i> be the first line of a stylesheet in which it appears, and
-    <i>cannot</i> be preceded by any character. &#64;charset cannot be used in a
-    stylesheet embedded in a document.</li>
+    Allows an author to define the encoding of the styles within the stylesheet (e.g., 
+	&#64;charset &quot;utf-8&quot;;). This enables authors to define the encoding of 
+	their styles even when they do not control the encoding of the file or system in 
+	which the styles are written. If multiple &#64;charset rules are declared, only the 
+	first will be used. This <i>must</i> be the first line of a stylesheet in which it 
+	appears, and <i>cannot</i> be preceded by any character. &#64;charset cannot be used 
+	in a stylesheet embedded in a document.</li>
   <li><b><mark>&#64;import</mark></b><br>
-    Allows an author to include the styles of another stylesheet (see
-    "@import directive" on page 2). Multiple &#64;import rules are permitted. 
-    Any &#64;import rules <i>must</i> appear before all other parts of the stylesheet 
-    except for &#64;charset.</li>
+    Allows an author to include the styles of another stylesheet (see "@import directive" 
+	on page 2). Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> 
+	appear before all other parts of the stylesheet except for &#64;charset.</li>
   <li><b><mark>&#64;namespace</mark></b><br>
-    Allows an author to define an XML namespace to be used in selectors
-    (e.g., &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting
-    the use of svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG
-    files differently than &lt;a&gt; elements in HTML). Multiple &#64;namespace 
-    rules are permitted. Any &#64;namespace <i>must</i> appear before all other parts 
-    of the stylesheet except for &#64;charset and &#64;import rules.</li>
+    Allows an author to define an XML namespace to be used in selectors (e.g., 
+	&#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting the use of 
+	svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG files differently 
+	than &lt;a&gt; elements in HTML). Multiple &#64;namespace rules are permitted. Any 
+	&#64;namespace <i>must</i> appear before all other parts of the stylesheet except for 
+	&#64;charset and &#64;import rules.</li>
 </ul>
-<p>Besides these statements, there are a number of conditional at-rules.
+<p>Besides these statements, there are a number of conditional at-rules.<br>
 These include:</p>
 
 <ul>
   <li><b><mark>&#64;counter-style</mark></b><br>
-    Defines symbol and counting patterns used in CSS counters (e.g., the
-    numbering of list items in an ordered list).</li>
+    Defines symbol and counting patterns used in CSS counters (e.g., the numbering of 
+	list items in an ordered list).</li>
   <li><b><mark>&#64;font-face</mark></b><br>
-    Defines an external font to be downloaded and used, including
-    definitions of the identifiers to be used in other style rules. This
-    is part of what is often called "web fonts" or "custom fonts."</li>
+    Defines an external font to be downloaded and used, including definitions of the 
+	identifiers to be used in other style rules. This is part of what is often called 
+	"web fonts" or "custom fonts."</li>
   <li><b><mark>&#64;keyframes</mark></b><br>
-    Defines the states of various steps in an animation sequence, grouped
-    together under a unique identifier.</li>
+    Defines the states of various steps in an animation sequence, grouped together under 
+	a unique identifier.</li>
   <li><b><mark>&#64;media</mark></b><br>
-    Defines the media types and parameters in which a block of styles are
-    to be applied: e.g., writing &#64;media (maxwidth: 600px) and then the
-    styles to be used for smaller screens. This is the key to Responsive
-    Web Design.</li>
+    Defines the media types and parameters in which a block of styles are to be applied: 
+	e.g., writing &#64;media (maxwidth: 600px) and then the styles to be used for smaller 
+	screens. This is the key to Responsive Web Design.</li>
   <li><b><mark>&#64;supports</mark></b><br>
-    Defines the browser-support conditions under which a block of styles
-    should be used: e.g., writing &#64;supports (display: grid) and then 
-    the styles that should be used in a CSS Grid--supporting browser.</li>
+    Defines the browser-support conditions under which a block of styles should be used: 
+	e.g., writing &#64;supports (display: grid) and then the styles that should be used 
+	in a CSS Grid--supporting browser.</li>
 </ul>
 <p>There are other proposed at-rules which are, as of early 2018, at various stages of 
 development. These include &#64;document, &#64;font-feature-values, &#64;page, and 
@@ -432,16 +444,14 @@ development. These include &#64;document, &#64;font-feature-values, &#64;page, a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-4-1">1.4. Comments</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Including comments in CSS is simple. You open with /&ast; and end with &ast;/,
-like this:</p>
+<p>Including comments in CSS is simple. You open with /&ast; and end with &ast;/, like this:</p>
 <pre>/&ast; This is a comment! &ast;/</pre>
 <p>Comments can be multiple lines long:</p>
 <pre>/&ast; This is a comment!
 This is a continuation of the comment.
 And so is this. &ast;/</pre>
-<p>They can also occur anywhere within a stylesheet except in the middle of
-a property name or value:</p>
-
+<p>They can also occur anywhere within a stylesheet except in the middle of a property 
+name or value:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Comments</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -449,11 +459,10 @@ a property name or value:</p>
 <span style="color:darkblue"><b>h1</b></span><span style="color:lightblue">/&ast; heading-level-1 &ast;/ {color /&ast; foreground color &ast;/:</span>
   <span style="color:darkblue">rgba</span>(<span style="color:orange">23,58,89,0.42</span>)<span style="color:lightblue">/&ast; RGB + opacity &ast;/;}</span>
 </pre>
-
 <p>HTML (properly SGML) comments &lt;!&dash;- such as this &dash;-&gt; are permitted in
 stylesheets so as to hide the styles from browsers so old that they don't understand HTML 
-3.2. They do <i>not</i> act as CSS comments; that is, anything contained in an HTML comment 
-will be seen and interpreted by the CSS parser.</p>
+3.2. They do <i>not</i> act as CSS comments; that is, anything contained in an HTML 
+comment will be seen and interpreted by the CSS parser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-5-1">1.5. Style Precedence</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -478,7 +487,6 @@ specificity of that selector.</p>
   alt="Selector type specificity."
   style="width:40%;" />
 </p>
-
 <!-- image002 -->
 <p align="center"><i>Table 1-1. Selector type specificity</i></p>
 
@@ -486,6 +494,7 @@ specificity of that selector.</p>
 and a class identifier (e.g., div.aside p) has a specificity of 0,0,1,2. Specificity values 
 are sorted from right to left; thus, a selector containing 11 element identifiers (0,0,0,11) 
 has a lower specificity than a selector containing just a single class identifier (0,0,1,0).</p>
+
 <p>The !important directive gives a declaration more weight than nonimportant declarations. 
 The declaration retains the specificity of its selectors and is used only in comparison 
 with other important declarations.</p>
@@ -537,7 +546,7 @@ Here's how the cascade works:</p>
 within a browser) are given the same weight as the user agent's default styles (see 
 step 2 above).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-6-1">1.6 Element Classification</h3>
+<h3 id="ch1-6-1">1.6. Element Classification</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Broadly speaking, CSS groups elements into two types: <i>nonreplaced</i> and <i>replaced</i>. 
 Although the types may seem rather abstract, there actually are some profound differences in how 
@@ -1117,161 +1126,140 @@ table. Figure 1-6 illustrates the components of a table.</p>
     languages and on the right for rightto-left languages.</li>
   <li>A column group's box encompasses the same grid cells as the column
     boxes that it contains.</li>
-  <li>Although cells may span several rows or columns, CSS does not define
-    how that happens. It is instead left to the document language to
-    define spanning. Each spanned cell is a rectangular box one or more
-    grid cells wide and high. The top row of this rectangle is in the
-    row that is parent to the cell. The cell's rectangle must be as far
-    to the left as possible in left-to-right languages, but it may not
-    overlap any other cell box. It must also be to the right of all
-    cells in the same row that appear earlier in the source document in
-    a left-to-right language. In right-to-left languages, a spanned cell
-    must be as far to the right as possible without overlapping other
-    cells, and must be to the left of all cells in the same row that
-    come after it in the document source.</li>
-  <li>A cell's box cannot extend beyond the last row box of a table or row
-    group. If the table structure causes this condition, the cell must
-    be shortened until it fits within the table or row group that
-    encloses it.</li>
+  <li>Although cells may span several rows or columns, CSS does not define how that 
+    happens. It is instead left to the document language to define spanning. Each spanned 
+	cell is a rectangular box one or more grid cells wide and high. The top row of this 
+	rectangle is in the row that is parent to the cell. The cell's rectangle must be as 
+	far to the left as possible in left-to-right languages, but it may not overlap any 
+	other cell box. It must also be to the right of all cells in the same row that appear 
+	earlier in the source document in a left-to-right language. In right-to-left languages, 
+	a spanned cell must be as far to the right as possible without overlapping other cells, 
+	and must be to the left of all cells in the same row that come after it in the document 
+	source.</li>
+  <li>A cell's box cannot extend beyond the last row box of a table or row group. If the 
+    table structure causes this condition, the cell must be shortened until it fits within 
+	the table or row group that encloses it.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Fixed Table Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The fixed-layout model is fast because its layout doesn't depend on the
-contents of table cells; it's driven by the width values of the table,
-columns, and cells within the first row of the table. The fixed-layout
-model uses the following steps:</p>
+<p>The fixed-layout model is fast because its layout doesn't depend on the contents of 
+table cells; it's driven by the width values of the table, columns, and cells within the 
+first row of the table. The fixed-layout model uses the following steps:</p>
 <ol type="1">
-  <li>Any column element whose width property has a value other than auto
-    sets the width for that column.</li>
-  <li>If a column has an auto width, but the cell in the first row of the
-    table within that column has a width other than auto, that cell sets
-    the width for that column. If the cell spans multiple columns, the
-    width is divided equally among the columns.</li>
-  <li>Any columns that are still auto-sized are sized so that their widths
-    are as equal as possible.</li>
+  <li>Any column element whose width property has a value other than auto sets the width 
+    for that column.</li>
+  <li>If a column has an auto width, but the cell in the first row of the table within 
+    that column has a width other than auto, that cell sets the width for that column. If 
+	the cell spans multiple columns, the width is divided equally among the columns.</li>
+  <li>Any columns that are still auto-sized are sized so that their widths are as equal 
+    as possible.</li>
 </ol>
-<p>At that point, the width of the table is set to be either the value of
-width for the table or the sum of the column widths, whichever is
-greater. If the table turns out to be wider than the column widths, the
-difference is divided by the number of columns and added to each of
-them.</p>
+<p>At that point, the width of the table is set to be either the value of width for the 
+table or the sum of the column widths, whichever is greater. If the table turns out to be 
+wider than the column widths, the difference is divided by the number of columns and added 
+to each of them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Automatic Table Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The automatic-layout model, although not as fast as the fixedlayout
-model, is likely to be much more familiar to authors, because it's
-substantially the same model that HTML tables have used for years. In
-most current user agents, use of this model will be triggered by a table
-with a width of auto, regardless of the value of table-layout---although
-this is not assured.</p>
+<p>The automatic-layout model, although not as fast as the fixedlayout model, is likely 
+to be much more familiar to authors, because it's substantially the same model that HTML 
+tables have used for years. In most current user agents, use of this model will be 
+triggered by a table with a width of auto, regardless of the value of table-layout---
+although this is not assured.</p>
 
 <p>Here's how the model works:</p>
 <ol type="1">
-  <li>For each cell in a column, calculate both the minimum and maximum
-    cell width.</li>
-  <li>Determine the minimum width required to display the content. In
-    determining the minimum content width, the content can flow to any
-    number of lines, but it may not stick out of the cell's box. If the
-    cell's width value is larger than the minimum possible width, the
-    minimum cell width is set to that value. If the cell's width value
-    is auto, the minimum cell width is set to the minimum content width.</li>
-  <li>For the maximum width, determine the width required to display the
-    content without any line-breaking, other than that forced by
-    explicit line-breaking (e.g., due to the &lt;br&gt; element). That value
-    is the maximum cell width.</li>
+  <li>For each cell in a column, calculate both the minimum and maximum cell width.</li>
+  <li>Determine the minimum width required to display the content. In determining the 
+    minimum content width, the content can flow to any number of lines, but it may not 
+	stick out of the cell's box. If the cell's width value is larger than the minimum 
+	possible width, the minimum cell width is set to that value. If the cell's width 
+	value is auto, the minimum cell width is set to the minimum content width.</li>
+  <li>For the maximum width, determine the width required to display the content without 
+    any line-breaking, other than that forced by explicit line-breaking (e.g., due to the 
+	&lt;br&gt; element). That value is the maximum cell width.</li>
   <li>For each column, calculate both the minimum and maximum column width:
     <ol type-="a">
-      <li>The column's minimum width is determined by the largest minimum cell width of the 
-        cells within the column. If the column has been given an explicit width value that is 
-        larger than any of the minimum cell widths within the column, the minimum column width 
-        is set to the value of width.</li>
-      <li>For the maximum width, take the largest maximum cell width of the cells within the column. 
-        If the column has an explicit width value larger than any of the maximum cell widths within 
-        the column, the maximum column width is set to the value of width. These two behaviors recreate 
-        the traditional HTML table behavior of forcibly expanding any column to be as wide as its widest
-        cell.</li>
-      <li>In cases where a cell spans more than one column, the sum of the minimum column widths must 
-        be equal to the minimum cell width for the spanning cell. Similarly, the sum of the maximum 
-        column widths must equal the spanning cell's maximum width. User agents should divide any 
-        changes in column widths equally among the spanned columns.</li>
+      <li>The column's minimum width is determined by the largest minimum cell width of 
+	    the cells within the column. If the column has been given an explicit width value 
+		that is larger than any of the minimum cell widths within the column, the minimum 
+		column width is set to the value of width.</li>
+      <li>For the maximum width, take the largest maximum cell width of the cells within 
+	    the column. If the column has an explicit width value larger than any of the 
+		maximum cell widths within the column, the maximum column width is set to the 
+		value of width. These two behaviors recreate the traditional HTML table behavior 
+		of forcibly expanding any column to be as wide as its widest cell.</li>
+      <li>In cases where a cell spans more than one column, the sum of the minimum column 
+	    widths must be equal to the minimum cell width for the spanning cell. Similarly, 
+		the sum of the maximum column widths must equal the spanning cell's maximum width. 
+		User agents should divide any changes in column widths equally among the spanned 
+		columns.</li>
     </ol>
   </li>
 </ol>
-<p>In addition, the user agent must take into account that when a column
-width has a percentage value for its width, the percentage is calculated
-in relation to the width of the table---even though that width is not
-known yet. The user agent must hang on to the percentage value and use
-it in the next part of the algorithm. Once the user agent has determined
-how wide or narrow each column can be, it can calculate the width of the
-table. This happens as follows:</p>
+<p>In addition, the user agent must take into account that when a column width has a 
+percentage value for its width, the percentage is calculated in relation to the width of 
+the table---even though that width is not known yet. The user agent must hang on to the 
+percentage value and use it in the next part of the algorithm. Once the user agent has 
+determined how wide or narrow each column can be, it can calculate the width of the table. 
+This happens as follows:</p>
 <ol type="1">
-  <li>If the computed width of the table is not auto, the computed table
-    width is compared to the sum of all the column widths plus any
-    borders and cell spacing. (Columns with percentage widths are likely
-    calculated at this time.) The larger of the two values is the final
-    width of the table. If the table's computed width is larger than the
-    sum of the column widths, borders, and cell spacing, all columns are
-    increased in width by an equal amount so they fill the computed
-    width of the table.</li>
-  <li>If the computed width of the table is auto, the final width of the
-    table is determined by summing up the column widths, borders, and
-    cell spacing. This means the table will be only as wide as needed to
-    display its content, just as with traditional HTML tables. Any
-    columns with percentage widths use that percentage as a constraint,
+  <li>If the computed width of the table is not auto, the computed table width is compared 
+    to the sum of all the column widths plus any borders and cell spacing. (Columns with 
+	percentage widths are likely calculated at this time.) The larger of the two values 
+	is the final width of the table. If the table's computed width is larger than the sum 
+	of the column widths, borders, and cell spacing, all columns are increased in width by 
+	an equal amount so they fill the computed width of the table.</li>
+  <li>If the computed width of the table is auto, the final width of the table is 
+    determined by summing up the column widths, borders, and cell spacing. This means the 
+	table will be only as wide as needed to display its content, just as with traditional 
+	HTML tables. Any columns with percentage widths use that percentage as a constraint,
     but it is a constraint that a user agent does not have to satisfy.</li>
 </ol>
-<p>Once the last step is completed (and only then), the user agent can
-actually lay out the table.</p>
+<p>Once the last step is completed (and only then), the user agent can actually lay out 
+the table.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Collapsing Cell Borders</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The collapsing cell model largely describes how HTML tables have always
-been laid out when they have no cell spacing. The following rules govern
-this model:</p>
+<p>The collapsing cell model largely describes how HTML tables have always been laid out 
+when they have no cell spacing. The following rules govern this model:</p>
 <ul>
-  <li>Table elements cannot have any padding, although they can have
-    margins. Thus, there is never separation between the border around
-    the outside of the table and its outermost cells.</li>
-  <li>Borders can be applied to cells, rows, row groups, columns, and
-    column groups. The table element itself can, as always, have a
-    border.</li>
-  <li>There is never any separation between cell borders. In fact, borders
-    collapse into each other where they adjoin so that only one of the
-    collapsing borders is actually drawn. This is somewhat akin to
-    margin collapsing, where the largest margin wins. When cell borders
-    collapse, the "most interesting" border wins.</li>
-  <li>Once they are collapsed, the borders between cells are centered on
-    the hypothetical grid lines between the cells.</li>
+  <li>Table elements cannot have any padding, although they can have margins. Thus, there 
+    is never separation between the border around the outside of the table and its 
+	outermost cells.</li>
+  <li>Borders can be applied to cells, rows, row groups, columns, and column groups. The 
+    table element itself can, as always, have a border.</li>
+  <li>There is never any separation between cell borders. In fact, borders collapse into 
+    each other where they adjoin so that only one of the collapsing borders is actually 
+	drawn. This is somewhat akin to margin collapsing, where the largest margin wins. 
+	When cell borders collapse, the "most interesting" border wins.</li>
+  <li>Once they are collapsed, the borders between cells are centered on the hypothetical 
+    grid lines between the cells.</li>
 </ul>
 <h5>Collapsing borders</h5>
-<p>When two or more borders are adjacent, they collapse into each other, as
-shown in Figure 1-7. There are strict rules governing which borders will
-win and which will not:</p>
+<p>When two or more borders are adjacent, they collapse into each other, as shown in 
+Figure 1-7. There are strict rules governing which borders will win and which will not:</p>
 <ol type="1">
-  <li>If one of the collapsing borders has a border-style of hidden, it
-    takes precedence over all other collapsing borders: all borders at
-    this location are hidden.</li>
-  <li>If one of the collapsing borders has a border-style of none, it
-    takes the lowest priority. There will be no border drawn at this
-    location only if all of the borders meeting at this location have a
-    value of none. Note that none is the default value for border-style.</li>
-  <li>If at least one of the collapsing borders has a value other than
-    either none or hidden, narrow borders lose out to wider ones. If two
-    or more of the collapsing borders have the same width, the border
-    style is taken in the following order, from most preferred to least:
-    double, solid, dashed, dotted, ridge, outset, groove, inset. Thus,
-    if two borders with the same width collapse and one is dashed while
-    the other is outset, the border at that location will be dashed.</li>
-  <li>If collapsing borders have the same style and width but differ in
-    color, the color used is taken from an element in the following
-    list, from most preferred to least: cell, row, row group, column,
-    column group, table. Thus, if the borders of a cell and a
-    column---identical in every way except color---collapse, the cell's
-    border color (and style and width) will be used. If the collapsing
-    borders come from the same type of element---such as two row borders
-    with the same style and width, but different colors---the one
-    farthest to the left and top wins in left-to-right languages; in
+  <li>If one of the collapsing borders has a border-style of hidden, it takes precedence 
+    over all other collapsing borders: all borders at this location are hidden.</li>
+  <li>If one of the collapsing borders has a border-style of none, it takes the lowest 
+    priority. There will be no border drawn at this location only if all of the borders 
+	meeting at this location have a value of none. Note that none is the default value 
+	for border-style.</li>
+  <li>If at least one of the collapsing borders has a value other than either none or 
+    hidden, narrow borders lose out to wider ones. If two or more of the collapsing 
+	borders have the same width, the border style is taken in the following order, from 
+	most preferred to least: double, solid, dashed, dotted, ridge, outset, groove, inset. 
+	Thus, if two borders with the same width collapse and one is dashed while the other 
+	is outset, the border at that location will be dashed.</li>
+  <li>If collapsing borders have the same style and width but differ in color, the color 
+    used is taken from an element in the following list, from most preferred to least: 
+	cell, row, row group, column, column group, table. Thus, if the borders of a cell and 
+	a column---identical in every way except color---collapse, the cell's border color 
+	(and style and width) will be used. If the collapsing borders come from the same type 
+	of element---such as two row borders with the same style and width, but different 
+	colors---the one farthest to the left and top wins in left-to-right languages; in
     right-to-left languages, the cell farthest to the right and top wins.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1287,66 +1275,58 @@ win and which will not:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Vertical Alignment Within Cells</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The following describes the detailed process for aligning cell contents
-within a row:</p>
+<p>The following describes the detailed process for aligning cell contents within a row:</p>
 <ol type="1">
-  <li>If any of the cells are baseline-aligned, the row's baseline is
-    determined and the content of the baseline-aligned cells is placed.</li>
-  <li>Any top-aligned cell has its content placed. The row now has a
-    provisional height, which is defined by the lowest cell bottom of
-    the cells that have already had their content placed.</li>
-  <li>If any remaining cells are middle- or bottom-aligned, and the
-    content height is taller than the provisional row height, the height
-    of the row is increased by lowering the baseline in order to enclose
-    the tallest of those cells.</li>
-  <li>All remaining cells have their content placed. In any cell with
-    contents shorter than the row height, the cell's padding is
-    increased in order to match the height of the row.</li>
+  <li>If any of the cells are baseline-aligned, the row's baseline is determined and the 
+    content of the baseline-aligned cells is placed.</li>
+  <li>Any top-aligned cell has its content placed. The row now has a provisional height, 
+    which is defined by the lowest cell bottom of the cells that have already had their 
+	content placed.</li>
+  <li>If any remaining cells are middle- or bottom-aligned, and the content height is 
+    taller than the provisional row height, the height of the row is increased by 
+	lowering the baseline in order to enclose the tallest of those cells.</li>
+  <li>All remaining cells have their content placed. In any cell with contents shorter 
+    than the row height, the cell's padding is increased in order to match the height of 
+	the row.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2">2. CHAPTER 2 Values</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>There are a variety of value types in CSS, most of which use units.
-Combining basic value types (such as numbers) with units (such as
-pixels) makes it possible to do any number of interesting things with
-CSS.</p>
+<p>There are a variety of value types in CSS, most of which use units. Combining basic 
+value types (such as numbers) with units (such as pixels) makes it possible to do any 
+number of interesting things with CSS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-1-1">2.1. Keywords</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Keywords are defined on a per-property basis and have a meaning specific
-only to a given property. For example, normal has totally unique
-meanings for the properties font-variant and letter-spacing. Keywords,
-like property names, are not case-sensitive.</p>
+<p>Keywords are defined on a per-property basis and have a meaning specific only to a 
+given property. For example, normal has totally unique meanings for the properties font-
+variant and letter-spacing. Keywords, like property names, are not case-sensitive.</p>
 
-<p>CSS defines three "global" keywords that are accepted by every property
-in the specification: inherit</p>
+<p>CSS defines three "global" keywords that are accepted by every property in the 
+specification: inherit</p>
 
-<p>Forces the value for the property to be inherited from the element's
-parent element, even if the property in question is not inherited
-(e.g., background-image). Another way to think of this is that the
-value is copied from the parent element.</p>
+<p>Forces the value for the property to be inherited from the element's parent element, 
+even if the property in question is not inherited (e.g., background-image). Another way 
+to think of this is that the value is copied from the parent element.</p>
 
 <h5>initial</h5>
 
-<p>Forces the value of the property to be the initial value defined by
-the relevant CSS module. For example, fontstyle: initial sets the
-value of font-style to normal regardless of the font-style value that
-would have been inherited from the parent element. In cases where the
-initial value is defined as determined by the user agent, such as for
-font-size, the value is set to the "default" defined by the user
-agent's preferences.</p>
+<p>Forces the value of the property to be the initial value defined by the relevant CSS 
+module. For example, fontstyle: initial sets the value of font-style to normal regardless 
+of the font-style value that would have been inherited from the parent element. In cases 
+where the initial value is defined as determined by the user agent, such as for font-size, 
+the value is set to the "default" defined by the user agent's preferences.</p>
 
 <h5>unset</h5>
 
-<p>Combines the effects of both inherit and initial, with a rudimentary
-logic built in for good measure. If a property is inherited (e.g.,
-color), then unset has the same effect as inherit. If the property is
-<i>not</i> inherited (e.g., backgroundimage), then unset has the same
-effect as initial.</p>
+<p>Combines the effects of both inherit and initial, with a rudimentary logic built in 
+for good measure. If a property is inherited (e.g., color), then unset has the same 
+effect as inherit. If the property is <i>not</i> inherited (e.g., backgroundimage), then 
+unset has the same effect as initial.</p>
 
-<p>If you have a situation where you want to set all of the properties on
-an element to their default values, thus breaking any chains of
-inheritance, see the all property in Chapter 4.</p>
+<p>If you have a situation where you want to set all of the properties on an element to 
+their default values, thus breaking any chains of inheritance, see the all property in 
+Chapter 4.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2-1">2.2. Color Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1354,12 +1334,11 @@ inheritance, see the all property in Chapter 4.</p>
 
 <h5><i>#RRGGBB</i></h5>
 
-<p>This is a hex-pair notation familiar to authors using traditional
-HTML. In this format, the first pair of digits corresponds to the red
-level, the second pair to the green, and the third pair to the blue.
-Each pair is in hexadecimal notation in the range 00--FF (decimal
-0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is
-written #FF0000, and so on.</p>
+<p>This is a hex-pair notation familiar to authors using traditional HTML. In this format, 
+the first pair of digits corresponds to the red level, the second pair to the green, and 
+the third pair to the blue. Each pair is in hexadecimal notation in the range 00--FF 
+(decimal 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is written #FF0000, 
+and so on.</p>
 
 <h5><i><span class="newFont">#RGB></span></i></h5>
 
@@ -1369,36 +1348,33 @@ six-digit value; thus, #F8C becomes #FF88CC.</p>
 
 <h5><i><span class="newFont">#RRGGBBAA</span></i></h5>
 
-<p>An extension of the #RRGGBB notation which adds an alpha channel. As
-with the R, G, and B values, the A (alpha) value is in hexadecimal
-notation in the range 00-- FF. These are mapped from hexadecimal to
-decimal in the range 0--1; thus, #00FF0099 is equivalent to the color
-#00FF00 (light green) with an opacity of 0.6. The opacity here is
-derived by converting hexadecimal 99 to decimal 153, and then dividing
-153 by 255 to get 0.6. Put another way, #00FF0099 is exactly
-equivalent to rgba(0,255,0,0.6). Note: support for this notation first
-emerged in early 2016.</p>
+<p>An extension of the #RRGGBB notation which adds an alpha channel. As with the R, G, 
+and B values, the A (alpha) value is in hexadecimal notation in the range 00-- FF. These 
+are mapped from hexadecimal to decimal in the range 0--1; thus, #00FF0099 is equivalent 
+to the color #00FF00 (light green) with an opacity of 0.6. The opacity here is derived by 
+converting hexadecimal 99 to decimal 153, and then dividing 153 by 255 to get 0.6. Put 
+another way, #00FF0099 is exactly equivalent to rgba(0,255,0,0.6). Note: support for this 
+notation first emerged in early 2016.</p>
 
 <h5><i><span class="newFont">#RGBA</span></i></h5>
 
-<p>This is a shorter form of the eight-digit #RRGGBBAA notation described
-previously. In this format, each digit is replicated to arrive at an
-equivalent eight-digit value; thus,</p>
+<p>This is a shorter form of the eight-digit #RRGGBBAA notation described previously. In 
+this format, each digit is replicated to arrive at an equivalent eight-digit value; thus,</p>
 
 <p>&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.</p>
 
 <h5><i><span class="newFont">rgb(rrr,ggg,bbb)</span></i></h5>
 
-<p>This format allows the author to use RGB values in the range 0--255;
-only integers are permitted. Not coincidentally, this range is the
-decimal equivalent of 00--FF in hexadecimal. In this format, "pure"
-green is rgb(0,255,0), and white is represented as rgb(255,255,255).</p>
+<p>This format allows the author to use RGB values in the range 0--255; only integers 
+are permitted. Not coincidentally, this range is the decimal equivalent of 00--FF in 
+hexadecimal. In this format, "pure" green is rgb(0,255,0), and white is represented as 
+rgb(255,255,255).</p>
 
 <h5><i><span class="newFont">rgb(rrr.rr%,ggg.gg%,bbb.bb%)</span></i></h5>
 
-<p>This format allows the author to use RGB values in the range 0% to
-100%, with decimal values allowed (e.g., 75.5%). The value for black
-is thus rgb(0%,0%,0%), whereas "pure" blue is rgb(0%,0%,100%).</p>
+<p>This format allows the author to use RGB values in the range 0% to 100%, with decimal 
+values allowed (e.g., 75.5%). The value for black is thus rgb(0%,0%,0%), whereas "pure" 
+blue is rgb(0%,0%,100%).</p>
 
 <h5><i><span class="newFont">hsl(hhh.hh,sss.ss%,lll.ll%)</span></i></h5>
 
@@ -1410,17 +1386,16 @@ and 360 are equivalent, and are both red. Hue angles greater than 360
 can be declared, but they are normalized to the 0--360 range; thus, setting a
 hue angle of 454 is equivalent to setting an angle of 94.</p>
 
-<p>Any HSL value, regardless of color angle, will be rendered as a shade of gray if the
-saturation value is 0%; the exact shade will depend on the lightness
-value. Any HSL value, regardless of the hue angle, will be rendered
-solid black if lightness is 0% and solid white if lightness is 100%. The
-"normal" lightness value---that is, the value associated with most
-common colors---is 50%. <i>rgba(rrr,ggg,bbb,a.aa) rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</i></p>
+<p>Any HSL value, regardless of color angle, will be rendered as a shade of gray if the 
+saturation value is 0%; the exact shade will depend on the lightness value. Any HSL value, 
+regardless of the hue angle, will be rendered solid black if lightness is 0% and solid 
+white if lightness is 100%. The "normal" lightness value---that is, the value associated 
+with most common colors---is 50%. <i>rgba(rrr,ggg,bbb,a.aa) rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) 
+hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</i></p>
 
-<p>These extend the previous three formats to include an alpha (opacity)
-value. The alpha value must be a real number between 0 and 1
-inclusive; percentages are not permitted for the alpha value. Thus,
-rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
+<p>These extend the previous three formats to include an alpha (opacity) value. The alpha 
+value must be a real number between 0 and 1 inclusive; percentages are not permitted for 
+the alpha value. Thus, rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
 are all equivalent half-opaque red.</p>
 
 <h5><i>&lt;keyword&gt;</i></h5>
@@ -1435,19 +1410,17 @@ X11's colors).</p>
 
 <h5>currentColor</h5>
 
-<p>A special keyword that represents the current computed value of the
-element's color property. This means you can declare background-color:
-currentColor and set the element's background to be the same color as
-its foreground (not recommended). When applied to the color property,
-it is equivalent to declaring color: inherit. It can also be used on
-borders; border: 1px solid is equivalent to border: 1px solid
-currentColor. This can be quite useful when (un)setting a border's
-color via DOM scripting.</p>
+<p>A special keyword that represents the current computed value of the element's color 
+property. This means you can declare background-color: currentColor and set the element's 
+background to be the same color as its foreground (not recommended). When applied to the 
+color property, it is equivalent to declaring color: inherit. It can also be used on
+borders; border: 1px solid is equivalent to border: 1px solid currentColor. This can be 
+quite useful when (un)setting a border's color via DOM scripting.</p>
 
 <h5>transparent</h5>
 
-<p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0),
-which is the computed value any time transparent is used.</p>
+<p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0), which is the 
+computed value any time transparent is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3-1">2.3. Number Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1645,29 +1618,26 @@ Conventions" on page 73.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-12-1">2.12. Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either
-single or double quotes. If a string needs to include the same quote
-that encloses it, it must be escaped. For example,</p>
+<p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either single 
+or double quotes. If a string needs to include the same quote that encloses it, it must 
+be escaped. For example,</p>
 
-<p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at once!&quot;.
-If a newline is needed within a string, it is represented as \A, which
-is the Unicode codepoint for the line feed character. Any Unicode
-character can be represented using an escaped codepoint reference; thus,
-a left curly double quotation mark can be represented with \201C. If a
-string does contain a line feed for legibility reasons, it must be
-escaped and will be removed when processing the string.</p>
+<p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at 
+once!&quot;. If a newline is needed within a string, it is represented as \A, which
+is the Unicode codepoint for the line feed character. Any Unicode character can be 
+represented using an escaped codepoint reference; thus, a left curly double quotation 
+mark can be represented with \201C. If a string does contain a line feed for legibility 
+reasons, it must be escaped and will be removed when processing the string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-13-1">2.13. Identifiers</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>There are some properties that accept an <i>identifier value</i>, which is a
-user-defined label of some kind; the most common examples are grid lines
-and areas in grid layout and keyframe names in animations. Identifiers
-are represented in the value syntax as <i>&lt;identifier&gt;</i>. Identifiers are
-words and are case-sensitive; thus, myID and MyID are, as far as CSS is
-concerned, completely distinct and unrelated to each other. In cases
-where a property accepts both an identifier and one or more keywords,
-the author should take care to never define an identifier identical to a
-valid keyword.</p>
+<p>There are some properties that accept an <i>identifier value</i>, which is a user-
+defined label of some kind; the most common examples are grid lines and areas in grid 
+layout and keyframe names in animations. Identifiers are represented in the value syntax 
+as <i>&lt;identifier&gt;</i>. Identifiers are words and are case-sensitive; thus, myID 
+and MyID are, as far as CSS is concerned, completely distinct and unrelated to each 
+other. In cases where a property accepts both an identifier and one or more keywords,
+the author should take care to never define an identifier identical to a valid keyword.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-14-1">2.14. Attribute Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2886,85 +2856,145 @@ a:visited {color: purple;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-5-1">3.5. Pseudo-Elements</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In CSS1 and CSS2, pseudo-elements were preceded by single colons, just
-as pseudo-classes were. In CSS3 and later, pseudoelements use double
-colons to distinguish them from pseudoclasses. For historical reasons,
-browsers will support both single and double colons on pseudo-elements,
-but the doublecolon syntax is recommended.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>::after</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Generates</b>    A pseudo-element containing generated content
-  placed after the content in the element 
-<p><b>Description</b>  Inserts generated content at the end of an element's
-  content. By default, the pseudo-element is inline, 
-                       but this can be changed using the property display. 
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+      <th width="200"><h3>::after</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Generates</b></td>
+      <td>A pseudo-element containing generated content placed after the content in the element</td>
+    </tr>
+    <tr>
+      <td><b>Description</b></td>
+	  <td>Inserts generated content at the end of an element's content. By default, the 
+	    pseudo-element is inline, but this can be changed using the property display.</td>
+        In CSS1 and CSS2, pseudo-elements were preceded by single colons, just as pseudo-
+		classes were. In CSS3 and later, pseudoelements use double colons to distinguish them 
+		from pseudoclasses. For historical reasons, browsers will support both single and 
+		double colons on pseudo-elements, but the doublecolon syntax is recommended.</td>
+	</tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a.external:after {
   content: &quot; &quot; url(/icons/globe.gif);} 
 p:after {content: &quot; &vert;; &quot;;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>::before</h3>
+<!--  <h3>::before</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<b>Generates</b>   A pseudo-element containing generated content 
-placed before the content in the element
-<p><b>Description</b>  Inserts generated content at the beginning of an 
-  element's content. By default, the pseudo-element is 
-  inline, but this can be changed using the property display. 
-<p><b>Examples</b></p>
+<table style="width:500px;">
+  <thead>
+    <tr>
+      <th width="200"><h3>::before</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Generates</b></td>
+      <td>A pseudo-element containing generated content placed before the content in the element</td>
+    </tr>
+	<tr>
+	  <td><b>Description</b></td>
+	  <td>Inserts generated content at the beginning of an element's content. By default, 
+	    the pseudo-element is inline, but this can be changed using the property display.</td>
+	</tr>
+	<tr>
+	  <td><b>Examples</b></td>
+	  <td>
 <pre>
 a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
 p:before {content: attr(class);} 
 a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>::first-letter</h3>
+<!--  <h3>::first-letter</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Generates</b>    A pseudo-element that contains the first letter of an element.</p>
-
-<p><b>Description</b>  Styles the first letter of an element. Any leading punctuation 
-should be styled along with the first letter. Some languages have letter combinations 
-that should be treated as a single character, and a user agent may apply the first 
-letter style to both. Prior to CSS2.1, ::first-letter could be attached only to 
-block-level elements. CSS2.1 expanded its scope to include elements with a display 
-value of block, list-item, table-cell, table-caption, or inlineblock. There is a 
-limited set of properties that can apply to a first letter.</p>
-   
-<p><b>Examples</b></p>
-
+<table style="width:500px;">
+  <thead>
+    <tr>
+      <th width="200"><h3>::first-letter</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+	  <td><b>Generates</b></td>
+      <td>A pseudo-element that contains the first letter of an element</td>
+    <tr>
+	  <td><b>Description</b></td>
+      <td>Styles the first letter of an element. Any leading punctuation should be styled 
+	    along with the first letter. Some languages have letter combinations that should 
+		be treated as a single character, and a user agent may apply the first letter 
+		style to both. Prior to CSS2.1, ::first-letter could be attached only to block-
+		level elements. CSS2.1 expanded its scope to include elements with a display 
+		value of block, list-item, table-cell, table-caption, or inlineblock. There is a 
+		limited set of properties that can apply to a first letter.</td>
+    </tr>
+    <tr>
+      <t	d><b>Examples</b></td>
+	  <td>
 <pre>
 h1:first-letter {font-size: 166%;} 
 p:first-letter {text-decoration: underline;} 
 </pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>::first-line</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Generates</b> A pseudo-element that contains the first formatted line of an element.</p>
-
-<p><b>Description</b> Styles the first line of text in an element, regardless of how many 
-or how few words may appear in that line. ::first-line can be attached only to blocklevel 
-elements. There is a limited set of properties that can apply to a first line.</p>
-
-<h4><b>Example</b></h4>
-<pre>p.lead:first-line {font-weight: bold;}</pre>
+<table style="width:500px;">
+  <thead>
+    <tr>
+      <th width="200"><h3>::first-line</h3></th>
+      <th align="right"><h3></h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Generates</b></td>
+      <td><i>A pseudo-element that contains the first formatted line of an element.</td>
+    </tr>
+    <tr>
+      <td><b>Description</b></td>
+      <td>Styles the first line of text in an element, regardless of how many or how few 
+	    words may appear in that line. ::first-line can be attached only to blocklevel 
+		elements. There is a limited set of properties that can apply to a first line.</td>
+    </tr>
+	<tr>
+      <td><b>Example</b></td>
+      <td><pre>p.lead:first-line {font-weight: bold;}</pre></td>
+	</tr>
+  </tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6-1">3.6. Media Queries</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>With media queries, an author can define the media environment in which
-a given stylesheet, or portion of a stylesheet, is used by the browser.
-In the past, this was handled by setting media types with the media
-attribute on link elements, or with the media descriptor on &#64;import
-declarations. Media queries take this concept several steps further by
-allowing authors to choose stylesheets based on the features of a given
+<p>With media queries, an author can define the media environment in which a given 
+stylesheet, or portion of a stylesheet, is used by the browser. In the past, this was 
+handled by setting media types with the media attribute on link elements, or with the 
+media descriptor on &#64;import declarations. Media queries take this concept several 
+steps further by allowing authors to choose stylesheets based on the features of a given
 media type.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Basic Concepts</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The placement of media queries will be very familiar to any author who
-has ever set a media type. Here are two ways of applying an external
-stylesheet when rendering the document on a color printer:</p>
+<p>The placement of media queries will be very familiar to any author who has ever set a 
+media type. Here are two ways of applying an external stylesheet when rendering the 
+document on a color printer:</p>
 
 <pre>
 &lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
@@ -2973,8 +3003,8 @@ stylesheet when rendering the document on a color printer:</p>
 &#64;import url(print-color.css) print and (color);
 </pre>
 
-<p>Anywhere a media type can be used, a media query can be used. This means
-that it is possible to list more than one query in a comma-separated list:</p>
+<p>Anywhere a media type can be used, a media query can be used. This means that it is 
+possible to list more than one query in a comma-separated list:</p>
 
 <pre>
 &lt;link href=&quot;print-color.css&quot; type=&quot;text/css&quot; media=&quot;print and
@@ -3049,123 +3079,105 @@ permitted between the <i>&lt;integer&gt;</i> and the identifier.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Media Features</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>As of early 2018, the available media features are as follows. Note that
-their values cannot be negative: width, min-width, max-width.</p>
+<p>As of early 2018, the available media features are as follows. Note that their values 
+cannot be negative:</p>
 
+<h4>width, min-width, max-width.</h4>
 <h4><i>Values: &lt;length&gt;</i></h4>
-<p>Refers to the width of the display area of the user agent. In a
-screen-media web browser, this is the width of the viewport plus any
-scrollbars. In paged media, this is the width of the page box. Thus,
-(minwidth: 850px) applies when the viewport is greater than 850 pixels
-wide.</p>
+<p>Refers to the width of the display area of the user agent. In a screen-media web 
+browser, this is the width of the viewport plus any scrollbars. In paged media, this is 
+the width of the page box. Thus, (minwidth: 850px) applies when the viewport is greater 
+than 850 pixels wide.</p>
 
 <h4>device-width, min-device-width, max-device-width</h4>
-
 <h4><i>Values: &lt;length&gt;</i></h4>
-<p>Refers to the width of the complete rendering area of the output
-device. In screen media, this is the width of the screen. In paged
-media, this is the width of the page. Thus, (max-device-width: 1200px)
-applies when the device's output area is less than 1,200 pixels wide.</p>
+<p>Refers to the width of the complete rendering area of the output device. In screen 
+media, this is the width of the screen. In paged media, this is the width of the page. 
+Thus, (max-device-width: 1200px) applies when the device's output area is less than 
+1,200 pixels wide.</p>
 
 <h4>height, min-height, max-height</h4>
-
 <h4><i>Values: &lt;length&gt;</i></h4>
-<p>Refers to the height of the display area of the user agent. In a
-screen-media web browser, this is the height of the viewport plus any
-scrollbars. In paged media, this is the height of the page box. Thus,
-(height: 567px) applies when the viewport's height is precisely 567
-pixels tall.</p>
+<p>Refers to the height of the display area of the user agent. In a screen-media web 
+browser, this is the height of the viewport plus any scrollbars. In paged media, this is 
+the height of the page box. Thus, (height: 567px) applies when the viewport's height is 
+precisely 567 pixels tall.</p>
+
 <h4>device-height, min-device-height, max-device-height</h4>
-
 <h4><i>Values: &lt;length&gt;</i></h4>
-<p>Refers to the height of the complete rendering area of the output
-device. In screen media, this is the height of the screen. In paged
-media, this is the height of the page. Thus, (max-device-height:
-400px) applies when the device's output area is less than 400 pixels
-tall.</p>
+<p>Refers to the height of the complete rendering area of the output device. In screen 
+media, this is the height of the screen. In paged media, this is the height of the page. 
+Thus, (max-device-height: 400px) applies when the device's output area is less than 400 
+pixels tall.</p>
 
 <h4>aspect-ratio, min-aspect-ratio, max-aspect-ratio</h4>
-
 <h4><i>Values: &lt;ratio&gt;</i></h4>
-<p>Refers to the ratio that results from comparing the width media
-feature to the height media feature (see the definition of
-<i>&lt;ratio&gt;</i>). Thus, (min-aspect-ratio: 2/1) applies to any viewport
-whose width-to-height ratio is at least 2:1.</p>
+<p>Refers to the ratio that results from comparing the width media feature to the height 
+media feature (see the definition of <i>&lt;ratio&gt;</i>). Thus, (min-aspect-ratio: 2/1) 
+applies to any viewport whose width-to-height ratio is at least 2:1.</p>
 
 <h4>device-aspect-ratio, min-device-aspect-ratio, max-deviceaspect-ratio</h4>
-
 <h4><i>Values: &lt;length&gt;</i></h4>
-Refers to the ratio that results from comparing the device-width media
-feature to the device-height media feature (see the definition of
-<i>&lt;ratio&gt;</i>). Thus, (device-aspect-ratio: 16/9) applies to any output
-device whose display area width-to-height ratio is exactly 16:9.
-color, min-color, max-color
+<p>Refers to the ratio that results from comparing the device-width media feature to the 
+device-height media feature (see the definition of <i>&lt;ratio&gt;</i>). Thus, (device-
+aspect-ratio: 16/9) applies to any output device whose display area width-to-height ratio 
+is exactly 16:9.</p>
 
+<h4>color, min-color, max-color</h4>
 <h4><i>Values: &lt;integer&gt;</i></h4>
-Refers to the presence of color-display capability in the output
-device, with an optional number representing the number of bits used
-in each color component. Thus, (color) applies to any device with any
-color depth at all, whereas (min-color: 4) means there must be at
-least four bits used per color component. Any device that does not
-support color will return 0.</p>
+<p>Refers to the presence of color-display capability in the output device, with an optional 
+number representing the number of bits used in each color component. Thus, (color) 
+applies to any device with any color depth at all, whereas (min-color: 4) means there 
+must be at least four bits used per color component. Any device that does not support 
+color will return 0.</p>
 
 <h4>color-index, min-color-index, max-color-index</h4>
-
 <h4><i>Values: &lt;integer&gt;</i></h4>
-Refers to the total number of colors available in the output device's
-color lookup table. Thus, (min-colorindex: 256) applies to any device
-with a minimum of 256 colors available. Any device that does not use a
-color lookup table will return 0.
+<p>Refers to the total number of colors available in the output device's color lookup table. 
+Thus, (min-colorindex: 256) applies to any device with a minimum of 256 colors available. 
+Any device that does not use a color lookup table will return 0.</p>
 
 <h4>monochrome, min-monochrome, max-monochrome</h4>
-
 <h4><i>Values: &lt;integer&gt;</i></h4>
-Refers to the presence of a monochrome display, with an optional
-number of bits per pixel in the output device's frame buffer. Thus,
-(monochrome) applies to any monochrome output device, whereas
-(minmonochrome: 2) applies to any monochrome output device with a
-minimum of two bits per pixel in the frame buffer. Any device that is
-not monochrome will return 0.
+<p>Refers to the presence of a monochrome display, with an optional number of bits per pixel 
+in the output device's frame buffer. Thus, (monochrome) applies to any monochrome output 
+device, whereas (minmonochrome: 2) applies to any monochrome output device with a
+minimum of two bits per pixel in the frame buffer. Any device that is not monochrome 
+will return 0.</p>
 
 <h4>resolution, min-resolution, max-resolution</h4>
+<h4><i>Values: &lt;resolution&gt;</i></h4>
+<p>Refers to the resolution of the output device in terms of pixel density, measured in 
+either dots per inch (dpi) or dots per centimeter (dpcm). If an output device has pixels 
+that are not square, the least dense axis is used; for example, if a device is 100dpcm 
+along one axis and 120dpcm along the other, 100dpcm is the value returned. 
+Additionally, a bare resolution feature query can never match (though min-resolution and 
+max-resolution can).</p>
 
-<i>Values: &lt;resolution&gt;</i>
-Refers to the resolution of the output device in terms of pixel
-density, measured in either dots per inch (dpi) or dots per centimeter
-(dpcm). If an output device has pixels that are not square, the least
-dense axis is used; for example, if a device is 100dpcm along one axis
-and 120dpcm along the other, 100dpcm is the value returned.
-Additionally, a bare resolution feature query can never match (though
-min-resolution and max-resolution can).
-orientation
+<h4>orientation</h4>
+<h4><i>Values:</i> portrait <i>&vert;</i> landscape</h4>
+<p>Refers to the output device's total output area, where portrait is returned if the 
+media feature height is equal to or greater than the media feature width. Otherwise, the 
+result is landscape.</p>
 
-<i>Values:</i> portrait <i>&vert;</i> landscape
-Refers to the output device's total output area, where portrait is
-returned if the media feature height is equal to or greater than the
-media feature width. Otherwise, the result is landscape.
-scan
+<h4>scan</h4>
+<h4><i>Values:</i> progressive <i>&vert;</i> interlace</h4>
+<p>Refers to the scanning process used in an output device with a media type of tv.</p>
 
-<i>Values:</i> progressive <i>&vert;</i> interlace
-Refers to the scanning process used in an output device with a media
-type of tv.
-
-grid
-
-<i>Values:</i> 0 <i>&vert;</i> 1
-Refers to the presence (or absence) of a grid-based output device,
-such as a tty terminal. A grid-based device will return 1; otherwise,
-0 is returned.
-
+<h4>grid</h4>
+<h4><i>Values:</i> 0 <i>&vert;</i> 1</h4>
+<p>Refers to the presence (or absence) of a grid-based output device, such as a tty 
+terminal. A grid-based device will return 1; otherwise, 0 is returned.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-7-1">3.7. Feature Queries</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-A <i>feature query</i> is an at-rule block similar to a media query. The
-difference is that it queries a user agent about its support for a given
-property-value combination. If the user agent indicates it supports the
-query, the rules within the at-block are applied.
-Otherwise, they are ignored.
-A basic example is to ask the browser if it supports backgroundcolor:
-red:
+<p>A <i>feature query</i> is an at-rule block similar to a media query. The difference is 
+that it queries a user agent about its support for a given property-value combination. If 
+the user agent indicates it supports the query, the rules within the at-block are applied.
+Otherwise, they are ignored.</p>
+
+<p>A basic example is to ask the browser if it supports backgroundcolor: red:</p>
+
 <b>&#64;supports</b> (<b>background-color</b>: red) { <b>html</b>
 {<b>background-color</b>: yellow;} <b>body</b> {<b>background-color</b>:
 white;} }
@@ -3176,100 +3188,98 @@ browser supports color: #FFF and then write rules that never touch
 color. (But just because you can doesn't mean you should.)
 Feature queries are useful when applying advanced CSS features. For
 example, converting a float-based layout to grid might look something
-like this:
-&lbrack;..<b>.float</b> <b>layout</b> <b>rules</b> <b>here</b>...&rbrack;
-<b>&#64;supports</b> (<b>display</b>: grid) {
-&lbrack;..<b>.grid</b> <b>layout</b> <b>rules</b> <b>here</b>...&rbrack;
-&lbrack;..<b>.rules</b> <b>that</b> <b>turn</b> <b>off</b> <b>margins</b>, <b>clearing</b>,
-<b>and</b> <b>other</b> <b>rules</b> <b>needed</b> <b>for</b> <b>float</b> <b>layout</b>
-<b>but</b> <b>not</b> <b>in</b> <b>grid</b> <b>layout</b>...&rbrack; }
-It's also possible to do a negated feature query using the keyword not:
-<b>&#64;supports</b> <b>not</b> (<b>shape-outside</b>: circle()) {
-&lbrack;..<b>.rules</b> <b>for</b> <b>use</b> <b>in</b> <b>browsers</b> <b>that</b>
-<b>don</b>&apos;<b>t</b> <b>understand</b>
-<b>circle</b> <b>float</b> <b>shapes</b>...&rbrack; }
-<b>Feature Queries</b>
+like this:</p>
+
+<pre>
+&lbrack;..<b>.float layout rules here</b>...&rbrack;
+<b>&#64;supports</b> (<b>display</b>: grid) { 
+  &lbrack;..<b>.grid layout rules here</b>...&rbrack;
+  &lbrack;..<b>.rules that turn off margins</b>, <b>clearing</b>,
+  <b>and other rules needed for float layout</b>
+  <b>but not in grid layout</b>...&rbrack; }
+</pre>
+
+<p>It's also possible to do a negated feature query using the keyword not:</p>
+
+<pre>
+<b>&#64;supports not</b> (<b>shape-outside</b>: circle()) { 
+  &lbrack;..<b>.rules for use in browsers that</b>
+  <b>don&apos;t understand</b>
+  <b>circle float shapes</b>...&rbrack; }
+</pre>
+
+<p><b>Feature Queries</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch4">4. CHAPTER 4 Property Reference</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-1-1">4.1. Inheritance and Animation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Each property listed in this chapter has "Inh." and "Anim." values. The
+<p>Each property listed in this chapter has "Inh." and "Anim." values. The
 values "N" (for no) and "Y" (for yes) indicate whether a property is
 <i>inherited</i> by descendant elements and whether the property is
 <i>animatable</i>, or able to be affected using the various animation and
 transition properties. In cases where only some of a property's values
 are animatable, the value given will be "P" (for partial) and more
-details will be given in the property's definition.
+details will be given in the property's definition.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2-1">4.2. Value Syntax Conventions</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Any words presented in constant width are keywords that must appear
+<p>Any words presented in constant width are keywords that must appear
 literally, without quotes. The forward slash (/) and the comma (,) must
-also be used literally.
+also be used literally.</p>
 
-Any italicized words between "&lt;" and "&gt;" give a type of value, or a
+<p>Any italicized words between "&lt;" and "&gt;" give a type of value, or a
 reference to another property's values. For example, the property font
 accepts values that originally belong to the property font-family. This
 is denoted by using the text <i>&lt;fontfamily&gt;</i>. Similarly, if a value
 type like a color is permitted, it will be represented using
-<i>&lt;color&gt;</i>.
+<i>&lt;color&gt;</i>.</p>
 
-There are a number of ways to combine components of a value definition:
+<p>There are a number of ways to combine components of a value definition:</p>
 
--   Two or more keywords strung together with only space separating them
-    means that all of them must occur in the given order.
+<ul>
+  <li>Two or more keywords strung together with only space separating them means that all 
+    of them must occur in the given order.</li>
+  <li>If a vertical bar separates alternatives (X &vert; Y), then any one of them must 
+    occur, but only one.</li>
+  <li>A vertical double bar (X ‖ Y) means that X, Y, or both must occur,
+    but they may appear in any order.</li>
+  <li>A double ampersand (X && Y) means both X and Y must occur, though they may appear 
+    in any order. • Brackets (&lbrack;...&rbrack;) group things together. Thus 
+	"&lbrack;please ‖ help ‖ me&rbrack; do this" means that one or more of the words 
+	please, help, and me must appear (in any order, and at most once). do this must 
+	always appear, with those words in that order.</li>
+  <li>Every component or bracketed group may (or may not) be followed by one of these 
+    modifiers:</li>
+</ul>
 
--   If a vertical bar separates alternatives (X &vert; Y), then any one of
-    them must occur, but only one.
-
--   A vertical double bar (X ‖ Y) means that X, Y, or both must occur,
-    but they may appear in any order.
-
--   A double ampersand (X && Y) means both X and Y must occur, though
-    they may appear in any order. • Brackets (&lbrack;...&rbrack;) group things
-    together. Thus "&lbrack;please ‖ help ‖ me&rbrack; do this" means that one or
-    more of the words please, help, and me must appear (in any order,
-    and at most once). do this must always appear, with those words in
-    that order.
-
-Every component or bracketed group may (or may not) be followed by one
-of these modifiers:
-
--   An asterisk (&ast;) indicates that the preceding value or bracketed
-    group is repeated zero or more times.
-
--   A plus (+) indicates that the preceding value or bracketed group is
-    repeated one or more times.
-
--   An octothorp (#) indicates that the preceding value or bracketed
-    group is repeated one or more times, separated by commas as needed.
-
--   A question mark (?) indicates that the preceding value or bracketed
-    group is optional.
-
--   An exclamation point (!) indicates that the preceding value or
-    bracketed group is required, and thus must result in at least one
-    value, even if the syntax would seem to indicate otherwise.
-
--   A pair of numbers in curly braces ({M,N}) indicates that the
-    preceding value or bracketed group is repeated at least M and at
-    most N times.
-
+<ul>
+  <li>An asterisk (&ast;) indicates that the preceding value or bracketed group is 
+    repeated zero or more times.</li>
+  <li>A plus (+) indicates that the preceding value or bracketed group is repeated one 
+    or more times.</li>
+  <li>An octothorp (#) indicates that the preceding value or bracketed group is 
+    repeated one or more times, separated by commas as needed.</li>
+  <li>A question mark (?) indicates that the preceding value or bracketed group is 
+    optional.</li>
+  <li>An exclamation point (!) indicates that the preceding value or bracketed group is 
+    required, and thus must result in at least one value, even if the syntax would seem 
+	to indicate otherwise.</li>
+  <li>A pair of numbers in curly braces ({M,N}) indicates that the preceding value or 
+    bracketed group is repeated at least M and at most N times.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3-1">4.3. Universal Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Any user agent that has fully implemented the Cascading and Inheritance
-module will honor the following values for all properties. Think of it
-as a given property's value syntax being written something like:
+<p>Any user agent that has fully implemented the Cascading and Inheritance module will honor 
+the following values for all properties. Think of it as a given property's value syntax 
+being written something like:</p>
 
-&lbrack; <i>(listed value syntax)</i> &rbrack; &vert; inherit &vert; initial &vert; unset
+<h4>&lbrack; <i>(listed value syntax)</i> &rbrack; &vert; inherit &vert; initial &vert; unset</h4>
 
-These three keywords are not listed in the following property
-definitions, for purposes of clarity. The exception is the property all,
-which accepts <i>only</i> these three keywords as values. For definitions of
-these keywords' meaning, see Chapter 2.
-
+<p>These three keywords are not listed in the following property definitions, for purposes 
+of clarity. The exception is the property all, which accepts <i>only</i> these three 
+keywords as values. For definitions of these keywords' meaning, see Chapter 2.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4-1">4.4. Properties</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3423,6 +3433,7 @@ div.flexy .midpointed {align-self: center;}
 section.gallery h1 {align-self: stretch;}
 </pre>
       </td>
+	  </tr>
     <tr>
       <td><b>Note</b></td>
       <td>As of early 2018, there are plans to have this property apply to many (or all) elements, 
@@ -4513,7 +4524,7 @@ a:active {border-bottom: purple 2px dashed;}
   <thead>
     <tr>
       <th width="200"><h3>border-bottom-color</h3></th>
-      <th><h3>Inh. N Anim. Y</h3></th>
+      <th align="right"><h3>Inh. N Anim. Y</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -4836,8 +4847,8 @@ a:visited {border-color: maroon;}
 <table>
   <thead>
     <tr>
-      <th><h3>border-image</h3></th>
-      <th>Inh. N Anim. P</th>
+      <th width="200"><h3>border-image</h3></th>
+      <th align="right">Inh. N Anim. P</th>
     </tr>
   </thead>
   <tbody>
@@ -13082,10 +13093,6 @@ p.cramped {word-spacing: −0.5em;}
       <td>As declared</td>
     </tr>
     <tr>
-      <td><b></b></td>
-      <td></td>
-    </tr>
-    <tr>
       <td><b>Applies to</b></td>
       <td>All elements except table row groups, table column groups, table rows, table 
         columns, Ruby base containers, and Ruby annotation containers.</td>
@@ -13153,3 +13160,34 @@ p.cramped {word-spacing: −0.5em;}
 </body>
 </html>
 
+<!--
+<table style="width:500px;">
+  <thead>
+    <tr>
+      <th width="200"><h3></h3></th>
+      <th align="right"><h3></h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+    </tr>
+	<tr>
+      <td><b>Example</b></td>
+      <td>
+<pre>
+</pre>
+      </td>
+	</tr>
+  </tbody>
+</table>
+-->
