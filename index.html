@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS3-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS3-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
@@ -316,6 +316,7 @@ path of the stylesheet to be loaded:</p>
 <h5>Explanation of the attributes:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>rel="stylesheet":</pre>
+
 <p>This attribute indicates that the linked file is a stylesheet, which defines how the 
 HTML content should be displayed.</p>
 
@@ -334,6 +335,7 @@ a CSS file. While technically redundant, it's good practice to include it for cl
 means it will be applied to screens, printers, and any other media for which the 
 browser supports style sheets. If you want to target specific devices, you can use 
 other media types like screen, print, or speech or use media queries.</p>
+
 <p>As an alternative to using <i>.htaccess</i>, which has been known to cause
 performance problems, you can edit your <i>httpd.conf</i> file to do the same
 thing:</p>
@@ -586,11 +588,12 @@ since some properties only apply to one type or the other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Block-Level</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><i>Block-level boxes</i> are those where the element box (by default) fills its 
-parent element's content area width and cannot have other elements to its sides. In 
-other words, block-level elements generate "breaks" before and after the element box. 
-The most familiar block elements from HTML are p and div. Replaced elements can be 
-block-level elements but usually are not.</p>
+<p><i>Block-level boxes</i> are those where the element box (by default) fills its parent 
+element's content area width and cannot have other elements to its sides. In other words, 
+block-level elements generate "breaks" before and after the element box. The most 
+familiar block elements from HTML are p and div. Replaced elements can be block-level 
+elements but usually are not.</p>
+
 <p>List items are a special case of block-level elements. In addition to behaving in 
 a manner consistent with other block elements, they generate a marker---typically a 
 bullet for unordered lists or a number for ordered lists---which is "attached" to 
@@ -603,38 +606,35 @@ table-row, table-column, table-cell, table-caption, flex, and grid.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline-Level</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><i>Inline-level</i> boxes are those where an element box is generated within
-a line of text and does not break up the flow of that line. Perhaps the
-best-known inline element is the a element in HTML. Other examples are
-span and em. These elements do not generate a break before or after
-themselves, so they can appear within the content of another element
-without disrupting its display.</p>
+<p><i>Inline-level</i> boxes are those where an element box is generated within a line of 
+text and does not break up the flow of that line. Perhaps the best-known inline element 
+is the a element in HTML. Other examples are span and em. These elements do not generate 
+a break before or after themselves, so they can appear within the content of another 
+element without disrupting its display.</p>
 
-<p>Note that although the CSS block and inline elements have a great deal
-in common with HTML block- and inline-level elements, there is an
-important difference. In HTML, block-level elements cannot descend from
-inline-level elements, whereas in CSS, there is no restriction on how
-display roles can be nested within each other.</p>
+<p>Note that although the CSS block and inline elements have a great deal in common with 
+HTML block- and inline-level elements, there is an important difference. In HTML, block-
+level elements cannot descend from inline-level elements, whereas in CSS, there is no 
+restriction on how display roles can be nested within each other.</p>
 
-<p>The display values that create inline boxes are: inline, inlineblock,
-inline-table, and ruby. As of this writing, it was not explicitly
-defined that the various Ruby-related values (e.g., ruby-text) also
-generate inline boxes, but this seems the most likely outcome.</p>
+<p>The display values that create inline boxes are: inline, inlineblock, inline-table, 
+and ruby. As of this writing, it was not explicitly defined that the various Ruby-related 
+values (e.g., ruby-text) also generate inline boxes, but this seems the most likely 
+outcome.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-8-1">1.8. Basic Visual Layout</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>CSS defines algorithms for laying out any element in a document. These
-algorithms form the underpinnings of visual presentation in CSS. There
-are two primary kinds of layout, each with very different behaviors:
-<i>block-level</i> and <i>inline-level</i> layout.</p>
+<p>CSS defines algorithms for laying out any element in a document. These algorithms form 
+the underpinnings of visual presentation in CSS. There are two primary kinds of layout, 
+each with very different behaviors: <i>block-level</i> and <i>inline-level</i> layout.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Block-Level Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A block-level box in CSS generates a rectangular box called the <i>element
-box</i>, which describes the amount of space occupied by an element. Figure
-1-2 shows the components of an element box.</p>
+<p>A block-level box in CSS generates a rectangular box called the <i>element box</i>, 
+which describes the amount of space occupied by an element. Figure 1-2 shows the 
+components of an element box.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. the complete box model ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. the complete box model ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="/images/image003.png?raw=true"
@@ -658,22 +658,21 @@ box</i>, which describes the amount of space occupied by an element. Figure
   <li>Only margins can be given negative values.</li>
   <li>The padding and border widths of the element box default to 0 (zero), and the 
     border style defaults to none.</li>
-  <li>If box-sizing is content-box (the default value), the property width
-    defines only the width of the content area; any padding, borders, or
-    margins are added to it. The same is true for height with respect to
-    the height.</li>
-  <li>If box-sizing is padding-box, the property width defines the total
-    width of the content and the padding. Any borders and margins are
-    added to it. The same is true for height with respect to the height.</li>
-  <li>If box-sizing is border-box, the property width defines the total
-    width of the content, padding, and borders; any margins are added to
-    it. The same is true for height with respect to the height.</li>
+  <li>If box-sizing is content-box (the default value), the property width defines only 
+    the width of the content area; any padding, borders, or margins are added to it. The 
+	same is true for height with respect to the height.</li>
+  <li>If box-sizing is padding-box, the property width defines the total width of the 
+    content and the padding. Any borders and margins are added to it. The same is true 
+	for height with respect to the height.</li>
+  <li>If box-sizing is border-box, the property width defines the total width of the 
+    content, padding, and borders; any margins are added to it. The same is true for 
+	height with respect to the height.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline Layout</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>An inline-level box in CSS generates one or more rectangular boxes
-called <i>inline boxes</i>. The following rules apply to inline boxes:</p>
+<p>An inline-level box in CSS generates one or more rectangular boxes called <i>inline 
+boxes</i>. The following rules apply to inline boxes:</p>
 <ul>
   <li>width and height do not apply to nonreplaced inline boxes.</li>
   <li>For the properties left, right, top, bottom, margin-left, margin-right, 
@@ -766,17 +765,15 @@ determined by taking the following factors into account:</p>
   alt="Inline layout details."
   style="width:50%;" />
 </p>
-<!-- image004 -->
 <p style="text-align:center;"><i>Figure 1-3. Inline layout details</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-9-1">1.9. Floating</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Floating allows an element to be placed to the left or right of its
-containing block (which is the nearest block-level ancestor element),
-with following content flowing around the element. Any floated element
-automatically generates a block box, regardless of what type of box it
-would generate if not floated. A floated element is placed according to
-the following rules:</p>
+<p>Floating allows an element to be placed to the left or right of its containing block 
+(which is the nearest block-level ancestor element), with following content flowing 
+around the element. Any floated element automatically generates a block box, regardless 
+of what type of box it would generate if not floated. A floated element is placed 
+according to the following rules:</p>
 <ul>
   <li>The left (or right) outer edge of a floated element may not be to the left (or right) 
     of the inner edge of its containing block.</li>
@@ -905,9 +902,8 @@ to overflow the flex container. This behavior can be changed using the flex-wrap
 
 <p>Figure 1-4 shows the values (and their effects) of the justify content and align-items 
 properties.</p>
-<!-- image00 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. justify and align values ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. justify and align values ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img class="displayed"
   src="/images/image005.png?raw=true"
@@ -928,9 +924,10 @@ of the algorithm:</p>
       <li>Any item with a flex factor of zero</li>
       <li>Any item whose <i>hypothetical main size</i> is greater (if growing) or
         smaller (if shrinking) than its <i>base size</i></li>
- <li>Any item with a growth factor (if growing) or shrink factor (if shrinking) 
+      <li>Any item with a growth factor (if growing) or shrink factor (if shrinking) 
       of zero.</li>
     </ul>
+  </li>
   <li>Calculate the <i>initial free space</i> by finding the difference between the outer 
     sizes of all flex items and the size of the flex container.</li>
   <li>Distribute the available free space to the flex items. The amount given to each flex 
@@ -1000,33 +997,28 @@ labeled with gridline names, or left unlabeled and later addressed using numbers
 components are relatively simple to list and explain:</p>
 
 <h5><b><mark><i>&lt;length&gt; &vert; &lt;percentage&gt;</i></mark></b></h5>
-
 <p>Any non-negative length or percentage value. Thus, 5em defines a 5-em gap between 
 grid lines, whereas 5% creates a gap between lines that is 5% of the total grid length in 
 the given direction (i.e., the horizontal length for grid rows, and the vertical length 
 for columns).</p>
 
 <h5><b><mark><i>&lt;flex&gt;</i></mark></b></h5>
-
 <p>A positive real number with the unit identifier fr (e.g., 2fr or 3.14fr) which defines 
 a <i>flex factor</i> for the grid track.</p>
 
 <h5><b><mark>min-content</mark></b></h5>
-
 <p>Sets the grid track's width (or height) to be as small as possible while still 
 containing all th  content within the grid track. For example, column tracks that 
 contain only text will become as narrow as the widest run of text that cannot be line-
 broken within the track.</p>
 
 <h5><b><mark>max-content</mark></b></h5>
-
 <p>Sets the grid track's width (or height) to be large enough to contain the largest 
 rendering of all the content within the grid track. For example, column tracks that 
 contain only text will become as wide as the longest run of text, <i>without</i> any 
 line-wrapping of the text.</p>
 
 <h5><b><mark>auto</mark></b></h5>
-
 <p>In most cases, auto is equivalent to the largest minimum size of the grid items 
 occupying the grid track; that is, once all the minimum sizes of the grid items in the 
 track have been determined, the track is made as wide as the widest of those minimums. 
@@ -1041,10 +1033,10 @@ If the minimum value computes to be larger than the maximum computed value, the 
 and the minimum size is used as a minimum.</p>
 
 <h5><b><mark>fit-content( &lbrack; <i>&lt;length&gt; &vert; &lt;percentage&gt;</i> &rbrack; )</mark></b></h5>
-Equivalent to minmax(auto,max-content) with an exception: if the track's size is larger than the 
+<p>Equivalent to minmax(auto,max-content) with an exception: if the track's size is larger than the 
 auto value's computed value, that size can't go higher than the given value (a <i>&lt;length&gt;</i> 
 or <i>&lt;percentage&gt;</i>). This is intended to let authors declare a maximum track size while 
-still letting the track size be content-bound below that maximum.
+still letting the track size be content-bound below that maximum.</p>
 
 <h5><b><mark>repeat( &lbrack; <i>&lt;integer&gt; &vert;</i> auto-fill <i>&vert;</i> auto-fit &rbrack;, 
 <i>&lt;track-list&gt;</i> )</mark></b></h5>
@@ -1062,8 +1054,8 @@ Percentage values count as fixed track sizes because they are always the same fo
 given grid container size. The tracks' sizing does not depend on their contents.</p>
 
 <h5><b><i><mark>Flexible</mark></i></b></h5>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a flex or fractional sizing via the fr 
-unit. Their sizing does not depend on their contents.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a flex or fractional sizing via the fr 
+unit. Their sizing does not depend on their contents.</p>
 
 <h5><b><i><mark>Intrinsic</mark></i></b></h5>
 <p>The tracks' size is dependent on the things found within them; i.e., with min-content, 
@@ -1309,7 +1301,6 @@ even if the property in question is not inherited (e.g., background-image). Anot
 to think of this is that the value is copied from the parent element.</p>
 
 <h5>initial</h5>
-
 <p>Forces the value of the property to be the initial value defined by the relevant CSS 
 module. For example, fontstyle: initial sets the value of font-style to normal regardless 
 of the font-style value that would have been inherited from the parent element. In cases 
@@ -1317,7 +1308,6 @@ where the initial value is defined as determined by the user agent, such as for 
 the value is set to the "default" defined by the user agent's preferences.</p>
 
 <h5>unset</h5>
-
 <p>Combines the effects of both inherit and initial, with a rudimentary logic built in 
 for good measure. If a property is inherited (e.g., color), then unset has the same 
 effect as inherit. If the property is <i>not</i> inherited (e.g., backgroundimage), then 
@@ -1332,7 +1322,6 @@ Chapter 4.</p>
 <p>Color values can be expressed in a variety of ways:</p>
 
 <h5><i>#RRGGBB</i></h5>
-
 <p>This is a hex-pair notation familiar to authors using traditional HTML. In this format, 
 the first pair of digits corresponds to the red level, the second pair to the green, and 
 the third pair to the blue. Each pair is in hexadecimal notation in the range 00--FF 
@@ -1340,13 +1329,11 @@ the third pair to the blue. Each pair is in hexadecimal notation in the range 00
 and so on.</p>
 
 <h5><i><span class="newFont">#RGB></span></i></h5>
-
 <p>This is a shorter form of the six-digit notation described previously.
 In this format, each digit is replicated to arrive at an equivalent
 six-digit value; thus, #F8C becomes #FF88CC.</p>
 
 <h5><i><span class="newFont">#RRGGBBAA</span></i></h5>
-
 <p>An extension of the #RRGGBB notation which adds an alpha channel. As with the R, G, 
 and B values, the A (alpha) value is in hexadecimal notation in the range 00-- FF. These 
 are mapped from hexadecimal to decimal in the range 0--1; thus, #00FF0099 is equivalent 
@@ -1356,27 +1343,23 @@ another way, #00FF0099 is exactly equivalent to rgba(0,255,0,0.6). Note: support
 notation first emerged in early 2016.</p>
 
 <h5><i><span class="newFont">#RGBA</span></i></h5>
-
 <p>This is a shorter form of the eight-digit #RRGGBBAA notation described previously. In 
 this format, each digit is replicated to arrive at an equivalent eight-digit value; thus,</p>
 
 <p>&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.</p>
 
 <h5><i><span class="newFont">rgb(rrr,ggg,bbb)</span></i></h5>
-
 <p>This format allows the author to use RGB values in the range 0--255; only integers 
 are permitted. Not coincidentally, this range is the decimal equivalent of 00--FF in 
 hexadecimal. In this format, "pure" green is rgb(0,255,0), and white is represented as 
 rgb(255,255,255).</p>
 
 <h5><i><span class="newFont">rgb(rrr.rr%,ggg.gg%,bbb.bb%)</span></i></h5>
-
 <p>This format allows the author to use RGB values in the range 0% to 100%, with decimal 
 values allowed (e.g., 75.5%). The value for black is thus rgb(0%,0%,0%), whereas "pure" 
 blue is rgb(0%,0%,100%).</p>
 
 <h5><i><span class="newFont">hsl(hhh.hh,sss.ss%,lll.ll%)</span></i></h5>
-
 <p>This format permits authors to specify a color by its hue angle,
 saturation, and lightness (HSL). The hue angle is always a unitless
 number or a <i>&lt;degree&gt;</i> value in the range 0 to 360, and the
@@ -1398,7 +1381,6 @@ the alpha value. Thus, rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100
 are all equivalent half-opaque red.</p>
 
 <h5><i>&lt;keyword&gt;</i></h5>
-
 <p>One of 16 recognized keywords based on the original Windows VGA colors. These keywords 
 are aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, 
 silver, teal, white, and yellow. Browsers generally also recognize the 148 color keywords 
@@ -1408,7 +1390,6 @@ historical reasons as "the X11 colors" (though the list does not precisely repli
 X11's colors).</p>
 
 <h5>currentColor</h5>
-
 <p>A special keyword that represents the current computed value of the element's color 
 property. This means you can declare background-color: currentColor and set the element's 
 background to be the same color as its foreground (not recommended). When applied to the 
@@ -1417,7 +1398,6 @@ borders; border: 1px solid is equivalent to border: 1px solid currentColor. This
 quite useful when (un)setting a border's color via DOM scripting.</p>
 
 <h5>transparent</h5>
-
 <p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0), which is the 
 computed value any time transparent is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1453,33 +1433,28 @@ things. <b>Absolute Length Units</b></p>
 <p>The available absolute units are:</p>
 
 <h5><i>Centimeters</i> (cm)</h5>
-
 <p>The centimeters found on rulers the world over. There are 2.54 centimeters to an inch, and 
 1 centimeter equals 0.394 inches. The same mapping warnings that applied to inches also apply 
 to centimeters.</p>
 
 <h5><i>Millimeters</i> (mm)</h5>
-
 <p>There are 10 millimeters to a centimeter, so you get 25.4 millimeters to an inch, and 1 
 millimeter equals 0.0394 inches. Bear in mind the previous warnings about mapping lengths 
 to displays.</p>
 
 <h5><i>Quarter-millimeters</i> (q)</h5>
-
 <p>Exactly what they say they are: one-fourth of a millimeter.</p>
 
 <p>In other words, 4q equals one millimeter, and 400q equals one centimeter. Again, bear in mind 
 the previous mapping warnings.</p>
 
 <h5><i>Inches</i> (in)</h5>
-
 <p>As you might expect, the same inches found on typical US rulers. The mapping from inches to a 
 display device is usually approximate at best, because many systems have no concept of the 
 relation of their display areas to "realworld" measurements such as inches. Thus, inches should 
 be used with extreme caution in screen design.</p>
 
 <h5><i>Points</i> (pt)</h5>
-
 <p>Points are standard typographical measures used by printers and typesetters for centuries and 
 by word-processing programs for decades. By modern definition, there are 72 points to an inch. 
 Therefore, the capital letters of text set to 12 points should be 1/6 of an inch tall. For example, 
@@ -1487,7 +1462,6 @@ p {font-size: 18pt;} is equivalent to p {font-size: 0.25in;}, assuming proper ma
 the display environment (see previous comments).</p>
 
 <h5><i>Picas</i> (pc)</h5>
-
 <p>Another typographical term. A pica is equivalent to 12 points, which means there are 6 picas to 
 an inch. The capital letters of text set to 1 pica should be 1/6 of an inch tall. For example, p 
 {font-size: 1.5pc;} would set text to be the same size as the example declarations found in the 
@@ -1496,24 +1470,20 @@ definition of points. Keep in mind the previous warnings. <b>Relative Length Uni
 <p>The available relative units are:</p>
 
 <h5><i>Em-height</i> (em)</h5>
-
 <p>This refers to the em-height of a given font face. In CSS, the em-height is equivalent to the 
 height of the character box for the font face, which is to say the computed value of font-size. 
 Ems can be used to set relative sizes for fonts; for example, font-size: 1.2em is the same as 
 saying fontsize: 120%.</p>
 
 <h5><i>Root element em-height</i> (rem)</h5>
-
 <p>Equal to the em-height of the root element (in HTML, the html element).</p>
 
 <h5><i>X-height</i> (ex)</h5>
-
 <p>This refers to the x-height of the font face, which is to say the height of the lowercase "x" 
 character in the given font face. However, the vast majority of font faces do not include their 
 x-height, so many browsers approximate it (poorly) by simply setting 1ex to be equal to 0.5em.</p>
 
 <h5><i>ZERO width</i> (ch)</h5>
-
 <p>This refers to the width of a single zero (Unicode U+0300, "ZERO") in the current font family 
 and size. This is often, but erroneously, assumed to mean "one character." This will only be true 
 in monospace fonts, where all characters are the same width.</p>
@@ -1523,7 +1493,6 @@ in monospace fonts, where all characters are the same width.</p>
 something like width: 60ch will often result in lines of text with fewer than 60 characters.</p>
 
 <h5><i>Pixels</i> (px)</h5>
-
 <p>A pixel is usually thought of as a small box on a display, but CSS defines pixels more 
 abstractly. In CSS terms, a pixel is defined to be about the size required to yield 96 units 
 per inch. Many user agents ignore this definition in favor of simply addressing the pixels 
@@ -1531,7 +1500,6 @@ on the display, but others (such as those on high-resolution mobile devices) go 
 route, treating each px as being multiple physical on-screen pixels.</p>
 
 <h5><i>Viewport width unit</i> (vw)</h5>
-
 <p>This unit is calculated with respect to the viewport's width, which is divided by 100. If the 
 viewport is 937 pixels wide, for example, 1vw is equal to 9.37px. If the viewport's width changes, 
 say by dragging the browser window to be wider or narrower, the value of vw changes along with it.</p>
@@ -2301,7 +2269,7 @@ html:lang(en) {background: silver;} <br>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:last-child</h3>
+<!--  <h3>:last-child</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2403,7 +2371,7 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:nth-last-child(<i>a</i>n±<i>b</i>)</h3>
+<!--  <h3>:nth-last-child(<i>a</i>n±<i>b</i>)</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2440,12 +2408,12 @@ tbody tr:nth-last-child(odd) {
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h3>
+<!--  <h3>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h3>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-      <th width="200"><h3></h3></th>
+      <th width="200"><h3>:nth-last-of-type<i>a</i>n±<i>b</i>)</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -2768,7 +2736,7 @@ p:hover {background: yellow;}
 <table style="width:500px;">
   <thead>
     <tr>
-      <th width="200">:link<h3>:link</h3></th>
+      <th width="200"><h3>:link</h3></th>
     </tr>
   </thead>
   <tbody>
@@ -2959,7 +2927,6 @@ p:first-letter {text-decoration: underline;}
   <thead>
     <tr>
       <th width="200"><h3>::first-line</h3></th>
-      <th align="right"><h3></h3></th>
     </tr>
   </thead>
   <tbody>
@@ -3500,9 +3467,9 @@ section.gallery h1 {align-self: stretch;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; <i>&lt;animation-name&gt;</i> ‖ <i>&lt;animation-duration&gt;</i> ‖<br>
-<i>&lt;animation-timing-function&gt;</i> ‖ <i>&lt;animation-delay&gt;</i> ‖<br>
-<i>&lt;animation-iteration-count&gt;</i> ‖ <i>&lt;animationdirection&gt;</i> ‖<br>
-<i>&lt;animation-fill-mode&gt;</i> ‖ <i>&lt;animationplay-state&gt;</i> &rbrack;#</td>
+        <i>&lt;animation-timing-function&gt;</i> ‖ <i>&lt;animation-delay&gt;</i> ‖<br>
+        <i>&lt;animation-iteration-count&gt;</i> ‖ <i>&lt;animationdirection&gt;</i> ‖<br>
+        <i>&lt;animation-fill-mode&gt;</i> ‖ <i>&lt;animationplay-state&gt;</i> &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -3822,9 +3789,9 @@ running, paused, running;} table {animation-play-state: running;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert; ease-in-out &vert; 
-      step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; 
-      steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, 
-      <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
+        step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; 
+        steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, 
+        <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -3916,7 +3883,7 @@ span.cubeside {backface-visibility: visible;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>&lbrack; <i>&lt;bg-layer&gt;</i> , &rbrack;&ast; <i>&lt;final-bg-layer&gt;</i></td>
+      <td>&lbrack; <i>&lt;bg-layer&gt;</i>, &rbrack;&ast; <i>&lt;final-bg-layer&gt;</i></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4022,9 +3989,9 @@ div.fixbg {background-attachment: fixed;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
-    &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
-    &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
-    saturation &vert; color &vert; luminosity &rbrack;# </td>
+	    &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
+		&vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
+		saturation &vert; color &vert; luminosity &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
