@@ -1292,23 +1292,26 @@ number of interesting things with CSS.</p>
 <p>Keywords are defined on a per-property basis and have a meaning specific only to a 
 given property. For example, normal has totally unique meanings for the properties font-
 variant and letter-spacing. Keywords, like property names, are not case-sensitive.</p>
-
 <p>CSS defines three "global" keywords that are accepted by every property in the 
 specification:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>inherit</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Forces the value for the property to be inherited from the element's parent element, 
 even if the property in question is not inherited (e.g., background-image). Another way 
 to think of this is that the value is copied from the parent element.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>initial</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Forces the value of the property to be the initial value defined by the relevant CSS 
 module. For example, fontstyle: initial sets the value of font-style to normal regardless 
 of the font-style value that would have been inherited from the parent element. In cases 
 where the initial value is defined as determined by the user agent, such as for font-size, 
 the value is set to the "default" defined by the user agent's preferences.</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>unset</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Combines the effects of both inherit and initial, with a rudimentary logic built in 
 for good measure. If a property is inherited (e.g., color), then unset has the same 
 effect as inherit. If the property is <i>not</i> inherited (e.g., backgroundimage), then 
@@ -1321,20 +1324,23 @@ Chapter 4.</p>
 <h3 id="ch2-2-1">2.2. Color Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Color values can be expressed in a variety of ways:</p>
-
-<h4><i>#RRGGBB</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">#RRGGBB</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is a hex-pair notation familiar to authors using traditional HTML. In this format, 
 the first pair of digits corresponds to the red level, the second pair to the green, and 
 the third pair to the blue. Each pair is in hexadecimal notation in the range 00--FF 
 (decimal 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is written #FF0000, 
 and so on.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i><span class="newFont">#RGB</span></i></h4>
-<p>This is a shorter form of the six-digit notation described previously.
-In this format, each digit is replicated to arrive at an equivalent
-six-digit value; thus, #F8C becomes #FF88CC.</p>
-
-<h5><i><span class="newFont">#RRGGBBAA</span></i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This is a shorter form of the six-digit notation described previously. In this format, 
+each digit is replicated to arrive at an equivalent six-digit value; thus, #F8C becomes 
+#FF88CC.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">#RRGGBBAA</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An extension of the #RRGGBB notation which adds an alpha channel. As with the R, G, 
 and B values, the A (alpha) value is in hexadecimal notation in the range 00-- FF. These 
 are mapped from hexadecimal to decimal in the range 0--1; thus, #00FF0099 is equivalent 
@@ -1342,46 +1348,51 @@ to the color #00FF00 (light green) with an opacity of 0.6. The opacity here is d
 converting hexadecimal 99 to decimal 153, and then dividing 153 by 255 to get 0.6. Put 
 another way, #00FF0099 is exactly equivalent to rgba(0,255,0,0.6). Note: support for this 
 notation first emerged in early 2016.</p>
-
-<h5><i><span class="newFont">#RGBA</span></i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">#RGBA</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is a shorter form of the eight-digit #RRGGBBAA notation described previously. In 
-this format, each digit is replicated to arrive at an equivalent eight-digit value; thus,</p>
-
-<p>&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.</p>
-
-<h5><i><span class="newFont">rgb(rrr,ggg,bbb)</span></i></h5>
+this format, each digit is replicated to arrive at an equivalent eight-digit value; thus, 
+&pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">rgb(rrr,ggg,bbb)</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This format allows the author to use RGB values in the range 0--255; only integers 
 are permitted. Not coincidentally, this range is the decimal equivalent of 00--FF in 
 hexadecimal. In this format, "pure" green is rgb(0,255,0), and white is represented as 
 rgb(255,255,255).</p>
-
-<h5><i><span class="newFont">rgb(rrr.rr%,ggg.gg%,bbb.bb%)</span></i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">rgb(rrr.rr%,ggg.gg%,bbb.bb%)</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This format allows the author to use RGB values in the range 0% to 100%, with decimal 
 values allowed (e.g., 75.5%). The value for black is thus rgb(0%,0%,0%), whereas "pure" 
 blue is rgb(0%,0%,100%).</p>
-
-<h5><i><span class="newFont">hsl(hhh.hh,sss.ss%,lll.ll%)</span></i></h5>
-<p>This format permits authors to specify a color by its hue angle,
-saturation, and lightness (HSL). The hue angle is always a unitless
-number or a <i>&lt;degree&gt;</i> value in the range 0 to 360, and the
-saturation and brightness values are always percentages. Hue angles 0
-and 360 are equivalent, and are both red. Hue angles greater than 360
-can be declared, but they are normalized to the 0--360 range; thus, setting a
-hue angle of 454 is equivalent to setting an angle of 94.</p>
-
-<p>Any HSL value, regardless of color angle, will be rendered as a shade of gray if the 
-saturation value is 0%; the exact shade will depend on the lightness value. Any HSL value, 
-regardless of the hue angle, will be rendered solid black if lightness is 0% and solid 
-white if lightness is 100%. The "normal" lightness value---that is, the value associated 
-with most common colors---is 50%. <i>rgba(rrr,ggg,bbb,a.aa) rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa) 
-hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</i></p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">hsl(hhh.hh,sss.ss%,lll.ll%)</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This format permits authors to specify a color by its hue angle, saturation, and 
+lightness (HSL). The hue angle is always a unitless number or a <i>&lt;degree&gt;</i> 
+value in the range 0 to 360, and the saturation and brightness values are always 
+percentages. Hue angles 0 and 360 are equivalent, and are both red. Hue angles greater 
+than 360 can be declared, but they are normalized to the 0--360 range; thus, setting a
+hue angle of 454 is equivalent to setting an angle of 94. Any HSL value, regardless of 
+color angle, will be rendered as a shade of gray if the saturation value is 0%; the exact 
+shade will depend on the lightness value. Any HSL value, regardless of the hue angle, 
+will be rendered solid black if lightness is 0% and solid white if lightness is 100%. 
+The "normal" lightness value---that is, the value associated with most common colors---is 
+50%.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">rgba(rrr,ggg,bbb,a.aa)<br>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa)<br>
+hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</span></i></h4>
 <p>These extend the previous three formats to include an alpha (opacity) value. The alpha 
 value must be a real number between 0 and 1 inclusive; percentages are not permitted for 
 the alpha value. Thus, rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
 are all equivalent half-opaque red.</p>
-
-<h5><i>&lt;keyword&gt;</i></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">&lt;keyword&gt;</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One of 16 recognized keywords based on the original Windows VGA colors. These keywords 
 are aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, 
 silver, teal, white, and yellow. Browsers generally also recognize the 148 color keywords 
@@ -1389,8 +1400,9 @@ documented in the <a href="http://www.w3.org/TR/css-color-4/" target="_blank"
 rel="noreferrer noopener">CSS Color Module Level 4 specification</a>, referred to for 
 historical reasons as "the X11 colors" (though the list does not precisely replicate 
 X11's colors).</p>
-
-<h5>currentColor</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">currentColor</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A special keyword that represents the current computed value of the element's color 
 property. This means you can declare background-color: currentColor and set the element's 
 background to be the same color as its foreground (not recommended). When applied to the 
@@ -1398,7 +1410,9 @@ color property, it is equivalent to declaring color: inherit. It can also be use
 borders; border: 1px solid is equivalent to border: 1px solid currentColor. This can be 
 quite useful when (un)setting a border's color via DOM scripting.</p>
 
-<h5>transparent</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><i><span class="newFont">transparent</span></i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0), which is the 
 computed value any time transparent is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1426,11 +1440,12 @@ be non-negative.</p>
 immediately by a unit identifier. There should never be any space between the number and the 
 unit identifier. A length value of 0 (zero) does not require a unit identifier.</p>
 
-<h5><b>Number Values</b></h5>
 <p>Length units are divided into two types: <i>absolute units</i>, which are (in theory) always 
 measured in the same way, and <i>relative units</i>, which are measured in relation to other 
-things. <b>Absolute Length Units</b></p>
-
+things.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4><b>Absolute Length Units</b></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The available absolute units are:</p>
 
 <h5><i>Centimeters</i> (cm)</h5>
@@ -1440,13 +1455,12 @@ to centimeters.</p>
 
 <h5><i>Millimeters</i> (mm)</h5>
 <p>There are 10 millimeters to a centimeter, so you get 25.4 millimeters to an inch, and 1 
-millimeter equals 0.0394 inches. Bear in mind the previous warnings about mapping lengths 
+millimeter equals 0.0394 inches. Bear in mind the previous warnings about mapping lengths.
 to displays.</p>
 
 <h5><i>Quarter-millimeters</i> (q)</h5>
-<p>Exactly what they say they are: one-fourth of a millimeter.</p>
-
-<p>In other words, 4q equals one millimeter, and 400q equals one centimeter. Again, bear in mind 
+<p>Exactly what they say they are: one-fourth of a millimeter. 
+In other words, 4q equals one millimeter, and 400q equals one centimeter. Again, bear in mind 
 the previous mapping warnings.</p>
 
 <h5><i>Inches</i> (in)</h5>
@@ -1466,8 +1480,10 @@ the display environment (see previous comments).</p>
 <p>Another typographical term. A pica is equivalent to 12 points, which means there are 6 picas to 
 an inch. The capital letters of text set to 1 pica should be 1/6 of an inch tall. For example, p 
 {font-size: 1.5pc;} would set text to be the same size as the example declarations found in the 
-definition of points. Keep in mind the previous warnings. <b>Relative Length Units</b></p>
-
+definition of points. Keep in mind the previous warnings.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Relative Length Units</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The available relative units are:</p>
 
 <h5><i>Em-height</i> (em)</h5>
