@@ -1294,20 +1294,21 @@ given property. For example, normal has totally unique meanings for the properti
 variant and letter-spacing. Keywords, like property names, are not case-sensitive.</p>
 
 <p>CSS defines three "global" keywords that are accepted by every property in the 
-specification: inherit</p>
+specification:</p>
 
+<h4>inherit</h4>
 <p>Forces the value for the property to be inherited from the element's parent element, 
 even if the property in question is not inherited (e.g., background-image). Another way 
 to think of this is that the value is copied from the parent element.</p>
 
-<h5>initial</h5>
+<h4>initial</h4>
 <p>Forces the value of the property to be the initial value defined by the relevant CSS 
 module. For example, fontstyle: initial sets the value of font-style to normal regardless 
 of the font-style value that would have been inherited from the parent element. In cases 
 where the initial value is defined as determined by the user agent, such as for font-size, 
 the value is set to the "default" defined by the user agent's preferences.</p>
 
-<h5>unset</h5>
+<h4>unset</h4>
 <p>Combines the effects of both inherit and initial, with a rudimentary logic built in 
 for good measure. If a property is inherited (e.g., color), then unset has the same 
 effect as inherit. If the property is <i>not</i> inherited (e.g., backgroundimage), then 
@@ -1321,14 +1322,14 @@ Chapter 4.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Color values can be expressed in a variety of ways:</p>
 
-<h5><i>#RRGGBB</i></h5>
+<h4><i>#RRGGBB</i></h4>
 <p>This is a hex-pair notation familiar to authors using traditional HTML. In this format, 
 the first pair of digits corresponds to the red level, the second pair to the green, and 
 the third pair to the blue. Each pair is in hexadecimal notation in the range 00--FF 
 (decimal 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is written #FF0000, 
 and so on.</p>
 
-<h5><i><span class="newFont">#RGB></span></i></h5>
+<h4><i><span class="newFont">#RGB</span></i></h4>
 <p>This is a shorter form of the six-digit notation described previously.
 In this format, each digit is replicated to arrive at an equivalent
 six-digit value; thus, #F8C becomes #FF88CC.</p>
