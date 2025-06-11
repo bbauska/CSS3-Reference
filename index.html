@@ -29,14 +29,13 @@
     you will learn: Simplified HTML5 tags, and how to use microdata; Play with audio 
     and video tags; Use the Webcam; Draw and animate Web graphics; Discover HTML5 form 
     features; Test basic APIs; Practice coding techniques.">
-  <meta name="keywords" content="CSS3, Reference, Guide, CSS3 Reference Guide, 
-    Intro, to, JS, JavaScript,Silus Gaming World">
+  <meta name="keywords" content="CSS3,Reference,Guide,CSS3 Reference Guide,Intro,to,JS,
+    JavaScript,Silus Gaming World">
   <meta name="robots" content="index, follow">
-<!--  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  -->
   <meta name="language" content="English">
   <meta name="author" content="Brian Bauska">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>CSS3-Reference</title>
+  <title>CSS3 Reference</title>
   <link rel="canonical" href="https://css3-ref.bauska.org">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -65,10 +64,8 @@
     document.getElementById('table-of-contents').scrollIntoView();
   }
   </script>
-
 <h1 style="text-align:center;">CSS3 Reference Guide</h1>
 <h6 style="text-align:center;">(by Brian Bauska)</h6>
-
 <!--
 dl {
   display: grid;
@@ -90,6 +87,7 @@ ul.no-bullets {
   margin: 0; /* Remove margins */
 }
 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS3-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of css3-ref.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -397,23 +395,23 @@ identifier preceded by an @ sign. These are:</p>
 <ul>
   <li><b><mark>&#64;charset</mark></b><br>
     Allows an author to define the encoding of the styles within the stylesheet (e.g., 
-	&#64;charset &quot;utf-8&quot;;). This enables authors to define the encoding of 
-	their styles even when they do not control the encoding of the file or system in 
-	which the styles are written. If multiple &#64;charset rules are declared, only the 
-	first will be used. This <i>must</i> be the first line of a stylesheet in which it 
-	appears, and <i>cannot</i> be preceded by any character. &#64;charset cannot be used 
-	in a stylesheet embedded in a document.</li>
+    &#64;charset &quot;utf-8&quot;;). This enables authors to define the encoding of 
+    their styles even when they do not control the encoding of the file or system in 
+    which the styles are written. If multiple &#64;charset rules are declared, only the 
+    first will be used. This <i>must</i> be the first line of a stylesheet in which it 
+    appears, and <i>cannot</i> be preceded by any character. &#64;charset cannot be used 
+    in a stylesheet embedded in a document.</li>
   <li><b><mark>&#64;import</mark></b><br>
     Allows an author to include the styles of another stylesheet (see "@import directive" 
-	on page 2). Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> 
-	appear before all other parts of the stylesheet except for &#64;charset.</li>
+    on page 2). Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> 
+    appear before all other parts of the stylesheet except for &#64;charset.</li>
   <li><b><mark>&#64;namespace</mark></b><br>
     Allows an author to define an XML namespace to be used in selectors (e.g., 
-	&#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting the use of 
-	svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG files differently 
-	than &lt;a&gt; elements in HTML). Multiple &#64;namespace rules are permitted. Any 
-	&#64;namespace <i>must</i> appear before all other parts of the stylesheet except for 
-	&#64;charset and &#64;import rules.</li>
+    &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting the use of 
+    svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG files differently 
+    than &lt;a&gt; elements in HTML). Multiple &#64;namespace rules are permitted. Any 
+    &#64;namespace <i>must</i> appear before all other parts of the stylesheet except for 
+    &#64;charset and &#64;import rules.</li>
 </ul>
 <p>Besides these statements, there are a number of conditional at-rules.<br>
 These include:</p>
@@ -421,22 +419,22 @@ These include:</p>
 <ul>
   <li><b><mark>&#64;counter-style</mark></b><br>
     Defines symbol and counting patterns used in CSS counters (e.g., the numbering of 
-	list items in an ordered list).</li>
+    list items in an ordered list).</li>
   <li><b><mark>&#64;font-face</mark></b><br>
     Defines an external font to be downloaded and used, including definitions of the 
-	identifiers to be used in other style rules. This is part of what is often called 
-	"web fonts" or "custom fonts."</li>
+    identifiers to be used in other style rules. This is part of what is often called 
+    "web fonts" or "custom fonts."</li>
   <li><b><mark>&#64;keyframes</mark></b><br>
     Defines the states of various steps in an animation sequence, grouped together under 
-	a unique identifier.</li>
+    a unique identifier.</li>
   <li><b><mark>&#64;media</mark></b><br>
     Defines the media types and parameters in which a block of styles are to be applied: 
-	e.g., writing &#64;media (maxwidth: 600px) and then the styles to be used for smaller 
-	screens. This is the key to Responsive Web Design.</li>
+    e.g., writing &#64;media (maxwidth: 600px) and then the styles to be used for smaller 
+    screens. This is the key to Responsive Web Design.</li>
   <li><b><mark>&#64;supports</mark></b><br>
     Defines the browser-support conditions under which a block of styles should be used: 
-	e.g., writing &#64;supports (display: grid) and then the styles that should be used 
-	in a CSS Grid--supporting browser.</li>
+    e.g., writing &#64;supports (display: grid) and then the styles that should be used 
+    in a CSS Grid--supporting browser.</li>
 </ul>
 <p>There are other proposed at-rules which are, as of early 2018, at various stages of 
 development. These include &#64;document, &#64;font-feature-values, &#64;page, and 
@@ -659,13 +657,13 @@ components of an element box.</p>
     border style defaults to none.</li>
   <li>If box-sizing is content-box (the default value), the property width defines only 
     the width of the content area; any padding, borders, or margins are added to it. The 
-	same is true for height with respect to the height.</li>
+    same is true for height with respect to the height.</li>
   <li>If box-sizing is padding-box, the property width defines the total width of the 
     content and the padding. Any borders and margins are added to it. The same is true 
-	for height with respect to the height.</li>
+    for height with respect to the height.</li>
   <li>If box-sizing is border-box, the property width defines the total width of the 
     content, padding, and borders; any margins are added to it. The same is true for 
-	height with respect to the height.</li>
+    height with respect to the height.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline Layout</h4>
@@ -1068,11 +1066,11 @@ into here. In broad strokes, this is the process to find the track sizes:</p>
 <ol type="1"
   <li>Initialize track sizes, including determining the minimum and maximum sizes for each 
     track. Resolve fixed track sizes to absolute length values. Set intrinsically sized 
-	tracks' minimum size to zero and maximum size to unlimited. Flexible tracks are left 
-	flexible, with an initial minimum size of zero.</li>
+    tracks' minimum size to zero and maximum size to unlimited. Flexible tracks are left 
+    flexible, with an initial minimum size of zero.</li>
   <li>Determine the size of intrinsic (e.g., auto) tracks, resolving each to an absolute 
     length. First find sizes based on the items within the track, and then gradually add 
-	space to encompass items that span multiple tracks.</li>
+    space to encompass items that span multiple tracks.</li>
   <li>Maximize tracks up to their growth limit (this is determined automatically).</li>
   <li>Expand flexible (fr) tracks by adding space according to the ratio of each track's 
     flex factor to the total of all flex factors in the grid track.</li>
@@ -1118,17 +1116,17 @@ table. Figure 1-6 illustrates the components of a table.</p>
     boxes that it contains.</li>
   <li>Although cells may span several rows or columns, CSS does not define how that 
     happens. It is instead left to the document language to define spanning. Each spanned 
-	cell is a rectangular box one or more grid cells wide and high. The top row of this 
-	rectangle is in the row that is parent to the cell. The cell's rectangle must be as 
-	far to the left as possible in left-to-right languages, but it may not overlap any 
-	other cell box. It must also be to the right of all cells in the same row that appear 
-	earlier in the source document in a left-to-right language. In right-to-left languages, 
-	a spanned cell must be as far to the right as possible without overlapping other cells, 
-	and must be to the left of all cells in the same row that come after it in the document 
-	source.</li>
+    cell is a rectangular box one or more grid cells wide and high. The top row of this 
+    rectangle is in the row that is parent to the cell. The cell's rectangle must be as 
+    far to the left as possible in left-to-right languages, but it may not overlap any 
+    other cell box. It must also be to the right of all cells in the same row that appear 
+    earlier in the source document in a left-to-right language. In right-to-left languages, 
+    a spanned cell must be as far to the right as possible without overlapping other cells, 
+    and must be to the left of all cells in the same row that come after it in the document 
+    source.</li>
   <li>A cell's box cannot extend beyond the last row box of a table or row group. If the 
     table structure causes this condition, the cell must be shortened until it fits within 
-	the table or row group that encloses it.</li>
+    the table or row group that encloses it.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Fixed Table Layout</h4>
@@ -1141,7 +1139,7 @@ first row of the table. The fixed-layout model uses the following steps:</p>
     for that column.</li>
   <li>If a column has an auto width, but the cell in the first row of the table within 
     that column has a width other than auto, that cell sets the width for that column. If 
-	the cell spans multiple columns, the width is divided equally among the columns.</li>
+    the cell spans multiple columns, the width is divided equally among the columns.</li>
   <li>Any columns that are still auto-sized are sized so that their widths are as equal 
     as possible.</li>
 </ol>
@@ -1163,28 +1161,28 @@ although this is not assured.</p>
   <li>For each cell in a column, calculate both the minimum and maximum cell width.</li>
   <li>Determine the minimum width required to display the content. In determining the 
     minimum content width, the content can flow to any number of lines, but it may not 
-	stick out of the cell's box. If the cell's width value is larger than the minimum 
-	possible width, the minimum cell width is set to that value. If the cell's width 
-	value is auto, the minimum cell width is set to the minimum content width.</li>
+    stick out of the cell's box. If the cell's width value is larger than the minimum 
+    possible width, the minimum cell width is set to that value. If the cell's width 
+    value is auto, the minimum cell width is set to the minimum content width.</li>
   <li>For the maximum width, determine the width required to display the content without 
     any line-breaking, other than that forced by explicit line-breaking (e.g., due to the 
-	&lt;br&gt; element). That value is the maximum cell width.</li>
+    &lt;br&gt; element). That value is the maximum cell width.</li>
   <li>For each column, calculate both the minimum and maximum column width:
     <ol type-="a">
       <li>The column's minimum width is determined by the largest minimum cell width of 
-	    the cells within the column. If the column has been given an explicit width value 
-		that is larger than any of the minimum cell widths within the column, the minimum 
-		column width is set to the value of width.</li>
+        the cells within the column. If the column has been given an explicit width value 
+        that is larger than any of the minimum cell widths within the column, the minimum 
+        column width is set to the value of width.</li>
       <li>For the maximum width, take the largest maximum cell width of the cells within 
-	    the column. If the column has an explicit width value larger than any of the 
-		maximum cell widths within the column, the maximum column width is set to the 
-		value of width. These two behaviors recreate the traditional HTML table behavior 
-		of forcibly expanding any column to be as wide as its widest cell.</li>
+        the column. If the column has an explicit width value larger than any of the 
+        maximum cell widths within the column, the maximum column width is set to the 
+        value of width. These two behaviors recreate the traditional HTML table behavior 
+        of forcibly expanding any column to be as wide as its widest cell.</li>
       <li>In cases where a cell spans more than one column, the sum of the minimum column 
-	    widths must be equal to the minimum cell width for the spanning cell. Similarly, 
-		the sum of the maximum column widths must equal the spanning cell's maximum width. 
-		User agents should divide any changes in column widths equally among the spanned 
-		columns.</li>
+        widths must be equal to the minimum cell width for the spanning cell. Similarly, 
+        the sum of the maximum column widths must equal the spanning cell's maximum width. 
+        User agents should divide any changes in column widths equally among the spanned 
+        columns.</li>
     </ol>
   </li>
 </ol>
@@ -1197,14 +1195,14 @@ This happens as follows:</p>
 <ol type="1">
   <li>If the computed width of the table is not auto, the computed table width is compared 
     to the sum of all the column widths plus any borders and cell spacing. (Columns with 
-	percentage widths are likely calculated at this time.) The larger of the two values 
-	is the final width of the table. If the table's computed width is larger than the sum 
-	of the column widths, borders, and cell spacing, all columns are increased in width by 
-	an equal amount so they fill the computed width of the table.</li>
+    percentage widths are likely calculated at this time.) The larger of the two values 
+    is the final width of the table. If the table's computed width is larger than the sum 
+    of the column widths, borders, and cell spacing, all columns are increased in width by 
+    an equal amount so they fill the computed width of the table.</li>
   <li>If the computed width of the table is auto, the final width of the table is 
     determined by summing up the column widths, borders, and cell spacing. This means the 
-	table will be only as wide as needed to display its content, just as with traditional 
-	HTML tables. Any columns with percentage widths use that percentage as a constraint,
+    table will be only as wide as needed to display its content, just as with traditional 
+    HTML tables. Any columns with percentage widths use that percentage as a constraint,
     but it is a constraint that a user agent does not have to satisfy.</li>
 </ol>
 <p>Once the last step is completed (and only then), the user agent can actually lay out 
@@ -1217,13 +1215,13 @@ when they have no cell spacing. The following rules govern this model:</p>
 <ul>
   <li>Table elements cannot have any padding, although they can have margins. Thus, there 
     is never separation between the border around the outside of the table and its 
-	outermost cells.</li>
+    outermost cells.</li>
   <li>Borders can be applied to cells, rows, row groups, columns, and column groups. The 
     table element itself can, as always, have a border.</li>
   <li>There is never any separation between cell borders. In fact, borders collapse into 
     each other where they adjoin so that only one of the collapsing borders is actually 
-	drawn. This is somewhat akin to margin collapsing, where the largest margin wins. 
-	When cell borders collapse, the "most interesting" border wins.</li>
+    drawn. This is somewhat akin to margin collapsing, where the largest margin wins. 
+    When cell borders collapse, the "most interesting" border wins.</li>
   <li>Once they are collapsed, the borders between cells are centered on the hypothetical 
     grid lines between the cells.</li>
 </ul>
@@ -1235,21 +1233,21 @@ Figure 1-7. There are strict rules governing which borders will win and which wi
     over all other collapsing borders: all borders at this location are hidden.</li>
   <li>If one of the collapsing borders has a border-style of none, it takes the lowest 
     priority. There will be no border drawn at this location only if all of the borders 
-	meeting at this location have a value of none. Note that none is the default value 
-	for border-style.</li>
+    meeting at this location have a value of none. Note that none is the default value 
+    for border-style.</li>
   <li>If at least one of the collapsing borders has a value other than either none or 
     hidden, narrow borders lose out to wider ones. If two or more of the collapsing 
-	borders have the same width, the border style is taken in the following order, from 
-	most preferred to least: double, solid, dashed, dotted, ridge, outset, groove, inset. 
-	Thus, if two borders with the same width collapse and one is dashed while the other 
-	is outset, the border at that location will be dashed.</li>
+    borders have the same width, the border style is taken in the following order, from 
+    most preferred to least: double, solid, dashed, dotted, ridge, outset, groove, inset. 
+    Thus, if two borders with the same width collapse and one is dashed while the other 
+    is outset, the border at that location will be dashed.</li>
   <li>If collapsing borders have the same style and width but differ in color, the color 
     used is taken from an element in the following list, from most preferred to least: 
-	cell, row, row group, column, column group, table. Thus, if the borders of a cell and 
-	a column---identical in every way except color---collapse, the cell's border color 
-	(and style and width) will be used. If the collapsing borders come from the same type 
-	of element---such as two row borders with the same style and width, but different 
-	colors---the one farthest to the left and top wins in left-to-right languages; in
+    cell, row, row group, column, column group, table. Thus, if the borders of a cell and 
+    a column---identical in every way except color---collapse, the cell's border color 
+    (and style and width) will be used. If the collapsing borders come from the same type 
+    of element---such as two row borders with the same style and width, but different 
+    colors---the one farthest to the left and top wins in left-to-right languages; in
     right-to-left languages, the cell farthest to the right and top wins.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1271,13 +1269,13 @@ Figure 1-7. There are strict rules governing which borders will win and which wi
     content of the baseline-aligned cells is placed.</li>
   <li>Any top-aligned cell has its content placed. The row now has a provisional height, 
     which is defined by the lowest cell bottom of the cells that have already had their 
-	content placed.</li>
+    content placed.</li>
   <li>If any remaining cells are middle- or bottom-aligned, and the content height is 
     taller than the provisional row height, the height of the row is increased by 
-	lowering the baseline in order to enclose the tallest of those cells.</li>
+    lowering the baseline in order to enclose the tallest of those cells.</li>
   <li>All remaining cells have their content placed. In any cell with contents shorter 
     than the row height, the cell's padding is increased in order to match the height of 
-	the row.</li>
+    the row.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2">2. CHAPTER 2 Values</h2>
@@ -2852,23 +2850,23 @@ a:visited {color: purple;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-	  <td>Inserts generated content at the end of an element's content. By default, the 
-	    pseudo-element is inline, but this can be changed using the property display.</td>
+      <td>Inserts generated content at the end of an element's content. By default, the 
+        pseudo-element is inline, but this can be changed using the property display.</td>
         In CSS1 and CSS2, pseudo-elements were preceded by single colons, just as pseudo-
-		classes were. In CSS3 and later, pseudoelements use double colons to distinguish them 
-		from pseudoclasses. For historical reasons, browsers will support both single and 
-		double colons on pseudo-elements, but the doublecolon syntax is recommended.</td>
-	</tr>
-	<tr>
-	  <td><b>Examples</b></td>
-	  <td>
+        classes were. In CSS3 and later, pseudoelements use double colons to distinguish them 
+        from pseudoclasses. For historical reasons, browsers will support both single and 
+        double colons on pseudo-elements, but the doublecolon syntax is recommended.</td>
+    </tr>
+    <tr>
+      <td><b>Examples</b></td>
+      <td>
 <pre>
 a.external:after {
   content: &quot; &quot; url(/icons/globe.gif);} 
 p:after {content: &quot; &vert;; &quot;;} 
 </pre>
       </td>
-	</tr>
+    </tr>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2885,21 +2883,21 @@ p:after {content: &quot; &vert;; &quot;;}
       <td><b>Generates</b></td>
       <td>A pseudo-element containing generated content placed before the content in the element</td>
     </tr>
-	<tr>
-	  <td><b>Description</b></td>
-	  <td>Inserts generated content at the beginning of an element's content. By default, 
-	    the pseudo-element is inline, but this can be changed using the property display.</td>
-	</tr>
-	<tr>
-	  <td><b>Examples</b></td>
-	  <td>
+    <tr>
+      <td><b>Description</b></td>
+      <td>Inserts generated content at the beginning of an element's content. By default, 
+        the pseudo-element is inline, but this can be changed using the property display.</td>
+    </tr>
+    <tr>
+      <td><b>Examples</b></td>
+      <td>
 <pre>
 a&lbrack;href&rbrack;:before {content: &quot;&lbrack;LINK&rbrack; &quot;;} 
 p:before {content: attr(class);} 
 a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;} 
 </pre>
       </td>
-	</tr>
+    </tr>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2913,27 +2911,27 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
   </thead>
   <tbody>
     <tr>
-	  <td><b>Generates</b></td>
+      <td><b>Generates</b></td>
       <td>A pseudo-element that contains the first letter of an element</td>
     <tr>
-	  <td><b>Description</b></td>
+      <td><b>Description</b></td>
       <td>Styles the first letter of an element. Any leading punctuation should be styled 
-	    along with the first letter. Some languages have letter combinations that should 
-		be treated as a single character, and a user agent may apply the first letter 
-		style to both. Prior to CSS2.1, ::first-letter could be attached only to block-
-		level elements. CSS2.1 expanded its scope to include elements with a display 
-		value of block, list-item, table-cell, table-caption, or inlineblock. There is a 
-		limited set of properties that can apply to a first letter.</td>
+        along with the first letter. Some languages have letter combinations that should 
+        be treated as a single character, and a user agent may apply the first letter 
+        style to both. Prior to CSS2.1, ::first-letter could be attached only to block-
+        level elements. CSS2.1 expanded its scope to include elements with a display 
+        value of block, list-item, table-cell, table-caption, or inlineblock. There is a 
+        limited set of properties that can apply to a first letter.</td>
     </tr>
     <tr>
-      <t	d><b>Examples</b></td>
-	  <td>
+      <t    d><b>Examples</b></td>
+      <td>
 <pre>
 h1:first-letter {font-size: 166%;} 
 p:first-letter {text-decoration: underline;} 
 </pre>
       </td>
-	</tr>
+    </tr>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2953,13 +2951,13 @@ p:first-letter {text-decoration: underline;}
     <tr>
       <td><b>Description</b></td>
       <td>Styles the first line of text in an element, regardless of how many or how few 
-	    words may appear in that line. ::first-line can be attached only to blocklevel 
-		elements. There is a limited set of properties that can apply to a first line.</td>
+        words may appear in that line. ::first-line can be attached only to blocklevel 
+        elements. There is a limited set of properties that can apply to a first line.</td>
     </tr>
-	<tr>
+    <tr>
       <td><b>Example</b></td>
       <td><pre>p.lead:first-line {font-weight: bold;}</pre></td>
-	</tr>
+    </tr>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3228,9 +3226,9 @@ type like a color is permitted, it will be represented using
     but they may appear in any order.</li>
   <li>A double ampersand (X && Y) means both X and Y must occur, though they may appear 
     in any order. • Brackets (&lbrack;...&rbrack;) group things together. Thus 
-	"&lbrack;please ‖ help ‖ me&rbrack; do this" means that one or more of the words 
-	please, help, and me must appear (in any order, and at most once). do this must 
-	always appear, with those words in that order.</li>
+    "&lbrack;please ‖ help ‖ me&rbrack; do this" means that one or more of the words 
+    please, help, and me must appear (in any order, and at most once). do this must 
+    always appear, with those words in that order.</li>
   <li>Every component or bracketed group may (or may not) be followed by one of these 
     modifiers:</li>
 </ul>
@@ -3246,7 +3244,7 @@ type like a color is permitted, it will be represented using
     optional.</li>
   <li>An exclamation point (!) indicates that the preceding value or bracketed group is 
     required, and thus must result in at least one value, even if the syntax would seem 
-	to indicate otherwise.</li>
+    to indicate otherwise.</li>
   <li>A pair of numbers in curly braces ({M,N}) indicates that the preceding value or 
     bracketed group is repeated at least M and at most N times.</li>
 </ul>
@@ -3415,7 +3413,7 @@ div.flexy .midpointed {align-self: center;}
 section.gallery h1 {align-self: stretch;}
 </pre>
       </td>
-	  </tr>
+      </tr>
     <tr>
       <td><b>Note</b></td>
       <td>As of early 2018, there are plans to have this property apply to many (or all) elements, 
@@ -4005,9 +4003,9 @@ div.fixbg {background-attachment: fixed;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
-	    &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
-		&vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
-		saturation &vert; color &vert; luminosity &rbrack;#</td>
+        &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
+        &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
+        saturation &vert; color &vert; luminosity &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -11831,7 +11829,7 @@ table.directory {table-display: auto;}
     <tr>
       <td><b>Values</b></td>
       <td><span class="newFont">start &vert; end &vert; left &vert; right &vert; center &vert; justify &vert; 
-	    match-parent &vert; start end</span></td>
+        match-parent &vert; start end</span></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -11878,7 +11876,7 @@ h4 {text-align: center;}
     <tr>
       <td><b>Values</b></td>
       <td>auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; 
-	    justify</td>
+        justify</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -11944,19 +11942,18 @@ h4 {text-align-last: right;}
         cases making the child elements appear to be decorated. Combinations of the 
         values are legal. Any time two text-decoration declarations apply to the same 
         element, the values of the two declarations are <i>not</i> combined. For example:
-		
-		<pre>
-		h1 {text-decoration: overline;}
-		h1, h2 {text-decoration: underline;}
-		</pre>
-		
-		Given the styles, h1 elements will be underlines with no overline because the 
-		value of underline completely overrides the value of overline. If h1 should have
-		both overlines and underlines, use the value overline underline for the h1 rule
-		and either move it after the h1, h2 rule or extend its selector to raise its
-		specificity.
-		
-		Use agents are not required to support blink.</td>
+<pre>
+h1 {text-decoration: overline;}
+h1, h2 {text-decoration: underline;}
+</pre>
+        
+        Given the styles, h1 elements will be underlines with no overline because the 
+        value of underline completely overrides the value of overline. If h1 should have
+        both overlines and underlines, use the value overline underline for the h1 rule
+        and either move it after the h1, h2 rule or extend its selector to raise its
+        specificity.
+        
+        Use agents are not required to support blink.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12048,17 +12045,17 @@ h2 {text-indent: −25px;}
     <tr>
       <td><b>Applies to</b></td>
       <td>All elements except table row groups, table rows, table column groups, and 
-	  table columns</td>
+      table columns</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
       <td>Defines how characters are oriented in text, potentially independent of their 
         writing mode (see writing-mode). When mixed, each character is aligned according 
         to its language defaults as compared to the writing direction; for example, 
-		mixed English and Japanese text written in a vertical writing mode would have 
-		the English characters sideways and the Japanese characters upright. upright 
-		forces all characters to be upright regardless of their language, and sideways 
-		forces all characters to be shown sideways.</td>
+        mixed English and Japanese text written in a vertical writing mode would have 
+        the English characters sideways and the Japanese characters upright. upright 
+        forces all characters to be upright regardless of their language, and sideways 
+        forces all characters to be shown sideways.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12151,8 +12148,8 @@ svg tspan {text-rendering: optimizeLegibility;}
         always painted behind the element's text, but in front of the element's background, 
         borders, and outline. Shadows are drawn from the first on top to the last on the 
         bottom. 
-		
-		The three length values that can be declared are, in order: horizontal 
+        
+        The three length values that can be declared are, in order: horizontal 
         offset, vertical offset, and blur distance. When positive, the offset values go 
         down and to the right; when negative, they go back and to the left. Blur values 
         cannot be negative..</td>
@@ -12313,11 +12310,11 @@ sub {position: relative; top: 0.5em;
       <td><b>Description</b></td>
       <td>Defines one or more transforms of an element. These transforms can occur in a 
         2D or a simulated 3D space, depending on how the transforms are declared. 
-		
-		The permitted values for <i>&lt;transform-function&gt;</i> are lengthy and 
-		complex. For a full list with minimalist descriptions, please consult the W3C's 
+        
+        The permitted values for <i>&lt;transform-function&gt;</i> are lengthy and 
+        complex. For a full list with minimalist descriptions, please consult the W3C's 
         documentation on <a href="http://w3.org/TR/css3-3d-transforms/#transform-functions" 
-		target="_blank" rel="noreferrer noopener">transform functions</a>.</td>
+        target="_blank" rel="noreferrer noopener">transform functions</a>.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12369,8 +12366,8 @@ li {transform: scale3d(1.2,1.7,0.85);}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the origin point for an element's transforms in either 2D or simulated 
-	    3D space. The marked-as-optional <i>&lt;length&gt;</i> values are what define a 
-		3D origin point; without them, the value is necessarily in 2D space.</td>
+        3D space. The marked-as-optional <i>&lt;length&gt;</i> values are what define a 
+        3D origin point; without them, the value is necessarily in 2D space.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12413,11 +12410,11 @@ li {transform-origin: 10% 10px 10em;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines whether an element transformed in simulated 3D space should have its 
-	    children rendered using a flat style, thus putting them all in the same 2D plane 
-		as the element, or attempt to use a 3D effect where children with positive or 
-		negative zindex values may be rendered "in front of" or "behind" the element's 
-		plane as it rotates. Elements whose overflow value is hidden cannot preserve 3D 
-		effects and are treated as though the value of transform-style is flat.</td>
+        children rendered using a flat style, thus putting them all in the same 2D plane 
+        as the element, or attempt to use a 3D effect where children with positive or 
+        negative zindex values may be rendered "in front of" or "behind" the element's 
+        plane as it rotates. Elements whose overflow value is hidden cannot preserve 3D 
+        effects and are treated as though the value of transform-style is flat.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12461,12 +12458,12 @@ li {transform-style: preserve-3d;}
     <tr>
       <td><b>Description</b></td>
       <td>A shorthand property that defins the aspects of on or more of an element's 
-	    transitions from one state to another.
+        transitions from one state to another.
 
-	    Even though it is not (as of this writing) explicitly defined in the value 
-		syntax, descriptive text in the specification defines that when two 
-		<i>&lt;time&gt;</i> values are declared, the first is the duration and the 
-		second is the delay. If only one is declared, it defines only the duration.</td>
+        Even though it is not (as of this writing) explicitly defined in the value 
+        syntax, descriptive text in the specification defines that when two 
+        <i>&lt;time&gt;</i> values are declared, the first is the duration and the 
+        second is the delay. If only one is declared, it defines only the duration.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12599,16 +12596,16 @@ h1 {transition-duration: 10s;}
       <td><b>Applies to</b></td>
       <td>All elements and :before and :after pseudo-elements</td>
     </tr>
-	<tr>
+    <tr>
       <td><b>Description</b></td>
       <td>Defines one or more properties that are transitioned from one state to another; 
         for example, color means that the foreground color of an element is transitioned 
         from the start color to the finish color. If a shorthand property is declared, 
         the transition parameters meant for that property are propagated to all the 
         properties represented by the shorthand. 
-		
-		The keyword all means all properties are transitioned. The keyword none prevents 
-		any properties from being transitioned, effectively shutting down the transition.</td>
+        
+        The keyword all means all properties are transitioned. The keyword none prevents 
+        any properties from being transitioned, effectively shutting down the transition.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12708,9 +12705,7 @@ h1 {transition-timing-function: linear;}
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-span.name {direction: rtl; unicode-bidi: embed;}
-</pre>
+<pre>span.name {direction: rtl; unicode-bidi: embed;}</pre>
       </td>
     </tr>
   </tbody>
@@ -12755,7 +12750,7 @@ span.name {direction: rtl; unicode-bidi: embed;}
       <td>Defines the vertical alignment of an inline element's baseline with respect to 
         the baseline of the line in which it resides. Negative length and percentage 
         values are permitted, and they lower the element instead of raising it.
-        
+        <br>
         In table cells, this property sets the alignment of the content of the cell 
         within the cell box. When applied to table cells, only the values baseline, 
         top, middle, and bottom are recognized.</td>
@@ -13103,7 +13098,7 @@ p.cramped {word-spacing: −0.5em;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- <h3>z-index</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table>
+<table style="width:500px;">
   <thead>
     <tr>
       <th width="200"><h3>z-index</h3></th>
@@ -13163,13 +13158,13 @@ p.cramped {word-spacing: −0.5em;}
       <td><b></b></td>
       <td></td>
     </tr>
-	<tr>
+    <tr>
       <td><b>Example</b></td>
       <td>
 <pre>
 </pre>
       </td>
-	</tr>
+    </tr>
   </tbody>
 </table>
 -->
