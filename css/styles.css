@@ -1,4 +1,6 @@
-/* styles.css of css3-reference */
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ styles.css of CSS3-Reference making css3-ref.bauska.org ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 img.displayed {
   display: block;
   margin: 0 auto; 
@@ -40,13 +42,13 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #00000;
-  background-color: #ffff00;  /* yellow */
+  color: #000;  /* black */
+  background-color: #ffff00;  /* pure (or mostly pure) yellow */
   text-decoration: underline;
 }
 a[href]:hover {
   text-decoration: underline; 
-  text-decoration-color: 0000ff;
+  text-decoration-color: #0000ff;  /* pure (or mostly pure) blue */
 }
 
 div {
@@ -90,7 +92,7 @@ details {
 }
 details > summary {
   padding: 2px 6px;
-  width: 12em;  /* 12em; */
+  width: 12em;
   background-color: #eee;  /* very light gray */
   border: none;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue */
@@ -156,7 +158,6 @@ pre {
 }
 pre code,
 pre .line-number {
-  /* Ukuran line-height antara teks di dalam tag <code> dan <span class="line-number"> harus sama! */
   font:normal normal 10px/12px consolas,Courier,Monospace;
   color:black;
   display:block;
