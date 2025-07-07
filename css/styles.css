@@ -101,7 +101,7 @@ details > p {
   border-radius: 0 0 10px 10px;
   background-color: #fff;  /* white */
   padding: 2px 6px;
-  margin: 0;
+  margin-left: 15px;
   box-shadow: 3px 3px 4px #00008b;  /* dark blue*/
 }
 details[open] > summary {
@@ -117,7 +117,7 @@ body {
   color: #000000;  /* black */
   text-align: left;
   padding: 10px;
-  margin: 15px;  /* was margin-left: 10px; */
+  margin-left: 15px;  /* was margin-left: 10px; */
 }
 
 #myBtn {
