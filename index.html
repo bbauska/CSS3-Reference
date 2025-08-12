@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS3-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ making css3-ref.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
@@ -40,10 +41,10 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ script function: scrollFunction() ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <script>
     <!-- get the button -->
     var mybutton = document.getElementById("myBtn");
@@ -59,37 +60,34 @@
       }
     }
 
-// <i>when the user clicks on the button, scroll to the table of contents near top of document.</i>
+  // <i>when the user clicks on the button, scroll to the table of contents near top of document.</i>
   function topFunction() {
     document.getElementById('table-of-contents').scrollIntoView();
   }
   </script>
-<h1 style="text-align:center;">CSS3 Reference Guide</h1>
-<h6 style="text-align:center;">(by Brian Bauska)</h6>
-<!--
-dl {
-  display: grid;
-  grid-gap: 4px 16px;
-  grid-template-columns: max-content;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin: 0;
-  grid-column-start: 2;
-}
--->
-<!--
-ul.no-bullets {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
-}
--->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS3-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of css3-ref.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <h1 style="text-align:center;">CSS3 Reference Guide</h1>
+  <h6 style="text-align:center;">(by Brian Bauska)</h6>
+  <!--
+  dl {
+    display: grid;
+    grid-gap: 4px 16px;
+    grid-template-columns: max-content;
+  }
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 0;
+    grid-column-start: 2;
+  }
+  -->
+  <!--
+  ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. css reference guide logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1690,7 +1688,7 @@ scoped to the element to which they are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-1-1">3.1. Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Universal Selector</h3>  -->
+<!-- Universal Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1715,7 +1713,7 @@ scoped to the element to which they are applied.</p>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Type Selector</h3>  -->
+<!-- Type Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1740,7 +1738,7 @@ scoped to the element to which they are applied.</p>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Descendant Selector</h3>  -->
+<!-- Descendant Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1770,7 +1768,7 @@ table tr td div ul li {color:purple;} element1 &gt; element2
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Child Selector</h3>  -->
+<!-- Child Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1800,7 +1798,7 @@ ul &gt; li {font-weight: bold;}
 </table>
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Adjacent Sibling Selector</h3>  -->
+<!-- Adjacent Sibling Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1831,7 +1829,7 @@ h1 + &ast; {margin-top: 0;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>General Sibling Selector</h3>  -->
+<!-- General Sibling Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1861,7 +1859,7 @@ h1 + &ast; {margin-top: 0;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Class Selector</h3>  -->
+<!-- Class Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1895,7 +1893,7 @@ a.external {font-style: italic;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>ID Selector</h3>  -->
+<!-- ID Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1929,7 +1927,7 @@ body#home {background: silver;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Simple Attribute Selector</h3>  -->
+<!-- Simple Attribute Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1957,7 +1955,7 @@ p&lbrack;class&rbrack; {border: 1px dotted silver;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Exact Attribute Value Selector</h3>  -->
+<!-- Exact Attribute Value Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -1985,7 +1983,7 @@ p&lbrack;class=&quot;urgent&quot;&rbrack; {color: red;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Partial Attribute Value Selector</h3>  -->
+<!-- Partial Attribute Value Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2016,7 +2014,7 @@ p&lbrack;class&#126;=&quot;warning&quot;&rbrack; {background: yellow;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Beginning Substring Attribute Value Selector</h3>  -->
+<!-- Beginning Substring Attribute Value Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2045,7 +2043,7 @@ p&lbrack;class&#94;=&quot;test-&quot;&rbrack; {background: yellow;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Ending Substring Attribute Value Selector</h3>  -->
+<!-- Ending Substring Attribute Value Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2073,7 +2071,7 @@ a&lbrack;href&dollar;=&quot;.pdf&quot;&rbrack; {font-style: italic;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Arbitrary Substring Attribute Value Selector</h3>  -->
+<!-- Arbitrary Substring Attribute Value Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2102,7 +2100,7 @@ div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>Language Attribute Selector</h3>  -->
+<!-- Language Attribute Selector  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2143,7 +2141,7 @@ pseudo-classes listed here apart is that they are intrinsically about patterns f
 in the structure of the document: for example, selecting every other paragraph or 
 elements that are the last children of their parent element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:empty</h3>  -->
+<!-- :empty  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2179,7 +2177,7 @@ li:empty {display: none;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:first-child</h3>  -->
+<!-- :first-child  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2210,7 +2208,7 @@ p:first-child {text-indent: 0; margin-top: 2em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:first-of-type</h3>  -->
+<!-- :first-of-type  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2241,7 +2239,7 @@ h2:first-of-type {color: fuchsia;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:lang</h3>  -->
+<!-- :lang  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2273,7 +2271,7 @@ html:lang(en) {background: silver;} <br>
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:last-child</h3>  -->
+<!-- :last-child  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2304,7 +2302,7 @@ p:last-child {margin-bottom: 2em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:last-of-type</h3>  -->
+<!-- :last-of-type  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2335,7 +2333,7 @@ h2:last-of-type {color: fuchsia;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:nth-child(<i>a</i>n±<i>b</i>)</h3>  -->
+<!-- :nth-child(an±b)  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2375,7 +2373,7 @@ tbody tr:nth-child(odd) {background-color: #EEF;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:nth-last-child(<i>a</i>n±<i>b</i>)</h3>  -->
+<!-- :nth-last-child(an±b)  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2412,7 +2410,7 @@ tbody tr:nth-last-child(odd) {
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:nth-last-of-type(<i>a</i>n±<i>b</i>)</h3>  -->
+<!-- :nth-last-of-type(an±b)  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2451,7 +2449,7 @@ img:nth-last-of-type(3n) {float: left;
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:nth-of-type(<i>a</i>n±<i>b</i>)</h3>  -->
+<!-- :nth-of-type(an±b)  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2489,7 +2487,7 @@ img:nth-of-type(3n) {float: right;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:only-child</h3>  -->
+<!-- :only-child  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2521,7 +2519,7 @@ table div:only-child {margin: 5px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>only-of-type</h3>  -->
+<!-- only-of-type  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2552,7 +2550,7 @@ section article:only-of-type {margin: 2em 0 3em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:root</h3>  -->
+<!-- :root  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2635,7 +2633,7 @@ with the document: whether styling different link states, highlighting
 an element that's the target of a fragment identifier, or styling form
 elements based on their being enabled or disabled.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>:active</h3>  
+<h3>:active</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Applies to</b>  Any interaction element</p>
 
@@ -2703,7 +2701,7 @@ a:focus {outline: 1px dotted red;}
 input:focus {background: yellow;}
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:hover</h3>  -->
+<!-- :hover  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2735,7 +2733,7 @@ p:hover {background: yellow;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:link</h3>  -->
+<!-- :link  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2766,7 +2764,7 @@ a:link {color: blue;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:target</h3>  -->
+<!-- :target  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2795,7 +2793,7 @@ a:link {color: blue;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>:visited</h3>  -->
+<!-- :visited  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2860,7 +2858,7 @@ p:after {content: &quot; &vert;; &quot;;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>::before</h3>  -->
+<!-- ::before  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -2891,7 +2889,7 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>::first-letter</h3>  -->
+<!-- ::first-letter  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3255,7 +3253,7 @@ keywords as values. For definitions of these keywords' meaning, see Chapter 2.</
 <h3 id="ch4-4-1">4.4. Properties</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>align-content</b>  <b>Inh. N Anim. N</b>  -->
+<!-- <b>align-content</b>  <b>Inh. N Anim. N</b>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3314,7 +3312,7 @@ aside {display: flex; align-content: center;}<br>
 </table>
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>align-items</b>  <b>Inh. N Anim. N</b>  -->
+<!-- <b>align-items</b>  <b>Inh. N Anim. N</b>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3364,7 +3362,7 @@ section.gallery {align-items: baseline;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>align-self</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- align-self Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3414,7 +3412,7 @@ section.gallery h1 {align-self: stretch;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>all</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- all Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3459,7 +3457,7 @@ section.gallery h1 {align-self: stretch;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>animation</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- animation Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3509,7 +3507,7 @@ h1 {animation: &apos;bounce&apos; 0.5s 0.33s ease-in-out infinite alternate;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>animation-delay Inh. N Anim. N</h3>  -->
+<!-- animation-delay Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3554,7 +3552,7 @@ a:hover {animation-delay: 400ms;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>animation-direction Inh. N Anim. N</h3> -->
+<!--animation-direction Inh. N Anim. N</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3602,7 +3600,7 @@ alternate, normal, normal;} #scanner {animation-direction: normal;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>animation-duration Inh. N Anim. N</h3>  -->
+<!-- animation-duration Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3647,7 +3645,7 @@ h1 {animation-duration: 10s, 5s, 2.5s, 1250ms;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>animation-iteration-count Inh. N Anim. N</h3> -->
+<!--animation-iteration-count Inh. N Anim. N</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3693,7 +3691,7 @@ ol.dance {animation-iteration-count: infinite;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3><b>animation-name</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- animation-name Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3739,7 +3737,7 @@ h2 {animation-name: flip;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3><b>animation-play-state</b>  <b>Inh. N Anim. N</b></h3> -->
+<!--<b>animation-play-state</b>  <b>Inh. N Anim. N</b></h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3781,7 +3779,7 @@ running, paused, running;} table {animation-play-state: running;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>animation-timing-function</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- animation-timing-function Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3831,7 +3829,7 @@ linear;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>backface-visibility</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- backface-visibility Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3876,7 +3874,7 @@ span.cubeside {backface-visibility: visible;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background</b>   <b>Inh. N Anim. P</b></h3>  -->
+<!-- background Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3937,7 +3935,7 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background-attachment</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- background-attachment Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -3981,7 +3979,7 @@ div.fixbg {background-attachment: fixed;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background-blend-mode</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- background-blend-mode Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4035,7 +4033,7 @@ li.shadowed {background-blend-mode: darken;} aside
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>background-clip Inh. N Anim. N</h3>  -->
+<!-- background-clip Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4081,7 +4079,7 @@ body {background-clip: content-box;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>background-color  Inh. N Anim. Y</h3>  -->
+<!-- background-color  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4130,7 +4128,7 @@ pre {background-color: #FF9;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background-image</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- background-image Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4176,7 +4174,7 @@ url(http://www.pix.org/dots.png);}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background-origin</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- background-origin Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4227,7 +4225,7 @@ h1 {background-origin: content-box, padding-box;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>background-position  Inh. N Anim. Y</h3>  -->
+<!-- background-position  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4287,7 +4285,7 @@ right, 50% 75%, 0 40px;} pre
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background-repeat</b>  <b>Inh. N Anim. N</b></h3>  -->
+<!-- background-repeat Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4343,7 +4341,7 @@ repeat-y, round space, repeat;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3><b>background-size</b>  <b>Inh. N Anim. Y</b></h3>  -->
+<!-- background-size Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4393,7 +4391,7 @@ div.photo {background-size: cover;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>border    Inh. N Anim. P</h3>  -->
+<!-- border    Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4443,7 +4441,7 @@ p.warning {border: double 5px red;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>border-bottom Inh. N Anim. P</h3>  -->
+<!-- border-bottom Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4492,7 +4490,7 @@ a:active {border-bottom: purple 2px dashed;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>border-bottom-color Inh. N Anim. Y</h3>  -->
+<!-- border-bottom-color Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4536,7 +4534,7 @@ a:active {border-bottom-color: purple;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>border-bottom-left-radius Inh. N Anim. Y</h3>  -->
+<!-- border-bottom-left-radius Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4586,7 +4584,7 @@ h2 {border-bottom-left-radius: 1em 10px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>border-bottom-right-radius Inh. N Anim. Y</h3>  -->
+<!-- border-bottom-right-radius Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4635,7 +4633,7 @@ h2 {border-bottom-right-radius: 1em 10px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-bottom-style Inh. N Anim. N</h3>  -->
+<!-- border-bottom-style Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4679,7 +4677,7 @@ a:active {border-bottom-style: dashed;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-bottom-width Inh. N Anim. Y</h3>  -->
+<!-- border-bottom-width Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4724,7 +4722,7 @@ a:active {border-bottom-width: 2px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-collapse Inh. Y Anim. Y</h3>  -->
+<!-- border-collapse Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4770,7 +4768,7 @@ a:active {border-bottom-width: 2px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-color  Inh. N Anim. Y</h3>  -->
+<!-- border-color  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4815,7 +4813,7 @@ a:visited {border-color: maroon;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-image  Inh. N Anim. P</h3>  -->
+<!-- border-image  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4872,7 +4870,7 @@ aside {border-image: url(asides.png)
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-image-outset Inh. N Anim. Y</h3>  -->
+<!-- border-image-outset Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4920,7 +4918,7 @@ div#pow {border-image-outset: 10 17 13 5;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-image-repeat Inh. N Anim. N</h3>  -->
+<!-- border-image-repeat Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -4967,7 +4965,7 @@ aside {border-image-repeat: stretch round;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-image-slice Inh. N Anim. P</h3>  -->
+<!-- border-image-slice Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5028,7 +5026,7 @@ aside {border-image-slice: 100 50 150;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-image-source Inh. N Anim. N</h3>  -->
+<!-- border-image-source Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5071,7 +5069,7 @@ aside {border-image-source: url(asides.png);}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-image-width Inh. N Anim. Y</h3>  -->
+<!-- border-image-width Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5129,7 +5127,7 @@ div#pow{border-image-width: 25px 35;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-left  Inh. N Anim. P</h3>  -->
+<!-- border-left  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5178,7 +5176,7 @@ double black 4px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-left-color Inh. N Anim. Y</h3>  -->
+<!-- border-left-color Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5222,7 +5220,7 @@ pre {border-left-color:  black;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-left-style Inh. N Anim. N</h3>  -->
+<!-- border-left-style Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5266,7 +5264,7 @@ pre {border-left-style: double;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-left-width Inh. N Anim. Y</h3>  -->
+<!-- border-left-width Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5312,7 +5310,7 @@ pre {border-left-width: 4px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-radius Inh. N Anim. Y</h3>  -->
+<!-- border-radius Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5373,7 +5371,7 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-right Inh. N Anim. P</h3>  -->
+<!-- border-right Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5418,7 +5416,7 @@ h3 {border-right: cyan 1em inset;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-right-color Inh. N Anim. Y</h3>  -->
+<!-- border-right-color Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5462,7 +5460,7 @@ h3 {border-right-color: cyan;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-right-style Inh. N Anim. N</h3>  -->
+<!-- border-right-style Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5506,7 +5504,7 @@ h3 {border-right-style: inset;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-right-width Inh. N Anim. Y</h3>  -->
+<!-- border-right-width Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5552,7 +5550,7 @@ h3 {border-right-width: 1em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-spacing Inh. Y Anim. Y</h3>  -->
+<!-- border-spacing Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -5601,7 +5599,7 @@ table {border-spacing: 3px 5px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>border-style Inh. N Anim. N</h3>  -->
+<!-- border-style Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7840,7 +7838,7 @@ body {display: grid; grid:
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>grid-area Inh. N Anim. N</h3>  -->
+<!-- grid-area Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -10906,12 +10904,12 @@ h1 {padding-bottom: 2%;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>padding-left  Inh. N Anim. Y</h3>  -->
+<!-- padding-left  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
-      <th width="200"><h3>padding-left</h3></th>
+      <th width="200">padding-left</h3></th>
       <th align="right"><h3>Inh. N Anim. Y</h3></th>
     </tr>
   </thead>
@@ -10954,7 +10952,7 @@ pre {padding-left: 3em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>padding-right  Inh. N Anim. Y</h3>  -->
+<!-- padding-right Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11003,7 +11001,7 @@ ol {padding-right: 5em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>padding-top  Inh. N Anim. Y</h3>  -->
+<!-- padding-top Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11046,7 +11044,7 @@ ol {padding-right: 5em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>page  Inh. N Anim. N</h3>  -->
+<!-- page  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11093,7 +11091,7 @@ table.summary {page: wide;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>page-break-after  Inh. N Anim.</h3>  -->
+<!-- page-break-after  Inh. N Anim.  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11147,7 +11145,7 @@ avoid;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>page-break-before  Inh. N Anim. N</h3>  -->
+<!-- page-break-before  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11198,7 +11196,7 @@ h2 {page-break-before: avoid;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>page-break-inside  Inh. Y Anim. N</h3>  -->
+<!-- page-break-inside  Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11248,7 +11246,7 @@ table {page-break-inside:
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>perspective  Inh. N Anim. Y</h3>  -->
+<!-- perspective  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11293,7 +11291,7 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>perspective-origin  Inh. N Anim. P</h3>  -->
+<!-- perspective-origin  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11338,7 +11336,7 @@ div {perspective-origin: 0 50%;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>position Inh.  N Anim. N</h3>  -->
+<!-- position Inh.  N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11383,7 +11381,7 @@ div {perspective-origin: 0 50%;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>quotes  Inh. Y Anim. N</h3>  -->
+<!-- quotes  Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11428,7 +11426,7 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>resize  Inh. N Anim. N</h3>  -->
+<!-- resize  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11469,7 +11467,7 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>right  Inh. N Anim. P</h3>  -->
+<!-- right  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11514,7 +11512,7 @@ div#footer {position: fixed; right: 0;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  shape-image-threshold  Inh. N Anim. Y</h3>  -->
+<!--  shape-image-threshold  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11563,7 +11561,7 @@ img.floated {shape-image-threshold: 0.1;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>shape-margin  Inh. N Anim. Y</h3>  -->
+<!-- shape-margin  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11612,7 +11610,7 @@ img.floated {shape-image-threshold: 0.1;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>shape-outside  Inh. N Anim. P</h3>  -->
+<!-- shape-outside  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11662,7 +11660,7 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>size  Inh. N Anim. N</h3>  -->
+<!-- size  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11719,7 +11717,7 @@ landscape;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>tab-size  Inh. Y Anim. Y</h3> -->
+<!--tab-size  Inh. Y Anim. Y</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11763,7 +11761,7 @@ p.typer {tab-size: 0.25in;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>table-layout  Inh. Y Anim. N</h3>  -->
+<!-- table-layout  Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11809,7 +11807,7 @@ table.directory {table-display: auto;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-align  Inh. Y Anim. N</h3>  -->
+<!-- text-align  Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11856,7 +11854,7 @@ h4 {text-align: center;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-align-last  Inh. Y Anim. N</h3>  -->
+<!-- text-align-last  Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11902,7 +11900,7 @@ h4 {text-align-last: right;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-decoration  Inh. N Anim. N</h3>  -->
+<!-- text-decoration  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -11961,7 +11959,7 @@ u.old {text-decoration: line-through underline;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-indent  Inh. Y Anim. Y</h3>  -->
+<!-- text-indent  Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12013,7 +12011,7 @@ h2 {text-indent: −25px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-orientation  Inh. Y Anim. Y</h3>  -->
+<!-- text-orientation  Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12063,7 +12061,7 @@ h2 {text-indent: −25px;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-rendering  Inh. Y Anim. Y</h3>  -->
+<!-- text-rendering  Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12108,7 +12106,7 @@ svg tspan {text-rendering: optimizeLegibility;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-shadow Inh. N Anim. Y</h3>  -->
+<!-- text-shadow Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12159,7 +12157,7 @@ h2 {text-shadow: 0 −3px 0.5em blue;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>text-transform  Inh. Y Anim. N</h3>  -->
+<!-- text-transform  Inh. Y Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12204,7 +12202,7 @@ h1 {text-transform: uppercase;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>top  Inh. N Anim. P</h3>  -->
+<!-- top  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12264,7 +12262,7 @@ sub {position: relative; top: 0.5em;
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transform   Inh. N Anim. P</h3>  -->
+<!-- transform  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12321,7 +12319,7 @@ li {transform: scale3d(1.2,1.7,0.85);}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transform-origin   Inh. N Anim. P</h3>  -->
+<!-- transform-origin   Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12374,7 +12372,7 @@ li {transform-origin: 10% 10px 10em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transform-style Inh. N Anim. N</h3>  -->
+<!-- transform-style Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12420,7 +12418,7 @@ li {transform-style: preserve-3d;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transition  Inh. N Anim. N</h3>  -->
+<!-- transition  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12470,7 +12468,7 @@ h1 {transition: linear all 10s;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transition-delay Inh. N Anim. N</h3>  -->
+<!-- transition-delay Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12519,7 +12517,7 @@ h1 {transition-delay: 0;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transition-duration  Inh. N Anim. N</h3>  -->
+<!-- transition-duration  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12563,7 +12561,7 @@ h1 {transition-duration: 10s;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transition-property  Inh. N Anim. N</h3>  -->
+<!-- transition-property  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12612,7 +12610,7 @@ h1 {transition-property: all;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>transition-timing-function  Inh. N Anim. N</h3>  -->
+<!-- transition-timing-function  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12663,7 +12661,7 @@ h1 {transition-timing-function: linear;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>unicode-bidi  Inh. N Anim. Y</h3>  -->
+<!-- unicode-bidi  Inh. N Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12947,7 +12945,7 @@ table {width: 80%;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>word-break  Inh. Y Anim. Y</h3>  -->
+<!-- word-break  Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -12993,7 +12991,7 @@ p {word-break: normal;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>word-spacing Inh. Y Anim. Y</h3>  -->
+<!-- word-spacing Inh. Y Anim. Y  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -13040,7 +13038,7 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h3>writing-mode  Inh. Y Anim. Y</h4>  -->
+<!-- writing-mode  Inh. Y Anim. Y</h4>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -13089,7 +13087,7 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <h3>z-index</h3> -->
+<!--z-index</h3> -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
