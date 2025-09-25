@@ -24,6 +24,7 @@
   <meta name="msapplication-TileImage" content="./images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
+
   <!-- viewport and seo -->
   <meta name="title" content="CSS3 Reference Guide">
   <meta name="description" content="CSS3 Reference Guide - during this course, 
@@ -31,7 +32,7 @@
     and video tags; Use the Webcam; Draw and animate Web graphics; Discover HTML5 form 
     features; Test basic APIs; Practice coding techniques.">
   <meta name="keywords" content="CSS3,Reference,Guide,CSS3 Reference Guide,Intro,to,JS,
-    JavaScript,Silus Gaming World">
+    JavaScript,Silus Gaming World,#Silus-GW,#SilusGW,#Silus-Gaming-World,#SilusGamingWorld">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   <meta name="author" content="Brian Bauska">
@@ -49,7 +50,7 @@
     <!-- get the button -->
     var mybutton = document.getElementById("myBtn");
 
-    <!-- <i>when the user scrolls down 10px from the top of the document, show the "Top" button</i> -->
+    <!-- when the user scrolls down 10px from the top of the document, show the "Top" button -->
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
@@ -60,7 +61,7 @@
       }
     }
 
-  // <i>when the user clicks on the button, scroll to the table of contents near top of document.</i>
+  // when the user clicks on the button, scroll to the table of contents near top of document.
   function topFunction() {
     document.getElementById('table-of-contents').scrollIntoView();
   }
@@ -98,9 +99,9 @@
   style="width:20%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--  <h2 id="css3-refguide">CSS3 Reference Guide</h2>  -->
+<!-- <h2 id="css3-refguide">CSS3 Reference Guide</h2>  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="table-of-contents">Table of Contents</h3>
+<h3 id="table-of-contents">Table of Contents: CSS3 Reference Guide</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="preface">Preface</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -186,10 +187,12 @@ following sections.</p>
 <p>In HTML, style information can be specified for an individual element via the style 
 attribute. The value of a style attribute is a <i>declaration block</i> (see the section 
 "Rule Structure" on page 5) without the curly braces:</p>
+
 <pre>
 &lt;p style=&quot;color: red; background: yellow;&quot;&gt;Look out! 
 This text is alarmingly presented!&lt;/p&gt;
 </pre>
+
 <p>Note that as of this writing, only the content of a single declaration block can be 
 used as a style attribute value. For example, it is not possible to place hover styles 
 (using :hover) in a style attribute, nor can &#64;import be used in this context.</p>
@@ -528,9 +531,9 @@ Here's how the cascade works:</p>
     Declarations that appear in an imported stylesheet are considered to come before 
     all declarations within the stylesheet that imports them.</li>
 </ol>
-<p>Any presentational hints that come from non-CSS sources (e.g., the preference dialog 
-within a browser) are given the same weight as the user agent's default styles (see 
-step 2 above).</p>
+
+<p>Any presentational hints that come from non-CSS sources (e.g., the preference dialog within a 
+browser) are given the same weight as the user agent's default styles (see step 2 above).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-6-1">1.6. Element Classification</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -554,9 +557,9 @@ else in HTML are nonreplaced elements.</p>
 not directly represented by document content. The most familiar HTML example is the img 
 element, which is replaced by an image file external to the document itself. In fact, 
 img itself has no actual content, as we can see by considering a simple example:</p>
-<pre>
-  <b>&lt;img</b> src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;<b>&gt;</b>
-</pre>
+
+<pre><b>&lt;img</b> src=&quot;howdy.gif&quot; alt=&quot;Hi&quot;<b>&gt;</b></pre>
+
 <p>There is no content contained in the element---only an element name and attributes. 
 Only by replacing the element's lack of content with content found through other means 
 (in this case, loading an external image specified by the src attribute) can the element 
@@ -688,9 +691,7 @@ determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul style="list-style: none;">
   <li>Any string of characters not contained within an inline element. Thus, in the markup:<br>
-
       <b>&lt;p&gt;</b>I&apos;m <b>&lt;em&gt;</b>so<b>&lt;/em&gt;</b> happy!<b>&lt;/p&gt;</b><br>
-
     the sequences "I'm " and " happy!" are anonymous text. Note that the spaces are part 
     of the anonymous text, as a space is a character like any other.</li>
 </ul>
@@ -981,49 +982,58 @@ labeled with gridline names, or left unlabeled and later addressed using numbers
 <p>The formal syntax for defining grid track sizes is quite complicated, but the 
 components are relatively simple to list and explain:</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark><i>&lt;length&gt; &vert; &lt;percentage&gt;</i></mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Any non-negative length or percentage value. Thus, 5em defines a 5-em gap between 
 grid lines, whereas 5% creates a gap between lines that is 5% of the total grid length in 
 the given direction (i.e., the horizontal length for grid rows, and the vertical length 
 for columns).</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark><i>&lt;flex&gt;</i></mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A positive real number with the unit identifier fr (e.g., 2fr or 3.14fr) which defines 
 a <i>flex factor</i> for the grid track.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark>min-content</mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Sets the grid track's width (or height) to be as small as possible while still 
 containing all th  content within the grid track. For example, column tracks that 
 contain only text will become as narrow as the widest run of text that cannot be line-
 broken within the track.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark>max-content</mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Sets the grid track's width (or height) to be large enough to contain the largest 
 rendering of all the content within the grid track. For example, column tracks that 
 contain only text will become as wide as the longest run of text, <i>without</i> any 
 line-wrapping of the text.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark>auto</mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In most cases, auto is equivalent to the largest minimum size of the grid items 
 occupying the grid track; that is, once all the minimum sizes of the grid items in the 
 track have been determined, the track is made as wide as the widest of those minimums. 
 When auto is used as a maximum value (see minmax() later in this list), it is identical 
 to max-content.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark>minmax(<i>&lt;min&gt;,&lt;max&gt;</i>)</mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Sets a range of sizes outside which the grid track cannot grow or shrink. Either <i>&lt;min&gt;</i> 
 or <i>&lt;max&gt;</i> can be a <i>&lt;length&gt;</i> or <i>&lt;percentage&gt;</i> value, min-content, 
 or max-content. <i>&lt;max&gt;</i> can be a <i>&lt;flex&gt;</i> value, but <i>&lt;min&gt;</i> cannot. 
 If the minimum value computes to be larger than the maximum computed value, the maximum sizing is ignored 
 and the minimum size is used as a minimum.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark>fit-content( &lbrack; <i>&lt;length&gt; &vert; &lt;percentage&gt;</i> &rbrack; )</mark></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Equivalent to minmax(auto,max-content) with an exception: if the track's size is larger than the 
 auto value's computed value, that size can't go higher than the given value (a <i>&lt;length&gt;</i> 
 or <i>&lt;percentage&gt;</i>). This is intended to let authors declare a maximum track size while 
 still letting the track size be content-bound below that maximum.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><mark>repeat( &lbrack; <i>&lt;integer&gt; &vert;</i> auto-fill <i>&vert;</i> auto-fit &rbrack;, 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <i>&lt;track-list&gt;</i> )</mark></b></h5>
 <p>Allows authors to repeat a pattern of grid track sizes as many times as they like. The 
 <i>&lt;integer&gt;</i> value must be positive. auto-fill and auto-fit delegate the number
@@ -1031,18 +1041,20 @@ of tracks to the user agent. <i>&lt;track-list&gt;</i> can be any valid combinat
 track sizes.</p>
 
 <p>There are three kinds of track sizing. These are:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><i><mark>Fixed</mark></i></b></h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Tracks are given a size in absolute lengths (such as px or em), or sized with %. 
 Percentage values count as fixed track sizes because they are always the same for a 
 given grid container size. The tracks' sizing does not depend on their contents.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><i><mark>Flexible</mark></i></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tracks are given a flex or fractional sizing via the fr 
 unit. Their sizing does not depend on their contents.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b><i><mark>Intrinsic</mark></i></b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The tracks' size is dependent on the things found within them; i.e., with min-content, 
 max-content, fit-content(), and auto. These tracks may always be the same size for a given 
 container size and set of content, but they are not regarded as fixed for layout purposes 
@@ -1432,18 +1444,21 @@ things.</p>
 <h4><b>Absolute Length Units</b></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The available absolute units are:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Centimeters</i> (cm)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The centimeters found on rulers the world over. There are 2.54 centimeters to an inch, and 
 1 centimeter equals 0.394 inches. The same mapping warnings that applied to inches also apply 
 to centimeters.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Millimeters</i> (mm)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are 10 millimeters to a centimeter, so you get 25.4 millimeters to an inch, and 1 
 millimeter equals 0.0394 inches. Bear in mind the previous warnings about mapping lengths.
 to displays.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Quarter-millimeters</i> (q)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Exactly what they say they are: one-fourth of a millimeter. 
 In other words, 4q equals one millimeter, and 400q equals one centimeter. Again, bear in mind 
 the previous mapping warnings.</p>
@@ -1453,15 +1468,17 @@ the previous mapping warnings.</p>
 display device is usually approximate at best, because many systems have no concept of the 
 relation of their display areas to "realworld" measurements such as inches. Thus, inches should 
 be used with extreme caution in screen design.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Points</i> (pt)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Points are standard typographical measures used by printers and typesetters for centuries and 
 by word-processing programs for decades. By modern definition, there are 72 points to an inch. 
 Therefore, the capital letters of text set to 12 points should be 1/6 of an inch tall. For example, 
 p {font-size: 18pt;} is equivalent to p {font-size: 0.25in;}, assuming proper mapping of lengths to 
 the display environment (see previous comments).</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Picas</i> (pc)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Another typographical term. A pica is equivalent to 12 points, which means there are 6 picas to 
 an inch. The capital letters of text set to 1 pica should be 1/6 of an inch tall. For example, p 
 {font-size: 1.5pc;} would set text to be the same size as the example declarations found in the 
@@ -1470,56 +1487,62 @@ definition of points. Keep in mind the previous warnings.</p>
 <h4>Relative Length Units</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The available relative units are:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Em-height</i> (em)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This refers to the em-height of a given font face. In CSS, the em-height is equivalent to the 
 height of the character box for the font face, which is to say the computed value of font-size. 
 Ems can be used to set relative sizes for fonts; for example, font-size: 1.2em is the same as 
 saying fontsize: 120%.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Root element em-height</i> (rem)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Equal to the em-height of the root element (in HTML, the html element).</p>
 
 <h5><i>X-height</i> (ex)</h5>
 <p>This refers to the x-height of the font face, which is to say the height of the lowercase "x" 
 character in the given font face. However, the vast majority of font faces do not include their 
 x-height, so many browsers approximate it (poorly) by simply setting 1ex to be equal to 0.5em.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>ZERO width</i> (ch)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This refers to the width of a single zero (Unicode U+0300, "ZERO") in the current font family 
 and size. This is often, but erroneously, assumed to mean "one character." This will only be true 
 in monospace fonts, where all characters are the same width.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><b>Length Values</b></h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Since most proportional fonts have zeros that are slimmer than the alphabetic symbols, setting 
 something like width: 60ch will often result in lines of text with fewer than 60 characters.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Pixels</i> (px)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A pixel is usually thought of as a small box on a display, but CSS defines pixels more 
 abstractly. In CSS terms, a pixel is defined to be about the size required to yield 96 units 
 per inch. Many user agents ignore this definition in favor of simply addressing the pixels 
 on the display, but others (such as those on high-resolution mobile devices) go the CSS 
 route, treating each px as being multiple physical on-screen pixels.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Viewport width unit</i> (vw)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This unit is calculated with respect to the viewport's width, which is divided by 100. If the 
 viewport is 937 pixels wide, for example, 1vw is equal to 9.37px. If the viewport's width changes, 
 say by dragging the browser window to be wider or narrower, the value of vw changes along with it.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Viewport height unit</i> (vh)</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This unit is calculated with respect to the viewport's height, which is divided by 100. If 
 the viewport is 650 pixels tall, for example, 1vh is equal to 6.5px. If the viewport's height 
 changes, say by dragging the browser window to be taller or shorter, the value of vh changes 
 along with it.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Viewport minimum unit</i> (vmin)</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This unit is 1/100 of the viewport's width or height, whichever is <i>lesser</i>. Thus, 
 given a viewport that is 937 pixels wide by 650 pixels tall, 1vmin is equal to 6.5px.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Viewport maximum unit</i> (vmax)</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This unit is 1/100 of the viewport's width or height, whichever is <i>greater</i>. Thus, 
 given a viewport that is 937 pixels wide by 650 pixels tall, 1vmax is equal to 9.37px.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1580,23 +1603,22 @@ circumstances. Its syntactical structure is rather complicated:</p>
 &rbrack;
 </pre>
 
-<p>That might seem a little convoluted and repetitive, but it's all down to the subtly 
-complex patterns that this value type has to allow, such as center, bottom right, 50% 
-center, left 77px, and so on. The notation used here is described in "Value Syntax 
-Conventions" on page 73.</p>
+<p>That might seem a little convoluted and repetitive, but it's all down to the subtly complex 
+patterns that this value type has to allow, such as center, bottom right, 50% center, left 77px, 
+and so on. The notation used here is described in "Value Syntax Conventions" on page 73.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-12-1">2.12. Strings</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either single 
-or double quotes. If a string needs to include the same quote that encloses it, it must 
-be escaped. For example,</p>
+<p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either single or double 
+quotes. If a string needs to include the same quote that encloses it, it must be escaped. For 
+example,</p>
 
-<p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at 
-once!&quot;. If a newline is needed within a string, it is represented as \A, which
-is the Unicode codepoint for the line feed character. Any Unicode character can be 
-represented using an escaped codepoint reference; thus, a left curly double quotation 
-mark can be represented with \201C. If a string does contain a line feed for legibility 
-reasons, it must be escaped and will be removed when processing the string.</p>
+<p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at once!&quot;. 
+If a newline is needed within a string, it is represented as \A, which is the Unicode codepoint for 
+the line feed character. Any Unicode character can be represented using an escaped codepoint 
+reference; thus, a left curly double quotation mark can be represented with \201C. If a string 
+does contain a line feed for legibility reasons, it must be escaped and will be removed when 
+processing the string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-13-1">2.13. Identifiers</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1610,10 +1632,9 @@ the author should take care to never define an identifier identical to a valid k
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-14-1">2.14. Attribute Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In a few CSS properties, it's possible to pull in the value of an HTML attribute 
-defined for the element being styled. This is done with the attr() value. As of early 
-2018, this is almost exclusively done with generated content, using the content 
-property.</p>
+<p>In a few CSS properties, it's possible to pull in the value of an HTML attribute defined for 
+the element being styled. This is done with the attr() value. As of early 2018, this is almost 
+exclusively done with generated content, using the content property.</p>
 
 <p>For example, <b>h2::before {content: &quot;&lbrack;&quot; attr(ID) &quot;&rbrack; &quot;;}</b> 
 will insert an opening square bracket, the ID of the h2 element, and then a closing square 
@@ -1622,46 +1643,43 @@ addressed in this manner.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-15-1">2.15. Calculation Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Calculation values take the form calc(), with an equation inside the
-parentheses. calc() can be used wherever <i>&lt;length&gt;</i>, <i>&lt;frequency&gt;</i>,
-<i>&lt;angle&gt;</i>, <i>&lt;time&gt;</i>, <i>&lt;percentage&gt;</i>, <i>&lt;number&gt;</i>, or
-<i>&lt;integer&gt;</i> values are allowed. You can also use all these units.</p>
+<p>Calculation values take the form calc(), with an equation inside the parentheses. calc() can 
+be used wherever <i>&lt;length&gt;</i>, <i>&lt;frequency&gt;</i>, <i>&lt;angle&gt;</i>, 
+<i>&lt;time&gt;</i>, <i>&lt;percentage&gt;</i>, <i>&lt;number&gt;</i>, or <i>&lt;integer&gt;</i> 
+values are allowed. You can also use all these units.</p>
 
 <p><b>Identifiers</b></p>
-<p>types within a calc() value, though there are some limitations to keep
-in mind.</p>
 
-<p>Inside the parentheses, you can construct simple mathematical
-expressions. The permitted operators are + (addition), -- (subtraction),
-&ast; (multiplcation), and / (division), as well as parentheses. These
-follow the traditional PEMDAS (parentheses, exponents, multiplication,
-division, addition, subtraction) precedence order---although in this
-case it's really just PMDAS, since as of early 2018, exponents are not
-permitted in calc().</p>
+<p>types within a calc() value, though there are some limitations to keep in mind.</p>
 
-<p>The basic limitation is that calc() does simple type-checking to make sure that units 
-are compatible:</p>
+<p>Inside the parentheses, you can construct simple mathematical expressions. The permitted 
+operators are + (addition), -- (subtraction), &ast; (multiplcation), and / (division), as well 
+as parentheses. These follow the traditional PEMDAS (parentheses, exponents, multiplication,
+division, addition, subtraction) precedence order---although in this case it's really just PMDAS, 
+since as of early 2018, exponents are not permitted in calc().</p>
+
+<p>The basic limitation is that calc() does simple type-checking to make sure that units are 
+compatible:</p>
 <ol>
-  <li>To either side of a + or -- operator, both values must have the same
-    unit type or must both be <i>&lt;number&gt;</i> and/or <i>&lt;integer&gt;</i> values
-    (in which case, the result is a <i>&lt;number&gt;</i>).</li>
-  <li>Given a &ast; operator, one of the values involved must be a <i>&lt;number&gt;</i> 
-    (which, remember, includes <i>&lt;integer&gt;</i> values).</li>
+  <li>To either side of a + or -- operator, both values must have the same unit type or must both 
+    be <i>&lt;number&gt;</i> and/or <i>&lt;integer&gt;</i> values (in which case, the result is 
+	a <i>&lt;number&gt;</i>).</li>
+  <li>Given a &ast; operator, one of the values involved must be a <i>&lt;number&gt;</i> (which, 
+    remember, includes <i>&lt;integer&gt;</i> values).</li>
   <li>Given a / operator, the value on the <i>right</i> side must be a <i>&lt;number&gt;</i>. If 
     the left-side value is an <i>&lt;integer&gt;</i>, the result is a <i>&lt;number&gt;</i>. 
     Otherwise, the result is of the unit used on the left side.</li>
   <li>Any circumstance that creates division by zero makes the value invalid.</li>
 </ol>
-<p>There's one more notable limitation: whitespace is <i>required</i> to either
-side of the + and - operators, while it is not for &ast; and /. This avoids
-ambiguity with respect to numeric values, which can be negative.</p>
+<p>There's one more notable limitation: whitespace is <i>required</i> to either side of the + and 
+- operators, while it is not for &ast; and /. This avoids ambiguity with respect to numeric values, 
+which can be negative.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-16-1">2.16. Variable Values</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>As this book was being finished in early 2018, a new capability was
-being added to CSS. The technical term for this is <i>custom properties</i>,
-even though what these really do is create (sort of) variables in your
-CSS. They do not, contrary to their name, create special CSS properties,
+<p>As this book was being finished in early 2018, a new capability was being added to CSS. The 
+technical term for this is <i>custom properties</i>, even though what these really do is create 
+(sort of) variables in your CSS. They do not, contrary to their name, create special CSS properties,
 in the sense of properties like color or font.</p>
 
 <p>Custom properties are defined by giving a custom identifier a value, like this:</p>
@@ -1672,17 +1690,17 @@ in the sense of properties like color or font.</p>
 }
 </pre>
 
-<p>The important thing is that any custom identifier of this type begins with <i>two</i> 
-hyphens (&dash;-). Anything else, and the identifier will not be recognized, meaning the 
-variable definition will fail.</p>
+<p>The important thing is that any custom identifier of this type begins with <i>two</i> hyphens 
+(&dash;-). Anything else, and the identifier will not be recognized, meaning the variable definition 
+will fail.</p>
 
 <p>The defined value can then be invoked later on using a var() value type, like this:</p>
 
 <pre><b>h1</b> {<b>color</b>: var(&dash;-mainColor);}</pre>
 
-<p>Note that these names are case-sensitive, so &dash;-maincolor and
-&dash;-MainColor are completely separate identifiers. Custom properties are
-scoped to the element to which they are applied.</p>
+<p>Note that these names are case-sensitive, so &dash;-maincolor and &dash;-MainColor are 
+completely separate identifiers. Custom properties are scoped to the element to which they 
+are applied.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch3">3. CHAPTER 3 Selectors and Queries</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2644,6 +2662,7 @@ to activate elements, and other elements can in theory be activated, although CS
 doesn't define them.</p>
 
 <p><b>Examples</b></p>
+
 <pre>
 a:active {color: red;}
 &ast;:active {background: blue;}
@@ -2657,6 +2676,7 @@ a:active {color: red;}
 such as a checked checkbox or a filled radio button.</p>
 
 <p><b>Examples</b></p>
+
 <pre>
 input:checked {
  outline: 3px solid rgba(127,127,127,0.5);}
@@ -2667,6 +2687,7 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
 <h3>:disabled</h3> 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Applies to</b>  Any interaction element</p>
+
 <p><b>Description</b>  Matches user interface elements that are not able to accept user 
 input because of language attributes or other nonpresentational means; for example, 
 &lt;input type=&quot;text&quot; disabled&gt; in HTML5. Note that :disabled does 
@@ -2674,21 +2695,25 @@ input because of language attributes or other nonpresentational means; for examp
 with properties like position or display.</p>
 
 <p><b>Example</b></p>
+
 <pre>input:disabled {opacity: 0.5;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:enabled</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Applies to</b>  Any interaction element</p>
+
 <p><b>Description</b>  Matches user interface elements that are able to accept user input 
 and that can be set to "enabled" and "disabled" states through the markup language itself. 
 This includes any form input element in (X)HTML, but does not include hyperlinks.</p>
 
 <p><b>Example</b></p>
+
 <pre>input:enabled {background: #FCC;}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>:focus</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Applies to</b>  Any interaction element</p>
+
 <p><b>Description</b>  Matches an element during the period in which it has focus. One 
 example from HTML is an input box that has the text-input cursor within it such that 
 when the user starts typing, text will be entered into that box. Other elements, such 
@@ -2696,6 +2721,7 @@ as hyperlinks, can also have focus; however, CSS does not define which elements 
 may not have focus.</p>
 
 <p><b>Examples</b></p>
+
 <pre>
 a:focus {outline: 1px dotted red;}
 input:focus {background: yellow;}
@@ -2901,7 +2927,7 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
     <tr>
       <td><b>Generates</b></td>
       <td>A pseudo-element that contains the first letter of an element</td>
-	</tr>
+    </tr>
     <tr>
       <td><b>Description</b></td>
       <td>Styles the first letter of an element. Any leading punctuation should be styled 
@@ -3034,107 +3060,134 @@ only keyword can be used only at the beginning of a media query.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are two new value types introduced by media queries, which (as of
 early 2018) are not used in any other context:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>&lt;ratio&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A ratio value is two positive <i>&lt;integer&gt;</i> values separated by a
 solidus (/) and optional whitespace. The first value refers to the
 width, and the second to the height. Thus, to express a
 width-to-height ratio of 16:9, you can write 16/9 or 16 / 9.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>&lt;resolution&gt;</i></h4>
-<p>A resolution value is a positive <i>&lt;integer&gt;</i> followed by either of
-the unit identifiers dpi or dpcm. As usual, whitespace is not
-permitted between the <i>&lt;integer&gt;</i> and the identifier.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A resolution value is a positive <i>&lt;integer&gt;</i> followed by either of the unit 
+identifiers dpi or dpcm. As usual, whitespace is not permitted between the <i>&lt;integer&gt;</i> 
+and the identifier.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Media Features</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>As of early 2018, the available media features are as follows. Note that their values 
 cannot be negative:</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>width, min-width, max-width.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;length&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the width of the display area of the user agent. In a screen-media web 
 browser, this is the width of the viewport plus any scrollbars. In paged media, this is 
 the width of the page box. Thus, (minwidth: 850px) applies when the viewport is greater 
 than 850 pixels wide.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>device-width, min-device-width, max-device-width</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;length&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the width of the complete rendering area of the output device. In screen 
 media, this is the width of the screen. In paged media, this is the width of the page. 
 Thus, (max-device-width: 1200px) applies when the device's output area is less than 
 1,200 pixels wide.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>height, min-height, max-height</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;length&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the height of the display area of the user agent. In a screen-media web 
 browser, this is the height of the viewport plus any scrollbars. In paged media, this is 
 the height of the page box. Thus, (height: 567px) applies when the viewport's height is 
 precisely 567 pixels tall.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>device-height, min-device-height, max-device-height</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;length&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the height of the complete rendering area of the output device. In screen 
 media, this is the height of the screen. In paged media, this is the height of the page. 
 Thus, (max-device-height: 400px) applies when the device's output area is less than 400 
 pixels tall.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>aspect-ratio, min-aspect-ratio, max-aspect-ratio</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;ratio&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the ratio that results from comparing the width media feature to the height 
 media feature (see the definition of <i>&lt;ratio&gt;</i>). Thus, (min-aspect-ratio: 2/1) 
 applies to any viewport whose width-to-height ratio is at least 2:1.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>device-aspect-ratio, min-device-aspect-ratio, max-deviceaspect-ratio</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;length&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the ratio that results from comparing the device-width media feature to the 
 device-height media feature (see the definition of <i>&lt;ratio&gt;</i>). Thus, (device-
 aspect-ratio: 16/9) applies to any output device whose display area width-to-height ratio 
 is exactly 16:9.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>color, min-color, max-color</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;integer&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the presence of color-display capability in the output device, with an optional 
 number representing the number of bits used in each color component. Thus, (color) 
 applies to any device with any color depth at all, whereas (min-color: 4) means there 
 must be at least four bits used per color component. Any device that does not support 
 color will return 0.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>color-index, min-color-index, max-color-index</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;integer&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the total number of colors available in the output device's color lookup table. 
 Thus, (min-colorindex: 256) applies to any device with a minimum of 256 colors available. 
 Any device that does not use a color lookup table will return 0.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>monochrome, min-monochrome, max-monochrome</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;integer&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the presence of a monochrome display, with an optional number of bits per pixel 
 in the output device's frame buffer. Thus, (monochrome) applies to any monochrome output 
 device, whereas (minmonochrome: 2) applies to any monochrome output device with a
 minimum of two bits per pixel in the frame buffer. Any device that is not monochrome 
 will return 0.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>resolution, min-resolution, max-resolution</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values: &lt;resolution&gt;</i></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the resolution of the output device in terms of pixel density, measured in 
 either dots per inch (dpi) or dots per centimeter (dpcm). If an output device has pixels 
 that are not square, the least dense axis is used; for example, if a device is 100dpcm 
 along one axis and 120dpcm along the other, 100dpcm is the value returned. 
 Additionally, a bare resolution feature query can never match (though min-resolution and 
 max-resolution can).</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>orientation</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values:</i> portrait <i>&vert;</i> landscape</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the output device's total output area, where portrait is returned if the 
 media feature height is equal to or greater than the media feature width. Otherwise, the 
 result is landscape.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>scan</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values:</i> progressive <i>&vert;</i> interlace</h4>
 <p>Refers to the scanning process used in an output device with a media type of tv.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>grid</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i>Values:</i> 0 <i>&vert;</i> 1</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Refers to the presence (or absence) of a grid-based output device, such as a tty 
 terminal. A grid-based device will return 1; otherwise, 0 is returned.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4203,15 +4256,15 @@ url(http://www.pix.org/dots.png);}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the boundary within the element box against which background image 
-	    positioning is calculated. Historically, this has been equivalent to the default 
-		value of padding-box. This property allows for different positioning contexts. 
-		Note that if the value of background-origin is "further out" than the value for 
-		background-clip, and the image is positioned to an edge, part of it may be 
-		clipped. For example: div#example {background-origin: border-box; background-
-		clip: content-box; background-position: 100% 100%;} In this case the image will 
-		be placed so that its bottom-right corner aligns with the bottom-right corner of 
-		the outer border edge, but the only parts of it that will be visible are those 
-		that fall within the content area.</td>
+        positioning is calculated. Historically, this has been equivalent to the default 
+        value of padding-box. This property allows for different positioning contexts. 
+        Note that if the value of background-origin is "further out" than the value for 
+        background-clip, and the image is positioned to an edge, part of it may be 
+        clipped. For example: div#example {background-origin: border-box; background-
+        clip: content-box; background-position: 100% 100%;} In this case the image will 
+        be placed so that its bottom-right corner aligns with the bottom-right corner of 
+        the outer border edge, but the only parts of it that will be visible are those 
+        that fall within the content area.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4246,7 +4299,7 @@ h1 {background-origin: content-box, padding-box;}
     <tr>
       <td><b>Computed value</b></td>
       <td>The absolute length offsets, if <i>&lt;length&gt;</i> is specified; otherwise, 
-	    percentage values</td>
+        percentage values</td>
     </tr>
     <tr>
       <td><b>Percentages</b></td>
@@ -4404,7 +4457,7 @@ div.photo {background-size: cover;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ 
-	    <i>&lt;bordercolor&gt;</i> &rbrack;</td>
+        <i>&lt;bordercolor&gt;</i> &rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -13159,3 +13212,4 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 -->
+
