@@ -84,33 +84,13 @@
     document.getElementById('table-of-contents').scrollIntoView();
   }
   </script>
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <h1 style="text-align:center;">CSS3 Reference Guide</h1>
   <h6 style="text-align:center;">(by Brian Bauska)</h6>
-  <!--
-  dl {
-    display: grid;
-    grid-gap: 4px 16px;
-    grid-template-columns: max-content;
-  }
-  dt {
-    font-weight: bold;
-  }
-  dd {
-    margin: 0;
-    grid-column-start: 2;
-  }
-  -->
-  <!--
-  ul.no-bullets {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-  }
-  -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. css reference guide logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. css reference guide logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img class="displayed"
+  <img class="displayed"
   src="/images/image000.png?raw=true"
   title="CSS3 Reference Guide"
   alt="CSS3 Reference Guide."
@@ -292,12 +272,11 @@ including the alternate stylesheets, regardless of whether the user ever needs t
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>xml-stylesheet processing instruction</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In XML documents (such as XHTML documents sent with a MIME type of text/xml, 
-application/xml, or application/ xhtml+xml), an xml-stylesheet processing instruction 
-can be used to associate a stylesheet with a document. Any xmlstylesheet processing 
-instructions must be placed in the prolog of an XML document. Multiple xml-stylesheet 
-processing instructions are permitted. The media pseudo-attribute can be used to
-restrict a stylesheet to one or more forms of media:</p>
+<p>In XML documents (such as XHTML documents sent with a MIME type of text/xml, application/xml, or 
+application/ xhtml+xml), an xml-stylesheet processing instruction can be used to associate a stylesheet 
+with a document. Any xmlstylesheet processing instructions must be placed in the prolog of an XML 
+document. Multiple xml-stylesheet processing instructions are permitted. The media pseudo-attribute 
+can be used to restrict a stylesheet to one or more forms of media:</p>
 <!-- page 4 -->
 
 <pre>
@@ -334,18 +313,18 @@ should be displayed.</p>
 
 <pre>type="text/css":</pre>
 
-<p>This attribute specifies the MIME type of the linked file, indicating that it is 
-a CSS file. While technically redundant, it's good practice to include it for clarity.</p>
+<p>This attribute specifies the MIME type of the linked file, indicating that it is a CSS file. 
+While technically redundant, it's good practice to include it for clarity.</p>
 
 <pre>media="all":</pre>
 
-<p>This attribute specifies that the stylesheet applies to all media types. This 
-means it will be applied to screens, printers, and any other media for which the 
-browser supports style sheets. If you want to target specific devices, you can use 
-other media types like screen, print, or speech or use media queries.</p>
+<p>This attribute specifies that the stylesheet applies to all media types. This means it will be 
+applied to screens, printers, and any other media for which the browser supports style sheets. If 
+you want to target specific devices, you can use other media types like screen, print, or speech or 
+use media queries.</p>
 
-<p>As an alternative to using <i>.htaccess</i>, which has been known to cause performance 
-problems, you can edit your <i>httpd.conf</i> file to do the same thing:</p>
+<p>As an alternative to using <i>.htaccess</i>, which has been known to cause performance problems, 
+you can edit your <i>httpd.conf</i> file to do the same thing:</p>
 
 <pre>
 &lt;Directory /usr/local/username/httpdocs&gt;
@@ -353,14 +332,13 @@ problems, you can edit your <i>httpd.conf</i> file to do the same thing:</p>
 &lt;/Directory&gt; 
 </pre>
 
-<p>where /usr/local/username/httpdocs is replaced with the Unix pathname of your 
-website's actual home directory, and /style.css is replaced with the location of the 
-stylesheet within that home directory.</p>
+<p>where /usr/local/username/httpdocs is replaced with the Unix pathname of your website's actual 
+home directory, and /style.css is replaced with the location of the stylesheet within that home 
+directory.</p>
 
-<p>As of this writing, HTTP headers were not supported by all user agents, most notably 
-Internet Explorer and Safari. Thus, this technique is usually limited to production 
-environments based on other user agents, and the occasional Easter egg for Firefox and 
-Opera users.</p>
+<p>As of this writing, HTTP headers were not supported by all user agents, most notably Internet 
+Explorer and Safari. Thus, this technique is usually limited to production environments based on 
+other user agents, and the occasional Easter egg for Firefox and Opera users.</p>
 <!-- page 5 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2-1">1.2. Rule Structure</h3>
@@ -388,10 +366,9 @@ On the right side of the rule, we have the declaration block. A declaration bloc
 or more <i>declarations</i>; each declaration is a combination of a CSS <i>property</i> and a 
 <i>value</i> of that property.</p>
 
-<p>The declaration block is always enclosed in curly braces. A declaration block can contain 
-several declarations; each declaration must be terminated with a semicolon (;). The exception is 
-the final declaration in a declaration block, for which the semicolon is optional (though 
-recommended).</p>
+<p>The declaration block is always enclosed in curly braces. A declaration block can contain several 
+declarations; each declaration must be terminated with a semicolon (;). The exception is the final 
+declaration in a declaration block, for which the semicolon is optional (though recommended).</p>
 
 <p>Each property, which represents a particular stylistic parameter, is separated from its value by 
 a colon (:). Property names in CSS are not case-sensitive. Legal values for a property are defined 
@@ -400,52 +377,49 @@ by the property description. Chapter 4 provides details on acceptable values for
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-3-1">1.3. <b><mark>&#64; At-rules</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A CSS <i>at-rule</i> is a statement or block of rules that begins with a specific 
-identifier preceded by an @ sign. These are:</p>
+<p>A CSS <i>at-rule</i> is a statement or block of rules that begins with a specific identifier 
+preceded by an @ sign. These are:</p>
 
 <ul>
   <li><b><mark>&#64;charset</mark></b><br>
-    Allows an author to define the encoding of the styles within the stylesheet (e.g., 
-    &#64;charset &quot;utf-8&quot;;). This enables authors to define the encoding of 
-    their styles even when they do not control the encoding of the file or system in 
-    which the styles are written. If multiple &#64;charset rules are declared, only the 
-    first will be used. This <i>must</i> be the first line of a stylesheet in which it 
-    appears, and <i>cannot</i> be preceded by any character. &#64;charset cannot be used 
-    in a stylesheet embedded in a document.</li>
+    Allows an author to define the encoding of the styles within the stylesheet (e.g., &#64;charset 
+	&quot;utf-8&quot;;). This enables authors to define the encoding of their styles even when they 
+	do not control the encoding of the file or system in which the styles are written. If multiple 
+	&#64;charset rules are declared, only the first will be used. This <i>must</i> be the first line 
+	of a stylesheet in which it appears, and <i>cannot</i> be preceded by any character. &#64;charset 
+	cannot be used in a stylesheet embedded in a document.</li>
   <li><b><mark>&#64;import</mark></b><br>
-    Allows an author to include the styles of another stylesheet (see "@import directive" 
-    on page 2). Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> 
-    appear before all other parts of the stylesheet except for &#64;charset.</li>
+    Allows an author to include the styles of another stylesheet (see "@import directive" on page 2). 
+	Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> appear before all other 
+	parts of the stylesheet except for &#64;charset.</li>
   <li><b><mark>&#64;namespace</mark></b><br>
-    Allows an author to define an XML namespace to be used in selectors (e.g., 
-    &#64;namespace svg url(http:// www.w3.org/2000/svg);, permitting the use of 
-    svg&vert;a {color: black;} to select &lt;a&gt; elements within SVG files differently 
-    than &lt;a&gt; elements in HTML). Multiple &#64;namespace rules are permitted. Any 
-    &#64;namespace <i>must</i> appear before all other parts of the stylesheet except for 
-    &#64;charset and &#64;import rules.</li>
+    Allows an author to define an XML namespace to be used in selectors (e.g., &#64;namespace svg 
+	url(http:// www.w3.org/2000/svg);, permitting the use of svg&vert;a {color: black;} to select 
+	&lt;a&gt; elements within SVG files differently than &lt;a&gt; elements in HTML). Multiple 
+	&#64;namespace rules are permitted. Any &#64;namespace <i>must</i> appear before all other 
+	parts of the stylesheet except for &#64;charset and &#64;import rules.</li>
 </ul>
 <p>Besides these statements, there are a number of conditional at-rules.<br>
 These include:</p>
 
 <ul>
   <li><b><mark>&#64;counter-style</mark></b><br>
-    Defines symbol and counting patterns used in CSS counters (e.g., the numbering of 
-    list items in an ordered list).</li>
+    Defines symbol and counting patterns used in CSS counters (e.g., the numbering of list items in 
+	an ordered list).</li>
   <li><b><mark>&#64;font-face</mark></b><br>
-    Defines an external font to be downloaded and used, including definitions of the 
-    identifiers to be used in other style rules. This is part of what is often called 
-    "web fonts" or "custom fonts."</li>
+    Defines an external font to be downloaded and used, including definitions of the identifiers to 
+	be used in other style rules. This is part of what is often called "web fonts" or "custom fonts."</li>
   <li><b><mark>&#64;keyframes</mark></b><br>
-    Defines the states of various steps in an animation sequence, grouped together under 
-    a unique identifier.</li>
+    Defines the states of various steps in an animation sequence, grouped together under a unique 
+	identifier.</li>
   <li><b><mark>&#64;media</mark></b><br>
-    Defines the media types and parameters in which a block of styles are to be applied: 
-    e.g., writing &#64;media (maxwidth: 600px) and then the styles to be used for smaller 
-    screens. This is the key to Responsive Web Design.</li>
+    Defines the media types and parameters in which a block of styles are to be applied: e.g., writing 
+	&#64;media (maxwidth: 600px) and then the styles to be used for smaller screens. This is the key to 
+	Responsive Web Design.</li>
   <li><b><mark>&#64;supports</mark></b><br>
-    Defines the browser-support conditions under which a block of styles should be used: 
-    e.g., writing &#64;supports (display: grid) and then the styles that should be used 
-    in a CSS Grid--supporting browser.</li>
+    Defines the browser-support conditions under which a block of styles should be used: e.g., writing 
+	&#64;supports (display: grid) and then the styles that should be used in a CSS Grid--supporting 
+	browser.</li>
 </ul>
 
 <p>There are other proposed at-rules which are, as of early 2018, at various stages of development. 
@@ -479,18 +453,16 @@ the CSS parser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-5-1">1.5. Style Precedence</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A single HTML document can import and link to multiple external stylesheets, contain 
-one or more embedded stylesheets, and make use of inline styles. In the process, it is 
-quite possible that some rules will conflict with one another. Cascading Style Sheets 
-uses a mechanism called the <i>cascade</i> to resolve any such conflicts and arrive at a 
-final set of styles to be applied to the document. Two key components of the cascade are 
-specificity and inheritance.</p>
+<p>A single HTML document can import and link to multiple external stylesheets, contain one or more 
+embedded stylesheets, and make use of inline styles. In the process, it is quite possible that some 
+rules will conflict with one another. Cascading Style Sheets uses a mechanism called the <i>cascade</i> 
+to resolve any such conflicts and arrive at a final set of styles to be applied to the document. Two 
+key components of the cascade are specificity and inheritance.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Specificity Calculations</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><i>Specificity</i> describes the weight of a selector and any declarations associated 
-with it. Table 1-1 shows how much each part of a selector contributes to the total 
-specificity of that selector.</p>
+<p><i>Specificity</i> describes the weight of a selector and any declarations associated with it. Table 
+1-1 shows how much each part of a selector contributes to the total specificity of that selector.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. selector type specificity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -515,40 +487,38 @@ with other important declarations.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inheritance</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The elements in a document form a treelike hierarchy, with the root element at the top 
-and the rest of the document structure spreading out below it (which makes it look more 
-like a tree root system, really). In an HTML document, the html element is at the top of 
-the tree, with the head and body elements descending from it. The rest of the document
-structure descends from those elements. In such a structure, elements lower down in the 
-tree are descendants of the ancestors, which are higher in the tree.</p>
+<p>The elements in a document form a treelike hierarchy, with the root element at the top and the 
+rest of the document structure spreading out below it (which makes it look more like a tree root 
+system, really). In an HTML document, the html element is at the top of the tree, with the head and 
+body elements descending from it. The rest of the document structure descends from those elements. 
+In such a structure, elements lower down in the tree are descendants of the ancestors, which are 
+higher in the tree.</p>
 
-<p>CSS uses the document tree for the mechanism of <i>inheritance</i>, in which a style 
-applied to an element is inherited by its descendants. For example, if the body element 
-is set to have a color of red, that value propagates down the document tree to the elements 
-that descend from the body element. Inheritance is interrupted only by a conflicting style
-rule that applies directly to an element. Inherited values have no specificity at all 
-(which is <i>not</i> the same as having zero specificity).</p>
+<p>CSS uses the document tree for the mechanism of <i>inheritance</i>, in which a style applied to 
+an element is inherited by its descendants. For example, if the body element is set to have a color 
+of red, that value propagates down the document tree to the elements that descend from the body 
+element. Inheritance is interrupted only by a conflicting style rule that applies directly to an 
+element. Inherited values have no specificity at all (which is <i>not</i> the same as having zero 
+specificity).</p>
 
-<p>Note that some properties are not inherited. A property will always define whether it 
-is inherited. Some examples of noninherited properties are padding, border, margin, and 
-background.</p>
+<p>Note that some properties are not inherited. A property will always define whether it is inherited. 
+Some examples of noninherited properties are padding, border, margin, and background.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>The Cascade</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The cascade is how CSS resolves conflicts between styles; in other words, it is the 
-mechanism by which a user agent decides, for example, what color to make an element when 
-two different rules apply to it and each one tries to set a different color.<br>
+<p>The cascade is how CSS resolves conflicts between styles; in other words, it is the mechanism by 
+which a user agent decides, for example, what color to make an element when two different rules 
+apply to it and each one tries to set a different color.<br>
 Here's how the cascade works:</p>
 <ol>
   <li>Find all rules with a selector that matches a given element.</li>
-  <li>Sort all declarations applying to the given element by <i>explicit weight</i>. 
-    Those rules that are marked !important have a higher explicit weight than those 
-    that are not.</li>
-  <li>Sort all declarations applying to the given element by <i>origin</i>. There are 
-    three basic origins: author, reader, and user agent. Under normal circumstances, 
-    the author's styles win out over the reader's styles. Howerver, !important reader 
-    styles are stronger than any other styles, including !important author styles. 
-    Both author and reader styles override the user agent's default styles.</li>
+  <li>Sort all declarations applying to the given element by <i>explicit weight</i>. Those rules 
+    that are marked !important have a higher explicit weight than those that are not.</li>
+  <li>Sort all declarations applying to the given element by <i>origin</i>. There are three basic 
+    origins: author, reader, and user agent. Under normal circumstances, the author's styles win 
+	out over the reader's styles. Howerver, !important reader styles are stronger than any other 
+	styles, including !important author styles. Both author and reader styles override the user 
+	agent's default styles.</li>
   <li>Sort all declarations applying to the given element by <i>specificity</i>. Those 
     elements with a higher specificity have more weight than those with lower specificity.</li>
   <li>Sort all declarations applying to the given element by <i>order</i>. The later a 
@@ -13317,9 +13287,4 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 -->
-
-
-
-
-
 
