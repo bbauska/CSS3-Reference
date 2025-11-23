@@ -1,6 +1,6 @@
 ---
 title: |
-  CSS3 Reference Guide
+  CSS Reference Guide
   by Brian Bauska
 author: "bbauska"
 date last editted: "5/21/2025 Wed 2+pm"
@@ -34,7 +34,7 @@ ul.no-bullets {
   style="width:20%;" />
 </p>
 
-<h2 id="css3-refguide">CSS3 Reference Guide</h2>
+<h2 id="css3-refguide">CSS Reference Guide</h2>
 
 <h3 id="#table-of-contents">Table of Contents</h3>
 
@@ -94,7 +94,7 @@ ul.no-bullets {
 standard for the visual presentation of web pages (although it can be
 used in other settings as well). After a short introduction to the key
 concepts of CSS, this pocket reference provides an alphabetical
-reference to all CSS3 selectors, followed by an alphabetical reference
+reference to all CSS selectors, followed by an alphabetical reference
 to CSS3 properties.</p>
 
 <!-- page 1 -->
