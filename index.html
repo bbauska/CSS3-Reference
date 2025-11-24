@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS3-Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ making css3-ref.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of CSS-Ref-Guide ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ making css-ref-guide.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
@@ -26,20 +26,20 @@
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico">
 
   <!-- viewport and seo -->
-  <meta name="title" content="CSS3 Reference Guide">
-  <meta name="description" content="CSS3 Reference Guide - during this course, 
+  <meta name="title" content="CSS Reference Guide">
+  <meta name="description" content="CSS Reference Guide - during this course, 
     you will learn: Simplified HTML5 tags, and how to use microdata; Play with audio 
     and video tags; Use the Webcam; Draw and animate Web graphics; Discover HTML5 form 
     features; Test basic APIs; Practice coding techniques.">
   <meta name="keywords" content="CSS3,Reference,Guide,CSS3 Reference Guide,Intro,to,JS,
     JavaScript,Silus Gaming World,#Silus-GW,#SilusGW,#Silus-Gaming-World,#SilusGamingWorld,website,web,
-	site,zombie,Politics,culture,casino,capitalism,silus-gw,capitalize,political,disposability,death,America,
-	culture,power,society,greed,avarice,excess,sylas,MIC,Military,Industrial,Complex,corruption,Dulles,Bush,
-	Reagan,justice,youth,democracy,psychology,ideology,governance,spectacle,casinocapitalism,zombie,steak,
-	#Steak,YouTube,Sonic,sonic,SONIC,#sylas,Silus,Gaming,World,SilusGamingWorldLuccasNeto,T-Series,SETIndia,
-	Cocomelon,Mr,Beast,MrBeast,#beast,Beast,CE1,C-E-1,MRBEAST,BEAST,SilusGamingWorld,Silus,SilusSpider,NickAR,
-	Nick,NY,NYNick,#brightside,NewYorkNick,NYNick,URCristiano,UR,Cristiano,KidsDimaShow,VladandNiki,LuisitoComunica,
-	Brightside,ZeeTV,DudePerfect,TipsOfficial,TipsOfficial,FNAF,FiveNightsatFreddies,themusiccompany,pewdiepie,
+    site,zombie,Politics,culture,casino,capitalism,silus-gw,capitalize,political,disposability,death,America,
+    culture,power,society,greed,avarice,excess,sylas,MIC,Military,Industrial,Complex,corruption,Dulles,Bush,
+    Reagan,justice,youth,democracy,psychology,ideology,governance,spectacle,casinocapitalism,zombie,steak,
+    #Steak,YouTube,Sonic,sonic,SONIC,#sylas,Silus,Gaming,World,SilusGamingWorldLuccasNeto,T-Series,SETIndia,
+    Cocomelon,Mr,Beast,MrBeast,#beast,Beast,CE1,C-E-1,MRBEAST,BEAST,SilusGamingWorld,Silus,SilusSpider,NickAR,
+    Nick,NY,NYNick,#brightside,NewYorkNick,NYNick,URCristiano,UR,Cristiano,KidsDimaShow,VladandNiki,LuisitoComunica,
+    Brightside,ZeeTV,DudePerfect,TipsOfficial,TipsOfficial,FNAF,FiveNightsatFreddies,themusiccompany,pewdiepie,
     5minutecrafts,A4,Sambucha,Sam&Colby,Sam&ColbyReacts,JuiceWorld,#pewdiepie,#fnaf,#gta,gta,grand,
     RayWilliamJohnson,FGTV,KaicenatLive,IShowSpeed,Jelly,DanTDM,KSI,LoganPaul,JackSucksAtLife,theft,
     PackGOD,JakePaul,Jake,PaulJakePaul,SamGaming01,Veshreny,WWE,WorldWrestlingEntertainment,auto,
@@ -55,8 +55,8 @@
   <meta name="language" content="English">
   <meta name="author" content="Brian Bauska">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>CSS3 Reference</title>
-  <link rel="canonical" href="https://css3-ref.bauska.org">
+  <title>CSS Reference Guide</title>
+  <link rel="canonical" href="https://css-ref-guide.bauska.org">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -177,8 +177,7 @@ CSS3 properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1-1">1.1. Adding Styles to HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Styles can be applied to documents in three distinct ways, as discussed in the following 
-sections.</p>
+<p>Styles can be applied to documents in three distinct ways, as discussed in the following sections.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Inline Styles</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -204,6 +203,7 @@ style attribute, and thus inline styles.</p>
 <h4>Embedded Stylesheets</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A stylesheet can be embedded within an HTML document using the style element:</p>
+
 <pre>
 <b>&lt;html&gt;&lt;head&gt;&lt;title&gt;</b>Stylin&apos;!<b>&lt;/title&gt;</b>
 <b>&lt;style</b> type=&quot;text/css&quot;<b>&gt;</b>
@@ -213,6 +213,7 @@ style attribute, and thus inline styles.</p>
 <b>&lt;/head&gt;</b> &hellip;
 <b>&lt;/html&gt;</b>
 </pre>
+
 <p>XML-based languages may or may not provide an equivalent capability; always check the document 
 type definition (DTD) to be certain. While style elements are often found inside the head element, 
 as shown in the preceding example, this is not required. Sometimes stylesheets are embedded near 
@@ -383,43 +384,44 @@ preceded by an @ sign. These are:</p>
 <ul>
   <li><b><mark>&#64;charset</mark></b><br>
     Allows an author to define the encoding of the styles within the stylesheet (e.g., &#64;charset 
-	&quot;utf-8&quot;;). This enables authors to define the encoding of their styles even when they 
-	do not control the encoding of the file or system in which the styles are written. If multiple 
-	&#64;charset rules are declared, only the first will be used. This <i>must</i> be the first line 
-	of a stylesheet in which it appears, and <i>cannot</i> be preceded by any character. &#64;charset 
-	cannot be used in a stylesheet embedded in a document.</li>
+    &quot;utf-8&quot;;). This enables authors to define the encoding of their styles even when they 
+    do not control the encoding of the file or system in which the styles are written. If multiple 
+    &#64;charset rules are declared, only the first will be used. This <i>must</i> be the first line 
+    of a stylesheet in which it appears, and <i>cannot</i> be preceded by any character. &#64;charset 
+    cannot be used in a stylesheet embedded in a document.</li>
   <li><b><mark>&#64;import</mark></b><br>
     Allows an author to include the styles of another stylesheet (see "@import directive" on page 2). 
-	Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> appear before all other 
-	parts of the stylesheet except for &#64;charset.</li>
+    Multiple &#64;import rules are permitted. Any &#64;import rules <i>must</i> appear before all other 
+    parts of the stylesheet except for &#64;charset.</li>
   <li><b><mark>&#64;namespace</mark></b><br>
     Allows an author to define an XML namespace to be used in selectors (e.g., &#64;namespace svg 
-	url(http:// www.w3.org/2000/svg);, permitting the use of svg&vert;a {color: black;} to select 
-	&lt;a&gt; elements within SVG files differently than &lt;a&gt; elements in HTML). Multiple 
-	&#64;namespace rules are permitted. Any &#64;namespace <i>must</i> appear before all other 
-	parts of the stylesheet except for &#64;charset and &#64;import rules.</li>
+    url(http:// www.w3.org/2000/svg);, permitting the use of svg&vert;a {color: black;} to select 
+    &lt;a&gt; elements within SVG files differently than &lt;a&gt; elements in HTML). Multiple 
+    &#64;namespace rules are permitted. Any &#64;namespace <i>must</i> appear before all other 
+    parts of the stylesheet except for &#64;charset and &#64;import rules.</li>
 </ul>
+
 <p>Besides these statements, there are a number of conditional at-rules.<br>
 These include:</p>
 
 <ul>
   <li><b><mark>&#64;counter-style</mark></b><br>
     Defines symbol and counting patterns used in CSS counters (e.g., the numbering of list items in 
-	an ordered list).</li>
+    an ordered list).</li>
   <li><b><mark>&#64;font-face</mark></b><br>
     Defines an external font to be downloaded and used, including definitions of the identifiers to 
-	be used in other style rules. This is part of what is often called "web fonts" or "custom fonts."</li>
+    be used in other style rules. This is part of what is often called "web fonts" or "custom fonts."</li>
   <li><b><mark>&#64;keyframes</mark></b><br>
     Defines the states of various steps in an animation sequence, grouped together under a unique 
-	identifier.</li>
+    identifier.</li>
   <li><b><mark>&#64;media</mark></b><br>
     Defines the media types and parameters in which a block of styles are to be applied: e.g., writing 
-	&#64;media (maxwidth: 600px) and then the styles to be used for smaller screens. This is the key to 
-	Responsive Web Design.</li>
+    &#64;media (maxwidth: 600px) and then the styles to be used for smaller screens. This is the key to 
+    Responsive Web Design.</li>
   <li><b><mark>&#64;supports</mark></b><br>
     Defines the browser-support conditions under which a block of styles should be used: e.g., writing 
-	&#64;supports (display: grid) and then the styles that should be used in a CSS Grid--supporting 
-	browser.</li>
+    &#64;supports (display: grid) and then the styles that should be used in a CSS Grid--supporting 
+    browser.</li>
 </ul>
 
 <p>There are other proposed at-rules which are, as of early 2018, at various stages of development. 
@@ -516,9 +518,9 @@ Here's how the cascade works:</p>
     that are marked !important have a higher explicit weight than those that are not.</li>
   <li>Sort all declarations applying to the given element by <i>origin</i>. There are three basic 
     origins: author, reader, and user agent. Under normal circumstances, the author's styles win 
-	out over the reader's styles. Howerver, !important reader styles are stronger than any other 
-	styles, including !important author styles. Both author and reader styles override the user 
-	agent's default styles.</li>
+    out over the reader's styles. Howerver, !important reader styles are stronger than any other 
+    styles, including !important author styles. Both author and reader styles override the user 
+    agent's default styles.</li>
   <li>Sort all declarations applying to the given element by <i>specificity</i>. Those 
     elements with a higher specificity have more weight than those with lower specificity.</li>
   <li>Sort all declarations applying to the given element by <i>order</i>. The later a 
@@ -732,13 +734,13 @@ determined by taking the following factors into account:</p>
 <h5><i>Line box</i></h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The shortest box that bounds the highest and lowest points of the inline boxes that 
-    are found in the line. In other words, the top edge of the line box will be placed 
-    along the top of the highest inline box top, and the bottom of the line box is placed 
-    along the bottom of the lowest inline box bottom. (See Figure 1-3).</li>
+  <li>The shortest box that bounds the highest and lowest points of the inline boxes that are found 
+    in the line. In other words, the top edge of the line box will be placed along the top of the 
+    highest inline box top, and the bottom of the line box is placed along the bottom of the lowest 
+    inline box bottom. (See Figure 1-3).</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. inline layout details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. inline layout details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p style="align:center">
 <img class="displayed"
   src="/images/image004.png?raw=true"
@@ -750,11 +752,11 @@ determined by taking the following factors into account:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-9-1">1.9. Floating</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Floating allows an element to be placed to the left or right of its containing block 
-(which is the nearest block-level ancestor element), with following content flowing 
-around the element. Any floated element automatically generates a block box, regardless 
-of what type of box it would generate if not floated. A floated element is placed 
-according to the following rules:</p>
+<p>Floating allows an element to be placed to the left or right of its containing block (which is 
+the nearest block-level ancestor element), with following content flowing around the element. Any 
+floated element automatically generates a block box, regardless of what type of box it would generate 
+if not floated. A floated element is placed according to the following rules:</p>
+
 <ul>
   <li>The left (or right) outer edge of a floated element may not be to the left (or right) 
     of the inner edge of its containing block.</li>
@@ -2129,18 +2131,16 @@ div&lbrack;class&ast;=&quot;port&quot;&rbrack; {border: 1px solid red;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches elements with a lang attribute whose value is one of a hyphen-separated list 
-        of values, starting with the value provided in the selector. In an HTML document, the 
-        language of an element is determined by its lang attribute. If an element does not have 
-        one, its language is determined by the lang attribute of its nearest ancestor that does 
-        have one, or, lacking that, by the Content-Language HTTP header response field (or the 
-        respective meta http-equiv) for the document.</td>
+      of values, starting with the value provided in the selector. In an HTML document, the 
+      language of an element is determined by its lang attribute. If an element does not have 
+      one, its language is determined by the lang attribute of its nearest ancestor that does 
+      have one, or, lacking that, by the Content-Language HTTP header response field (or the 
+      respective meta http-equiv) for the document.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
       <td>
-<pre>
-html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
-</pre>
+<pre>html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}</pre>
       </td>
     </tr>
   </tbody>
@@ -2170,11 +2170,11 @@ elements that are the last children of their parent element.</p>
     <tr>
       <td><b>Description</b></td>
       <td>Matches elements that have no child nodes---that is, no child elements <i>or</i> 
-        content nodes. Content nodes are defined as any text, whitespace, entity reference, 
-        or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is <i>not</i> empty because it has a 
-        single whitespace character inside it; nor is the element empty if that space is 
-        replaced with a newline. Note that this pseudo-class does <i>not</i> apply to 
-        empty elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.</td>
+      content nodes. Content nodes are defined as any text, whitespace, entity reference, 
+      or CDATA nodes. Thus, &lt;p&gt; &lt;/p&gt; is <i>not</i> empty because it has a 
+      single whitespace character inside it; nor is the element empty if that space is 
+      replaced with a newline. Note that this pseudo-class does <i>not</i> apply to 
+      empty elements such as &lt;br&gt;, &lt;img&gt;, &lt;input&gt;, and so on.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2206,8 +2206,8 @@ li:empty {display: none;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element when it is the first child of another element. Thus, 
-        <b><i>div:first-child</i></b> will select any div that is the first child 
-        of another element, <i>not</i> the first child element of any div.</td>
+      <b><i>div:first-child</i></b> will select any div that is the first child 
+      of another element, <i>not</i> the first child element of any div.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2237,8 +2237,8 @@ p:first-child {text-indent: 0; margin-top: 2em;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element when it is the first child of its type, as compared to all its 
-        sibling elements. Thus, div:first-of-type will select any div that is the first child 
-        div of another element.</td>
+      sibling elements. Thus, div:first-of-type will select any div that is the first child 
+      div of another element.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2268,9 +2268,9 @@ h2:first-of-type {color: fuchsia;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches elements based on their human-language encoding. Such language 
-        information must be contained within, or otherwise associated with, the 
-        document---it cannot be assigned from CSS. The handling of :lang is the 
-        same as for &vert;= attribute selectors.</td>
+      information must be contained within, or otherwise associated with, the 
+      document---it cannot be assigned from CSS. The handling of :lang is the 
+      same as for &vert;= attribute selectors.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2300,8 +2300,8 @@ html:lang(en) {background: silver;} <br>
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element when it is the last child of another element. Thus, 
-        <b>div:last-child</b> will select any div that is the last child of another 
-        element, <i>not</i> the last child element of any div.</td>
+      <b>div:last-child</b> will select any div that is the last child of another 
+      element, <i>not</i> the last child element of any div.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2331,8 +2331,8 @@ p:last-child {margin-bottom: 2em;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element when it is the last child of its type, as compared to all 
-        its sibling elements. Thus, div:last-of-type will select any div that is the 
-        last child div of another element.</td>
+      its sibling elements. Thus, div:last-of-type will select any div that is the 
+      last child div of another element.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2362,17 +2362,17 @@ h2:last-of-type {color: fuchsia;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches every <i>n</i>th child with the pattern of selection defined by the 
-        formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s 
-        and n represents an infinite series of integers, counting forward from the first 
-        child. Thus, to select every fourth child of the body element, starting with the 
-        first child, you would write body &gt; &ast;:nth-child(4n+1). This will select the 
-        first, fifth, ninth, fourteenth, and so on children of the body. If you literally 
-        wish to select the fourth, eighth, twelfth, and so on children, you can modify the 
-        selector to body &gt; &ast;:nth-child(4n). It is also possible for <i>b</i> to be 
-        negative: body &gt; &ast;:nth-child(4n-- 1) selects the third, seventh, eleventh, 
-        fifteenth, and so on children of the body. In place of the <i>a</i>n±<i>b</i> 
-        formula, there are two keywords permitted: even and odd. These are equivalent to 
-        2n and 2n+1, respectively.</td>
+      formula <i>a</i>n±<i>b</i>, where <i>a</i> and <i>b</i> are <i>&lt;integer&gt;</i>s 
+      and n represents an infinite series of integers, counting forward from the first 
+      child. Thus, to select every fourth child of the body element, starting with the 
+      first child, you would write body &gt; &ast;:nth-child(4n+1). This will select the 
+      first, fifth, ninth, fourteenth, and so on children of the body. If you literally 
+      wish to select the fourth, eighth, twelfth, and so on children, you can modify the 
+      selector to body &gt; &ast;:nth-child(4n). It is also possible for <i>b</i> to be 
+      negative: body &gt; &ast;:nth-child(4n-- 1) selects the third, seventh, eleventh, 
+      fifteenth, and so on children of the body. In place of the <i>a</i>n±<i>b</i> 
+      formula, there are two keywords permitted: even and odd. These are equivalent to 
+      2n and 2n+1, respectively.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2516,9 +2516,9 @@ img:nth-of-type(3n) {float: right;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element that is the only child element of its parent element. A common 
-        use case for this selector is to remove the border from any linked image, assuming that 
-        image is the only element in the link. Note that an element can be selected by :only-child 
-        even if it has its own child or children. It must simply be the only child of its parent.</td>
+      use case for this selector is to remove the border from any linked image, assuming that 
+      image is the only element in the link. Note that an element can be selected by :only-child 
+      even if it has its own child or children. It must simply be the only child of its parent.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2548,8 +2548,8 @@ table div:only-child {margin: 5px;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element that is the only child element of its type of its parent 
-        element. Note that an element can be selected by <b>:only-of-type</b> even if it has 
-        its own child or children of its own type (such as divs within a div).</td>
+      element. Note that an element can be selected by <b>:only-of-type</b> even if it has 
+      its own child or children of its own type (such as divs within a div).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2579,10 +2579,10 @@ section article:only-of-type {margin: 2em 0 3em;}
     <tr>
       <td><b>Description</b></td>
       <td>This matches the document's root element, which in <br> 
-        HTML is always the html element. In SVG, it is the <br>
-        svg element. In XML formats, the root element can <br>
-        have any name; thus, a generic root-element selector <br>
-        is needed.</td>
+      HTML is always the html element. In SVG, it is the <br>
+      svg element. In XML formats, the root element can <br>
+      have any name; thus, a generic root-element selector <br>
+      is needed.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2661,10 +2661,10 @@ identifier, or styling form elements based on their being enabled or disabled.</
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element during the period in which it is being activated. The most 
-	  common example is clicking on a hyperlink in an HTML document: while the mouse 
-	  button is being held down, the link is active. There are other ways to activate 
-	  elements, and other elements can in theory be activated, although CSS doesn't 
-	  define them.</p></td>
+      common example is clicking on a hyperlink in an HTML document: while the mouse 
+      button is being held down, the link is active. There are other ways to activate 
+      elements, and other elements can in theory be activated, although CSS doesn't 
+      define them.</p></td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2694,7 +2694,7 @@ a:active {color: red;}
     <tr>
       <td><b>Description</b></td>
       <td>Matches any user interface element that has been "toggled on," such as a checked 
-	  checkbox or a filled radio button.</td>
+      checkbox or a filled radio button.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2726,10 +2726,10 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
     <tr>
       <td><b>Description</b></td>
       <td>Matches user interface elements that are not able to accept user input because of 
-	  language attributes or other nonpresentational means; for example, &lt;input 
-	  type=&quot;text&quot; disabled&gt; in HTML5. Note that :disabled does <i>not</i> apply 
-	  when an input element has simply been removed from the viewport with properties like 
-	  position or display.</td>
+      language attributes or other nonpresentational means; for example, &lt;input 
+      type=&quot;text&quot; disabled&gt; in HTML5. Note that :disabled does <i>not</i> apply 
+      when an input element has simply been removed from the viewport with properties like 
+      position or display.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2756,8 +2756,8 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
     <tr>
       <td><b>Description</b></td>
       <td>Matches user interface elements that are able to accept user input and that can be set 
-	  to "enabled" and "disabled" states through the markup language itself. This includes any 
-	  form input element in (X)HTML, but does not include hyperlinks.</td>
+      to "enabled" and "disabled" states through the markup language itself. This includes any 
+      form input element in (X)HTML, but does not include hyperlinks.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2784,9 +2784,9 @@ input&lbrack;type=&quot;checkbox&quot;&rbrack;:checked {
     <tr>
       <td><b>Description</b></td>
       <td>Matches an element during the period in which it has focus. One example from HTML 
-	  is an input box that has the text-input cursor within it such that when the user starts 
-	  typing, text will be entered into that box. Other elements, such as hyperlinks, can also 
-	  have focus; however, CSS does not define which elements may or may not have focus.</td>
+      is an input box that has the text-input cursor within it such that when the user starts 
+      typing, text will be entered into that box. Other elements, such as hyperlinks, can also 
+      have focus; however, CSS does not define which elements may or may not have focus.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2938,11 +2938,11 @@ a:visited {color: purple;}
     <tr>
       <td><b>Description</b></td>
       <td>Inserts generated content at the end of an element's content. By default, the 
-        pseudo-element is inline, but this can be changed using the property display.</td>
-        In CSS1 and CSS2, pseudo-elements were preceded by single colons, just as pseudo-
-        classes were. In CSS3 and later, pseudoelements use double colons to distinguish them 
-        from pseudoclasses. For historical reasons, browsers will support both single and 
-        double colons on pseudo-elements, but the doublecolon syntax is recommended.</td>
+      pseudo-element is inline, but this can be changed using the property display.</td>
+      In CSS1 and CSS2, pseudo-elements were preceded by single colons, just as pseudo-
+      classes were. In CSS3 and later, pseudoelements use double colons to distinguish them 
+      from pseudoclasses. For historical reasons, browsers will support both single and 
+      double colons on pseudo-elements, but the doublecolon syntax is recommended.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -2973,7 +2973,7 @@ p:after {content: &quot; &vert;; &quot;;}
     <tr>
       <td><b>Description</b></td>
       <td>Inserts generated content at the beginning of an element's content. By default, 
-        the pseudo-element is inline, but this can be changed using the property display.</td>
+      the pseudo-element is inline, but this can be changed using the property display.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -3004,12 +3004,12 @@ a&lbrack;rel&vert;;=&quot;met&quot;&rbrack;:after {content: &quot; &ast;&quot;;}
     <tr>
       <td><b>Description</b></td>
       <td>Styles the first letter of an element. Any leading punctuation should be styled 
-        along with the first letter. Some languages have letter combinations that should 
-        be treated as a single character, and a user agent may apply the first letter 
-        style to both. Prior to CSS2.1, ::first-letter could be attached only to block-
-        level elements. CSS2.1 expanded its scope to include elements with a display 
-        value of block, list-item, table-cell, table-caption, or inlineblock. There is a 
-        limited set of properties that can apply to a first letter.</td>
+      along with the first letter. Some languages have letter combinations that should 
+      be treated as a single character, and a user agent may apply the first letter 
+      style to both. Prior to CSS2.1, ::first-letter could be attached only to block-
+      level elements. CSS2.1 expanded its scope to include elements with a display 
+      value of block, list-item, table-cell, table-caption, or inlineblock. There is a 
+      limited set of properties that can apply to a first letter.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -3038,9 +3038,9 @@ p:first-letter {text-decoration: underline;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Styles the first line of text in an element, regardless of how many or how few 
-        words may appear in that line. ::first-line can be attached only to blocklevel 
-        elements. There is a limited set of properties that can apply to a first line.</td>
+      <td>Styles the first line of text in an element, regardless of how many or how few words may 
+	  appear in that line. ::first-line can be attached only to blocklevel elements. There is a 
+	  limited set of properties that can apply to a first line.</td>
     </tr>
     <tr>
       <td><b>Example</b></td>
@@ -3598,9 +3598,9 @@ section.gallery h1 {align-self: stretch;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; <i>&lt;animation-name&gt;</i> ‖ <i>&lt;animation-duration&gt;</i> ‖<br>
-        <i>&lt;animation-timing-function&gt;</i> ‖ <i>&lt;animation-delay&gt;</i> ‖<br>
-        <i>&lt;animation-iteration-count&gt;</i> ‖ <i>&lt;animationdirection&gt;</i> ‖<br>
-        <i>&lt;animation-fill-mode&gt;</i> ‖ <i>&lt;animationplay-state&gt;</i> &rbrack;#</td>
+      <i>&lt;animation-timing-function&gt;</i> ‖ <i>&lt;animation-delay&gt;</i> ‖<br>
+      <i>&lt;animation-iteration-count&gt;</i> ‖ <i>&lt;animationdirection&gt;</i> ‖<br>
+      <i>&lt;animation-fill-mode&gt;</i> ‖ <i>&lt;animationplay-state&gt;</i> &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -3894,8 +3894,8 @@ h2 {animation-name: flip;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the run state of one or more CSS animations. The default state of running is the 
-	  most useful in static CSS environments, but it can be used to easily stop or start animations 
-	  via DOM scripting or interactive CSS (e.g., :hover).</td>
+      most useful in static CSS environments, but it can be used to easily stop or start animations 
+      via DOM scripting or interactive CSS (e.g., :hover).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -3922,9 +3922,9 @@ running, paused, running;} table {animation-play-state: running;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; ease &vert; linear &vert; ease-in &vert; ease-out &vert; ease-in-out &vert; 
-        step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; 
-        steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, 
-        <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
+      step-start &vert; step-end &vert; steps(<i>&lt;integer&gt;</i>, start) &vert; 
+      steps(<i>&lt;integer&gt;</i>, end) &vert; cubic-bezier(<i>&lt;number&gt;</i>, 
+      <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>) &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4037,19 +4037,19 @@ span.cubeside {backface-visibility: visible;}
     <tr>
       <td><b>Description</b></td>
       <td>A shorthand way of expressing the various background properties of one or more 
-        element backgrounds using a single declaration. As with all shorthands, this 
-        property will set all of the allowed values (e.g., the repeat, position, and so 
-        on) to their defaults if the values are not explicitly supplied. Thus, the 
-        following two rules will have the same appearance: background: yellow; background: 
-        yellow none top left repeat; Furthermore, these defaults can override previous 
-        declarations made with more specific background properties. For example, given 
-        the following rules: h1 {background-repeat: repeat-x;} h1, h2 {background: yellow 
-        url(headback.gif);} the repeat value for both h1 and h2 elements will be set to 
-        the default of repeat, overriding the previously declared value of repeat-x. When 
-        declaring multiple backgrounds, only the last may have a background color. In cases 
-        where multiple background images overlap, the images are stacked with the first 
-        highest and the last lowest. This is the exact reverse of how overlapping is 
-        handled in CSS positioning, and so may seem counterintuitive.</td>
+      element backgrounds using a single declaration. As with all shorthands, this 
+      property will set all of the allowed values (e.g., the repeat, position, and so 
+      on) to their defaults if the values are not explicitly supplied. Thus, the 
+      following two rules will have the same appearance: background: yellow; background: 
+      yellow none top left repeat; Furthermore, these defaults can override previous 
+      declarations made with more specific background properties. For example, given 
+      the following rules: h1 {background-repeat: repeat-x;} h1, h2 {background: yellow 
+      url(headback.gif);} the repeat value for both h1 and h2 elements will be set to 
+      the default of repeat, overriding the previously declared value of repeat-x. When 
+      declaring multiple backgrounds, only the last may have a background color. In cases 
+      where multiple background images overlap, the images are stacked with the first 
+      highest and the last lowest. This is the exact reverse of how overlapping is 
+      handled in CSS positioning, and so may seem counterintuitive.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4093,9 +4093,9 @@ url(/pix/water.png) center repeat-x, top left url(/pix/stone.png)
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines whether background images scroll along with the element when the 
-        document is scrolled. This property can be used to create "aligned" backgrounds; 
-        for more details, see Chapter 9 of <i>CSS: The Definitive Guide</i>, 4th Edition.</td>
+      <td>Defines whether background images scroll along with the element when the document is 
+	  scrolled. This property can be used to create "aligned" backgrounds; for more details, see 
+	  Chapter 9 of <i>CSS: The Definitive Guide</i>, 4th Edition.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4122,9 +4122,9 @@ div.fixbg {background-attachment: fixed;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; normal &vert; multiply &vert; screen &vert; overlay &vert; darken
-        &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
-        &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
-        saturation &vert; color &vert; luminosity &rbrack;#</td>
+      &vert; lighten &vert; color-dodge &vert; color-burn &vert; hard-light
+      &vert; soft-light &vert; difference &vert; exclusion &vert; hue &vert;
+      saturation &vert; color &vert; luminosity &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4141,15 +4141,15 @@ div.fixbg {background-attachment: fixed;}
     <tr>
       <td><b>Description</b></td>
       <td>Changes how overlapping background images are composited against an "empty" 
-        backdrop. The "backdrop" here is a transparent layer underneath the background 
-        color. The default of normal imposes simple alpha blending, as CSS has permitted 
-        since its inception. The others cause the background image and its backdrop to 
-        be combined in various ways; for example, lighten means that the final result 
-        will show, at each pixel, either the image or its backdrop, whichever is lighter. 
-        darken is the same, except the darker of the two pixels will be shown. The 
-        results of these are likely to be familiar to users of Photoshop or any other 
-        graphic-editing tool. Compositing of multiple background layers is done back 
-        to front.</td>
+      backdrop. The "backdrop" here is a transparent layer underneath the background 
+      color. The default of normal imposes simple alpha blending, as CSS has permitted 
+      since its inception. The others cause the background image and its backdrop to 
+      be combined in various ways; for example, lighten means that the final result 
+      will show, at each pixel, either the image or its backdrop, whichever is lighter. 
+      darken is the same, except the darker of the two pixels will be shown. The 
+      results of these are likely to be familiar to users of Photoshop or any other 
+      graphic-editing tool. Compositing of multiple background layers is done back 
+      to front.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4192,10 +4192,10 @@ li.shadowed {background-blend-mode: darken;} aside
     <tr>
       <td><b>Description</b></td>
       <td>Defines the boundary within the element box at which the background is clipped 
-        (that is, no longer drawn). Historically, this has been equivalent to the default 
-        value of border-box, where the background goes to the outer edge of the border 
-        area. This property allows more constrained clipping boxes at the outer edge of 
-        the padding area and at the content edge itself.</td>
+      (that is, no longer drawn). Historically, this has been equivalent to the default 
+      value of border-box, where the background goes to the outer edge of the border 
+      area. This property allows more constrained clipping boxes at the outer edge of 
+      the padding area and at the content edge itself.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4238,11 +4238,11 @@ body {background-clip: content-box;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines a solid color for the background of the element. This color fills the 
-        box defined by the value of background-clip---by default, the content, padding, 
-        and border areas of the element, extending to the outer edge of the element's 
-        border. Borders that have transparent sections (such as dashed borders) will 
-        show the background color through the transparent sections in cases where the 
-        background color extends into the border area.</td>
+      box defined by the value of background-clip---by default, the content, padding, 
+      and border areas of the element, extending to the outer edge of the element's 
+      border. Borders that have transparent sections (such as dashed borders) will 
+      show the background color through the transparent sections in cases where the 
+      background color extends into the border area.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4287,9 +4287,9 @@ pre {background-color: #FF9;}
     <tr>
       <td><b>Description</b></td>
       <td>Places one or more images in the background of the element. Depending on the 
-        value of backgroundrepeat, the image may tile infinitely, along one axis, or 
-        not at all. The initial background image (the origin image) is placed according 
-        to the value of background-position.</td>
+      value of backgroundrepeat, the image may tile infinitely, along one axis, or 
+      not at all. The initial background image (the origin image) is placed according 
+      to the value of background-position.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4333,15 +4333,15 @@ url(http://www.pix.org/dots.png);}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the boundary within the element box against which background image 
-        positioning is calculated. Historically, this has been equivalent to the default 
-        value of padding-box. This property allows for different positioning contexts. 
-        Note that if the value of background-origin is "further out" than the value for 
-        background-clip, and the image is positioned to an edge, part of it may be 
-        clipped. For example: div#example {background-origin: border-box; background-
-        clip: content-box; background-position: 100% 100%;} In this case the image will 
-        be placed so that its bottom-right corner aligns with the bottom-right corner of 
-        the outer border edge, but the only parts of it that will be visible are those 
-        that fall within the content area.</td>
+      positioning is calculated. Historically, this has been equivalent to the default 
+      value of padding-box. This property allows for different positioning contexts. 
+      Note that if the value of background-origin is "further out" than the value for 
+      background-clip, and the image is positioned to an edge, part of it may be 
+      clipped. For example: div#example {background-origin: border-box; background-
+      clip: content-box; background-position: 100% 100%;} In this case the image will 
+      be placed so that its bottom-right corner aligns with the bottom-right corner of 
+      the outer border edge, but the only parts of it that will be visible are those 
+      that fall within the content area.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4376,7 +4376,7 @@ h1 {background-origin: content-box, padding-box;}
     <tr>
       <td><b>Computed value</b></td>
       <td>The absolute length offsets, if <i>&lt;length&gt;</i> is specified; otherwise, 
-        percentage values</td>
+      percentage values</td>
     </tr>
     <tr>
       <td><b>Percentages</b></td>
@@ -4389,16 +4389,16 @@ h1 {background-origin: content-box, padding-box;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the position(s) of one or more backgrounds' origin images (as defined 
-        by background-image); this is the point from which any background repetition or 
-        tiling will occur. Percentage values define not only a point within the element, 
-        but also the same point in the origin image itself. That means (for example) an 
-        image can be centered by declaring its position to be 50% 50%. When percentage 
-        or length values are used, the first is always the horizontal position and the 
-        second is the vertical position. If only one value is given, it sets the horizontal 
-        position, while the missing value is assumed to be either center or 50%. Negative 
-        values are permitted and may place the origin image outside the element's content 
-        area without actually rendering it. The context within which an origin image is 
-        placed can be affected by the value of background-origin.</td>
+      by background-image); this is the point from which any background repetition or 
+      tiling will occur. Percentage values define not only a point within the element, 
+      but also the same point in the origin image itself. That means (for example) an 
+      image can be centered by declaring its position to be 50% 50%. When percentage 
+      or length values are used, the first is always the horizontal position and the 
+      second is the vertical position. If only one value is given, it sets the horizontal 
+      position, while the missing value is assumed to be either center or 50%. Negative 
+      values are permitted and may place the origin image outside the element's content 
+      area without actually rendering it. The context within which an origin image is 
+      placed can be affected by the value of background-origin.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4449,14 +4449,14 @@ right, 50% 75%, 0 40px;} pre
     <tr>
       <td><b>Description</b></td>
       <td>Defines the tiling pattern for one or more background images. The repetition 
-        begins from the origin image, which is defined as the value of background-image 
-        and is placed according to the value of background-position (and possibly 
-        background-origin). For the keywords space and round, the image is tiled as many 
-        times as it will fit in the background area without being clipped, and then the 
-        first and last images are placed against their respective background edges. The 
-        difference is that space causes the intervening images to be regularly spaced, 
-        and round causes them to be stretched to touch each other. Note that repeat-x is 
-        equivalent to repeat no-repeat, and repeat-y is equivalent to no-repeat repeat.</td>
+      begins from the origin image, which is defined as the value of background-image 
+      and is placed according to the value of background-position (and possibly 
+      background-origin). For the keywords space and round, the image is tiled as many 
+      times as it will fit in the background area without being clipped, and then the 
+      first and last images are placed against their respective background edges. The 
+      difference is that space causes the intervening images to be regularly spaced, 
+      and round causes them to be stretched to touch each other. Note that repeat-x is 
+      equivalent to repeat no-repeat, and repeat-y is equivalent to no-repeat repeat.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4484,7 +4484,7 @@ repeat-y, round space, repeat;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; 
-        auto &rbrack;{1,2} &vert; cover &vert; contain &rbrack;</td>
+      auto &rbrack;{1,2} &vert; cover &vert; contain &rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4492,8 +4492,7 @@ repeat-y, round space, repeat;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>As declared, but with all lengths made absolute and  
-  any missing auto keywords added </td>
+      <td>As declared, but with all lengths made absolute and any missing auto keywords added</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -4502,12 +4501,12 @@ repeat-y, round space, repeat;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the size of one or more background origin images. If two keywords are 
-        used (e.g., 50px 25%), the first defines the horizontal size of the image and the 
-        second defines the vertical size. The origin image can be deformed to exactly 
-        cover the background with 100% 100%. By contrast, cover scales up the image to 
-        cover the entire background even if some of it exceeds the background area and is 
-        thus clipped, and contain scales up the origin image so that at least one of its 
-        dimensions exactly fills the corresponding axis of the background area.</td>
+      used (e.g., 50px 25%), the first defines the horizontal size of the image and the 
+      second defines the vertical size. The origin image can be deformed to exactly 
+      cover the background with 100% 100%. By contrast, cover scales up the image to 
+      cover the entire background even if some of it exceeds the background area and is 
+      thus clipped, and contain scales up the origin image so that at least one of its 
+      dimensions exactly fills the corresponding axis of the background area.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4534,7 +4533,7 @@ div.photo {background-size: cover;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ 
-        <i>&lt;bordercolor&gt;</i> &rbrack;</td>
+      <i>&lt;bordercolor&gt;</i> &rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4555,8 +4554,8 @@ div.photo {background-size: cover;}
     <tr>
       <td><b>Description</b></td>
       <td>A shorthand property that defines the width, color, and style of an element's border. 
-        Note that while none of the values are actually required, omitting a border style will 
-        result in no border being applied because the default border style is none.</td>
+      Note that while none of the values are actually required, omitting a border style will 
+      result in no border being applied because the default border style is none.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4584,7 +4583,7 @@ p.warning {border: double 5px red;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; <i>&lt;border-width&gt;</i> ‖ <i>&lt;border-style&gt;</i> ‖ 
-        <i>&lt;bordercolor&gt;</i> &rbrack;</td>
+      <i>&lt;bordercolor&gt;</i> &rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4605,8 +4604,8 @@ p.warning {border: double 5px red;}
     <tr>
       <td><b>Description</b></td>
       <td>A shorthand property that defines the width, color, and style of the bottom 
-        border of an element. As with border, omission of a border style will result in 
-        no border appearing.</td>
+      border of an element. As with border, omission of a border style will result in 
+      no border appearing.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4649,8 +4648,8 @@ a:active {border-bottom: purple 2px dashed;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the color for the visible portions of the bottom border of an element. 
-        The border's style must be something other than none or hidden for any visible 
-        border to appear.</td>
+      The border's style must be something other than none or hidden for any visible 
+      border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6696,8 +6695,8 @@ subsec 1;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>For <i>&lt;uri&gt;</i> values, given that a <i>&lt;uri&gt;</i> resolves to a supported file type, 
-      a single absolute URI with optional <i>x</i>,<i>y</i> coordinates; otherwise, as declared</td>
+      <td>For <i>&lt;uri&gt;</i> values, given that a <i>&lt;uri&gt;</i> resolves to a supported file 
+      type, a single absolute URI with optional <i>x</i>,<i>y</i> coordinates; otherwise, as declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -6705,20 +6704,20 @@ subsec 1;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the cursor shape to be used when a mouse pointer is placed within the 
-      boundary of an element. Authors are cautioned to remember that users are typically 
-      very aware of cursor changes and can be easily confused by changes that seem counter 
-      intuitive. For example, making any noninteractive element switch the cursor state to 
-      pointer is quite likely to cause user frustration. Note that the value syntax makes 
-      URI values optional, but the keyword mandatory. Thus, you can specify any number of 
-      URIs to external cursor resources, but the value <i>must</i> end with a keyword. Leaving 
-      off the keyword will cause conforming user agents to drop the declaration entirely. 
-      CSS3 allows two numbers to be supplied with a <i>&lt;uri&gt;</i> value. These define the 
-      <i>x</i>,<i>y</i> coordinates of the cursor's "active point"; that is, the point in the cursor 
-      that is used for determining hover states, active actions, and so forth. If no numbers 
-      are supplied and the cursor image has no "intrinsic hotspot" (to quote the specification), 
-      the top-left corner of the image is used (equivalent to 0 0). Note that the numbers are 
-      unitless and are interpreted relative to the "cursor's coordinate system" (to quote again).</td>
+      <td>Defines the cursor shape to be used when a mouse pointer is placed within the boundary of 
+      an element. Authors are cautioned to remember that users are typically very aware of cursor 
+      changes and can be easily confused by changes that seem counter intuitive. For example, making 
+      any noninteractive element switch the cursor state to pointer is quite likely to cause user 
+      frustration. Note that the value syntax makes URI values optional, but the keyword mandatory. 
+      Thus, you can specify any number of URIs to external cursor resources, but the value <i>must</i> 
+      end with a keyword. Leaving off the keyword will cause conforming user agents to drop the 
+      declaration entirely. CSS3 allows two numbers to be supplied with a <i>&lt;uri&gt;</i> value. 
+      These define the <i>x</i>,<i>y</i> coordinates of the cursor's "active point"; that is, the 
+      point in the cursor that is used for determining hover states, active actions, and so forth. 
+      If no numbers are supplied and the cursor image has no "intrinsic hotspot" (to quote the 
+      specification), the top-left corner of the image is used (equivalent to 0 0). Note that the 
+      numbers are unitless and are interpreted relative to the "cursor's coordinate system" (to 
+      quote again).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6760,14 +6759,13 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the base writing direction of blocks and the direction of embeddings and 
-        overrides for the Unicode Bidirectional Algorithm (sometimes called <i>bidi</i>). 
-        Furthermore, it changes the way a number of properties and layout decisions are 
-        handled, including but not limited to the placement of table cells in a table row 
-        and the layout algorithms for block boxes.
-        For a variety of reasons, authors are strongly encouraged to use the HTML attribute 
-        dir rather than the CSS property direction. User agents that do not support 
-        bidirectional text are permitted to ignore this property.</td>
+      <td>Defines the base writing direction of blocks and the direction of embeddings and overrides 
+      for the Unicode Bidirectional Algorithm (sometimes called <i>bidi</i>). Furthermore, it changes 
+      the way a number of properties and layout decisions are handled, including but not limited to 
+      the placement of table cells in a table row and the layout algorithms for block boxes. For a 
+      variety of reasons, authors are strongly encouraged to use the HTML attribute dir rather than 
+      the CSS property direction. User agents that do not support bidirectional text are permitted 
+      to ignore this property.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6800,16 +6798,14 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
     </tr>
     <tr>
       <td><b>Definitions</b></td>
-      <td><i><b>&lt;display-outside&gt;</b></i>block &vert; inline &vert; run-in 
-        <i><b>&lt;display-inside&gt;</b></i> flow &vert; flow-root &vert; table 
-        &vert; flex &vert; grid &vert; 
-        ruby <i><b>&lt;display-listitem&gt;</b></i>list-item && <i>&lt;display-outside&gt;</i>? 
-        && &lbrack; flow &vert; flowroot &rbrack;? <i><b>&lt;display-internal&gt;</b></i>
-        table-row-group &vert; table-header-group &vert; table-footer-group &vert; table-row 
-        &vert; table-cell &vert; tablecolumn-group &vert; table-column &vert; table-caption 
-        &vert; ruby-base &vert; ruby-text &vert; ruby-base-container &vert; ruby-text-container 
-        </b><i>&lt;display-box&gt;</i></b> contents &vert; none </b><i>&lt;display-legacy&gt;</i></b>
-        inline-block &vert; inline-list-item &vert; inline-table &vert; inline-flex &vert; inline-grid</td>
+      <td><i><b>&lt;display-outside&gt;</b></i>block &vert; inline &vert; run-in <i><b>&lt;display-inside&gt;</b></i> 
+      flow &vert; flow-root &vert; table &vert; flex &vert; grid &vert; ruby <i><b>&lt;display-listitem&gt;</b></i>
+      list-item && <i>&lt;display-outside&gt;</i>? && &lbrack; flow &vert; flowroot &rbrack;?
+      <i><b>&lt;display-internal&gt;</b></i> table-row-group &vert; table-header-group &vert; 
+      table-footer-group &vert; table-row &vert; table-cell &vert; tablecolumn-group &vert; 
+      table-column &vert; table-caption &vert; ruby-base &vert; ruby-text &vert; ruby-base-container 
+      &vert; ruby-text-container </b><i>&lt;display-box&gt;</i></b> contents &vert; none </b><i>&lt;display-legacy&gt;</i></b> inline-block &vert; inline-list-item &vert; inline-table 
+      &vert; inline-flex &vert; inline-grid</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -6825,16 +6821,15 @@ a&lbrack;href&rbrack;.external {cursor: url(globe.png), auto;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the kind of display box an element generates during layout. Gratuitous 
-        use of display with a document type such as HTML can be tricky, as it upsets the 
-        display hierarchy already defined in HTML, but it can also be very useful. In the 
-        case of XML, which has no such built-in visual hierarchy, display is indispensable. 
-        The value none is often used to make elements "disappear," since it removes the 
-        element and all of its descendant elements from the presentation. This is true not 
-        just in visual media, but in all media; thus, setting an element to display: none 
-        will prevent it from being spoken by a speaking browser. The value run-in was long 
-        a part of CSS2.1 but was dropped in early 2011 because of inconsistencies among 
-        browsers. Despite this, it is still listed as part of CSS3.</td>
+      <td>Defines the kind of display box an element generates during layout. Gratuitous use of 
+      display with a document type such as HTML can be tricky, as it upsets the display hierarchy 
+      already defined in HTML, but it can also be very useful. In the case of XML, which has no 
+      such built-in visual hierarchy, display is indispensable. The value none is often used to 
+      make elements "disappear," since it removes the element and all of its descendant elements 
+      from the presentation. This is true not just in visual media, but in all media; thus, setting 
+      an element to display: none will prevent it from being spoken by a speaking browser. The 
+      value run-in was long a part of CSS2.1 but was dropped in early 2011 because of inconsistencies 
+      among browsers. Despite this, it is still listed as part of CSS3.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6877,9 +6872,9 @@ tr {display: table-row;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the presentation of table cells that contain no content. If shown, the 
-        cell's borders and background are drawn. This property is only honored if border-
-        collapse is set to separate; otherwise, it is ignored.</td>
+      <td>Defines the presentation of table cells that contain no content. If shown, the cell's 
+      borders and background are drawn. This property is only honored if border-collapse is set 
+      to separate; otherwise, it is ignored.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6906,9 +6901,9 @@ tr {display: table-row;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>&lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert; 
-        dropshadow() &vert; grayscale() &vert; hue-rotate() &vert; invert() &vert; 
-        opacity() &vert; sepia() &vert; saturate() &vert; url() &rbrack;#</td>
+      <td>&lbrack; none &vert; blur() &vert; brightness() &vert; contrast() &vert; dropshadow() &vert; 
+      grayscale() &vert; hue-rotate() &vert; invert() &vert; opacity() &vert; sepia() &vert; saturate() 
+      &vert; url() &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -6920,14 +6915,14 @@ tr {display: table-row;}
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td>All elements (in SVG, applies to all graphics elements and all container elements 
-        except the defs element)</td>
+      <td>All elements (in SVG, applies to all graphics elements and all container elements except 
+      the defs element)</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Applies a visual filter to the element, resulting in an alteration of its final 
-        appearance. url() values point to filter elements in SVG files, either externally 
-        or embedded within the HTML document. SVG filters can be quite complex and powerful.</td>
+      <td>Applies a visual filter to the element, resulting in an alteration of its final appearance. 
+      url() values point to filter elements in SVG files, either externally or embedded within the 
+      HTML document. SVG filters can be quite complex and powerful.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6956,8 +6951,8 @@ url(/assets/filters.svg#spotlight);}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>&lbrack; <i>&lt;flex-grow&gt;</i> <i>&lt;flex-shrink&gt;</i>?
-        <i>&lt;flex-basis&gt;</i> &rbrack; &vert; none</td>
+      <td>&lbrack; <i>&lt;flex-grow&gt;</i> <i>&lt;flex-shrink&gt;</i>? <i>&lt;flex-basis&gt;</i> 
+      &rbrack; &vert; none</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -6969,8 +6964,8 @@ url(/assets/filters.svg#spotlight);}
     </tr>
     <tr>
       <td><b>Percentages</b></td>
-      <td>Valid for the flex-basis value only, relative to the element's parent's inner 
-        main axis size</td>
+      <td>Valid for the flex-basis value only, relative to the element's parent's inner main axis 
+      size</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -6982,8 +6977,8 @@ url(/assets/filters.svg#spotlight);}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property encompassing the flex-grow, flex-shrink, and flex-basis 
-        properties, used to set the proportion and types of flexibility permitted</td>
+      <td>A shorthand property encompassing the flex-grow, flex-shrink, and flex-basis properties, 
+      used to set the proportion and types of flexibility permitted</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6999,12 +6994,11 @@ ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}
     </tr>
     <tr>
       <td><b>Note</b></td>
-      <td>For a flex item. The minimum valid value is a flex basis on its own, in which 
-        case the growth and shrink factors are set to their defaults of 0 and 1, 
-        <b>flex-basis</b>   respectively. Including the growth and shrink factors is 
-        optional, but if one is included, the other <i>must</i> also be present. It is 
-        <i>strongly</i> recommended that authors use this property instead of the separate 
-        properties it encompasses.</td>
+      <td>For a flex item. The minimum valid value is a flex basis on its own, in which case the 
+      growth and shrink factors are set to their defaults of 0 and 1, <b>flex-basis</b> respectively. 
+      Including the growth and shrink factors is optional, but if one is included, the other <i>must</i> 
+      also be present. It is <i>strongly</i> recommended that authors use this property instead of the 
+      separate properties it encompasses.</td>
     </tr>
   </tbody>
 </table>
@@ -7021,8 +7015,8 @@ ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>content &vert; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> 
-        &vert; auto &rbrack;</td>
+      <td>content &vert; &lbrack; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i> &vert; 
+      auto &rbrack;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -7046,9 +7040,8 @@ ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the initial size of a flex item, used as a basis for all subsequent 
-        flex sizing calculations. This can override an explicitly assigned width value 
-        for the element.</td>
+      <td>Defines the initial size of a flex item, used as a basis for all subsequent flex sizing 
+      calculations. This can override an explicitly assigned width value for the element.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7062,8 +7055,8 @@ nav ul li {flex-basis: 50%;} ol.gallery li
     </tr>
     <tr>
       <td><b>Note</b></td>
-      <td>It is <i>strongly</i> recommended that instead of this property, authors use 
-        the flex shorthand property to set an item's flex basis.</td>
+      <td>It is <i>strongly</i> recommended that instead of this property, authors use the flex 
+      shorthand property to set an item's flex basis.</td>
     </tr>
   </tbody>
 </table>
@@ -7096,8 +7089,8 @@ nav ul li {flex-basis: 50%;} ol.gallery li
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>flowed into the flex container, which in turn defines how the flex lines will 
-        fill the flex container.</td>
+      <td>flowed into the flex container, which in turn defines how the flex lines will fill the 
+      flex container.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7112,7 +7105,7 @@ column;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- flex-flow  Inh. N Anim. N  -->
+<!-- flex-flow Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
@@ -7139,8 +7132,8 @@ column;}
     </tr>
     </tr>
       <td><b>Description</b></td>
-      <td>A shorthand property encompassing the flexdirection and flex-wrap properties. 
-        Note that the default wrapping value is nowrap (see flex-wrap).</td>
+      <td>A shorthand property encompassing the flexdirection and flex-wrap properties. Note that 
+      the default wrapping value is nowrap (see flex-wrap).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7182,10 +7175,9 @@ nav.sidenav {display: flex; flex-flow: column nowrap;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Sets the <i>growth factor</i> for a flex item. The value supplied is summed up 
-        with all the growth factors of the flex items in the same flex line, and the 
-        amount they grow is scaled in proportion to their growth factors as a percentage 
-        of the whole.</td>
+      <td>Sets the <i>growth factor</i> for a flex item. The value supplied is summed up with all 
+      the growth factors of the flex items in the same flex line, and the amount they grow is scaled 
+      in proportion to their growth factors as a percentage of the whole.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7199,8 +7191,8 @@ ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
     </tr>
     <tr>
       <td><b>Note</b></td>
-      <td>It is <i>strongly</i> recommended that instead of this property, authors use 
-        the flex shorthand property to set an item's flex growth factor.</td>
+      <td>It is <i>strongly</i> recommended that instead of this property, authors use the flex 
+      shorthand property to set an item's flex growth factor.</td>
     </tr>
   </tbody>
 </table>
@@ -7233,10 +7225,9 @@ ol.gallery li {flex-grow: 0;} /&ast; NO growing &ast;/ div span.whatevs
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Sets the <i>shrink factor</i> for a flex item. The value supplied is summed up 
-        with all the shrink factors of the other flex items in the same flex line, and 
-        the amount they shrink is scaled proportional to their shrink factors as a 
-        percentage of the whole.</td>
+      <td>Sets the <i>shrink factor</i> for a flex item. The value supplied is summed up with all 
+      the shrink factors of the other flex items in the same flex line, and the amount they shrink 
+      is scaled proportional to their shrink factors as a percentage of the whole.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7250,8 +7241,8 @@ ol.gallery li {flex-shrink: 0.5;} div span.whatevs
     </tr>
     <tr>
       <td><b>Note</b></td>
-      <td>It is <i>strongly</i> recommended that instead of this property, authors use 
-        the flex shorthand property to set an item's flex shrink factor.</td>
+      <td>It is <i>strongly</i> recommended that instead of this property, authors use the flex 
+      shorthand property to set an item's flex shrink factor.</td>
     </tr>
   </tbody>
 </table>
@@ -7284,12 +7275,11 @@ ol.gallery li {flex-shrink: 0.5;} div span.whatevs
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines whether flex items can wrap to multiple flex lines, or only a single 
-        flex line is allowed. In a way, it is analogous to white-space wrapping in text 
-        content. Note, however, that the default is nowrap, so flex items will keep going 
-        in a single line (either a row or a column) even if that means they continue 
-        outside the flex container. If you want your flex items to wrap to a new flex 
-        line when they run out of room (as in an image gallery), make sure to wrap them.</td>
+      <td>Defines whether flex items can wrap to multiple flex lines, or only a single flex line is 
+      allowed. In a way, it is analogous to white-space wrapping in text content. Note, however, that 
+      the default is nowrap, so flex items will keep going in a single line (either a row or a column) 
+      even if that means they continue outside the flex container. If you want your flex items to wrap 
+      to a new flex line when they run out of room (as in an image gallery), make sure to wrap them.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7331,15 +7321,14 @@ div.gallery {display: flex; flex-wrap: wrap;} nav.sidenav
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the direction in which an element is floated. This has traditionally 
-        been applied to images in order to let text flow around them, but in CSS, any 
-        element may be floated. A floated element will generate a block-level box no 
-        matter what kind of element it may be. Floated nonreplaced elements should be 
-        given an explicit width, as they otherwise tend to become as narrow as possible. 
-        Floating is generally well supported by all browsers, but the nature of floats 
-        can lead to unexpected results when they are used as a page layout mechanism. 
-        This is largely due to subtle differences in the interpretation of statements 
-        like "as narrow as possible."</td>
+      <td>Defines the direction in which an element is floated. This has traditionally been applied 
+      to images in order to let text flow around them, but in CSS, any element may be floated. A 
+      floated element will generate a block-level box no matter what kind of element it may be. 
+      Floated nonreplaced elements should be given an explicit width, as they otherwise tend to 
+      become as narrow as possible. Floating is generally well supported by all browsers, but the 
+      nature of floats can lead to unexpected results when they are used as a page layout mechanism. 
+      This is largely due to subtle differences in the interpretation of statements like "as narrow 
+      as possible."</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7366,9 +7355,9 @@ p.sidebar {float: right; width: 15em;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack;&lbrack; <i>&lt;font-style&gt;</i> ‖ &lbrack; normal &vert; small-caps &rbrack; 
-        ‖ <i>&lt;fontweight&gt;</i> &rbrack;? <i>&lt;font-size&gt;</i> &lbrack; / <i>&lt;line-height&gt;</i> 
-        &rbrack;? <i>&lt;fontfamily&gt;</i>&rbrack; &vert; caption &vert; icon &vert; menu &vert; message-box 
-        &vert; small-caption &vert; status-bar</td>
+      ‖ <i>&lt;fontweight&gt;</i> &rbrack;? <i>&lt;font-size&gt;</i> &lbrack; / <i>&lt;line-height&gt;</i> 
+      &rbrack;? <i>&lt;fontfamily&gt;</i>&rbrack; &vert; caption &vert; icon &vert; menu &vert; message-box 
+      &vert; small-caption &vert; status-bar</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -7380,8 +7369,8 @@ p.sidebar {float: right; width: 15em;}
     </tr>
     <tr>
       <td><b>Percentages</b></td>
-      <td>Calculated with respect to the parent element for <i>&lt;font-size&gt;</i> and 
-        with respect to the element's <i>&lt;fontsize&gt;</i> for <i>&lt;line-height&gt;</i></td>
+      <td>Calculated with respect to the parent element for <i>&lt;font-size&gt;</i> and with respect 
+      to the element's <i>&lt;fontsize&gt;</i> for <i>&lt;line-height&gt;</i></td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -7393,12 +7382,11 @@ p.sidebar {float: right; width: 15em;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property used to set all the aspects of an element's font at once. 
-        It can also be used to set the element's font to match an aspect of the user's 
-        computing environment using keywords such as icon. If keywords are not used, the 
-        minimum font value <i>must</i> include the font size and family in that order, 
-        and any font value that is not a keyword must end with the font family. Otherwise, 
-        the font declaration will be ignored.</td>
+      <td>A shorthand property used to set all the aspects of an element's font at once. It can also 
+      be used to set the element's font to match an aspect of the user's computing environment using 
+      keywords such as icon. If keywords are not used, the minimum font value <i>must</i> include the 
+      font size and family in that order, and any font value that is not a keyword must end with the 
+      font family. Otherwise, the font declaration will be ignored.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7444,14 +7432,13 @@ encouraged for fallback purposes &ast;/
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines a font family to be used in the display of an element's text. Note that 
-        use of a specific font family (e.g., Geneva) is wholly dependent on that family 
-        being available, either on the user's computer or thanks to a downloadable font 
-        file, and the font family containing the glyphs needed to display the content. 
-        Therefore, using generic family names as a fallback is strongly encouraged. Font 
-        names that contain spaces or nonalphabetic characters should be quoted to minimize 
-        potential confusion. In contrast, generic fallback family names should never be 
-        quoted.</td>
+      <td>Defines a font family to be used in the display of an element's text. Note that use of a 
+      specific font family (e.g., Geneva) is wholly dependent on that family being available, either 
+      on the user's computer or thanks to a downloadable font file, and the font family containing 
+      the glyphs needed to display the content. Therefore, using generic family names as a fallback 
+      is strongly encouraged. Font names that contain spaces or nonalphabetic characters should be 
+      quoted to minimize potential confusion. In contrast, generic fallback family names should never 
+      be quoted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7495,10 +7482,10 @@ p {font-family: Helvetica, Arial, sans-serif;} li
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Used to turn font features on and off; examples include ligatures, old-style 
-        numbers, and more. Whether a font feature actually can be enabled depends 
-        entirely on the font face being used: turning ligatures on or off can only work 
-        if the face has defined ligatures in the first place.</td>
+      <td>Used to turn font features on and off; examples include ligatures, old-style numbers, and 
+      more. Whether a font feature actually can be enabled depends entirely on the font face being 
+      used: turning ligatures on or off can only work if the face has defined ligatures in the first 
+      place.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7545,13 +7532,12 @@ ol {font-feature-settings: &quot;liga&quot; on, &quot;smcp&quot; on,
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>In effect, allows the author to disable kerning of text for a given element. 
-        The default of auto tells user agents to do what they normally do, whatever 
-        that is. normal directs the user agent to use any kerning information in the 
-        font face to kern text, even if it normally wouldn't. With none, kerning is 
-        disabled, even if the face has kerning information and the user agent would 
-        make use of it. Note that kerning is done before any letter spacing is altered 
-        (see letterspacing).</td>
+      <td>In effect, allows the author to disable kerning of text for a given element. The default 
+      of auto tells user agents to do what they normally do, whatever that is. normal directs the 
+      user agent to use any kerning information in the font face to kern text, even if it normally 
+      wouldn't. With none, kerning is disabled, even if the face has kerning information and the 
+      user agent would make use of it. Note that kerning is done before any letter spacing is 
+      altered (see letterspacing).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7591,8 +7577,8 @@ none;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>For length values, the absolute length; otherwise, as declared 
-        Calculated with respect to the parent element's Percentages font size</td>
+      <td>For length values, the absolute length; otherwise, as declared. Calculated with respect to 
+      the parent element's Percentages font size</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -7604,14 +7590,13 @@ none;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the size of the font. The size can be defined as an absolute size, a 
-        relative size, a length value, or a percentage value. Negative length and 
-        percentage values are not permitted. The dangers of font size assignment are 
-        many and varied, and use of points is particularly discouraged in web design as 
-        there is no certain relationship between points and the pixels on a screen. It's 
-        a matter of historical interest that because of early misunderstandings, setting 
-        the font-size to medium led to different results in early versions of Internet 
-        Explorer and Navigator 4.x.</td>
+      <td>Defines the size of the font. The size can be defined as an absolute size, a relative size, 
+      a length value, or a percentage value. Negative length and percentage values are not permitted. 
+      The dangers of font size assignment are many and varied, and use of points is particularly 
+      discouraged in web design as there is no certain relationship between points and the pixels on 
+      a screen. It's a matter of historical interest that because of early misunderstandings, setting 
+      the font-size to medium led to different results in early versions of Internet Explorer and 
+      Navigator 4.x.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7654,9 +7639,9 @@ p.caption {font-size: 9px;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines an aspect value for the element, which is used to scale fonts such that 
-        they more closely match each other in cases where fallback fonts are used. The 
-        proper aspect value for a font is its true xheight divided by its font size.</td>
+      <td>Defines an aspect value for the element, which is used to scale fonts such that they more 
+      closely match each other in cases where fallback fonts are used. The proper aspect value for a 
+      font is its true xheight divided by its font size.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7873,8 +7858,8 @@ pre code {font-synthesis: style;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200   
-&vert; 300 &vert; 400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900</td>
+      <td>normal &vert; bold &vert; bolder &vert; lighter &vert; 100 &vert; 200 &vert; 300 &vert; 
+      400 &vert; 500 &vert; 600 &vert; 700 &vert; 800 &vert; 900</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -7882,9 +7867,8 @@ pre code {font-synthesis: style;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>One of the numeric values (100, etc.), or one of    
- the numeric values plus one of the relative values  
-(bolder or lighter) </td>
+      <td>One of the numeric values (100, etc.), or one of the numeric values plus one of the relative 
+      values (bolder or lighter)</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -7892,12 +7876,11 @@ pre code {font-synthesis: style;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the font weight used in rendering an element's text. The numeric 
-      value 400 is equivalent to the keyword normal, and 700 is equivalent to bold. 
-      If a font has only two weights---normal and bold--- the numbers 100 through 500 
-      will be normal, and 600 through 900 will be bold. In general terms, the visual 
-      result of each numeric value must be at least as light as the next lowest number 
-      and at least as heavy as the next highest number.</td>
+      <td>Defines the font weight used in rendering an element's text. The numeric value 400 is 
+      equivalent to the keyword normal, and 700 is equivalent to bold. If a font has only two weights---
+      normal and bold--- the numbers 100 through 500 will be normal, and 600 through 900 will be bold. 
+      In general terms, the visual result of each numeric value must be at least as light as the next 
+      lowest number and at least as heavy as the next highest number.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -7927,12 +7910,12 @@ b {font-weight: 700;} strong {font-weight: bold;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>none &vert; subgrid &vert; &lbrack; <i>&lt;grid-template-rows&gt;</i> /    
-<i>&lt;gridtemplate-columns&gt;</i> &rbrack; &vert; &lbrack; 
-<i>&lt;line-names&gt;</i>? <i>&lt;string&gt; &lt;track-size&gt;</i>? 
-<i>&lt;line-names&gt;</i>? &rbrack;+ &lbrack; / <i>&lt;track-list&gt;</i> &rbrack;? &vert;  
-&lbrack; <i>&lt;grid-auto-flow&gt;</i> &lbrack; <i>&lt;grid-auto-rows&gt;</i> &lbrack;  
-/ <i>&lt;gridauto-columns&gt;</i> &rbrack;? &rbrack;? &rbrack; &rbrack</td>
+      <td>none &vert; subgrid &vert; &lbrack; <i>&lt;grid-template-rows&gt;</i> / 
+      <i>&lt;gridtemplate-columns&gt;</i> &rbrack; &vert; &lbrack; <i>&lt;line-names&gt;</i>? 
+      <i>&lt;string&gt; &lt;track-size&gt;</i>? <i>&lt;line-names&gt;</i>? &rbrack;+ &lbrack; / 
+      <i>&lt;track-list&gt;</i> &rbrack;? &vert;  &lbrack; <i>&lt;grid-auto-flow&gt;</i> &lbrack;
+      <i>&lt;grid-auto-rows&gt;</i> &lbrack;  / <i>&lt;gridauto-columns&gt;</i> &rbrack;? &rbrack;? 
+      &rbrack; &rbrack</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -10181,10 +10164,9 @@ cover, 100%, contain;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines a minimum constraint on the height of the element (the exact nature 
-        of that height is dependent on the value of box-sizing). Thus, the element can 
-        be taller than the declared value, but not shorter. Negative values are not 
-        permitted.</td>
+      <td>Defines a minimum constraint on the height of the element (the exact nature of that height 
+      is dependent on the value of box-sizing). Thus, the element can be taller than the declared 
+      value, but not shorter. Negative values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -10223,10 +10205,9 @@ cover, 100%, contain;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines a minimum constraint on the width of the element (the exact nature of 
-        that width is dependent on the value of box-sizing). Thus, the element can be 
-        wider than the declared value, but not narrower. Negative values are not 
-        permitted.</td>
+      <td>Defines a minimum constraint on the width of the element (the exact nature of that width 
+      is dependent on the value of box-sizing). Thus, the element can be wider than the declared 
+      value, but not narrower. Negative values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -10250,9 +10231,9 @@ cover, 100%, contain;}
     <tr>
       <td><b>Values</b></td>
       <td>normal &vert; multiply &vert; screen &vert; overlay &vert; darken &vert; 
-        lighten &vert; color-dodge &vert; color-burn &vert; hard-light &vert; 
-        soft-light &vert; difference &vert; exclusion &vert; hue &vert; saturation 
-        &vert; color &vert; luminosity</td>
+      lighten &vert; color-dodge &vert; color-burn &vert; hard-light &vert; 
+      soft-light &vert; difference &vert; exclusion &vert; hue &vert; saturation 
+      &vert; color &vert; luminosity</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -10269,13 +10250,13 @@ cover, 100%, contain;}
     <tr>
       <td><b>Description</b></td>
       <td>Changes how an element is composited with its backdrop. The "backdrop" consists 
-        of any ancestor backgrounds and other elements that are "behind" the element being 
-        styled. The default of normal imposes simple alpha blending, as CSS has permitted 
-        since its inception. The others cause the element and its backdrop to be combined 
-        in various ways; for example, lighten means that the final result will show, at 
-        each pixel, either the element or its backdrop, whichever is lighter. darken is 
-        the same, except the darker of the two pixels will be shown. The results of these 
-        are likely to be familiar to users of Photoshop or any other graphic-editing tool.</td>
+      of any ancestor backgrounds and other elements that are "behind" the element being 
+      styled. The default of normal imposes simple alpha blending, as CSS has permitted 
+      since its inception. The others cause the element and its backdrop to be combined 
+      in various ways; for example, lighten means that the final result will show, at 
+      each pixel, either the element or its backdrop, whichever is lighter. darken is 
+      the same, except the darker of the two pixels will be shown. The results of these 
+      are likely to be familiar to users of Photoshop or any other graphic-editing tool.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -10319,14 +10300,14 @@ color-burn, luminosity, darken;}
     <tr>
       <td><b>Description</b></td>
       <td>Alters the way an image's contents are sized with respect to its content box. 
-        The default, fill, causes the image to be stretched or squashed to fit its height 
-        and width, as images always have. none means the image keeps its intrinsic height 
-        and width, regardless of the values of the img element's height and width properties 
-        contain will cause the entire image to be visible within its element box, scaled up 
-        or down as necessary, while maintaining its intrinsic aspect ratio. cover scales the 
-        image up or down to fill the image box of the image, again maintaining its intrinsic 
-        aspect ratio. scale-down means the image will stay its intrinsic size unless it's 
-        too big to fit into the element box, in which case it will be scaled down to fit.</td>
+      The default, fill, causes the image to be stretched or squashed to fit its height 
+      and width, as images always have. none means the image keeps its intrinsic height 
+      and width, regardless of the values of the img element's height and width properties 
+      contain will cause the entire image to be visible within its element box, scaled up 
+      or down as necessary, while maintaining its intrinsic aspect ratio. cover scales the 
+      image up or down to fill the image box of the image, again maintaining its intrinsic 
+      aspect ratio. scale-down means the image will stay its intrinsic size unless it's 
+      too big to fit into the element box, in which case it will be scaled down to fit.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -10370,8 +10351,8 @@ img:nth-of-type(3) {object-fit: cover;}
     <tr>
       <td><b>Description</b></td>
       <td>Provides a way to change the position of a fitted image (see object-fit) within 
-        its element box, in a manner identical to how background origin images can be 
-        positioned.</td>
+      its element box, in a manner identical to how background origin images can be 
+      positioned.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -10414,17 +10395,15 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines an element's degree of opacity using a number in the range 0--1, 
-        inclusive. Any values outside that range are clipped to the nearest edge 
-        (0 or 1). This property affects every visible portion of an element. If it 
-        is necessary to have the content of an element semiopaque but not the 
-        background, or vice versa, use alpha color types such as rgba().
-        An element with opacity of 0 is effectively invisible and may not respond 
-        to mouse or other DOM events. Because of the way semiopaque elements are 
-        expected to be drawn, an element with opacity less than 1 creates its own 
-        stacking context even if it is not positioned. For similar reasons, an 
-        absolutely positioned element with opacity less than 1 and a z-index of auto 
-        force-alters the z-index value to 0.</td>
+      <td>Defines an element's degree of opacity using a number in the range 0--1, inclusive. Any 
+      values outside that range are clipped to the nearest edge (0 or 1). This property affects 
+      every visible portion of an element. If it is necessary to have the content of an element 
+      semiopaque but not the background, or vice versa, use alpha color types such as rgba().
+      An element with opacity of 0 is effectively invisible and may not respond to mouse or other 
+      DOM events. Because of the way semiopaque elements are expected to be drawn, an element with 
+      opacity less than 1 creates its own stacking context even if it is not positioned. For 
+      similar reasons, an absolutely positioned element with opacity less than 1 and a z-index 
+      of auto force-alters the z-index value to 0.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -10465,14 +10444,14 @@ img:nth-of-type(2) {object-position: 67% 100%;} img:nth-of-type(3)
     <tr>
       <td><b>Description</b></td>
       <td>Sets a visual rendering order independently of the document source order. One 
-        example is turning a set of list items into flex items, and then designating a 
-        list item (or group of list items) from the middle of the list to be the first 
-        flex items displayed in the flex container. Because only the visual order is 
-        changed, not the DOM order, structural selectors like :first-child will match 
-        the first element in the source, not the first element on screen. Originally 
-        conceived as a way to change the visual layout order of flex items, this 
-        property now also allows authors to rearrange the order of auto-flowed grid 
-        items.</td>
+      example is turning a set of list items into flex items, and then designating a 
+      list item (or group of list items) from the middle of the list to be the first 
+      flex items displayed in the flex container. Because only the visual order is 
+      changed, not the DOM order, structural selectors like :first-child will match 
+      the first element in the source, not the first element on screen. Originally 
+      conceived as a way to change the visual layout order of flex items, this 
+      property now also allows authors to rearrange the order of auto-flowed grid 
+      items.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11304,11 +11283,11 @@ avoid;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines whether one or more page breaks should be placed before an element. 
-        It's theoretically possible to use always to force a page break, but while 
-        avoid asks the user agent to avoid inserting a page break if possible, there's 
-        no guarantee it won't insert one anyway. The keyword left is used to insert 
-        enough breaks before the element to make the page be a lefthand page; similarly, 
-        right is used for a righthand page.</td>
+      It's theoretically possible to use always to force a page break, but while 
+      avoid asks the user agent to avoid inserting a page break if possible, there's 
+      no guarantee it won't insert one anyway. The keyword left is used to insert 
+      enough breaks before the element to make the page be a lefthand page; similarly, 
+      right is used for a righthand page.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11355,9 +11334,9 @@ h2 {page-break-before: avoid;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines whether a page break should be avoided within the element. Note that 
-        such avoidance may not be possible; for example, declaring body {pagebreak-inside: 
-        avoid;} for a lengthy document will not prevent the insertion of page breaks by 
-        the user agent.</td>
+      such avoidance may not be possible; for example, declaring body {pagebreak-inside: 
+      avoid;} for a lengthy document will not prevent the insertion of page breaks by 
+      the user agent.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11405,9 +11384,9 @@ table {page-break-inside:
     <tr>
       <td><b>Description</b></td>
       <td>Defines the amount of apparent 3D perspective of an element's transformed 
-        children, but not for the element itself. Numbers define a foreshortening 
-        depth in pixels; smaller numbers define more extreme perspective effects. 
-        Negative values are treated the same as none.</td>
+      children, but not for the element itself. Numbers define a foreshortening 
+      depth in pixels; smaller numbers define more extreme perspective effects. 
+      Negative values are treated the same as none.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11441,8 +11420,8 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>A percentage, except for length values, which are value converted to an 
-        absolute length. Refer to the size of the bounding box.</td>
+      <td>A percentage, except for length values, which are value converted to an absolute length. 
+	  Refer to the size of the bounding box.</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -11450,9 +11429,8 @@ body {perspective: 250;} /&ast; middlin&apos; &ast;/
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the origin point of the apparent 3D perspective within the 
-        element. In effect, it defines the point in the element that appears 
-        to be directly in front of the viewer.</td>
+      <td>Defines the origin point of the apparent 3D perspective within the element. In effect, it 
+	  defines the point in the element that appears to be directly in front of the viewer.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11495,9 +11473,9 @@ div {perspective-origin: 0 50%;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the positioning scheme used to lay out an element. Any element may be 
-        positioned, although an element positioned with absolute or fixed will generate 
-        a block-level box regardless of what kind of element it is. An element that is 
-        relatively positioned is offset from its default placement in the normal flow.</td>
+      positioned, although an element positioned with absolute or fixed will generate 
+      a block-level box regardless of what kind of element it is. An element that is 
+      relatively positioned is offset from its default placement in the normal flow.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11539,9 +11517,8 @@ div {perspective-origin: 0 50%;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the quotation pattern used with quotes and nested quotes. The actual 
-        quote marks are inserted via the content property's open-quote and closequote 
-        values.</td>
+      <td>Defines the quotation pattern used with quotes and nested quotes. The actual quote marks 
+	  are inserted via the content property's open-quote and closequote values.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11585,8 +11562,8 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
     <tr>
       <td><b>Description</b></td>
       <td>Defines how (or whether) an element can be resized by the user. The actual 
-        appearance and operation of any resize mechanism is left to the user agent 
-        and is likely dependent on the writing direction.</td>
+      appearance and operation of any resize mechanism is left to the user agent 
+      and is likely dependent on the writing direction.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11618,8 +11595,8 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
     <tr>
       <td><b>Computed value</b></td>
       <td>For static elements, auto; for length values, the value corresponding absolute 
-        length; for percentage values, the specified value; otherwise, auto Refer to the 
-        height of the containing block Percentages</td>
+      length; for percentage values, the specified value; otherwise, auto Refer to the 
+      height of the containing block Percentages</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -11627,8 +11604,8 @@ q:lang(fr) {quotes: &quot;«&quot; &quot;»&quot; &quot;‹&quot; &quot;›&quot
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the offset between the right outer margin edge of a positioned element 
-        and the right edge of its containing block.</td>
+      <td>Defines the offset between the right outer margin edge of a positioned element and the 
+	  right edge of its containing block.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11662,8 +11639,8 @@ div#footer {position: fixed; right: 0;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>The same as the specified value after clipping the <i>&lt;number&gt;</i> 
-        to the range &lbrack;0.0, 1.0&rbrack;</td>
+      <td>The same as the specified value after clipping the <i>&lt;number&gt;</i> to the range 
+	  &lbrack;0.0, 1.0&rbrack;</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -11671,13 +11648,12 @@ div#footer {position: fixed; right: 0;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Changes the alpha channel value that acts as a threshold for float shape 
-        creation via an image. By default, only fully transparent areas in the 
-        shape's source image are used to define the float shape. If the value is 
-        changed to 0.7, then all areas of the source image that are 70% or more 
-        transparent are used to define the float shape. This allows for the same 
-        image to be used to define multiple float shapes, for example. A value of 0 
-        will cause the entire image to be ignored for shape calculation.</td>
+      <td>Changes the alpha channel value that acts as a threshold for float shape creation via an 
+	  image. By default, only fully transparent areas in the shape's source image are used to define 
+	  the float shape. If the value is changed to 0.7, then all areas of the source image that are 
+	  70% or more transparent are used to define the float shape. This allows for the same image to 
+	  be used to define multiple float shapes, for example. A value of 0 will cause the entire image 
+	  to be ignored for shape calculation.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11719,13 +11695,12 @@ img.floated {shape-image-threshold: 0.1;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines an offset distance between the edges of a float shape and the closest 
-        points at which text may approach the shape. This is useful when floating an 
-        image and using that same image to define the float shape, but wanting the keep 
-        normal-flow text away from the visible edges of the image. Note that the float 
-        shape and shape margin are clipped beyond the outer margin edge of the original 
-        float, so excessively large shape margins are most likely to result in a 
-        traditional rectangular float box.</td>
+      <td>Defines an offset distance between the edges of a float shape and the closest points at 
+	  which text may approach the shape. This is useful when floating an image and using that same 
+	  image to define the float shape, but wanting the keep normal-flow text away from the visible 
+	  edges of the image. Note that the float shape and shape margin are clipped beyond the outer 
+	  margin edge of the original float, so excessively large shape margins are most likely to 
+	  result in a traditional rectangular float box.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11753,8 +11728,8 @@ img.floated {shape-image-threshold: 0.1;}
     <tr>
       <td><b>Values</b></td>
       <td>none &vert; &lbrack; <i>&lt;basic-shape&gt;</i> ‖ <i>&lt;shape-box&gt;</i> 
-        &rbrack; &vert; &lt;image&gt; inset &vert; circle() &vert; ellipse() &vert; 
-        polygon()</td>
+      &rbrack; &vert; &lt;image&gt; inset &vert; circle() &vert; ellipse() &vert; 
+      polygon()</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -11763,7 +11738,7 @@ img.floated {shape-image-threshold: 0.1;}
     <tr>
       <td><b>Computed value</b></td>
       <td>For a <i>&lt;basic-shape&gt;</i>, as defined for an <i>&lt;image&gt;</i>, its 
-        URI made absolute; otherwise, as declared</td>
+      URI made absolute; otherwise, as declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -11772,10 +11747,10 @@ img.floated {shape-image-threshold: 0.1;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the shape of a floated element for the purposes of calculating text 
-        flow past the float. Possibilities include defining a polygon that echoes the 
-        outer edge of an illustration, or using that image's transparent areas to define 
-        the float shape. Shapes are clipped at the edges of the shape's outer margin edge, 
-        so a float shape can never be larger than the unshaped version of that float.</td>
+      flow past the float. Possibilities include defining a polygon that echoes the 
+      outer edge of an illustration, or using that image's transparent areas to define 
+      the float shape. Shapes are clipped at the edges of the shape's outer margin edge, 
+      so a float shape can never be larger than the unshaped version of that float.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11820,15 +11795,15 @@ img.curio {shape-outside: circle(25px at 50% 50%);} aside.diamond
     <tr>
       <td><b>Description</b></td>
       <td>Defines the size and orientation of a page box. The keywords auto, portrait, and 
-        landscape cause the page box to fill the available rendering space on the page. Page 
-        boxes set to portrait have the content printed with the long sides of the page box 
-        being the right and left sides; in the case of landscape, the content is printed with 
-        the longer sides of the page box being the top and bottom sides. If a page box is 
-        specified using lengths or one of the <i>&lt;page-size&gt;</i> keywords (e.g., A4) and 
-        the page box cannot be fit onto the actual page used for display, the page box and 
-        its contents may be scaled down to fit. If only one length value is declared, it sets 
-        both dimensions and thus defines a square page box. Length values that use em or ex 
-        units are calculated with respect to the computed font size of the page context.</td>
+      landscape cause the page box to fill the available rendering space on the page. Page 
+      boxes set to portrait have the content printed with the long sides of the page box 
+      being the right and left sides; in the case of landscape, the content is printed with 
+      the longer sides of the page box being the top and bottom sides. If a page box is 
+      specified using lengths or one of the <i>&lt;page-size&gt;</i> keywords (e.g., A4) and 
+      the page box cannot be fit onto the actual page used for display, the page box and 
+      its contents may be scaled down to fit. If only one length value is declared, it sets 
+      both dimensions and thus defines a square page box. Length values that use em or ex 
+      units are calculated with respect to the computed font size of the page context.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11876,8 +11851,8 @@ landscape;}
     <tr>
       <td><b>Description</b></td>
       <td>Sets the width of tab characters' whitespace when they are present in the displayed 
-        source <i>and</i> are honored for display due to the value of whitespace. An <i>&lt;integer&gt;</i> 
-        value sets the number of "spaces" a tab character will generate.</td>
+      source <i>and</i> are honored for display due to the value of whitespace. An <i>&lt;integer&gt;</i> 
+      value sets the number of "spaces" a tab character will generate.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11920,10 +11895,10 @@ p.typer {tab-size: 0.25in;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines whether a table element should be laid out using an automatic-layout 
-        algorithm or a fixed-layout algorithm. The benefit of the automatic algorithm is 
-        that it's very similar to what authors are used to from more than a decade of 
-        browser behavior. However, the fixed-layout algorithm is theoretically faster 
-        and more predictable.</td>
+      algorithm or a fixed-layout algorithm. The benefit of the automatic algorithm is 
+      that it's very similar to what authors are used to from more than a decade of 
+      browser behavior. However, the fixed-layout algorithm is theoretically faster 
+      and more predictable.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11950,7 +11925,7 @@ table.directory {table-display: auto;}
     <tr>
       <td><b>Values</b></td>
       <td><span class="newFont">start &vert; end &vert; left &vert; right &vert; center &vert; justify &vert; 
-        match-parent &vert; start end</span></td>
+      match-parent &vert; start end</span></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -11967,10 +11942,10 @@ table.directory {table-display: auto;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the horizontal alignment of text within a block-level element by 
-        defining the point to which line boxes are aligned. The value justify is 
-        supported by allowing user agents to programmatically adjust the word (but 
-        not letter) spacing of the line's content; results may vary by user agent.</td>
+      <td>Defines the horizontal alignment of text within a block-level element by defining the point 
+	  to which line boxes are aligned. The value justify is supported by allowing user agents to 
+	  programmatically adjust the word (but not letter) spacing of the line's content; results may 
+	  vary by user agent.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -11996,8 +11971,7 @@ h4 {text-align: center;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; 
-        justify</td>
+      <td>auto &vert; start &vert; end &vert; left &vert; right &vert; center &vert; justify</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -12014,9 +11988,9 @@ h4 {text-align: center;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the horizontal alignment of the last line of text within a block-level 
-        element by defining the point to which line boxes are aligned. The value justify 
-        is supported by allowing user agents to programmatically adjust the word (but not 
-        letter) spacing of the line's content; results may vary by user agent.</td>
+      element by defining the point to which line boxes are aligned. The value justify 
+      is supported by allowing user agents to programmatically adjust the word (but not 
+      letter) spacing of the line's content; results may vary by user agent.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12059,22 +12033,19 @@ h4 {text-align-last: right;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines text-decoration effects such as underlining. These decorations will 
-        span descendant elements that don't have decorations of their own, in many 
-        cases making the child elements appear to be decorated. Combinations of the 
-        values are legal. Any time two text-decoration declarations apply to the same 
-        element, the values of the two declarations are <i>not</i> combined. For example:
+      span descendant elements that don't have decorations of their own, in many 
+      cases making the child elements appear to be decorated. Combinations of the 
+      values are legal. Any time two text-decoration declarations apply to the same 
+      element, the values of the two declarations are <i>not</i> combined. For example:
 <pre>
 h1 {text-decoration: overline;}
 h1, h2 {text-decoration: underline;}
 </pre>
-        
         Given the styles, h1 elements will be underlines with no overline because the 
         value of underline completely overrides the value of overline. If h1 should have
         both overlines and underlines, use the value overline underline for the h1 rule
         and either move it after the h1, h2 rule or extend its selector to raise its
-        specificity.
-        
-        Use agents are not required to support blink.</td>
+        specificity. Use agents are not required to support blink.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12122,12 +12093,12 @@ u.old {text-decoration: line-through underline;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the indentation of the first line of content in a block-level element. 
-        This property is most often used to create a tab effect. Negative values are 
-        permitted and cause outdent (or hanging indent) effects. In CSS3, the value 
-        each-line will apply the indentation to any new line that results from a forced 
-        line break (e.g., due to a br element) within the element, not just the first 
-        line. The value hanging inverts the defined pattern of indentation, allowing 
-        for the creation of an outdent effect without using a negative length value.</td>
+      This property is most often used to create a tab effect. Negative values are 
+      permitted and cause outdent (or hanging indent) effects. In CSS3, the value 
+      each-line will apply the indentation to any new line that results from a forced 
+      line break (e.g., due to a br element) within the element, not just the first 
+      line. The value hanging inverts the defined pattern of indentation, allowing 
+      for the creation of an outdent effect without using a negative length value.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12171,12 +12142,12 @@ h2 {text-indent: −25px;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines how characters are oriented in text, potentially independent of their 
-        writing mode (see writing-mode). When mixed, each character is aligned according 
-        to its language defaults as compared to the writing direction; for example, 
-        mixed English and Japanese text written in a vertical writing mode would have 
-        the English characters sideways and the Japanese characters upright. upright 
-        forces all characters to be upright regardless of their language, and sideways 
-        forces all characters to be shown sideways.</td>
+      writing mode (see writing-mode). When mixed, each character is aligned according 
+      to its language defaults as compared to the writing direction; for example, 
+      mixed English and Japanese text written in a vertical writing mode would have 
+      the English characters sideways and the Japanese characters upright. upright 
+      forces all characters to be upright regardless of their language, and sideways 
+      forces all characters to be shown sideways.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12220,9 +12191,9 @@ h2 {text-indent: −25px;}
     <tr>
       <td><b>Description</b></td>
       <td>Sets the approach used to render text, allowing authors to decide if speed, 
-        legibility, or precision is most important. Note that some user agents always 
-        optimize for legibility when rendering HTML text, so this property may have 
-        minimal or no effect outside of SVG (which is where it started out).</td>
+      legibility, or precision is most important. Note that some user agents always 
+      optimize for legibility when rendering HTML text, so this property may have 
+      minimal or no effect outside of SVG (which is where it started out).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12265,15 +12236,12 @@ svg tspan {text-rendering: optimizeLegibility;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines one or more shadows to be "cast" by the text of an element. Shadows are 
-        always painted behind the element's text, but in front of the element's background, 
-        borders, and outline. Shadows are drawn from the first on top to the last on the 
-        bottom. 
-        
-        The three length values that can be declared are, in order: horizontal 
-        offset, vertical offset, and blur distance. When positive, the offset values go 
-        down and to the right; when negative, they go back and to the left. Blur values 
-        cannot be negative..</td>
+      <td>Defines one or more shadows to be "cast" by the text of an element. Shadows are always 
+	  painted behind the element's text, but in front of the element's background, borders, and 
+	  outline. Shadows are drawn from the first on top to the last on the bottom.<br>
+      The three length values that can be declared are, in order: horizontal offset, vertical 
+	  offset, and blur distance. When positive, the offset values go down and to the right; when 
+	  negative, they go back and to the left. Blur values cannot be negative.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12316,9 +12284,9 @@ h2 {text-shadow: 0 −3px 0.5em blue;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the pattern for changing the case of letters in an element, regardless 
-        of the case of the text in the document source. The determination of which letters 
-        are to be capitalized by the value capitalize is not precisely defined, as it 
-        depends on user agents knowing how to recognize a "word."</td>
+      of the case of the text in the document source. The determination of which letters 
+      are to be capitalized by the value capitalize is not precisely defined, as it 
+      depends on user agents knowing how to recognize a "word."</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12353,7 +12321,7 @@ h1 {text-transform: uppercase;}
     <tr>
       <td><b>Computed value</b></td>
       <td>For static elements, auto; for length values, the corresponding absolute 
-        length; for percentage values, the specified value; otherwise, auto</td>
+      length; for percentage values, the specified value; otherwise, auto</td>
     </tr>
     <tr>
       <td><b>Percentage</b></td>
@@ -12370,7 +12338,7 @@ h1 {text-transform: uppercase;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the offset between the top outer margin edge of a positioned element 
-        and the top edge of its containing block.</td>
+      and the top edge of its containing block.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12385,9 +12353,9 @@ sub {position: relative; top: 0.5em;
     <tr>
       <td><b>Note</b></td>
       <td>For relatively positioned elements, if both top and bottom are auto, their 
-        computed values are both 0. If one of them is auto, it becomes the negative 
-        of the other; if neither is auto, bottom becomes the negative of the value 
-        of top.</td>
+      computed values are both 0. If one of them is auto, it becomes the negative 
+      of the other; if neither is auto, bottom becomes the negative of the value 
+      of top.</td>
     </tr>
   </tbody>
 </table>
@@ -12412,8 +12380,7 @@ sub {position: relative; top: 0.5em;
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>As declared, except for relative length values, which are converted to an 
-        absolute length</td>
+      <td>As declared, except for relative length values, which are converted to an absolute length</td>
     </tr>
     <tr>
       <td><b>Percentages</b></td>
@@ -12430,12 +12397,12 @@ sub {position: relative; top: 0.5em;
     <tr>
       <td><b>Description</b></td>
       <td>Defines one or more transforms of an element. These transforms can occur in a 
-        2D or a simulated 3D space, depending on how the transforms are declared. 
-        
-        The permitted values for <i>&lt;transform-function&gt;</i> are lengthy and 
-        complex. For a full list with minimalist descriptions, please consult the W3C's 
-        documentation on <a href="http://w3.org/TR/css3-3d-transforms/#transform-functions" 
-        target="_blank" rel="noreferrer noopener">transform functions</a>.</td>
+      2D or a simulated 3D space, depending on how the transforms are declared. 
+      The permitted values for <i>&lt;transform-function&gt;</i> are lengthy and 
+      complex. For a full list with minimalist descriptions, please consult the W3C's 
+      documentation on <a href="http://w3.org/TR/css3-3d-transforms/#transform-functions" 
+      target="_blank" rel="noreferrer noopener" title="Transform Functions">
+	  transform functions</a>.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12469,8 +12436,7 @@ li {transform: scale3d(1.2,1.7,0.85);}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>A percentage, except for length values, which are converted to an absolute 
-        length</td>
+      <td>A percentage, except for length values, which are converted to an absolute length</td>
     </tr>
     <tr>
       <td><b>Percentages</b></td>
@@ -12487,8 +12453,8 @@ li {transform: scale3d(1.2,1.7,0.85);}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the origin point for an element's transforms in either 2D or simulated 
-        3D space. The marked-as-optional <i>&lt;length&gt;</i> values are what define a 
-        3D origin point; without them, the value is necessarily in 2D space.</td>
+      3D space. The marked-as-optional <i>&lt;length&gt;</i> values are what define a 
+      3D origin point; without them, the value is necessarily in 2D space.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12531,11 +12497,11 @@ li {transform-origin: 10% 10px 10em;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines whether an element transformed in simulated 3D space should have its 
-        children rendered using a flat style, thus putting them all in the same 2D plane 
-        as the element, or attempt to use a 3D effect where children with positive or 
-        negative zindex values may be rendered "in front of" or "behind" the element's 
-        plane as it rotates. Elements whose overflow value is hidden cannot preserve 3D 
-        effects and are treated as though the value of transform-style is flat.</td>
+      children rendered using a flat style, thus putting them all in the same 2D plane 
+      as the element, or attempt to use a 3D effect where children with positive or 
+      negative zindex values may be rendered "in front of" or "behind" the element's 
+      plane as it rotates. Elements whose overflow value is hidden cannot preserve 3D 
+      effects and are treated as though the value of transform-style is flat.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12561,8 +12527,8 @@ li {transform-style: preserve-3d;}
     <tr>
       <td><b>Values</b></td>
       <td>&lbrack; &lbrack; none &vert; <i>&lt;transition-property&gt;</i> &rbrack; ‖ 
-        <i>&lt;time&gt;</i> ‖ <i>&lt;transition-timing-function&gt;</i> ‖  
-        <i>&lt;time&gt;</i> &rbrack;&#35;</td>
+      <i>&lt;time&gt;</i> ‖ <i>&lt;transition-timing-function&gt;</i> ‖  
+      <i>&lt;time&gt;</i> &rbrack;&#35;</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -12579,12 +12545,11 @@ li {transform-style: preserve-3d;}
     <tr>
       <td><b>Description</b></td>
       <td>A shorthand property that defins the aspects of on or more of an element's 
-        transitions from one state to another.
-
-        Even though it is not (as of this writing) explicitly defined in the value 
-        syntax, descriptive text in the specification defines that when two 
-        <i>&lt;time&gt;</i> values are declared, the first is the duration and the 
-        second is the delay. If only one is declared, it defines only the duration.</td>
+      transitions from one state to another.
+      Even though it is not (as of this writing) explicitly defined in the value 
+      syntax, descriptive text in the specification defines that when two 
+      <i>&lt;time&gt;</i> values are declared, the first is the duration and the 
+      second is the delay. If only one is declared, it defines only the duration.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12627,13 +12592,13 @@ h1 {transition: linear all 10s;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines a delay between when a transition could theoretically first start and 
-        when it actually starts. For example, if a transition is defined to begin on 
-        hover but has a delay of 0.5s, the transition will actually begin half a second 
-        after the element is first hovered over. Negative time values are permitted, but 
-        rather than creating a paradox, this simply jumps the transition to the point it 
-        would have reached had it been started at the defined time offset in the past. 
-        In other words, it will be started partway through the transition and run to 
-        its conclusion.</td>
+      when it actually starts. For example, if a transition is defined to begin on 
+      hover but has a delay of 0.5s, the transition will actually begin half a second 
+      after the element is first hovered over. Negative time values are permitted, but 
+      rather than creating a paradox, this simply jumps the transition to the point it 
+      would have reached had it been started at the defined time offset in the past. 
+      In other words, it will be started partway through the transition and run to 
+      its conclusion.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12676,8 +12641,8 @@ h1 {transition-delay: 0;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the length of time it takes for the transition to run from start to 
-        finish. The default 0s means the transition is instantaneous and no animation 
-        occurs. Negative time values are treated as 0s.</td>
+      finish. The default 0s means the transition is instantaneous and no animation 
+      occurs. Negative time values are treated as 0s.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12720,13 +12685,13 @@ h1 {transition-duration: 10s;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines one or more properties that are transitioned from one state to another; 
-        for example, color means that the foreground color of an element is transitioned 
-        from the start color to the finish color. If a shorthand property is declared, 
-        the transition parameters meant for that property are propagated to all the 
-        properties represented by the shorthand. 
+      for example, color means that the foreground color of an element is transitioned 
+      from the start color to the finish color. If a shorthand property is declared, 
+      the transition parameters meant for that property are propagated to all the 
+      properties represented by the shorthand. 
         
-        The keyword all means all properties are transitioned. The keyword none prevents 
-        any properties from being transitioned, effectively shutting down the transition.</td>
+      The keyword all means all properties are transitioned. The keyword none prevents 
+      any properties from being transitioned, effectively shutting down the transition.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12757,8 +12722,8 @@ h1 {transition-property: all;}
     <tr>
       <td><b>Definition</b></td>
       <td><b><i>&lt;timing-function&gt;</i></b>ease &vert; linear &vert; ease-in &vert; 
-        ease-out &vert; ease-in-out &vert; cubic-bezier(<i>&lt;number&gt;</i>,
-        <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>)</td>
+      ease-out &vert; ease-in-out &vert; cubic-bezier(<i>&lt;number&gt;</i>,
+      <i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>,<i>&lt;number&gt;</i>)</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -12774,9 +12739,9 @@ h1 {transition-property: all;}
     </tr>
       <td><b>Description</b></td>
       <td>Defines the way in which intermediate states of a transition are calculated. 
-        The value keywords (ease, linear, etc.) are shorthands for specific cubicbezier() 
-        values defined in the specification, so in effect all values of this property are 
-        cubic-bezier() values.</td>
+      The value keywords (ease, linear, etc.) are shorthands for specific cubicbezier() 
+      values defined in the specification, so in effect all values of this property are 
+      cubic-bezier() values.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12820,8 +12785,8 @@ h1 {transition-timing-function: linear;}
     <tr>
       <td><b>Description</b></td>
       <td>Allows the author to generate levels of embedding within the Unicode 
-        Bidirectional Algorithm. User agents that do not support bidirectional 
-        ("bidi") text are permitted to ignore this property.</td>
+      Bidirectional Algorithm. User agents that do not support bidirectional 
+      ("bidi") text are permitted to ignore this property.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12845,7 +12810,7 @@ h1 {transition-timing-function: linear;}
     <tr>
       <td><b>Values</b></td>
       <td>baseline &vert; sub &vert; super &vert; top &vert; text-top &vert; middle &vert;
-        bottom &vert; text-bottom &vert; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
+      bottom &vert; text-bottom &vert; <i>&lt;length&gt;</i> &vert; <i>&lt;percentage&gt;</i></td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -12869,12 +12834,12 @@ h1 {transition-timing-function: linear;}
     </tr>
       <td><b>Description</b></td>
       <td>Defines the vertical alignment of an inline element's baseline with respect to 
-        the baseline of the line in which it resides. Negative length and percentage 
-        values are permitted, and they lower the element instead of raising it.
-        <br>
-        In table cells, this property sets the alignment of the content of the cell 
-        within the cell box. When applied to table cells, only the values baseline, 
-        top, middle, and bottom are recognized.</td>
+      the baseline of the line in which it resides. Negative length and percentage 
+      values are permitted, and they lower the element instead of raising it.
+      <br>
+      In table cells, this property sets the alignment of the content of the cell 
+      within the cell box. When applied to table cells, only the values baseline, 
+      top, middle, and bottom are recognized.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12917,9 +12882,9 @@ sup {vertical-align: super;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines whether the element box generated by an element is rendered. This means 
-        authors can have the element take up the space it would ordinarily take up, while 
-        remaining completely invisible. The value collapse is used in tables to remove 
-        columns or rows from the table's layout.</td>
+      authors can have the element take up the space it would ordinarily take up, while 
+      remaining completely invisible. The value collapse is used in tables to remove 
+      columns or rows from the table's layout.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -12962,14 +12927,14 @@ tr.hide {visibility: collapse;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines how whitespace within an element is handled during layout. normal acts 
-        as web browsers have traditionally treated text, in that it reduces any sequence of 
-        whitespace to a single space. pre causes whitespace to be treated as in the HTML 
-        element pre, with both whitespace and line breaks fully preserved. nowrap prevents 
-        an element from linebreaking, like the nowrap attribute for td and th elements in 
-        HTML4. The values pre-wrap and preline were added in CSS2.1; the former causes the 
-        user agent to preserve whitespace while still automatically wrapping lines of text, 
-        and the latter honors newline characters within the text while collapsing all other 
-        whitespace as per normal.</td>
+      as web browsers have traditionally treated text, in that it reduces any sequence of 
+      whitespace to a single space. pre causes whitespace to be treated as in the HTML 
+      element pre, with both whitespace and line breaks fully preserved. nowrap prevents 
+      an element from linebreaking, like the nowrap attribute for td and th elements in 
+      HTML4. The values pre-wrap and preline were added in CSS2.1; the former causes the 
+      user agent to preserve whitespace while still automatically wrapping lines of text, 
+      and the latter honors newline characters within the text while collapsing all other 
+      whitespace as per normal.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13012,7 +12977,7 @@ tt {white-space: pre;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the minimum number of text lines within an element that can be left at 
-        the top of a page. This can affect the placement of page breaks within the element.</td>
+      the top of a page. This can affect the placement of page breaks within the element.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13047,7 +13012,7 @@ ul {widows: 2;}
     <tr>
       <td><b>Computed value</b></td>
       <td>For auto and percentage values, as declared; otherwise, an absolute length, 
-        unless the property does not apply to the element (then auto)</td>
+      unless the property does not apply to the element (then auto)</td>
     </tr>
     <tr>
       <td><b>Percentages</b></td>
@@ -13059,8 +13024,8 @@ ul {widows: 2;}
     </tr>
       <td><b>Description</b></td>
       <td>Defines the width of an element's content area, outside of which padding, borders, 
-        and margins are added. This property is ignored for inline nonreplaced elements. 
-        Negative length and percentage values are not permitted.</td>
+      and margins are added. This property is ignored for inline nonreplaced elements. 
+      Negative length and percentage values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13104,10 +13069,10 @@ table {width: 80%;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines how text should be wrapped in situations where it would not ordinarily 
-        be wrapped; for example, a very long string of numbers containing no spaces, such 
-        as the first thousand digits of pi. The value break-all permits user agents to 
-        break a word (text string) at arbitrary points if it cannot find regular 
-        breakpoints within the word.</td>
+      be wrapped; for example, a very long string of numbers containing no spaces, such 
+      as the first thousand digits of pi. The value break-all permits user agents to 
+      break a word (text string) at arbitrary points if it cannot find regular 
+      breakpoints within the word.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13150,10 +13115,10 @@ p {word-break: normal;}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the amount of whitespace to be inserted between words. Note that the 
-        specification does not define what constitutes a "word." In typical practice, 
-        user agents will apply this to the collapsed whitespace between strings of 
-        nonwhitespace characters. Negative length values are permitted and will cause 
-        words to bunch closer together.</td>
+      specification does not define what constitutes a "word." In typical practice, 
+      user agents will apply this to the collapsed whitespace between strings of 
+      nonwhitespace characters. Negative length values are permitted and will cause 
+      words to bunch closer together.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13193,17 +13158,18 @@ p.cramped {word-spacing: −0.5em;}
     <tr>
       <td><b>Applies to</b></td>
       <td>All elements except table row groups, table column groups, table rows, table 
-        columns, Ruby base containers, and Ruby annotation containers.</td>
+      columns, Ruby base containers, and Ruby annotation containers.</td>
     </tr>
+	<tr>
       <td><b>Description</b></td>
       <td>Allows the author to change the writing method used to flow text and other 
-        inline content into the element. The vertical values are useful for languages 
-        that are  primarily vertical, as is the case with many non-Roman languages. It 
-        is possible to have text from a normally horizontal language (e.g., German or 
-        Hebrew) flowed  into a vertical writing mode, though the orientation of the 
-        characters may not be as expected (see text-orientation). Similarly, it's 
-        possible to take a  normally vertical language and flow it horizontally  with 
-        horizontal-tb.</td>
+      inline content into the element. The vertical values are useful for languages 
+      that are  primarily vertical, as is the case with many non-Roman languages. It 
+      is possible to have text from a normally horizontal language (e.g., German or 
+      Hebrew) flowed  into a vertical writing mode, though the orientation of the 
+      characters may not be as expected (see text-orientation). Similarly, it's 
+      possible to take a  normally vertical language and flow it horizontally  with 
+      horizontal-tb.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13245,9 +13211,9 @@ p.cramped {word-spacing: −0.5em;}
     </tr>
       <td><b>Description</b></td>
       <td>Defines the placement of a positioned element along the z-axis, which is 
-        defined to be the axis that extends perpendicular to the display area. 
-        Positive numbers are closer to the user, and negative numbers are farther 
-        away.</td>
+      defined to be the axis that extends perpendicular to the display area. 
+      Positive numbers are closer to the user, and negative numbers are farther 
+      away.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -13289,5 +13255,6 @@ p.cramped {word-spacing: −0.5em;}
   </tbody>
 </table>
 -->
+
 
 
