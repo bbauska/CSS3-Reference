@@ -3421,14 +3421,10 @@ keywords as values. For definitions of these keywords' meaning, see Chapter 2.</
       <td>Flex containers</td>
     </tr>
     <tr>
-      <td><b></b></td>
-      <td></td>
-    </tr>
-    <tr>
       <td><b>Description</b></td>
-      <td>Defines the distribution of flex lines along the cross axis of a flex container, 
-      given that the container's cross-axis length does not equal the sum of the flex lines' 
-      size along the same axis.</td>
+      <td>Defines the distribution of flex lines along the cross axis of a flex container, given 
+	  that the container's cross-axis length does not equal the sum of the flex lines' size along 
+	  the same axis.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -3442,11 +3438,10 @@ aside {display: flex; align-content: center;}<br>
     </tr>
     <tr>
       <td><b>Note</b></td>
-      <td>As of early 2018, there are plans to have this property apply to many (or all) 
-      elements, not just flex flex containers, and be given the values start and end to 
-      replicate replicate flex-start and flex-end behavior for non-flex environments. 
-      Thanks to the center value, this change would make vertical centering of content 
-      trivial in nearly all cases.</td>
+      <td>As of early 2018, there are plans to have this property apply to many (or all) elements, 
+	  not just flex flex containers, and be given the values start and end to replicate replicate 
+	  flex-start and flex-end behavior for non-flex environments. Thanks to the center value, this 
+	  change would make vertical centering of content trivial in nearly all cases.</td>
     </tr>
   </tbody>
 </table>
@@ -3480,9 +3475,9 @@ aside {display: flex; align-content: center;}<br>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Sets a flex-container-wide default for items' alignment with respect to the cross 
-      axis of the flex line they occupy. baseline alignment means the items in a line are 
-      all placed such that the baselines of their first lines of text line up.</td>
+      <td>Sets a flex-container-wide default for items' alignment with respect to the cross axis of 
+	  the flex line they occupy. baseline alignment means the items in a line are all placed such 
+	  that the baselines of their first lines of text line up.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -3494,10 +3489,10 @@ section.gallery {align-items: baseline;}
       </td>
     </tr>
     <tr>
-      <td><b></b></td>
-      <td>As of early 2018, there are plans to have this property apply to many (or all) 
-      elements and be given the values start and end to replicate flex-start and flex-end 
-      behavior for non-flex environments.</td>
+      <td><b>Note</b></td>
+      <td>As of early 2018, there are plans to have this property apply to many (or all) elements 
+	  and be given the values start and end to replicate flex-start and flex-end behavior for non-
+	  flex environments.</td>
     </tr>
   </tbody>
 </table>
@@ -3531,8 +3526,8 @@ section.gallery {align-items: baseline;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Sets the alignment for a single item with respect to the cross axis of the flex line 
-      it occupies.</td>
+      <td>Sets the alignment for a single item with respect to the cross axis of the flex line it 
+	  occupies.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -3580,10 +3575,10 @@ section.gallery h1 {align-self: stretch;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Applies the declared value to all properties <i>except</i> direction and unicode-bidi, which are 
-      exempted for accessibility and historical reasons. This allows an author to, for example, force an 
-      element to reset all of its style properties to their default values, thus blocking the inheritance 
-      of values for all properties (except the exempted two).</td>
+      <td>Applies the declared value to all properties <i>except</i> direction and unicode-bidi, 
+	  which are exempted for accessibility and historical reasons. This allows an author to, for 
+	  example, force an element to reset all of its style properties to their default values, thus 
+	  blocking the inheritance of values for all properties (except the exempted two).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4879,15 +4874,15 @@ a:active {border-bottom-width: 2px;}
     </tr>
     <tr>
       <td><b>Initial value</b></td>
-      <td>separate</td>
+      <td>Separate</td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>declared value</td>
+      <td>Declared value</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td></td>
+      <td>All elements</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
@@ -4988,16 +4983,15 @@ a:visited {border-color: maroon;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property that defines the source, slicing pattern, border width, 
-        degree of extension, and repetition of an image-based border. The syntax is 
-        somewhat unusual compared to the rest of CSS, so take extra time with it. For 
-        example, three of the five values possible are slash-separated and must be listed 
-        in a specific order.<br><br>Note that it is effectively impossible to take a 
-        simple image (say, a star) and repeat it around the edges of an element. To 
-        create that effect, you must create a single image that contains nine copies of 
-        the image you wish to repeat in a 3×3 grid. It may also be necessary to set 
-        border-width (<i>not</i> border-imagewidth) to be large enough to show the 
-        image, depending on the value of border-image-outset.</td>
+      <td>A shorthand property that defines the source, slicing pattern, border width, degree of 
+	  extension, and repetition of an image-based border. The syntax is somewhat unusual compared 
+	  to the rest of CSS, so take extra time with it. For example, three of the five values possible 
+	  are slash-separated and must be listed in a specific order.<br><br>Note that it is effectively 
+	  impossible to take a simple image (say, a star) and repeat it around the edges of an element. 
+	  To create that effect, you must create a single image that contains nine copies of the image 
+	  you wish to repeat in a 3×3 grid. It may also be necessary to set border-width (<i>not</i>
+	  border-imagewidth) to be large enough to show the image, depending on the value of border-
+	  image-outset.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5036,16 +5030,15 @@ aside {border-image: url(asides.png)
     <tr>
       <td><b>Applies to</b></td>
       <td>All elements, except internal table elements when
-    border-collapse is collapse</td>
+      border-collapse is collapse</td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the distance by which a border image may exceed the border area of the 
-        element. The values define distances from the top, right, bottom, and left edges 
-        of the border image, in that order. Numbers are calculated with respect to the 
-        image's intrinsic coordinate system; thus, for a raster image, the number 7 is 
-        taken to mean seven pixels. Images in formats such as SVG may have different 
-        coordinate systems. Negative values are not permitted.</td>
+      <td>Defines the distance by which a border image may exceed the border area of the element. 
+	  The values define distances from the top, right, bottom, and left edges of the border image, 
+	  in that order. Numbers are calculated with respect to the image's intrinsic coordinate system; 
+	  thus, for a raster image, the number 7 is taken to mean seven pixels. Images in formats such 
+	  as SVG may have different coordinate systems. Negative values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5087,12 +5080,11 @@ div#pow {border-image-outset: 10 17 13 5;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>the sides of a border image. stretch causes a single copy of the image to be 
-        stretched to fit the border segment (top, right, bottom, or left). repeat "tiles" 
-        the image in a manner familiar from background images, though border images are 
-        only ever tiled along one axis. round "tiles" the border image as many times as 
-        it will fit without clipping, then (if necessary) scales the entire set of tiled 
-        images to exactly fit the border segment.</td>
+      <td>the sides of a border image. stretch causes a single copy of the image to be stretched to 
+	  fit the border segment (top, right, bottom, or left). repeat "tiles" the image in a manner 
+	  familiar from background images, though border images are only ever tiled along one axis. 
+	  round "tiles" the border image as many times as it will fit without clipping, then (if 
+	  necessary) scales the entire set of tiled images to exactly fit the border segment.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5143,17 +5135,16 @@ aside {border-image-repeat: stretch round;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines "slice distances," which are offsets from the top, right, bottom, and 
-        left edges of the border image. Taken together, they divide the image into nine 
-        regions, which correspond to the eight segments of the element's border (four 
-        corners and four sides) and the element's background area. In cases where two 
-        opposite regions combine to exceed the total of the dimension they share, both 
-        are made completely transparent. For example, if the top slice offset value is 
-        10 and the bottom slice offset value is 20, but the source image is only 25 
-        pixels tall, the two exceed the height of the image. Thus, both the top and 
-        bottom segments of the border will be entirely transparent. The same holds for 
-        right and left slices and width. Corners are never forcibly made transparent, 
-        even in cases where their slices may overlap in the source image.</td>
+      <td>Defines "slice distances," which are offsets from the top, right, bottom, and left edges 
+	  of the border image. Taken together, they divide the image into nine regions, which correspond 
+	  to the eight segments of the element's border (four corners and four sides) and the element's 
+	  background area. In cases where two opposite regions combine to exceed the total of the 
+	  dimension they share, both are made completely transparent. For example, if the top slice 
+	  offset value is 10 and the bottom slice offset value is 20, but the source image is only 25
+	  pixels tall, the two exceed the height of the image. Thus, both the top and bottom segments 
+	  of the border will be entirely transparent. The same holds for right and left slices and width. 
+	  Corners are never forcibly made transparent, even in cases where their slices may overlap in 
+	  the source image.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5231,8 +5222,8 @@ aside {border-image-source: url(asides.png);}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>Four values, each a percentage, a number, a <i>&lt;length&gt;</i> made 
-        absolute, or the auto keyword Relative to the width/height of the entire border</td>
+      <td>Four values, each a percentage, a number, a <i>&lt;length&gt;</i> made absolute, or the 
+	  auto keyword Relative to the width/height of the entire border</td>
     </tr>
     <tr>
       <td><b>Percentages</b></td>
@@ -5244,17 +5235,15 @@ aside {border-image-source: url(asides.png);}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines an image width for each of the four sides of an image border. Border 
-        image slices that have a different width than the border image width value are 
-        scaled to match it, which may impact how they are repeated. For example, if the 
-        right edge of an image border is 10 pixels wide, but border-image-width: 3px has 
-        been declared, the border images along the right side are scaled to be three 
-        pixels wide. Note that border-image-width is different from border-width: a 
-        border image's width can be different than the width of the border area. In 
-        cases where the image is wider or taller than the border area, it will be clipped 
-        by default (but border-imageoutset may prevent this). If it is narrower or 
-        shorter than the border area, it will not be scaled up. Negative values are not 
-        permitted.</td>
+      <td>Defines an image width for each of the four sides of an image border. Border image slices 
+	  that have a different width than the border image width value are scaled to match it, which 
+	  may impact how they are repeated. For example, if the right edge of an image border is 10 
+	  pixels wide, but border-image-width: 3px has been declared, the border images along the right 
+	  side are scaled to be three pixels wide. Note that border-image-width is different from border-
+	  width: a border image's width can be different than the width of the border area. In cases 
+	  where the image is wider or taller than the border area, it will be clipped by default (but 
+	  border-imageoutset may prevent this). If it is narrower or shorter than the border area, it 
+	  will not be scaled up. Negative values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5301,9 +5290,8 @@ div#pow{border-image-width: 25px 35;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property that defines the width, color, and style of the left 
-        border of an element. As with border, omission of a border style will result 
-        in no border appearing.</td>
+      <td>A shorthand property that defines the width, color, and style of the left border of an 
+	  element. As with border, omission of a border style will result in no border appearing.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5345,9 +5333,8 @@ double black 4px;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the color for the visible portions of the left border of an element. 
-        The border's style must be something other than none or hidden for any visible 
-        border to appear.</td>
+      <td>Defines the color for the visible portions of the left border of an element. The border's 
+	  style must be something other than none or hidden for any visible border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5390,8 +5377,8 @@ pre {border-left-color:  black;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the style for the left border of an element. The value must be 
-        something other than none or hidden for any border to appear.</td>
+      <td>Defines the style for the left border of an element. The value must be something other 
+	  than none or hidden for any border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5425,8 +5412,8 @@ pre {border-left-style: double;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>absolute length, or 0 if the style of the border is none or hidden; otherwise, 
-        as declared</td>
+      <td>absolute length, or 0 if the style of the border is none or hidden; otherwise, as 
+	  declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -5434,10 +5421,9 @@ pre {border-left-style: double;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the width for the left border of an element, which will take effect 
-        only if the border's style is something other than none or hidden. If the border 
-        style is none, the border width is effectively reset to 0. Negative length values 
-        are not permitted.</td>
+      <td>Defines the width for the left border of an element, which will take effect only if the 
+	  border's style is something other than none or hidden. If the border style is none, the border 
+	  width is effectively reset to 0. Negative length values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5482,21 +5468,19 @@ pre {border-left-width: 4px;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property that defines the rounding radius for the bottom-right 
-        corner of an element's border. The actual corners will be the height and width 
-        declared. Thus, given: .callout {border-radius: 10px;} each corner of an element 
-        with a class of callout will have a rounding that is 10 pixels across, as 
-        measured from the beginning of the rounding to the outer side edge of the 
-        element, and is similarly 10 pixels high. This can be visualized as if the 
-        element had 10-pixel-radius (20-pixel-diameter) circles drawn in its corners, 
-        and then the border were bent along the circles' edges. Using fewer than four 
-        values causes the supplied values to be repeated in the familiar pattern (see 
-        margin, padding, etc.), but with a slight offset. Rather than being 
-        Top-Right-Bottom-Left (TRBL, or "trouble"), the pattern is TopLeft-TopRightBottomRight-BottomLeft 
-        (TLTRBRBL, or "tilter burble"). Otherwise, the repeat pattern is the same. Percentages, 
-        when used, are calculated with respect to the size of the element's border box 
-        (the box defined by the outer edges of the element's border area) dimension on the 
-        related axis.</td>
+      <td>A shorthand property that defines the rounding radius for the bottom-right corner of an 
+	  element's border. The actual corners will be the height and width declared. Thus, given: 
+	  .callout {border-radius: 10px;} each corner of an element with a class of callout will have 
+	  a rounding that is 10 pixels across, as measured from the beginning of the rounding to the 
+	  outer side edge of the element, and is similarly 10 pixels high. This can be visualized as 
+	  if the element had 10-pixel-radius (20-pixel-diameter) circles drawn in its corners, and then 
+	  the border were bent along the circles' edges. Using fewer than four values causes the supplied 
+	  values to be repeated in the familiar pattern (see margin, padding, etc.), but with a slight 
+	  offset. Rather than being Top-Right-Bottom-Left (TRBL, or "trouble"), the pattern is TopLeft-
+	  TopRightBottomRight-BottomLeft (TLTRBRBL, or "tilter burble"). Otherwise, the repeat pattern 
+	  is the same. Percentages, when used, are calculated with respect to the size of the element's 
+	  border box (the box defined by the outer edges of the element's border area) dimension on the 
+	  related axis.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5541,9 +5525,8 @@ a&lbrack;href&rbrack; {border-radius: 0.5em 50%;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property that defines the width, color, and style of the right 
-        border of an element. As with border, omission of a border style will result 
-        in no border appearing.</td>
+      <td>A shorthand property that defines the width, color, and style of the right border of an 
+	  element. As with border, omission of a border style will result in no border appearing.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5585,9 +5568,8 @@ h3 {border-right: cyan 1em inset;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the color for the visible portions of the right border of an element. 
-        The border's style must be something other than none or hidden for any visible 
-        border to appear.</td>
+      <td>Defines the color for the visible portions of the right border of an element. The border's 
+	  style must be something other than none or hidden for any visible border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5630,8 +5612,8 @@ h3 {border-right-color: cyan;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the style for the right border of an element. The value must be 
-        something other than none or hidden for any border to appear.</td>
+      <td>Defines the style for the right border of an element. The value must be something other 
+	  than none or hidden for any border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5674,10 +5656,9 @@ h3 {border-right-style: inset;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the width for the right border of an element, which will take effect 
-        only if the border's style is something other than none or hidden. If the border 
-        style is none, the border width is effectively reset to 0. Negative length values 
-        are not permitted.</td>
+      <td>Defines the width for the right border of an element, which will take effect only if the 
+	  border's style is something other than none or hidden. If the border style is none, the border 
+	  width is effectively reset to 0. Negative length values are not permitted.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5719,10 +5700,10 @@ h3 {border-right-width: 1em;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the distance between table cell borders in the separated borders table 
-        layout model. The first of the two length values is the horizontal separation and 
-        the second is the vertical separation. Although the property applies only to tables, 
-        it is inherited by all of the elements within the table.</td>
+      <td>Defines the distance between table cell borders in the separated borders table layout 
+	  model. The first of the two length values is the horizontal separation and the second is the 
+	  vertical separation. Although the property applies only to tables, it is inherited by all of 
+	  the elements within the table.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5821,8 +5802,8 @@ img {border-style:inset;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>A shorthand property that defines the width, color, and style of the top border of 
-      an element. As with border, omission of a border style will result in no border appearing.</td>
+      <td>A shorthand property that defines the width, color, and style of the top border of an 
+	  element. As with border, omission of a border style will result in no border appearing.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5861,7 +5842,8 @@ h1 {border-top: dashed 1px gray;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Sets the color for the visible portions of the top border of an element. The border's style must be something other than none or hidden for any visible border to appear.</td>
+      <td>Sets the color for the visible portions of the top border of an element. The border's 
+	  style must be something other than none or hidden for any visible border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5907,9 +5889,9 @@ h1 {border-top-color: gray;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the rounding radius for the top-left corner of an element's border. If two 
-      values are supplied, the first is the horizontal radius and the second is the vertical 
-      radius. See border-radius for a description of how the values create the rounding shape.</td>
+      <td>Defines the rounding radius for the top-left corner of an element's border. If two values 
+	  are supplied, the first is the horizontal radius and the second is the vertical radius. See 
+	  border-radius for a description of how the values create the rounding shape.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5955,7 +5937,9 @@ h2 {border-top-left-radius: 1em 10px;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the rounding radius for the top-right corner of an element's border. If two values are supplied, the first is the horizontal radius and the second is the vertical radius. See border-radius for a description of how the values create the rounding shape.</td>
+      <td>Defines the rounding radius for the top-right corner of an element's border. If two values 
+	  are supplied, the first is the horizontal radius and the second is the vertical radius. See 
+	  border-radius for a description of how the values create the rounding shape.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -5997,7 +5981,8 @@ h2 {border-top-right-radius: 1em 10px;}
     </tr>
     </tr>
       <td><b>Description</b></td>
-      <td>Defines the style for the top border of an element. The value must be something other than none or hidden for any border to appear.</td>
+      <td>Defines the style for the top border of an element. The value must be something other than 
+	  none or hidden for any border to appear.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6031,8 +6016,8 @@ h1 {border-top-style: dashed;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>An absolute length, or 0 if the style of the border is
-  none or hidden; otherwise, as declared</td>
+      <td>An absolute length, or 0 if the style of the border is none or hidden; otherwise, as 
+	  declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -6134,11 +6119,10 @@ img {border-width: 5px thick thin 1em;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the offset between the bottom outer margin edge of a positioned element and 
-      the bottom edge of its containing block. For relatively positioned elements, if both 
-      bottom and top are auto, their computed values are both 0; if one of them is auto, it 
-      becomes the negative of the other; if neither is auto, bottom will become the negative 
-      of the value of top.</td>
+      <td>Defines the offset between the bottom outer margin edge of a positioned element and the 
+	  bottom edge of its containing block. For relatively positioned elements, if both bottom and 
+	  top are auto, their computed values are both 0; if one of them is auto, it becomes the negative 
+	  of the other; if neither is auto, bottom will become the negative of the value of top.</td>
     </tr>
     <tr>
       <td><b>Animatable</b></td>
@@ -6335,9 +6319,8 @@ rgba(255,0,0,0.5);}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the placement of a table caption with respect to the table box. The caption 
-      is rendered as though it were a block-level element placed just before (or after) the 
-      table.</td>
+      <td>Defines the placement of a table caption with respect to the table box. The caption is 
+	  rendered as though it were a block-level element placed just before (or after) the table.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6347,8 +6330,8 @@ rgba(255,0,0,0.5);}
     </tr>
     <tr>
       <td><b>Note</b></td>
-      <td>The values left and right appeared in CSS2 but were later dropped due to a lack of 
-      widespread support.</td>
+      <td>The values left and right appeared in CSS2 but were later dropped due to a lack of widespread 
+	  support.</td>
     </tr>
   </tbody>
 </table>
@@ -6381,14 +6364,13 @@ rgba(255,0,0,0.5);}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines to which side (or sides) of an element no floating element may be placed. 
-      If normal layout of a cleared element would result in a floated element appearing on 
-      the cleared side, the cleared element is pushed down until it sits below (clears) the 
-      floated element. In CSS1 and CSS2, this is accomplished by automatically increasing 
-      the top margin of the cleared element. In CSS2.1, clearance space is added above the 
-      element's top margin, but the margin itself is not altered. In either case, the end 
-      result is that the element's top outer border edge is just below the bottom outer 
-      margin edge of a floated element on the declared side.</td>
+      <td>Defines to which side (or sides) of an element no floating element may be placed. If normal 
+	  layout of a cleared element would result in a floated element appearing on the cleared side, the 
+	  cleared element is pushed down until it sits below (clears) the floated element. In CSS1 and 
+	  CSS2, this is accomplished by automatically increasing the top margin of the cleared element. 
+	  In CSS2.1, clearance space is added above the element's top margin, but the margin itself is 
+	  not altered. In either case, the end result is that the element's top outer border edge is 
+	  just below the bottom outer margin edge of a floated element on the declared side.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6426,8 +6408,8 @@ rgba(255,0,0,0.5);}
     </tr>
     <tr>
       <td><b>Applies to</b></td>
-      <td>All elements (in SVG, applies to all graphics elements
-   and all container elements except the defs element)</td>
+      <td>All elements (in SVG, applies to all graphics elements and all container elements except 
+	  the defs element)</td>
     </tr>
     <tr>
       <td><b>Animatable</b></td>
@@ -6435,9 +6417,9 @@ rgba(255,0,0,0.5);}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines a clipping shape inside of which an element is visible, and outside of which 
-      it is invisible. url() values can be used to refer to an SVG file or an SVG clipPath 
-      element to be used as the clipping shape.</td>
+      <td>Defines a clipping shape inside of which an element is visible, and outside of which it 
+	  is invisible. url() values can be used to refer to an SVG file or an SVG clipPath element to 
+	  be used as the clipping shape.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6522,14 +6504,13 @@ polygon(50% 0, 100% 50%, 50% 100%, 0 50%);}
       <td>All elements</td>
     </tr>
       <td><b>Description</b></td>
-      <td>Defines the foreground color of an element, which <i>Description</i> in HTML 
-      rendering means the text of an element; raster images are not affected by color. 
-      This is also the color applied to any borders of the element, unless overridden by 
-      border-color or one of the other border color properties (border-top-color, etc.). 
-      For color keywords (such as navy) and RGB hex values (such as #008800 or #080), the 
-      computed value is the rgb() equivalent. For transparent, the computed value is 
-      rgba(0,0,0,0); for currentColor, the computed value is inherit. For all other values, 
-      the computed value is the same as the declared value.</td>
+      <td>Defines the foreground color of an element, which <i>Description</i> in HTML rendering 
+	  means the text of an element; raster images are not affected by color. This is also the color 
+	  applied to any borders of the element, unless overridden by border-color or one of the other 
+	  border color properties (border-top-color, etc.). For color keywords (such as navy) and RGB 
+	  hex values (such as #008800 or #080), the computed value is the rgb() equivalent. For 
+	  transparent, the computed value is rgba(0,0,0,0); for currentColor, the computed value is 
+	  inherit. For all other values, the computed value is the same as the declared value.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6567,9 +6548,8 @@ no-close-quote &rbrack;+  </td>
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>For <i>&lt;uri&gt;</i> values, an absolute URI; for  
-  attribute references, the resulting string; 
-otherwise, as declared </td>
+      <td>For <i>&lt;uri&gt;</i> values, an absolute URI; for attribute references, the resulting 
+	  string; otherwise, as declared </td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -6577,10 +6557,9 @@ otherwise, as declared </td>
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the generated content placed before or 
- after an element. By default, this is likely to be  
-inline content, but the type of box the content     
-creates can be defined using the property display.</td>
+      <td>Defines the generated content placed before or after an element. By default, this is 
+	  likely to be inline content, but the type of box the content creates can be defined using 
+	  the property display.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6623,8 +6602,8 @@ font-size: smaller;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>With this property, counters can be incremented (or decremented) by any value, 
-      positive or negative or 0. If no <i>&lt;integer&gt;</i> is supplied, it defaults to 1.</td>
+      <td>With this property, counters can be incremented (or decremented) by any value, positive 
+	  or negative or 0. If no <i>&lt;integer&gt;</i> is supplied, it defaults to 1.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -6650,7 +6629,7 @@ h1 {counter-increment: section;}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>&lbrack; <i>&lt;identifier&gt;</i> <i>&lt;integer&gt;</i>? &rbrack;+ &vert; none </td>
+      <td>&lbrack; <i>&lt;identifier&gt;</i> <i>&lt;integer&gt;</i>? &rbrack;+ &vert; none</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -6707,8 +6686,9 @@ subsec 1;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>For <i>&lt;uri&gt;</i> values, given that a <i>&lt;uri&gt;</i> resolves to a supported file 
-      type, a single absolute URI with optional <i>x</i>,<i>y</i> coordinates; otherwise, as declared</td>
+      <td>For <i>&lt;uri&gt;</i> values, given that a <i>&lt;uri&gt;</i> resolves to a supported 
+	  file type, a single absolute URI with optional <i>x</i>,<i>y</i> coordinates; otherwise, as 
+	  declared</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -7060,8 +7040,8 @@ ol.gallery li {flex: 50%;} #invalid {flex: 1 33.%;}
       <td>
 <pre>
 nav ul li {flex-basis: 50%;} ol.gallery li   
-   {flex-basis: 300px;} div span.whatevs {flex-basis:   
-   auto;}  
+  {flex-basis: 300px;} div span.whatevs {flex-basis:   
+  auto;}
 </pre>
       </td>
     </tr>
@@ -7589,8 +7569,8 @@ none;}
     </tr>
     <tr>
       <td><b>Computed value</b></td>
-      <td>For length values, the absolute length; otherwise, as declared. Calculated with respect to 
-      the parent element's Percentages font size</td>
+      <td>For length values, the absolute length; otherwise, as declared. Calculated with respect 
+	  to the parent element's Percentages font size</td>
     </tr>
     <tr>
       <td><b>Applies to</b></td>
@@ -13235,3 +13215,4 @@ p.cramped {word-spacing: −0.5em;}
 </table>
 </body>
 </html>
+
